@@ -143,3 +143,157 @@ Un aumento de interacciones entre una persona y las bases de datos.⬅️
 
 d.
 La aparición de Internet no tuvo ninguna influencia en las BD.
+
+#TEMA 2: 
+
+## ¿Qué nos permite realizar un lenguaje de manipulación de datos (DML)?
+
+a.
+Permite a los usuarios manipular la estructura de la base de datos.
+
+b.
+Permite a los usuarios acceder a los datos. ⬅️
+
+c.
+Permite realizar cualquier consulta que no modifique los datos.
+
+d.
+Permite insertar nuevos usuarios en la base de datos.
+
+## ¿Qué nos permite realizar un lenguaje de definición de datos (DDL)?
+
+a.
+Definir las diferentes estructuras que almacenarán los datos. ⬅️
+
+b.
+Realizar consultas con privilegios de administrador.
+
+c.
+Acceder a los datos.
+
+d.
+Todas las anteriores son correctas.
+
+## ¿Cómo está formada una tabla?
+
+a.
+Por campos.
+
+b.
+Por campos y relaciones.
+
+c.
+Por un sistema complejo de entidades.
+
+d.
+Por registros que están formados por campos o atributos. ⬅️
+
+## ¿Qué lenguaje es un lenguaje anfitrión?
+
+a.
+HTML.
+
+b.
+PROLOG.
+
+c.
+SQL.
+
+d.
+JAVA.⬅️
+
+
+## ¿Qué itinerario sigue el diseño de una base de datos?
+
+a.
+Crear el diseño lógico y el diseño físico.
+
+b.
+Diseño lógico, especificación de requisitos, diseño físico.
+
+c.
+Diseño lógico, diseño físico.
+
+d.
+Especificación de requisitos, diseño lógico, diseño físico. ⬅️
+
+## ¿En qué consiste la normalización?
+
+a.
+En la creación del esquema entidad-relación.
+
+b.
+En diseñar la BD de acuerdo a reglas que permitan hacer un uso eficiente de los datos.⬅️
+
+c.
+En establecer un conjunto de reglas que deben cumplir nuestros usuarios.
+
+d.
+En crear un diseño físico que se adapte a nuestro problema.
+
+## Uno de los objetivos de la normalización es la supresión de datos redundantes. ¿Por qué es importante?
+
+
+a.
+Porque ocupa espacio innecesariamente.
+
+b.
+Porque aumenta la probabilidad de que aparezcan inconsistencias en los datos.
+
+c.
+Porque aumenta la necesidad de control sobre las operaciones que implican modificación de datos.
+
+d.
+Todas las anteriores son correctas.⬅️
+
+
+## ¿Qué sucede cuando se ejecuta el comando siguiente?
+
+create table Departamento ( dept_name varchar(20),   building  varchar(15), budget numeric(12, 2) check (budget > 0),primary key (dept_name));
+
+
+a.
+Se produce un error indicando que ya existe otra tabla con los mismos atributos
+
+b.
+Se crea una nueva tabla con nombre Departamento⬅️
+
+c.
+Se produce un error de sintaxis indicando que el nombre de la tabla es incorrecto
+
+d.
+No sucede nada
+
+## ¿Qué sucede cuando se ejecuta el siguiente comando?
+
+insert into department (dept_name, building,budget) values(153,120,230);
+
+
+a.
+La inserción se realiza de manera correcta y el valor 153 es convertido a varchar
+
+b.
+Se produce un error debido al tipo de campo dept_name mal 
+
+c.
+No se produce un error pero nada de inserta
+
+d.
+Se produce un error indicando que no existe el comando Insert
+
+## ¿Qué sucede cuando se ejecuta el comando siguiente?
+
+insert into classroom values('DaVinci',122, 40123);
+
+
+a.
+Se inserta en la tabla classroom la tupla (‘DaVinci’, 122, 40123) 
+
+b.
+Se inserta en la tabla classroom la tupla (‘Davinci’, 122, null) 
+
+c.
+Se produce un error de valor fuera de rango ⬅️
+
+d.
+No sucede nada
