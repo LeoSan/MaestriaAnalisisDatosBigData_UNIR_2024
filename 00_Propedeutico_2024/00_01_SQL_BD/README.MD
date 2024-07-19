@@ -458,3 +458,170 @@ No es posible escribir un comando SQL para esa consulta.
 
 d.
 Ninguna de las opciones es correcta.
+
+
+
+
+
+
+# TEMA 4 : APLICACIONES Y PROPÓSITOS DE LOS SISTEMAS DE BASES DE DATOS
+
+
+
+## La clave primaria de una relación:
+
+a.
+Especifica el atributo que permite seleccionar una tupla.
+
+b.
+Es un conjunto de atributos que identifica una tupla de forma unívoca. ⬅️
+
+c.
+Es un conjunto de valores que identifica una tupla de forma unívoca.
+
+d.
+Es un conjunto de valores que permite ordenar las tuplas en función de su orden de inserción, desde la primera.
+
+
+
+## El comando alter table se utiliza para:
+
+a.
+Añadir una relación a la BD.
+
+b.
+Añadir atributos a una relación de la BD.⬅️
+
+c.
+Añadir atributos a las relaciones y relaciones a la BD.
+
+d.
+Reorganizar las tuplas que contiene la tabla.
+
+
+## ¿Para qué sirve la palabra distinct?
+
+a.
+Para considerar cada valor solo una vez.⬅️
+
+b.
+Para incluir una marca que permita distinguir las tuplas que tienen valores repetidos.
+
+c.
+Para eliminar de la tabla los valores repetidos.
+
+d.
+Todas las anteriores son correctas.
+
+
+## ¿Para qué sirve el operador between?
+
+a.
+Para especificar comparaciones fuera de un rango.
+
+b.
+Para especificar comparaciones dentro de un rango.⬅️
+
+c.
+Para especificar las tablas en las que hay que hacer una reunión natural.
+
+d.
+Para sustituir la cláusula WHERE en la consulta.
+
+
+## ¿Qué son las variables tupla?
+
+a.
+Son variables que representan una tupla de la relación donde se definen.
+
+b.
+Permiten comparar tuplas de la misma relación.
+
+c.
+A y B son correctas. ⬅️ falle
+
+d.
+Ninguna de las anteriores.⬅️ falle
+
+
+## ¿Qué consulta debe realizarse para encontrar los títulos de los cursos en el departamento con nombre Comp. Sci que tienen 3 créditos?
+
+a.
+La relación department no tiene el atributo name
+
+b.
+select title from course where dept_name = ’Comp. Sci.’ and credits = 3;⬅️
+
+c.
+select title from department where dept_name = ’Comp. Sci.’ and credits =3;
+
+d.
+select title from course where AND(dept_name =’Comp. Sci.’ credits= 3);
+
+Considerando que la cardinalidad de la relación instructor es 12 y la cardinalidad de la relación student es 13 , ¿cuál es el resultado al ejecutar el comando siguiente?
+
+select count(*) from instructor, student;
+
+
+a.
+Se produce un error por sintaxis errónea de la función de agregación count
+
+b.
+55
+
+c.
+144 
+
+d.
+Ninguna de las anteriores⬅️
+
+
+## ¿Qué consulta debe realizarse para encontrar a todos los instructores que ganan el salario más alto?
+
+a.
+select ID, name from instructor where salary = (select max(salary) from instructor); ⬅️
+
+b.
+select max(salary) from instructor;
+
+c.
+select * from instructor where salary = (select max(salary) from instructor);
+
+d.
+select ID, name from instructor where salary > max(salary);
+
+
+
+## ¿Qué consulta debe realizar para obtener los nombres de los estudiantes que comienzan con la letra A o la letra a o que terminan con la letra s?
+
+a.
+select name from student where lower(name) like 'a%' or name like '%s';
+
+b.
+select name from student where name like ‘a%s’;
+
+c.
+select name from student where lower(name) like ‘a%’ or lower(name) like ‘%s’;
+
+d.
+Las opciones A y C son correctas ⬅️
+
+
+## Marque la consulta correcta para obtener las tuplas (instructor.name, student.name) que indiquen los estudiantes que son asesorados (advised) por cada instructor
+
+a.
+select instructor.name, student.name from instructor inner join advisor on instructor.ID = advisor.i_ID inner join student on advisor.s_ID = student.ID;
+
+b.
+select instructor.name, student.name from instructor, advisor, student where advisor.s_ID = student.ID AND instructor.ID = advisor.i_ID;
+
+c.
+select instructor.name, student.name from instructor join advisor on instructor.ID = advisor.i_ID join student on advisor.s_ID = student.ID;
+
+d.
+Todas las opciones son correctas ⬅️
+
+
+
+
+
