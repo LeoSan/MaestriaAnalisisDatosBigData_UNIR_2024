@@ -532,7 +532,7 @@ Para sustituir la cláusula WHERE en la consulta.
 ## ¿Qué son las variables tupla?
 
 a.
-Son variables que representan una tupla de la relación donde se definen.
+Son variables que representan una tupla de la relación donde se definen. ⬅️ falle
 
 b.
 Permiten comparar tuplas de la misma relación.
