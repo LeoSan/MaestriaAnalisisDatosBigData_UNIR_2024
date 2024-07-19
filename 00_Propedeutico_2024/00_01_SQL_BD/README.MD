@@ -297,3 +297,164 @@ Se produce un error de valor fuera de rango ⬅️
 
 d.
 No sucede nada
+
+
+
+# TEMA 3. El modelo relacional: estructura y operaciones
+
+## Una BD relacional es:
+
+a.
+Un conjunto de tablas con nombre único.
+
+b.
+Un conjunto de relaciones con nombre único.
+
+c.
+A y B son correctas. ⬅️
+
+d.
+Ninguna de las anteriores.
+
+
+## El esquema de una relación:
+
+a.
+Describe la estructura de la relación especificando los tipos (dominios) de sus campos, así como restricciones aplicadas a ellos. ⬅️
+
+b.
+Describe solamente los nombres de las columnas de la tabla.
+
+c.
+Permite hacer recuperaciones de datos más eficientes.
+
+d.
+No permite ningún tipo de correspondencia.
+
+
+## La clave primaria:
+
+a.
+Es un atributo o un grupo de atributos mínimo que permite identificar unívocamente un registro. ⬅️
+
+b.
+Es un único atributo que identifica inequívocamente un registro.
+
+c.
+Es el primer atributo de la tabla.
+
+d.
+Es un atributo que hace referencia a otra tabla.
+
+
+## Una clave alternativa es:
+
+a.
+Una superclave que ha sido seleccionada como clave primaria.
+
+b.
+Un campo que no pertenece al dominio de un atributo.
+
+c.
+Una clave foránea que no ha podido ser seleccionada como clave primaria.
+
+d.
+Una clave candidata que no ha podido ser seleccionada como clave primaria. ⬅️
+
+
+## Un lenguaje de consultas es un lenguaje:
+
+a.
+Para que los usuarios puedan utilizarlo para buscar información en la base de datos. ⬅️
+
+b.
+Para que los administradores lo utilicen para solicitar información de la base de datos.
+
+c.
+Que permite al SGBD trabajar directamente con el sistema operativo.
+
+d.
+Para delimitar las operaciones de consulta.
+
+
+## La operación selección, ¿qué función tiene?
+
+a.
+Mostrar al usuario las tablas de la BD que puede ver.
+
+b.
+Seleccionar columnas del conjunto total que forma una tabla.
+
+c.
+Seleccionar tuplas que satisfacen un predicado. ⬅️
+
+d.
+Satisfacer una relación.
+
+
+## La unión permite:
+
+a.
+Combinar datos de dos relaciones.  ⬅️
+
+b.
+Elegir los datos que coinciden en dos relaciones.
+
+c.
+Combinar datos de dos atributos.
+
+d.
+Combinar interrelaciones.
+
+## ¿Qué sentencia del álgebra relacional se corresponde con el comando?:
+
+SELECT ID, name from instructor;
+
+
+a.
+LaTeX: \pi_{ID,name}  (instructor)
+
+b.
+LaTeX: \pi  (instructor, ID, name)
+
+c.
+Instructor (LaTeX: \pi _{ID,name} ) ⬅️ Falle 
+
+d.
+Ninguna de las anteriores
+
+
+## ¿Qué sentencia del álgebra relacional se corresponde con el siguiente comando?
+
+select salary from instructor where salary < 75000;
+
+
+a.
+σ salary<75000 (π salary(instructor) )
+
+b.
+instructor(σ salary<75000)
+
+c.
+π salary (σ salary<75000(instructor))
+
+d.
+Las opciones A y C son correctas ⬅️
+
+
+## ¿Qué resultado se obtiene de ejecutar el comando SQL correspondiente a la siguiente consulta?
+
+πID, name, course_id (takes ⋈ student))
+
+
+a.
+Relación con el esquema (ID, name, course_id) de los instructores que asesoran a los estudiantes.
+
+b.
+Relación con el esquema (ID, name, course_id) de estudiantes que han tomado cualquier curso en la universidad. ⬅️
+
+c.
+No es posible escribir un comando SQL para esa consulta.
+
+d.
+Ninguna de las opciones es correcta.
