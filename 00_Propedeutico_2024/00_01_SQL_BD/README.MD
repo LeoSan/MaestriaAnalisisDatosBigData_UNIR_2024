@@ -558,7 +558,7 @@ select title from department where dept_name = ’Comp. Sci.’ and credits =3;
 d.
 select title from course where AND(dept_name =’Comp. Sci.’ credits= 3);
 
-Considerando que la cardinalidad de la relación instructor es 12 y la cardinalidad de la relación student es 13 , ¿cuál es el resultado al ejecutar el comando siguiente?
+## Considerando que la cardinalidad de la relación instructor es 12 y la cardinalidad de la relación student es 13 , ¿cuál es el resultado al ejecutar el comando siguiente?
 
 select count(*) from instructor, student;
 
