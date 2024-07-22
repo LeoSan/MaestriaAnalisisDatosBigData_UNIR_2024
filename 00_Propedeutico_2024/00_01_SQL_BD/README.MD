@@ -793,7 +793,160 @@ Las opciones B y C son correctas
 ## TEMA 6. SQL: consultas complejas y vistas
 
 
+## Una subconsulta es:
 
+a.
+Una consulta que se define sobre una parte una tabla.
+
+b.
+Una consulta que se define sobre una parte de la BD.
+
+c.
+Una consulta que se utiliza para comparar el resultado de otra consulta.⬅️
+
+d.
+Una consulta que no contiene todos los elementos que pueden aparecer en la estructura sintáctica de una consulta SQL.
+
+
+## Dentro de una subconsulta, ¿para qué sirve la conectiva in? 
+
+
+a.
+Para comprobar la pertenencia a un conjunto.⬅️
+
+b.
+Para comparar conjuntos.
+
+c.
+Para comprobar relaciones vacías.
+
+d.
+Depende del caso.
+
+
+## Dentro de una subconsulta, ¿para qué sirve la conectiva some?
+
+a.
+Para comprobar la pertenencia a un conjunto.⬅️ falla 
+
+b.
+Para comparar conjuntos.
+
+c.
+Para comprobar relaciones vacías.
+
+d.
+Depende del caso.
+
+
+
+## Dentro de una subconsulta, ¿para qué sirve la conectiva exists?
+
+a.
+Para comprobar la pertenencia a un conjunto.
+
+b.
+Para comparar conjuntos.
+
+c.
+Para comprobar relaciones vacías.⬅️
+
+d.
+Depende del caso.
+
+## ¿Se pueden utilizar vistas en las expresiones que definen otras vistas?
+
+a.
+Sí. ⬅️
+
+b.
+No.
+
+c.
+Según sea la condición.
+
+d.
+Solo en algunas relaciones.
+
+
+
+## ¿Qué consulta es correcta para obtener los nombres de los instructores que han impartido cursos, el id de sus cursos y la cantidad?
+
+a.
+select name, course_id, count(name) as 'N' from instructor right outer join teaches on instructor.ID = teaches.ID group by teaches.ID, name;
+
+b.
+select name, course_id, count(name) as 'N' from instructor left outer join teaches on instructor.ID = teaches.ID group by instructor.ID, name;
+
+c.
+select name, course_id, count(name) as 'N' from instructor join teaches on instructor.ID = teaches.ID group by instructor.ID, name;
+
+d.
+Las opciones A y C son correctas ⬅️
+
+
+## Marque la opción correcta para que un empleado pueda obtener la información de los instructores sin tener acceso a sus salarios:
+
+a.
+create view profesores as select university.instructor.ID AS ID, university.instructor.name AS name, university.instructor.dept_name AS dept_name from university.instructor where True;
+
+b.
+create view profesores as select instructor.ID AS ID, instructor.name AS name, instructor.dept_name AS dept_name from instructor; ⬅️ falla falla 
+
+c.
+select ID, name, dept_name from instructor;
+
+d.
+Todas las opciones son correctas
+
+
+## ¿Qué realiza la siguiente consulta?
+
+select sum(enrollment) from (select count(ID) as enrollment from section natural join takes where semester = 'Spring' and year = 2009   group by course_id, sec_id) as ste;
+
+
+a.
+La sintaxis de la consulta es errónea. “as ste” no es parte de ella.
+
+b.
+La sintaxis de la consulta es errónea. No se puede agrupar por dos campos.
+
+c.
+Devuelve el total de estudiantes enrolados en el semestre Spring 2009. ⬅️
+
+d.
+Devuelve el máximo de estudiantes enrolados en el semestre Spring 2009
+
+
+## ¿Qué consulta es válida para saber el ID de los instructores que son asesores (advisors) de algun(os) estudiante(s)?
+
+a.
+select ID from instructor where ID in (select i_ID from advisor);
+
+b.
+select ID from instructor left outer join advisor on ID =i_ID;
+
+c.
+select distinct ID from instructor join advisor on ID =i_ID;
+
+d.
+Las opciones A y C son correctas  ⬅️
+
+
+
+¿Qué consulta es válida para saber el ID de los instructores que no son asesores (advisors) de algun(os) estudiante(s)?
+
+a.
+select ID from instructor where ID not in (select i_ID from advisor);
+
+b.
+select ID from instructor left outer join advisor on ID != i_ID;
+
+c.
+select ID from instructor right outer join advisor on ID != i_ID;
+
+d.
+Las opciones A y B son correctas ⬅️ falla 
 
 
 
