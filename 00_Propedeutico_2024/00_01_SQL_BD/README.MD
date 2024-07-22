@@ -625,3 +625,175 @@ Todas las opciones son correctas ⬅️
 
 
 
+
+# TEMA 5. ORGANIZACIÓN DEL CÓDIGO
+
+
+
+## ¿Qué diferencia existe entre union all y union?
+
+a.
+union all selecciona de todas las tablas que sean compatibles con la lista de atributos dada.
+
+b.
+union muestra todos los valores y union all solo los valores distintos.
+
+c.
+union solo muestra valores distintos y union all muestra todos los valores.⬅️
+
+d.
+union all selecciona solo los valores que no se repiten.
+
+
+
+
+## El comando intersect se utiliza para:
+
+a.
+Establecer un rango o sección donde se ubican los valores que buscamos.
+
+b.
+Mostrar todas las tuplas que surgen como resultado de una operación de intersección.
+
+c.
+Mostrar las tuplas que surgen como resultado de una operación de intersección, eliminando duplicados.⬅️
+
+d.
+Mostrar las tuplas que no tienen duplicado cuando se hace una operación de intersección.
+
+
+
+## ¿Para qué sirve la palabra except?
+
+a.
+Fuerza la eliminación de valores duplicados en el resultado de una consulta.
+
+b.
+Muestra las tuplas de la primera consulta que no aparecen en la segunda. ⬅️
+
+c.
+Muestra las tuplas de la segunda consulta que no aparecen en la primera.
+
+d.
+No elimina los valores duplicados automáticamente.
+
+
+## ¿Qué diferencia existe entre except all y except?
+
+a.
+except elimina los valores duplicados automáticamente, para conservar todos los valores duplicados se utiliza except all. ⬅️
+
+b.
+except all elimina todos los valores duplicados automáticamente, si se desea conservar todos los valores duplicados se utiliza except.
+
+c.
+except all permite listar los atributos que se quieren mostrar.
+
+d.
+except permite listar los atributos que se quieren mostrar.
+
+
+## La cláusula group by:
+
+a.
+Permite determinar el atributo sobre el que se va a ejecutar una operación de agregación.
+
+b.
+Permite agrupar las tuplas sobre las que se va a ejecutar una operación de agregación.⬅️
+
+c.
+Permite mostrar los resultados ordenados.
+
+d.
+Permite establecer condiciones sobre los resultados de una operación de agregación.
+
+
+## La cláusula having:
+
+a.
+Se coloca en la cláusula FROM y permite establecer condiciones sobre el producto cartesiano que se realiza en las tablas que se listan a continuación.
+
+b.
+Se coloca en la cláusula FROM e indica que las tablas que se listan a continuación deben operarse con la operación reunión natural.
+
+c.
+Permite definir operaciones de agregación sobre conjuntos de tuplas.
+
+d.
+Permite establecer condiciones sobre los resultados de una operación de agregación.⬅️
+
+
+## ¿Qué devuelve la expresión null or true?
+
+a.
+True.⬅️
+
+b.
+False.
+
+c.
+Null.
+
+d.
+Unknown 
+
+
+
+
+
+## ¿Cambia el resultado si se aplica distinct en las funciones de agregación max y min?
+
+a.
+Sí, porque el conjunto sobre el que se aplican es menor.
+
+b.
+Solo en min.
+
+c.
+Solo en max.
+
+d.
+No cambia. ⬅️
+
+
+
+## Para generar una tabla con los valores máximo, mínimo, promedio y desviación estándar de los créditos de los estudiantes utilizamos:
+
+a.
+select max(tot_cred) as MAX, min(tot_cred) as MIN, round(avg(tot_cred)) as AVG, round(std(tot_cred)) as STDEV from student;
+
+b.
+select max(tot_cred) as MAX, min(tot_cred) as MIN, avg(tot_cred) as AVG, std(tot_cred) as STDEV from student; ⬅️ fallo
+
+c.
+select max(tot_cred) as MAX, min(tot_cred) as MIN, ceil(avg(tot_cred)) as AVG, ceil(std(tot_cred)) as STDEV from student;
+
+d.
+Todas las opciones son correctas
+
+
+## Marque la respuesta correcta al ejecutar la siguiente consulta:
+
+select sum(tot_cred) DIV count(*), ceil (avg(tot_cred)) from student;
+
+
+a.
+Se genera una tabla con dos columnas y dos filas con valores numéricos en cada fila.
+
+b.
+Los valores de las columnas en la fila resultante siempre son iguales.
+
+c.
+Los valores de las columnas en la fila resultante pueden ser diferentes.⬅️
+
+d.
+Las opciones B y C son correctas
+
+
+## TEMA 6. SQL: consultas complejas y vistas
+
+
+
+
+
+
