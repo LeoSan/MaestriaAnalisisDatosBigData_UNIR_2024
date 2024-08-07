@@ -949,4 +949,156 @@ d.
 Las opciones A y B son correctas ⬅️ falla 
 
 
+# Tema 9: Diseño de bases de datos relacionales: características y dominios
+
+## Las decisiones de diseño sobre BD deben:
+
+a.
+Minimizar el número de reuniones naturales.
+
+b.
+Evitar redundancia de información.
+
+c.
+Ser eficientes en la recuperación de datos.
+
+d.
+Todas las anteriores son correctas. ⬅️ 
+
+
+## ¿Cuándo un dominio es atómico?
+
+a.
+Cuando los elementos del dominio se presentan como unidades indivisibles.
+
+b.
+Cuando no se tienen varios valores para dicho atributo en la misma tupla.
+
+c.
+Cuando los caracteres que forman parte del valor no tienen significados parciales.
+
+d.
+Todas las anteriores son correctas.⬅️
+
+
+## Las dependencias funcionales son:
+
+a.
+Sinónimos de las claves primarias.
+
+b.
+Conceptos más amplios que las claves, que permiten establecer relaciones ente valores de atributos aunque éstos no sean clave. ⬅️
+
+c.
+Sinónimos de claves externas.
+
+d.
+Ninguna de las anteriores es correcta.
+
+
+## Una dependencia funcional puede ser:
+
+a.
+Trivial, si se cumple en todas las relaciones.
+
+b.
+Completa, si la dependencia se establece en relación a un conjunto de valores en el antecedente y no a un subconjunto de ellos.
+
+c.
+Transitiva, si sigue la misma norma que el concepto matemático que ya conocemos.
+
+d.
+Todas las anteriores son correctas. ⬅️
+
+
+## Normalizar es:
+
+a.
+Simplificar el diseño para que pueda ser entendido por el cliente.
+
+b.
+Evitar que se repita cualquier dato en la BD.⬅️
+
+c.
+Eliminar las redundancias en la BD.
+
+d.
+Todas las anteriores son correctas.
+
+##  La primera forma normal (1FN) hace referencia a:
+
+a.
+Dominios atómicos. ⬅️
+
+b.
+Eliminación de dependencias transitivas.
+
+c.
+Eliminación de atributos multivalorados.
+
+d.
+Todas las anteriores son correctas.
+
+## La segunda forma normal hace referencia a:
+
+a.
+Dominios atómicos.
+
+b.
+Eliminación de dependencias parciales de la clave primaria. ⬅️
+
+c.
+Eliminación de atributos multivalorados.
+
+d.
+Eliminación de dependencias transitivas.
+
+
+La tercera forma normal hace referencia a:
+
+a.
+Dominios atómicos.
+
+b.
+Eliminación de dependencias parciales de la clave primaria.
+
+c.
+Eliminación de atributos multivalorados.
+
+d.
+Eliminación de dependencias transitivas. ⬅️ 
+
+## La FNBC:
+
+a.
+Relaja las restricciones de la 3FN.
+
+b.
+Relaja las restricciones de la 2FN.
+
+c.
+Es más estricta que la 3FN. ⬅️ 
+
+d.
+Ninguna de las anteriores es correcta.
+
+
+## Si tenemos libro (titulo,ejemplar, precio, f_edicion,autor):
+
+a.
+titulo→ autor sí es una dependencia funcional. ⬅️
+
+b.
+precio → f_edicion sí es una dependencia funcional.
+
+c.
+precio → f_edicion alguna veces es una dependencia funcional.
+
+d.
+titulo → autor no es una dependencia funcional.
+
+
+
+
+
 
