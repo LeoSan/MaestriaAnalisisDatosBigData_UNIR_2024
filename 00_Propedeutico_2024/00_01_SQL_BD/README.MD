@@ -1097,6 +1097,164 @@ precio → f_edicion alguna veces es una dependencia funcional.
 d.
 titulo → autor no es una dependencia funcional.
 
+# Tema 10:  Diseño de bases de datos relacionales: dependencias funcionales y descomposición
+
+
+## El grafo de dependencias funcionales:
+
+a.
+Permite representar, de forma visual, el conjunto de dependencias que representa el contexto semántico del entorno que estamos modelando.
+
+b.
+Se construye colocando los atributos como nodos y las dependencias como arcos. No están permitidos multivalores en los nodos.
+
+c.
+Las respuestas A y B son correctas. mal 
+
+d.
+Ninguna de las anteriores es correcta.
+
+
+## El cierre de un conjunto de dependencias funcionales:
+
+a.
+Está formado por las dependencias funcionales indicadas por el diseñador al modelar el problema.
+
+b.
+Está formado por las dependencias funcionales indicadas por el diseñador al modelar el problema y por aquellas que se derivan de la revisión con el cliente.
+
+c.
+Está formado por las dependencias funcionales indicadas por el diseñador y las que se pueden deducir a partir de ellas.   ⬅️
+
+d.
+Determina el conjunto que el diseñador establece como necesario para el sistema que está modelando.
+
+
+## Dos conjuntos de dependencias funcionales:
+
+a.
+Permiten completar las restricciones de una relación cuando surgen nuevos requerimientos. MAL
+
+b.
+Son equivalentes si tienen el mismo cierre.
+
+c.
+Pueden representarse en el mismo grafo si incluyen los mismos atributos.
+
+d.
+Todas las anteriores son correctas.
+
+## Los axiomas de Armstrong:
+
+a.
+Permiten derivar dependencias funcionales implicadas lógicamente a partir de un conjunto de dependencias dado.
+
+b.
+Permiten calcular el cierre del conjunto de dependencias dado.
+
+c.
+Comprende un grupo de axiomas básico y otros adicionales para facilitar su aplicación.
+
+d.
+Todas las anteriores son correctas. ⬅️
+
+
+## Los axiomas de Armstrong son:
+
+a.
+Reflexividad, aumentatividad y transitividad.
+
+b.
+Unión, descomposición y pseudotransitividad.
+
+c.
+A y B son correctas. ⬅️
+
+d.
+Ninguna de las anteriores es correcta.
+
+
+
+## La descomposición sin pérdida implica que:
+
+a.
+La intersección de las descomposiciones es superclave de la primera descomposición indicada.
+
+b.
+La intersección de las descomposiciones es superclave de la segunda descomposición indicada.
+
+c.
+La intersección de las descomposiciones es superclave de las dos descomposiciones generadas. ⬅️
+
+d.
+La intersección de las descomposiciones es superclave de alguna de las descomposiciones implicadas.
+
+
+## Una descomposición con pérdida:
+
+a.
+Es signo de un buen diseño.
+
+b.
+Es signo de un mal diseño. ⬅️
+
+c.
+Explica que las dependencias funcionales están mal especificadas.
+
+d.
+Explica que el cierre de las dependencias funcionales no está completo.
+
+
+## El cierre de un atributo:
+
+a.
+Es sinónimo del cierre de una dependencia funcional.
+
+b.
+Permite determinar si el atributo es superclave de la relación. ⬅️
+
+c.
+Es el paso previo al cálculo del cierre de dependencias funcionales.
+
+d.
+Todas las anteriores son correctas.
+
+
+## El recubrimiento canónico de un conjunto de dependencias:
+
+a.
+Facilita la comprobación de la legalidad de una relación en cada actualización.
+
+b.
+Es un conjunto simplificado de dependencias funcionales que tiene el mismo cierre que el conjunto inicial.
+
+c.
+Implica lógicamente todas las dependencias del conjunto inicial.
+
+d.
+Todas las anteriores son correctas. ⬅️
+
+## La 4FN:
+
+a.
+Está relacionada con las dependencias funcionales transitivas.
+
+b.
+Está relacionada con los atributos raros.
+
+c.
+Está relacionada con las dependencias multivaloradas. ⬅️
+
+d.
+Está relacionada con las dependencias funcionales pseudotransitivas.
+
+
+
+
+
+
+
+
 
 
 
