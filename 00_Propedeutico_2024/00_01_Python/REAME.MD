@@ -142,3 +142,51 @@ Pregunta 10
 
 
 ## TEMA 2. PRIMEROS CONCEPTOS EN PYTHON
+
+Pregunta 1
+**Los identificadores en Python:**
+Pueden incluir dígitos siempre que no estén al principio del identificador.
+
+Pregunta 2
+¿Cuál de estas afirmaciones no es correcta?
+Puedo crear un identificador que se llame and.
+
+Pregunta 3
+¿Qué debemos usar para que Python detecte distintos bloques de código?
+Sangrías de cuatro espacios según la guía de estilos PEP8.
+
+Pregunta 4
+¿Qué tipo de dato devuelve la siguiente operación? 2 / 3
+float.
+
+Pregunta 5
+Si partimos de una variable var con un valor inicial igual a 10 y queremos multiplicarlo por 3 almacenando el resultado en la misma variable, ¿cuál es la forma más efectiva para conseguirlo?
+var *= 3.
+
+Pregunta 6
+Tenemos la siguiente cadena de caracteres almacenada en una variable: frase ="Hola, Python!". Si accedemos a las posiciones frase[-7:12], ¿cuál será el resultado?
+
+'Python'.
+
+Pregunta 7
+
+Usando la misma variable que en la pregunta anterior, ejecutamos la siguiente instrucción: frase.replace("Adiós", "Buenos días"). ¿Cuál será el resultado?
+
+'Hola, Python!'.
+
+Pregunta 8
+Continuando con la variable anterior, ¿cuál es el resultado de esta sentencia?: len("Hola") <= frase.find(',')
+
+True.
+
+Pregunta 9
+
+¿Cuándo se puede convertir un objeto a una cadena de caracteres?:
+Siempre.
+
+Pregunta 10
+¿Cuál es el resultado de la siguiente operación booleana?: bool(0) or not(bool())
+
+True.
+
+
