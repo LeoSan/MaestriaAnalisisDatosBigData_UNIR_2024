@@ -350,7 +350,7 @@ Una lista con todos los elementos convertidos a cadena de caracteres.
 
 
 
-## Tema 5.  
+## Tema 5.  Organización del código 
 
 Respuesta a la pregunta sobre herencia y polimorfismo
 La respuesta correcta es: «Hola, soy la clase hija».
@@ -466,4 +466,178 @@ Pregunta 10
 ¿Para qué sirven los docstring?
 
 Para escribir documentación que luego puede ser consultada por la instrucción help().
+
+
+## Tema 6: Aspectos avanzados
+
+Pregunta 1
+Ejecutando el siguiente código, ¿qué resultado se mostrará al final de la ejecución? 
+
+import re 
+ 
+mensaje = 'Hola, me gusta estudiar Python' 
+re.sub('\w{4},', 'Buenos días', mensaje) 
+
+
+Pregunta 1Respuesta
+
+«Buenos días me gusta estudiar Python».
+
+
+Pregunta 2
+En el siguiente ejemplo, ¿qué patrón se está buscando? 
+
+string ='Hoy hemos comido 10 personas un menú de 12 euros. y 2 niños 2 bocadillos de 4 euros. En total pagamos 128 euros.'
+
+result =re.findall('\d+', string)
+
+   print(result)
+
+
+Todos los números que hay en la cadena de caracteres, es decir, ['10', '12', '2', '2', '4', '128'].
+
+Pregunta 3
+
+¿Qué devuelve la función match() cuando no ha encontrado ningún resultado en la cadena de caracteres?
+
+None.
+
+Pregunta 4
+¿Qué es una excepción?
+
+Un bloque de código que permite continuar la ejecución de un programa cuando se ha detectado un error.
+
+Pregunta 5
+¿Cuándo se ejecuta el bloque else en las sentencias try-except?
+
+
+Se ejecuta cuando no ha habido ningún error en el bloque try.
+
+Pregunta 6
+
+¿Cuándo se ejecuta el bloque finally en las sentencias try-except?
+
+
+Se ejecuta siempre, se produzca o no se produzca un error.
+
+Pregunta 7
+¿Qué resultado devolverá la ejecución del siguiente código?
+
+try:
+
+    'hola'+ 5
+
+except ValueError:
+
+    print('Error 1')
+
+except TypeError:
+
+    print('Error 2')
+
+except:
+
+    print('Error 3')
+
+Pregunta 7Respuesta
+
+Error 2.
+
+Pregunta 8
+¿Qué lista devolverá el siguiente bloque de instrucciones?
+lista =list(range(1,10)) [x / 2 for x in lista if x * 4 < 15]
+
+
+[0.5, 1.0, 1.5].
+
+Pregunta 9
+¿Qué estructuras de datos se pueden crear con la técnica de compresión?
+
+
+Listas, conjuntos y diccionarios.
+
+
+Pregunta 10
+
+Texto de la pregunta
+A partir de la siguiente lista, queremos crear un diccionario donde, por cada elemento, la clave sea el nombre del usuario y el valor, la edad. En el diccionario solo guardaremos aquellos usuarios menores de 35 años. ¿Cuál de las siguientes sentencias se debería utilizar? 
+
+usuarios =[['Juan', 33], ['Alicia', 28], ['Rebeca', 56]]
+
+Pregunta 10Respuesta
+
+
+{item[0]: item[1] for item in usuarios if item[1] < 35}.
+
+## Tema 7: analisis de datos - Numpy y pandas 
+
+Pregunta 1
+
+¿Cómo se puede crear una matriz con 3 filas y 3 columnas usando numpy?
+Pregunta 1Respuesta
+
+np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]).
+
+Pregunta 2
+numpy es una librería útil para:
+
+Cálculo de vectores y matrices.
+
+Pregunta 3
+pandas es:
+
+Una librería para facilitar el tratamiento de datos.
+
+Pregunta 4
+Para obtener con pandas la información estadística de la estructura e información contenida en un dataframe llamamos a la función:
+Pregunta 4Respuesta
+
+
+describe().
+
+
+Pregunta 5
+La función iloc de pandas:
+
+Nos permite acceder a los valores a través de la posición del índice.
+
+
+Pregunta 6
+La sentencia df[df.A>0]:
+
+Muestra solo las filas de df que en su columna A tienen un valor mayor que cero.
+
+
+Pregunta 7
+
+¿Qué hace la función groupby() en pandas?
+Pregunta 7Respuesta
+
+Permite agrupar los datos según los valores de las columnas especificadas por el argumento by=.
+
+Pregunta 8
+
+¿Qué hace la función substract() en numpy?
+Pregunta 8Respuesta
+
+Resta los valores de dos arrays elemento por elemento.
+
+
+Pregunta 9
+
+¿Qué función nos permite ordenar un dataframe por su índice?
+Pregunta 9Respuesta
+
+
+sort_index().
+
+
+
+Pregunta 10
+
+¿Cómo tengo que llamar a la función read_csv() para leer un fichero prueba.csv donde los valores están separados por punto y coma (;)?
+Pregunta 10Respuesta
+
+
+read_csv('prueba.csv', sep=';').
 
