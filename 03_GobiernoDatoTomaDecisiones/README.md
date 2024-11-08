@@ -28,14 +28,41 @@
 - Seguridad 
 - Tener un lenguaje comun 
 
-s
 
 
 
+1.2. Integración de Datos en la Estrategia Empresarial 
 
-1.2. Integración de Datos en la Estrategia Empresarial  
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_001.png)
 
-1.3. Estructuras y Procesos en el Gobierno de Datos  
+
+1.2. ¿Qué es la dirección estratégica (DE)?
+
+Es una disciplina que integra las distintas estrategias y tácticas empresariales,
+analiza decisiones tomadas y observa sus consecuencias o efectos durante un
+período de tiempo, aparte de su pretensión de alcanzar objetivos empresariales a
+largo plazo.
+
+1.3. Estructuras y Procesos en el Gobierno de Datos
+
+
+1.3. El proceso de dirección estratégica  
+
+**Concepto**
+- Consiste en definir, organizar las tareas de manera sistematica para que las empresas logren alcanzar su objetivo de manera gradual, dando el paso a la planeacion de corto y largo plazo. 
+
+- Resaltando que no intenta predecir el futuro si no tener un abanico de decisiones que impacten en el. 
+
+
+> Podemos ver estos pasos de una forma esquemática, desde el
+presente al futuro de la organización 
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_002.png)
+
+**Como**
+- Información: Datos que nos ayuden definir nuestras metas 
+- Metodologia: Con los datos definimos el como vamos a lograr las metas 
+- Pensamiento estrategico: Con el como debemos evaluar y pasar a la acción con el compromiso, llmar siempre al Call to action.   
+
 
 1.4. Toma de Decisiones Estratégicas Basadas en Datos  
 
