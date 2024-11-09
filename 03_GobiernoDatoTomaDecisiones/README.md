@@ -53,15 +53,62 @@ largo plazo.
 
 - Resaltando que no intenta predecir el futuro si no tener un abanico de decisiones que impacten en el. 
 
-
-> Podemos ver estos pasos de una forma esquemática, desde el
-presente al futuro de la organización 
-![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_002.png)
-
 **Como**
 - Información: Datos que nos ayuden definir nuestras metas 
 - Metodologia: Con los datos definimos el como vamos a lograr las metas 
 - Pensamiento estrategico: Con el como debemos evaluar y pasar a la acción con el compromiso, llmar siempre al Call to action.   
+
+
+> Podemos ver estos pasos de una forma esquemática, desde el presente al futuro de la organización 
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_002.png)
+
+> Herramientas para definir la estrategia Corporativa 
+**Análisis externo o análisis PEST/PESTE**
+
+El análisis PEST es una herramienta de gran utilidad para entender el crecimiento o
+bajada de un mercado y, como resultado, la posición, el potencial y la dirección de
+nuestro negocio. Es útil para medirlo y evaluarlo. PEST es una sigla compuesta por
+los siguientes aspectos: políticos, económicos, sociales y tecnológicos
+
+En ocasiones, el análisis PEST se extiende a otros factores, como el ecológico, el
+legislativo y el industrial, para convertirse en PESTELI. Algunos consideran que
+esta extensión no es necesaria, dado que, si se realiza un adecuado PEST, este
+debería cubrir todos estos aspectos de forma natural.
+
+**Los objetivos del análisis PEST se centran en:**
+- Conocer los factores externos que afectan a la empresa.
+- Identificar los factores externos que pueden cambiar en el futuro.
+- Explotar los cambios actuales para convertirlos en oportunidades.
+- Identificar y analizar las posibles amenazas para buscar una pronta solución.
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_003.png)
+
+
+**Análisis DAFO** 
+La matriz DAFO también se conoce como matriz FODA o análisis SWOT (siglas en
+inglés de strenghts, weaknesses, opportunities y threats). Es empleada para la
+formulación y evaluación de estrategias. Por lo general, se puede usar para las
+empresas y las personas. Su nombre se debe a las iniciales de las siguientes
+palabras:
+
+- Debilidades.
+- Amenazas.
+- Fortalezas.
+- Oportunidades.
+
+Permite obtener el beneficio para revisar la estrategia, posición y
+dirección de la empresa. Los elementos analizados en PEST son básicamente
+externos; es recomendable efectuar dicho análisis antes del DAFO, el cual está
+enfocado a factores internos (fortalezas y debilidades) y externos (oportunidades y
+amenazas)
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_005.png)
+
+
+
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_004.png)
+
 
 
 1.4. Toma de Decisiones Estratégicas Basadas en Datos  
