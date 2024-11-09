@@ -43,11 +43,11 @@ analiza decisiones tomadas y observa sus consecuencias o efectos durante un
 período de tiempo, aparte de su pretensión de alcanzar objetivos empresariales a
 largo plazo.
 
-1.3. Estructuras y Procesos en el Gobierno de Datos
+
+## 1.3. El proceso de dirección estratégica  
 
 
-1.3. El proceso de dirección estratégica  
-
+## Estrategia Corporativa : Analiza y decide en que negocios quieres estar  
 **Concepto**
 - Consiste en definir, organizar las tareas de manera sistematica para que las empresas logren alcanzar su objetivo de manera gradual, dando el paso a la planeacion de corto y largo plazo. 
 
@@ -104,14 +104,60 @@ amenazas)
 
 ![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_005.png)
 
-
-
-
 ![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_004.png)
 
+## Estrategia Competitiva: Decide la forma de competir 
+
+**Pasos** 
+- Planeacion táctica
+- Mediano Plazo 
+
+**Ejemplo** 
+
+- Estrategia 1: Diferenciación
+    - En que puede diferenciarse 
+    - Poca competencia con el mismo criterio 
+    - Riesgo: Imitacion de los clientes 
+- Estrategia 2: Liderazgo en coste 
+    - Sensible de precio 
+    - Producto poco difereciales 
+    - Alto poder de negociacion con los clienes 
+    - Riesgo: vigilancia constante de costos 
+
+- Estrategia 3: Movimientos anticipados 
+    - llegar primero
+    - Esperar imitaciones 
+    - Riesgo: imitacion 
+
+- Estrategia 4: focalizacion 
+    - Seleccionar el mercado o segmento 
 
 
-1.4. Toma de Decisiones Estratégicas Basadas en Datos  
+
+## Estrategia funcional: Defines politicas de la empresa de caracter funcional 
+
+**Concepto**
+
+Consiste en generar y definir estrategias para cada unidad o departamento de la empresa, con el proposito que todos esten alineados a la mision y vision de la organización 
+
+## Herramientas** 
+
+
+**Cuadro de Mando Integral (CMI)**
+Es una herramienta gerencial que permite a los directivos y al personal de las
+empresas en general administrar y comunicar las estrategias, monitorear
+permanentemente la organización y utilizar los resultados de las medidas para la
+evaluación del desempeño, lo que facilita el logro de los objetivos (Wexler et al.,
+2017). Fue introducida por Robert Kaplan y David Norton
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_006.png)
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_007.png)
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_008.png)
+
+
+
 
 
 
