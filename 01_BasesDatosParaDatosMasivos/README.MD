@@ -328,3 +328,13 @@ se compara como es mongo vs BD relacional
 
 **Capsulas**
 - https://unir.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=b93f2fb1-390b-496b-9124-aca70108f754
+
+**Pasos para instalar Mongo en MAC** 
+comanndos 
+
+- brew tap mongodb/brew
+- brew update
+- brew install mongodb-community@8.0
+
+![Ejemplo](../01_BasesDatosParaDatosMasivos/info/info_002.png)
+
