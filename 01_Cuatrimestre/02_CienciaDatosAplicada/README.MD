@@ -272,6 +272,39 @@ Hay tres tipos de análisis
 
 - Análisis prescriptivo: ayuda a entender qué debe hacerse para obtener los resultados esperados en el futuro.
 
+
+
+## Introducción Al Análisis de Datos 
+- Definición de análisis de datos: Proceso de inspeccionar, limpiar, transformar y modelar datos con el objetivo de descubrir información útil, informar conclusiones y apoyar la toma de decisiones.
+- Importancia en la era digital: El análisis de datos permite a las organizaciones y empresas aprovechar el potencial de los datos masivos para optimizar operaciones, prever tendencias y mejorar la experiencia del cliente.
+- Desafíos actuales: Manejar el volumen creciente de datos, asegurar la calidad y la privacidad de los datos y extraer conocimientos significativos en tiempo real.
+
+## Preparación de datos en análisis de datos
+- Evaluación de la calidad: Incluye el análisis de formatos, completitud, integridad y disponibilidad de los datos. Fundamental para garantizar la fiabilidad de los análisis posteriores.
+- Tareas de preprocesamiento: Realización de transformaciones y filtrados, análisis de datos faltantes, eliminación de datos ruidosos o atípicos.
+- También aparecen tareas como la discretización o categorización, encodings y la reducción de los datos.
+
+
+## El papel del machine learning en el análisis de datos
+- Fundamentos del Machine Learning:  Machine learning utiliza algoritmos para analizar datos, aprender de ellos y hacer predicciones o tomar decisiones.
+> Se considera una disciplina de la inteligencia artificial. 
+- Se especializa en el reconocimiento de patrones; sobre muestras de datos, aprende y permite extraer inferencias de nuevos conjuntos de datos para los que no ha sido entrenado previamente.
+- Impacto. Permite automatizar el análisis complejo de grandes volúmenes de datos y descubrir patrones y tendencias que no son evidentes para los métodos tradicionales de análisis.
+
+## Técnicas de machine learning datos
+
+- Técnicas comunes. Incluye métodos de análisis supervisado:
+    - Regresión 
+    - Clasificación
+    - No supervisado. 
+- Clustering, reducción de dimensiones y sistemas de recomendación, aplicables a diferentes tipos de datos y necesidades. También encontramos técnicas de aprendizaje semi-supervizado aprendizaje por refuerzo.
+- Procesamiento del Lenguaje Natural. El ML es crucial en el procesamiento del lenguaje natural, ayudando a interpretar y generar lenguaje humano de manera efectiva.
+
+## Visualización en el análisis de grandes volúmenes
+- Propósito de la visualización: Transformar grandes volúmenes de datos en representaciones gráficas que facilitan la comprensión y la toma de decisiones rápidas.
+- Herramientas esenciales: Herramientas de BI como Tableau, Qlik Sense, Looker, Domo, Power BI y Google Data Studio son plataformas líderes que permiten a los usuarios crear visualizaciones dinámicas y dashboards interactivos.
+- Impacto en el análisis de datos: Mejora significativamente la accesibilidad y la interpretación de datos complejos, permitiendo a los analistas y stakeholders obtener insights valiosos de manera eficiente.
+
 ## 2.3. Visualización
 
 Es el proceso mediante el cual la información analizada se presenta de manera gráfica. Esta fase es esencial porque transforma grandes cantidades de datos complejos en representaciones visuales más accesibles y comprensibles, como gráficos, diagramas y mapas de calor
