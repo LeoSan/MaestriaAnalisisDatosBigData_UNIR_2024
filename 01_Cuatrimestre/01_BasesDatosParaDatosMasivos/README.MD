@@ -243,19 +243,47 @@ en Java. Está basada en un modelo de almacenamiento clave-valor y se caracteriz
 en que los nodos que componen el sistema de datos actúan por igual agrupándose
 en un anillo o clúster
 
+**Caracteristicas**
+Modelo  
+- Clave-Valor
+
+Arquitectura 
+- Descentralizada 
+
+Sistema de datos 
+- Anillos o clouster
+- Permite configurar un sistema de replicas 
+- Tienes tablas filas y columnas 
+- Las filas tienen una clave de aprticiona 
+- las columnas tiene un clave valor para interactuar con los datos
+- Usa CQL es una simplificacion de sql 
+- Usa Shell para accder a los datos
+
+
 
 **Neo4j**
 Es un sistema de gestión de base de datos basada en grafos, desarrollado por Neo
 Technology, Inc en Java lanzada en febrero del 2010. Descrito por sus
 desarrolladores como una base de datos transaccional compatible con ACID con
 almacenamiento y procesamiento de grafos nativos.
+
 Un grafo se compone de dos elementos: un nodo y una relación. Cada nodo
 representa una entidad (una persona, un lugar, una cosa, una categoría u otra pieza
-de datos) y cada relación representa cómo se asocian dos nodos. Esta estructura de
-propósito general permite modelar todo tipo de escenarios, desde un sistema de
+de datos) y cada relación representa cómo se asocian dos nodos. 
+
+Esta estructura de propósito general permite modelar todo tipo de escenarios, desde un sistema de
 carreteras hasta una red de dispositivos, la historia médica de una población o
 cualquier otra cosa definida por las relaciones.
 Una base de datos de grafos es un sistema de gestión
+
+**Caracteristicas**
+- Estas BD estan disenadas para operaciones transaccionales
+- Usa almacenamiento nativo 
+- Rendimiento en mejora significativa en consultas relacionales 
+- Flexibilidad se adapta rapidamente  
+- Agilidad se integra con desarrollos agiles 
+- usado para deteccion de fraudes, Motores de recomendaciones en tiempo real, gestion de datos maestros, gestion de identidad acceso. 
+- Tiene software comunitario 
 
 
 **MongoDB**
@@ -275,7 +303,10 @@ que identifica de forma inequívoca al documento.
 A su vez, los documentos se almacenan en collections, formando así un conjunto
 de documentos con atributos similares. Podría decirse que una collection equivale a
 una tabla en una base de datos relacional. Así, se puede definir una base de datos
-en MongoDB como un conjunto de collections
+en MongoDB como un conjunto de collections.
+
+**Caracteristicas**
+
 
 **Patrones de diseño en MongoDB**
 Los patrones de diseño en MongoDB pueden agruparse en dos categorías. La
@@ -330,11 +361,26 @@ se compara como es mongo vs BD relacional
 - https://unir.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=b93f2fb1-390b-496b-9124-aca70108f754
 
 **Pasos para instalar Mongo en MAC** 
-comanndos 
-
-- brew tap mongodb/brew
-- brew update
-- brew install mongodb-community@8.0
+> Resumen: Me toco decsrgar el COMPASS GUI para gestionar datos en mongoDB y con mi cuenta online de Mongo para usar la herramienta en mac
+- https://www.mongodb.com/try/download/compass 
 
 ![Ejemplo](../01_BasesDatosParaDatosMasivos/info/info_002.png)
+
+
+
+
+db.getCollection('books').aggregate(
+  [
+    { $unwind: '$categories' },
+    {
+      $group: {
+        _id: null,
+        categories: { $addToSet: '$categories' }
+      }
+    },
+    { $project: { _id: 0, categories: 1 } }
+  ]
+);
+
+
 
