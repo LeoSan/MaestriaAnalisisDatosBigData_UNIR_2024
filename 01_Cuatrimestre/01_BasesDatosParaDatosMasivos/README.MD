@@ -360,14 +360,198 @@ se compara como es mongo vs BD relacional
 **Capsulas**
 - https://unir.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=b93f2fb1-390b-496b-9124-aca70108f754
 
-**Pasos para instalar Mongo en MAC** 
-> Resumen: Me toco decsrgar el COMPASS GUI para gestionar datos en mongoDB y con mi cuenta online de Mongo para usar la herramienta en mac
-- https://www.mongodb.com/try/download/compass 
+
 
 ![Ejemplo](../01_BasesDatosParaDatosMasivos/info/info_002.png)
 
 
+## Tema 3. MongoDB
 
+## 3.2. Descarga e instalación
+
+## La instalación de MongoDB puede realizarse en el sistema operativo Windows mediante los siguientes pasos:
+
+- Paso 1: descarga el fichero de instalación, en formato zip o msi, desde la siguiente
+dirección web: http://www.mongodb.org/downloads
+
+- Paso 2: en la pestaña Community Server habrá que descargar el archivo msi de
+instalación. Si el sistema operativo que va a soportar la instalación es de 64 bits, se
+recomienda elegir la versión de Windows. Esta versión funciona en casi todas las
+versiones de Windows de 64 bits.
+
+- Paso 3: en el caso de no tener un sistema operativo de 64 bits o querer una versión
+anterior, en el enlace All Version Binaries se pueden encontrar todas las versiones
+de la base de datos.
+
+- Paso 4: instalar la aplicación siguiendo los pasos. Es recomendable utilizar un
+directorio de instalación conocido, por ejemplo, C:/MongoDB/
+
+- Paso 5: inicia el servidor de MongoDB ejecutando el programa mongod.exe, ubicado
+en la subcarpeta bin.
+Ten presente: a partir de la versión 3.x.x de MongoDB, el instalador sobre Windows
+crea el servicio y lo incluye en la lista de procesos o servicios que ejecutará el
+sistema operativo.
+
+## La instalación de MongoDB puede realizarse en el sistema operativo MAC mediante los siguientes pasos:
+
+- Paso 1: Me toco decsrgar el COMPASS GUI para gestionar datos en mongoDB y con mi cuenta online de Mongo para usar la herramienta en mac
+- Paso 2: Descargra e instalar Compass GUI -> https://www.mongodb.com/try/download/compass 
+- Paso 3: Me gusta usar la version Mongo enlinea por lo que tengo un clouster activo para mis ejemplos. 
+
+## Directorios de la instalación
+Una vez instalado, en el directorio de instalación podréis encontrar los siguientes
+subdirectorios:
+- bin: todos los programas que necesita Mongo para ejecutarse.
+- data: el directorio donde por defecto se crearán las bases de datos.
+- log: un fichero con todas las trazas de log del motor y de los accesos al servidor
+mondodb.
+- snmp: ficheros de configuración para una instancia de mongod como un subagente
+SNMP. Esto es útil en la versión Enterprise.
+
+
+a. mongod: Este es el demonio principal de MongoDB, encargado de gestionar la base de datos. Es esencial para el funcionamiento de cualquier instancia de MongoDB.
+
+b. mongos: Este es el proceso que actúa como router en una configuración de sharding (particionamiento) de MongoDB. Coordina las solicitudes de lectura y escritura entre los diferentes shards.
+
+c. mongostat: Esta es una herramienta de línea de comandos que proporciona estadísticas en tiempo real sobre el rendimiento de una instancia de MongoDB. Es muy útil para monitorear la salud y el desempeño de tu base de datos.
+
+d. mongored: ¡Este es el que no existe! No hay ningún comando o ejecutable de MongoDB llamado "mongored". Es probable que haya sido una opción creada para confundir en una prueba o ejercicio.
+
+
+
+
+## 3.3. Software de apoyo
+
+## MongoBooster
+MongoBooster es una herramienta GUI multiplataforma basada en shell para
+MongoDB a partir de la versión 2.4, que permite la construcción de consultas fluidas,
+soporte de sintaxis ES6, una experiencia IntelliSense y un gran número de
+herramientas útiles para el manejo de la base de datos.
+
+## MongoDB Compass
+MongoDB también posee un software propio para la manipulación externa de su
+base de datos a través de una GUI. Esta aplicación permite ejecutar consultas ad
+hoc en segundos, interactuar con sus datos con funcionalidad CRUD completa y ver
+y optimizar el rendimiento de la consulta. Está disponible para la mayoría de los
+sistemas operativos. Compass permite tomar decisiones más inteligentes sobre la
+indexación, la validación de documentos y mucho más.
+
+## 3.4. Flexibilidad del modelo de datos
+
+MongoDB tiene un esquema flexible, donde no es necesario que las colecciones
+tengan una estructura idéntica para todos los documentos. Esto significa que los
+documentos de la misma colección no necesitan tener el mismo número de campos
+o estructura. Cada documento solo necesita contener un número relevante de
+campos de la entidad u objeto que el documento representa.
+
+## 3.5. Inserción de datos
+
+Por ejemplo, si se desea crear un nuevo documento con información sobre un
+producto en específico, dentro de la collection llamada productos, el comando sería
+el
+´´´
+// Create a new database.
+use(database);
+
+// Create a new collection.
+db.createCollection(productos);
+
+//Insert 
+db.productos.insert({nombre: “Jabón líquido”, precio: 5.50})
+db.productos.save({nombre: "Mantequilla", precio: 3.50}) 
+
+//Ten en cuenta que, a partir de MongoDB 4.2, el método db.collection.save() está en
+//desuso, en versiones inferiores sí podrás seguir utilizándolo.
+
+db.productos.find()
+´´´
+
+
+## 3.6. Lectura de datos
+
+El comando utilizado en MongoDB para realizar consultas es find , con la siguiente
+sintaxis:
+´´´
+db.<nombre de Collection>.find(<criterios de búsqueda>, <proyección>)
+´´´
+**Caracteristicas**
+- Ambos argumentos son opcionales y, en caso de definirlos, deben seguir el formato
+JSON. 
+- Los criterios de búsqueda son las condiciones, que los documentos
+resultantes deben cumplir. 
+- Las condiciones se estructuran en pares clave-valor, donde el valor puede ser de tipo primitivo (número, cadena de texto, etc.) o un objeto para el uso de tres operadores de comparación:
+- $gt, $gte, $lt, $lte, $ne: para la evaluación de condiciones «mayor que», «mayor o
+igual que», «menor que», «menor o igual que» y «es diferente a».
+- $in, $nin: evalúan la pertenencia y ausencia respectivamente de un atributo en un
+array dado.
+- $exists: evalúa que exista el atributo indicado.
+- $type: evalúa que el campo sea de un tipo específico.
+- $all: evalúa arrays que coincidan completamente con el parámetro dado.
+- $elemMatch: permite evaluar arrays a nivel de elementos, de forma muy específica.
+- Además, pueden utilizarse los operadores lógicos $or, $and, $not y $nor, los cuales
+reciben un array de expresiones a evaluar en conjunto. MongoDB también brinda operadores para búsquedas de información geoespacial.
+- Los resultados obtenidos a partir de una consulta pueden transformarse mediante
+cualquier combinación de tres operaciones:
+  - limit: indica la cantidad máxima de documentos a mostrar. 
+  - skip: indica la cantidad de documentos a omitir al inicio en un inicio.
+  - sort: indica, a través de pares clave-valor donde la clave es el atributo sobre el que se ordenará y el valor es 1 para un orden ascendente y -1 para un orden
+descendente
+
+
+Ejemplo 
+
+´´´
+db.productos.find()
+db.productos.find({precio:1})
+db.productos.find({precio: {$lte: 1} })
+db.productos.find({precio: {$gt: 1, $lt: 2} })
+db.productos.find({ $and: [{precio: {$gt: 1}}, {precio: {$lt: 2}} ]})
+db.productos.find({ $and: [{precio: {$gt: 1}}, {precio: {$lt: 2}} ]},{_id: 0, nombre: 1})
+db.productos.find().sort({precio: -1}).limit(2)
+´´´
+
+## 3.7. Actualización de datos
+
+Los criterios de búsqueda del comando update siguen las reglas indicadas para el
+comando find. 
+
+Por defecto, el documento que cumpla con esos criterios se reemplaza por el documento enviado como segundo argumento. 
+Si lo deseado es realizar un cambio específico, se pueden utilizar los siguientes operadores:
+
+- $set: permite crear o cambiar un atributo en específico.
+- $unset: permite eliminar un atributo.
+- $inc: incrementa un número.
+- $rename: cambia el nombre de un atributo.
+
+Las opciones de modificación pueden ser dos:
+- multi: por defecto, update solamente modifica un documento. Si el modificador
+multi tiene el valor true , se modificarán todos los documentos que cumplan con las
+condiciones de búsqueda.
+- upsert: si ningún documento cumple con las condiciones de búsqueda y upsert se
+define con el valor true , el comando update creará un documento.
+
+
+´´´
+db.productos.update({ precio: { $gte: 2}}, {$set: {precio: 3}}, {multi:true})
+db.productos.updateMany({ precio: { $gte: 2}}, {$set: {precio: 7.5}})
+db.productos.updateOne({ precio: { $gte: 7}}, {$set: {precio: 8.555}})
+db.productos.find() 
+
+db.inventario.deleteMany({ estado : "B" })
+
+´´´
+
+
+## 3.8. Caso práctico
+
+
+
+db.getCollection('books').find({longDescription: {$gte: "A", $lt: "B"}}, {title: 1, longDescription: 1})
+
+db.getCollection('books').find({status: "PUBLISH"}, {title: 1, longDescription: 1, status:1, authors:1})
+
+
+title, longDescription, status y authors
 
 db.getCollection('books').aggregate(
   [
