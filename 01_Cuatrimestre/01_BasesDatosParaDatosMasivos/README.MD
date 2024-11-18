@@ -497,6 +497,35 @@ cualquier combinación de tres operaciones:
   - sort: indica, a través de pares clave-valor donde la clave es el atributo sobre el que se ordenará y el valor es 1 para un orden ascendente y -1 para un orden
 descendente
 
+En resumen:
+
+Las llaves y corchetes son fundamentales en MongoDB para estructurar los documentos y las consultas. Comprender su uso te permitirá escribir consultas más complejas y eficientes para manipular tus datos.
+
+Notas: 
+- Recuerda usamos las llaves para muchas cosas pero la razon principal es exponer el objeto json que se desea encontrar 
+Ejemplo
+´´´
+db.getCollection('books').aggregate(
+  [
+    {
+      $group: {
+        _id: {
+          hasPages: {
+            $cond: [
+              { $eq: ['$pageCount', 0] },
+              'Libros 0 páginas',
+              'Libros con páginas'
+            ]
+          }
+        }, // creo un elemento llamado hasPages
+        count: { $sum: 1 } // creo un elemento llamado count
+      }
+    }
+  ]
+);
+´´´
+- los corchetes lo podemos usar para las operacion del documento y llegar al atributo del documento ejemplo ['$pageCount']
+- El simbolo $ es para indicar que deseamos ese atributo del documento en alguna operacion 
 
 Ejemplo 
 
@@ -544,7 +573,8 @@ db.inventario.deleteMany({ estado : "B" })
 
 ## 3.8. Caso práctico
 
-
+Nota: Podemos usar la IA  de mongo DB para generar consultas un ejemplo puede ser 
+- I want to get How many books have 0 pages and how many do not from the books collection
 
 db.getCollection('books').find({longDescription: {$gte: "A", $lt: "B"}}, {title: 1, longDescription: 1})
 
@@ -566,5 +596,108 @@ db.getCollection('books').aggregate(
   ]
 );
 
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: { 'offices.city': 'San Francisco', offices: { $size: 2 }   }
+    },
+    {
+      $project: {
+        offices: {
+          $filter: {
+            input: '$offices',
+            as: 'office',
+            cond: {
+              $eq: [
+                '$$office.city',
+                'San Francisco'
+              ]
+            }
+          }
+        }
+      }
+    },
+    
+  ]
+ 
+);
 
 
+
+
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: { 'offices.city': 'San Francisco' }
+    },
+    {
+      $project: {
+        name: 1,
+        offices: {
+          $filter: {
+            input: '$offices',
+            as: 'office',
+            cond: {
+              $eq: [
+                '$$office.city',
+                'San Francisco'
+              ]
+            }
+          }
+        }
+      }
+    },
+    { $match: { offices: { $size: 2 } } }
+  ]
+);
+
+
+db.getCollection('companies').aggregate([
+  {
+		$match:{
+						category_code:'games_video',         
+						'acquisition.price_amount': {
+          		$gte: 10000000
+        		},
+        		'acquisition.acquired_year': 2007,
+        		'offices.city': 'Culver City'
+					}
+  }
+	,
+  {
+		$project:{
+						_id:0,
+						name:1, 
+            'acquisition.acquired_month': 1,
+            'acquisition.acquired_day': 1
+		}
+  } 
+  , 
+    {$sort:{name:1}} 
+])
+
+
+
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: {
+        category_code: 'games_video',
+        'acquisition.price_amount': {
+          $gte: 10000000
+        },
+        'acquisition.acquired_year': 2007,
+        'offices.city': 'Culver City'
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        name: 1,
+        'acquisition.acquired_month': 1,
+        'acquisition.acquired_day': 1
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
