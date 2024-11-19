@@ -313,3 +313,85 @@ Es el proceso mediante el cual la información analizada se presenta de manera g
 
 Finalmente, la interpretación de los datos es el último paso, donde los resultados visualizados se examinan para tomar decisiones informadas
 
+
+## Visualización efectiva de datos 
+
+- Fundamentos de la Visualización: Consiste en transforma un conjunto complejo de datos en representaciones graficas intuitivas. 
+- Estrategias para Visualización efectiva: Incluyen el uso de colores adecuados, diseño limpio y la seleccion de tipos de graficos que mejor represente los datos. 
+- Herramienta Clave: Uso de herramienta Tableu, Power BI, Goggle Data Studio. 
+
+
+
+# Técnicas para la interpretación de datos
+- Análisis de sensibilidad: Evalúa cómo diferentes inputs afectan los resultados de un modelo, ayudando a identificar variables críticas y a entender la robustez de los modelos.
+- Técnicas de visualización avanzadas: Incluye el uso de mapas de calor, gráficos de red y visualizaciones tridimensionales para una representación más rica y detallada de los datos.
+- Discusión crítica y revisión por pares: Fomenta la evaluación y validación de los resultados de análisis mediante la discusión con expertos y colegas, asegurando la precisión y objetividad.
+
+
+## Tema 3. Arquitecturas Típicas en Proyectos de Datos Masivos
+
+Fuentes Heterogenias de Datos 
+- Tipos de Datos: 
+    - Estructruturados: bases de datos SQL hojas de calculo 
+    - Semiestructurados: documentos XML, json 
+    - No estructurados: texto, imagenes, audio, video
+    - Datos tiempo real:sensores datos GPS
+
+
+- Desafios de Integración: La diversidad de formatos y tipos de datos, junto con la necesidad de mantener la calidad y consistencia  de los datos integrados. 
+- Tecnologías y estrategias: uso de sistemas de gestion de datos flexibles, herramientas ETL, plataforma de big Data como Hadoop y analisis en tiempo real 
+- Ejemplo de usos: Los bancos utilizan datos estructurados para el analisis de credito, Las redes sociales analizan datos no estructurados para insights sobre el comportamiento de usuarios.  
+
+
+## Proceso ETL
+- Extracción: recopilación de datos de diversas fuentes heterogéneas como bases de datos relacionales, NoSQL, archivos y los API-
+- Transformación: limpieza, integración y transformación de datos. Aplicación de reglas y operaciones para convertir datos al formato adecuado.
+- Carga: almacenamiento de datos transformados en sistemas de almacenamiento como data warehouses o data lakes.
+- Herramientas: ejemplos de herramientas ETL incluyen Apache Nifi, Talend, Informatica, AWS Glue.
+
+
+## Metodos de Extracción 
+
+
+- Extracción en línea (online): los datos se recuperan directamente del sistema fuente. Puede acceder a tablas de origen o sistemas centrales que almacenan datos predefinidos. No difiere físicamente del sistema fuente.
+- Extracción fuera de línea (offline): los datos se organizan fuera del sistema fuente original. Pueden ser registros de rehacer, archivos o creados por rutinas de extracción. Importancia de la recurrencia en extracciones incrementales o completas.
+- Ejemplos de uso:
+    - Online: recuperación directa de bases de datos operacionales. 
+    - Offline: uso de archivos de registro o archivos de backup para extracción de datos.
+
+- Consideraciones: los volúmenes de datos pueden ser grandes. La elección del método depende de la necesidad de frescura («edad») de datos y la infraestructura disponible.
+
+
+## Transformación y tratamiento de datos
+- Limpieza de datos: eliminación de errores, duplicados y datos inconsistentes para asegurar la integridad y calidad.
+- Transformación: aplicación de reglas y operaciones para convertir datos a un formato adecuado para análisis.
+- Integración: unificación de datos de diferentes fuentes para crear una vista coherente y completa.
+- Validación: verificación de que los datos transformados cumplen con los estándares y requisitos definidos.
+
+
+## Proceso de carga
+- Importancia de la carga: incluye tanto la carga de tablas de dimensiones como de tablas de hechos. Asegurar que la carga se realice correctamente y con la menor cantidad de recursos posibles.
+- Mejores prácticas: deshabilitar restricciones e índices antes de la carga y habilitarlos después. Mantener la integridad referencial durante el proceso de carga.
+
+- Tipos de carga:
+    - Carga inicial: poblar todas las tablas del data warehouse.
+    - Carga incremental: aplicar cambios periódicos según sea necesario. 
+    - Refresco completo: borrar y recargar una o más tablas con datos frescos.
+
+- Destino principal: la base de datos del proceso de carga. Garantizar que el destino sea eficiente y mantenga la coherencia e integridad de los datos.
+
+
+## Proceso ETL en la era actual
+- Extracción moderna: uso de los API, servicios web y conectores avanzados para recopilar datos en tiempo real de diversas fuentes, incluyendo loT y redes sociales.
+- Transformación avanzada: aplicación de machine learning para limpieza y enriquecimiento de datos. Uso de herramientas como Apache Spark para procesamiento distribuido.
+- Carga eficiente: implementación en la nube con servicios como AWS Glue y Azure Data Factory, que permiten escalabilidad y flexibilidad en la gestión de grandes volúmenes de datos.
+- Automatización: automatización de flujos de trabajo ETL con orquestadores como Apache Airflow, mejorando la eficiencia y reduciendo errores humanos.
+
+## Resumen 
+Los ETL ayudan a las empresas a integrar datos de multiples fuentes de datos, transformarlos de manera efectiva para luego almacenarlos en data warehouse para mejorar la toma de decisiones. 
+
+Un Data Warehouse está optimizado para consultas rápidas y complejas, lo que mejora su rendimiento para análisis específicos.
+
+La etapa de transformación implica limpiar, integrar y convertir los datos para que sean adecuados para el análisis.
+
+La automatización de flujos de trabajo ETL mejora la eficiencia y reduce errores humanos, utilizando herramientas avanzadas.
