@@ -395,3 +395,184 @@ Un Data Warehouse está optimizado para consultas rápidas y complejas, lo que m
 La etapa de transformación implica limpiar, integrar y convertir los datos para que sean adecuados para el análisis.
 
 La automatización de flujos de trabajo ETL mejora la eficiencia y reduce errores humanos, utilizando herramientas avanzadas.
+
+
+
+## Videoclase 2. Almacenamiento de Datos
+
+## Bases de datos Relacionales 
+- Organización: datos almacenados en tablas con filas y columnas. Ideales para almacenar datos estructurados.
+- Ventaja: integridad. Aseguran la consistencia y precisión mediante claves primarias y relaciones facilidad de uso, soporte amplio.
+- SQL: utilizan el lenguaje de consulta estructurado (SQL) para gestionar y manipular datos. Permiten realizar consultas complejas.
+- Normalización: estructuración para reducir redundancia y mejorar integridad de los datos.
+- Desventajas: No son adecuadas para datos no estructurados o semiestructurados.
+
+
+## Data Lake
+- Almacenamiento: capacidad de almacenar grandes volúmenes de datos en diversos formatos.
+- Flexibilidad: permiten almacenar datos sin procesar y definir el esquema durante el acceso. Almacena datos en su formato nativo, sin procesar. Puede contener datos estructurados, semiestructurados y no estructurados (schema-on-read)
+- Costo: generalmente más económicos debido a su arquitectura escalable.
+- Accesibilidad: datos accesibles para múltiples aplicaciones y análisis.
+- Desventajas: riesgo de convertirse en un Data Swamp (Data Lake mal gestionado, donde los datos se almacenan sin un orden o metadatos adecuados).
+- Un Data Lake puede convertirse en un Data Swamp si los datos se almacenan sin orden ni metadatos adecuados.
+
+## Data Warehouses
+- Almacenamiento: datos organizados en estructuras optimizadas para consultas y análisis (Schema-on-write), donde los datos deben cumplir con un esquema definido antes de ser almacenados.
+- ETL: procesos de extracción, transformación y carga (ETL) para asegurar la calidad y consistencia de los datos.
+- Ventajas: diseño optimizado para realizar consultas rápidas y complejas.. Alta calidad de datos, optimización para consultas analíticas.
+- Rendimiento: alta velocidad y eficiencia en la ejecución de consultas. Desventajas: mayor rigidez comparado con Data Lakes, mayor costo de implementación.
+
+## Data Mart
+- Un Data Mart es una versión más pequeña y especializada de un Data Warehouse, enfocada en un área específica de la organización. Contiene una parte pequeña y específica de los datos que la empresa almacena en un sistema de almacenamiento más grande.
+- Ventajas: menor tiempo de implementación, específico para necesidades de departamentos.
+- Desventajas: puede llevar a la creación de silos de datos.
+
+## Data Mesh (una alternativa de almacenamiento)
+- Descentralización del almacenamiento de datos: permite a los equipos independientes gestionar y almacenar sus propios datos. Data Lake tiene un enfoque centralizado en un único repositorio que almacena todos los datos, mientras que el Data Mesh distribuye los datos entre varios dominios.
+- Escalabilidad y flexibilidad: mejora la escalabilidad y flexibilidad al distribuir la gestión de datos.
+- Responsabilidad de los datos: cada equipo es responsable de la calidad y consistencia de sus datos.
+- Interoperabilidad: facilita la interoperabilidad entre diferentes sistemas y fuentes de datos.
+
+## Tecnologías de almacenamiento en la nube
+- Escalabilidad: capacidad de escalar recursos de almacenamiento según la demanda.
+- Costo: modelos de pago por uso, permitiendo costos más bajos y predecibles.
+- Accesibilidad: acceso a datos desde cualquier lugar y en cualquier momento.
+Elasticidad: ajuste dinámico de recursos según las necesidades del negocio.
+- Herramientas:
+o AWS S3: almacenamiento de objetos escalable y de alta durabilidad. o Microsoft Azure Blob Storage: almacenamiento de objetos optimizado para datos no estructurados.
+o Google Cloud Storage: solución unificada de almacenamiento de objetos para desarrolladores y empresas.
+
+
+## Impacto en el análisis de datos
+- Data Lakes:
+    - Exploración de datos: facilitando el análisis exploratorio y la investigación.
+    - Machine Learning: soporte para grandes volúmenes de datos no estructurados, ideal para entrenar modelos de ML.
+    - Flexibilidad: permite adaptarse rápidamente a nuevas fuentes y tipos de datos.
+
+- Data Warehouses:
+    - Análisis de BI: optimización para consultas rápidas y generación de informes.
+    - Integridad de datos: garantiza la calidad y consistencia de los datos.
+    - Rendimiento: diseñado para manejar grandes volúmenes de consultas concurrentes.
+
+## Videoclase 3. Visualización Avanzada de Datos
+
+## Propósito de la visualización de datos
+- Claridad:
+    - Facilita la comprensión de grandes volúmenes de datos. Simplifica la complejidad de los datos crudos.
+    - Ejemplos: diagramas de dispersión, gráficos de líneas. Comunicación efectiva:
+    - Permite compartir insights de manera clara y concisa. Mejora la colaboración entre equipos.
+    - Ejemplos: Dashboards interactivos.
+    
+- Detección de patrones:
+    - Ayuda a identificar tendencias y patrones ocultos en los datos.
+    - Facilita la identificación de anomalías.
+    - Ejemplos: mapas de calor, gráficos de series temporales.
+
+- Toma de decisiones:
+    - Apoya la toma de decisiones basada en datos concretos y visuales.
+    - Reduce la incertidumbre en la toma de decisiones.
+    - Ejemplos: informes de Business Intelligence (BI).
+
+## Herramientas de la visualización de datos
+- Datawrapper:
+    - Programa de código abierto para crear visualizaciones fácilmente. Ideal para periodistas y comunicadores.
+
+- Timeline JS:
+    - Construcción de líneas de tiempo interactivas.
+    - Utilizado en presentaciones históricas y narrativas.
+
+- RAWGraphs:
+    - Visualizaciones con D3.js sin necesidad de programación. Flexible y altamente personalizable.
+
+- CartoDB:
+    - Mapas interactivos en la web.
+    - Análisis geoespacial avanzado.
+
+- Visualización e inteligencia empresarial
+    - AWS, Microsoft Azure, Google Cloud Platform:
+    - Integración de fuentes de datos y procesamiento.
+    - Infraestructura escalable y segura.
+
+- Tableau:
+
+    - Conexión con diversas fuentes de datos y creación de cuadros de mando.
+    - Interfaz intuitiva y potente capacidad de análisis.
+    - Capacidad de manejar grandes volúmenes de datos.
+
+- Google Data Studio:
+    - Dashboards gratuitos y conectores de terceros.
+    - Fácil de usar y compartir.
+    - Interactividad y personalización.
+
+- Power BI:
+    - Visualizaciones de inteligencia empresarial con reconocimiento por voz.
+    - Integración con Microsoft Office y otras herramientas.
+    - Análisis en tiempo real y predicciones.
+
+
+
+## Otras herramientas de visualización
+- Looker:Solución de inteligencia empresarial de Google. Análisis de datos en tiempo real y exploración.
+- Qlik:Visualización y análisis de datos IoT. Potente motor de asociación de datos.
+- Adverity:Plataforma para ingestión, procesamiento y presentación de datos. Conexión a múltiples fuentes de datos y automatización de ETL.
+- Funnel:Conexión de datos de múltiples fuentes con destinos diversos. Simplificación del marketing digital y análisis de rendimiento.
+
+## Lenguajes de Programación para Visualización
+    - Python:
+        - Librerías: Matplotlib, Seaborn, Plotly, Bokeh.
+        - Usado en machine learning, data science, inteligencia artificial.
+        - Amplia comunidad y numerosas librerías.
+        - Integración con proyectos de machine learning.
+
+    - R:
+        - Librerías: ggplot2, Shiny, Plotly.
+        - Popular en análisis estadístico y académico.
+        - Potente en análisis estadístico.
+        - Interactividad y extensibilidad.
+
+
+## Python y visualization
+Matplotlib:
+Capacidad de personalización avanzada.
+Seaborn:
+Mejora la estética y la capacidad gráfica. Se integra con R y Python.
+Plotly:
+Gráficos interactivos en web.
+Compatible con Dash para dashboards interactivos.
+Bokeh:
+Visualización interactiva de datos a gran escala. Utilizado en análisis de grandes conjuntos de datos.
+
+## R y visualization
+- ggplot2:
+    - Gráficos en una única figura.
+    - Extensibilidad y personalización.
+- Shiny:
+    - Aplicaciones web interactivas para visualización de datos.
+    - Facilitación de la creación de dashboards.
+- Plotly en R:
+    - Gráficos interactivos y altamente personalizables.
+    - Integración con aplicaciones Shiny.
+- Paquetes adicionales:
+    - rgl para gráficos 3D.
+    - Leaflet para mapas interactivos.
+
+## Desafíos en la visualización de datos
+- Desafíos:
+    - Gestión de grandes volúmenes de datos.
+    - Garantizar la precisión y calidad de los datos.
+    - Elegir herramientas según necesidades específicas.
+    - Considerar factores como usabilidad, costo y capacidades.
+    - Formación continua en nuevas herramientas y tecnologías. Importancia de la alfabetización de datos.
+    - Integrar visualización de datos en la estrategia empresarial.
+    - Fomentar una cultura de datos y toma de decisiones basada en datos.
+
+- Algunas soluciones:
+    - Uso de herramientas avanzadas de visualización.
+    - Implementación de buenas prácticas de gobernanza de datos.
+
+- Tecnologías de apoyo:
+    - Big Data, Machine Learning, inteligencia artificial. Integración con plataformas de análisis de datos.
+
+- Beneficios:
+    - Mejor toma de decisiones.
+    - Eficiencia operativa y reducción de costos.
