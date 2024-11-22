@@ -581,123 +581,235 @@ db.getCollection('books').find({longDescription: {$gte: "A", $lt: "B"}}, {title:
 db.getCollection('books').find({status: "PUBLISH"}, {title: 1, longDescription: 1, status:1, authors:1})
 
 
-title, longDescription, status y authors
+## MongoDB y sus IDEs
 
-db.getCollection('books').aggregate(
-  [
-    { $unwind: '$categories' },
-    {
-      $group: {
-        _id: null,
-        categories: { $addToSet: '$categories' }
-      }
-    },
-    { $project: { _id: 0, categories: 1 } }
-  ]
-);
+> MongoBooster
 
-db.getCollection('companies').aggregate(
-  [
-    {
-      $match: { 'offices.city': 'San Francisco', offices: { $size: 2 }   }
-    },
-    {
-      $project: {
-        offices: {
-          $filter: {
-            input: '$offices',
-            as: 'office',
-            cond: {
-              $eq: [
-                '$$office.city',
-                'San Francisco'
-              ]
-            }
-          }
-        }
-      }
-    },
-    
-  ]
- 
-);
+MongoBooster es una herramienta GUI multiplataforma basada en shell para MongoDB a partir de la versión 2.4.
+
+**Características:**
+
+- Construcción de consultas fluidas.
+- Soporte de sintaxis ES6.
+- Experiencia IntelliSense para autocompletar.
+- Lector Shell integrado.
+- Utilidad para crear colecciones aleatorias.
+- Herramientas de monitorización y estadísticas.
+- Schema Analyzer para describir el esquema de las colecciones. 
+- Versiones: Dispone de una versión gratuita con ciertas limitaciones después de los 60 días de prueba.
+
+## MongoDB Compass
+
+> MongoDB 
+Compass es el software de MongoDB para la manipulación externa de la base de datos a través de una GUI.
+
+**Funcionalidades:**
+
+- Ejecución de consultas ad hoc.
+- Funcionalidad CRUD completa.
+- Análisis y optimización del rendimiento de las consultas.
+- Visualización intuitiva de la estructura de los documentos.
+- Estadísticas del servidor en tiempo real.
+- Exploración de operaciones de la base de datos.
+- Construcción de consultas complejas de manera sencilla.
+- Modificación, inserción y borrado de documentos mediante un editor visual.
+- Creación y modificación de reglas de validación de datos.
+- Utilidad: Facilita la comprensión y manipulación de los datos almacenados en MongoDB a través de una interfaz gráfica intuitiva.
 
 
+## Recordar
+
+- Comando insert: utilizado para crear documentos en una colección.
+  - Sintaxis: db.<nombre de Collection>.insert(<documento a almacenar>).
+- Atributo _id: MongoDB genera automáticamente un _id de tipo Objectld para garantizar la unicidad de los documentos.
+- Inserción Múltiple: Utiliza insertMany([...]) con un array de documentos como argumento.
+- Comando save:
+  - Sintaxis: db.<nombre de Collection>.save(<documento a almacenar>).
+  - Similar a insert, pero reemplaza el documento existente si el_id coincide.
+
+## Observaciones:
+- Uso de try-catch para manejar errores.
+´´´
+try {
+db.productos.insertMany( [
+...
+] );
+} catch (e) {
+print (e);
+}
+´´´
+- Consulta de documentos con db.productos.find().
+- Modificación y reemplazo de documentos existentes.
+- Uso de_id para identificar documentos existentes.
+  - Desuso de save:
+    - A partir de MongoDB 4.2, el método db.collection.save() está en desuso.
+- Interacción con la audiencia:
+  - Se fomenta la participación y comentarios en el foro sobre los resultados de las operaciones.
 
 
-db.getCollection('companies').aggregate(
-  [
-    {
-      $match: { 'offices.city': 'San Francisco' }
-    },
-    {
-      $project: {
-        name: 1,
-        offices: {
-          $filter: {
-            input: '$offices',
-            as: 'office',
-            cond: {
-              $eq: [
-                '$$office.city',
-                'San Francisco'
-              ]
-            }
-          }
-        }
-      }
-    },
-    { $match: { offices: { $size: 2 } } }
-  ]
-);
 
 
-db.getCollection('companies').aggregate([
-  {
-		$match:{
-						category_code:'games_video',         
-						'acquisition.price_amount': {
-          		$gte: 10000000
-        		},
-        		'acquisition.acquired_year': 2007,
-        		'offices.city': 'Culver City'
-					}
-  }
-	,
-  {
-		$project:{
-						_id:0,
-						name:1, 
-            'acquisition.acquired_month': 1,
-            'acquisition.acquired_day': 1
+## MongoDB y Las operaciones de lectura y actualización
+
+> Lectura de datos en MongoDB
+- Comando find:
+  - Utilizado para leer u obtener datos de una colección.
+  - Sintaxis: db.<nombre de Collection>.find(<criterios de búsqueda>, <proyección>).
+
+- Criterios de búsqueda:
+  - Condiciones que los documentos deben cumplir.
+  - Operadores de comparación como $gt, $It, $gte, $lte, etc.
+  - Operadores lógicos como $or, $and, $not, etc.
+  - Operadores para búsquedas geoespaciales.
+
+- Proyección:
+  - Indica qué atributos mostrar u ocultar en los resultados. Formato: lista de pares clave-valor.
+  - Uso del operador punto para atributos de subdocumentos.
+
+- Transformación de resultados:
+  - limit: indica la cantidad de documentos que deseamos ver -> db.usuarios.find().sort({ edad: -1 }).limit(5)
+  - skip : lo usamos para omitir la cantidad de docummentos al principio de la consulta ->  db.usuarios.find().skip(10).limit(10) -> Si tienes una colección de usuarios y quieres obtener los usuarios del 11 al 20, sin importar el orden, podrías usa
+  - Sort: lo usamos para ordenar los documentos 1 = ASC -1 = DESC 
+
+- Comando findOne:
+  - Utilizado para encontrar un solo documento. Argumentos similares al comando find.
+  - Interacción con la audiencia:
+  - Se fomenta la participación y comentarios sobre los ejemplos y resultados de las consultas.
+  - Se pueden realizar ejercicios prácticos para reforzar el entendimiento de los comandos.
+
+- Comando Update:
+  - Utilizado para modificar documentos que coinciden con un criterio de búsqueda.
+  - Sintaxis antes de la versión 2.2 y a partir de la misma.
+
+´´´
+db.Employee.update
+(
+	{
+		Employeeid : 1
+	},
+	{
+		$set :
+		{
+			"EmployeeName" : "NewMartin",
+			"Employeeid" : 22
 		}
-  } 
-  , 
-    {$sort:{name:1}} 
-])
+	}
+)
 
+# Comando para indicar Join equivalente al SQL
 
-
-db.getCollection('companies').aggregate(
-  [
-    {
-      $match: {
-        category_code: 'games_video',
-        'acquisition.price_amount': {
-          $gte: 10000000
-        },
-        'acquisition.acquired_year': 2007,
-        'offices.city': 'Culver City'
-      }
-    },
-    {
-      $project: {
-        _id: 0,
-        name: 1,
-        'acquisition.acquired_month': 1,
-        'acquisition.acquired_day': 1
-      }
+db.users.aggregate([
+  {
+    $lookup: {
+      from: "orders", // Colección a unir
+      localField: "_id", // Campo de la colección actual
+      foreignField: "userId", // Campo de la colección a unir
+      as: "orders" // Nombre del campo en el resultado
     }
-  ],
-  { maxTimeMS: 60000, allowDiskUse: true }
-);
+  }
+])
+´´´
+
+
+- Operadores de Modificación:
+  - $set, Sunset, $inc, $rename.
+  - Permite crear, modificar o eliminar atributos específicos.
+
+- Opciones de Modificación:
+  - multi: modifica uno o varios documentos.
+  - upsert: crea un nuevo documento si no hay coincidencias.
+
+
+- Comandos de eliminación:
+  - remove, delete Many y deleteOne.
+´´´
+db.usuarios.remove({});// Elimina a todos
+db.usuarios.remove({ edad: { $gt: 30 } }); // Elimina los mayores a 30 
+
+
+´´´
+  - Elimina documentos basados en criterios de búsqueda. Argumento adicional para eliminar solo un documento.
+
+- Interacción con la audiencia:
+  - Se fomenta la comprensión de cuándo es más conveniente utilizar cada comando.
+  - Se realizan ejemplos prácticos y se invita a comentarios sobre su aplicación y utilidad.
+
+
+  ´´´
+  Hemos visto en conceptos anteriores que podemos eliminar todos los documentos de una colección mediante el método deleteMany y pasando un objeto literal vacío:
+
+db.libros.deleteMany({})
+Aprendimos también a recuperar algunos documentos con el método find empleando una serie de operadores relacionales, dichos operadores se pueden emplear en forma idéntica con los métodos deleteMany y deleteOne.
+
+Hay dos métodos para eliminar documentos:
+
+deleteMany: Borra todos los documentos que cumplen la condición que le enviamos.
+deleteOne: Borra el primer documento que cumple la condición que le pasamos.
+Almacenaremos una serie de documentos en una colección llamada libros y luego borraremos algunos de sus documentos:
+
+use base1
+db.libros.drop()
+
+db.libros.insertOne(
+  {
+    _id: 1,  
+    titulo: 'El aleph',
+    autor: 'Borges',
+    editorial: ['Siglo XXI','Planeta'],
+    precio: 20,
+    cantidad: 50 
+  }
+)
+db.libros.insertOne(
+  {
+    _id: 2,  
+    titulo: 'Martin Fierro',
+    autor: 'Jose Hernandez',
+    editorial: ['Siglo XXI'],
+    precio: 50,
+    cantidad: 12
+  }
+)
+db.libros.insertOne(
+  {
+    _id: 3,  
+    titulo: 'Aprenda PHP',
+    autor: 'Mario Molina',
+    editorial: ['Siglo XXI','Planeta'],
+    precio: 50,
+    cantidad: 20
+  }
+)
+db.libros.insertOne(
+  {
+    _id: 4,  
+    titulo: 'Java en 10 minutos',
+    editorial: ['Siglo XXI'],
+    precio: 45,
+    cantidad: 1 
+  }
+)
+
+db.libros.find()
+
+db.libros.deleteOne({_id: 1})
+
+db.libros.find()
+
+db.libros.deleteMany({precio : {$gte : 50 }})
+
+db.libros.find()
+Si queremos eliminar el documento que almacena en el campo el _id con valor 1 luego podemos utilizar la sintaxis:
+
+db.libros.deleteOne({_id: 1})
+Lo más conveniente es utilizar el método 'deleteOne' ya que solo uno puede cumplir esa condición al ser la clave primaria del documento.
+
+Recordemos que la sintaxis alternativa para eliminar el documento con _id con valor 1 es:
+
+db.libros.deleteOne({_id: { $eq : 1}})
+La sintaxis anterior es buena recordar ya que los otros operadores relacionales hay que utilizarlos en forma obligatoria y no tienen una sintaxis alternativa como el $eq.
+
+Para borrar todos los libros que tienen un precio mayor o igual a 50 tenemos:
+
+db.libros.deleteMany({precio : {$gte : 50 }})
+  ´´´
