@@ -812,4 +812,112 @@ La sintaxis anterior es buena recordar ya que los otros operadores relacionales 
 Para borrar todos los libros que tienen un precio mayor o igual a 50 tenemos:
 
 db.libros.deleteMany({precio : {$gte : 50 }})
-  ´´´
+
+´´´
+
+## Tema 4 Agregación
+
+
+
+## Videoclase 1. Framework de Agregación
+
+- Conceptos Basicos de agregacion de MongoDB 
+  - Se usa para consultar datos agrupados y obtener un resultado 
+  - Ejemplo: Suma total de ventas por años 
+- MongoDB Ofrece tre mnetodos: 
+  - Map-Reduce: Es mas potente pero complejo de usar 
+    - Map: permite filtrar los datos 
+    - Reduce: permite agregar reglas de operacion sobre los datos.
+
+´´´
+Map-Reduce utiliza funciones de JavaScript personalizadas para
+realizar el map y el reduce de las operaciones, así como la operación de
+finalización opcional. El uso de JavaScript proporciona una gran
+flexibilidad en comparación con las pipelines, pero Map-Reduce es
+menos eficiente y más complejo.
+´´´
+
+## Muestras: 
+
+![ejemplo reduce](../01_BasesDatosParaDatosMasivos/info/info_003.png)
+
+![ejemplo reduce](../01_BasesDatosParaDatosMasivos/info/info_004.png)
+
+![ejemplo reduce](../01_BasesDatosParaDatosMasivos/info/info_005.png)
+
+
+  - Aggregation Framework: Permite obtener operaciones parecidos a SQL, facil y optimizada, mejora los tiempos de consultas mas cortos, puedes usar count(), distinct() atributos unicos, podemos usar consultas avanzadas. 
+  - Operaciones Simples: count, distinct, sum, average 
+
+
+  NOTA: DEBES HACER LOS EJERCICIOS DEL TEMA 4 PARA PRACTICAR 
+
+## Videoclase 2. Map-Reduce
+
+## Conceptos: 
+  - Es un paradigma que se tiene en muchas herramientas de desarrollo 
+  - El objetivo es analizar grandes volumes de datos 
+  - En mongoDB aun sigue existiendo pero ya esta obsoleto "predecado"
+  - Estan apostando mas por el framework de agregations 
+  - Es complejo ya que tienes que saber programar 
+  
+## Como Funciona
+
+  - Paso 1: Pasa por la función map que permite validar cada documento y emite parea clave-valor
+  - Paso 2: la funcion reduce recibe la clave y el array de los valores para realizar operaciones de agregacion 
+  - paso 3: permite recibir parametros como: 
+      - out: 
+      - querry:
+      - sort: 
+      - limit:
+      - finalize:
+      - scope: 
+      - JsMode:
+      - verbose:  
+
+## Ejemplo Código 
+
+´´´
+# JavaScript
+var map = function() {
+  emit(this.producto, this.cantidad * this.precio);
+};
+
+var reduce = function(key, values) {
+  var total = 0;
+  for (var i = 0; i < values.length; i++) {
+    total += values[i];
+  }
+  return total;
+};
+
+
+db.ventas.mapReduce(
+  map, 
+  reduce, 
+  { 
+    out: "resultados_ventas" 
+  }
+);
+´´´
+
+## Videoclase 3. Operaciones de Agregación
+
+## Concpetos
+- Es modelado en concpetos de tuberias "pipeline" -> los documentos entran a una tuberias de varias etapas que transforman los documentos en un resultado agregado. 
+- proporciona la capacidad de "sharing" -> 
+- Se puede usar el indice para mejorar el rendimiento. 
+- El Aggregation Framework de MongoDB funciona como tuberías de procesamiento de datos.
+- Los documentos atraviesan varias etapas que transforman los datos en un resultado agregado.
+- Las etapas básicas proporcionan filtros y transformaciones de documentos.
+- Otras etapas permiten agrupar, clasificar y agregar contenido de arrays, entre otras operaciones.
+
+![ejemplo agregacion](../01_BasesDatosParaDatosMasivos/info/info_006.png)
+![ejemplo agregacion](../01_BasesDatosParaDatosMasivos/info/info_007.png)
+
+## Notas 
+- El Aggregation Framework permite realizar operaciones complejas como el cálculo de promedios y la concatenación de cadenas mediante operadores
+- La etapa $unwind en el Aggregation Framework se utiliza para descomponer arrays en documentos individuales, permitiendo realizar operaciones sobre los elementos de un array.
+- El Aggregation Framework tiene una fase de optimización interna que mejora el rendimiento, lo que lo hace más eficiente que Map-Reduce en muchas operaciones.
+- El Aggregation Framework mejora el rendimiento al utilizar índices y aprovechar la capacidad de sharding de MongoDB, lo que permite distribuir el procesamiento de datos en diferentes nodos. 
+- El operador $lookup se utiliza para realizar una combinación de documentos de diferentes colecciones, lo que permite trabajar con datos relacionados en el Aggregation Framework.
