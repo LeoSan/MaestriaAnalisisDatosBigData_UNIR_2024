@@ -580,71 +580,7 @@ Visualización interactiva de datos a gran escala. Utilizado en análisis de gra
 
 
 
-1. ¿Qué es el locus de control externo?
-Creer que las circunstancias externas determinan tu vida.
 
-2.
-¿Qué es el locus de control interno?
-Creer que - en su mayoría - el éxito depende de ti.
-
-3.
-¿Cuál de las siguientes frases está escrita en lenguaje reactivo?
-Puedo mejorar
-Quiero hacer esto
-Repasar
-
-4.
-Las personas con una Mentalidad de Crecimiento (Growth Mindset) creen...
-en todas estas afirmaciones.
-
-5.
-Las personas con una Mentalidad Fija creen...
-que la inteligencia es innata e inmutable.
-
-6.
-¿Qué significa ser adulto según Robert Kegan?
-Cambiar la manera en la que conoces y entiendes el mundo.
-
-7.
-¿Qué elementos conforman los hábitos?
-Señal ambiental, rutina y recompensa.
-8.
-¿Qué es la conciencia?
-El conocimiento que un ser tiene de sí mismo y de su entorno.
-9.
-¿Qué significa sentirse empoderado/a?
-Todas son correctas.
-10.
-¿Cuál de las siguientes es una creencia potenciadora?
-Pensar que el vaso está medio lleno.
-11.
-¿Qué es el círculo de influencia?
-Es trabajar la posibilidad de reducir el peso de lo que nos inquieta.
-12.
-¿A qué se refiere el Locus de Control?
-Al grado en que sientes que controlas lo que ocurre en tu vida.
-
-13.
-La mentalidad de crecimiento está relacionada con...
-La creencia de que puedes mejorar tus cualidades.
-Tener más éxito en todos los aspectos de la vida.
-Repasar
-
-14.
-¿Qué es una creencia limitante?
-Es una idea o pensamiento negativo que te impide tomar acción.
-15.
-¿Qué es una profecía autocumplida?
-Una predicción que, una vez hecha, es en sí misma la causa de que se haga realidad.
-16.
-¿En qué etapa de la Teoría del Desarrollo de la Adultez de Kegan se encuentran la mayoría de los adultos?
-Etapa 3
-17.
-Si alguien cree que nunca podrá aprender a programar...
-Seguramente tiene una mentalidad fija y no está trabajando sus creencias limitantes.
-18.
-¿Qué son los valores?
-Todas son correctas.
 
 ## Tema 4:  El Perfil del Científico de Datos
 
