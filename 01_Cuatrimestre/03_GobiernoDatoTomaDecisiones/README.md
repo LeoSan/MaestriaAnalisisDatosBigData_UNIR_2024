@@ -157,6 +157,21 @@ evaluación del desempeño, lo que facilita el logro de los objetivos (Wexler et
 ![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_008.png)
 
 
+## Nota: 
+- La dirección estratégica proporciona una visión integral que ayuda a la empresa a ser más competitiva, facilita la evaluación y toma de decisiones a través de una gestión integral, y permite la implementación de indicadores de desempeño clave.
+
+- La dirección estratégica proporciona una visión integral que ayuda a la empresa a ser más competitiva, facilita la evaluación y toma de decisiones a través de una gestión integral, y permite la implementación de indicadores de desempeño clave.
+
+- El modelo de gestión estratégica se basa en la misión y visión de la empresa, así como en los objetivos estratégicos que buscan alinear las acciones con la dirección deseada.
+
+- La misión debe responder a "¿Quiénes somos?", "¿qué hacemos?", "¿cómo lo hacemos?", "¿para quién lo hacemos?" y "¿dónde lo hacemos?". Estas preguntas ayudan a definir el propósito y el ámbito de acción de la empresa.
+
+
+- La visión se centra en el ámbito de acción y la estrategia de la empresa, definiendo hacia dónde se dirige y cómo espera llegar allí, sin incluir explícitamente la misión o los valores.
+
+## 
+
+
 
 
 

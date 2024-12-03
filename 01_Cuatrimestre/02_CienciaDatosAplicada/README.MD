@@ -580,32 +580,31 @@ Visualización interactiva de datos a gran escala. Utilizado en análisis de gra
 
 
 
-
-
-
-
-    ¿Qué es el locus de control externo?
+1. ¿Qué es el locus de control externo?
 Creer que las circunstancias externas determinan tu vida.
 
 2.
 ¿Qué es el locus de control interno?
 Creer que - en su mayoría - el éxito depende de ti.
+
 3.
 ¿Cuál de las siguientes frases está escrita en lenguaje reactivo?
 Puedo mejorar
-
+Quiero hacer esto
 Repasar
+
 4.
 Las personas con una Mentalidad de Crecimiento (Growth Mindset) creen...
 en todas estas afirmaciones.
+
 5.
 Las personas con una Mentalidad Fija creen...
 que la inteligencia es innata e inmutable.
+
 6.
 ¿Qué significa ser adulto según Robert Kegan?
-Es identificarnos con nuestros pensamientos, creencias y emociones.
+Cambiar la manera en la que conoces y entiendes el mundo.
 
-Repasar
 7.
 ¿Qué elementos conforman los hábitos?
 Señal ambiental, rutina y recompensa.
@@ -620,17 +619,17 @@ Todas son correctas.
 Pensar que el vaso está medio lleno.
 11.
 ¿Qué es el círculo de influencia?
-Es tener un foco reactivo.
-
-Repasar
+Es trabajar la posibilidad de reducir el peso de lo que nos inquieta.
 12.
 ¿A qué se refiere el Locus de Control?
 Al grado en que sientes que controlas lo que ocurre en tu vida.
+
 13.
 La mentalidad de crecimiento está relacionada con...
 La creencia de que puedes mejorar tus cualidades.
-
+Tener más éxito en todos los aspectos de la vida.
 Repasar
+
 14.
 ¿Qué es una creencia limitante?
 Es una idea o pensamiento negativo que te impide tomar acción.
@@ -645,6 +644,23 @@ Si alguien cree que nunca podrá aprender a programar...
 Seguramente tiene una mentalidad fija y no está trabajando sus creencias limitantes.
 18.
 ¿Qué son los valores?
-Los principios, virtudes o cualidades que te caracterizan.
+Todas son correctas.
 
-Repasar
+## Tema 4:  El Perfil del Científico de Datos
+
+
+## Videoclase 1. Competencias Fundamentales del Científico de Datos
+
+## Notas: 
+- La opción correcta es porque el científico de datos utiliza su conocimiento para convertir datos en información valiosa, apoyando así la toma de decisiones estratégicas en la empresa.   
+
+- La opción correcta es porque las habilidades cuantitativas incluyen el uso de técnicas matemáticas, estadística e informática para analizar datos, identificar patrones y validar hipótesis. 
+
+- La opción correcta es D porque el análisis de series de tiempo permite identificar patrones temporales y realizar predicciones, fundamental en sectores como finanzas y economía. 
+
+- La opción correcta es porque la explicabilidad ayuda a entender las decisiones de los modelos de machine learning, asegurando su transparencia y confiabilidad. 
+
+- La opción correcta es porque el científico de datos necesita habilidades en programación y manejo de datos a gran escala.
+
+## Videoclase 2. La Comunicación en Ciencia de Datos
+
