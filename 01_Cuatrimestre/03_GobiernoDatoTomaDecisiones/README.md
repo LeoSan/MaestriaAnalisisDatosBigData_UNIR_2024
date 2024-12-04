@@ -169,7 +169,25 @@ evaluación del desempeño, lo que facilita el logro de los objetivos (Wexler et
 
 - La visión se centra en el ámbito de acción y la estrategia de la empresa, definiendo hacia dónde se dirige y cómo espera llegar allí, sin incluir explícitamente la misión o los valores.
 
-## 
+## Videoclase 1. Fundamentos de la Dirección Estratégica
+## Notas 
+
+
+## Videoclase 2. Elementos Clave del Gobierno de Datos
+## Notas: 
+- El gobierno de datos es crucial para asegurar la calidad y protección de los datos, lo que a su vez facilita la toma de decisiones informadas y estratégicas en la organización.
+- El cuadro de mando integral evalúa la organización desde cuatro perspectivas clave: financiera, cliente, procesos internos y aprendizaje y crecimiento, proporcionando una visión equilibrada del desempeño.
+- Los elementos fundamentales del cuadro de mando integral incluyen indicadores y metas, que miden el desempeño, así como el mapa e indicadores estratégicos, que guían la implementación de la estrategia.
+- Las etapas del proceso de toma de decisiones incluyen identificar el problema, desarrollar opciones, implementar las opciones seleccionadas y evaluar los resultados para retroalimentar el proceso.
+- En la toma de decisiones intervienen elementos como la información disponible, la acción a tomar y los datos que sustentan la decisión, así como la realimentación y los resultados obtenidos.
+
+## Videoclase 3. Estrategias Competitivas y Herramientas de Análisis
+## Notas: 
+- Correcto. La DAMA define la gobernanza de datos como el ejercicio de autoridad y control a través de la gestión de los activos de datos.
+- Correcto. Implementar un gobierno de datos facilita la disponibilidad, usabilidad, integridad y seguridad de los datos en la organización.
+- Correcto. La estrategia competitiva se enfoca en cómo una empresa competirá en el mercado.
+- Correcto. El análisis PESTEL se utiliza para evaluar el entorno político, económico, social, tecnológico, ecológico y legal que afecta a la empresa.
+- Correcto. Una de las perspectivas del Cuadro de Mando Integral (CMI) es la perspectiva financiera, que evalúa el rendimiento financiero de la empresa.
 
 
 
