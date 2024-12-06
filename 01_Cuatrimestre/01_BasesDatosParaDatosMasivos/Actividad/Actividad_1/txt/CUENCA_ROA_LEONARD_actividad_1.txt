@@ -290,6 +290,7 @@ db.getCollection('companies').aggregate(
     {
       $match: { 'offices.city': 'San Francisco' }
     },
+    { $match: { 'offices': { $size: 2 } } },
     {
       $project: {
         name: 1,
@@ -307,7 +308,15 @@ db.getCollection('companies').aggregate(
         }
       }
     },
-    { $match: { offices: { $size: 2 } } }
+    { 
+      $match: { offices: { $size: 2 } } 
+    },
+    {
+      $project:{
+        _id:0,
+        name:1, 
+      }
+    }
   ]
 );
 
