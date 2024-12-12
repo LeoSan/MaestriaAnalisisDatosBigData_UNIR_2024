@@ -86,6 +86,72 @@ inglés, se encarga de gestionar la estructura, disponibilidad y eficiencia del 
 de base de datos.
 
 
+## Cuestionario 
+
+1. ¿Cuál es la unidad semántica mínima que puede almacenarse o comunicarse?
+A. Dato.
+B. Información.
+C. Conocimiento.
+D. Las respuestas A y B son correctas.
+2. ¿Qué métodos pueden utilizarse para la transformación de información a
+conocimiento?
+A. Contextualización, agregación y cálculo.
+B. Repercusión, conexión y conversación.
+C. Categorización, corrección y agregación.
+D. Análisis, investigación y discusión.
+3. ¿Qué métrica de calidad describe la proporción en la que un conjunto de datos
+contiene a la población que representa?
+A. Precisión.
+B. Consistencia.
+C. Completitud.
+D. Interpretabilidad.
+4. ¿Cuál de los siguientes es un ejemplo de método de captura manual?
+A. Web scraping.
+B. Encuestas.
+C. Acceso a bases de datos relacionales.
+D. Lectura de termómetro digital.
+Test
+Bases de Datos para el Big Data
+Tema 1. Test
+44
+5. ¿En qué categoría de captura de datos entra la lectura de información del
+acelerómetro y giroscopio de un teléfono móvil?
+A. Captura manual.
+B. Procesamiento de documentos.
+C. Acceso a datos públicos.
+D. Sensores.
+6. ¿Qué elemento es utilizado para delimitar valores en un fichero CSV?
+A. Coma.
+B. CRLF.
+C. Comillas dobles.
+D. Espacio.
+7. ¿Sobre qué estructuras se basa el formato JSON?
+A. Objetos y diccionarios.
+B. Tablas hash.
+C. Objetos y arrays.
+D. Listas enlazadas.
+8. ¿Cuál de las siguientes condiciones sobre XML es verdadera?
+A. Un documento solo puede tener un elemento raíz.
+B. El contenido de un elemento debe ser otro elemento.
+C. Todo elemento debe tener un atributo llamado «id».
+D. Los atributos deben de ser de tipo numérico.
+Test
+Bases de Datos para el Big Data
+Tema 1. Test
+45
+9. ¿Qué nombre recibe un conjunto de datos persistente utilizado por un sistema de
+software?
+A. Archivo.
+B. Base de datos.
+C. Registro.
+D. Las respuestas A y B son correctas.
+10. ¿Cuál es la instrucción de SQL para consultar información?
+A. SELECT.
+B. INSERT.
+C. UPDATE.
+D. DELETE.
+
+
 
 ## Tema 2. NoSQL
 
@@ -363,6 +429,76 @@ se compara como es mongo vs BD relacional
 
 
 ![Ejemplo](../01_BasesDatosParaDatosMasivos/info/info_002.png)
+
+
+## Cuestionario 
+
+1. ¿Qué tipo de base de datos NoSQL se caracteriza por operaciones de lectura y
+escritura básicas, además de ser apropiados para entornos de gestión de caché?
+A. Almacén clave-valor simple.
+B. Almacén clave-valor sofisticado.
+C. Base de datos relacional.
+D. Almacén de documentos.
+2. ¿En qué categoría de base de datos NoSQL se clasifica a MongoDB?
+A. Almacén clave-valor simple.
+B. Almacén clave-valor sofisticado.
+C. Base de datos relacional.
+D. Almacén de documentos.
+3. ¿Cuál de las siguientes afirmaciones es correcta?
+A. Cassandra se caracteriza porque todos sus nodos actúan por igual y se
+agrupan en anillo.
+B. Cassandra y Neo4j están desarrolladas en Java.
+C. Neo4j es una base de datos transaccional compatible con ACID y que
+almacena y procesa grafos nativos.
+D. Todas las afirmaciones anteriores son correctas.
+4. ¿Cuál es el equivalente a un registro en MongoDB?
+A. Base de datos.
+B. Collection.
+C. Tabla.
+D. Documento.
+Test
+Bases de Datos para el Big Data
+Tema 2. Test
+35
+5. ¿Cuál es el término equivalente a una tabla en MongoDB?
+A. Base de datos.
+B. Collection.
+C. Registro.
+D. Documento.
+6. ¿Cuándo se detalla el uso de la primera base de datos NoSQL?
+A. En 2007, cuando Amazon liberó DynamoDB.
+B. Con Carlo Strozzi en 1998.
+C. En 1965 con MultiValue.
+D. Eric Evans en 2009.
+7. ¿Cuál de las siguientes es una ventaja de las bases de datos NoSQL?
+A. No generan cuellos de botella.
+B. Tecnología madura.
+C. Responden a la necesidad de escalabilidades horizontal demandada cada
+vez por más empresas y, además, de manera sencilla.
+D. Las respuestas A y C son correctas.
+8. ¿Cuál de las siguientes afirmaciones es correcta?
+A. Todo sistema distribuido no puede garantizar a la vez que haya
+consistencia, disponibilidad y tolerancia a particiones.
+B. Un sistema distribuido garantiza al menos disponibilidad y consistencia.
+C. Un sistema distribuido que garantiza la consistencia y la tolerancia a
+particiones no sacrifica por ello la disponibilidad.
+D. Todas las afirmaciones anteriores son correctas
+Test
+Bases de Datos para el Big Data
+Tema 2. Test
+36
+9. ¿Qué patrón de diseño de MongoDB permite incluir un documento dentro de
+otro?
+A. Uno-a-uno con documentos embebidos.
+B. Uno-a-uno con documentos referidos.
+C. Uno-a-varios con documentos referidos.
+D. Las respuestas B y C son correctas.
+10. ¿Qué patrón de diseño de MongoDB permite incluir una lista de referencias a
+otros documentos dentro de un documento principal?
+A. Uno-a-uno con documentos embebidos.
+B. Uno-a-uno con documentos referidos.
+C. Uno-a-varios con documentos referidos.
+D. Las respuestas B y C son correctas.
 
 
 ## Tema 3. MongoDB
@@ -815,16 +951,89 @@ db.libros.deleteMany({precio : {$gte : 50 }})
 
 ´´´
 
+## Cuestionario 
+1. ¿Qué comando de la consola de MongoDB se utiliza para indicar la base de
+datos con la que se trabajará?
+A. select.
+B. find.
+C. use.
+D. Las respuestas A y C son correctas.
+2. ¿Cuál de las siguientes afirmaciones es correcta?
+A. MongoBooster es una herramienta GUI multiplataforma que facilita la
+construcción de consultas.
+B. MongoDB Compass es una herramienta no propietaria para la
+manipulación externa de bases de datos MongoDB.
+C. MongoBooster y MongoDB Compass proporcionan información estadística
+y de rendimiento de una base de datos MongoDB.
+D. Todas las afirmaciones anteriores son correctas.
+3. ¿Cuál será el resultado al insertar un documento que posee un atributo más al
+resto de atributos de la colección?
+A. Dará un fallo al insertar los datos porque el modelo de datos es diferente.
+B. Insertará los datos a la colección.
+C. Insertará los datos a la colección y creará el nuevo atributo vacío en el
+resto de documentos.
+D. Insertará los datos a la colección, pero sin el nuevo atributo para cumplir
+con el modelo.
+Test
+Bases de Datos para el Big Data
+Tema 3. Test
+52
+4. ¿Qué comando puede utilizarse en MongoDB para la creación de un nuevo
+documento dentro de una collection?
+A. save.
+B. insert.
+C. create.
+D. Las respuestas A y B son correctas.
+5. ¿Cuál es el nombre del atributo especial en las collections de MongoDB que
+ayuda a identificar de manera única a cada documento?
+A. _id.
+B. ID.
+C. Primary key.
+D. Identifier.
+6. ¿Qué método permite modificar los datos de un documento sin tener que incluir
+el documento completo como argumento?
+A. save.
+B. store.
+C. update.
+D. set.
+7. La operación MongoDB equivalente a JOIN en SQL es:
+A. Se puede conseguir concatenando sentencias find en la misma operación.
+B. El aggregation framework.
+C. MongoDB no tiene operación equivalente a JOIN hasta su versión 3.2.
+D. Ninguna de las anteriores es cierta.
+Test
+Bases de Datos para el Big Data
+Tema 3. Test
+53
+8. ¿Qué situación tiene que darse para que el comando save actualice un
+documento?
+A. Que el argumento contenga un identificador existente en la collection.
+B. Que el segundo argumento en el comando sea el valor true.
+C. Que el argumento se parezca en más de un 50 % a un documento en la
+collection.
+D. save no puede utilizarse para actualizar documentos.
+9. ¿Qué comando se utiliza en MongoDB para eliminar un conjunto de
+documentos?
+A. save.
+B. delete.
+C. remove.
+D. unset.
+10. ¿Qué comando puede aplicarse sobre el resultado de una consulta en
+MongoDB para restringir el número de documentos retornados?
+A. limit.
+B. restrict.
+C. skip.
+D. sort.
+
+
 ## Tema 4 Agregación
-
-
 
 ## Videoclase 1. Framework de Agregación
 
 - Conceptos Basicos de agregacion de MongoDB 
   - Se usa para consultar datos agrupados y obtener un resultado 
   - Ejemplo: Suma total de ventas por años 
-- MongoDB Ofrece tre mnetodos: 
+- MongoDB Ofrece tres metodos: 
   - Map-Reduce: Es mas potente pero complejo de usar 
     - Map: permite filtrar los datos 
     - Reduce: permite agregar reglas de operacion sobre los datos.
@@ -921,3 +1130,110 @@ db.ventas.mapReduce(
 - El Aggregation Framework tiene una fase de optimización interna que mejora el rendimiento, lo que lo hace más eficiente que Map-Reduce en muchas operaciones.
 - El Aggregation Framework mejora el rendimiento al utilizar índices y aprovechar la capacidad de sharding de MongoDB, lo que permite distribuir el procesamiento de datos en diferentes nodos. 
 - El operador $lookup se utiliza para realizar una combinación de documentos de diferentes colecciones, lo que permite trabajar con datos relacionados en el Aggregation Framework.
+
+
+## 4.2. Conceptos
+## 4.3. Map-Reduce
+## 4.4. Aggregation Framework
+## 4.5. Casos prácticos
+
+## Cuestionario 
+
+1. ¿Para qué son útiles las funciones de agregación?
+  A. Para agrupar datos.
+  B. Para realizar cálculos.
+  C. Para crear nuevas colecciones.
+  D. Todas las anteriores son correctas. -> Correcto 
+
+2. ¿Qué método puede utilizarse en MongoDB para agregar información de
+documentos en una collection?
+  A. sum.
+  B. Aggregate, a partir de la versión 2.2.
+  C. Map-Reduce.
+  D. Las respuestas B y C son correctas. -> Correcta 
+
+3. ¿Cuál de las siguientes son operaciones específicas de agregación?
+  A. sum.
+  B. Map-Reduce.
+  C. count.
+  D. Las respuestas A y C son correctas. -> Correcta
+
+4. ¿Cuál es el objetivo principal de la función map?
+  A. Generar los pares clave-valor.
+  B. Realizar operaciones con los atributos de la colección.
+  C. Operar sobre los pares clave-valor.
+  D. Crear una nueva colección. -> Duda
+
+
+5. ¿Cuál es el objetivo principal de la función reduce?
+  A. Generar los pares clave-valor.
+  B. Realizar operaciones con los atributos de la colección.
+  C. Operar sobre los pares clave-valor. -> Correcto 
+  D. Crear una nueva colección.
+
+6. ¿Qué comando se utiliza en una función map para generar el par clave-valor que
+será procesado posteriormente?
+  A. generate.
+  B. return. -> Duda
+  C. emit. -> emitir notificaciones sincronicas entre la BD y la Aplicacion 
+  D. yield.
+
+7. ¿Cuál de las siguientes es una ventaja de framework de agregación de
+MongoDB?
+  A. Rendimiento.
+  B. Potencia.
+  C. Simplicidad.
+  D. Las respuestas A y C son correctas. -> Correcto
+
+8. ¿En qué está modelado el framework de agregación?
+  A. Funciones.
+  B. Etapas. -> Correcto 
+  C. Sentencias SQL.
+  D. Agrupaciones.
+
+9. ¿Qué campo es obligatorio especificar en framework de agregación?
+  A. _id. -> Correcto 
+  B. Object.
+  C. $sum.
+  D. $group.
+
+10. ¿Cuál de los siguientes es un operador del framework de agregación?
+  A. $gt.-> Correcta 
+  B. $map.
+  C. $year.
+  D. Todos los anteriores son correctos.
+
+
+## Tema 5. Gestión de MongoDB
+
+## Videoclase 1. Gestión de MongoDB
+
+## Notas:
+- En entornos de producción, garantizar la seguridad de los datos es crucial, por lo que MongoDB implementa medidas para proteger la integridad y confidencialidad de la información mediante autenticación de usuarios y restricciones de acceso.
+
+- El usuario administrador tiene privilegios esenciales para gestionar otros usuarios y acceder a todas las bases de datos en el sistema, lo que es clave para la administración segura de MongoDB.
+
+- La creación de usuarios con los privilegios adecuados y la autenticación de estos son pasos fundamentales en la configuración de la seguridad en MongoDB.
+
+-  La asignación correcta de roles y funciones asegura que los usuarios tengan acceso solo a las operaciones y datos que les corresponden, lo que contribuye a la seguridad e integridad de la base de datos.
+
+- Sharding es el proceso que permite repartir la carga de la base de datos en diferentes servidores, optimizando el rendimiento y la escalabilidad del sistema MongoDB.
+
+## Videoclase 2. 
+
+## Notas: 
+
+
+## Videoclase 3. 
+
+## Notas: 
+
+
+
+## 5.2. Seguridad
+
+## 5.3. Respaldo
+
+## 5.4. Rendimiento
+
+## 5.5. Sharding
