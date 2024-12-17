@@ -91,6 +91,69 @@ La toma de decisiones basada en datos es un proceso que utiliza análisis estad�
 A través de técnicas como el aprendizaje automático, la minería de datos y la inteligencia artificial, la ciencia de datos transforma los datos en información valiosa y accionable. Esto permite a las empresas tomar decisiones más informadas y basadas en evidencias, reduciendo así la incertidumbre y el riesgo.
 
 
+## Cuestionario 
+
+1. ¿Qué es la cadena de valor en la ciencia de datos?
+    A. Un software específico para análisis de datos.
+    B. Un proceso que transforma los datos en valor agregado para las empresas. -> Correcto 
+    C. Una metodología de visualización de datos.
+    D. Un tipo de algoritmo de aprendizaje automático.
+
+2. ¿Qué caracteriza a los datos masivos?
+    A. Pequeños volúmenes de información.
+    B. Procesamiento manual de datos.
+    C. Grandes volúmenes de datos que requieren herramientas especiales. -> Correcto 
+    D. Datos siempre estructurados.
+
+3. ¿Cuál es una aplicación de la ciencia de datos en las empresas?
+    A. Reducir la cantidad de datos a analizar.
+    B. Ignorar las tendencias del mercado.
+    C. Tomar decisiones basadas en conjeturas. -> correcto 
+    D. Optimizar procesos y mejorar la eficiencia operativa.
+
+4. ¿Qué se requiere en la fase de recopilación de datos?
+    A. Fuentes confiables y métodos eficientes. --> Correcto 
+    B. Limitar la cantidad de datos recogidos.
+    C. Usar exclusivamente datos estructurados.
+    D. Evitar el uso de tecnología moderna.
+
+5. ¿Qué permite el aprendizaje automático en el contexto de datos masivos?
+    A. Reducir la cantidad de datos necesarios para análisis.
+    B. Automatizar tareas complejas de análisis de datos. -> Datos
+    C. Evitar el uso de cualquier tipo de datos.
+    D. Utilizar exclusivamente datos antiguos.
+
+6. ¿Cuál es el primer paso en la cadena de valor de la ciencia de datos?
+    A. Visualización de datos. 
+    B. Análisis de datos.
+    C. Recopilación de datos. -> Correcto 
+    D. Toma de decisiones.
+
+7. ¿Qué tecnologías son cruciales para manejar datos masivos?
+    A. Aprendizaje automático e inteligencia artificial. --> Correcto 
+    B. Calculadoras básicas.
+    C. Herramientas de escritura manual.
+    D. Procesamiento de texto simple.
+
+8. ¿Qué beneficios ofrece la ciencia de datos a las empresas?
+    A. Limita las fuentes de datos utilizadas.
+    B. Ignora las tendencias y patrones en los datos.
+    C. Ayuda a tomar decisiones basadas en datos y resolver problemas --> Correcto 
+    complejos.
+    D. Fomenta decisiones basadas únicamente en la intuición.
+
+9. ¿Qué implica la acción basada en decisiones dentro de la cadena de valor de los datos?
+    A. No tomar ninguna medida basada en los análisis.
+    B. Implementar decisiones que crean valor para la organización. --> Correcto 
+    C. Desconocer los resultados del análisis.
+    D. Revertir todas las decisiones previas.
+
+10. ¿Qué se necesita para maximizar el potencial de los datos en beneficio de la empresa?
+    A. Herramientas y técnicas específicas en cada etapa de la cadena de valor. --> Correcto 
+    B. Evitar la adopción de nuevas tecnologías.
+    C. Reducir la cantidad de datos analizados.
+    D. Concentrarse en datos irrelevantes.
+
 
 ## Tema 2. Ciclo de vida de los datos masivos
 
@@ -326,6 +389,98 @@ Finalmente, la interpretación de los datos es el último paso, donde los result
 - Análisis de sensibilidad: Evalúa cómo diferentes inputs afectan los resultados de un modelo, ayudando a identificar variables críticas y a entender la robustez de los modelos.
 - Técnicas de visualización avanzadas: Incluye el uso de mapas de calor, gráficos de red y visualizaciones tridimensionales para una representación más rica y detallada de los datos.
 - Discusión crítica y revisión por pares: Fomenta la evaluación y validación de los resultados de análisis mediante la discusión con expertos y colegas, asegurando la precisión y objetividad.
+
+## Cuestionario 
+
+1. ¿Cómo clasificarías un fichero JSON en función de su organización?
+    A. Datos estructurados.
+    B. Datos semiestructurados.        -> Correcto 
+    C. Datos completamente estructurados.
+    D. Ninguna de ellas.
+
+2. ¿Cómo clasificarías una base de datos relacional en función de su organización?
+    A. Datos estructurados.    --> Correcto 
+    B. Datos semiestructurados.
+    C. Datos completamente estructurados.
+    D. Ninguna de ellas.
+
+3. ¿Cuáles de los siguientes serían ejemplos de datos no estructurados?
+    A. Imágenes, vídeos y sonidos. --> Correctos 
+    B. Bases de datos SQL y OLAP.
+    C. Archivos JSON y XML.
+    D. Archivos CSV.
+
+4. Si estoy creando un instrumento para capturar secuencias de voz humana para
+su posterior procesamiento, ¿a qué frecuencia mínima debería muestrear el audio
+para no tener aliasing?
+    A. 10 Hz.
+    B. 4 KHz.
+    C. 8000 Hz.
+    D. 16 KHz. --> Correcto 
+
+5. ¿En qué método de muestreo probabilístico se crean subconjuntos de los
+conjuntos de datos o de la población en función de un factor común y se recogen
+muestras al azar de cada subgrupo?
+    A. Muestro multietapa.
+    B. Muestro sistemático.
+    C. Muestreo por conglomerados.
+    D. Muestro estratificado. ---> Correcto 
+
+
+- Muestreo estratificado: En este método, la población se divide en subgrupos homogéneos (estratos) basados en una característica relevante para la investigación (edad, género, nivel de ingresos, etc.). Luego, se selecciona una muestra aleatoria de cada estrato, asegurando así que cada subgrupo esté representado en la muestra final.
+
+- Muestreo multietapa: Implica seleccionar muestras en varias etapas, como seleccionar primero estados, luego ciudades, y finalmente hogares. No se enfoca en crear subgrupos homogéneos.
+
+- Muestreo sistemático: Se selecciona un punto de partida aleatorio y luego se seleccionan elementos a intervalos regulares de la lista de población. No implica la creación de subgrupos.
+
+- Muestreo por conglomerados: Se divide la población en grupos heterogéneos (conglomerados) y se selecciona una muestra aleatoria de conglomerados. Luego, se incluyen todos los elementos de los conglomerados seleccionados. A diferencia del estratificado, los conglomerados son heterogéneos.
+
+
+6. En el método de muestreo no probabilístico intencional:
+    A. Los datos se recogen de un grupo fácilmente accesible y disponible.
+    B. Los datos se recogen de cada sujeto que cumple los criterios hasta
+    alcanzar el tamaño de muestra predeterminado.
+    C. El investigador selecciona los datos a muestrear basándose en criterios predefinidos. -->Correcto 
+    D. El investigador garantiza una representación equitativa dentro de la
+    muestra para todos los subgrupos del conjunto de datos o población.
+
+
+Opción A: Corresponde más al muestreo por conveniencia, otro tipo de muestreo no probabilístico, en el cual se seleccionan los participantes más accesibles.
+Opción B: Esta opción describe más un tipo de muestreo por cuotas, en el que se establecen cuotas para cada subgrupo y se seleccionan participantes hasta cumplirlas.
+Opción C: Esta es la definición precisa del muestreo intencional. El investigador utiliza su juicio para seleccionar a los participantes que considera más adecuados para el estudio, basándose en criterios específicos relacionados con los objetivos de la investigación.
+Opción D: La representación equitativa es una característica de los métodos de muestreo probabilístico, no de los no probabilísticos.
+
+
+7. Los datos recogidos por el propio científico de datos mediante encuestas se
+considerarían:
+    A. Fuentes de datos primarias.  --> Correcto 
+    B. Fuente de datos secundarias.
+    C. Fuentes de datos terciarias.
+    D. Ninguna de las demás respuestas es correcta.
+
+- Fuentes de datos primarias: Son aquellos datos que son recolectados directamente por el investigador para un propósito específico. En este caso, el científico de datos está recolectando los datos a través de encuestas, lo que significa que él es la fuente original de esa información.
+- Fuentes de datos secundarias: Son datos que ya han sido recopilados por alguien más y que el investigador utiliza para su análisis. Ejemplos incluyen datos de censos, informes de empresas o investigaciones previas.
+- Fuentes de datos terciarias: Se refieren a materiales que indexan o resumen fuentes primarias y secundarias. Un ejemplo sería un directorio de revistas científicas.
+
+
+8. El método de captura de datos de forma automatizada mediante el procesamiento de páginas HTML de un sitio web se conoce como:
+    A. Web semántica.
+    B. Web service.
+    C. Web scraping. --> Correcto 
+    D. Ninguna de las demás respuestas es correcta.
+
+9. ¿En qué categoría de captura o fuente de datos encaja la lectura de información
+del pulso cardíaco por una pulsera de actividad?
+    A. Captura manual.
+    B. Sensores.  
+    C. Captura automatizada.
+    D. B y C son correctas. --> Correcto 
+
+10. La infografía y la visualización de datos tienen como objetivo principal:
+    A. Presentar la información de una manera muy atractiva. --> Correcto 
+    B. Informar y ampliar el conocimiento.
+    C. Mostrar una información diferente al lector.
+    D. Buscar y organizar datos.
 
 
 ## Tema 3. Arquitecturas Típicas en Proyectos de Datos Masivos
@@ -577,6 +732,81 @@ Visualización interactiva de datos a gran escala. Utilizado en análisis de gra
     - Mejor toma de decisiones.
     - Eficiencia operativa y reducción de costos.
 
+## Cuestionario 
+
+1. ¿Qué nombre recibe un conjunto de datos persistente utilizado por un sistema de software?
+    A. Archivo.
+    B. Base de datos.
+    C. Registro.
+    D. Las respuestas A y B son correctas. -> Correcto  
+
+2. ¿Qué tipo de datos puede almacenar un data warehouse?
+    A. Datos estructurados.   --> Correcto 
+    B. Datos no procesados.
+    C. Las respuestas A y B son correctas.
+    D. Ficheros planos.
+
+3. Al proceso de utilizar métodos de minería de datos para extraer lo que se
+considera conocimiento según la especificación de medidas y umbrales, utilizando
+una base de datos junto con procesos de transformación de los datos se lo conoce
+como:
+    A. CRISP-DM.
+    B. ETL.
+    C. KDD.
+    D. Machine learning.  --> Correcto 
+
+
+4. Entre las ventajas de la preparación de los datos nos encontramos con las
+siguientes (marca todas las correctas):
+    A. Preparar los datos para el análisis de forma rentable y eficiente.
+    B. Garantizar que los datos utilizados para el BI tengan niveles de calidad
+    suficientes.
+    C. Crear duplicados de los datos para que puedan utilizarse en múltiples
+    aplicaciones de forma segura.
+    D. Todas son correctas.
+
+
+5. La limpieza de datos corrige problemas como:
+    A. Datos duplicados.
+    B. Datos redundantes. --> Correcto 
+    C. Datos no estructurados.
+    D. Datos incoherentes.
+
+6. ¿Cuáles de los siguientes repositorios de datos almacenan datos no
+estructurados, semiestructurados y estructurados?
+    A. Data warehouses.
+    B. A y C son correctas.
+    C. Data lakes.
+    D. Data marts.
+
+7. ¿Cuáles de los siguientes repositorios de datos siguen una estructura de
+procesamiento schema on write? Marca todas las correctas:
+    A. Data swamps.
+    B. Data warehouses.
+    C. Data lakes.
+    D. Data marts.
+
+8. ¿Cuál de las siguientes afirmaciones describe mejor el propósito del proceso
+ETL?
+    A. Procesar eventos en tiempo real para análisis instantáneo.
+    B. Integrar datos de múltiples fuentes en un formato homogéneo.
+    C. Enviar y recibir mensajes entre diferentes aplicaciones.
+    D. Visualizar datos para reportes y paneles de control.
+
+9. ¿Cuál es una fase crítica del proceso ETL donde se aplican reglas para corregir o
+eliminar datos incorrectos o incompletos?
+    A. Extracción.
+    B. Transformación.
+    C. Carga.
+    D. Almacenamiento.
+
+10. ¿Qué aspecto del proceso ETL se enfoca principalmente en mejorar el
+rendimiento de las consultas y la escalabilidad del sistema de almacenamiento de
+datos?
+    A. Optimización de la extracción.
+    B. Paralelización de la transformación.
+    C. Incremento en la frecuencia de carga.
+    D. Diseño del esquema de datos
 
 
 
@@ -871,6 +1101,65 @@ valor justo de diversos activos, incluyendo acciones, bonos y derivados
         - Fijación de precios: Análisis de los precios de la competencia.
         - Marketing: Diseño de campañas publicitarias diferenciadas.
 
+## Cuestionario 
+
+1. ¿Qué técnica utilizan las empresas como Amazon para optimizar su cadena de suministro?
+    A. Análisis de sentimiento.
+    B. Algoritmos predictivos.
+    C. Minería de texto.
+    D. Análisis de redes sociales.
+
+2. ¿Qué método utiliza Netflix para personalizar las recomendaciones a sus usuarios?
+    A. Clustering.
+    B. Regresión lineal.
+    C. Aprendizaje automático.
+    D. Análisis factorial.
+
+3. ¿Qué herramienta matemática es crucial en la evaluación de riesgos financieros en empresas como Goldman Sachs?
+    A. Cálculo diferencial.
+    B. Teoría de grafos.
+    C. Modelos predictivos.
+    D. Geometría analítica.
+
+4. En el contexto de la ciencia de la computación, ¿qué técnica es fundamental para el procesamiento de grandes volúmenes de datos?
+    A. Programación funcional.
+    B. Algoritmos de ordenamiento.
+    C. Paralelización de procesos.
+    D. Uso de variables estáticas.
+
+5. ¿Qué técnica matemática es ampliamente utilizada para segmentar audiencias en marketing digital?
+    A. Cálculo integral.
+    B. Análisis de cluster.
+    C. Álgebra lineal.
+    D. Probabilidad y estadística.
+
+6. ¿Cómo contribuye la teoría de grafos en la ciencia de datos?
+    A. Optimización de algoritmos de búsqueda.
+    B. Mejora de interfaces gráficas.
+    C. Análisis de redes sociales.
+    D. Desarrollo de juegos.
+
+7. ¿Qué metodología utiliza Starbucks para determinar las ubicaciones óptimas para sus nuevas tiendas?
+    A. Simulaciones Monte Carlo.
+    B. Análisis de ubicación.
+    C. Modelos de regresión.
+    D. Análisis de la competencia.
+8. ¿Cuál es un ejemplo de aplicación de regresión lineal en ciencia de datos?
+    A. Predecir el precio futuro de las acciones.
+    B. Codificar datos para algoritmos de cifrado.
+    C. Crear gráficos interactivos.
+    D. Diseñar bases de datos.
+
+9. ¿Qué representa la comunicación efectiva de los resultados en proyectos de ciencia de datos en negocios?
+    A. Publicar papers académicos.
+    B. Convencer a los stakeholders del valor de los hallazgos.
+    C. Implementar directamente los cambios en la producción.
+    D. Ninguna de las anteriores.
+10. ¿Qué rol juegan las visualizaciones de datos en la comunicación científica de datos?
+    A. Solo para presentaciones académicas.
+    B. Para simplificar el código.
+    C. Para hacer los hallazgos comprensibles y accesibles.
+    D. Para aumentar la carga computacional.
 
 
 ## Tema 5. Áreas de aplicación de la Ciencia de Datos
