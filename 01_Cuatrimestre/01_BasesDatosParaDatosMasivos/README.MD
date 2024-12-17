@@ -1219,15 +1219,50 @@ MongoDB?
 
 - Sharding es el proceso que permite repartir la carga de la base de datos en diferentes servidores, optimizando el rendimiento y la escalabilidad del sistema MongoDB.
 
-## Videoclase 2. 
+## Videoclase 2: Respaldo de datos
 
 ## Notas: 
+- Es copiar el directorio del sistema de ficheros a la nueva ubicación, puede generar problemas si no se detiene el gestor de base de datos. 
+- Ser recomienda detener el servidor 
+- Herramienta MongoDumb generar copias de seguridad 
+- Herramienta MongoRestore se puede restaurar  datos de seguridad por defecto busca el dorectorio dumb
+- MongoDumb Ejemplo -> mongodump --host mongoHost.es --port 27017 --out /data/backup/mongodump --collection miColeccion --db miBaseDeDatos
+- MongoRestore Ejemplo -> mongorestore --port 27017 /db/backup/mongodump-2013-10-24 
+- avanzado -> mongorestore --host mongodbl.example.net --port 3017 --username user password pass /db/backup/mongodump-2013-10-24
+- 
 
+- Si el servidor MongoDB está en ejecución durante la copia del sistema de ficheros, existe el riesgo de corrupción de datos, por lo que se recomienda detener el servidor antes de realizar la copia.
 
-## Videoclase 3. 
+- Mongodump es la herramienta utilizada para realizar copias de seguridad de bases de datos completas, colecciones individuales o partes específicas mediante consultas.
 
-## Notas: 
+- Mongodump es la herramienta utilizada para realizar copias de seguridad de bases de datos completas, colecciones individuales o partes específicas mediante consultas.
 
+- Las versiones recientes de mongodump no son compatibles con versiones anteriores de datos BSON, lo que debe tenerse en cuenta al realizar copias de seguridad y restauraciones.
+
+- Mongorestore busca de manera predeterminada las copias de seguridad en el directorio "dump/" para realizar las restauraciones.
+
+## Videoclase 3: Uso de índices
+
+## Notas:
+- si creamos indices opotmizamos los tiempos de consilta si aplicamos indices entres las colecciones 
+- Es una estretgia fundamental para mejorar el rendicmiento del sistema 
+- Ejemplos de indices 
+  - Indices Simples: se genera para un solo atributo ejemplo nombre ->
+  - Indice Compuestos: se genera para varios atributos ejemplo nombre, edad
+  - Indices de subdocumentos: para atributo dentro de un objeto,  como info.friend
+  - Indices Arrays: para claves que contienen arrays como hobnies 
+  - Indices 2d: usados para geolocalización se usan coordernadas como x & y 
+
+- Sharding: es una tecnica para distribuir y dividir conjuntos de datos en varios servidores, permite aumentar el rendimiento y la capacidad. 
+  - Shard (Fragmentos): Escalabilidad Horizontal, se generan nodos responsables de almacenar datos, cada shard es una replica set que ofrece disponibilidad y consistencia de datos. 
+  - Query Routers: Instancias actuan como interfaz entre los clientes y los shard, dirigiendo las consultas al shard apropiado. 
+  - Config Servers: es el admin permite que los routers validen sus metadatos para luego dirigirlo al shard que contoiene la informacion 
+
+  - Los índices mejoran el tiempo de ejecución de las consultas al permitir búsquedas más rápidas sobre los atributos indexados, lo que optimiza el rendimiento de las operaciones en la base de datos.
+  - Al filtrar comúnmente por el atributo "email", sería eficiente crear un índice sobre este atributo para mejorar el rendimiento de las consultas.
+  - El comando createIndex es utilizado en MongoDB para crear índices, con las claves representando los atributos sobre los cuales se va a crear el índice y las opciones como parámetros adicionales.
+  - Los índices 2d se utilizan para claves que contienen coordenadas geoespaciales, como "location", y permiten realizar consultas geoespaciales eficientes.
+  - Los config servers almacenan metadatos sobre la información de los shards y son consultados por los query routers para determinar en qué shard se encuentran los datos específicos.
 
 
 ## 5.2. Seguridad
