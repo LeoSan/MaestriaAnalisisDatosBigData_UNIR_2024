@@ -1163,3 +1163,20 @@ valor justo de diversos activos, incluyendo acciones, bonos y derivados
 
 
 ## Tema 5. Áreas de aplicación de la Ciencia de Datos
+
+
+# Notas Clases 
+
+## Clase 1: 05 de Noviembre 
+
+## Clase 2: 19 Noviembre 
+
+
+
+## Clase 5: 17 De Diciembre 
+
+- Segunda Actividad 2 Grupal 
+- Entregables 
+    - PDF 
+    - Presentación 
+    - Video 
