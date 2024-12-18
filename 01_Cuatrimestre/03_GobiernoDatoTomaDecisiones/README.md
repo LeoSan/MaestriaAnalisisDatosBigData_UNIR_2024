@@ -555,3 +555,6 @@ escenarios es:
     1. Se recopilan datos de distintas fuentes, incluso no estructuradas, y se emplean distintos dispositivos. Se alcanzan grandes conjuntos de datos integrados para realizar análisis y facilitar la toma de decisiones.
     2. Las políticas, procedimientos y buenas prácticas para la gestión de datos se aplican uniformemente, lo que potencia la calidad de la información.
     3. Se establecen procesos de mejora continua para monitorear la calidad de los datos e invertir en ella. Se emplea tecnología innovadora que facilita la gobernanza y la toma de decisiones inteligentes.
+
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_014.png)
