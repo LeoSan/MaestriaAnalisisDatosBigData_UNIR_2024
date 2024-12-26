@@ -1267,8 +1267,526 @@ MongoDB?
 
 ## 5.2. Seguridad
 
+- Mongodb por defecto no inicia con autenticación sin embargo podemos crear usuarios y crear ciertos privilegios. 
+- Podemos usar el comando db.createUser(<Nombre de usuario>, <Contraseña de usuario>) para crear usuarios. 
+- Un usuario puede tener privilegios en diferentes bases de datos. Si necesita que un
+usuario tenga privilegios en varias bases de datos, crea un solo usuario con roles
+que otorguen los privilegios de base de datos aplicables en lugar de crear el usuario
+varias veces en diferentes bases de datos.
+- Para autenticarse desde la consola de MongoDB se utiliza el comando db.auth :
+db.auth(<Nombre de usuario>, <Contraseña de usuario>)
+
+
+## Ejemplo 
+
+db.createUser({
+ user:"admin",
+ pwd: "mipassword“,
+ roles:[
+ "clusterAdmin",
+ "readAnyDatabase",
+ "readWriteAnyDatabase",
+ "userAdminAnyDatabase",
+ "dbAdminAnyDatabase“
+ ]
+});
+
+## Roles
+- read: proporciona la capacidad de leer datos de todas las colecciones que no son
+del sistema y de las siguientes colecciones del sistema: system.indexes, system.js y
+system.namespaces. 
+
+- readWrite: proporciona todos los privilegios del rol de lectura y la capacidad de
+modificar datos de todas las colecciones que no son del sistema y de la colección
+system.js .
+
+- Cada base de datos incluye los siguientes roles de administración de base de datos:
+
+- dbadmin: proporciona la capacidad de realizar tareas administrativas, tales como
+tareas relacionadas con el esquema, indexación y recopilación de estadísticas. Esta
+función no otorga privilegios para la administración de usuarios y roles.
+
+- dbOwner: proporciona la capacidad de realizar cualquier acción administrativa en la
+base de datos. Este rol combina los privilegios otorgados por las funciones readWrite,
+dbAdmin y userAdmin .
+
+- userAdmin: proporciona la capacidad de crear y modificar roles y usuarios en la
+base de datos actual. Dado que el rol userAdmin permite a los usuarios otorgar
+cualquier privilegio a cualquier usuario, incluyendo a ellos mismos, el rol también
+indirectamente proporciona acceso de superusuario a la base de datos o, si se
+extiende a la base de datos de administración, al clúster.
+
+La base de datos admin incluye las siguientes funciones para administrar todo el
+sistema en lugar de una base de datos específica:
+
+- clusterAdmin: proporciona el mayor acceso de administración de clústeres. Este rol
+combina los privilegios otorgados por las funciones clusterManager, clusterMonitor y
+hostManager. Además, la función proporciona la acción dropDatabase .
+
+- clusterManager: proporciona acciones de administración y supervisión en el clúster.
+Un usuario con esta función puede acceder a las bases de datos de configuración y
+local, que se utilizan en sharding y replicación, respectivamente.
+
+- clusterMonitor: proporciona acceso de solo lectura a las herramientas de
+supervisión, como MongoDB Cloud Manager y el agente de supervisión Ops
+Manager.
+
+- hostManager: proporciona la capacidad de supervisar y administrar servidores.
+
+
+La base de datos admin incluye las siguientes funciones para realizar copias de
+seguridad y restaurar datos:
+
+- backup: proporciona los privilegios necesarios para realizar copias de seguridad de
+los datos. Esta función proporciona suficientes privilegios para utilizar el agente de
+copia de seguridad de MongoDB Cloud Manager, el agente de copia de seguridad
+de Ops Manager o para utilizar mongodump .
+
+- restore: proporciona los privilegios necesarios para restaurar los datos con
+mongorestore sin la opción --oplogReplay o sin los datos de la colección system.profile
+
+Estas funciones en la base de datos de administración se aplican a todas las bases
+de datos local y config excepto en una instancia mongod:
+
+- readAnyDatabase: proporciona los mismos permisos de solo lectura, excepto los
+que se aplican sobre todas las bases de datos, las locales y el config del clúster. El
+rol también proporciona la acción listDatabases en el clúster como un todo.
+
+- readWriteAnyDatabase: proporciona los mismos permisos de lectura y escritura
+que readWrite , excepto que se aplica a todas las bases de datos local y config del
+clúster. El rol también proporciona la acción listDatabases en el clúster como un todo.
+
+- userAdminAnyDatabase: proporciona el mismo acceso a las operaciones de
+administración de usuarios como userAdmin, excepto que se aplica a todas las
+bases de datos local y config del clúster. 
+
+- dbAdminAnyDatabase: proporciona el mismo acceso a las operaciones de
+administración de bases de datos que dbAdmin , excepto que se aplica a todas las
+bases de datos locales y de configuración del clúster. El rol también proporciona la
+acción listDatabases en el clúster como un todo.
+
 ## 5.3. Respaldo
+
+Existen muchas formas de generar respaldo la mas rudimentaria es copiar el directorio del sistema de ficheros a la nueva
+ubicación. Por defecto, los datos de MongoDB se almacenan en la ruta /data/db en
+Linux, o C:\data\db en Windows (ruta recomendada). Es importante tener en cuenta
+que los datos no se copiarán adecuadamente si el servidor de MongoDB se
+está ejecutando en el momento de realizar la copia
+
+Además, MongoDB permite exportar e importar bases de datos mediante dos
+herramientas a utilizar desde la línea de comandos: mongodump y mongorestore ,
+respectivamente
+
+## ¿Qué es mongodump?
+
+Es una herramienta de línea de comandos que forma parte de la suite de herramientas de MongoDB. Su función principal es realizar copias de seguridad (dumps) de bases de datos o colecciones individuales en formato BSON. Este formato es binario y optimizado para MongoDB, lo que lo hace eficiente para realizar restauraciones posteriores.
+
+## Opciones adicionales:
+
+- gzip: Comprime la copia de seguridad en formato gzip para ahorrar espacio.
+- archive: Crea un archivo único que contiene todas las colecciones de la base de datos.
+- authenticationDatabase: Especifica la base de datos de autenticación si tu sistema requiere autenticación.
+- username y --password: Proporciona las credenciales de autenticación.
+
+## Ejemplo Código básico 
+
+- mongodump -d miBaseDatos -c usuarios -o /var/backups/usuarios.bson
+
+## Ejemplo avanzado 
+
+- mongodump -d miBaseDatos -o backup --gzip --authenticationDatabase admin --username miUsuario --password miContraseña
+
+Nota: las utilidades mongodump y mongorestore funcionan con volcados de datos
+BSON y son útiles para crear copias de seguridad de pequeñas implementaciones.
+
+
+## ¿Qué es mongorestore?
+
+Es una herramienta de línea de comandos de MongoDB que se utiliza para restaurar una base de datos completa o una colección específica a partir de un volcado binario creado previamente con mongodump.
+
+## Opciones adicionales:
+
+mongorestore ofrece muchas opciones adicionales para personalizar la restauración. Algunas de las más comunes incluyen:
+
+- uri: Especifica la cadena de conexión a un clúster MongoDB.
+- host: Especifica el host del servidor MongoDB.
+- port: Especifica el puerto del servidor MongoDB.
+- archive: Indica que la entrada es un archivo de respaldo comprimido.
+- drop: Elimina la base de datos de destino antes de restaurar.
+- gzip: Descomprime el archivo de respaldo gzip.
+- verbose: Muestra información detallada sobre el proceso de restauración.
+
+## Ejemplo Código básico 
+
+- mongorestore --uri mongodb://user:password@host:port/database --archive --gzip /backup/mydatabase.gz
+
+## Ejemplo avanzado 
+
+- mongodump -d miBaseDatos -o backup --gzip --authenticationDatabase admin --username miUsuario --password miContraseña
+
+La replicación es una característica de MongoDB que permite la redundancia de
+datos, así como incrementar su disponibilidad. La arquitectura básica de replicación
+en MongoDB sigue un modelo Maestro-Esclavo. La instancia maestra recibe
+operaciones de escritura y estas son aplicadas en la instancia dependiente para
+mantener la consistencia de los repositorios de datos.
 
 ## 5.4. Rendimiento
 
+El incremento de rendimiento en el sistema MongoDB puede realizarse a través de
+acciones como la creación de índices, los cuales mejoran el tiempo de ejecución de
+consultas sobre collections. 
+
+Es recomendable analizar los atributos de un documento sobre los cuales será
+beneficioso aplicar un índice. Por ejemplo, si es común filtrar documentos en la
+collection usuarios por el atributo email , será conveniente crear un índice sobre dicho
+atributo.
+
+- El comando brindado para crear un índice es createIndex y posee el siguiente
+formato:
+db.<nombre de collection>.createIndex(<claves>, <opciones>)
+
+Ambos argumentos en la llamada a la función son objetos en formato JSON. El
+objeto claves indica los atributos sobre los cuales se creará el índice, teniendo como
+valor el número 1 si el índice se creará de forma ascendente y -1 si es de forma
+descendente.
+
+El objeto opciones puede contener los siguientes atributos, todos opcionales:
+
+- background: valor booleano para indicar si el índice debe crearse sin bloquear otras
+actividades en la base de datos. Por defecto es false .
+- unique: valor booleano para indicar si un atributo no acepta valores repetidos. Por
+defecto es false .
+- name: cadena de texto para especificar el nombre del índice
+- dropDups: valor booleano que indica la creación de un índice único y la eliminación
+de documentos repetidos en la collection. Por defecto es false .
+- sparse: valor booleano para indicar que el índice se aplica solamente sobre los
+documentos con los atributos indicados en el campo de claves.
+- v: indica el número de versión del índice a crear. Antes de la versión 2.0 de
+MongoDB este valor es 0, para versiones posteriores el valor es 1.
+
+Un índice puede eliminarse utilizando el comando dropIndex , siguiendo la sintaxis
+apropiada:
+db.<nombre de collection>.dropIndex(<índice>)
+
+
+## Algunos ejemplos de indexación pueden ser los siguientes:
+
+- Simple: insertamos un índice en orden ascendente para el atributo name . El
+comando para insertar el índice y la búsqueda que lo aplica son los siguientes:
+
+db.users.createIndex( { "name" : 1} )
+db.usesr.find({ name: “Fernando Alonso” })
+
+- Compuesto: se pueden usar para consultar uno o varios campos sin incluir todos. El
+siguiente ejemplo permitirá optimizar la búsqueda para name , o para name y age .
+Si se quiere hacer solo sobre age , habría que crear un índice simple para este
+atributo. En el siguiente ejemplo se crea un índice para name y age y se crea la
+consulta que se aprovecha de esta optimización:
+
+db.users.createIndex( { "name" : 1, "age":-1 } )
+db.usesr.find( {name: “Fernando Alonso”, age:36 })
+
+- Subdocumento: si el atributo pertenece a un objeto, es necesario llegar al nivel
+deseado para asegurar el índice. El insertado del índice y la consulta que utiliza la
+optimización son las siguientes:
+
+db.users.createIndex( { "info.friend" : 1 } )
+db.user.find({ info.friend: “Pedro”})
+
+- Arrays: se pueden crear índices sobre claves que contienen arrays; para ello se
+crea un valor en el índice para cada valor del array. Se denominan índices multikey y
+no hace falta intimidarlo explícitamente. El insertado del índice y la consulta que
+utiliza la optimización son las siguientes:
+
+db.users.createIndex( { "hobbies": 1} )
+db.users.find({ hobbies: “motor” })
+
+- 2d: los documentos deben tener una clave que contenga un array de dos
+coordenadas. Estos índices son útiles cuando permiten utilizar operadores
+especiales como $near . El insertado del índice y la consulta que utiliza la
+optimización son las siguientes:
+
+db.users.createIndex( { "location": 2d} )
+db.users.find({ location: {$near: [25,32] } }).limit(6)
+
+Nota: a partir de la versión 3.0 de MongoDB, createIndex fue el método que
+reemplazó a ensureIndex.
+
 ## 5.5. Sharding
+
+Otro mecanismo para incrementar el rendimiento de una base de datos es escalar,
+ya sea de forma vertical u horizontal. La escalabilidad vertical consiste en
+incrementar o mejorar hardware (CPU y memoria RAM) que utiliza el sistema.
+
+En contraste, la escalabilidad horizontal o sharding consiste en dividir el conjunto de
+datos y distribuirlo en varios servidores o shards. Así, el número de operaciones y la
+cantidad de datos se reparte entre el conjunto de shards. Si la base de datos crece,
+es suficiente con añadir un nuevo shard para poder almacenar más datos en un
+nuevo nodo.
+
+Su principal utilidad es aumentar el rendimiento de las consultas distribuyendo la
+información entre varias máquinas y permitir añadir nuevas máquinas para poder
+aumentar la capacidad de almacenaje de información.
+
+MongoDB brinda sharding a través de la definición de sharded clusters, los cuales
+están compuestos por tres tipos de componentes:
+
+- Shards: están a cargo de almacenar la información. Cada shard es un replica set,
+por lo que brinda alta disponibilidad y consistencia de datos.
+
+- Query Routers: son instancias del servicio mongo y sirven de interfaz entre los
+clientes y los shards.
+
+- Config Servers: almacenan metadatos sobre la información almacenada en cada
+shard. Son consultados y modificados por los query routers para saber qué shards
+contienen información en específico. Los sharded clusters en un entorno de
+producción tienen exactamente tres config servers.
+
+
+## Cuestionarios 
+
+1. ¿Qué comando de MongoDB permite crear una copia de respaldo de una base
+de datos?
+A. mongorestore.
+B. mongodump. -> Correcto
+C. backup.
+D. mongod.
+
+2. ¿Qué comando de MongoDB permite recuperar una base de datos a partir de
+una copia de seguridad?
+A. mongorestore. -> Correcto
+B. save.
+C. mongos.
+D. copydb.
+
+3. ¿Qué elementos de la base de datos mejoran el rendimiento de consultas a
+collections?
+A. Índices. -> Correcto
+B. Replica sets.
+C. Query routers.
+D. Las respuestas B y C son correctas.
+
+4. ¿Qué característica de MongoDB permite tener redundancia y aumentar la
+disponibilidad de los datos?
+A. Seguridad.
+B. Sharding. -> Correcto 
+C. Índices.
+D. Replicación.
+
+5. ¿Cuál es el modelo básico de replicación en MongoDB?
+A. Sharding.
+B. Replica set. -> Correcto
+C. Maestro-Esclavo.
+D. Shards.
+
+
+6. ¿Cómo se llama al refinamiento del modelo Maestro-Esclavo implementado en
+MongoDB?
+A. Result set.
+B. Replica set. -> Correcto
+C. Sharding.
+D. Replicación.
+
+Un Replica Set en MongoDB es el mecanismo fundamental para lograr alta disponibilidad y tolerancia a fallos. Consiste en un conjunto de servidores, donde uno actúa como primario y los demás como secundarios.
+
+
+7. ¿Cómo se denomina el nodo de un replica set que no almacena datos y
+solamente puede votar en las elecciones de nodo primario?
+A. Secundario.
+B. Árbitro. -> Correcto
+C. Shard.
+D. Config server.
+
+Un nodo árbitro en un replica set de MongoDB es aquel que no almacena datos y solo participa en las elecciones de nodo primario.
+
+8. ¿Qué otro nombre recibe el método de escalabilidad horizontal, en el que los
+datos son separados y distribuidos entre varios servidores?
+A. Escalabilidad vertical.
+B. Elastic computing.
+C. Sharding. -> Correcto 
+D. Replicación.
+
+Sharding es un término específico que se refiere a la técnica de dividir una base de datos en múltiples bases de datos más pequeñas, distribuidas en diferentes servidores. Cada una de estas bases de datos más pequeñas se llama shard.
+
+9. ¿Qué nombre reciben los nodos que almacenan datos en un sharded cluster?
+A. Data stores.
+B. Config servers.
+C. Query routers.
+D. Shards. -> Correcto 
+
+Shards: En un clúster sharded, los datos se dividen en fragmentos más pequeños llamados shards. Cada shard es almacenado en un nodo específico del clúster. Esta distribución permite escalar el sistema horizontalmente al agregar más nodos y shards a medida que crece la cantidad de datos.
+
+
+10. ¿Cuántos config servers debe haber en un entorno de producción?
+A. Uno.
+B. Tres.
+C. Un máximo de cinco.
+D. Depende del número de servidores disponibles. -> correcto 
+
+
+## Tema 6. Drivers de conexión
+
+## Videoclase 1. Drivers de Conexión
+
+## Notas:
+- Actua como intermediario entre el código y la base de datos. 
+- Nos facilita la visualizacion de datos y gestión de big data. 
+- Lenguajes Oficiales: c, C++, C#, Java, Node.js, perl, php 
+- Lenguajes Soportado Comunidad: Action Script3, C, C#, .NET,   ColdFusion, D, Dart, 
+- Los drivers son el vínculo entre la base de datos y el código de la aplicación, permitiendo que los desarrolladores accedan a los datos desde varios lenguajes de programación.
+- Para aplicaciones Java que utilizan MongoDB, se recomienda utilizar maven para la gestión de dependencias.
+- En la presentación se mencionan lenguajes como Python, Swift y R, pero no se menciona COBOL entre los lenguajes soportados por los drivers de MongoDB.
+- La página oficial de MongoDB para consultar la documentación, cursos y ejemplos sobre los drivers es www.mongodb.com/docs/drivers/.
+- Para conectar a un host específico de MongoDB en Java, se utiliza el URI de conexión, que permite especificar detalles del servidor y la base de datos.
+
+## Videoclase 2. MongoDB y otros lenguajes
+
+## Notas:
+- Solo exlicarón como acceder usando java bueno comandos cortos. 
+- MongoDB utiliza BSON, una versión binaria de JSON, para almacenar documentos debido a su mayor eficiencia y compatibilidad con tipos de datos adicionales.
+- El primer paso para acceder a una base de datos de MongoDB es conectarse al servidor MongoDB antes de interactuar con la base de datos o sus colecciones
+- El comando find() se utiliza para realizar búsquedas de documentos dentro de una colección en MongoDB, permitiendo filtrar los resultados según los criterios especificados.
+- La búsqueda de documentos en MongoDB se realiza a través del método find(), que permite obtener los documentos que coinciden con los criterios de búsqueda.
+- Los datos en MongoDB se almacenan y manipulan en formato BSON dentro de las colecciones, que representan estructuras similares a documentos JSON, pero optimizadas para el rendimiento.
+
+
+## Videoclase 3. NodeJS y Python
+
+## Notas:
+- Hay que tener bien instaldo mongodb
+- ![ejemplo insalacion](../01_BasesDatosParaDatosMasivos/info/info_008.png)
+- ![ejemplo insalacion](../01_BasesDatosParaDatosMasivos/info/info_009.png)
+- Mongoose es una librería popular en Node.js para interactuar con MongoDB, proporcionando una capa de modelado de datos sobre MongoDB.
+- PyMongo es la biblioteca oficial de MongoDB para Python, utilizada para la conexión y manipulación de datos en MongoDB desde aplicaciones Python.
+- El método insertOne() es utilizado en Node.js para insertar un único documento en una colección de MongoDB.
+- En Python, la conexión a una base de datos MongoDB se realiza utilizando el método connect() proporcionado por la biblioteca PyMongo.
+- El ejemplo presentado en la videoclase es la inserción de un documento, lo que es fundamental para entender cómo interactuar con MongoDB en aplicaciones Node.js y Python.
+
+
+## 6.2. Referencias: dónde consultar cada driver
+
+> MongoDB proporciona una descripción completa de cómo funciona cada uno de los drivers, que tienes disponible en el siguiente enlace. En esta página se pueden encontrar cursos, tutoriales y ejemplos para facilitar la construcción de aplicaciones que precisen de MongoDB para su funcionamiento.
+
+## A continuación, se enumera una lista de los drivers que hay disponibles:
+- C
+- C++
+- C#
+- Java
+- Node.js
+- Perl
+- PHP
+- Python
+- Motor
+- Ruby
+- Scalar
+- Go
+- Erlang
+
+[Drivers Documentación](https://www.mongodb.com/docs/drivers/)
+
+También MongoDB proporciona un conector para Hadoop. Este conector es un
+plugin que permite utilizar MongoDB como fuente de entrada y/o salida destino.
+
+Hadoop: Una plataforma para procesar grandes volúmenes de datos
+
+Hadoop es una plataforma de código abierto diseñada para almacenar y procesar grandes conjuntos de datos de forma distribuida y eficiente. Imagina que tienes una cantidad masiva de información, como los registros de todas las búsquedas en un motor de búsqueda o los datos de sensores de una ciudad inteligente. Hadoop te permite:
+
+Almacenar: Guardar estos datos en un sistema de archivos distribuido (HDFS) que puede manejar grandes cantidades de información en múltiples servidores.
+Procesar: Analizar y transformar estos datos utilizando un modelo de programación llamado MapReduce. MapReduce divide el trabajo en pequeñas tareas que se ejecutan en paralelo en múltiples máquinas, lo que permite procesar datos muy grandes de manera rápida
+
+## 6.3. Ejemplos de uso
+
+## Cuestionario
+
+1. ¿Cuál es el objetivo de un driver?
+A. «Traducir» las llamadas que se hacen desde un lenguaje de programación
+a un «lenguaje» que entienda la base de datos.
+B. Proporcionar un objeto de conexión.
+C. Proporcionar una serie de «funciones» que permitan al programador
+interactuar con la base de datos.
+D. Todas las anteriores son correctas. -> Correcto 
+
+2. ¿Dónde se debería acudir si se quiere desarrollar una aplicación con base de
+datos MongoDB pare gestionar una conexión?
+A. A la página oficial del lenguaje de programación con el que estamos
+desarrollando.
+B. A la página de documentación oficial de MongoDB, en el apartado de
+drivers. -> Correcto 
+C. A la página oficial del sistema operativo donde estemos desarrollando.
+D. Todas las anteriores son correctas.
+
+3. ¿Cuál de los siguientes lenguajes de programación soporta MongoDB?
+A. C.
+B. Java.
+C. PHP.
+D. Todos los anteriores son correctos. -> correcto 
+
+4. ¿Cuál es la mejor forma de descargar el driver de Java?
+A. Utilizando Maven. -> Correcto 
+B. Buscando en Google.
+C. Repositorio.
+D. Las respuestas A y C son correctas.
+
+
+5. Si no se especifica en el driver ningún parámetro, ¿dónde se realiza la conexión?
+A. localhost y puerto 27017. -> Correcto 
+B. Puerto 27017.
+C. Localhost.
+D. Es obligatorio definir un servidor y un puerto.
+
+6. ¿Cuál es el formato de documentos utilizado por el driver de Java?
+A. BSON.
+B. JSON.
+C. CSV.
+D. XML. -> Correcto 
+
+7. ¿Cuál es la mejor forma de instalar el driver de Node.js?
+A. Usando Maven.
+B. Buscando en Google.
+C. Usando NPM.      -> Correcto 
+D. Todas las anteriores son correctas.
+
+8. ¿Qué es PyMongo?
+A. Una base de datos NoSQL.
+B. El driver de MongoDB para Python. -> Correcto 
+C. Una base de datos SQL.
+D. El driver de lenguaje de programación Py.
+
+9. ¿Cómo podemos descargar el driver de Python para Mongo?
+A. Utilizando NPM.
+B. Utilizando Maven.
+C. Buscando en Google.
+D. Utilizando PIP. -> Corrceto 
+
+
+10. ¿Cuál de estos comandos son válidos para acceder a una colección de mongo?
+A. db.myCollection
+B. db['myCollection']
+C. db.getCollection('myCollection')
+D. Todas son correctas -> Correcto 
+
+
+## Tema 7: Cassandra
+
+
+## Videoclase 1. 
+
+## Notas:
+
+## Videoclase 2. 
+
+## Notas:
+
+
+## Videoclase 3. 
+
+## Notas:
+
+
+## 7.2. Descarga e instalación
+## 7.3. Conceptos generales
+## 7.4. Modelo de datos y relaciones
+## 7.5. CQL3
+## 7.6. TTL y WriteTime
+## 7.7. Índices
+## 7.8. Ejercicio práctico: instalación con Docker

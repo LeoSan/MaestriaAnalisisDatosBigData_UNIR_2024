@@ -1173,6 +1173,8 @@ valor justo de diversos activos, incluyendo acciones, bonos y derivados
 
 
 
+
+
 ## Clase 5: 17 De Diciembre 
 
 - Segunda Actividad 2 Grupal 
