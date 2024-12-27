@@ -1187,6 +1187,36 @@ La ciencia de datos está revolucionando el ecosistema de la atención médica:
     - ¿Cómo ayuda la ciencia de datos a optimizar las operaciones hospitalarias?
         - La ciencia de datos optimiza la gestión hospitalaria mediante una asignación eficiente de recursos y planificación, reduciendo tiempos de espera y mejorando la calidad del servicio. Las otras opciones no reflejan estos beneficios. 
 
+## Videoclase 2.  Ciencia de Datos en la IndustriaPágina
+## Notas: 
+
+- ¿Qué papel juega la ciencia de datos en la optimización de la cadena de suministro?
+ - La ciencia de datos optimiza la cadena de suministro mediante la previsión de la demanda y la optimización de recursos, lo que reduce costos y tiempos de entrega. Las demás opciones no abarcan este papel integral.
+
+- ¿Cómo beneficia el mantenimiento predictivo a la industria?
+    - El mantenimiento predictivo utiliza técnicas avanzadas para prever fallos en equipos, reduciendo tiempos de inactividad y costos operativos.
+
+- ¿Por qué es importante la automatización en el control de calidad?
+    - La automatización en el control de calidad garantiza la precisión en la inspección de productos, reduciendo errores humanos y asegurando estándares de calidad
+
+- ¿Cómo contribuye la logística inteligente a la cadena de suministro?
+    - La logística inteligente utiliza tecnologías avanzadas para optimizar rutas y gestionar flotas en tiempo real, mejorando la eficiencia y reduciendo costos
+
+- ¿Qué desafíos éticos enfrenta la ciencia de datos en la industria?    
+    - Los desafíos éticos incluyen proteger la privacidad de los datos, garantizar la transparencia de los algoritmos y asegurar que las decisiones automatizadas sean justas
+
+## Videoclase 3.  Ciencia de Datos en las Finanzas
+## Notas: 
+    - ¿Cómo impacta la ciencia de datos en la gestión de riesgos financieros?
+        - Utiliza modelos predictivos y técnicas avanzadas para identificar riesgos y anticipar pérdidas potenciales.
+    - ¿Cuál es la importancia del trading algorítmico en los mercados financieros?
+        - Automatiza las operaciones de mercado, aprovechando patrones y tendencias para mejorar la rentabilidad.
+    - ¿Qué técnicas se utilizan para el pronóstico de precios en finanzas?
+        - Modelos de machine learning, series de tiempo, análisis técnico y fundamental para prever movimientos de precios.
+    - ¿Cómo apoya la ciencia de datos la inclusión financiera?
+        - Utiliza datos alternativos y machine learning para evaluar la solvencia de individuos sin acceso al crédito tradicional.
+    - ¿Qué desafíos éticos enfrenta la ciencia de datos en finanzas?
+        - Asegurar la privacidad, la transparencia de los modelos de IA y la equidad en las decisiones automatizadas.
 
 ## 5.2. Comercio
 
@@ -1204,6 +1234,7 @@ desafíos específicos y mejorar su rendimiento. A continuación, se presentan
 ejemplos específicos y concretos de la aplicación de la ciencia de datos en el
 comercio, resaltando los beneficios obtenidos.
 
+## Ventjas en el comercio 
 - Optimización de Precios Dinámicos
 - Gestión de Inventario y Cadena de Suministro
 - Personalización de la Experiencia del Cliente
@@ -1221,18 +1252,242 @@ de los datos empresariales a todos los niveles, gestionar la ingente sensorizaci
 entornos industriales, vehículos o robots, o mejorar la toma de decisiones a través de
 la implementación de soluciones business intelligence.
 
-sEl sector industrial ha experimentado una transformación significativa con la
+El sector industrial ha experimentado una transformación significativa con la
 incorporación de la ciencia de datos, que permite optimizar procesos, reducir costos
 operativos y mejorar la calidad del producto. Las técnicas avanzadas de analítica y
 machine learning son esenciales para aumentar la eficiencia y la sostenibilidad en la
 manufactura y otras actividades industriales
 
+## Ventajas en la Industria 
+- Mantenimiento Predictivo
+- Optimización de la Producción
+- Control de Calidad Automatizado
+- Gestión de la Cadena de Suministro
+
 ## 5.4. Salud
+
+La aplicación de múltiples técnicas relacionadas con el big data permite que los
+servicios relacionados con los sistemas de salud mejoren sustancialmente. Por
+ejemplo, con la inteligencia artificial (IA) se pueden realizar simulaciones de
+diagnósticos o análisis de imágenes que ayuden a la toma de decisiones de los
+médicos.
+
+En un contexto de consulta, los médicos pueden analizar pruebas pasadas,
+tendencias y datos actuales. Con esta información y el acceso a los datos relativos al
+estilo de vida, el historial y la genética de un paciente, se facilita una imagen holística
+que puede ayudar a los médicos a proporcionar la atención más adecuada. 
+
+Se espera que la cantidad de datos sobre la salud a nivel global aumente
+drásticamente en los próximos años. Las primeras estimaciones hechas hacia 2013
+sugieren que hubo alrededor de 153 exabytes de datos de salud generados en ese
+año, proyectando una generación de hasta 2314 exabytes de nuevos datos
+generados en 2020
+
+## Ventajas en la Salud 
+- Mejoras en los dianosticos al usar patrones de reconocimiento en los historicos del paciente
+- Una atención mas personalizada al aplicar marching learning en la secuenciación del genoma
+- Mejoras administrativa en los recursos al predecir fallas y excases  en los suministros. 
+
 ## 5.5. Seguridad y Ciberseguridad
+
+En el ámbito de la seguridad y ciberseguridad, la ciencia de datos ha emergido como
+una herramienta crítica para detectar, prevenir y responder a amenazas. Utilizando
+algoritmos de machine learning y análisis de grandes volúmenes de datos, las
+organizaciones pueden identificar patrones anómalos y comportamientos
+sospechosos que podrían indicar intentos de intrusión o brechas de seguridad.
+
+## Ventajas en la Salud 
+- Detección de Amenazas en Tiempo Real
+- Análisis de Comportamiento del Usuario
+- Phishing y Prevención de Fraudes
+- Respuesta Automatizada a Incidentes
+- 
+
 ## 5.6. Finanzas
+
+Los sectores económico, financiero y bancario han experimentado cambios
+importantes y profundos gracias a la aplicación de los sistemas big data, los cuales
+eran difíciles de imaginar no hace mucho tiempo. Como ejemplo sencillo, el big data
+permite a los sistemas financieros disponer de información en tiempo real de
+cualquier mercado en cualquier parte del mundo
+
+Bajo el paraguas de los sistemas big data y tecnologías como blockchain han surgido
+en este ámbito las fintech. Maestre (2020) define a estas como «empresas
+financieras tecnológicas que tratan de aportar nuevas ideas y que reformulan gracias
+a las nuevas tecnologías de la información, las aplicaciones móviles o el big data, la
+forma de entender y prestar los servicios financieros».
+
+## Ventajas en las finanzas
+
+- Gestión de datos en tiempo real y análisis predictivo. L
+- Detección de fraude
+- Gestión de datos de clientes. 
+- Atención al cliente.
+- Sistemas de recomendación.
+- Segmentación de clientes. 
+- Protección y mantenimiento de clientes.
+
+
+
 ## 5.7. Conducción Autónoma
+
+Las técnicas de visión por computadora, procesamiento de señales, y redes
+neuronales profundas son fundamentales en el desarrollo de sistemas autónomos de
+conducción. Estos sistemas aprenden de vastas cantidades de datos recopilados
+durante miles de horas de conducción para tomar decisiones en tiempo real. A
+continuación, se presentan ejemplos específicos de cómo la ciencia de datos está
+siendo aplicada en la conducción automática, destacando los beneficios tangibles.
+
+## Ventajas en las Conducción Autónoma
+- Percepción y Procesamiento Sensorial
+- Predicción de Comportamiento de Otros Conductores y Peatones
+- Optimización de Rutas y Gestión del Tráfico
+- Entrenamiento y Validación de Sistemas Autónomos
+
+
+## Sectores 
+
+- Compras: las tarjetas de fidelización permiten identificar más fácilmente nuestros
+hábitos de compra o preferencias, de forma que podamos recibir ofertas o
+descuentos.
+
+- Transporte: el uso de la tarjeta de transporte permite registrar cuándo y dónde
+viajamos, de forma que las empresas de gestión pueden regular mejor los servicios.
+
+- Deporte: los relojes inteligentes, las pulseras de actividad o el propio teléfono móvil
+recogen información de nuestra actividad diaria o cuando practicamos algún tipo de
+deporte, de forma que podemos estar monitorizados, seguir un plan de
+entrenamiento o recibir incentivos para llevar un estilo de vida más saludable.
+
+- Publicidad: Las redes sociales (Facebook, Instagram, Twitter, TikTok), buscadores
+(Google, Bing) o marketplaces (Amazon, Alibaba) hacen uso de nuestra huella digital
+para personalizar la publicidad que recibimos al hacer uso de los servicios que nos
+ofrecen de forma gratuita.
+
+- Salud: la información y la investigación en el ámbito de la salud se han visto
+beneficiadas gracias a los sistemas big data, tal y como pudo comprobarse con la
+información, casi en tiempo real, que recibimos sobre la pandemia provocada por la
+COVID-19.
+
+- Educación: la implantación de la educación online o la mejora de los métodos
+tradicionales mediante el uso de herramientas innovadoras permiten aumentar el
+rendimiento de los estudiantes y proporcionar realimentación a los profesores que
+anteriormente era difícil de captar y digerir.
+
+- Seguros: las aseguradoras utilizan estas tecnologías para ajustar las primas e
+incluso incentivar a sus usuarios a reducir el riesgo, como sucede en aquellas que
+recopilan la información proveniente de la actividad física de sus clientes gracias a la
+conexión con las aplicaciones específicas (y la autorización de estos).
+
+- Agricultura y ganadería: el uso de sistemas big data en la agricultura y la
+ganadería ha permitido el desarrollo de sistemas predictivos y preventivos de gran
+ayuda para la toma de decisiones, facilitando, por ejemplo, la detección de
+infecciones en cultivos o la reducción de la consanguinidad en la cría de ganado en
+pureza.
+
+- Turismo: el sector turístico es otro de los mayores usuarios de sistemas big data,
+tanto en la optimización de los sistemas de gestión de reservas como a nivel más
+práctico, incluyendo la implementación de guías en dispositivos móviles o realidad
+aumentada en museos, entre otros muchos.
+
+- Telecomunicaciones: el sector de las telecomunicaciones es también un gran
+consumidor de big data debido a la cada vez mayor cantidad de información que
+deben gestionar sus redes.
+
 ## 5.8. Otros
 
+Los Gobiernos y la Administración pública se han convertido en los últimos años en
+grandes usuarios de los sistemas big data. La diversidad de funciones que cubren las
+Administraciones públicas hace que el uso que se hace de los grandes conjuntos de
+datos sea igualmente diverso.
+
+La primera utilidad que podemos encontrar es más política que enfocada al
+ciudadano: el análisis de la intención de voto. Existen un gran número de
+empresas dedicadas a estimar cómo votaríamos los ciudadanos en un momento
+determinado, de forma que la información que se recoge permita identificar y analizar
+patrones que nos dejen descubrir el resultado de unas elecciones.
+
+Por otro lado, y muy relacionada con el ejemplo anterior, la seguridad es otro de
+los ámbitos en los que los Gobiernos se benefician de la aplicación de
+sistemas big data. En múltiples países, como, por ejemplo, Estados Unidos, se
+hace uso de modelos de riesgos que predicen la delincuencia identificando edificios o
+zonas potencialmente peligrosas. Esto ayuda a que los cuerpos y fuerzas de
+seguridad del estado dispongan de herramientas útiles que les permitan una reacción
+más rápida ante situaciones que comprometan la seguridad ciudadana, utilizando
+planos, información en tiempo real o índices de riesgo, entre otros muchos recursos.
+De este modo, se puede reducir el número de robos, el uso indebido de armas de
+fuego y, en definitiva, la delincuencia en genera
+
+
+## Cuestionario 
+
+1. ¿Qué técnica utilizan empresas como Amazon para ajustar los precios en tiempo
+real?
+A. Regresión lineal. 
+B. Clustering.
+C. Algoritmos predictivos. -> Correcto 
+D. Análisis factorial.
+
+2. ¿Cuál es una aplicación común de la ciencia de datos en la industria
+manufacturera?
+A. Publicidad en redes sociales.
+B. Optimización de la cadena de suministro. -> Correcto 
+C. Análisis de sentimientos.
+D. Gestión de recursos humanos.
+
+3. ¿Qué tecnología es fundamental en los vehículos autónomos para 'ver' el
+entorno?
+A. Análisis de texto.
+B. Visión por computadora. -> Correcto 
+C. Bases de datos NoSQL.
+D. Blockchain.
+
+4. ¿Qué método utilizan las instituciones financieras para detectar fraudes?
+A. Análisis predictivo.
+B. Minería de datos.
+C. Modelos de regresión logística.
+D. Todas las anteriores. -> Correcto 
+
+5. ¿Cómo ayuda la ciencia de datos en la atención médica?
+A. Optimización de precios.
+B. Predicción de enfermedades.  -> Correcto 
+C. Mejora de algoritmos de redes sociales.
+D. Desarrollo de juegos.
+
+6. ¿Cuál es un beneficio clave del uso de la ciencia de datos en la seguridad
+cibernética?
+A. Aumento de ventas.
+B. Detección de amenazas en tiempo real. -> Correcto 
+C. Mejora en la gestión de inventarios.
+D. Optimización de rutas de transporte.
+
+7. ¿Qué rol juega la ciencia de datos en la personalización de experiencias de
+usuario en plataformas como Netflix?
+A. Aprendizaje automático. -> Correcto 
+B. Análisis de redes.
+C. Simulaciones Monte Carlo.
+D. Regresión lineal.
+
+8. ¿En qué sector es crítico el uso de simulaciones para entrenar sistemas antes de
+su implementación real?
+A. Educación.
+B. Conducción autónoma. -> Correcto 
+C. E-commerce.
+D. Hostelería.
+
+9. ¿Qué aplicación de la ciencia de datos ayuda a Starbucks a decidir dónde abrir
+nuevas tiendas?
+A. Optimización de menús.
+B. Análisis de ubicación.  -> Correcto
+C. Gestión de recursos humanos.
+D. Campañas de marketing digital. 
+
+10. ¿Qué técnica es usada en el sector industrial para predecir el mantenimiento de
+maquinaria?
+A. Mantenimiento predictivo.  -> Correcto 
+B. Gestión de la calidad del producto.
+C. Optimización de la experiencia del cliente.
+D. Análisis de sentimientos.
 
 
 ## Clase 5: 17 De Diciembre 
