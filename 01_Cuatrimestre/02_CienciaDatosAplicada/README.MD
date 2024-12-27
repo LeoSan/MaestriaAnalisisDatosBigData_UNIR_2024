@@ -1164,14 +1164,74 @@ valor justo de diversos activos, incluyendo acciones, bonos y derivados
 
 ## Tema 5. Áreas de aplicación de la Ciencia de Datos
 
+## Videoclase 1. Ciencia de Datos en la Salud
+## Notas: 
 
-# Notas Clases 
+La ciencia de datos está revolucionando el ecosistema de la atención médica:
+    - Desde los sistemas de salud digitalizados (HCE: Historia Clínica Electrónica). 
+    - Gestión más eficiente y segura de los datos de los pacientes.
+    - Diagnósticos más precisos (reducción de errores de diagnóstico, análisis avanzado de imágenes...).
+    - Tratamientos personalizados (análisis de datos genómicos). El uso de big data ha revolucionado la secuenciación del genoma humano, permitiendo avances en la comprensión de enfermedades genéticas y el tratamiento individualizado.
+    - Identificar patrones y relaciones en datos de investigaciones médicas que no serían visibles a simple vista.
+    - Los modelos predictivos ayudan a identificar moléculas prometedoras para el desarrollo de nuevos medicamentos. Detección temprana de enfermedades.
+    - Hasta la implicación de datos en la gestión de la salud pública.
 
-## Clase 1: 05 de Noviembre 
+    - ¿Cómo está revolucionando la ciencia de datos la atención médica?
+        - La ciencia de datos está mejorando la precisión de los diagnósticos, personalizando los tratamientos y gestionando los datos de manera eficiente, lo que permite una atención médica más precisa y eficaz. Las otras opciones no reflejan este impacto integral.
+    - ¿Cuál es una ventaja clave del diagnóstico asistido por IA?
+        - El diagnóstico asistido por IA mejora la precisión y velocidad al identificar enfermedades, reduciendo significativamente los errores humanos. Las demás opciones no abarcan el beneficio completo de la IA en el diagnóstico.
+    -  El diagnóstico asistido por IA mejora la precisión y velocidad al identificar enfermedades, reduciendo significativamente los errores humanos. Las demás opciones no abarcan el beneficio completo de la IA en el diagnóstico.
+        - Los modelos predictivos permiten identificar factores de riesgo a partir de datos históricos, anticipando enfermedades y mejorando los resultados para los pacientes. Las otras opciones no reflejan esta capacidad predictiva.
+    - ¿Por qué es crucial la monitorización en tiempo real en la atención médica?
+        - La monitorización en tiempo real permite detectar cambios críticos y actuar rápidamente, mejorando la gestión de enfermedades crónicas. Las demás opciones no capturan esta utilidad crucial.
+    - ¿Cómo ayuda la ciencia de datos a optimizar las operaciones hospitalarias?
+        - La ciencia de datos optimiza la gestión hospitalaria mediante una asignación eficiente de recursos y planificación, reduciendo tiempos de espera y mejorando la calidad del servicio. Las otras opciones no reflejan estos beneficios. 
 
-## Clase 2: 19 Noviembre 
 
+## 5.2. Comercio
 
+La ciencia de datos ha revolucionado el sector comercial al permitir una toma de
+decisiones más informada y estratégica. Mediante el análisis de grandes volúmenes
+de datos, las empresas comerciales pueden optimizar operaciones, personalizar
+experiencias de clientes y mejorar la eficiencia en la cadena de suministro. La
+capacidad de extraer insights valiosos de los datos es ahora un diferenciador
+competitivo clave en el comercio.
+
+Las técnicas avanzadas de ciencia de datos, como el machine learning, la
+inteligencia artificial, y la analítica predictiva, están al frente de esta transformación.
+Empresas líderes en el sector comercial utilizan estas tecnologías para abordar
+desafíos específicos y mejorar su rendimiento. A continuación, se presentan
+ejemplos específicos y concretos de la aplicación de la ciencia de datos en el
+comercio, resaltando los beneficios obtenidos.
+
+- Optimización de Precios Dinámicos
+- Gestión de Inventario y Cadena de Suministro
+- Personalización de la Experiencia del Cliente
+- Detección de Fraudes y Anomalías
+
+La aplicación de la ciencia de datos en el comercio no solo facilita operaciones más
+eficientes, sino que también mejora la interacción con el cliente, personalizando
+experiencias y anticipando sus necesidades.
+
+## 5.3. Industria
+
+Uno de los pilares de la cuarta revolución industrial (Industria 4.0) ha sido la
+implementación de sistemas big data que han permitido hacer un uso más eficiente
+de los datos empresariales a todos los niveles, gestionar la ingente sensorización de
+entornos industriales, vehículos o robots, o mejorar la toma de decisiones a través de
+la implementación de soluciones business intelligence.
+
+sEl sector industrial ha experimentado una transformación significativa con la
+incorporación de la ciencia de datos, que permite optimizar procesos, reducir costos
+operativos y mejorar la calidad del producto. Las técnicas avanzadas de analítica y
+machine learning son esenciales para aumentar la eficiencia y la sostenibilidad en la
+manufactura y otras actividades industriales
+
+## 5.4. Salud
+## 5.5. Seguridad y Ciberseguridad
+## 5.6. Finanzas
+## 5.7. Conducción Autónoma
+## 5.8. Otros
 
 
 
