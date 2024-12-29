@@ -494,18 +494,392 @@ escenarios es:
 ## Tema 3. Data Warehouse y Data Lake 
 
 ## notas 
-- OLAP : On Line Analitica Procecin  
+- OLAP : OnLine Analitical  Processing   
 
 
 ## Videoclase 1. Fundamentos de Data Warehouse
+## Notas: 
 - El proceso ETL (Extract, Transform, Load) incluye las etapas de extracción de datos de diversas fuentes y su transformación en un formato adecuado para la carga en el destino final, como un data warehouse.
 - Los data marts son subconjuntos del data warehouse orientados a áreas específicas de negocio, facilitando el acceso a datos relevantes para análisis departamentales.
 - Las arquitecturas de una y dos capas son comunes en la implementación de data warehouses. La arquitectura de una sola capa integra datos directamente en el almacén de datos, mientras que la de dos capas incluye una capa adicional para procesamiento o almacenamiento.
 - Las fuentes de datos para un data warehouse pueden incluir bases de datos relacionales y archivos de texto plano, que proporcionan datos estructurados y semiestructurados.
 - Un data lake puede almacenar datos de una variedad de fuentes, incluidos archivos de texto plano, XML, HTML, PDF y multimedia como fotos. Esta flexibilidad permite almacenar datos estructurados, semiestructurados y no estructurados.
 
+## Videoclase 2. Metodologías para Desarrollo de DWPágina
+## Notas:   
+
+- Kimball DataWarehouse menciona que se construye de un conjunto de datasmart independientes orientado al negocios en especifico en vez de un enfonque centralizado es un desarrollo gradual y una entrega de valor mas rapida. 
+
+- Kimbal usa mucho OLAP 
+- Cubos olap, representan una forma eficiente para visualizar datos para un análisis mas profundo, se asemeja a una estructura bidimensional compuestos por dimensiones, jerarquias, medidas, la verdadera capacidad de los cubos es que permite al usuario visualizar análisis multidimensionales, permite validar datos desde multiples perspectivas. 
+- Concepto de Tablas 
+    - **Estrella** todo radica de una sola tabla principal y todos los demas la rodean 
+    - **Copo de Nieve** todo radica de una sola tabla principal y todos los demas la rodean pero ciertas tablas tienen su tablas hijas 
+    - **Constelación** ya es un esquema donde las tablas tienen sus hijos y no solo la tabla principal es el centro de atención. 
+    - 
+
+- Bill Inmon definió que un data warehouse debe ser indexado en el tiempo y no volátil, proporcionando un almacenamiento consistente y estable de datos históricos para análisis.
+- Tanto los data warehouses como los data lakes están diseñados para centralizar y organizar datos, con el objetivo de facilitar la toma de decisiones basada en datos.
+- En el proceso ETL, el tiempo de carga inicial puede ser considerablemente largo debido a la necesidad de transformar y limpiar grandes volúmenes de datos.
+- En ELT (Extract, Load, Transform), los datos se cargan primero en el destino y luego se transforman, a diferencia del ETL tradicional. Por lo tanto, la afirmación de que se transforman en un servidor intermedio antes de la carga es falsa.
+- Los metadatos actúan como un repositorio central que proporciona significado y contexto a los datos almacenados en un data warehouse. Incluyen información sobre la estructura, componentes y atributos, facilitando la comprensión y uso de los datos.
+- No es lo mismo ELT que ETL notaaaaaa 
+
+
+## Videoclase 3. Innovaciones y Roles en Data Management 
+## Notas:  
+- Data Lake: Es un sistema de almacenamiento que permite guardar una basta de cantidad de datos en su forma bruta, es mas flexible ya que permite almacenar datos no estructurados, como imagenes, audio y video y permite almacenar grandes volumes de datos, permite almacenar datos con un costo menor. 
+
+| Concepto | ETL (Extract, Transform, Load) | ELT (Extract, Load, Transform) |
+|---|---|---|
+| Procesamiento | Los datos se transforman en un servidor de almacenamiento intermedio antes de subirse al Data Warehouse. | Los datos se suben al Data Lake y allí permanecen. Las transformaciones se realizan en el sistema de destino. |
+| Tiempo de carga | Los datos se cargan en un almacén intermedio y luego se mueven al sistema destino objetivo. Tiempo de carga intensivo. | Los datos se cargan una sola vez. Tiempo de carga muy rápido. |
+| Tiempo de mantenimiento | Altos niveles de mantenimiento. | Bajo nivel de mantenimiento. |
+| Complejidad de implementación | Lo complejo es tener la estructura y los procesos que llenarán esa estructura. | Se debe tener claro qué herramientas se van a utilizar. |
+| Madurez | Este proceso se utiliza desde hace más de dos décadas, bien documentado y mejores prácticas disponibles fácilmente. | Es nuevo y complejo de implementar. |
+
+- Data Mesh: Es una arquitectura de datos distribuidas que enfatiza la descentralización del diseño y el gobierno y propiedad de los datos, promueve la idea que los datos deben ser tratados como un producto 
+
+    - Ventajas 
+        - Habilitar la agilidad y la escalabilidad empresarial.
+        - Reducir el tiempo de comercialización de las iniciativas comerciales.
+        - Menores costos de mantenimiento.
+        - Permitir una asignación de costos interna justa y transparente.
+
+- Correcto. Los Data Warehouses son repositorios de datos estructurados, mientras que los Data Lakes pueden almacenar datos en cualquier formato.
+- Correcto. ELT permite cargar datos rápidamente en el Data Lake y realizar las transformaciones necesarias en el sistema de destino.
+- Correcto. El Data Mesh promueve la descentralización y asigna la propiedad de los datos a los dominios que mejor los entienden.
+- Correcto. Los cubos OLAP se utilizan para el procesamiento analítico en línea, permitiendo análisis de datos multidimensionales rápidos.
+- Correcto. Las tablas de hechos en un Data Warehouse almacenan datos numéricos del negocio y se conectan con las tablas de dimensión.
+
+
+## 3.2. Procesos ETL
+
+Como sus siglas indican, consiste en la extracción, transformación y carga de los
+datos, de modo que se puede afirmar que es una parte fundamental de este. Antes
+de guardar los datos, deben ser transformados, limpiados, filtrados y redefinidos
+
+El proceso de ETL consume entre el 60 y el 80 % del tiempo de un proyecto de
+business intelligence, por lo que es un proceso fundamental en el ciclo de vida del
+proyecto
+
+Esta parte del proceso de construcción del data
+warehouse (DW) es costosa y consume una parte significativa de todo el proceso,
+razón por la que utilizan recursos, estrategias, habilidades especializadas y
+tecnologías. El proceso ETL va más allá del transporte de los datos de las fuentes a
+la carga dentro del DW, ya que añade un valor significativo a los datos.
+
+## Proceso 
+- Eliminar errores y corregir datos faltantes.
+- Proporcionar medidas documentadas de la calidad de los datos.
+- Supervisar el flujo de los datos transaccionales.
+- Ajustar y transformar los datos de múltiples fuentes en uno solo.
+- Organizar los datos para su fácil uso por los usuarios y las herramientas
+
+## Etapas
+## Extracción
+> Este proceso extrae los datos físicamente de las distintas fuentes de información. En este momento los datos están en la forma como se almacenan, en bruto. La extracción de los datos se puede realizar de forma manual o utilizando herramientas de ETL. 
+
+## Limpieza
+
+> Este proceso recupera los datos de la base de datos u otro tipo de fuente y comprueba la calidad, elimina los duplicados y, cuando es posible, corrige los valores erróneos y completa los valores incompletos, etc. 
+
+## Ejemplo de algunos errores más comunes:
+- Datos duplicados: un cliente es registrado varias veces en la misma empresa.
+- Inconsistencia en los datos: en la dirección de una persona, el código postal no corresponde a la ciudad donde vive.
+- Inconsistencia de valores: aparece en primer lugar un valor y posteriormente aparece el mismo valor de otra forma. Por ejemplo: primero, escribir el país como USA y, luego, digitarlo completo (Estados Unidos de Norteamérica).
+
+
+## Transformación
+> Este proceso recupera los datos limpios y de alta calidad, los organiza y resume en los distintos modelos de análisis. El resultado de este proceso es la obtención de datos limpios, consistentes, resumidos y útiles. 
+
+## La transformación incluye: 
+- Cambios de formato, sustitución de códigos, valores derivados y agregados. 
+
+## La carga y actualización
+> Es la última etapa del proceso y valida que los datos cargados en el DW sean consistentes con las definiciones y formatos; los integra en los distintos modelos de las distintas áreas de negocio que se han definido. Estos procesos suelen ser complejos, por tanto, es necesario tener personal experto que ayude en el proceso.
+
+
+## 3.3. Almacén de datos (data warehouse o DW)
+
+A través del data warehouse, conocido también como el almacén de datos en el
+diccionario de datos, se busca almacenar los datos de forma que facilite y maximice
+su flexibilidad, facilidad de acceso y administración. Surge como respuesta a las
+necesidades de los usuarios que necesitan información consistente, integrada,
+histórica y preparada para ser analizada y poder tomar decisiones. 
+
+## Equipo BILL 
+    - las características que debe cumplir un data warehouse:
+        - Orientado a un área: significa que cada parte del DW está construida para resolver
+un problema de negocio
+        - Integrado: la información debe ser convertida en medidas comunes, códigos y
+formatos comunes para que pueda ser útil.
+        - Indexado en el tiempo: significa que la información histórica se mantiene y se
+almacena en determinadas unidades de tiempo
+        - No volátil: esta información no es mantenida por los usuarios, como se realizaría en
+los entornos transaccionales
+
+
+## Equipo Kimball 
+    - las características que debe cumplir un data warehouse:
+        - Diseño ascendente (bottom-up): Se comienza construyendo pequeños almacenes de datos (datamarts) enfocados en áreas específicas del negocio. Luego, estos datamarts se integran en un data warehouse central
+        - Modelo dimensional: Utiliza un modelo de datos basado en dimensiones y medidas. Las dimensiones proporcionan contexto (e.g., tiempo, producto, cliente) y las medidas son los valores numéricos que se analizan (e.g., ventas, costos).
+        - Enfoque en el negocio: Se centra en las necesidades de los usuarios finales y en cómo los datos pueden ser utilizados para tomar mejores decisiones de negocio.
+        - Agilidad y escalabilidad: Permite construir y modificar rápidamente los data warehouses para adaptarse a los cambios en los requisitos del negocio. 
+        - Reducción del tiempo de comercialización: Al enfocarse en áreas específicas del negocio, se pueden obtener resultados más rápidamente.
+        - Menores costos de mantenimiento: El diseño modular y escalable facilita la administración y el mantenimiento del data warehouse.
+
+## Esquemas de un data warehouse
+
+## Esquema estrella
+Este modelo es el más sencillo. Está formado por una tabla central de «hechos» y
+varias «dimensiones», incluida una dimensión de «tiempo». Lo más representativo
+de la arquitectura de estrella es que solo existe una tabla de dimensiones para cada
+dimensión. 
+
+## Esquema copo de nieve
+Es una variante del modelo anterior. En este modelo la tabla de hechos ya no es la
+única que se relaciona con otras tablas, existen otras tablas que se relacionan con
+las dimensiones y que no tienen relación directa con la tabla de hechos. El modelo
+fue concebido para facilitar el mantenimiento de las dimensiones, sin embargo, esto
+permite que se vinculen más tablas a las secuencias SQL. Este modelo es complejo
+de mantener, ya que permite la vinculación de muchas tablas
+
+## Esquema galaxia
+
+Este esquema contiene varias tablas de hechos que comparten dimensiones. Es muy
+común encontrar este tipo de esquema, incluso es recomendable compartir
+dimensiones. El esquema se ve como una colección de estrellas, por eso su nombre.
+Por ejemplo, pueden existir dos tablas de hechos: inventario y ventas que podrían
+compartir las dimensiones de producto y fecha. 
+
+## Arquitecturas
+> Para la realización del data warehouse se adoptan dos clasificaciones diferentes para su arquitectura:
+
+## Arquitectura de una sola capa: 
+- No se utiliza con frecuencia en la práctica. 
+- Su objetivo es minimizar la cantidad de datos almacenados. Para alcanzar este objetivo se eliminan las redundancias de datos.
+-  Esto significa que un almacén de datos se implementa como una vista multidimensional de datos operacionales
+- La debilidad de esta arquitectura radica en que no cumple con los requisitos de separación entre procesamiento analítico y transaccional
+
+
+## Arquitectura de dos capas: 
+- Aunque normalmente se nombra «arquitectura de dos capas» para destacar la separación entre las fuentes físicamente disponibles y los almacenes de datos, en realidad consta de cuatro etapas de flujo de datos
+posteriores. 
+
+    - Capa de origen: es el sistema de almacén de datos que utiliza fuentes
+heterogéneas de datos. Los datos se guardan originalmente en bases de datos
+relacionales corporativas o pueden provenir de sistemas de información fuera de los
+muros corporativos.
+
+    - Capa de almacenamiento de datos: los datos almacenados en las diferentes
+fuentes deben extraerse, limpiarse para eliminar inconsistencias y rellenar espacios,
+e integrarse para convertirlas en fuentes heterogéneas en un esquema común,
+proceso ETL.
+
+    -   Capa de depósito de datos: la información se almacena en un solo depósito
+lógicamente centralizado. Se puede acceder directamente al almacén de datos, pero
+también se puede utilizar como fuente para crear nuevos productos de datos, que
+replican parcialmente los contenidos del almacén de datos y están diseñados para
+departamentos empresariales específicos.
+
+    - Capa de análisis: se accede de manera eficiente y flexible a los datos integrados
+para emitir informes, analizar la información y representar escenarios hipotéticos de
+negocios. 
+
+
+## Data mart
+El data warehouse es una gran estructura. En muchas ocasiones, para facilitar el
+manejo de los datos, es necesario utilizar estructuras de datos más pequeñas
+llamadas data mart
+
+## Los data mart están compuestos por partes del DW primario, que en algunos casos pueden ser:
+
+- Dependientes: utilizan los datos y metadatos del data warehouse directamente en
+lugar de obtenerlos de los sistemas de producción.
+
+- Independientes: los datos son tomados de cada área de la empresa, siempre
+manteniendo los datos alineados con el DW, si este existe. Aunque los data mart no
+son estrictamente necesarios, son muy útiles para los sistemas de almacenamiento. 
+
+
+## Los metadatos
+Un componente esencial de un data warehouse son los metadatos. Es el repositorio
+central de información que abarca todos los niveles. Da el significado de cada uno de
+los componentes, variables y atributos que residen en el DW o data mart. 
+
+
+
+## 3.4. Lago de datos (data lake)
+
+Puede definirse como un almacén de datos o un repositorio de grandes cantidades
+de datos que son útiles para realizar análisis. Los datos se almacenan en una
+arquitectura plana en lugar de una forma jerárquica, como se hace con los
+almacenes de datos o DW. Los datos almacenados pueden ser de cualquier tipo:
+datos estructurados (filas y columnas), semiestructurados (CSV, JSON, XML) y no
+estructurados (PDF, documentos, fotos, vídeos, correos). Es necesario crear
+metadatos para poder tener información adicional de cada dato almacenado. Si un
+lago de datos no proporciona valor para los usuarios o es inaccesible, se denomina
+pantano de datos.
+
+Cuando se crea un data lake, el proceso ETL (extracción, transformación y carga)
+cambia a ELT (extracción, carga y transformación). Los datos se almacenan sin
+procesar
+
+## Cuestionario 
+
+1. ¿Cuáles son etapas del proceso ETL?
+A. Extracción.
+B. Transformación.
+C. Subida de datos brutos.
+D. A y B son correctas. -> Correcto 
+
+2. Los data mart:
+A. Son los metadatos del data warehouse.
+B. Son estructuras de datos específicas para un departamento, el conjunto de
+data marts compone un data warehouse. -> Correcto 
+C. Permiten acceder directamente al data warehouse.
+D. Son una fuente de datos.
+
+3. Son arquitecturas para implementar un data warehouse:
+A. Arquitectura mecánica.
+B. Arquitectura de una sola capa.
+C. Arquitectura de dos capas.
+D. B y C son correctas. -> Correcto 
+
+4. ¿Cuáles pueden ser dos posibles fuentes de datos para un data warehouse?
+A. Bases de datos relacionales y archivos de texto plano. -> Correcto 
+B. Archivos XML y codificación de archivos HTML.
+C. Archivos PDF y documentos en papel.
+D. Ninguna de las anteriores.
+
+5. ¿Cuáles pueden ser posibles fuentes de datos para un data lake?
+A. Bases de datos relacionales y archivos de texto plano.
+B. Archivos XML y codificación de archivos HTML.
+C. Archivos PDF y fotos.
+D. Todos las anteriores. -> Correcto
+
+6. El autor Bill Inmon definió las características que debe cumplir un data
+warehouse. ¿Cuáles son?
+A. Orientado a un área e integrado.
+B. Portátil y fácil de manejar.
+C. Indexado en el tiempo y no volátil. -> Correcto 
+D. Consistente y fácil.
+
+7. ¿Cuál es la función del data warehouse y del data lake?
+A. Aumentar el trabajo de los usuarios.
+B. Ayudar en la toma de decisiones.  -> Correcto 
+C. Centralizar los datos para facilitar el manejo.
+D. Ninguna de las anteriores.
+
+8. Es falso si hablamos de ETL:
+A. Los datos se transforman en un servidor intermedio antes de subir al DW.
+B. El tiempo de carga, sobre todo la primera vez, es muy rápido. -> Correcto 
+C. Altos niveles de mantenimiento.
+D. Las estructuras pueden llegar a ser complejas.
+
+9. Es falso si hablamos de ELT:
+A. Los datos se cargan y se transforman en un servidor intermedio antes de
+subir al DW. -> Correcto 
+B. El tiempo de carga es muy rápido.
+C. Bajo nivel de mantenimiento.
+D. Es nuevo y complejo de implementar.
+
+10. Es cierto si hablamos de metadatos:
+A. Son un repositorio central de información.
+B. Da significado a cada componente, variable y atributo que reside en el DW.
+C. Contiene información sobre la estructura del data lake.
+D. A y B son verdaderos. -> Correcto 
+
 
 ## Tema 4. Metodologías y Tendencias 
+
+## Videoclase 1. Introducción a Metodologías de Desarrollo
+## Notas: 
+1. **Planificación del Proyecto**
+   * Definición de requerimientos
+   * Diseño arquitectónico técnico
+   * Selección de productos e implementación
+2. **Modelado y Diseño**
+   * Modelado dimensional
+   * Diseño físico
+   * Diseño e implementación ETL
+3. **Desarrollo e Implementación**
+   * Especificaciones de soluciones BI
+   * Desarrollo de soluciones BI
+   * Implementación
+4. **Mantenimiento**
+   * Mantenimiento, administración y provisión del servicio DWH/BI
+
+
+- Kimball enfatiza la importancia de centrarse en las necesidades del negocio y en la entrega de incrementos significativos durante el desarrollo de un data warehouse (DW). Estos principios garantizan que el DW sea relevante y útil para la organización.
+
+- La metodología Kimball se centra en el diseño de procesos ETL, arquitectura técnica y la selección de herramientas, pero no incluye la creación de un maestro de datos como una tarea específica dentro de su enfoque
+
+- El Project Management Institute (PMI) define áreas de conocimiento como costes y alcance, esenciales para la gestión de proyectos. Estas áreas no incluyen metodologías específicas como DevOps o CRISP-DM.
+
+- ¿Cuáles son las rutas para el desarrollo del data warehouse, según la metodología Kimball? 
+    - Kimball sugiere rutas como la implementación de tecnologías adecuadas y la gestión de datos efectivos para el desarrollo de un data warehouse. Estas rutas aseguran un diseño robusto y eficiente
+
+- Los requerimientos del data warehouse se pueden obtener mediante entrevistas con stakeholders y sesiones facilitadoras. Estos métodos permiten una comprensión detallada de las necesidades y expectativas del proyecto.
+
+
+## 4.2. Metodología Kimball
+La metodología de Kimball se centra principalmente en el diseño de la base de datos
+que guardará la información para la toma de decisiones. El diseño se basa en la
+creación de tablas de hechos, que contienen la información numérica de los
+indicadores por analizar, es decir, la parte cuantitativa de la información.
+La aplicación de cualquier metodología para el desarrollo del DW en las empresas
+siempre va a depender de las necesidades de las organizaciones y el compromiso
+institucional de quienes conforman dichas organizaciones.
+La metodología se basa en lo que Kimball denomina ciclo de vida dimensional del
+negocio —business dimensional lifecycle
+
+## cuatro principios básicos:
+
+1. Centrarse en el negocio: es necesario enfocarse hacia la tipificación de los
+requerimientos del negocio y el valor que le aportará, emplear estos esfuerzos en
+desarrollar relaciones sólidas con el negocio y con los encargados de implementar
+las herramientas.
+2. Realizar una infraestructura de información: se trata de diseñar una base de
+información única, integrada, fácil de usar y de alto rendimiento, en la cual deben
+verse reflejados todos los requerimientos de negocio identificados en la
+organización.
+3. Cumplir las entregas en incrementos significativos: define los tiempos de
+creación del almacén de datos en incrementos progresivos entregables. Los plazos
+están determinados por los desarrolladores del proyecto y estos pueden ser cuatro o
+seis meses cada entrega (ten en cuenta que estos son tan solo ejemplos, los
+tiempos de entrega se deben ajustar a las necesidades de la empresa).
+4. Ofrecer la solución completa: facilitar todos los elementos necesarios para
+entregar valor a todos los usuarios del negocio. Para empezar, se debe contar con
+un almacén de datos sólido, bien diseñado, con calidad probada y accesible.
+También se deberá entregar herramientas de consulta ad hoc, aplicaciones para
+informes y análisis avanzado, capacitación, soporte, sitio web y documentación
+
+## 4.3. Metodologías PMI
+
+El PMI es una asociación profesional de las más grandes del mundo que cuenta con
+medio millón de miembros e individuos titulares de sus certificaciones en 180 países, Las más importantes son Scrum y PMI (siglas de Project Management Institute).
+
+
+La metodología del PMI de gestión de proyectos se compone de dos elementos
+esenciales
+
+Proceso
+Para la Guía PMBOK (A guide to the Project Management Body of Knowledge), no
+puede hablarse de proyecto si este no se concibe como un proceso, es decir, una
+serie de actividades coordinadas e interrelacionadas entre sí que deben ejecutarse
+con un fin específico. 
+
+
+## 4.4. Metodología Inmon
+## 4.5. Data-driven decision modelling
+
+## 4.6. Metodología DevOps
+
+## 4.7. Nuevos roles
+
+## 4.8. Tendencias
 
 
 ## Tema 5. Introducción al Marketing
