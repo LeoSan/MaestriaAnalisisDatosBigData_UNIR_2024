@@ -487,10 +487,6 @@ escenarios es:
     D. Ninguno de los anteriores.
 
 
-
-
-
-
 ## Tema 3. Data Warehouse y Data Lake 
 
 ## notas 
@@ -823,15 +819,89 @@ D. A y B son verdaderos. -> Correcto
 
 - Los requerimientos del data warehouse se pueden obtener mediante entrevistas con stakeholders y sesiones facilitadoras. Estos métodos permiten una comprensión detallada de las necesidades y expectativas del proyecto.
 
+## Videoclase 2. Metodología Kimball para BI
+## Notas: 
+
+- Kimball 
+    - Usa entrevistas 
+    - Secciones facilitadoras 
+    - Se genera matriz de procesos de dimenciones tablas hechos filas dimensiones columnas 
+- Se debe generar estas preguntas para crear DW 
+    - ¿Cuál es el problema que quiero resolver? ¿Qué tipo de datos ayudarían?
+    - ¿De dónde lo conseguiré?
+    - ¿Cómo lo almacenaré y protegeré?
+    - ¿Cómo lo analizaré?
+    - ¿Quién será el responsable?
+    - ¿Cómo se compartirá con el resto de la organización?
+    - ¿Cómo se implementará en los procesos de trabajo?
+- usa estrategia mas personalizadas 
+- Diseño fisico y ETL 
+
+- Bill Inmon
+    - Padre de DW 
+    - se enfoca en un modelo top down
+        - Obtener patrocinio directivo: Es tener el apoyo de los altos mandos para tener los recursos. 
+        - Evaluar lo que se tiene: Evaluar los datos existente de la organización  
+        - Definir el qué será: Se define la arquitectura del DW 
+        - Determinar el valor del dato: Se determina que datos son criticos y que datos son menos relevantes 
+        - Planear el riesgo: Se evaluan los obstaculos para crear los DW y posibles estrategias para mitigar los riesgos 
+        - Monitorear la eficacia y hacer el ciclo: Se debe evaluar la eficacia para mejorar los procesos 
+- Usa estrategias mas centralizadas 
+
+- ¿Cuántas características define Inmon para el DW?
+    - Bill Inmon define cuatro características fundamentales para un data warehouse: orientado a temas, integrado, no volátil y variable en el tiempo. Estas características aseguran la consistencia y fiabilidad de los datos almacenados.
+- Son nuevos roles incorporados en los últimos años
+    - En los últimos años, han surgido nuevos roles como ingeniero de datos y analista de datos, que se especializan en la gestión y análisis de grandes volúmenes de datos, convirtiéndose en posiciones clave en las organizaciones modernas.
+- Según el estudio publicado por el BI & Analytics Trend Monitor de BARC, son tendencias del business intelligence
+    -  El desarrollo ágil de Business Intelligence es una tendencia identificada por el BI & Analytics Trend Monitor de BARC. Esta metodología permite una adaptación rápida a las necesidades cambiantes y mejora la eficiencia en la entrega de soluciones BI.
+- Menciona dos etapas de la metodología PMI
+    -   Dentro de la metodología PMI, las etapas de control y supervisión son fundamentales para asegurar que el proyecto se mantenga en curso y cumpla con los objetivos establecidos. Estas etapas permiten la gestión eficaz del proyecto a lo largo de su ciclo de vida.
+- La metodología DevOps permite
+    - La metodología DevOps está diseñada para aumentar la velocidad de entrega, confiabilidad y escalabilidad de los proyectos. Esta práctica combina el desarrollo y las operaciones para mejorar la eficiencia y la calidad de los productos tecnológicos.
+
+## Videoclase 3. Tendencias Actuales en Business Intelligence 
+## Notas:  
+
+- Roles 
+    - Director de Datos Chief Data Officer
+    - Data Ownner 
+    - Data steward [estiward] - Admin datos 
+    - Coordinador de administracion de datos: Responsable de dirigir los datos 
+    - Ejecutivos de admin Datos : 
+    - Arquitecto Datos: Responsables de datos coherentes
+    - Arquitecto DW: 
+    - Analista de Datos : Captura de datos y validacion de datos 
+    - Especialista Datos: Adminstrador del control de datos para facilitar su gestion
+    - analista Calidad de datos
+    - Admin Base de Datos:
+    - Administrador Seguridad de datos: 
+    - Arquitecto Businnes Inteligence:
+    - Gerente del programa BI: 
+
+- ¿Cuál es uno de los principios básicos de la metodología Kimball?
+    - Correcto. La metodología Kimball se enfoca en el negocio y en crear una infraestructura de información completa y útil.
+- ¿Cuál es uno de los pasos en la planificación de un proyecto según la metodología Kimball?
+    - Correcto. Es crucial definir con precisión el alcance y los requerimientos del negocio para una planificación efectiva del proyecto.
+- ¿Cuál es una pregunta clave que puede ayudar en el análisis de requerimientos?
+    - Correcto. Preguntarse cómo se compartirá la información es esencial para asegurar que los datos sean accesibles y útiles dentro de la organización.
+- ¿Qué rol en la estructura DAMA es responsable de la arquitectura y la integración de datos de alto nivel?
+    - Correcto. El arquitecto de datos es responsable de la arquitectura y la integración de datos de alto nivel.
+- ¿Qué tendencia en BI para 2022 se menciona en el documento?
+    - Correcto. La encuesta de BARC destaca la importancia de entender las decisiones de compra y los beneficios comerciales a través de encuestas y estudios.
+
+
 
 ## 4.2. Metodología Kimball
+
 La metodología de Kimball se centra principalmente en el diseño de la base de datos
 que guardará la información para la toma de decisiones. El diseño se basa en la
 creación de tablas de hechos, que contienen la información numérica de los
 indicadores por analizar, es decir, la parte cuantitativa de la información.
+
 La aplicación de cualquier metodología para el desarrollo del DW en las empresas
 siempre va a depender de las necesidades de las organizaciones y el compromiso
 institucional de quienes conforman dichas organizaciones.
+
 La metodología se basa en lo que Kimball denomina ciclo de vida dimensional del
 negocio —business dimensional lifecycle
 
@@ -861,7 +931,6 @@ informes y análisis avanzado, capacitación, soporte, sitio web y documentació
 El PMI es una asociación profesional de las más grandes del mundo que cuenta con
 medio millón de miembros e individuos titulares de sus certificaciones en 180 países, Las más importantes son Scrum y PMI (siglas de Project Management Institute).
 
-
 La metodología del PMI de gestión de proyectos se compone de dos elementos
 esenciales
 
@@ -871,20 +940,199 @@ puede hablarse de proyecto si este no se concibe como un proceso, es decir, una
 serie de actividades coordinadas e interrelacionadas entre sí que deben ejecutarse
 con un fin específico. 
 
+Lo realmente decisivo en
+la ejecución de un proyecto es tener despejadas las etapas básicas que lo
+conforman, que para el PMI son, según la PMBOK:
+
+- Inicialización.
+- Planificación.
+- Ejecución.
+- Control.
+- Cierre
 
 ## 4.4. Metodología Inmon
+
+Bill Inmon es considerado el padre del concepto del data warehouse y menciona que
+debe cumplir con las características 
+
+## Caracteristicas
+- Orientado a temas
+- Integrado 
+- No volatil 
+- Variante en el tiempo 
+- La metodología Inmon también es conocida como top down
+
+## Proceso para la construcción del DW
+Inmon propone los siguientes pasos para la construcción del DW.
+1. Reconocer los sistemas transaccionales de la empresa que van a servir como
+fuentes de datos del DW.
+2. Se empiezan a llenar las primeras tablas en el DW de las respectivas unidades
+del negocio. Los usuarios empiezan a acceder a los datos integrados.
+3. Se cargan más tablas al DW y aumentan también los usuarios que acceden al
+mismo.
+4. El DW es cargado con los datos correctamente, esto trae como resultado la
+aparición de sistemas de apoyo a la toma de decisiones.
+5. Se crean los data mart para cada unidad de negocio.
+6. Si surgen nuevas necesidades, deben crearse nuevos data mart.
+7. Después de todos estos pasos, finalmente la arquitectura está desarrollada. En
+algunas ocasiones los usuarios prefieren acceder a los data mart, ya que su acceso
+es más rápido
+
+## Granularidad
+- El aspecto más importante del diseño de un almacén de datos es la granularidad. 
+De hecho, el problema de la granularidad afecta a la arquitectura que rodea el entorno
+del almacén de datos. 
+- La granularidad se refiere al nivel de detalle o resumen de las unidades de datos en el DW. 
+- Cuantos más detalles hay, menor es el nivel de granularidad. Cuantos menos, el nivel es mayor (Inmon, 2002).
+
+## Los beneficios de la granularidad son:
+- Después de que el almacén de datos se haya construido correctamente, proporciona
+a la organización una base extremadamente flexible y reutilizable para diferentes
+procesos de sistemas de apoyo a la toma de decisiones.
+
+- Los datos granulares que se encuentran en el almacén de datos son la clave para la
+reutilización, ya que pueden ser usados por muchas personas de diferentes
+maneras. Por ejemplo, dentro de una empresa, los mismos datos podrían ser
+utilizados para satisfacer las necesidades de marketing, ventas y contabilidad.
+
+- Todos estos tipos de información están estrechamente relacionados, aunque
+ligeramente diferentes. Con un almacén de datos, las diferentes organizaciones
+pueden ver los datos como lo desean.
+
+- Visualizar los datos de diferentes maneras es solo una ventaja de tener una base
+sólida. Un beneficio relacionado es la capacidad de conciliar datos, si es necesario.
+
 ## 4.5. Data-driven decision modelling
+
+Una perspectiva data-driven (DDM) permite a las empresas examinar y organizar sus
+datos con el objetivo de mejorar la atención a sus clientes y consumidores. Al usar
+datos para promover sus acciones, una empresa puede contextualizar y personalizar
+los mensajes a sus clientes o posibles clientes para un enfoque más centrado en el
+cliente
+
+El DDM es un método que se centra en el uso de los métodos de CI, particularmente
+las máquinas de aprendizaje, para la construcción de modelos que complementan o
+reemplazan los modelos «basados en el conocimiento» que describen el
+comportamiento físico
 
 ## 4.6. Metodología DevOps
 
+Combina filosofía, prácticas y herramientas que incrementan la capacidad de la
+organización para desarrollar aplicaciones y servicios a gran velocidad
+
+
 ## 4.7. Nuevos roles
 
-## 4.8. Tendencias
+- Roles 
+    - Director de Datos Chief Data Officer
+    - Data Ownner 
+    - Data steward [estiward] - Admin datos 
+    - Coordinador de administracion de datos: Responsable de dirigir los datos 
+    - Ejecutivos de admin Datos : 
+    - Arquitecto Datos: Responsables de datos coherentes
+    - Arquitecto DW: 
+    - Analista de Datos : Captura de datos y validacion de datos 
+    - Especialista Datos: Adminstrador del control de datos para facilitar su gestion
+    - analista Calidad de datos
+    - Admin Base de Datos:
+    - Administrador Seguridad de datos: 
+    - Arquitecto Businnes Inteligence:
+    - Gerente del programa BI: 
 
+## 4.8. Tendencias
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_015.png)
+
+## Cuestionario 
+
+1. Son principios básicos del desarrollo de DW según Kimball:
+A. Centrarse en el negocio.
+B. Incrementos significativos
+C. Los datos como centro de análisis.
+D. A y B son correctas. -> Correcto 
+
+2. No es una tarea dentro de la metodología Kimball:
+A. Crear el maestro de datos. -> Correcto 
+B. Diseño e implementación de ETL.
+C. Diseño de arquitectura técnica.
+D. Selección de herramientas de implementación.
+
+3. Son áreas de conocimiento dentro de la metodología PMI:
+A. DevOps.  
+B. CRISP-DM.
+C. Costes.
+D. Alcance. -> Correcto
+
+4. ¿Cuáles son las rutas para el desarrollo del data warehouse según la
+metodología Kimball?
+A. Tecnologías.
+B. Procesos.
+C. Datos.
+D. A y C son correctas. -> Correcto 
+
+5. ¿Cómo se pueden obtener los requerimientos del data warehouse?
+A. A través de entrevistas.
+B. Por medio de sesiones facilitadoras.
+C. Por los clientes externos.
+D. A y B son correctas. -> Correcta 
+
+6. ¿Cuántas características define Inmon para el DW?
+A. 1.
+B. 8.
+C. 4. -> Correcto
+D. 6.
+
+7. Son nuevos roles incorporados en los últimos años:
+A. Ingeniero de datos y analista de datos. -> Correcto 
+B. Consumidor de datos.
+C. Usuarios finales.
+D. Consumidores de información.
+
+8. Según el estudio publicado por el BI & Analytics Trend Monitor de BARC, son
+tendencias del business intelligence:
+A. Creación de grandes empresas.
+B. Almacenamiento de gran cantidad de datos.
+C. Desarrollo ágil de BI. -> Correcto 
+D. Generación de alertas.
+
+9. Menciona dos etapas de la metodología PMI:
+A. Pretratamiento de los datos brutos.
+B. Inicialización y cierre de los datos maestros.
+C. Control y ejecución del proceso.
+D. Control y supervisión. -> Correcto 
+
+10. La metodología DevOps permite:
+A. Aplicar velocidad a los proyectos subidos a AWS.
+B. Aplicar velocidad a los proyectos subidos a Azure.
+C. Entrega rápida, confiabilidad y escalado de proyectos. -> Correcto 
+D. Actuar lento pero seguro en proyectos BI.
 
 ## Tema 5. Introducción al Marketing
 
+## 5.2. Fundamentos y concepto del marketing
+
+> Lo que sí es imprescindible es que el marketing consiga llamar la atención del usuario final para que las empresas puedan vender sus productos
+
+El impacto del marketing en la vida diaria de las personas ha convertido esta
+disciplina en una de las funciones más importantes en el actual entorno organizativo,
+adoptada por todo tipo de estructura empresarial.
+
+El marketing existe porque es clave para la supervivencia de la empresa al intentar
+generar una actitud hacia el mercado para conseguir unos posibles
+comportamientos de compra. De hecho, en función de cómo se va a concebir la
+relación entre el intercambio y el consumidor y los principios de marketing que
+aplica, la empresa adopta un método de negocio u otro.
+
+## 5.3. Concepto de sistema de información
+## 5.4. Captura de datos. Sistema de datos internos
+## 5.5. La investigación del marketing. Las necesidades del cliente
+
+
+
 ## Tema 6. Introducción al Marketing (continuación) 
+
+
+
+
 
 
 
