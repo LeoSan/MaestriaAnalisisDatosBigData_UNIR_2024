@@ -1126,6 +1126,10 @@ aplica, la empresa adopta un método de negocio u otro.
 ## 5.4. Captura de datos. Sistema de datos internos
 ## 5.5. La investigación del marketing. Las necesidades del cliente
 
+https://app.dremio.cloud/arctic/c146df44-4aa3-4369-a797-2ad19f7a31e1/data/main
+
+https://desktop.webcatalog.io/es
+NmkQ@$hNaCYL7K#!
 
 
 ## Tema 6. Introducción al Marketing (continuación) 
