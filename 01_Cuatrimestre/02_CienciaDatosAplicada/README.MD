@@ -1490,6 +1490,9 @@ C. Optimización de la experiencia del cliente.
 D. Análisis de sentimientos.
 
 
+
+# Clases 
+
 ## Clase 5: 17 De Diciembre 
 
 - Segunda Actividad 2 Grupal 
@@ -1497,3 +1500,7 @@ D. Análisis de sentimientos.
     - PDF 
     - Presentación 
     - Video 
+
+## Clase 6: 07 Enero 2025 
+    - Simulacion de un proyecto de analitica de datos 
+    - 

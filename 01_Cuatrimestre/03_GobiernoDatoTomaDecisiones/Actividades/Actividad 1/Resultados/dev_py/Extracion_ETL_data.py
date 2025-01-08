@@ -27,4 +27,23 @@ print("Extracción Finalizada")
 print("")
 print("Un total de {} datos extraidos exitosamente del dataset.".format(total_datos))
 
+## Transformacion 
+lista_province_state = conexion_sql.consulta_sql_server('SELECT province_state FROM t_origen_dataset GROUP BY province_state ORDER BY province_state', connection, 1)
+lista_country_region = conexion_sql.consulta_sql_server('SELECT country_region FROM t_origen_dataset GROUP BY country_region ORDER BY country_region', connection, 1)
+
+#Limpio base de datos
+conexion_sql.consulta_sql_server('DELETE FROM t_dim_region', connection, 0)
+conexion_sql.consulta_sql_server('DELETE FROM t_dim_pais', connection, 0)
+
+for province_state in lista_province_state: # type: ignore
+    datos_a_insertar = {'nombre': province_state[0] }
+    SQL_QUERRY = "INSERT INTO t_dim_region (nombre) VALUES (%(nombre)s)"
+    conexion_sql.insert_data_sql_server(SQL_QUERRY, datos_a_insertar, connection)
+
+
+for country_region in lista_country_region: # type: ignore
+    datos_a_insertar = {'nombre': country_region[0] }
+    SQL_QUERRY = "INSERT INTO t_dim_pais (nombre) VALUES (%(nombre)s)"
+    conexion_sql.insert_data_sql_server(SQL_QUERRY, datos_a_insertar, connection)
+
 conexion_sql.cerrar_sql_server(connection)

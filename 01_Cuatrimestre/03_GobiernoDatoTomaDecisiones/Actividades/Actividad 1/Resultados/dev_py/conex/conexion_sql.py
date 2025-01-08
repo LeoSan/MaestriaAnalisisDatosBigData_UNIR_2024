@@ -29,22 +29,21 @@ def consulta_sql_server(SQL_QUERRY, connection, is_return):
     else:
         return 0
 
-
-
 def insert_data_origen_sql_server(SQL_QUERRY, data, connection):
-    
     cursor = connection.cursor()
     #Validaciones 
-    #data['Last_Update']   = data['Last_Update'].strftime('%Y-%m-%d')
     data['FIPS']          = is_empty(data['FIPS'], 0)
-    #data['Admin2']        = is_empty(data['Admin2'], '')
-    #data['Province_State']= is_empty(data['Province_State'], '')
     data['Recovered']     = is_empty(data['Recovered'], 0)
     data['Active']        = is_empty(data['Active'], 0)
     #execute 
     cursor.execute(SQL_QUERRY, data)
     connection.commit()
 
+def insert_data_sql_server(SQL_QUERRY, data, connection):
+    cursor = connection.cursor()
+    #execute 
+    cursor.execute(SQL_QUERRY, data)
+    connection.commit()
 
 def is_empty(valor, fill):
     if math.isnan(valor) or valor == 'nan' or valor == 'NaN':
