@@ -46,4 +46,19 @@ for country_region in lista_country_region: # type: ignore
     SQL_QUERRY = "INSERT INTO t_dim_pais (nombre) VALUES (%(nombre)s)"
     conexion_sql.insert_data_sql_server(SQL_QUERRY, datos_a_insertar, connection)
 
+#Inserto los datos a la tabla t_hechos 
+lista_t_hechos = conexion_sql.consulta_sql_server('SELECT fips, last_update, confirmed, deaths, recovered, active, incident_rate, case_fatality_ratio, b.id, c.id FROM t_origen_dataset  as a LEFT JOIN t_dim_pais as b ON b.nombre = a.country_region LEFT JOIN t_dim_region as c ON c.nombre = a.province_state', connection, 1)
+
+total_datos = 0
+
+for t_hechos in lista_t_hechos: # type: ignore
+    datos_a_insertar = {'fips': t_hechos[0], 'fecha':t_hechos[1], 'confirmed':t_hechos[2],'deaths':t_hechos[3], 'recovered':t_hechos[4], 'active':t_hechos[5], 'incident_rate': conexion_sql.is_empty(t_hechos[6], 0), 'case_fatality_ratio':conexion_sql.is_empty(t_hechos[7], 0), 'fk_pais':t_hechos[8], 'fk_region':t_hechos[9]}
+    print("")
+    print(" --- data N°{} ".format(total_datos))
+    print(datos_a_insertar)
+    print("")
+    total_datos=total_datos + 1
+    SQL_QUERRY = "INSERT INTO t_hechos (fips, fecha, confirmed, deaths, recovered, active, incident_rate, case_fatality_ratio, fk_pais, fk_region) VALUES (%(fips)s, %(fecha)s, %(confirmed)s, %(deaths)s, %(recovered)s, %(active)s, %(incident_rate)s, %(case_fatality_ratio)s, %(fk_pais)s, %(fk_region)s)"
+    conexion_sql.insert_data_sql_server(SQL_QUERRY, datos_a_insertar, connection)
+
 conexion_sql.cerrar_sql_server(connection)
