@@ -1116,11 +1116,56 @@ El impacto del marketing en la vida diaria de las personas ha convertido esta
 disciplina en una de las funciones más importantes en el actual entorno organizativo,
 adoptada por todo tipo de estructura empresarial.
 
+> Marketing no es vender lo que se tiene, es producir lo que se puede vender  
+
 El marketing existe porque es clave para la supervivencia de la empresa al intentar
-generar una actitud hacia el mercado para conseguir unos posibles
-comportamientos de compra. De hecho, en función de cómo se va a concebir la
+generar **una actitud hacia el mercado para conseguir unos posibles
+comportamientos de compra.** De hecho, en función de cómo se va a concebir la
 relación entre el intercambio y el consumidor y los principios de marketing que
 aplica, la empresa adopta un método de negocio u otro.
+
+## Ideas clase 
+- Meta Maerketing = conservar y atraer nuevos clientes a la empresa.
+- Misión = Crear valor agregado suficiente
+- Medio = Ofrecer satisfacción por medio de la utilidad que obtienen
+
+## Cuatro orientaciones interrelaciones:
+
+1.- Orientación a la producción
+2.- Orientación al producto
+3.- Orientación a las ventas
+4.- Orientación al marketing
+  
+## Productos, bienes, servicios e ideas
+- El producto es el medio del que dispone la empresa para satisfacer una necesidad
+en el consumidor, que posee un valor y es susceptible de satisfacer dicha carestía o
+insuficiencia.
+- El término producto se utiliza de forma genérica incluyendo también los servicios y
+las ideas.
+
+
+## Necesidad, deseo y demanda
+- Conviene diferenciar estos tres conceptos, pues el marketing trata de satisfacer necesidades, formalizadas a través de un deseo y, para ello, actúa fundamentalmente sobre la demanda.
+
+**Precisemos su contenido:**
+- Necesidad: sensación de carencia de algo.
+- Deseo: expresión de la voluntad de satisfacer una necesidad.
+- Demanda: formulación expresa del deseo condicionada por los recursos disponibles.
+
+> Distinguir claramente estos conceptos es imprescindible para asentar los principios de marketing y actuar en consecuencia
+
+> El mecanismo progresivo que se establece en el proceso de adquisición de cualquier
+producto o servicio se inicia cuando, registrada o despertada una necesidad, esta se
+convierte en un deseo, que correctamente encauzado a través de las diferentes
+fases del proceso de compra se convierte en una demanda específica materializada
+en la obtención de un producto concreto
+
+## 3 Evolución 
+- Intercambio = Acto central del marketing, porque se obtiene un objeto deseado y satisface una necesidad a cambio de algo
+- transacciones = Unidad de medida del marketing donde consiste medidas las acciones para un intercambio de valores no necesariamente ecónomico.
+- Relaciones = Finalidad última del marketing que pretende construir una red de relaciones con los clientes para que perduren en el tiempo.
+  
+
 
 ## 5.3. Concepto de sistema de información
 ## 5.4. Captura de datos. Sistema de datos internos
@@ -1155,7 +1200,7 @@ NmkQ@$hNaCYL7K#!
 - The Global Data Management Community (DAMA International) es una comunidad global sin ánimo de lucro que promueve los conceptos y mejores prácticas de la gestión de información y datos. 
 - DAMA define prácticas bien diferenciadas
 
-**Niveles Madurez**
+**Niveles Madurez****
 - Nota: Es una buena Clave medir y conocer siempre el nivel de madurez de tu empresa en cuanto a procesos y toma de decisiones 
 
 1. Inicial
