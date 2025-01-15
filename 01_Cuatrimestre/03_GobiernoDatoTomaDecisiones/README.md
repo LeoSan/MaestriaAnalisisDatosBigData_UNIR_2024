@@ -1250,26 +1250,26 @@ NmkQ@$hNaCYL7K#!
 - Datos no estructurados   -> Videos, audio, imaganes, correo electronicos, registro de chats 
 Ciclo de Vida
 
-**El ciclo de vida es un proceso continuo que se divide en las siguientes etapas:**
+**El ciclo de vida del Dato:**
 
-- Crea:
+- Se Crea:
     - Inicio del proceso.
     - Generación de algo nuevo o original.
     - Puede referirse a la producción de bienes, servicios, ideas, etc.
-- Almacena:
+- Se Almacena:
     - Guardado o conservación de lo creado.
     - Puede implicar un almacenamiento físico o digital.
     - Se asegura la disponibilidad futura del elemento.
-- Usa:
+- Se Usa:
     - Utilización del elemento almacenado.
     - Consumo o aprovechamiento de sus características o funciones.
-- Distribuye:
+- Se Distribuye:
     - Difusión o entrega del elemento a otros.
     - Puede involucrar la venta, el intercambio o la donación.
-- Archiva:
+- Se Archiva:
     - Organización y preservación de registros o información relacionada.
     - Facilita la búsqueda y recuperación futura.
-- Destruye:
+- Se Destruye:
     - Finalización del ciclo de vida.
     - Eliminación o desecho del elemento.
     - Puede ser debido a obsolescencia, daño o finalización de su utilidad.
@@ -1300,9 +1300,7 @@ Para implementar con éxito los datos maestros, es crucial contar con una sólid
 **Palabras clave:** datos maestros, unificación de datos, calidad de datos, gobernanza de datos
 
 ## Cómo implementar un sistema de gestión de datos maestros
-
 ### Pasos clave:
-
 1. **Planificación:** Definir objetivos, alcance y datos maestros clave.
 2. **Coordinación:** Involucrar a todas las partes interesadas.
 3. **Modelado:** Crear modelos de datos para representar la estructura.
@@ -1346,7 +1344,8 @@ La implementación de una estrategia MDM requiere una planificación cuidadosa q
 
 **Flujos de Datos del gobierno de Datos**
 ![image](https://github.com/user-attachments/assets/6f357758-fd8a-458d-ace5-bbfc1186cf56)
-**Resumen Ordenado:**
+
+## **Resumen Ordenado:**
 > La imagen representa un flujo de datos desde sistemas productores (ERP, CRM, etc.) hasta sistemas consumidores (eCommerce, aplicaciones móviles, etc.) a través de una plataforma de Gestión de Datos Maestros (MDM).
 
 - Los datos se extraen de diversas fuentes (bases de datos, archivos, etc.) y se cargan en un Data Lake.
@@ -1387,7 +1386,7 @@ El diagrama ilustra el flujo de datos desde sistemas de origen (productores) has
 * Mayor agilidad en la respuesta a los cambios del negocio.
 * Mayor satisfacción del cliente 
 
-**Ejemplo**
+## **Ejemplo**
 - Paso 1
 ![image](https://github.com/user-attachments/assets/0edb7895-8c27-4b57-bb58-7a8645246cbc)
 
