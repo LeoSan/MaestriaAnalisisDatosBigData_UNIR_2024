@@ -1160,17 +1160,72 @@ convierte en un deseo, que correctamente encauzado a través de las diferentes
 fases del proceso de compra se convierte en una demanda específica materializada
 en la obtención de un producto concreto
 
-## 3 Evolución 
+## Evolución 
 - Intercambio = Acto central del marketing, porque se obtiene un objeto deseado y satisface una necesidad a cambio de algo
 - transacciones = Unidad de medida del marketing donde consiste medidas las acciones para un intercambio de valores no necesariamente ecónomico.
 - Relaciones = Finalidad última del marketing que pretende construir una red de relaciones con los clientes para que perduren en el tiempo.
-  
-
 
 ## 5.3. Concepto de sistema de información
+
+> Pero el concepto de sistema de información que aludimos en esta materia va
+más allá de la mecanización de actividades rutinarias. Hace referencia a la
+gestión del conocimiento que encierran los datos disponibles y aprovechables
+en la información.
+
+- Hoy en día los datos que circulan en una empresa poseen un valor inmenso que debemos aprender a tramitar para poder ser utilizados con eficacia.
+-  Una condición esencial del mundo digital en el que vivimos es una administración eficaz de la información procedente de fuentes internas y externas
+
+## concepto SIM 
+- Su objetivo es generar un flujo ordenado de datos con el proposito de procesar, almacenar datos para luego ayudar en la toma de decisiones. 
+
+## Beneficios del SIM 
+![image](https://github.com/user-attachments/assets/3ce13a32-5bcc-43ac-80e6-492b055e935a)
+
 ## 5.4. Captura de datos. Sistema de datos internos
+
+- Esta clasificación responde a la imperiosa urgencia de invertir en la obtención de datos en tiempo real.
+- Sea cual sea el SIM que se emplee, que dependerá del tiempo que se necesita en la respuesta, la captura empieza por la creación de un banco de datos que recoja toda la información que fluye por la empresa.
+## Se Clasifica en: 
+- Ocasional: Se le conoce como un estudio de mercado basado en entrevistas y encuestas a un sector 
+- Preferente : Es Sistematico y resuelve el estado actual del mercado con metricas y datos
+
+## Importancia 
+- Este banco de datos actualizado al instante es el que permite a la empresa contar con la información más actual de los clientes y así tomar medidas de la forma más rápida y eficiente para responder a sus necesidades
+ 
+## Datos 
+- Los datos internos son los primeros datos que hay que aprender a fiscalizar porque están dentro de la organización y no suponen costes adicionales. Pero no son los únicos.
+-  Los Datos Externos: son el entorno, el mercado, la competencia y los consumidores
+
+  
 ## 5.5. La investigación del marketing. Las necesidades del cliente
 
+> El primer paso que es necesario emprender para lograrlo consiste en observar y estudiar detenidamente el comportamiento del consumidor con sus compras reales, sus inclinaciones, sus tendencias, predisposiciones y preferencias
+> La conducta del consumidor final es un indicativo de qué tipo de productos o
+servicios son los que desea adquirir, debiendo decidir así la empresa a qué precios
+venderlos, dónde y cómo hacerle publicidad al producto, qué canales de distribución
+emplear, etc. Precisamente para conseguirlo se emplea la investigación de
+marketing, cuya principal utilidad es conocer el nivel de satisfacción, el grado de
+bienestar y el estado de complacencia de sus clientes con lo adquirido
+
+## Metodos de Investigación 
+![image](https://github.com/user-attachments/assets/b88e5e82-9daa-4fa6-a8a1-a084d97e1463)
+
+
+
+# Notas Videos
+## Videoclase 1. Fundamentos del Marketing
+- El marketing como filosofía
+    - Defiende el establecimiento de unas relaciones permanentes con los clientes. -> El marketing como filosofía busca construir relaciones duraderas con los clientes, basadas en la confianza y la satisfacción continua de sus necesidades y expectativas.
+- La venta es un proceso
+  - En doble sentido. -> La venta es un proceso de comunicación bidireccional donde tanto el vendedor como el comprador intercambian información y valor, con el objetivo de satisfacer necesidades y establecer relaciones comerciales.    
+- El marketing como disciplina científica
+  - Es reconocido como una ciencia aplicada del comportamiento que trata de comprender las relaciones entre compradores y vendedores. -> El marketing es una ciencia aplicada que estudia y analiza el comportamiento de los consumidores y las dinámicas entre compradores y vendedores, enfocándose en satisfacer necesidades y construir relaciones de valor.
+- El concepto de marketing está estrechamente vinculado con la relación de intercambio.
+  - Correcto.-> El marketing se basa en la relación de intercambio, donde se intercambian productos o servicios por algo de valor, generalmente dinero, para satisfacer las necesidades y deseos de las partes involucradas.
+- La satisfacción de necesidades es
+  - El elemento motivador que facilita el proceso de intercambio -> La satisfacción de necesidades es el principal motor detrás del proceso de intercambio. Es la razón por la que los consumidores buscan productos o servicios que cumplan con sus deseos y expectativas.
+ 
+## Videoclase 2. Productos y Enfoque en el Cliente
 
 
 ## Tema 6. Introducción al Marketing (continuación) 
