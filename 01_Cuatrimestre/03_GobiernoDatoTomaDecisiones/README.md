@@ -1237,6 +1237,96 @@ bienestar y el estado de complacencia de sus clientes con lo adquirido
 - La investigación de marketing consiste en
     - El diseño sistemático, el análisis de datos y la recogida de información relevante para resolver un problema concreto al que se enfrenta la empresa. -> La investigación de marketing se enfoca en recopilar y analizar datos para resolver problemas específicos y tomar decisiones informadas que beneficien a la empresa y sus estrategias de mercado.
 
+
+## Videoclase 3. Inteligencia e Investigación de Marketing
+- ¿Qué es el Sistema de Información de Marketing (SIM)?
+    - Un sistema que recolecta, almacena, analiza y distribuye información de marketing para la toma de decisiones. -> Correcto. El SIM se utiliza para gestionar información relevante para la toma de decisiones en marketing.
+- ¿Cuáles son algunos de los beneficios del consumo colaborativo mencionados en el documento?
+    - Eliminación de intermediarios, mayor especialización y capacidad de elección. -> Correcto. El consumo colaborativo ofrece beneficios como la eliminación de intermediarios, mayor especialización y capacidad de elección.
+- ¿Qué tipo de datos se consideran esenciales para el análisis de clientes?
+    - Datos transaccionales y demográficos. -> Correcto. Los datos transaccionales y demográficos son esenciales para un análisis efectivo de clientes.
+- ¿Cuál es uno de los objetivos principales de la creación de un buyer persona?
+    - Identificar las necesidades y comportamientos de los clientes para personalizar estrategias de marketing. -> Correcto. La creación de un buyer persona ayuda a identificar y entender mejor a los clientes para personalizar las estrategias de marketing.
+- ¿Qué herramienta se menciona como útil para el análisis de datos en marketing estratégico?
+    - Google Analytics. -> Correcto. Google Analytics se menciona como una herramienta útil para el análisis de datos en marketing estratégico.
+
+![image](https://github.com/user-attachments/assets/d3d2471d-b477-4b6b-9714-b3e9779dccd2)
+## Drink 
+![image](https://github.com/user-attachments/assets/9f0637cf-9c73-400d-a149-0b6ddedf0c43)
+## Single 
+![image](https://github.com/user-attachments/assets/fbb1d7dd-f87d-4f37-9f44-fbf7f06ef1d5)
+## BOBOS 
+![image](https://github.com/user-attachments/assets/c478b176-28cf-4647-bb69-bf3866b6de25)
+## Geeks 
+![image](https://github.com/user-attachments/assets/dfbc6ab6-fda5-4b7a-bea3-2a8cbf94fa89)
+## Senior Boomers 
+![image](https://github.com/user-attachments/assets/0edbf809-0ab2-4fc7-9820-bdf34d5ade9d)
+
+
+## como definir un persil mas personalizado 
+![image](https://github.com/user-attachments/assets/c330ba50-96c3-4db7-b205-a3fe1ac56b54)
+
+
+## Cuestionario 
+
+1. El marketing como filosofía:
+A. Defiende el establecimiento de unas relaciones permanentes con los
+clientes. -> correcto
+B. Defiende el establecimiento de unas relaciones no permanentes con los
+clientes
+
+2. La venta es un proceso:
+A. En sentido único.
+B. En doble sentido. -> correcto
+
+3. El marketing como disciplina científica:
+A. Es reconocido como una rama de la economía que se dedica a estudiar los
+canales de distribución.
+B. Es reconocido como una ciencia aplicada del comportamiento que trata de
+comprender las relaciones entre compradores y vendedores. -> correcto
+
+4. El concepto de marketing está estrechamente vinculado con la relación de
+intercambio.
+A. Correcto. -> correcto
+B. Incorrecto.
+
+5. La satisfacción de necesidades es:
+A. El elemento motivador que anula el proceso de intercambio.
+B. El elemento motivador que facilita el proceso de intercambio. -> correcto
+
+6. Cuando se habla de producto, desde el punto de vista del marketing, nos
+estamos refiriendo a:
+A. Los bienes tangibles.
+B. Los objetos tangibles e intangibles -> correcto
+
+7. Los bienes son:
+A. Objetos físicos y, como tales, tangibles. -> correcto
+B. Objetos materiales e inmateriales.
+
+8. El enfoque actual del marketing hacia el mercado y en relación con el cliente:
+A. Solo es posible con un mejor conocimiento de las necesidades individuales
+del cliente. -> correcto
+B. Implica un profundo conocimiento del mercado absoluto.
+
+9. El sistema de inteligencia de marketing aporta información:
+A. Sobre aspectos relacionados con la situación y los resultados conseguidos
+por la empresa.
+
+B. Sobre los aspectos que tienen lugar en el entorno y que son más
+significativos para la empresa. -> correcto
+
+11. La investigación de marketing consiste en:
+A. El diseño sistemático, el análisis de datos y la recogida de información
+relevante para resolver un problema concreto al que se enfrenta la empresa. -> correcto
+
+B. El diseño sistemático, el análisis de datos y la recogida de información
+relevante para resolver una complicación hipotética a la que se enfrenta la
+empresa.
+
 ## Tema 6. Introducción al Marketing (continuación) 
 
+6.2. Principios y fundamentos
+6.3. Métricas básicas
+6.4. Tipos de analíticas web
+6.5. Herramientas de medición
 
