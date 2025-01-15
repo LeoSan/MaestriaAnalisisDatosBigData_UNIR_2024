@@ -1226,7 +1226,16 @@ bienestar y el estado de complacencia de sus clientes con lo adquirido
   - El elemento motivador que facilita el proceso de intercambio -> La satisfacción de necesidades es el principal motor detrás del proceso de intercambio. Es la razón por la que los consumidores buscan productos o servicios que cumplan con sus deseos y expectativas.
  
 ## Videoclase 2. Productos y Enfoque en el Cliente
-
+- Cuando se habla de producto, desde el punto de vista del marketing, nos estamos refiriendo a
+  - Los objetos tangibles e intangibles. -> En marketing, el término "producto" incluye tanto bienes tangibles como servicios intangibles. Esto abarca cualquier oferta que pueda satisfacer una necesidad o deseo del consumidor.
+- Los bienes son
+  - Objetos físicos y, como tales, tangibles. -> Los bienes son productos físicos que pueden ser vistos y tocados, a diferencia de los servicios, que son intangibles y no pueden ser percibidos físicamente.
+- El enfoque actual del marketing hacia el mercado y en relación con el cliente
+  - Solo es posible con un mejor conocimiento de las necesidades individuales del cliente. -> El enfoque moderno del marketing se centra en la personalización y en entender profundamente las necesidades individuales de los clientes para ofrecer soluciones personalizadas y crear relaciones de largo plazo.
+- El sistema de inteligencia de marketing aporta información
+    - Sobre los aspectos que tienen lugar en el entorno y que son más significativos para la empresa. -> La inteligencia de marketing proporciona información valiosa sobre el entorno externo, ayudando a la empresa a adaptarse a cambios y aprovechar oportunidades relevantes.
+- La investigación de marketing consiste en
+    - El diseño sistemático, el análisis de datos y la recogida de información relevante para resolver un problema concreto al que se enfrenta la empresa. -> La investigación de marketing se enfoca en recopilar y analizar datos para resolver problemas específicos y tomar decisiones informadas que beneficien a la empresa y sus estrategias de mercado.
 
 ## Tema 6. Introducción al Marketing (continuación) 
 
