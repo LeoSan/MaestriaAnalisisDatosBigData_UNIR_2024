@@ -1490,17 +1490,138 @@ C. Optimización de la experiencia del cliente.
 D. Análisis de sentimientos.
 
 
+## Tema 6. Estrategias en Almacenamiento Masivo
 
-# Clases 
+6.2. Data Mart
+> Un Data Mart es una estructura de almacenamiento de datos optimizada para un departamento o una función específica dentro de una organización, como ventas, marketing o finanzas. Se trata de una versión más pequeña y especializada de un Data Warehouse, diseñada para satisfacer las necesidades de un grupo particular de usuarios con datos específicos y relevantes (Inmon, W. H., Strauss, D, 2008).
 
-## Clase 5: 17 De Diciembre 
+**Principales características**
+- Enfoque específico
+- Menor tamaño
+- Rápida implementación:
+- Facilidad de uso
+- Estructura simplificada
 
-- Segunda Actividad 2 Grupal 
-- Entregables 
-    - PDF 
-    - Presentación 
-    - Video 
+**Desventajas**
+- Visión limitada: Al estar enfocados en un área específica, los Data Marts no proporcionan una visión global y consolidada de los datos de toda la organización.
+- Duplicación de datos: En organizaciones con múltiples Data Marts, puede ocurrir duplicación de datos, lo que puede llevar a inconsistencias y problemas de integridad.
+- Mantenimiento: Gestionar múltiples Data Marts puede ser más complicado y costoso en términos de mantenimiento y actualización, especialmente si no están integrados adecuadamente.
+- Escalabilidad: Los Data Marts pueden no ser adecuados para empresas que necesitan escalar rápidamente el almacenamiento y el procesamiento de datos a nivel globa. 
 
-## Clase 6: 07 Enero 2025 
-    - Simulacion de un proyecto de analitica de datos 
-    - 
+6.3. Data Warehouse
+Un Data Warehouse (almacén de datos) es una base de datos centralizada que recopila, integra y almacena grandes volúmenes de datos procedentes de diversas fuentes heterogéneas. Está diseñado para el análisis y la generación de informes,
+proporcionando una visión coherente y consolidada de la información a lo largo del tiempo. Los datos en un Data Warehouse suelen ser históricos y están organizados para facilitar consultas complejas y análisis avanzados.
+
+**Principales características**
+- Integración de datos: Un Data Warehouse unifica datos de múltiples fuentes, como bases de datos operacionales, sistemas transaccionales, archivos y otras fuentes externas, en un formato coherente y homogéneo.
+- Orientado al análisis: A diferencia de los sistemas transaccionales que manejan operaciones diarias, los Data Warehouses están optimizados para consultas complejas, análisis y generación de informes.
+- Datos históricos: Almacena datos históricos que permiten realizar análisis de tendencias y comparativas a lo largo del tiempo.
+- Alta disponibilidad y rendimiento: Diseñado para soportar un gran volumen de consultas y análisis sin afectar el rendimiento de los sistemas operacionales.
+- Modelado de datos: Utiliza esquemas de datos específicos como el esquema estrella o el esquema copo de nieve, que facilitan el acceso y la consulta de datos.
+
+**Desventajas**
+- Coste de implementación: La creación y el mantenimiento de un Data Warehouse pueden ser costosos debido a la necesidad de hardware especializado, software y personal capacitado.
+- Complejidad: La integración de datos de múltiples fuentes y el mantenimiento de la coherencia pueden ser complejos y requerir una gestión cuidadosa.
+- Tiempo de carga: La extracción, transformación y carga (ETL) de datos en un Data Warehouse puede ser un proceso largo y complicado.
+- Rigidez: Los Data Warehouses son menos flexibles para cambios rápidos en la estructura de datos o en los requisitos de análisis en comparación con sistemas más modernos como los Data Lakes.
+
+6.4. Data Lake
+
+Un Data Lake es una arquitectura de almacenamiento de datos que permite guardar
+grandes volúmenes de datos en su formato original y sin procesar. A diferencia de
+los sistemas tradicionales de almacenamiento, que requieren una estructura
+predefinida y esquemas rígidos, un Data Lake ofrece una flexibilidad sin precedentes
+al permitir que los datos se almacenen tal como llegan, sin necesidad de
+estructurarlos previamente
+
+**Principales características**
+
+- Almacenamiento de datos crudos: Los Data Lakes permiten almacenar datos en su forma original sin necesidad de procesarlos o estructurarlos previamente, lo que facilita la ingesta de datos desde múltiples fuentes.
+- Escalabilidad: Los Data Lakes están diseñados para escalar horizontalmente, lo que significa que pueden manejar grandes volúmenes de datos en crecimiento continuo sin afectar el rendimiento.
+- Flexibilidad: Ofrecen la capacidad de almacenar diferentes tipos de datos, desde estructurados hasta no estructurados, permitiendo un análisis más completo y diverso.
+- Economía: El almacenamiento en Data Lakes es generalmente más económico en comparación con los sistemas de almacenamiento estructurados, ya que no requieren costosos esquemas de preprocesamiento. 
+- Acceso múltiple: Permiten el acceso simultáneo a los datos por parte de diferentes herramientas y lenguajes de análisis, facilitando el trabajo de científicos de datos, analistas y desarrolladores.
+- Metadatos y catalogación: Los Data Lakes suelen incorporar herramientas de gestión de metadatos y catalogación que ayudan a los usuarios a encontrar y utilizar los datos de manera eficiente. 
+
+**Desventajas**
+- Calidad de datos: Al permitir la ingesta de datos sin procesar, los Data Lakes pueden enfrentarse a problemas de calidad de datos, como duplicación, datos incompletos o inconsistentes.
+- Complejidad de gestión: Sin una gestión adecuada, un Data Lake puede convertirse en un "data swamp" (pantano de datos), donde los datos son difíciles de encontrar y utilizar.
+- Rendimiento: La consulta de datos crudos en un Data Lake puede ser menos eficiente en comparación con los datos estructurados en un Data Warehouse.
+- Seguridad y gobernanza: La flexibilidad de los Data Lakes puede dificultar la implementación de políticas de seguridad y gobernanza de datos, lo que puede llevar a riesgos de privacidad y cumplimiento normativo.
+
+
+## Videoclase 1. Ciencia de Datos en la Salud
+## Notas: 
+
+
+
+## Cuestionario 
+
+1. ¿Qué es un Data Mart?
+
+A. Un sistema de almacenamiento en la nube.
+B. Una versión simplificada y específica de un Data Warehouse. -> correcto 
+C. Un tipo de base de datos relacional.
+D. Un método de análisis de datos en tiempo real.
+
+2. ¿Cuál es una característica principal de los Data Marts?
+
+A. Integración de datos de múltiples fuentes.
+B. Almacenamiento de datos en su formato original.
+C. Escalabilidad horizontal.
+D. Enfoque específico en un área de negocio. -> Correcto 
+
+3. ¿Cuál de las siguientes es una desventaja de los Data Marts?
+
+A. Alta escalabilidad.
+B. Flexibilidad en la gestión de datos. -> Duda
+C. Pueden llevar a duplicación de datos.
+D. Integración de múltiples fuentes de datos.
+
+4. ¿Qué tipo de esquema es comúnmente utilizado en los Data Marts?
+
+A. Esquema en red.
+B. Esquema estrella. -> Correcto 
+C. Esquema jerárquico.
+D. Esquema de malla.
+
+5. ¿Para qué tipo de proyectos son especialmente útiles los Data Marts?
+A. Proyectos a corto plazo. -> Duda
+B. Proyectos a largo plazo.
+C. Proyectos de infraestructura.
+D. Proyectos de migración de datos.
+
+6. ¿Qué es un Data Warehouse?
+
+A. Un repositorio centralizado de datos integrados de múltiples fuentes. -> Correcto
+B. Un sistema de análisis en tiempo real.
+C. Una base de datos distribuida.
+D. Un sistema de almacenamiento temporal.
+
+7. ¿Cuál es una ventaja clave de un Data Warehouse?
+
+A. Menor coste de implementación.
+B. Flexibilidad en la estructura de datos.
+C. Proporciona una visión global y consolidada de los datos de la organización. -> correcto 
+D. Almacenamiento de datos en su formato original.
+
+8. ¿Cuál es una desventaja de los Data Warehouses?
+
+A. Facilidad de implementación.
+B. La implementación y mantenimiento pueden ser costosos. -> correcto 
+C. Alta flexibilidad para cambios rápidos. 
+D. Baja escalabilidad.
+
+9. ¿Qué es un Data Lake?
+
+A. Un sistema de almacenamiento temporal.
+B. Una base de datos relacional.
+C. Un almacenamiento flexible y escalable de datos crudos. -> Correcto 
+D. Un sistema de procesamiento en tiempo real.
+
+10. ¿Cuál es una característica principal de los Data Lakes?
+
+A. Almacenan datos altamente estructurados.
+B. Requieren preprocesamiento de datos antes de almacenarlos.
+C. Almacenan datos en su forma original sin procesar. -> Correcto 
+D. Son exclusivamente para datos transaccionales.
