@@ -1236,7 +1236,6 @@ NmkQ@$hNaCYL7K#!
 > Un dato erroneo puede ser el causante de una serie de malas decisiones. 
 > MDM Master Data Management 
 
-**Datos Maestros** 
 ![image](https://github.com/user-attachments/assets/f86c389f-f464-4eef-b23a-06245d2da27a)
 
 - Datos: elementos sin procesar de si solo no generan conocimiento.
