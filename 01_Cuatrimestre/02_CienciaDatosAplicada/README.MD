@@ -155,7 +155,7 @@ A través de técnicas como el aprendizaje automático, la minería de datos y l
     D. Concentrarse en datos irrelevantes.
 
 
-## Tema 2. Ciclo de vida de los datos masivos
+# Tema 2. Ciclo de vida de los datos masivos
 
 ## 2.1. Recolección
 Es el proceso que nos permite iniciar con la redaudacción de datos aquí podremos indentifcar la fuente de información, tambien podemos implementar tareas de limpieza y tratamiento de datos como validaciones y comprobaciones, para luego ser almacenados bajo su estructura previamente analizada bien sea BD SQL o NOsql 
@@ -483,7 +483,7 @@ del pulso cardíaco por una pulsera de actividad?
     D. Buscar y organizar datos.
 
 
-## Tema 3. Arquitecturas Típicas en Proyectos de Datos Masivos
+# Tema 3. Arquitecturas Típicas en Proyectos de Datos Masivos
 
 Fuentes Heterogenias de Datos 
 - Tipos de Datos: 
@@ -1162,7 +1162,7 @@ valor justo de diversos activos, incluyendo acciones, bonos y derivados
     D. Para aumentar la carga computacional.
 
 
-## Tema 5. Áreas de aplicación de la Ciencia de Datos
+# Tema 5. Áreas de aplicación de la Ciencia de Datos
 
 ## Videoclase 1. Ciencia de Datos en la Salud
 ## Notas: 
@@ -1490,7 +1490,7 @@ C. Optimización de la experiencia del cliente.
 D. Análisis de sentimientos.
 
 
-## Tema 6. Estrategias en Almacenamiento Masivo
+# Tema 6. Estrategias en Almacenamiento Masivo
 
 6.2. Data Mart
 > Un Data Mart es una estructura de almacenamiento de datos optimizada para un departamento o una función específica dentro de una organización, como ventas, marketing o finanzas. Se trata de una versión más pequeña y especializada de un Data Warehouse, diseñada para satisfacer las necesidades de un grupo particular de usuarios con datos específicos y relevantes (Inmon, W. H., Strauss, D, 2008).
@@ -1550,9 +1550,44 @@ estructurarlos previamente
 - Seguridad y gobernanza: La flexibilidad de los Data Lakes puede dificultar la implementación de políticas de seguridad y gobernanza de datos, lo que puede llevar a riesgos de privacidad y cumplimiento normativo.
 
 
-## Videoclase 1. Ciencia de Datos en la Salud
+## Videoclase 1. Data Mart versus Data Warehouse
 ## Notas: 
+- ¿Cuál es la principal diferencia entre un Data Mart y un Data Warehouse? 
+    - Un Data Mart se enfoca en un área específica del negocio, mientras que un Data Warehouse integra datos de toda la organización.
+- ¿Cuál es una ventaja clave de usar un Data Mart?
+    - Ofrece una implementación rápida y costos reducidos para análisis específicos.
+- ¿En qué escenario es más adecuado utilizar un Data Warehouse?
+    - Cuando se requiere una vista integral y consolidada de todas las operaciones de una multinacional.
+- ¿Qué limitación tiene el uso de un Data Mart?
+    - Puede crear silos de datos, dificultando la integración y el análisis a nivel empresarial.
+- ¿Por qué podría ser valioso utilizar tanto un Data Mart como un Data Warehouse en la arquitectura de datos?
+    - Para combinar análisis específicos y rápidos con una visión integral y consolidada de los datos empresariales.
+ 
+## Videoclase 2. Data Lake y su Importancia
+## Notas: 
+- ¿Qué es un Data Lake y cómo se diferencia de un Data Warehouse?
+    - Un Data Lake almacena datos en su formato nativo y permite gestionar datos estructurados, semiestructurados y no estructurados a cualquier escala.
+- ¿Cuándo podría no ser aconsejable utilizar un Data Lake?
+    - Cuando se requiere una estructura rígida de datos y consultas complejas en entornos regulados.
+- ¿Por qué los Data Lakes son esenciales en entornos de Big Data y Machine Learning?
+    - Proporcionan un repositorio centralizado para grandes cantidades de datos diversos, necesarios para entrenar modelos de IA y Machine Learning.
+- ¿Qué desventaja principal puede tener el uso de un Data Lake?
+    - Puede ser complejo gestionar y acceder a los datos sin las herramientas adecuadas.
+- ¿Qué es esencial para mantener la calidad de los datos en un Data Lake?
+    - Establecer una gobernanza de datos robusta para asegurar la calidad y seguridad de los datos almacenados.
 
+## Videoclase 3. Nuevas Tendencias en Almacenamiento Masivo
+## Notas: 
+- ¿Qué es el almacenamiento definido por software (SDS) y cómo se diferencia del almacenamiento tradicional?
+    - SDS permite gestionar el almacenamiento a través de software, proporcionando una mayor flexibilidad y control sobre los recursos de almacenamiento. 
+- ¿Cómo beneficia el Edge Storage a las aplicaciones de tiempo real?
+    - Procesando y almacenando datos cerca de donde se generan, lo que minimiza la latencia y mejora la respuesta en tiempo real.
+- ¿Qué ventaja ofrece el enfoque de Multi-Cloud en el almacenamiento de datos?
+    - Mejora la resiliencia y evita la dependencia de un solo proveedor, optimizando el rendimiento.
+- ¿Cómo se aplica el almacenamiento en la periferia (Edge Storage) en la industria de la salud?
+    - Facilita la monitorización en tiempo real de pacientes y mejora el diagnóstico mediante dispositivos IoT con capacidad de almacenamiento local.
+- ¿Qué tendencia emergente en almacenamiento explora el uso de ADN?
+    - Codificación de datos digitales en secuencias de ADN sintético para almacenar grandes cantidades en espacios reducidos.
 
 
 ## Cuestionario 
@@ -1625,3 +1660,12 @@ A. Almacenan datos altamente estructurados.
 B. Requieren preprocesamiento de datos antes de almacenarlos.
 C. Almacenan datos en su forma original sin procesar. -> Correcto 
 D. Son exclusivamente para datos transaccionales.
+
+
+# Tema 7. Estrategias de Aplicación de la Ciencia de Datos y Datos Masivos
+
+7.2. Inteligencia de Negocio
+7.3. Analítica de negocio
+7.4. Minería de Datos
+7.5. Aprendizaje Automático
+7.6. Inteligencia Artificial
