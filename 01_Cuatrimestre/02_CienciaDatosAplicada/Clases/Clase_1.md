@@ -1,6 +1,6 @@
 # Clase 1
 ## Semana 1 - 04/11/2024 - 08/11/2024
-## Profesor: Jose Eduardo Ferrer 
+## Profesor: DR. Jose Eduardo Ferrer 
 
 ## Temario 
 
