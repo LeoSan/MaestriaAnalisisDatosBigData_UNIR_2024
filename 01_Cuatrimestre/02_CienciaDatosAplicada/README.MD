@@ -1664,7 +1664,7 @@ D. Son exclusivamente para datos transaccionales.
 
 # Tema 7. Estrategias de Aplicación de la Ciencia de Datos y Datos Masivos
 
-7.2. Inteligencia de Negocio
+## 7.2. Inteligencia de Negocio (BI)
 > Es una disciplina que se encarga de procesar datos en bruto tranformandolo en información significativa y útil, con el proposito de ayudar a la empresas en optimizar los 
 
 El propósito principal de la BI es ayudar a las empresas a optimizar su rendimiento mediante la recopilación, integración, análisis y presentación de datos empresariales.
@@ -1712,12 +1712,139 @@ eficiencia operativa
 - Sector manufacturero:En la manufactura, BI ayuda a mejorar la eficiencia de la producción y la gestión de
 la cadena de suministro
 
-7.3. Analítica de negocio
+![alt text](/01_Cuatrimestre/02_CienciaDatosAplicada/info/image_001.png)
+
+## 7.3. Analítica de negocio (BA)
+
+> se refiere al uso de datos, análisis estadísticos y técnicas de modelado predictivo para tomar decisiones empresariales informadas y optimizar los resultados. La analítica de negocio se enfoca en la interpretación de datos históricos y actuales para prever tendencias futuras y comportamientos.
+
+## Componentes clave de la analítica de negocio
+
+- Análisis descriptivo: Se centra en la interpretación de datos históricos para entender qué ha ocurrido en el pasado. Utiliza técnicas como informes, dashboards y
+visualizaciones para proporcionar una visión clara de los eventos históricos.
+
+- Análisis predictivo: Utiliza modelos estadísticos y algoritmos de aprendizaje automático para predecir futuros eventos basados en datos históricos. Esta técnica es esencial para prever tendencias y tomar decisiones proactivas.
+
+- Análisis prescriptivo: Va un paso más allá del análisis predictivo al no solo prever lo que puede suceder, sino también recomendar acciones específicas que pueden influir en esos futuros eventos
+
+## Herramientas populares de analítica de negocio:
+
+- SAS (Statistical Analysis System): Un software líder en el campo de la analítica
+avanzada que ofrece una amplia gama de capacidades analíticas, desde la gestión
+de datos hasta la analítica predictiva y la minería de datos. SAS es conocido por su
+robustez y flexibilidad en el manejo de grandes volúmenes de datos (SAS Institute,
+2012).
+- R: Un lenguaje de programación y entorno de software para la estadística y el
+análisis gráfico. R es ampliamente utilizado en la analítica de negocio debido a su
+capacidad para manejar datos complejos y realizar análisis estadísticos avanzados
+(R Core Team, 2013).
+- Python: Un lenguaje de programación versátil que se ha convertido en una
+herramienta esencial para la analítica de negocio debido a sus bibliotecas
+específicas para análisis de datos como Pandas, NumPy, y Scikit-learn. Python es
+apreciado por su facilidad de uso y su capacidad para integrarse con otros sistemas
+(Van Rossum & Drake, 2009).
+- IBM SPSS (Statistical Package for the Social Sciences): Ofrece herramientas
+avanzadas para la analítica estadística y predictiva. SPSS es popular en la
+investigación de mercado, salud y educación debido a su facilidad de uso y potentes
+capacidades analíticas (IBM, 2011).
+
+
+## Métodos y técnicas clave en analítica de negocio:
+- Análisis estadístico: Incluye técnicas como regresión, análisis de varianza (ANOVA),
+y pruebas de hipótesis. Estas técnicas son fundamentales para identificar relaciones
+y patrones en los datos.
+
+- Modelos predictivos: Utilizan algoritmos como árboles de decisión, redes neuronales
+y máquinas de soporte vectorial (SVM) para prever futuros eventos basados en
+datos históricos. Los modelos predictivos son esenciales para anticipar
+comportamientos del cliente, detectar fraudes y gestionar riesgos (Friedman, 1997).
+
+- Análisis de series temporales: Involucra la evaluación de datos secuenciales a lo
+largo del tiempo para identificar tendencias, patrones estacionales y ciclos. Esta
+técnica es particularmente útil en la previsión de ventas y la planificación de la
+demanda (Box & Jenkins, 1976).
+
+- Análisis de cohortes: Permite segmentar datos en grupos basados en características
+compartidas y analizar sus comportamientos a lo largo del tiempo. Esto es útil para
+entender la retención de clientes y el impacto de las campañas de marketing.
+
+
+## Aplicaciones prácticas de la analítica de negocio
+
+- Optimización de procesos
+    - Evitar cuellos de botella
+    - En la manufactura
+    - Análisis de datos de producción 
+
+- Mejora de la toma de decisiones
+    - Sectores como el retail y las finanzas
+
+- Personalización del marketing    
+    - segmentar a los clientes y personalizar las campañas de marketing
+    - Diseñar campañas más efectivas y dirigidas
+
+- Gestión del riesgo
+    - Identificación de posibles fraudes y la evaluación de la solvencia crediticia de los clientes
+
+
+## 7.4. Minería de Datos (Data Mining)
+> es un proceso analítico diseñado para explorar grandes cantidades de datos en busca de patrones consistentes o relaciones sistemáticas entre variables
+
+## caracteristicas 
+- Usa tecnicas avanzadas como el análisis estadístico, aprendizaje automático y bases de datos para descubrir y validar
+estos patrones. 
+- Transformar datos en conocimiento útil y aplicable. 
+
+## Los componentes clave de la minería de datos
+- Recopilación de datos: La primera fase de la minería de datos implica la recopilación de grandes volúmenes de datos de diversas fuentes. 
+- Preparación de datos: Esta fase implica limpiar y transformar los datos para que sean adecuados para el análisis. 
+- Selección de datos: No todos los datos recopilados son relevantes para cada análisis
+- Modelado: Implica la aplicación de algoritmos y técnicas de minería de datos para identificar patrones en los datos
+    - Descriptivo: Identificando patrones existentes
+    - Predictivo: Prediciendo futuros eventos basados en datos históricos. 
+- Evaluación: Una vez que se ha construido un modelo, se evalúa su efectividad y precisión. 
+- Despliegue: Los modelos validados se implementan en el entorno de producción. 
+
+## Herramientas y software
+- Weka: Un conjunto de herramientas de aprendizaje automático para minería de
+datos que incluye una colección de algoritmos y visualización de datos. Weka es
+conocido por su facilidad de uso y su capacidad para integrar múltiples técnicas de
+minería de datos en un solo entorno.
+
+- RapidMiner: Una plataforma de análisis de datos que permite realizar procesos de
+minería de datos y aprendizaje automático. RapidMiner es popular por su interfaz
+intuitiva y su capacidad para manejar grandes volúmenes de datos.
+
+- KNIME: (Konstanz Information Miner) es una plataforma de integración de datos,
+procesamiento y análisis de datos de código abierto. KNIME permite la creación de
+flujos de trabajo visuales y la integración de diversas técnicas de minería de datos.
+
+- Apache Mahout: Una biblioteca de aprendizaje automático escalable para sistemas
+distribuidos
+
+## Proceso de minería de datos
+- Cross-Industry Standard Process for Data Mining, es un método probado para orientar sus trabajos de minería de datos (Proceso estándar intersectorial para la minería de datos)
+- Comprensión del negocio
+- Comprensión de los datos
+- Preparación de los datos
+- Modelado
+- Evaluación 
+- Despliegue 
+
+## Aplicaciones y casos de estudio
+
+- Marketing y ventas
+- Detección de fraudes
+- Salud
+- Manufactura
+
+
+## 7.5. Aprendizaje Automático (ML)
+> es una rama de la inteligencia artificial que se centra en el desarrollo de algoritmos y modelos que permiten a las máquinas aprender de los datos y mejorar su desempeño con la experiencia
 
 
 
-7.4. Minería de Datos
-7.5. Aprendizaje Automático
+
 7.6. Inteligencia Artificial
 
 
