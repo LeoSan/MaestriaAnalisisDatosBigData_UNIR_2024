@@ -1665,7 +1665,61 @@ D. Son exclusivamente para datos transaccionales.
 # Tema 7. Estrategias de Aplicación de la Ciencia de Datos y Datos Masivos
 
 7.2. Inteligencia de Negocio
+> Es una disciplina que se encarga de procesar datos en bruto tranformandolo en información significativa y útil, con el proposito de ayudar a la empresas en optimizar los 
+
+El propósito principal de la BI es ayudar a las empresas a optimizar su rendimiento mediante la recopilación, integración, análisis y presentación de datos empresariales.
+Esto incluye la utilización de herramientas de visualización, almacenamiento de datos y técnicas de minería de datos para descubrir patrones y tendencias ocultas
+
+## Componentes clave:
+- Fuentes de datos: Estas incluyen bases de datos transaccionales, sistemas de gestión de relaciones con los clientes (CRM), sistemas de planificación de recursos empresariales (ERP) y datos externos de mercado.
+- Almacén de datos: Un repositorio centralizado que almacena datos integrados de múltiples fuentes, diseñado para facilitar el análisis y la generación de informes.
+- Herramientas ETL (Extract, Transform, Load): Procesos que extraen datos de diversas fuentes, los transforman en un formato adecuado y los cargan en el almacén de datos.
+- Herramientas de análisis y minería de datos: Software que permite descubrir patrones, tendencias y relaciones en los datos.
+- Dashboards y visualización de datos: Interfaces que permiten a los usuarios visualizar y explorar datos a través de gráficos interactivos y visualizaciones (Turban et al., 2011).
+- La capacidad de BI para integrar y analizar datos de diversas fuentes hace posible la toma de decisiones más rápida y precisa. Esta capacidad es fundamental en un entorno empresarial donde las decisiones basadas en datos pueden significar la diferencia entre el éxito y el fracaso.
+
+## Herramientas y tecnologías
+- Tableau: Una de las herramientas de visualización más populares, conocida por su capacidad para crear visualizaciones interactivas y dashboards de forma intuitiva. Tableau permite a los usuarios conectar, visualizar y compartir datos rápidamente, y sus capacidades de análisis son robustas y fáciles de usar (Chen et al., 2012).
+- Power BI: Una herramienta de Microsoft que se integra perfectamente con otros productos de la suite Office y Azure. Power BI es conocido por su capacidad para transformar datos en visualizaciones coherentes y compartir insights en toda la organización.
+- QlikView: Ofrece análisis de datos en memoria, conocido por su rapidez y eficiencia. QlikView permite a los usuarios explorar grandes volúmenes de datos y descubrir patrones que podrían no ser evidentes con otras herramientas (Few, 2006)
+
+## Sistemas de gestión de bases de datos:
+- SQL Server: Proporciona capacidades robustas de gestión de datos y análisis. SQL Server es ideal para manejar grandes volúmenes de datos y realizar análisis complejos.
+- Oracle: Ofrece soluciones avanzadas para la gestión de grandes volúmenes de datos y análisis complejos, siendo una de las plataformas más utilizadas en BI.
+- Hadoop: Ideal para almacenar y procesar grandes volúmenes de datos no estructurados. Hadoop permite a las organizaciones manejar y analizar datos masivos de manera eficiente (Dean & Ghemawat, 2008).
+
+## Herramientas de minería de datos:
+- RapidMiner: Plataforma que permite realizar minería de datos y aprendizaje automático sin necesidad de conocimientos profundos de programación. RapidMiner facilita el proceso de descubrir patrones ocultos en los datos y generar modelos predictivos.
+
+- KNIME: Software de código abierto que facilita el análisis de datos a través de flujos de trabajo visuales. KNIME es flexible y extensible, lo que permite a los usuarios integrar diferentes tipos de análisis y técnicas de minería de datos en sus proyectos
+
+## Implementación de BI
+- Definición de objetivos y alcance
+- Recopilación de requisitos
+- Diseño de la arquitectura
+- Desarrollo e integración
+- Pruebas y validación
+- Despliegue y capacitación
+- Mantenimiento y mejora continua
+
+## Casos de uso
+- Sector minorista: En el sector minorista, BI se utiliza para optimizar la gestión de inventarios y mejorar
+la experiencia del cliente
+- Sector financiero: En el sector financiero, BI juega un papel crucial en la detección de fraudes y la
+gestión de riesgos
+- Sector salud: En el sector salud, BI se utiliza para mejorar la calidad del cuidado del paciente y la
+eficiencia operativa
+- Sector manufacturero:En la manufactura, BI ayuda a mejorar la eficiencia de la producción y la gestión de
+la cadena de suministro
+
 7.3. Analítica de negocio
+
+
+
 7.4. Minería de Datos
 7.5. Aprendizaje Automático
 7.6. Inteligencia Artificial
+
+
+
+
