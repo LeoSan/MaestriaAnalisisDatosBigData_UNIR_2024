@@ -763,12 +763,12 @@ siguientes (marca todas las correctas):
     suficientes.
     C. Crear duplicados de los datos para que puedan utilizarse en múltiples
     aplicaciones de forma segura.
-    D. Todas son correctas.
+    D. Todas son correctas. -> Correcto 
 
 
 5. La limpieza de datos corrige problemas como:
     A. Datos duplicados.
-    B. Datos redundantes. --> Correcto 
+    B. Datos redundantes. -> Correcto 
     C. Datos no estructurados.
     D. Datos incoherentes.
 
@@ -776,27 +776,27 @@ siguientes (marca todas las correctas):
 estructurados, semiestructurados y estructurados?
     A. Data warehouses.
     B. A y C son correctas.
-    C. Data lakes.
+    C. Data lakes. -> Correcto 
     D. Data marts.
 
 7. ¿Cuáles de los siguientes repositorios de datos siguen una estructura de
 procesamiento schema on write? Marca todas las correctas:
     A. Data swamps.
     B. Data warehouses.
-    C. Data lakes.
+    C. Data lakes. -> Correcto
     D. Data marts.
 
 8. ¿Cuál de las siguientes afirmaciones describe mejor el propósito del proceso
 ETL?
     A. Procesar eventos en tiempo real para análisis instantáneo.
-    B. Integrar datos de múltiples fuentes en un formato homogéneo.
+    B. Integrar datos de múltiples fuentes en un formato homogéneo. -> Correcto 
     C. Enviar y recibir mensajes entre diferentes aplicaciones.
     D. Visualizar datos para reportes y paneles de control.
 
 9. ¿Cuál es una fase crítica del proceso ETL donde se aplican reglas para corregir o
 eliminar datos incorrectos o incompletos?
     A. Extracción.
-    B. Transformación.
+    B. Transformación. -> correcto 
     C. Carga.
     D. Almacenamiento.
 
@@ -806,13 +806,13 @@ datos?
     A. Optimización de la extracción.
     B. Paralelización de la transformación.
     C. Incremento en la frecuencia de carga.
-    D. Diseño del esquema de datos
+    D. Diseño del esquema de datos -> Duda
 
 
 
 
 
-## Tema 4:  El Perfil del Científico de Datos
+# Tema 4:  El Perfil del Científico de Datos
 
 En el mundo actual, dominado por datos y tecnología, el papel del científico de datos
 se ha vuelto indispensable en las organizaciones que buscan capitalizar la vasta
@@ -1105,60 +1105,62 @@ valor justo de diversos activos, incluyendo acciones, bonos y derivados
 
 1. ¿Qué técnica utilizan las empresas como Amazon para optimizar su cadena de suministro?
     A. Análisis de sentimiento.
-    B. Algoritmos predictivos.
+    B. Algoritmos predictivos. -> Correcto
     C. Minería de texto.
     D. Análisis de redes sociales.
 
 2. ¿Qué método utiliza Netflix para personalizar las recomendaciones a sus usuarios?
     A. Clustering.
     B. Regresión lineal.
-    C. Aprendizaje automático.
+    C. Aprendizaje automático. -> Correcto
     D. Análisis factorial.
 
 3. ¿Qué herramienta matemática es crucial en la evaluación de riesgos financieros en empresas como Goldman Sachs?
     A. Cálculo diferencial.
     B. Teoría de grafos.
-    C. Modelos predictivos.
+    C. Modelos predictivos. -> correcto 
     D. Geometría analítica.
 
 4. En el contexto de la ciencia de la computación, ¿qué técnica es fundamental para el procesamiento de grandes volúmenes de datos?
     A. Programación funcional.
     B. Algoritmos de ordenamiento.
-    C. Paralelización de procesos.
+    C. Paralelización de procesos. -> Correcto 
     D. Uso de variables estáticas.
 
 5. ¿Qué técnica matemática es ampliamente utilizada para segmentar audiencias en marketing digital?
     A. Cálculo integral.
-    B. Análisis de cluster.
+    B. Análisis de cluster. -> Correcto 
     C. Álgebra lineal.
     D. Probabilidad y estadística.
 
 6. ¿Cómo contribuye la teoría de grafos en la ciencia de datos?
     A. Optimización de algoritmos de búsqueda.
     B. Mejora de interfaces gráficas.
-    C. Análisis de redes sociales.
+    C. Análisis de redes sociales. -> Correcto 
     D. Desarrollo de juegos.
 
 7. ¿Qué metodología utiliza Starbucks para determinar las ubicaciones óptimas para sus nuevas tiendas?
     A. Simulaciones Monte Carlo.
-    B. Análisis de ubicación.
+    B. Análisis de ubicación. -> correcto 
     C. Modelos de regresión.
     D. Análisis de la competencia.
+
 8. ¿Cuál es un ejemplo de aplicación de regresión lineal en ciencia de datos?
-    A. Predecir el precio futuro de las acciones.
+    A. Predecir el precio futuro de las acciones. -> correcto 
     B. Codificar datos para algoritmos de cifrado.
     C. Crear gráficos interactivos.
     D. Diseñar bases de datos.
 
 9. ¿Qué representa la comunicación efectiva de los resultados en proyectos de ciencia de datos en negocios?
     A. Publicar papers académicos.
-    B. Convencer a los stakeholders del valor de los hallazgos.
+    B. Convencer a los stakeholders del valor de los hallazgos. -> correcto
     C. Implementar directamente los cambios en la producción.
     D. Ninguna de las anteriores.
+
 10. ¿Qué rol juegan las visualizaciones de datos en la comunicación científica de datos?
     A. Solo para presentaciones académicas.
     B. Para simplificar el código.
-    C. Para hacer los hallazgos comprensibles y accesibles.
+    C. Para hacer los hallazgos comprensibles y accesibles. -> Correcto 
     D. Para aumentar la carga computacional.
 
 
@@ -1680,7 +1682,9 @@ Esto incluye la utilización de herramientas de visualización, almacenamiento d
 
 ## Herramientas y tecnologías
 - Tableau: Una de las herramientas de visualización más populares, conocida por su capacidad para crear visualizaciones interactivas y dashboards de forma intuitiva. Tableau permite a los usuarios conectar, visualizar y compartir datos rápidamente, y sus capacidades de análisis son robustas y fáciles de usar (Chen et al., 2012).
+
 - Power BI: Una herramienta de Microsoft que se integra perfectamente con otros productos de la suite Office y Azure. Power BI es conocido por su capacidad para transformar datos en visualizaciones coherentes y compartir insights en toda la organización.
+
 - QlikView: Ofrece análisis de datos en memoria, conocido por su rapidez y eficiencia. QlikView permite a los usuarios explorar grandes volúmenes de datos y descubrir patrones que podrían no ser evidentes con otras herramientas (Few, 2006)
 
 ## Sistemas de gestión de bases de datos:
@@ -1842,11 +1846,277 @@ distribuidos
 ## 7.5. Aprendizaje Automático (ML)
 > es una rama de la inteligencia artificial que se centra en el desarrollo de algoritmos y modelos que permiten a las máquinas aprender de los datos y mejorar su desempeño con la experiencia
 
+## Componentes clave del aprendizaje automático
+- Datos
+- Algoritmos
+- Modelos
+- Entrenamientos
+- Validación y prueba
+
+
+## Algoritmos y técnicas clave en aprendizaje automático
+- Regresión lineal: Un método estadístico para modelar la relación entre una variable
+dependiente y una o más variables independientes. Es comúnmente utilizado para
+predicción y análisis de tendencias.
+
+- Árboles de decisión: Algoritmos que dividen repetidamente los datos en
+subconjuntos basados en valores de características, formando una estructura similar
+a un árbol. Son útiles para tareas de clasificación y regresión.
+
+- Máquinas de soporte vectorial (SVM): Algoritmos de clasificación que encuentran
+el hiperplano óptimo que separa las diferentes clases en el espacio de
+características. Son efectivos en problemas de alta dimensionalidad
+
+- Redes neuronales: Modelos inspirados en la estructura del cerebro humano,
+compuestos por capas de nodos (neuronas) que procesan información y aprenden
+patrones complejos. Las redes neuronales profundas (Deep Learning) han
+revolucionado campos como la visión por computadora y el procesamiento del
+lenguaje natural (Goodfellow, Bengio & Courville, 2016).
+
+- K-means: Un algoritmo de clustering que agrupa datos en k clusters basados en
+características similares. Es útil para segmentación de clientes y análisis exploratorio
+de datos. 
+
+## Herramientas y entornos
+
+- Scikit-learn: Una biblioteca de Python que proporciona herramientas simples y
+eficientes para el análisis de datos y minería de datos
+
+- TensorFlow: Una biblioteca de código abierto desarrollada por Google para la
+implementación de redes neuronales y otros algoritmos de aprendizaje profundo. Es
+conocida por su flexibilidad y escalabilidad.
+
+- Keras: Una biblioteca de alto nivel que se ejecuta sobre TensorFlow y facilita la
+construcción y el entrenamiento de modelos de redes neuronales. Keras es popular
+por su simplicidad y modularidad.
+
+- PyTorch: Una biblioteca de aprendizaje automático de código abierto desarrollada
+por Facebook. PyTorch es conocida por su capacidad para trabajar con gráficos
+computacionales dinámicos, lo que la hace muy adecuada para la investigación en
+aprendizaje profundo
+
+## Evaluación y validación de modelos
+- Validación cruzada: Un método que divide los datos en múltiples subconjuntos y
+entrena el modelo en algunos de estos subconjuntos mientras lo valida en los
+restantes. Este proceso se repite varias veces para asegurar una evaluación
+robusta.
+
+- Métricas de rendimiento: Dependiendo del tipo de problema (clasificación o
+regresión), se utilizan diferentes métricas como precisión
+
+- Conjunto de prueba: Después del entrenamiento, el modelo se evalúa utilizando un
+conjunto de datos que no se utilizó durante el entrenamiento ni la validación
+
+- Regularización: se utilizan para prevenir el sobreajuste ajustando los parámetros del modelo.
+
+##  Implementación en la industria 
+- Sector financiero:
+- Salud:
+- Marketing
+- Automoción
+
+
+## 7.6. Inteligencia Artificial (IA)
+> se refiere a la simulación de procesos de inteligencia humana por parte de máquinas, especialmente sistemas informáticos. Estos procesos incluyen el aprendizaje (la adquisición de información y reglas para el uso de la información), el razonamiento (usar reglas para llegar a conclusiones aproximadas o definitivas) y la autocorrección
+
+## Componentes clave de la inteligencia artificia
+- Algoritmos: Los algoritmos son las secuencias de instrucciones que las máquinas
+siguen para resolver problemas y tomar decisiones. Estos pueden variar desde
+algoritmos simples de búsqueda y clasificación hasta complejas redes neuronales.
+
+- Datos: La IA requiere grandes cantidades de datos para entrenar y mejorar sus
+modelos. Los datos pueden provenir de diversas fuentes como sensores, bases de
+datos, y plataformas en línea.
+
+- Modelos: Un modelo de IA es una representación matemática de un sistema o
+proceso que se ha entrenado para realizar tareas específicas.
+
+- Entrenamiento y aprendizaje: El proceso mediante el cual un modelo de IA mejora
+su rendimiento ajustando sus parámetros con base en los datos de entrenamiento.
+
+- Interfaz de usuario: La manera en que los usuarios interactúan con sistemas de IA,
+que puede incluir interfaces de voz, visuales, y textuales.
+
+
+## Algoritmos y técnicas de IA
+
+- Aprendizaje supervisado: Este enfoque utiliza datos etiquetados para entrenar
+modelos que pueden hacer predicciones o clasificaciones. Ejemplos incluyen la
+regresión lineal, máquinas de soporte vectorial (SVM) y redes neuronales.
+
+- Aprendizaje no supervisado: Se utiliza para encontrar patrones o agrupaciones en
+datos no etiquetados. Ejemplos incluyen algoritmos de clustering como k-means y
+análisis de componentes principales (PCA).
+
+- Aprendizaje por refuerzo: Un enfoque en el que un agente aprende a comportarse
+en un entorno realizando acciones y recibiendo recompensas o castigos. Este
+método es fundamental en el desarrollo de sistemas de IA para juegos y robótica
+(Sutton & Barto, 2018).
+
+- Redes neuronales profundas: Estas son un tipo de red neuronal con múltiples
+capas entre la entrada y la salida, que son capaces de aprender representaciones
+complejas de datos. El aprendizaje profundo ha revolucionado áreas como la visión
+por computadora y el procesamiento del lenguaje natural (Goodfellow, Bengio &
+Courville, 2016).
+
+## Herramientas y entornos
+
+- TensorFlow: Una biblioteca de código abierto desarrollada por Google que se utiliza
+ampliamente para el desarrollo de modelos de aprendizaje profundo.
+
+-PyTorch: Desarrollada por Facebook, esta biblioteca es popular en la investigación
+y desarrollo de IA debido a su flexibilidad y facilidad de uso.
+
+- Keras: Una biblioteca de alto nivel que se ejecuta sobre TensorFlow, que facilita la
+creación y el entrenamiento de redes neuronales.
+
+- OpenAI Gym: Un toolkit para el desarrollo y la comparación de algoritmos de
+aprendizaje por refuerzo.
+
+## Aplicaciones actuales de la IA
+
+- Salud: La IA se utiliza para el análisis de imágenes médicas, predicción de
+enfermedades, y personalización de tratamientos. Modelos de IA pueden analizar
+imágenes de resonancias magnéticas para detectar anomalías que indican
+enfermedades.
+
+- Finanzas: Utilizada para la detección de fraudes, evaluación de riesgos y análisis de
+mercado. La IA puede analizar transacciones en tiempo real para detectar patrones
+sospechosos.
+
+- Automoción: Los vehículos autónomos utilizan IA para procesar datos de sensores
+y tomar decisiones en tiempo real, incluyendo el reconocimiento de señales de
+tráfico y la detección de obstáculos. 
+
+- Atención al cliente: Chatbots y asistentes virtuales impulsados por IA están
+mejorando la eficiencia y la experiencia del cliente en diversas industrias.
+
+- Marketing: La IA se utiliza para la segmentación de clientes, personalización de
+campañas publicitarias y análisis de sentimiento en redes sociales (Kaplan &
+Haenlein, 2019).
+
+## Cuestionario 
+
+1. ¿Cuál es uno de los beneficios principales de los Data Marts en la inteligencia de
+negocio?
+A. Almacenan grandes volúmenes de datos no estructurados.
+B. Facilitan la segmentación y análisis de datos específicos de diferentes
+áreas de negocio. -> correcto 
+C. Automatizan procesos financieros.
+D. Mejoran la velocidad de las transacciones.
+
+2. ¿Qué herramienta de Oracle BI permite a los usuarios crear visualizaciones
+interactivas?
+A. Oracle BI Publisher.
+B. Oracle BI Interactive Dashboards. -> Correcto 
+C. Oracle BI Answers.
+D. Oracle Real-Time Decisions.
+
+3. ¿Qué técnica analítica es esencial para anticipar cambios en el mercado según
+IBM?
+A. Análisis descriptivo.
+B. Análisis predictivo.  -> correcto 
+C. Análisis de componentes principales.
+D. Análisis de cluster.
+
+4. ¿Cuál es una limitación importante de la analítica de negocio mencionada por
+SAS?
+A. Mejora la eficiencia operativa.
+B. Facilita la toma de decisiones informadas.
+C. Requiere competencias especializadas en análisis de datos. -> Correcto 
+D. Simplifica la implementación de soluciones.
+
+5. ¿Qué describe mejor el proceso de preparación de datos en la minería de datos?
+A. Almacenamiento de datos en un data warehouse
+B. Limpieza y transformación de datos para análisis. -> Correcto 
+C. Visualización de datos en dashboards interactivos.
+D. Automatización de procesos transaccionales.
+
+6. ¿Cuál es una aplicación común de la minería de datos en el sector financiero?
+A. Optimización de inventarios.
+B. Detección de fraudes. -> Correcto 
+C. Personalización de campañas de marketing.
+D. Análisis de la cadena de suministro.
+
+7. ¿Qué herramienta de aprendizaje automático es conocida por su capacidad para
+trabajar con gráficos computacionales dinámicos?
+A. Scikit-learn.
+B. TensorFlow.
+C. PyTorch. -> correcto 
+D. Keras.
+
+8. ¿Qué método de evaluación asegura que un modelo de aprendizaje automático
+no se ajuste demasiado a los datos de entrenamiento?
+A. Regularización. 
+B. Análisis de componentes principales.
+C. Validación cruzada. -> DUDA
+D. Clustering
+
+
+9. ¿Cuál es una aplicación de la inteligencia artificial en la atención al cliente?
+A. Optimización de procesos de manufactura.
+B. Detección de enfermedades.
+C. Chatbots y asistentes virtuales. -> Correcto 
+D. Análisis de imágenes médicas.
+
+10. ¿Qué avance en inteligencia artificial se espera que haga los modelos más
+transparentes y comprensibles para los humanos?
+A. IA general.
+B. IA explicable (XAI). -> correcto 
+C. Aprendizaje no supervisado.
+D. Clustering.
+
+
+## Videoclase 1. Inteligencia y Analítica de Negocio
+## Notas: 
+- ¿Cuál es la importancia de la inteligencia de negocio (BI) en la toma de decisiones empresariales?
+    - Ofrece datos validados y actuales, reduciendo errores y mejorando la precisión y objetividad en las decisiones.
+- ¿Cuál es un componente clave de BI que facilita la generación de informes y análisis?
+    - Herramientas ETL (Extract, Transform, Load) que preparan los datos para el análisis.
+- ¿Qué ventaja ofrece Power BI como herramienta de inteligencia de negocio?
+    - Ofrece amplia conectividad con diversas fuentes de datos y facilita la creación de informes personalizados.
+- ¿Cómo mejora el Machine Learning (ML) la eficiencia de BI?
+    - Automatiza el análisis de datos y revela patrones complejos.
+- ¿Qué caso de uso destaca la aplicación de BI en el sector minorista?
+    - Optimizar inventarios y mejorar la experiencia del cliente mediante el análisis de patrones de compra.
+
+
+## Videoclase 2. Aplicaciones de la Minería de Datos
+## Notas: 
+- Una de las diferencias resumidas entre la minería de datos y el aprendizaje automático (ML) es:
+    - La minería de datos encuentra patrones, mientras el aprendizaje automático aprende de datos para predecir. -> La minería de datos se enfoca en descubrir patrones y relaciones en grandes conjuntos de datos, mientras que el aprendizaje automático utiliza esos datos para que las máquinas aprendan y hagan predicciones automáticamente
+- ¿Cuál es una de las aplicaciones de la minería de datos en el sector financiero?
+    - Detección de fraudes mediante la identificación de patrones inusuales.
+- ¿Cómo beneficia la minería de datos al marketing?
+    - Permite la segmentación de clientes y la personalización de campañas.
+-  Un ejemplo de aplicación de la minería de datos en salud es: 
+    - Analizar datos clínicos para el diagnóstico temprano de enfermedades utilizando técnicas de clasificación.
+-  ¿Qué futuro se espera para la minería de datos? 
+    - Integrarse con Big Data para analizar grandes volúmenes de datos en tiempo real y expandirse a nuevos campos.
+
+## Videoclase 3. Aplicaciones del Aprendizaje Automático
+## Notas: 
+- ¿Qué componente es fundamental para el aprendizaje automático (ML)?
+    - Una cantidad considerable de datos es esencial para entrenar algoritmos de ML de forma efectiva.
+- ¿Cuál es una aplicación de ML en el sector automotriz moderno?
+    - Procesar datos y tomar decisiones en tiempo real al utilizar vehículos autónomos.
+- ¿Qué uso tiene ML en el marketing digital y tradicional?
+    - Utilizar sistemas de recomendación y análisis de sentimientos para personalizar la publicidad y aumentar la eficiencia de las campañas con base en datos.
+- ¿Cómo se utiliza ML para la detección de fraudes en las transacciones financieras?  
+    - Identificando patrones anómalos en transacciones para detectar actividades fraudulentas en tiempo real y prevenir pérdidas.
+- ¿Cuál es una tendencia futura del aprendizaje automático (ML) en diferentes industrias?
+    - Avances en IA explicable, automatización y aplicaciones interdisciplinarias en nuevos sectores de la economía.
+
+
+# Tema 8. Aplicaciones en Minería de Datos
 
 
 
-7.6. Inteligencia Artificial
+## 8.2. Conceptos de Minería de datos
 
+## 8.3. Objetivos de la Minería de Datos
 
+## 8.4. Procesos de descubrimiento de conocimiento
 
+## 8.5. Ejemplos de aplicaciones de Minería de Datos
 
