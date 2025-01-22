@@ -2279,6 +2279,31 @@ D. Ninguna de las respuestas anteriores es correcta.
 
 - La regresión es una técnica estadística que se utiliza para modelar la relación entre una variable dependiente (la que queremos predecir) y una o más variables independientes. Es ideal para situaciones donde queremos predecir un valor numérico, como el precio de una vivienda, las ventas de un producto en función de diversos factores, o la temperatura máxima de un día.
 
+## Videoclase 1. Conceptos claves de la Minería de Datos
+## Notas: 
+- ¿Qué es la minería de datos y cuál es su propósito principal?
+    - Es el proceso de descubrir patrones, asociaciones, clasificaciones y agrupaciones en grandes conjuntos de datos para extraer información valiosa y mejorar la toma de decisiones
+-  ¿Cuál es una aplicación típica del algoritmo Apriori en minería de datos?  
+    - Identificar asociaciones entre productos en grandes bases de datos para diseñar promociones cruzadas en supermercados.
+- ¿Qué técnica de minería de datos, también usada en ML, se podría utilizar para la segmentación de clientes según su comportamiento de compra?
+    - Clustering o agrupamiento, que divide los clientes en grupos basados en similitudes en su comportamiento de compra.
+- ¿Cómo se utilizan las redes neuronales en la minería de datos?
+    - Para reconocer patrones complejos en los datos, como en el reconocimiento de imágenes y predicción de series temporales.
+- ¿Qué impacto podría tener la minería de datos en la mejora de procesos industriales?
+    - Permite el mantenimiento predictivo usando datos de sensores para anticipar fallos de maquinaria y reducir costos de reparación.
+
+## Videoclase 2. Proceso de descubrimiento de conocimiento
+## Notas: 
+- ¿Qué etapas principales clave conforman un proceso KDD (Knowledge Discovery in Databases)?
+    - Selección de datos, preprocesamiento, transformación, minería de datos, interpretación y evaluación de resultados.
+- ¿Cuál es el objetivo principal del preprocesamiento de datos en el proceso KDD?
+    - Mejorar la calidad de los datos corrigiendo errores, gestionando valores faltantes y preparándolos adecuadamente e para el análisis.
+- ¿Qué se busca lograr en la etapa de transformación de datos del proceso KDD?
+    - Aplicar técnicas de visualización para su presentación.
+-  ¿Cómo se garantiza la calidad y utilidad de los modelos generados en el proceso KDD?  
+    - Validando los modelos con técnicas como la validación cruzada y evaluando métricas de rendimiento.
+-  ¿Qué desafío enfrenta el proceso KDD en su aplicación práctica?  
+    - Garantizar la calidad de los datos, manejar grandes volúmenes de datos, y asegurar la interpretabilidad de los modelos.
 
 # Tema 9. Aplicación en Aprendizaje Automático
 
