@@ -1791,7 +1791,7 @@ entender la retención de clientes y el impacto de las campañas de marketing.
     - Identificación de posibles fraudes y la evaluación de la solvencia crediticia de los clientes
 
 
-## 7.4. Minería de Datos (Data Mining)
+## 7.4. Minería de Datos (Data Mining) (DM)
 > es un proceso analítico diseñado para explorar grandes cantidades de datos en busca de patrones consistentes o relaciones sistemáticas entre variables
 
 ## caracteristicas 
@@ -2109,14 +2109,186 @@ D. Clustering.
 
 
 # Tema 8. Aplicaciones en Minería de Datos
+## 8.2. Conceptos de Minería de datos 
+
+>[!NOTE]
+> El avance de la tecnología ha permitido el desarrollo de sistemas que funcionan con un consumo mínimo, por lo que son capaces de capturar enormes cantidades de datos. 
+> Dentro de los tipos de datos que más se generan se encuentran: los archivos de la web, las interacciones financieras, la interacciones entre usuarios y el Internet de las cosas.
+
+**La minería de datos y el descubrimiento de conocimiento en bases de datos
+(KDD, por sus siglas en inglés Knowledge Discovery in Databases)**
+- DM es solo una parte del proceso KDD, si bien es la porción central y más importante. 
+- Es su desarrollo a través de etapas.
+
+**Las etapas en seis pasos**
+- Especificación del problema
+- Comprensión del problema
+- Pre procesamiento de datos
+- Mineria de Datos
+- Evaluación 
+- Exploración de resultados 
 
 
-
-## 8.2. Conceptos de Minería de datos
 
 ## 8.3. Objetivos de la Minería de Datos
 
+La minería de datos surge de la intersección de varias áreas, como la estadística, la
+inteligencia artificial, el aprendizaje automático y las bases de datos. 
+
+**Su objetivo principal es extraer patrones, conocimientos y tendencias útiles a partir de grandes
+conjuntos de datos.** 
+
+Estos descubrimientos pueden ser utilizados para mejorar la toma de decisiones, optimizar procesos, identificar oportunidades y detectar problemas antes de que se conviertan en críticos al negocio. 
+
+
+# Métodos de Minería de Datos
+
+
+## Predicción
+* **Métodos estadísticos:**
+    * **Modelos de regresión:** Utilizados para predecir un valor numérico continuo a partir de una o más variables independientes.
+    * **Redes neuronales:** Modelos inspirados en el cerebro humano, capaces de aprender patrones complejos en grandes conjuntos de datos.
+    * **Bayesiano:** Basados en el teorema de Bayes, utilizan probabilidades para hacer inferencias a partir de datos.
+    * **Aprendizaje basado en instancias:** Almacena ejemplos de entrenamiento y clasifica nuevos datos comparándolos con los ejemplos más similares.
+    * **Máquinas de soporte vectorial:** Buscan el hiperplano que mejor separa los datos en diferentes clases.
+    * **Árbol de decisión:** Crea una estructura jerárquica de decisiones para clasificar o predecir.
+* **Métodos simbólicos:**
+    * **Aprendizaje de reglas:** Extraen reglas "si-entonces" a partir de los datos para realizar predicciones.
+    * **Árbol de decisión:** Crea una estructura jerárquica de decisiones para clasificar o predecir.
+
+## Descripción
+* **Agrupamiento:** Divide los datos en grupos homogéneos basados en sus características.
+* **Reglas de Asociación:** Descubren relaciones entre variables en grandes bases de datos.
+
 ## 8.4. Procesos de descubrimiento de conocimiento
 
+## Aprendizaje Supervisado
+**Definición:** El aprendizaje supervisado es un tipo de aprendizaje automático en el que se proporciona al modelo un conjunto de datos de entrenamiento etiquetados. Esto significa que cada ejemplo en el conjunto de datos tiene una etiqueta correspondiente a la salida correcta. El modelo aprende a mapear las entradas a las salidas correctas, y luego puede utilizarse para hacer predicciones sobre nuevos datos no vistos.
+
+**Características:**
+- Datos etiquetados: Los datos de entrada están asociados con una respuesta correcta o etiqueta.
+- Feedback directo: El modelo recibe retroalimentación directa sobre la precisión de sus predicciones durante el entrenamiento.
+- Predicción de resultados futuros: Se utiliza para predecir resultados futuros o clasificar nuevos datos.
+
+## Aprendizaje No Supervisado
+**Definición:** El aprendizaje no supervisado es un tipo de aprendizaje automático en el que se proporciona al modelo un conjunto de datos de entrenamiento sin etiquetas. El objetivo es descubrir patrones ocultos o estructuras en los datos sin ninguna guía previa.
+
+**Características:**
+- Sin etiquetas: Los datos de entrada no tienen etiquetas asociadas.
+- Sin feedback: El modelo no recibe retroalimentación directa sobre la calidad de sus resultados.
+- Encontrar estructuras de datos: Se utiliza para encontrar agrupaciones, asociaciones o anomalías en los datos.
+
+## Aprendizaje por Refuerzo
+**Definición:** El aprendizaje por refuerzo es un tipo de aprendizaje automático en el que un agente aprende a tomar acciones en un entorno para maximizar una recompensa 1 a largo plazo. El agente interactúa con el entorno, recibe retroalimentación en forma de recompensas o penalizaciones, y aprende a tomar decisiones que maximicen la recompensa acumulada. 
+
+**Características:**
+- Proceso de decisión: El agente debe tomar decisiones en cada paso de tiempo.
+- Sistema de recompensa: El agente recibe recompensas o penalizaciones basadas en las acciones que toma.
+- Aprender series de acciones: El objetivo es aprender una secuencia de acciones óptima para lograr un objetivo a largo plazo.
+
+| Tipo de Aprendizaje | Características Clave | Ejemplo de Uso |
+|---|---|---|
+| Supervisado | Datos etiquetados, feedback directo, predicción | Clasificación de correos electrónicos como spam o no spam, predicción de precios de viviendas. |
+| No Supervisado | Sin etiquetas, encontrar estructuras | Segmentación de clientes, detección de anomalías en datos de transacciones. |
+| Por Refuerzo | Proceso de decisión, sistema de recompensa | Juegos como el ajedrez o el Go, control de robots. |
+
 ## 8.5. Ejemplos de aplicaciones de Minería de Datos
+
+- Detección de fraudes.
+- Previsión financiera y empresarial.
+- Diagnóstico médico.
+
+
+## CUESTIONARIO 
+
+1. ¿Cuáles son los métodos usados en DM para resolución de problemas?
+A. Métodos de clasificación, estadísticos, simbólicos y de grafos.
+B. Métodos de predicción, estadísticos y simbólicos.
+C. Aprendizaje supervisado y no supervisado. -> Correcto 
+D. Aprendizaje de máquina y aprendizaje profundo.
+
+2. Son aplicaciones de la minería de datos:
+A. Detección de fraudes.
+B. Previsión financiera y empresarial.
+C. Diagnóstico médico.
+D. Todas las respuestas anteriores son correctas. -> Correcto 
+
+3. No es un método estadístico dentro de la minería de datos:
+A. Modelos de regresión.
+B. Redes neuronales.
+C. Árbol de decisión.-> Correcto 
+D. Máquina de soporte vectorial.
+
+4. Es un algoritmo que utiliza el aprendizaje basado en instancias:
+A. K vecinos más cercanos o KNN. -> correcto 
+B. Árboles de decisión.
+C. Máquina de vectores de soporte.
+D. Random Forest.
+
+> Aprendizaje basado en instancias: KNN es un algoritmo que almacena todos los datos de entrenamiento y clasifica nuevos puntos de datos basándose en la similitud con sus k vecinos más cercanos. Es decir, no construye un modelo general a partir de los datos, sino que compara directamente el nuevo dato con los ejemplos existentes.
+
+5. Desde la obtención de los datos hasta generar conocimiento se deben seguir las
+siguientes etapas:
+A. Todas son válidas. -> Correcto 
+B. Especificación y comprensión del problema.
+C. Preprocesamiento de los datos.
+D. Minería de datos, evaluación y exploración de resultados.
+
+6. Es una afirmación falsa sobre las máquinas de soporte vectorial:
+A. Pertenece a la familia de clasificadores lineales.
+B. Transforma el conjunto de datos de una dimensión n a un espacio de
+dimensión superior.
+C. Es considerado una extensión del perceptrón.
+D. Su objetivo es minimizar los errores. -> Correcto 
+
+- Pertenece a la familia de clasificadores lineales: Esta afirmación es parcialmente correcta. Si bien las SVM pueden realizar clasificaciones lineales, su verdadera potencia radica en su capacidad de manejar problemas no lineales mediante el uso de funciones kernel. Estas funciones permiten mapear los datos a un espacio de mayor dimensión donde la separación entre clases pueda ser lineal.
+- Transforma el conjunto de datos de una dimensión n a un espacio de dimensión superior: Esta afirmación es correcta. Como se mencionó anteriormente, las SVM utilizan funciones kernel para transformar los datos a un espacio de mayor dimensión. Esto permite encontrar hiperplanos de separación más complejos y abordar problemas no lineales.
+- Es considerado una extensión del perceptrón: Esta afirmación es correcta. Las SVM pueden verse como una extensión del perceptrón, ya que buscan encontrar un hiperplano que separe óptimamente las clases. Sin embargo, las SVM optimizan el margen entre las clases, lo que las hace más robustas y generalizables.
+
+
+7. Es un método de agrupamiento:
+A. Agrupamiento jerárquico. -> Correcto 
+B. Agrupamiento denso.
+C. Agrupamiento central.
+D. Agrupamiento no denso.
+
+- Agrupamiento jerárquico: Este método crea una jerarquía de clusters, donde cada cluster se divide en subclusters más pequeños. Es como crear un árbol genealógico de los datos
+
+8. Es una ventaja de las reglas de asociación:
+A. Posibilidad de asociación.
+B. Obtención de muchas conclusiones al poseer muchas reglas. -> 
+C. Fiabilidad alta.
+D. Todas las respuestas anteriores son correctas.
+
+- Abundancia de información: Las reglas de asociación pueden generar una gran cantidad de patrones y relaciones entre los datos. Esto significa que podemos obtener muchas conclusiones diferentes a partir de un mismo conjunto de datos.
+- Descubrimiento de conocimientos: Al generar tantas reglas, se facilita la identificación de relaciones inesperadas o poco evidentes, lo que puede llevar a nuevos descubrimientos y conocimientos.
+
+9. Es un tipo de aprendizaje basado en recompensas, aprende de una serie de
+acciones y lleva a cabo un proceso de decisión.
+A. Aprendizaje supervisado.
+B. Aprendizaje no supervisado.
+C. Aprendizaje reforzado. -> Correcto 
+D. Todas las respuestas anteriores son correctas.
+
+10. Es característico de un problema de regresión:
+A. Es típico en aplicaciones que incluyen análisis de precios, tendencias y
+previsión. -> Correcto 
+B. Discriminación de instancias.
+C. Discriminación entre una o varias clases categóricas.
+D. Ninguna de las respuestas anteriores es correcta.
+
+- La regresión es una técnica estadística que se utiliza para modelar la relación entre una variable dependiente (la que queremos predecir) y una o más variables independientes. Es ideal para situaciones donde queremos predecir un valor numérico, como el precio de una vivienda, las ventas de un producto en función de diversos factores, o la temperatura máxima de un día.
+
+
+# Tema 9. Aplicación en Aprendizaje Automático
+
+## 9.2. Objetivos del Aprendizaje Automático
+
+## 9.3. Métodos supervisados y no supervisados
+
+## 9.4. Clasificación, regresión y agrupamiento
+
+## 9.5. Aprendizaje Profundo
+
+## 9.6. Ejemplos de aplicaciones de aprendizaje automático
 
