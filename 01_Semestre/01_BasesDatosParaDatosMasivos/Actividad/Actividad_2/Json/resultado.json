@@ -1,0 +1,73 @@
+// Ejercicio #1:
+db.Terrazas.updateMany(
+    { 
+        "desc_barrio_local": "GUINDALERA", 
+        "desc_situacion_local": { $ne: "Cerrado" } 
+    }, 
+    { 
+        $set: { 
+            "desc_situacion_local": "Cerrado", 
+            "desc_situacion_terraza": "Cerrada" 
+        } 
+    } 
+);
+
+
+
+// Ejercicio #2:
+db.Terrazas.updateMany(
+    { "desc_ubicacion_terraza": "Acera" }
+    ,
+    [
+        {
+            $set:{
+                "inspeccionar":{
+                    $cond: {
+                        if: { $gt: ["$mesas_es", 10] },   
+                        then: true,             
+                        else: false 
+                        }
+                    }
+                }
+        }
+        
+    ]
+ )
+
+ // Ejercicio #4:
+
+ db.Terrazas.updateMany(
+    { "inspeccionar": false }
+    ,
+    [
+        {
+            $set:{
+                "estado":{
+                    $cond: {
+                        if: { $lt: ["$sillas_es", 10] },   
+                        then: 1,             
+                        else: {
+                            $cond: {
+                                if: { $and: [{ $gte: ["$sillas_es", 10] }, { $lte: ["$sillas_es", 20] }] },
+                                then: 2,
+                                else: 3
+                            }
+                        }
+                        }
+                    }
+                }
+        }
+        
+    ]
+ )
+
+ // Ejercicio #5:
+
+ db.Terrazas.aggregate(
+    [
+        { 
+            $set: 
+                { hora_fin_LJ_es: '00:00:00' } 
+        }
+    ]
+);
