@@ -71,3 +71,96 @@ db.Terrazas.updateMany(
         }
     ]
 );
+
+ // Ejercicio #6:
+
+ db.Terrazas.updateMany(
+    { 
+        "hora_fin_VS_es": '2:30:00' 
+    }
+ ,
+ [
+    { 
+        $set: 
+            { hora_fin_VS_es: '2:00:00' } 
+    }
+ ]
+); 
+
+ // Ejercicio #7:
+
+db["Terrazas"].find()
+
+db.Terrazas.find({
+    $and: [
+      { DESC_CLASE: 'CALLE' },
+      { DESC_NOMBRE: 'ALCALA' }
+      {desc_distrito_local:'MADRID'}
+    ]
+  }).count()
+
+
+db.Terrazas.updateMany(
+  { 
+    $and: [
+        { DESC_CLASE: 'CALLE' },
+        { DESC_NOMBRE: 'ALCALA' }
+      ]
+  }
+,
+[
+    { 
+        $set: 
+            { inspeccionar: true } 
+    }
+ ]
+);
+
+
+ // Ejercicio #8:
+
+
+
+ db.Terrazas.updateMany(
+  { "desc_situacion_terraza": "Abierta" },
+  {
+    $set: {
+      revision: {
+        prox_inspeccion: 10,
+        puntuacion: 80,
+        comentario: "separar las mesas"
+      }
+    }
+  }
+);
+
+ // Ejercicio #9:
+
+db.Terrazas.aggregate([
+    { $match: { desc_distrito_local: "VILLAVERDE" } },
+    { $merge: { into: "Zona1", on: "_id", whenMatched: "replace", whenNotMatched: "insert" } }
+  ])
+
+
+  db["Zona1"].find().count()
+ 
+  // Ejercicio #10:
+
+  db.Terrazas.aggregate([
+    {
+      $match: {
+        desc_distrito_local: { $regex: "salamanca", $options: "i" }, // "i" para insensible a mayúsculas y minúsculas
+        desc_barrio_local: { $regex: "castellana", $options: "i" }
+      }
+    },
+    {
+      $merge: {
+        into: "Zona2", // Nombre de la colección destino
+        on: "_id",      // Campo para la coincidencia (si se omite, se insertan nuevos documentos)
+        whenMatched: "replace", // "replace", "keepExisting", "fail", "merge" (acción cuando hay coincidencia)
+        whenNotMatched: "insert" // "insert", "discard", "fail" (acción cuando no hay coincidencia)
+      }
+    }
+  ])
+// Consulta para validar 
+db["Zona2"].find().count()
