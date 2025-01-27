@@ -1,3 +1,31 @@
+//Objetivo 1
+
+// Crear la base de datos
+use  inspections; 
+// crear colecciones 
+db.createCollection('act-grupal-city_inspections')
+// visualizar lo que se generó 
+show collections 
+
+//Otra forma de ver 
+db.getCollectionNames()
+
+// Crear la base de datos
+use  countries; 
+
+// crear colecciones 
+db.createCollection('act-grupal-countries-big')
+db.createCollection('act-grupal-countries-small')
+
+// visualizar lo que se generó 
+show collections 
+
+//Otra forma de ver 
+db.getCollectionNames()
+
+
+
+// Objetivo 2 
 // Ejercicio #1:
 db.Terrazas.updateMany(
     { 
@@ -11,7 +39,6 @@ db.Terrazas.updateMany(
         } 
     } 
 );
-
 
 
 // Ejercicio #2:
@@ -32,7 +59,101 @@ db.Terrazas.updateMany(
         }
         
     ]
- )
+ ); 
+
+// Ejercicio #3:
+db.Terrazas.updateMany(
+ { "inspeccionar": true }, // Filtra las terrazas que necesitan ser inspeccionadas
+     [
+       {
+         $set: {
+           "mesas_aux_es": {
+             $add: [
+               {
+                 $toDouble: {
+                   $cond: {
+                     if: {
+                       $or: [
+                         { $eq: ["$mesas_aux_es", ""] },
+                         { $eq: ["$mesas_aux_es", null] },
+                         { $not: { $isNumber: "$mesas_aux_es" } }  // Verifica si no es un número
+                       ]
+                     },
+                     then: 0,
+                     else: "$mesas_aux_es"
+                   }
+                 }
+               },
+               2
+             ]
+           },   // Incrementa 2 mesas auxiliares en el periodo estacional
+  
+           "mesas_aux_ra": {
+             $add: [
+               {
+                 $toDouble: {
+                   $cond: {
+                     if: {
+                       $or: [
+                         { $eq: ["$mesas_aux_ra", ""] },
+                         { $eq: ["$mesas_aux_ra", null] },
+                         { $not: { $isNumber: "$mesas_aux_ra" } }  // Verifica si no es un número
+                       ]
+                     },
+                     then: 0,
+                     else: "$mesas_aux_ra"
+                   }
+                 }
+               },
+               2
+             ]
+           },   // Incrementa 2 mesas auxiliares en el resto del año
+  
+           "sillas_es": {
+             $add: [
+               {
+                 $toDouble: {
+                   $cond: {
+                     if: {
+                       $or: [
+                         { $eq: ["$sillas_es", ""] },
+                         { $eq: ["$sillas_es", null] },
+                         { $not: { $isNumber: "$sillas_es" } }  // Verifica si no es un número
+                       ]
+                     },
+                     then: 0,
+                     else: "$sillas_es"
+                   }
+                 }
+               },
+               8
+             ]
+           },      // Incrementa 8 sillas en el periodo estacional
+  
+           "sillas_ra": {
+             $add: [
+               {
+                 $toDouble: {
+                   $cond: {
+                     if: {
+                       $or: [
+                         { $eq: ["$sillas_ra", ""] },
+                         { $eq: ["$sillas_ra", null] },
+                         { $not: { $isNumber: "$sillas_ra" } }  // Verifica si no es un número
+                       ]
+                     },
+                     then: 0,
+                     else: "$sillas_ra"
+                   }
+                 }
+               },
+               8
+             ]
+           }       // Incrementa 8 sillas en el resto del año
+         }
+       }
+     ]
+   );
 
  // Ejercicio #4:
 
@@ -59,7 +180,7 @@ db.Terrazas.updateMany(
         }
         
     ]
- )
+ ); 
 
  // Ejercicio #5:
 
@@ -97,7 +218,7 @@ db.Terrazas.find({
       { DESC_NOMBRE: 'ALCALA' }
       {desc_distrito_local:'MADRID'}
     ]
-  }).count()
+  }).count(); 
 
 
 db.Terrazas.updateMany(
@@ -142,7 +263,7 @@ db.Terrazas.aggregate([
   ])
 
 
-  db["Zona1"].find().count()
+  db["Zona1"].find().count();
  
   // Ejercicio #10:
 
@@ -163,4 +284,17 @@ db.Terrazas.aggregate([
     }
   ])
 // Consulta para validar 
-db["Zona2"].find().count()
+db["Zona2"].find().count();
+
+
+// Grafos 
+
+CALL apoc.load.jsonArray('file:///locales.json') YIELD value AS locale
+MERGE (b: Barrio {id_distrito_local: locale.id_distrito_local, desc_barrio_local: locale.desc_barrio_local, desc_distrito_local: locale.desc_distrito_local})
+MERGE (l: Local {id_local: locale.id_local, Nombre: locale.Nombre, Cod_Postal: locale.Cod_Postal, desc_situacion_local: locale.desc_situacion_local, clase_vial_edificio: locale.clase_vial_edificio, coordenada_x_local: locale.coordenada_x_local, coordenada_y_local: locale.coordenada_y_local,num_edificio: locale.num_edificio, desc_barrio_local: locale.desc_barrio_local})                  
+MERGE (l)-[:ESTÁ_EN]->(b)
+WITH l,b, locale
+MERGE (t: Terraza {num_terraza: locale.num_terraza, desc_ubicacion_terraza: locale.desc_ubicacion_terraza,desc_situacion_terraza: locale.desc_situacion_terraza, desc_periodo_terraza: locale.desc_periodo_terraza})                  
+MERGE (l)-[:TIENE_TERRAZA]->(t)
+RETURN b, l, t LIMIT 100
+
