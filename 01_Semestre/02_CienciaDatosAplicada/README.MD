@@ -2551,6 +2551,31 @@ habla.
 A. Verdadero. -> correcta 
 B. Falso.
 
+## Videoclase 1. Introducción al Aprendizaje Automático
+## Notas
+- ¿Cuál es el objetivo principal del aprendizaje automático en la inteligencia artificial?
+    - Aprender y mejorar automáticamente a partir de datos para realizar tareas sin intervención humana constante.
+- ¿Cómo contribuye el aprendizaje automático al diagnóstico médico?
+    - Aprende de grandes volúmenes de datos médicos para identificar patrones y predecir resultados de salud.
+- ¿Cuál es una aplicación del aprendizaje automático en la planificación urbana?  
+    - Planificando y desarrollando infraestructuras y servicios urbanos eficientes considerando múltiples variables y datos variados.
+- ¿Qué técnica de aprendizaje automático se ajusta mejor al uso de datos sin etiquetas predefinidas?  
+    - Clustering o agrupamiento, que organiza los datos en grupos según sus características similares.
+- ¿En qué consiste el procesamiento del lenguaje natural (NLP) en el contexto del aprendizaje automático?  
+    - Permite que las máquinas comprendan, interpreten y generen lenguaje humano de manera coherente.            
+
+## Videoclase 2. Métodos supervisados y No Supervisados
+## Notas
+- ¿Cuál es la diferencia principal entre los métodos supervisados y no supervisados en aprendizaje automático?
+    - Supervisados utilizan datos etiquetados para entrenar modelos, mientras que no supervisados buscan patrones en datos sin etiquetas.
+- ¿Qué técnica de clustering se utiliza para agrupar datos basándose en la densidad de puntos?
+    - DBSCAN (Density-Based Spatial Clustering of Applications with Noise).
+- ¿Qué aplicación práctica tienen los métodos no supervisados en el análisis de imágenes?
+    - Descubrir patrones comunes y características en grandes conjuntos de imágenes sin etiquetas predefinidas. -> La regresión logística se utiliza para predecir eventos binarios
+- ¿Cuál es el uso de la regresión logística en métodos supervisados?
+    - Predecir la probabilidad de un evento binario, como la compra de un producto basado en el historial del cliente.
+- ¿Por qué es importante el preprocesamiento de datos en el aprendizaje automático?  
+    - Para mejorar la calidad de los datos eliminando errores, manejando valores faltantes y asegurando su adecuación para el análisis posterior con ML.
 
 # Tema 10. Aplicación en Inteligencia Artificial
 
