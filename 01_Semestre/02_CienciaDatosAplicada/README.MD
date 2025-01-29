@@ -2577,6 +2577,21 @@ B. Falso.
 - ¿Por qué es importante el preprocesamiento de datos en el aprendizaje automático?  
     - Para mejorar la calidad de los datos eliminando errores, manejando valores faltantes y asegurando su adecuación para el análisis posterior con ML.
 
+
+## Videoclase 3. Métodos supervisados y No Supervisados
+## Notas
+- ¿Qué son las Redes Neuronales Artificiales (ANN) y cuál es su función principal?
+    - Modelos computacionales inspirados en el cerebro humano que procesan información a través de capas de neuronas para tareas de clasificación y predicción.
+- ¿Cuál es la diferencia entre una red neuronal convolucional (CNN) y una red neuronal recurrente (RNN)?
+    - CNN se especializa en procesar datos estructurados como imágenes, mientras que RNN maneja datos secuenciales como texto y series temporales.
+- ¿Qué función cumple la capa de pooling en una CNN?
+    - Reduce la dimensionalidad de las características extraídas, disminuyendo la carga computacional y evitando el sobreajuste. -> La capa de pooling en CNN reduce la dimensionalidad y la carga computacional
+- ¿Cuál es la principal ventaja de utilizar LSTM (Long Short-Term Memory) en redes neuronales recurrentes (RNN)? 
+    - Permite superar el problema del gradiente desvanecido, facilitando el aprendizaje de relaciones a largo plazo en datos secuenciales. -> LSTM mejora las redes neuronales recurrentes (RNN) al resolver el problema del gradiente desvanecido, lo que permite a la red aprender dependencias a largo plazo en datos secuenciales. 
+- ¿Cuál es el propósito del uso de TensorFlow y Keras en Deep Learning?  
+    - Facilitar la construcción y entrenamiento de modelos de aprendizaje profundo mediante una interfaz amigable y herramientas de optimización.
+
+
 # Tema 10. Aplicación en Inteligencia Artificial
 
 
