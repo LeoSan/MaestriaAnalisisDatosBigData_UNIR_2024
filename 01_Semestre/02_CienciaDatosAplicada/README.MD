@@ -2307,9 +2307,14 @@ D. Ninguna de las respuestas anteriores es correcta.
 
 # Tema 9. Aplicación en Aprendizaje Automático
 
-## 9.2. Objetivos del Aprendizaje Automático
 
 ## 9.3. Métodos supervisados y no supervisados
+
+## Aprendizaje Supervizado 
+> Los tipos más famosos de este aprendizaje son aquellos que permiten automatizar la toma de decisiones a partir de generalizaciones desde ejemplos aprendidos. En este grupo entra lo que se conoce como aprendizaje supervisado
+
+## Aprendizaje No Supervizado 
+
 
 ## 9.4. Clasificación, regresión y agrupamiento
 
