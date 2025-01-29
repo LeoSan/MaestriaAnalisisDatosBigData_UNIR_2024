@@ -2341,8 +2341,10 @@ La siguiente imagen representa una clasificación detallada de las diversas téc
 * **Redes de Creencias Profundas (DBM):** Modelos gráficos probabilísticos para el aprendizaje profundo.
 * **Algoritmos Genéticos:** Inspiran en la evolución biológica para encontrar soluciones óptimas.
 * **Aprendizaje Ensamble:** Combina múltiples modelos para mejorar el rendimiento.
-    * **Bagging:** Crea múltiples modelos a partir de subconjuntos de datos.
-    * **Boosting:** Combina modelos secuencialmente, dando más peso a los ejemplos mal clasificados.
+    * **Bagging:** Crea múltiples modelos a partir de subconjuntos de datos,A partir del conjunto original de observaciones de entrenamiento se
+generan m conjunto nuevos de datos con las mismas propiedades
+    * **Boosting:** Combina modelos secuencialmente, dando más peso a los ejemplos mal clasificados.  Consiste en combinar varios clasificadores sencillos para obtener uno
+más robusto
     * **Stacking:** Combina los resultados de múltiples modelos utilizando un meta-modelo.
 
 ### Aprendizaje Profundo
@@ -2365,7 +2367,202 @@ La siguiente imagen representa una clasificación detallada de las diversas téc
 
 ## 9.4. Clasificación, regresión y agrupamiento
 
+## clasificación 
+- La clasificación también es una de las herramientas importantes en la toma de decisiones. 
+- La clasificación es un problema de predicción de categorías.
+- En un problema de predicción el objetivo es estimar una cantidad 
+- Un clasificado es básicamente una división del espacio de las variables independientes. 
+- A cada división se le asigna una clase o categoría. 
+- Es importante indicar que la clasificación binaria se refiere a casos donde solo hay dos categorías o
+clases. 
+- Los métodos de clasificación se pueden generalizar a un mayor número de categorías
+
+**También podemos encontrar modelos de clasificación basados en:**
+- Redes neuronales. Se entrena una red neuronal para que su predicción sea la categoría o clase que corresponde a cada observación.
+- Boosting.(Impulsando - Buusten) Consiste en combinar varios clasificadores sencillos para obtener uno más robusto. El aprendizaje es secuencial, cada nuevo clasificador sencillo se
+especializa en aprender las observaciones mal clasificadas por los anteriores.
+- Bagging.(Harpillera - Bagginn) A partir del conjunto original de observaciones de entrenamiento se generan (m) conjunto nuevos de datos con las mismas propiedades. 
+    - Con cado uno de estos conjuntos se entrena un clasificador y finalmente se combinan los (m) clasificadores para obtener uno robusto.
+
+
+**Medidas de calidad de un modelo de clasificación**
+> Es importante tener unas metricas que midan de forma objetiva la precisión de los modelos clasificación para eso se usan ciertas herramientas: 
+> Son métricas que nos permiten evaluar qué tan bien está funcionando nuestro modelo al predecir a qué clase pertenece un nuevo dato
+
+**Herramientas para medir la calidad** 
+- Matriz de confusión: consiste en medir un conjunto de observaciones etiquetas a su categoria. 
+    - se construye creando columnas que representan categorias reales de las observaciones 
+    - Se contruye filas que represenatan las categorías predichas por el modelo para cada observación. 
+    - Se obtiene una linea diagonal con el número de observaciones con predicción acertada. 
+**ejmeplo** 
+![alt text](/01_Cuatrimestre/02_CienciaDatosAplicada/info/image_021.png)
+
+- Curva ROC y AUC: La curva ROC muestra la relación entre la tasa de verdaderos positivos y la tasa de falsos positivos para diferentes umbrales de clasificación.
+    - El área bajo la curva ROC (AUC) es un único valor que resume el rendimiento del modelo.
+
+- Kappa de Cohen: Mide el acuerdo entre las predicciones del modelo y los valores reales, teniendo en cuenta la probabilidad de acuerdo aleatorio.
+- Log loss: Mide la discrepancia entre las probabilidades predichas por el modelo y los valores reales.
+
+
+## Regresión
+> La regresión es un método de aprendizaje automático utilizado para modelar la relación entre una variable dependiente (objetivo) y una o más variables independientes (predictoras). La finalidad principal de la regresión es predecir un valor continúo basándose en las características observadas
+
+**Técnicas de Regresión**
+- Regresión Lineal Simple: esta técnica modela la relación entre dos variables
+mediante una línea recta.
+- Regresión Lineal Múltiple: extiende la regresión lineal simple para incluir múltiples
+variables independientes
+- Regresión Polinómica: modela la relación entre la variable dependiente y las
+variables independientes como un polinomio de n-ésimo grado. Es útil cuando la
+relación no es lineal.
+- Regresión Logística: aunque su nombre sugiere lo contrario, se utiliza para
+problemas de clasificación binaria. Modela la probabilidad de un resultado binario
+utilizando una función logística
+- Regresión Ridge y Lasso: son técnicas de regularización que modifican la función
+de costo para incluir términos que penalizan grandes coeficientes, ayudando a
+prevenir el sobreajuste. Ridge utiliza la penalización L2 mientras que Lasso utiliza la
+penalización L1
+
+
+## Agrupamiento o clustering
+> El clustering es uno de los métodos de aprendizaje no supervisado más importantes y, como cualquier otro método de aprendizaje no supervisado, busca caracterizar conceptos desconocidos a partir de instancias de estos. En este tipo de problemas de aprendizaje no supervisado, la clase es desconocida y, precisamente, el descubrimiento de esta clase es el objetivo a través de la agrupación de instancias con base en un esquema de similitud.
+
+> permite agrupar objetos en clústeres o agrupamientos, cuyos miembros son similares entre sí en cierto modo.
+
+**A continuación, se enumeran diferentes tipos de algoritmos de clustering en función del tipo de agrupamientos que producen:**
+
+    - Agrupamientos exclusivos. Pueden generarse por métodos que particionan los datos creando un número k determinado de clústeres. Cada uno de los clústeres tiene, al menos, un objeto y los objetos se agrupan de modo exclusivo, pudiendo pertenecer únicamente a un clúster. 
+    - Agrupamientos jerárquicos. Existen algoritmos jerárquicos que dan lugar a una estructura jerárquica de clústeres. En el primer nivel de la jerarquía se tiene un único clúster que, en una primera iteración, se divide en clústeres. Cada uno de estos se divide a su vez y se van generando nuevos clústeres en siguientes iteraciones. Esto es lo que se llama una aproximación divisoria.
+    - Agrupamientos solapados. Los objetos se agrupan a través de conjuntos difusos y cada objeto puede pertenecer a uno o más clústeres con diferentes grados de pertenencia.
+    - Agrupamientos probabilistas. Los clústeres se generan mediante un método probabilístico como es el algoritmo EM (Expectation- Maximization).
+    - Las medidas de distancia:  son utilizadas en un importante número de algoritmos de clustering, puesto que muchos algoritmos se basan en medidas de distancia entre objetos para, en función de su «cercanía», incluirlos en el mismo clúster o en clústeres separados.
+
+**Algunos ejemplos de aplicaciones prácticas del clustering en entornos de Industria 4.0 son:**
+    - Encontrar objetos representativos de grupos homogéneos. Por ejemplo, en un sistema de ahorro energético, identificar usuarios con características similares para determinar diferencias de comportamientos y consumos
+    - En un sistema de gestión de clientes, las técnicas de clustering pueden agrupar los diversos clientes según características comunes
+    - Encontrar grupos y describirlos en función de sus propiedades. Por ejemplo, en biología, clasificación de plantas o, en medicina, clasificación de enfermedades raras
+    - Detección de casos anómalos. Por ejemplo, en un sistema de detección de errores n líneas de comunicación al detectar patrones de ruido que no correspondan con ningún caso descrito
+
 ## 9.5. Aprendizaje Profundo
+> El deep learning es un área específica del aprendizaje automático que se basa en la utilización de redes neuronales con un alto número de nodos y capas. Este nuevo concepto dentro del aprendizaje automático lidia con procesos complejos que trabajan con volúmenes elevados de datos, así como con la interconexión necesaria entre los diferentes sistemas que forman parte de la solución completa
+
+>  como una clase de algoritmos de aprendizaje automático que utiliza múltiples capas para extraer progresivamente características de nivel superior de la entrada bruta.
+
+**Dentro de los sistemas deep learning pueden destacarse por su relevancia las siguientes**
+    - Redes prealimentadas: 
+    - Redes neuronales recurrentes  (RNN, Recurrent Neural Networks): 
+    - Redes recurrentes profundas (Deep Recurrent Networks):
+    - Autoencoders (AE): 
+    - Redes neuronales convolucionales (CNN, Convolutional Neural Networks); 
+    - Redes Generativas Antagónicas (GAN, Generative Adversarial Networks): 
+
+**Nota**
+ - profundas pueden utilizarse como sustitutos de los métodos supervisados, no supervisados y semisupervisados. 
 
 ## 9.6. Ejemplos de aplicaciones de aprendizaje automático
+
+ **Algunos ejemplos de aplicaciones prácticas**
+    - Medios Sociales y Personalización 
+        - Funcionalidades en Redes Sociales: Plataformas como Facebook utilizan algoritmos de aprendizaje automático para analizar las actividades de los usuarios y ofrecer sugerencias personalizadas de amigos y páginas. Estas funcionalidades mejoran la experiencia del usuario al adaptar el contenido a sus preferencias individuales.
+    - Recomendación de Productos 
+        - E-commerce: Sitios web como Amazon emplean algoritmos para rastrear el comportamiento de compra, historial de búsquedas y patrones de carrito de compras para recomendar productos que probablemente interesen a los usuarios. Esto no solo incrementa las ventas, sino que también mejora la satisfacción del cliente al proporcionar una experiencia de compra más personalizada. 
+    - Reconocimiento de Imágenes
+        - Diagnóstico Médico: Algoritmos de redes neuronales convolucionales (CNN) se utilizan en la detección de cáncer de piel, proporcionando tasas de precisión muy altas en comparación con métodos manuales.
+
+    - Análisis de Sentimientos
+        - Marketing y Atención al Cliente: Las herramientas de análisis de sentimientos  ayudan a las empresas a entender las opiniones y emociones de los clientes en tiempo real, a partir de reseñas, correos electrónicos y publicaciones en redes sociales. Esto es crucial para mejorar la atención al cliente y adaptar las estrategias de marketing.
+
+    - Optimización del Viaje del Cliente
+        - Marketing Digital: Las técnicas de aprendizaje automático optimizan el viaje del cliente al analizar y predecir los puntos de interés en tiempo real, mejorando las estrategias de adquisición y retención de clientes mediante recomendaciones personalizadas.
+    - Automatización de Control de Acceso
+        - Seguridad en el Lugar de Trabajo: Las organizaciones implementan algoritmos para determinar los niveles de acceso de los empleados basados en sus perfiles de trabajo, mejorando la seguridad y eficiencia en la gestión de recursos humanos.
+
+    - Preservación de Vida Marina
+        - Conservación Ambiental: Algoritmos de aprendizaje automático se utilizan para modelar el comportamiento de especies marinas en peligro, ayudando a los científicos a regular y monitorear sus poblaciones de manera más efectiva.
+
+    - Predicción de Fallos Cardíacos
+         - Medicina Preventiva: Algoritmos analizan las notas de los médicos y patrones en el historial cardiovascular de los pacientes para identificar riesgos de fallos cardíacos, facilitando diagnósticos más rápidos y precisos. 
+    
+    - Traducción de Idiomas
+        Comunicación Global: Herramientas de traducción de idiomas basadas en aprendizaje automático permiten traducciones precisas y contextuales entre    múltiples idiomas, eliminando barreras lingüísticas y facilitando la comunicación   global.
+
+    - Detección de Bots Maliciosos
+        - Ciberseguridad: Los sistemas de detección de bots en plataformas como Twitter utilizan técnicas de aprendizaje supervisado para identificar y clasificar bots buenos y malos, reduciendo la propagación de información falsa y amenazas cibernéticas.
+                
+
+## Cuestionario 
+
+1. El aprendizaje automático consiste en extraer conocimiento a partir de los datos.
+    A. Verdadero. -> correcta
+    B. Falso.
+
+2. Los tres grandes grupos que se pueden definir dentro del aprendizaje automático
+son:
+A. Aprendizaje por refuerzo.
+B. Aprendizaje supervisado y no supervisado.
+C. Aprendizaje semisupervisado.
+D. Las tres anteriores son correctas. -> correcta
+
+3. Dentro del aprendizaje supervisado existen diferentes técnicas, entre ellas:
+A. Clasificación y regresión. -> correcta
+B. Agrupamiento y asociación.
+C. Aprendizaje por refuerzo.
+D. Ninguna de las anteriores.
+
+4. El aprendizaje por refuerzo se basa en el entrenamiento de modelos de
+aprendizaje automático para tomar decisiones de forma secuencial.
+A. Verdadero. -> correcto 
+B. Falso.
+
+5. ¿Cuáles de los siguientes puntos pertenecen al aprendizaje por refuerzo?
+A. Agente, acción, entorno.-> correcta 
+B. Recompensa, intercambio, acción. 
+C. Estado, lugar, tiempo.
+D. Ninguna de las anteriores
+
+6. ¿Cuáles de los siguientes puntos pertenecen a las fases del proceso de
+extracción de conocimiento visto en clase?
+A. Datos, datos objetivo.
+B. Datos transformados, patrones, conocimiento.
+C. Datos preprocesados.
+D. Todas las anteriores. -> correcta 
+
+7. El proceso KDD es interactivo e iterativo.
+A. Verdadero. -> correcta 
+B. Falso.
+
+8. La elección de los algoritmos de minería de datos incluye:
+A. Seleccionar el método o métodos que se utilizarán para buscar patrones en
+los datos. -> correcta 
+B. Búsqueda de patrones de interés en una forma de representación
+particular.
+C. La interpretación de los patrones descubiertos.
+D. Ninguna de las anteriores.
+
+9. Un sistema de aprendizaje consta, en parte, de las siguientes etapas:
+A. Selección del objetivo de aprendizaje.
+B. Selección del conjunto de datos de entrenamiento.
+C. Selección de una función objetivo.
+D. Todas las anteriores -> correcta 
+
+10. El aprendizaje automático tiene múltiples aplicaciones en otro tipo de sistemas,
+como en aquellos relacionados con la robótica, o en sistemas de reconocimiento del
+habla.
+A. Verdadero. -> correcta 
+B. Falso.
+
+
+# Tema 10. Aplicación en Inteligencia Artificial
+
+
+## 10.2. Objetivos de la Inteligencia Artificial aplicada
+
+## 10.3. Datos masivos en la Inteligencia Artificial
+
+## 10.4. La visión, el lenguaje natural y conocimiento
+
+
+## 10.5. Ejemplos de aplicación de la Inteligencia Artificial
+
+
 
