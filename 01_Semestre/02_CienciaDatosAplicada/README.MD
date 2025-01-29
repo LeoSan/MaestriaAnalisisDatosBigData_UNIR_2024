@@ -2316,6 +2316,53 @@ D. Ninguna de las respuestas anteriores es correcta.
 ## Aprendizaje No Supervizado 
 
 
+## Mapa Conceptual del Aprendizaje Automático
+
+La siguiente imagen representa una clasificación detallada de las diversas técnicas y algoritmos utilizados en el campo del aprendizaje automático.
+
+### Niveles de Abstracción
+* **Aprendizaje Automático:** El término general que engloba todas las técnicas que permiten a las computadoras aprender a partir de datos sin ser programadas explícitamente.
+* **Aprendizaje Supervisado:** El algoritmo aprende a partir de datos etiquetados.
+    * **Clasificación:** Predice a qué categoría pertenece un nuevo dato.
+    * **Regresión:** Predice un valor numérico continuo.
+* **Aprendizaje No Supervisado:** El algoritmo encuentra patrones en datos no etiquetados.
+    * **Clustering:** Agrupa datos similares.
+    * **Reducción de Dimensionalidad:** Simplifica datos de alta dimensión.
+* **Aprendizaje Semi-Supervisado:** Combina datos etiquetados y no etiquetados.
+* **Aprendizaje por Refuerzo:** El agente aprende a tomar decisiones en un entorno para maximizar una recompensa.
+
+### Técnicas Específicas
+* **Perceptrones Multicapa (MLP):** Una arquitectura de red neuronal artificial.
+* **Redes de Funciones de Base Radial (RBFN):** Otro tipo de red neuronal.
+* **Redes Neuronales Recurrentes (RNN):** Utilizadas para procesar secuencias de datos.
+* **Redes Neuronales Convolucionales (CNN):** Especializadas en el procesamiento de imágenes.
+* **Redes Generativas Adversarias (GAN):** Generan nuevos datos a partir de una distribución de probabilidad.
+* **Autoencoders:** Utilizados para la reducción de dimensionalidad y el aprendizaje de representaciones latentes.
+* **Redes de Creencias Profundas (DBM):** Modelos gráficos probabilísticos para el aprendizaje profundo.
+* **Algoritmos Genéticos:** Inspiran en la evolución biológica para encontrar soluciones óptimas.
+* **Aprendizaje Ensamble:** Combina múltiples modelos para mejorar el rendimiento.
+    * **Bagging:** Crea múltiples modelos a partir de subconjuntos de datos.
+    * **Boosting:** Combina modelos secuencialmente, dando más peso a los ejemplos mal clasificados.
+    * **Stacking:** Combina los resultados de múltiples modelos utilizando un meta-modelo.
+
+### Aprendizaje Profundo
+* **Redes Neuronales y Aprendizaje Profundo:** El uso de redes neuronales con muchas capas para aprender representaciones complejas de datos.
+* **Aprendizaje por Refuerzo Profundo:** La combinación de aprendizaje por refuerzo y aprendizaje profundo para tareas más complejas.
+
+### Conceptos Clave
+* **Autoaprendizaje:** La capacidad de un sistema de aprender sin intervención humana.
+* **Autoensamblado:** La capacidad de un sistema de organizarse a sí mismo.
+* **Búsqueda de Patrones:** Identificar regularidades en los datos.
+
+**De forma habitual, un sistema de aprendizaje constará de las siguientes etapas:**
+- Selección del objetivo de aprendizaje.
+- Selección del conjunto de datos de entrenamiento.
+- Selección de una función objetivo y su representación.
+- Selección del algoritmo de aprendizaje que aproximará la función objetivo.
+- Evaluación y validación de los resultados.
+
+
+
 ## 9.4. Clasificación, regresión y agrupamiento
 
 ## 9.5. Aprendizaje Profundo
