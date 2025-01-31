@@ -1325,8 +1325,165 @@ empresa.
 
 ## Tema 6. Introducción al Marketing (continuación) 
 
-6.2. Principios y fundamentos
-6.3. Métricas básicas
-6.4. Tipos de analíticas web
-6.5. Herramientas de medición
+## 6.2. Principios y fundamentos
+
+>La analítica web es la recolección, medición, análisis y reporte de los datos que se extraen de la navegación de los usuarios por un sitio web para poder comprender y optimizar su uso.
+
+**La analítica web sirve para:**
+- Conocer el comportamiento de los usuarios.
+- Comparar el rendimiento de los diferentes medios de captación de tráfico (SEO,SEM…).
+- Evaluar el rendimiento de nuestras páginas web y proponer mejoras.
+- Analizar tendencias y comportamientos recurrentes en el tiempo.
+- Tomar decisiones estratégicas a nivel de negocio, producto o precio.
+
+**En concreto, si se desgrana su definición de forma natural podemos descifrar mejor
+en qué consiste el proceso de la analítica web:** 
+- 1. Recopilar información (medición y recolección)
+- 2. Realizar las preguntas correctas (análisis)
+- 3. Realizar los reportes adecuados (reporte)
+- 4. Mejorar y optimizar un sitio web. 
+- 5. Detección de errores en el sitio web.
+
+
+## 6.3. Métricas básicas
+
+**Podemos seleccionar de entre las docenas de métricas que se usan, aunque algunas de ellas son las relevantes y debemos tener claras:**
+
+- Visitantes únicos: número de visitantes no duplicados que han accedido al sitio web. 
+- Visitas: una visita es un conjunto de interacciones que tienen lugar en un sitio web durante un período determinado. 
+- Páginas vistas: son las páginas a las que se accede dentro del sitio web. Las páginas están compuestas de hits, impactos o cantidad de respuestas de un servidor a la petición de un navegador o robot. 
+- Páginas/visita: promedio de páginas vistas durante una visita al sitio. Este indicador
+tiene que ir creciendo con el tiempo dentro de la página web. 
+- Duración media de la visita: es la duración media de una sesión.
+- Porcentaje de rebote: porcentaje de visitas de una sola página y en las que el usuario ha abandonado el sitio en su página de entrada. 
+
+
+**Otras métricas interesantes para tener en cuenta son:**
+- Porcentaje de visitas nuevas: porcentaje estimado de visitas realizadas por primera vez. 
+- Sesiones: interacciones de un usuario en un sitio web.
+- Tasa de conversión: es el porcentaje resultante de dividir los resultados entre los visitantes únicos. 
+- Métricas para obtener el ROI.
+- Medición de resultados.
+- Métricas de rendimiento.
+- Indicadores de eficacia.
+
+**La analítica web se clasifica en dos tipos: la cuantitativa y la cualitativa:** 
+**La cuantitativa** 
+- son análitica general de las seccione de usuarios generales 
+
+**Cualitativa**
+- La analítica cualitativa nos aporta datos más visuales, relacionados con el comportamiento del usuario
+
+
+**¿Qué métricas son decisivas en la analítica aplicada a la usabilidad?** 
+- El tiempo en página o el porcentaje de rebote. 
+- Funnels o embudos de conversión. 
+- Test A/B o test
+- Cuántos visitantes son nuevos y cuántos recurrentes, 
+- Páginas de destino 
+- Observar con detenimiento las páginas de salida 
+- Páginas de salida que tengan un alto porcentaje de salidas serán las primeras que debemos comprobar.
+
+
+## El comportamiento del usuario
+- Hoy en día la velocidad de descarga del sitio es uno de los factores fundamentales que Google toma para el posicionamiento SERP de los sitios web. 
+-  Hoy en día esto ya no solo sucede en el caso de una web, sino también del móvil, las tabletas y todo tipo de plataformas donde nuestros contenidos estén disponibles para los usuarios. 
+
+## Video 1: 
+## Nota: 
+- ¿Qué métrica no es básica para el análisis web?
+    - Tiempo real. 
+- ¿Puede un sitio web tener más páginas vistas que visitas?
+    - SI -> Es posible que un sitio web tenga más páginas vistas que visitas, ya que una sola visita puede incluir múltiples página vistas durante la misma sesión de navegación.
+- ¿Cuándo finaliza, en general, una sesión en Google Analytics?
+    -  A los 30 minutos de iniciarse la sesión. -> En Google Analytics, una sesión finaliza después de 30 minutos de inactividad. Este es el tiempo estándar de expiración para una sesión, a menos que se configure de otra manera.
+- ¿En un test A/B hay que insertar alguna etiqueta de Google Analytics en nuestra web?
+    - Un código que se inserta en la página original y en la de objetivo. -> Para realizar un test A/B, es necesario insertar un código de seguimiento en ambas versiones de la página (la original y la de prueba) para rastrear y comparar el rendimiento de cada versión.
+- La velocidad de un sitio es importante para
+    - A y B son correctas. -> La velocidad de un sitio web afecta tanto la experiencia de navegación del usuario como el posicionamiento en los motores de búsqueda, ya que los sitios más rápidos suelen tener una mejor clasificación y proporcionan una mejor experiencia al usuario.
+
+## Video 2
+## Nota: 
+- Elige la opción que corresponda a una métrica
+    - Visitas. -> "Visitas" es una métrica que cuantifica el número de veces que los usuarios acceden a un sitio web. Las otras opciones, como "Usuarios en España" o "Provienen de Yahoo", son más bien segmentaciones o fuentes de tráfico.
+
+- ¿Qué herramientas sirven para analizar la velocidad del sitio web? 
+    - Herramientas como Google Webmaster Tools (ahora conocido como Google Search Console) y Yslow son útiles para analizar la velocidad de un sitio web y proporcionar recomendaciones para mejorar el rendimiento.
+- Relaciona el indicador con lo que mide
+    - Transacciones - numeros de venta 
+    - Visitas totales -visitas web 
+    - Porcentaje de rebote - visitas muy cortas 
+    - Webs de referencia - paginas de procedencia 
+
+- Las herramientas web: ¿en qué indicador basan sus datos?
+    -  Las herramientas web suelen basar sus datos en cookies para rastrear usuarios y sesiones, y en el uso de código JavaScript para capturar y enviar información sobre las interacciones de los usuarios con el sitio.
+      
+- ¿A qué corresponde la siguiente definición? Es la medida en la cual un sitio web puede ser usado por usuarios específicos para conseguir objetivos específicos con efectividad, eficiencia y satisfacción en un contexto de uso concreto, mediante test de usuarios o directamente con la analítica web.
+
+
+## Cuestionario 
+
+1. ¿Qué métrica no es básica para el análisis web?
+A. Visitas.
+B. Porcentaje de rebote.
+C. Tiempo real. -> correcto
+D. Todas son correctas.
+
+2. ¿Puede un sitio web tener más páginas vistas que visitas?
+A. No.
+B. Sí. -> correcto
+C. Solo a veces.
+D. Todas son correctas.
+
+3. ¿Cuándo finaliza, en general, una sesión en Google Analytics?
+A. A los 30 minutos de iniciarse la sesión. -> correcto
+B. A los 20 minutos de iniciarse la sesión.
+C. A los 15 minutos de iniciarse la sesión.
+D. Cuando apagas el ordenador.
+
+4. ¿En un test A/B hay que insertar alguna etiqueta de Google Analytics en nuestra web?
+A. Nunca.
+B. Solo si no funciona.
+C. Un código que se inserta en la página original y en la de objetivo. -> correcto
+D. Todas son correctas. 
+
+5. La velocidad de un sitio es importante para:
+A. La experiencia de navegación del usuario.
+B. La experiencia de usuario y el posicionamiento.
+C. Solo el posicionamiento.
+D. A y B son correctas.  -> correcto
+
+6. Elige la opción que corresponda a una métrica:
+A. Visitas.
+B. Usuarios en España.
+C. Provienen de Yahoo.
+D. Todas son correctas. -> correcto
+
+7. ¿Qué herramientas sirven para analizar la velocidad del sitio web?
+A. Google Webmaster Tools.
+B. Photoshop.
+C. Yslow.
+D. A y C son correctas -> correcto
+
+8. Relaciona el indicador con lo que mide:
+
+9. Las herramientas web: ¿en qué indicador basan sus datos?
+A. Cookies.         -> correcto
+B. Código de Java.
+C. A y B son correctas.
+D. Ninguna es correcta.
+
+10. ¿A qué corresponde la siguiente definición? Es la medida en la cual un sitio web
+puede ser usado por usuarios específicos para conseguir objetivos específicos con
+efectividad, eficiencia y satisfacción en un contexto de uso concreto, mediante test de
+usuarios o directamente con la analítica web.
+A. Analítica web.
+B. Usabilidad.    -> correcto
+C. Engagement.
+D. Ninguna es correcta.
+
+
+
+## 6.4. Tipos de analíticas web
+## 6.5. Herramientas de medición
 
