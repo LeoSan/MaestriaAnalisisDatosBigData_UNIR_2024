@@ -1419,6 +1419,7 @@ tiene que ir creciendo con el tiempo dentro de la página web.
     -  Las herramientas web suelen basar sus datos en cookies para rastrear usuarios y sesiones, y en el uso de código JavaScript para capturar y enviar información sobre las interacciones de los usuarios con el sitio.
       
 - ¿A qué corresponde la siguiente definición? Es la medida en la cual un sitio web puede ser usado por usuarios específicos para conseguir objetivos específicos con efectividad, eficiencia y satisfacción en un contexto de uso concreto, mediante test de usuarios o directamente con la analítica web.
+    - Usabilidad - La definición se refiere a la usabilidad de un sitio web, que mide cuán fácil y eficiente es para los usuarios alcanzar sus objetivos dentro de un sitio, y evalúa la satisfacción del usuario con la experiencia.
 
 
 ## Cuestionario 
