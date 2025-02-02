@@ -1389,6 +1389,79 @@ tiene que ir creciendo con el tiempo dentro de la página web.
 - Hoy en día la velocidad de descarga del sitio es uno de los factores fundamentales que Google toma para el posicionamiento SERP de los sitios web. 
 -  Hoy en día esto ya no solo sucede en el caso de una web, sino también del móvil, las tabletas y todo tipo de plataformas donde nuestros contenidos estén disponibles para los usuarios. 
 
+## 6.4. Tipos de analíticas web
+
+> La analítica web es el proceso de recopilar, medir, analizar y comprender los datos del tráfico de un sitio web. Esto se hace para optimizar el sitio web, mejorar la experiencia del usuario y alcanzar los objetivos de negocio.
+
+1.- **Analítica de tráfico**: 
+    - Se centra en el volumen y las fuentes de tráfico que recibe un sitio web. 
+    - Esto incluye métricas como el número de visitantes, las páginas vistas, la duración de la visita y las fuentes de tráfico 
+    - Por ejemplo, búsqueda orgánica, tráfico directo, redes sociales.
+
+2.- **Analítica de comportamiento**: 
+    - Analiza cómo interactúan los visitantes con un sitio web. 
+    - Esto incluye métricas como la tasa de rebote, el porcentaje de clics, el tiempo de permanencia en la página. 
+    - El recorrido del usuario a través del sitio.
+
+3.- **Analítica de conversión**: 
+    - Mide el número de visitantes que completan una acción deseada en un sitio web
+    - Como realizar una compra, suscribirse a un boletín o completar un formulario de contacto. 
+    - Esto ayuda a evaluar la efectividad del sitio web para lograr sus objetivos de negocio.
+
+4.- **Analítica de contenido**: 
+    - Evalúa el rendimiento del contenido de un sitio web. 
+    - Evalúa artículos de blog, videos o imágenes. 
+    - Esto incluye métricas como el número de visitas, el tiempo de permanencia en la página y el número de compartidos en redes sociales.
+
+5.- **Analítica de redes sociales**: 
+    - Analiza el rendimiento de las campañas de marketing en redes sociales y cómo interactúan los usuarios con el contenido compartido en estas plataformas. 
+    - Esto incluye métricas como el alcance, la interacción, el número de seguidores y el sentimiento de los comentarios.
+
+**Analíticas web según su enfoque específico**
+
+- Analítica en tiempo real: 
+    - Permite monitorizar el tráfico y el comportamiento de los usuarios en un sitio web en tiempo real. 
+    - Esto es útil para identificar problemas técnicos, evaluar el impacto de campañas de marketing y tomar decisiones rápidas.
+
+- Analítica predictiva: 
+     - Utiliza modelos estadísticos y algoritmos de aprendizaje automático para predecir el comportamiento futuro de los usuarios y anticipar tendencias. 
+     - Esto puede ayudar a personalizar la experiencia del usuario y optimizar las estrategias de marketing.
+
+- Analítica de segmentación: 
+    - Divide a los usuarios en grupos según sus características demográficas, comportamiento o intereses. 
+    - Esto permite personalizar la comunicación y ofrecer contenido relevante a cada segmento.
+
+
+## 6.5. Herramientas de medición
+
+- Analítica de tráfico:
+    - Google Analytics: La herramienta más utilizada y completa del mercado. Ofrece una gran cantidad de datos sobre el tráfico, las fuentes, el comportamiento de los usuarios, etc.
+    - Adobe Analytics: Una herramienta más avanzada y completa que Google Analytics, ideal para empresas con grandes volúmenes de datos y necesidades de análisis más complejas.
+    - Matomo (antes Piwik): Una alternativa de código abierto a Google Analytics, que ofrece funcionalidades similares y la posibilidad de alojar los datos en servidores propios.
+    - Yandex Metrica: La herramienta de analítica web de Yandex, el buscador más utilizado en Rusia. Ofrece funcionalidades similares a Google Analytics y es gratuita.
+    - StatCounter: Una herramienta sencilla y fácil de usar, ideal para obtener datos básicos sobre el tráfico de un sitio web.
+
+- Analítica de comportamiento:*
+    - Hotjar: Permite analizar el comportamiento de los usuarios a través de mapas de calor, grabaciones de sesiones y encuestas.
+    - Crazy Egg: Similar a Hotjar, ofrece mapas de calor y otras herramientas para entender cómo interactúan los usuarios con un sitio web.
+    - Mouseflow: Otra herramienta que ofrece mapas de calor, grabaciones de sesiones y análisis de formularios.
+
+- Analítica de conversión:*
+    - Google Analytics: También ofrece funcionalidades para medir conversiones, como el seguimiento de objetivos y el análisis de embudos de conversión.
+    - Adobe Analytics: Similar a Google Analytics, permite medir y analizar conversiones de manera detallada.
+    - Kissmetrics: Una herramienta especializada en el análisis de conversiones y el seguimiento del comportamiento de los usuarios a lo largo del tiempo.
+
+- Analítica de contenido:
+    - Google Analytics: Permite analizar el rendimiento del contenido de un sitio web, como las páginas más visitadas, el tiempo de permanencia en la página y la tasa de rebote.
+    - Parse.ly: Una herramienta especializada en el análisis de contenido, que ofrece datos en tiempo real sobre el rendimiento de los artículos, videos e imágenes.
+    - Chartbeat: Similar a Parse.ly, ofrece datos en tiempo real sobre el rendimiento del contenido y el engagement de los usuarios.
+
+- Analítica de redes sociales:*
+    - Brandwatch: Una herramienta para monitorizar y analizar las menciones de una marca en redes sociales.
+    - Sprout Social: Permite gestionar y analizar las redes sociales de una empresa, incluyendo el rendimiento de las publicaciones y el engagement de los usuarios.
+    - Hootsuite: Similar a Sprout Social, ofrece funcionalidades para gestionar y analizar redes sociales.
+
+
 ## Video 1: 
 ## Nota: 
 - ¿Qué métrica no es básica para el análisis web?
@@ -1421,6 +1494,18 @@ tiene que ir creciendo con el tiempo dentro de la página web.
 - ¿A qué corresponde la siguiente definición? Es la medida en la cual un sitio web puede ser usado por usuarios específicos para conseguir objetivos específicos con efectividad, eficiencia y satisfacción en un contexto de uso concreto, mediante test de usuarios o directamente con la analítica web.
     - Usabilidad - La definición se refiere a la usabilidad de un sitio web, que mide cuán fácil y eficiente es para los usuarios alcanzar sus objetivos dentro de un sitio, y evalúa la satisfacción del usuario con la experiencia.
 
+## Video 3 
+
+- ¿Qué métrica se utiliza para medir la rentabilidad de una inversión en marketing digital?
+    - Correcto. El ROI (Return on Investment) se utiliza para medir la rentabilidad de una inversión en marketing digital.
+- ¿Cuál es una métrica de rendimiento comúnmente utilizada para medir el éxito de una campaña publicitaria basada en impresiones?
+    - Correcto. El CPM (Coste por mil) se utiliza para medir el coste de mil impresiones en una campaña publicitaria.
+- ¿Qué representa el porcentaje de rebote en el análisis web?
+    - El porcentaje de visitantes que abandonan el sitio después de ver solo una página.
+- ¿Cuál es el propósito de los embudos de conversión en la analítica web?
+    - Seguir y analizar los pasos de los usuarios a lo largo de un proceso, como una compra, para identificar puntos de abandono.
+- ¿Qué métrica se utiliza para medir la efectividad de los anuncios en términos de interacción del usuario?
+    - CTR - Correcto. El CTR (Click Through Rate) mide el porcentaje de usuarios que hacen clic en un anuncio en comparación con el número total de impresiones del anuncio.   
 
 ## Cuestionario 
 
@@ -1483,8 +1568,243 @@ B. Usabilidad.    -> correcto
 C. Engagement.
 D. Ninguna es correcta.
 
+# Tema 7. Marketing relacional y CRM
+
+## 7.2. Introducción al marketing relacional
+> En el marketing actual todo pasa por mantener las relaciones duraderas con los clientes.
+
+**Tiempos de marketing relacional** 
+- Un general victorioso, primero gana y después emprende la batalla. Un general perdedor, primero emprende la batalla y después espera ganar
+- Si no sabemos qué queremos y a dónde nos queremos dirigir, difícilmente tendremos éxito en nuestro avance. 
+- Porque se trata de una serie de herramientas y recursos que persiguen la relación y la vinculación con un objetivo definido que es conquitar al cliente 
+- El desarrollo de esta estrategia de marketing relacional ha dado pie a un nuevo término en marketing: CRM. Este concepto es usado ahora como una estrategia global que incluye software, tecnología en Internet. 
+- La razón principal del marketing relacional, es mantener y fidelizar clientes
+
+** Cinco tipos de marketing relaciona** 
+- Marketing relacional básico: la empresa se dedica a vender sin contacto alguno
+con el cliente. Productos de gran consumo con bajo margen unitario. Pensemos en
+agua mineral o galletas.
+
+- Marketing relacional reactivo: la empresa anima al cliente a intercambiar opiniones
+y experiencias. Es necesario, desde el punto de vista de estrategia CRM, recibir el
+input de las opiniones de los consumidores.
+
+- Marketing relacional estadístico: la empresa toma un protagonismo más activo
+para estimular al consumidor. En esta etapa la respuesta del consumidor es
+necesaria y el CRM persigue las opiniones de los usuarios y fomenta la repetición del
+producto o servicio.
+
+- Marketing relacional proactivo: entramos en esta fase de «verdadera relación»
+con el cliente. Para ello el CRM necesitará conocer cada momento del consumidor,
+sus hábitos, preferencias, etc. En definitiva, conocer para personalizar.
+
+- Marketing relacional de socio: el máximo nivel de marketing relacional y a lo que
+idealmente tienden todos los sistemas. Relación de igual a igual en la que el cliente
+no se «despega» de su proveedor porque cree que es el único que le entiende. Esta
+etapa del marketing no es fácil y no siempre es factible para algunas empresas llegar
+a ella
+
+## 7.3. Características y beneficios del marketing relacional
+
+**Características** 
+- Perspectiva a largo plazo.
+- Mantener clientes.
+- Relaciones duraderas con clientes.
+- Soluciones personalizadas.
+- Cooperación mutua no solo con clientes, sino también con proveedores, partners y la propia organización de la compañía a todos los niveles.
+- Foco en el servicio al cliente
+
+**beneficios** 
+- Fidelidad, dado que la compañía conoce al cliente y le atiende como si fuera único.
+- No es necesaria una política excesiva de descuentos, low cost, etc.; dado que lo que entendemos es una relación prolongada y no promocional.
+- El coste de adquisición de clientes se optimiza y se centra ahora en el mantenimiento de aquellos productivos. 
+- Costes de servicio mejorado, dado que tenemos los datos de sus necesidades, deseos, demandas y hábitos.
+
+1. Facilitar la toma de decisiones
+    - Acceso a información en tiempo real: Los CRM proporcionan una visión actualizada y completa de los datos de los clientes, lo que permite a los responsables tomar decisiones informadas y oportunas.
+2. Optimizar el proceso de venta
+    - Mejora de la eficiencia: Los CRM automatizan tareas repetitivas, como el seguimiento de clientes potenciales y el envío de correos electrónicos, lo que permite a los equipos de ventas centrarse en actividades de mayor valor.
+    - Identificación rápida de clientes: Los CRM facilitan la identificación de clientes potenciales y la segmentación de clientes existentes, lo que permite personalizar las interacciones y aumentar las oportunidades de venta.
+3. Servicio al cliente más eficiente
+    - Historial de interacciones: Los CRM almacenan un registro completo de todas las interacciones con los clientes, lo que permite a los equipos de soporte ofrecer un servicio más personalizado y eficiente.
+4. Aumento de la productividad
+    - Automatización de tareas: Al automatizar tareas manuales, los CRM permiten a los empleados ser más productivos y centrarse en actividades que requieren de su experiencia y creatividad.
+5. Incrementar la fidelidad del cliente
+    - Personalización de interacciones: Los CRM permiten a las empresas personalizar las interacciones con los clientes, lo que aumenta la satisfacción y la lealtad.
+6. Dirigir estrategias de marketing
+    - Segmentación de clientes: Los CRM facilitan la segmentación de clientes en función de diversos criterios, lo que permite a los equipos de marketing diseñar campañas más efectivas y dirigidas.
 
 
-## 6.4. Tipos de analíticas web
-## 6.5. Herramientas de medición
+## 7.4. CRM: definición y características
+- Es el proceso general de construir y mantener relaciones beneficiosas con los clientes a través del suministro de valor y satisfacción superior al cliente. Lógicamente ligado a aspectos como la adquisición, mantenimiento y crecimiento con los clientes. 
+- El CRM permite alinear las actividades de la empresa con las necesidades del cliente. 
+- Toda estrategia CRM que pretenda conquistar al cliente deberá cumplir las características RATER para conseguir ese objetivo
+
+**Características (modelo RATER)** 
+- Reliabilty: habilidad para cumplir lo prometido. (fiabilidad)
+- Assurance: capacidad de los empleados en dar un buen servicio. (Garantia) Achunren
+- Tangibles: la presencia física del personal, material, etc. que proporciona el servicio.
+- Empathy: la capacidad de suministrar atención y cuidado como a uno mismo.
+- Responsiveness: disposición a atender al cliente de forma rápida y amable (Sensibilidad)
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_016.png)
+
+**La imagen representa el proceso de CRM como un embudo que transforma leads (contactos iniciales) en clientes.**
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_017.png)
+
+1. Embudo de Marketing:
+
+- Leads: El punto de partida, son los contactos que muestran interés en tu producto o servicio.
+- Leads viables: Se filtran los leads, identificando aquellos con mayor potencial de convertirse en clientes.
+- Leads cultivados: Se nutren los leads con información relevante y personalizada para guiarlos en el proceso de compra.
+- Leads activos: Los leads muestran una interacción más activa y un mayor interés.
+- Leads cualificados por marketing (MQL): El equipo de marketing determina que estos leads están listos para ser contactados por ventas.
+
+2. Embudo de Ventas:
+
+- Leads verificados por ventas: El equipo de ventas valida la información de los MQL y determina si son prospectos reales.
+- Oportunidades: Se crean oportunidades de venta para los leads que cumplen con el perfil de cliente ideal.
+- Cliente: El lead se convierte en cliente al concretar la compra.
+
+**Elementos clave:**
+- Software de automatización de marketing: Herramienta que agiliza y automatiza las tareas de marketing en la parte superior del embudo.
+- CRM: Software que gestiona la información de los clientes y leads, y permite realizar seguimiento de las interacciones.
+
+## 7.5. Factores clave y bases para un buen CRM
+
+- La tecnología
+- Comunicación proactiva e interactiva
+- Retención de clientes
+- Perspectiva a largo plazo
+
+**Bases para la gestión de un exitoso CRM**
+- Identificar las expectativas del cliente: qué quiere, cómo y cuándo lo quiere.
+- Comparar las características del servicio prestado y las expectativas del cliente y determinar las áreas de mejora.
+- Comunicación omnicanal permanente y de valor con el cliente (si no tienes nada interesante que decir, mejor no digas nada).
+- La interacción con los clientes debe ser accesible en toda la organización para fluir de forma coordinada y no repetitiva.
+- La satisfacción del cliente debe de ser una prioridad de toda la compañía.
+- Los problemas de los clientes son de toda la organización y deben de coordinarse para su resolución en lugar de «pasarse la pelota entre departamentos»
+
+
+![Estrategia de Datos](../03_GobiernoDatoTomaDecisiones/info/info_018.png)
+
+## Cuestionario
+
+1. Según Kotler, el cuarto y definitivo paso en el proceso de marketing es:
+A. El diseño del programa de marketing.
+B. La consecución de relaciones beneficiosas con los clientes.
+C. Entender el mercado y las necesidades de los clientes.
+D. Diseñar una estrategia adecuada con el foco en el cliente. -> Correcto 
+
+2. Según el profesor Peppers, el beneficio global obtenido a través de la gestión del
+conocimiento, basada en una estrategia de marketing relacional es del:
+A. 42 %. -> Correcto 
+B. 24 %.
+C. 30 %.
+D. 60 %.
+
+3. Entre los factores clave para la implantación de un buen CRM, no se encuentra:
+A. La tecnología.
+B. Una buena comunicación con el cliente.
+C. Perspectiva a largo plazo.
+D. Todos los anteriores son factores clave. -> Correcto 
+
+4. La A de assurance en el modelo RATER se traduce por:
+A. Capacidad de los empleados en dar un buen servicio. ->Correcto 
+B. La presencia física del personal, material, etc. que proporciona el servicio.
+C. La capacidad de suministrar atención y cuidado como a uno mismo.
+D. Disposición a atender al cliente de forma rápida y amable.
+
+5. Según Domínguez y Muñoz, entre las bases para un buen CRM no está:
+A. Identificar las expectativas del cliente: qué quiere, cómo y cuándo lo quiere.
+B. Comparar las características del servicio prestado y las expectativas del cliente y determinar las áreas de mejora.
+C. Comunicación omnicanal permanente y de valor con el cliente (si no tienes nada interesante que decir, mejor no digas nada).
+D. Todas deberían estar en un buen CRM. ->Correcto 
+
+6. Una palabra clave que nos recuerde qué significa CRM puede ser:
+A. Cliente. -> ->Correcto 
+B. Transformación. 
+C. Diferencia.
+D. Marca.
+
+7. Según Ignasi Vidal, el máximo nivel de marketing relacional sería:
+A. El estadístico.
+B. El de socio.->Correcto 
+C. El básico.
+D. El proactivo. 
+
+8. La razón principal del marketing relacional es:
+A. Mantener y fidelizar clientes ->Correcto 
+B. Vender más.
+C. Analizar el servicio al cliente.
+D. Realizar promociones.
+
+9. Como ejemplo de comunicación proactiva e interactiva, podemos destacar:
+A. Utilización multicanal (móvil, e-mail, RR. SS.) para estar en contacto útil con los clientes.
+B. Información puntual del estado de sus pedidos (entrega, posventa, etc.).
+C. Servicio 24 horas.
+D. Todos los anteriores son ejemplos válidos. ->Correcto 
+
+10. La capacidad de suministrar atención y cuidado como a uno mismo es reconocida en el modelo RATER como:
+A. Reliabilty.
+B. Empathy. ->Correcto 
+C. Assurance.
+D. Tangibles
+
+## Videoclase 1. Fundamentos del Marketing Relacional
+## Nota 
+- Según Kotler, el cuarto y definitivo paso en el proceso de marketing es
+    -   La consecución de relaciones beneficiosas con los clientes. - Kotler señala que el cuarto paso del proceso de marketing es la construcción de relaciones beneficiosas con los clientes, lo cual es fundamental para lograr fidelización y satisfacción a largo plazo.
+- Según el profesor Peppers, el beneficio global obtenido a través de la gestión del conocimiento, basada en una estrategia de marketing relacional es del
+    - 42 %. -> El profesor Peppers indica que el beneficio global alcanzado mediante la gestión del conocimiento y estrategias de marketing relacional puede llegar a un 42%, mostrando la importancia de estas prácticas en la optimización de los resultados empresariales.
+- Entre los factores clave para la implantación de un buen CRM, no se encuentra
+    - Todos los anteriores son factores clave. -> Para una implantación exitosa de CRM, es crucial contar con tecnología adecuada, una comunicación efectiva con el cliente y una perspectiva a largo plazo. Estos elementos son esenciales para una gestión eficiente de las relaciones con los clientes.
+- La A de assurance en el modelo RATER se traduce por
+    - Capacidad de los empleados en dar un buen servicio -> En el modelo RATER, "assurance" se refiere a la competencia y cortesía de los empleados y su capacidad para inspirar confianza y seguridad a los clientes.
+- Según Domínguez y Muñoz, entre las bases para un buen CRM no está
+    - Todas deberían estar en un buen CRM. -> Un buen CRM debe incluir la identificación de expectativas del cliente, evaluación continua del servicio y comunicación efectiva. Estos aspectos son fundamentales para optimizar la relación con los clientes y mejorar la experiencia del usuario.
+
+## Videoclase 2. Implementación de CRM    
+## Nota 
+
+- Una palabra clave que nos recuerde qué significa CRM puede ser
+    - Cliente - La palabra "cliente" es clave en CRM (Customer Relationship Management) ya que este sistema se enfoca en la gestión de las relaciones con los clientes para mejorar su satisfacción y fidelidad.
+- Según Ignasi Vidal, el máximo nivel de marketing relacional sería
+    - El de socio - El máximo nivel de marketing relacional, según Ignasi Vidal, es el de "socio", donde la relación con el cliente es tan estrecha que se convierte en una asociación mutua beneficiosa, más allá de una simple transacción comercial.
+- La razón principal del marketing relacional es
+    - Mantener y fidelizar clientes.
+- Como ejemplo de comunicación proactiva e interactiva, podemos destacar
+    - Todos los anteriores son ejemplos válidos.
+- La capacidad de suministrar atención y cuidado como a uno mismo es reconocida en el modelo RATER como
+    -  En el modelo RATER, "empathy" se refiere a la capacidad de entender y compartir los sentimientos del cliente, proporcionando un servicio personalizado y atento que haga sentir al cliente valorado y cuidado.
+
+## Videoclase 3. Comunicación Proactiva y Social CRM
+## Nota 
+- ¿Cuál es una de las características principales del marketing relacional?
+    - Relaciones duraderas con los clientes
+- ¿Qué tipo de marketing relacional se caracteriza por la falta de contacto con el cliente?
+    - Marketing relacional básico.
+- ¿Qué beneficios ofrece el CRM en la gestión de relaciones con los clientes?
+    - Facilita la toma de decisiones y mejora el servicio al cliente
+- ¿Cuál es uno de los factores clave del marketing relacional, según Ignasi Vidal?
+    - Conocimiento profundo de los hábitos y preferencias del cliente
+- ¿Cuál es una ventaja del Social CRM?
+    - Mayor implicación o engagement con los clientes
+
+
+# Tema 8. Introducción a la protección de datos
+
+## 8.2. Conceptos
+## 8.3. Principios generales de protección de datos en Europa
+## 8.4. Licitud de tratamiento. El consentimiento informado
+## 8.5. Derecho de información
+## 8.6. El derecho de interesado
+## 8.7. Obligaciones generales del responsable de tratamiento y encargado
+## 8.8. Otros marcos internacionales
+## 8.9. Protección de datos en EE. UU. y otros países
+## 8.10. Transferencias internacionales de datos
+## 8.11. Seguridad de la información y protección de datos
+
+
 
