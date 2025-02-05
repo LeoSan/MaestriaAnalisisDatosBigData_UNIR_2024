@@ -1768,6 +1768,158 @@ D. Todas son correctas -> Correcto
 
 ## Tema 7: Cassandra
 
+## 7.2. Descarga e instalación
+
+- Paso 1: brew install cassandra 
+- Paso 2: brew services start cassandra
+- Paso 3: sudo cqlsh 
+- Paso 4: descargue TablePlus como medio visual  
+
+
+**Usando Docker**
+- Paso 1: docker pull cassandra:latest
+- Paso 2: docker network create cassandra
+- Paso 3: docker run --rm -d --name cassandra --hostname cassandra --network cassandra cassandra
+- Paso 000 : docker kill cassandra docker network rm cassandra
+
+- Fuente : https://cassandra.apache.org/_/quickstart.html
+
+
+## 7.3. Conceptos generales
+- En el año 2008 Cassandra fue desarrollada en Facebook
+-  Surgió como una mezcla del almacén de datos BigTable
+- Con esta base de datos se quería resolver el problema de búsqueda en la bandeja
+de entrada de Facebook.
+- Cassandra es una base de datos de tipo clave-valor
+- Los datos se almacenan como tablas y columnas
+- Cada tabla tiene una clave principal.
+- Aunque permite lecturas y escrituras muy rápidas, tiene una interfaz SQL limitada
+debido a su propia estructura.
+
+
+## Arquitectura
+
+- Cassandra se diseñó para trabajar en entornos big data sobre múltiples nodos.
+- cuenta con un sistema distribuido de igual a igual en todos sus nodos, donde los datos se distribuyen entre todo el clúster. 
+- Arquitectura Apache Cassandra. 
+
+## Los principales componentes de Cassandra son:
+- Nodo: un lugar donde se almacenan los datos.
+- Centro de datos: es una colección de nodos relacionados.
+- Clúster: es un componente que contiene uno o más centros de datos.
+- Registro de confirmación: mecanismo de recuperación de fallos. Todas las operaciones de escritura se escriben en este registro de confirmación.
+- Mem-table: es una estructura de datos residente en memoria. Después del registro
+de confirmación, los datos pasan a la tabla en memoria. Es normal que para una
+familia de una sola columna existan varias mem-tables.
+- SSTable: archivo de disco al que se vacían los datos de la tabla de memoria,
+cuando su contenido alcanza un valor umbral.
+- Filtro Bloom: conjunto de algoritmos no deterministas muy rápidos, utilizados para
+probar si un elemento es miembro de un conjunto. Comprende el uso de tipo
+especial de caché al que se accede después de cada consulta.
+
+
+**Sistema de replicación**
+- Los nodos de un clúster en Cassandra actúan como réplicas de un dato específico.
+- Si la respuesta a algún nodo incluye un valor desactualizado, Cassandra se
+encargará de devolver al usuario el valor más reciente. 
+- Después de atender al usuario, Cassandra repara la lectura en segundo plano para actualizar los valores que se encontraron obsoletos.
+
+**Operaciones de escritura**
+- Los registros de confirmación que residen en los nodos capturan toda actividad de
+escritura de los mismos nodos. 
+- El objetivo es que dichos datos sean almacenados en la tabla de memorias siempre que esta esté libre. 
+- En el caso de que la tabla de memorias esté llena, los datos se escribirán en el archivo de datos SStable.
+
+**Operaciones de lectura**
+- Para leer los datos, Cassandra consulta los valores de la tabla de memorias y
+establece la forma de ubicar la tabla SST que contenga los datos solicitados
+- El primer paso es enviar una solicitud directa a una de las réplicas. 
+- Luego, el coordinador envía la solicitud de resumen a la cantidad de réplicas especificadas para garantizar el nivel de coherencia y, finalmente, comprueba que los datos
+devueltos están actualizados.
+
+**Lenguaje de consulta en Cassandra**
+- Es necesario conocer también Cassandra Query Language (CQL), el lenguaje de
+consulta utilizado para acceder a Cassandra a través de sus nodos. 
+- La principal característica del lenguaje es que CQL utiliza la base de datos como un contenedor de tablas, las cuales representan espacio de claves. 
+- Los programadores pueden utilizar cqlsh en modo consola para trabajar con CQL o emplear controladores de otras aplicaciones independientes.
+
+## Resumen 
+
+**¿Qué se puede destacar de Cassandra?**
+- Es una base de datos orientada a columnas.
+- Es escalable, consistente y tolerante a fallas.
+- El diseño de distribución de Cassandra se basa en Dynamo de Amazon y su modelo de datos en Bigtable de Google.
+- Se puede decir que Facebook es el creador de Cassandra.
+- Como motor de base de datos, es totalmente diferente de los sistemas de
+administración de bases de datos relacionales.
+- El modelo de replicación es del estilo de Dynamo y el concepto de modelo de datos «familia de columnas» es el más robusto.
+
+**¿Se usa?** 
+- Sí. Algunas de las empresas más grandes como Facebook, Twitter, Cisco, Rackspace, eBay, Twitter y Netflix, entre otros, lo emplean dentro de sus arquitecturas.
+
+**Los objetivos que se abordan en este tema son los siguientes:**
+- Entender los conceptos generales que caracterizan a Cassandra.
+- Conocer la arquitectura básica de esta base de datos NoSQL y los elementos que la componen.
+- Aprender a usar los principales tipos de datos, incluidos los tipos de datos definidos por el usuario.
+- Entender el uso de las colecciones set, list y map.
+- Poner en práctica la instalación de esta base de datos en un entorno de pruebas
+
+## 7.4. Modelo de datos y relaciones
+
+> Cassandra divide los datos en los nodos de almacenamiento, utilizando una variante de hash consistente para la distribución de datos.
+
+-  El hash es una técnica que se utiliza para mapear datos con la que, dada una clave, una función hash genera un valor hash (o simplemente un hash) que se almacena en una tabla hash. 
+- Una clave de partición se genera a partir del primer campo de una clave primaria
+- Los datos divididos en tablas hash mediante claves de partición proporcionan una
+búsqueda rápida.
+
+**Espacios de claves** 
+- El modelo de datos de Cassandra consta de espacios de claves al más alto nivel.
+- Los espacios de claves son los contenedores de datos, similares al esquema o la base de datos en una base de datos relacional. Normalmente, los espacios de claves
+contienen muchas tablas.
+
+**Tablas**
+- Dentro de los espacios de claves, se definen o crean las tablas. 
+- Estas también se conocen como «familias de columnas» en las versiones anteriores de Cassandra.
+- Las tablas contienen un conjunto de columnas y una clave principal, y almacenan los datos en un conjunto de filas.
+
+**Columnas**
+- Las columnas definen la estructura de los datos en una tabla. 
+- Cada columna tiene un tipo asociado, como entero, texto, doble y booleano
+- En la primera columna de la tabla anterior, la clave de partición se genera a partir de la clave principal id para la distribución de datos entre los nodos de un clúster. 
+- En la segunda columna de la tabla, se asigna una clave primaria compuesta, el primer campo id se usa para generar la clave de partición y el segundo campo name es la clave de agrupamiento usada para ordenar dentro de una partición.
+
+**Relaciones**
+- Cuando se quiere crear una aplicación basada en datos que utilizarán una base de datos relacional, es posible comenzar a modelar el dominio como un conjunto de tablas normalizadas correctamente y utilizar claves externas para hacer referencia a datos relacionados en otras tablas. 
+
+
+
+
+
+## 7.5. CQL3
+## 7.6. TTL y WriteTime
+## 7.7. Índices
+## 7.8. Ejercicio práctico: instalación con Docker
+
+## Ejemplo Cassandra 
+
+-- Create a keyspace -> Crear Base de Datos
+CREATE KEYSPACE IF NOT EXISTS store WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : '1' };
+
+-- Create a table
+CREATE TABLE IF NOT EXISTS store.shopping_cart (
+userid text PRIMARY KEY,
+item_count int,
+last_update_timestamp timestamp
+);
+
+-- Insert some data
+INSERT INTO store.shopping_cart
+(userid, item_count, last_update_timestamp)
+VALUES ('9876', 2, toTimeStamp(now()));
+INSERT INTO store.shopping_cart
+(userid, item_count, last_update_timestamp)
+VALUES ('1234', 5, toTimeStamp(now()));
 
 ## Videoclase 1. 
 
@@ -1783,10 +1935,4 @@ D. Todas son correctas -> Correcto
 ## Notas:
 
 
-## 7.2. Descarga e instalación
-## 7.3. Conceptos generales
-## 7.4. Modelo de datos y relaciones
-## 7.5. CQL3
-## 7.6. TTL y WriteTime
-## 7.7. Índices
-## 7.8. Ejercicio práctico: instalación con Docker
+## Cuestionario 
