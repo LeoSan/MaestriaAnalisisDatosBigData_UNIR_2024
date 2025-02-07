@@ -1893,11 +1893,131 @@ contienen muchas tablas.
 - Cuando se quiere crear una aplicación basada en datos que utilizarán una base de datos relacional, es posible comenzar a modelar el dominio como un conjunto de tablas normalizadas correctamente y utilizar claves externas para hacer referencia a datos relacionados en otras tablas. 
 
 
-
-
-
 ## 7.5. CQL3
+
+## Tipos de datos
+
+- Contadores: Son tipos de columnas que funcionan como contadores, cuyas únicas operaciones
+permitidas son incrementar y decrementar. El valor de la columna no se establece,
+- Timestamp: Son valores codificados como enteros de 64 bits con signo. Se ingresan usando el tipo integer o string para representar, por ejemplo, una fecha ISO 8601. Estos son ejemplos de valores válidos como timestamp:
+- Date: Al igual que los timestamp, se puede representar como integer o string. En el caso
+de string se debe utilizar el formato convencional yyyy-mm-dd. 
+- Duraciones: Los valores del duration se codifican como números enteros con 3 signos de
+longitudes variables. El primer número entero representa el número de meses, el
+segundo el número, de días y el tercero, el número de nanosegundos. La forma de
+establecer su valor es (quantity unit)+, de la forma 12h30m. 
+- Colecciones: Los tres tipos de colecciones que admite CQL son map, set y list 
+  - Map: INSERT INTO clients (id, name, type) VALUES ('client001', 'Andres Luna', {
+'bill' : 'ordinary', 'payment' : 'cash' });
+  - Set: INSERT INTO clients (id, name, type) VALUES ('client002', 'Manuel Faena',
+{'A', 'B', 'C'});
+  - List:  INSERT INTO products (id, name, order, pos) VALUES ('Table01', 'Table
+Reduce', 3, [10, 11, 12]);
+  - Tuple :INSERT INTO users (user, phones) VALUES ('Pepe Navarro', ('home', '(34)
+666-666-666'));
+- Tipos definidos por el usuario (UDT): Los usuarios pueden crear sus propios tipos de datos. Para ello se emplea la instrucción CREATE TYPE.
+- Keyspace Es un objeto que contiene las familias de columnas, los índices, los UDT, el conocimiento del centro de datos, la estrategia utilizada en el espacio de claves, el
+factor de replicación, etc. En Cassandra, se puede considerar el keyspace como algo
+similar a la base de datos en un RDBMS
+
+## Tipo de estrategia: 
+- Estrategia simple (SimpleStrategy): se utiliza cuando solo tiene un centro de
+datos. En esta estrategia, la primera réplica se coloca en el nodo seleccionado por el
+particionador. Los nodos restantes se colocan en el sentido de las agujas del reloj en
+el anillo sin tener en cuenta la ubicación del rack o del nodo
+
+- Estrategia de topología de red (NetworktopologyStrategy): se utiliza cuando
+tiene más de un centro de datos. En esta estrategia, se debe proporcionar un factor
+de replicación para cada centro de datos por separado.
+
+- Factor de replicación (ReplicationFactor): es el número de réplicas de datos
+colocadas en diferentes nodos. Para que no haya fallas, 3 es un buen factor de
+replicación. Más de dos factores de replicación garantizan que no haya un solo
+punto de falla.
+
+
+## Ten en cuenta los siguientes aspectos sobre el keyspace:
+- Nombre del keyspace: no se puede modificar en Cassandra.
+- Nombre de la estrategia: se puede modificar especificando un nuevo nombre de
+estrategia.
+- Factor de replicación: se puede modificar especificando un nuevo factor de
+replicación.
+- DURABLE_WRITES : el valor DURABLE_WRITES se puede modificar especificando su
+valor verdadero o falso. Por defecto, es true . Si se establece en false , no se
+escribirán actualizaciones en el registro de confirmación y viceversa
+
+## INSERT: insertando datos
+
+INSERT INTO Products.users (user, phones) VALUES ('Pepe Navarro', ('home',
+'(34) 666-666-666'));
+
+Ten en cuenta que Cassandra insertará una fila si no existe la clave
+principal indicada; de lo contrario, si la clave principal existe, actualizará
+esa fila.
+
+## UPDATE: actualizando datos
+
+El comando UPDATE se emplea para actualizar los datos en la tabla Cassandra. Si
+no se devuelven resultados después de actualizar los datos, significa que los datos
+se actualizaron correctamente; de lo contrario, se devolverá un error
+
+UPDATE Products.users Set phone = '(34) 666-666-666' WHERE user = 'Pepe
+Lopez';
+
+## DELETE: borrando datos
+
+El comando DELETE elimina una fila completa o algunas columnas de la tabla
+indicada. Cuando se eliminan datos, no se eliminan de la tabla inmediatamente. En
+su lugar, los datos eliminados se marcan con una lápida y se eliminan después de la
+compactación. 
+
+DELETE from Products.users WHERE user = 'Pepe Lopez';
+
+## Limitaciones en CQL
+▸ No admite consultas de agregación como max, min, avg
+▸ No admite ni group by ni having.
+▸ No admite joins.
+▸ No admite consultas OR.
+▸ No admite consultas con comodines.
+▸ No admite consultas de unión e intersección.
+▸ Las columnas de la tabla no se pueden filtrar sin crear el índice.
+▸ La consulta mayor que (>) y menor que (<) solo se admite en la columna de
+agrupación.
+▸ CQL no es adecuado para realizar análisis porque presenta muchas limitaciones.
+
 ## 7.6. TTL y WriteTime
+> Cassandra puede hacer que los datos expiren de forma automática. Durante lainserción de datos, por ejemplo, se debe especificar el valor TTL en segundos. Dicho valor TTL es el tiempo de vida de los datos. Después que pase ese período en concreto, los datos se eliminarán automáticamente.
+
+## TTL: 
+- Supón que quieres insertar un registro y que este exista solo durante los primeros
+200 segundos. Al insertar, si indicas el TTL 200 , los registros se eliminarán
+automáticamente después de los 200 segundos.
+INSERT INTO keyspaceName.TableName (ColumnNames) values (ColumnValues)
+using TTL TimeInSeconds;
+## Ejemplo
+INSERT INTO Products.users (user, phones) VALUES ('Pepe Navarro', ('home',
+'(34) 666-666')) using TTL 100;
+
+
+
+## WriteTime: 
+- es muy útil en CQL para recuperar la fecha y
+hora de los insert en las columnas. Es posible usar la función WRITETIME junto con la
+instrucción select seguida de la columna sin particiones entre paréntesis.
+## Ejemplo
+CREATE TABLE ftest (
+Id int,
+Name text,
+Address text,
+PRIMARY KEY(Id)
+);
+INSERT INTO ftest (Id, Name, Address) VALUES (201, 'Ashish', 'Delhi');
+INSERT INTO ftest (Id, Name, Address) VALUES (202, 'Rana', 'Mumbai');
+INSERT INTO ftest (Id, Name, Address) VALUES (203, 'Abi', 'Noida');
+SELECT * FROM ftest;
+SELECT WRITETIME (Address) FROM ftest;
+
+
 ## 7.7. Índices
 ## 7.8. Ejercicio práctico: instalación con Docker
 
