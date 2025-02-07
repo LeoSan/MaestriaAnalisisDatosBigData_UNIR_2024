@@ -2041,18 +2041,111 @@ INSERT INTO store.shopping_cart
 (userid, item_count, last_update_timestamp)
 VALUES ('1234', 5, toTimeStamp(now()));
 
-## Videoclase 1. 
 
+## Instalar Cassandra en Windows 
+
+- https://phoenixnap.com/kb/install-cassandra-on-windows
+
+
+## Videoclase 1. Cassandra
 ## Notas:
 
-## Videoclase 2. 
+- ¿Cuál fue el objetivo inicial de Cassandra cuando se desarrolló en Facebook?
+  - Resolver problemas de búsqueda en la bandeja de entrada.
+- ¿Cuál de las siguientes es una característica clave de Cassandra?
+  - Almacenamiento de datos en tablas y columnas.
+- ¿Qué componente en la arquitectura de Cassandra actúa como archivo de disco cuando la Mem-table se llena?
+  - SSTable.
+- ¿Qué característica distingue la arquitectura distribuida de Cassandra?
+  - Sistema distribuido de igual a igual sin puntos de fallo únicos.
+- ¿Qué algoritmo utiliza Cassandra para verificar la pertenencia de elementos en un conjunto?
+  - Filtro Bloom -> Cassandra utiliza el Filtro Bloom para verificar eficientemente la pertenencia de elementos en un conjunto, ayudando a reducir la carga en las consultas de datos.
 
+
+## Videoclase 2. Componentes de Cassandra
 ## Notas:
+- ¿Cuál es la función principal del sistema de replicación en Cassandra?
+  - Actualizar automáticamente valores desactualizados. -> El sistema de replicación de Cassandra garantiza que los valores desactualizados se actualicen automáticamente y que los datos se mantengan consistentes en todos los nodos del clúster.
+- ¿Cómo distribuye Cassandra los datos entre los nodos del clúster?
+  - Mediante hash consistente basado en la clave de partición.
+- ¿Qué mejora el rendimiento de lectura en Cassandra según su enfoque de modelado?
+  - Desnormalización de datos duplicados en varias tablas.
+- ¿Qué similitud existe entre los espacios de claves en Cassandra y los esquemas en bases de datos relacionales?
+  - Ambos actúan como contenedores de datos.
+- ¿Cuál es el lenguaje de consultas utilizado en Cassandra para manipular datos?
+  - CQL3.
 
-
-## Videoclase 3. 
-
+## Videoclase 3. Operaciones básicas con CQL
 ## Notas:
-
+- ¿Qué operación se utiliza en Cassandra para insertar datos en una tabla?
+  - INSERT.
+- ¿Cómo se eliminan datos de una tabla en Cassandra?
+  - DELETE
+- ¿Qué permite hacer la función TTL en Cassandra?
+  - Establecer un tiempo de vida para los datos, después del cual expiran.
+- ¿Qué limita el uso de índices secundarios en Cassandra?
+  - No se pueden crear índices sobre claves principales ni colecciones 
+- ¿Qué permite la función WriteTime en Cassandra?
+  - Recuperar la fecha y hora exacta en que los datos fueron escritos.
 
 ## Cuestionario 
+
+1. Cassandra:
+A. Es un sistema de almacenamiento de datos NoSQL desarrollado por Facebook.
+B. Es un sistema de almacenamiento en tiempo real para aplicaciones en línea.
+C. Está diseñado para manejar cargas de trabajo en múltiples nodos.
+D. Todas las afirmaciones anteriores son correctas. -> Correcta 
+
+2. ¿Cuáles son los componentes principales de Cassandra?
+A. Cluster, keyspace, column y column & family.
+B. Columna name, tables y keyspace.
+C. Mem-Table, SSTable y Bloom Filter.
+D. Las respuestas A y C son correctas. -> Correcta
+
+3. ¿Cuáles son las colecciones en CQL Cassandra?
+A. Tupple, list y timestamp.
+B. Map, list y set.   -> Correcta 
+C. Counter, duration y date.
+D. Ninguna respuesta anterior es correcta.
+
+4. ¿Cuál es la principal característica de la colección list?
+A. Almacenar datos de forma aleatoria.
+B. Almacenar datos de forma ordenada y que se puedan repetir. -> Correcto 
+C. Almacenar elementos clave-valor.
+D. Almacenar elementos para usarlos en un orden concreto
+
+5. ¿Qué pasa con los datos eliminados en Cassandra?
+A. Se borran inmediatamente de la base de datos.
+B. Se almacenan temporalmente en la papelera de reciclaje de Cassandra.
+C. Son marcados con una lápida. -> Correcto 
+D. Nunca se borran, están inactivos hasta que el usuario los vuelva a activar.
+
+6. ¿Cuál de las siguientes afirmaciones es verdadera?
+A. Cassandra escribe los datos en una caché clave-valor llamada Mem-Table.
+B. Los datos en Mem-Table se ordenan por clave.
+C. Existe una Mem-Table por cada ColumnFamily y de ella se recuperan los catos por la columna clave.
+D. Todas las afirmaciones anteriores son correctas. -> Correcto 
+
+7. La instrucción ALTER KEYSPACE se puede utilizar para:
+A. Definir un esquema.
+B. Crear una tabla.
+C. Ejecutar una consulta.
+D. Modificar un keyspace. -> Correcto 
+
+8. Al intentar borrar un elemento que no existe en una colección set, se produce:
+A. La inserción de un nuevo elemento con dicho valor.
+B. Un error en la operación de borrado.
+C. Una operación que no se lleva a cabo y que tampoco genera error alguno. -> Correcto 
+D. Una mutación de la colección.
+
+9. ¿Qué es una UDT?
+A. Un tipo de datos primitivo.
+B. Un objeto con funciones especiales en Cassandra.
+C. Un tipo de datos definido por el usuario. -> Correcto
+D. Un proceso de carga de datos.
+
+10. ¿Cuál de las siguientes instrucciones es correcta?
+A. select * from client.agent where dept='AB';
+B. drop index IF EXISTS clients.DeptIndex;
+C. insert into University.Teacher(id,Name,Email,Description) values ( 2,'Hamilton', {'hamilton@hotmail.com'}, ['Data Science']);
+D. Todas las instrucciones anteriores son correctas. -> Correcto 
