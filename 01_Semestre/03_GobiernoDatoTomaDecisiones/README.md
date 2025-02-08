@@ -1807,4 +1807,13 @@ D. Tangibles
 ## 8.11. Seguridad de la información y protección de datos
 
 
+Medios consultados: 
+-	Infobae. (2024, 16 de mayo). “Ashley Madison: sexo, mentiras y escándalos”: la docuserie que lidera Netlfix, https://www.infobae.com/que-puedo-ver/2024/05/16/ashley-madison-sexo-mentiras-y-escandalos-la-docuserie-que-lidera-netlfix/ 
+
+-	BBC News Mundo. (2023, 2 de junio). ¿Peligro para la privacidad? La recolección de datos biométricos a gran escala que está haciendo furor en África. BBC. https://www.bbc.com/mundo/articles/cqln8g57lp7o
+
+-	BBC Mundo. (28 de agosto de 2015). Ashley Madison: testimonios de quienes usaron la página de citas para infieles. https://www.bbc.com/mundo/noticias/2015/08/150828_tecnologia_ashley_madison_testimonios_mes
+
+
+
 
