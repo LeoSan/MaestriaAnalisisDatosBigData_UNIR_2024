@@ -2149,3 +2149,377 @@ A. select * from client.agent where dept='AB';
 B. drop index IF EXISTS clients.DeptIndex;
 C. insert into University.Teacher(id,Name,Email,Description) values ( 2,'Hamilton', {'hamilton@hotmail.com'}, ['Data Science']);
 D. Todas las instrucciones anteriores son correctas. -> Correcto 
+
+## Tema 8: Neo4j
+## 8.2. Descarga e instalación
+
+- Paso 1: descarga la versión Community de Neo4j.
+Figura 1. Web de descarga de MongoDB.
+- Paso 2: si no tienes instalado Java en tu ordenador, descarga la versión OpenJDK 8
+u Oracle Java 8. Esta versión es la recomendada para Neo4j 3.0.x. Si por alguna
+razón debes usar una versión de Neo4j inferior a 2.3.0, es recomendable usar la
+versión 7 de Java. Consulta el apartado «Instalar Java 8 y crear variable de
+entorno» de este documento.
+- Paso 3: el archivo que has descargado en el Paso 1 es un zip que contiene los
+ficheros de Neo4j. Localiza dicho fichero y extrae su contenido dentro de un
+directorio conocido, por ejemplo: D:\Neo4j\.
+- Paso 4: el ordenador donde se instala Neo4j hará las veces de servidor. Es
+recomendable crear la variable de entorno NEO4J_HOME para señalar el
+directorio del Paso 3. En dicho servidor, es posible ejecutar una instancia de la
+consola de Neo4j para trabajar (Paso 5.1), pero también es posible crear un
+servicio en Windows que permita levantar la base de datos de forma permanente, 
+
+
+- Paso 5.1: para ejecutar una instancia de Neo4j, desde la consola de Windows
+PowerShell, ubícate en la ruta y ejecuta neo4j console
+(<NEO4J_HOME>\bin\neo4j console). Ten en cuenta que al descomprimir el
+fichero ZIP, este crea otro directorio llamando /neo4j-community-4.x.x. Se asume
+que su contenido es lo que has copiado en el directorio recomendado en el Paso 3.
+Si lo que copias es el directorio completo, entonces ten en cuenta este nuevo
+directorio en la ruta propuesta.
+
+- Paso 5.2: para instalar Neo4j como servicio, utiliza la instrucción
+<NEO4J_HOME>\bin\neo4j install-service.
+- Paso 6: si todo ha ido bien, accede a la URL http://localhost:7474 desde el
+navegador web que usas frecuentemente. Utiliza el usuario neo4j con la
+contraseña predeterminada neo4j. De inmediato te pedirá que cambies la
+contraseña para mayor seguridad.
+
+Observa cómo cada base de datos utiliza un puerto por defecto en las
+instalaciones por defecto: MySQL utiliza el puerto 3306, MongoDB el puerto
+27017, Neo4j el puerto 7474… Lo más probable y seguro es que los
+administradores de bases de datos asignen puertos menos comunes.
+
+## Instalar Java y crear variable de entorno
+- Paso 1: descarga Java 8 o superior del sitio oficial de Oracle (intenta en la siguiente
+URL: https://www.oracle.com/java/technologies/javase/javase-jdk8-
+downloads.html). Si falla la URL anterior Si falla la URL anterior (es Oracle y cada vez que innovan mueven
+cosas de su sitio web), busca en Google «Instalar Java 8
+
+- Paso 2: ejecuta el ejecutable que has descargado e instala Java en la ruta
+D:\Java\jdk1.8.0 (D es una unidad de ejemplo, puedes usar otra que consideres más
+oportuna).
+
+- Paso 3: desde Windows crea la variable JAVA_HOME, para ello da clic derecho en Equipo
+o Este Equipo en el Explorador de archivos de Windows.
+
+- Paso 4: selecciona la opción Propiedades y luego accede a Configuración avanzada del
+sistema > Variables de entorno.
+
+- Paso 5: en el recuadro Variables del sistema crea una «Nueva…» variable del sistema
+cuyo nombre debe ser JAVA_HOME. A dicha variable ponle como valor de la variable la
+ruta de instalación de Java, es decir, D:\Java\jdk1.8.0. Acepta todas y cada de las
+ventanas abiertas (son unas cuantas).
+
+- Paso 6: comprueba que todo está correcto. Para ello, abre una consola de Windows
+y escribe las instrucciones SET JAVA_HOME para comprobar la ruta y luego java –
+versión para mostrar la versión que acabas de instalar de Java.
+
+## Instalar Neo4j como servicio en Windows
+Para instalar Neo4j como servicio, basta con seguir dos pasos:
+- Paso 1: desde la ruta de instalación ejecuta lo siguiente: <NEO4J_HOME>\bin\neo4j
+install-service.
+Figura 5. Instalar servicio de Neo4j desde la consola de Windows.
+- Paso 2: comprueba que el servicio está funcionando.
+Figura 6. Lista de servicios en Windows.
+
+
+## 8.3. Conceptos generales
+## Concepto 
+- Neo4Js es una base de datos NoSQL de código abierto 
+- Esta desarrollado en Java, es un tipo de base de datos se basa en la reprsentación gráfica de nodos
+- Hay dos elementos claves en Neo4j: los nodos (vértices) y las relaciones (bordes). 
+- En el grafo los nodos representan las entidades, mientras que las relaciones indican la asociación que hay entre los nodos. 
+- Las relaciones también tienen múltiples propiedades, las cuales permiten organizar la información asociada a los nodos. 
+- pero si se quisiera indicar bidireccionalidad, es necesario crear dos relaciones en sentidos opuestos.
+- Toda relación siempre tendrá una dirección. La dirección que se tome en cuenta será la que sea útil para el análisis que se quiere hacer
+- Esto significa que no es necesario agregar relaciones duplicadas en la dirección opuesta a menos que sea necesario para describir correctamente un caso de uso
+- Se ha dicho previamente que tanto nodos como relaciones poseen propiedades
+- Las propiedades son pares de nombre-valor utilizados para agregar cualidades a los nodos y las relaciones.
+- El valor de la propiedad puede contener diferentes tipos de datos tales como números, cadenas y booleanos
+- Recorrer los nodos en función de sus relaciones es lo que se conoce como recorrido
+- En Neo4j el esquema hace referencia a los índices y restricciones que componen la base de datos.
+- En Neo4j el esquema es opcional,
+- Los índices permiten aumentar el rendimiento de las consultas a las bases de datos. 
+- Las restricciones permiten asegurar que los datos cumplan con las reglas del dominio establecido para garantizar coherencia en el modelo. 
+- En lo que respecta a las etiquetas de nodo, los tipos de relación y las propiedades, al igual que Java, son sensibles al uso de mayúsculas y minúsculas. 
+- Neo4j utiliza Native GPE (motor de procesamiento de grafos) para trabajar con su formato de almacenamiento de grafos nativo 
+
+## Recomendaciones de nombres
+- Entidades -> Etiqueta del nodo  -> Comenzar con un carácter en mayúscula. -> ejemplo -> :PropietarioVehiculo
+- Entidades -> Tipo de relaciones -> Todo en mayúsculas usando guion bajo. -> ejemplo -> :ACTUO_EN
+- Entidades -> Propiedades -> Iniciar en minúscula y añadir mayúscula al principio de las siguientes palabas. -> ejemplo -> firstName
+
+## 8.4. Graph Data Modelling
+- El modelo de datos se representa con nodos (círculos), relaciones (flechas) y propiedades.
+- Tanto los nodos como las relaciones contienen propiedades
+- Las propiedades también se representan como pares clave-valor
+- Las relaciones tienen direcciones unidireccionales y bidireccionales
+- En una relación siempre hay un «nodo de inicio» o «nodo desde» y un «nodo hasta» o «nodo final»
+- Una relación conecta dos nodos
+- 
+
+## 8.5. Interfaz Neo4j
+## 8.6. CQL
+- El lenguaje de consulta utilizado en Neo4j es CQL o Cypher Query Language. 
+- Es un lenguaje declarativo, que permite buscar coincidencia de patrones
+- CQL emplea comandos o instrucciones para manipular sus bases de datos
+- Admite muchas cláusulas como WHERE y ORDER BY
+- También permite usar funciones como string, aggregation, así como algunas funciones de relación.
+
+## Tipos de datos 
+- Boolean True/False
+- byte Enteros de 8 bit
+- short Enteros de 16 bit
+- int Enteros de 32 bit
+- long Enteros de 64 bit
+- float Números de 32 bit con punto flotante
+- doublé Números de 64 bit con punto flotante
+- char Caracteres de 16 bit
+- string String
+
+## Cláusulas de CQL
+
+**Lectura de datos**
+- MATCH Especificar un patrón.
+- OPTIONAL MATCH Especificar un patrón donde además es posible usar nulos en caso de que el patrón carezca de partes.
+- WHERE Añadir contenido a las consultas CQL.
+- START Se utiliza para encontrar los puntos de partida a través de los índices heredados.
+- LOAD CSV Se usa para cargar datos desde un fichero CSV.
+
+**Escritura de datos**
+- CREATE Permite crear nodos, relaciones y propiedades.
+- MERGE Comprueba si un patrón especificado existe en el grafo; en caso de que no, crea el patrón.
+- SET Permite actualizar etiquetas de nodos, relaciones y propiedades.
+- DELETE Permite borrar nodos, relaciones o rutas en el grafo.
+- CREATE UNIQUE Mediante las cláusulas CREATE y MATCH, es posible obtener un patrón único al hacer coincidir el patrón existente y crear el que falta.
+- REMOVE Permite borrar propiedades de los nodos y relaciones.
+- FOREACH Permite actualizar los datos dentro de una lista (recorre la lista).
+
+**Otras cláusulas**
+- LIMIT Limita el resultado a un número de valores concreto.
+- SKIP Se utiliza para establecer desde qué fila comenzar a incluir las filas en la salida.
+- WITH Se utiliza para encadenar las partes de la consulta.
+- RETURN Se utiliza para definir qué incluir en el conjunto de resultados de la consulta.
+- ORDER BY Se utiliza junto con las cláusulas RETURN o WITH y permite organizar la salida de una consulta en orden.
+- UNWIND Permite expandir una lista en una secuencia de filas.
+- UNION Permite unir el resultado de múltiples consultas.
+- CALL Permite llamar 
+
+**Cláusula Match**
+- MATCH (n) RETURN n: consulta todos los nodos.
+- MATCH (n:Persona) RETURN n: consulta todos los nodos con la etiqueta Persona.
+- MATCH (Pepe:Persona{name: "Pepe Rueda"})<-[: AMIGO_DE]-(n) RETURN n.name: retorna la lista de nodos cuya relación con Pepe:Persona es AMIGO_DE.
+- MATCH (n) detach delete n: borra todos los nodos existentes.
+
+**Otras cláusulas**
+- MATCH (n) RETURN n.name, n.age ORDER BY n.age ASC LIMIT 10
+- MATCH (n) RETURN n.name, n.age ORDER BY n.age ASC LIMIT toInt(3 *rand())+ 1: uso de funciones dentro de las consultas.
+- MATCH (n) RETURN n.name, n.age ORDER BY n.age ASC SKIP 2
+- MATCH (n) WITH n ORDER BY n.name ASC LIMIT 5 RETURN collect(n.name): devuelve el resultado de la consulta en forma de colección.
+- MATCH (Pepe:Persona{name: "Pepe Rueda"}) REMOVE Pepe.nacionality RETURN Pepe: remover una propiedad (age) del nodo.
+- MATCH (Pepe:Persona{name: "Pepe Rueda"}) REMOVE Pepe:Persona RETURN Pepe: borrar la etiqueta de un nodo. Puede añadir más de una etiqueta separándolas con dos puntos (:).
+- MATCH (Persona) WHERE Persona.age = 25 RETURN Persona: la cláusula WHERE permite acotar la consulta añadiendo condiciones.
+- MATCH (Persona) WHERE Persona.age > 18 AND Persona.age < 30 RETURN Persona
+- Importante: MATCH (n) WHERE (n)-[: AMIGO_DE]->( {name: "Po"}) RETURN n: consultar los amigos de Po (Persona).
+
+**comandos**
+- Neo4j, viene con una base de datos ejemplo instalada por defectos es cobre peliculas 
+- $ :play movie graph : De inmediato se desplegarán las instrucciones para cargar la base de datos
+- $ :play northwind graph ; 
+- 
+## 8.7. Visualización de grafos
+- La principal característica de Neo4j es su modo de visualizar los datos y las relaciones que existen entre ellos
+
+## Formatos del grafo
+- Hay una variedad de formatos a la hora de visualizar los datos en Neo4j. 
+- Los resultados de una consulta se pueden guardar como JSON, XML, formatos tabulares y formato visual.
+- Neo4j: Neo4j Browser y Neo4j Bloom -> dos herramientas visuales 
+
+
+## 8.8. Caso práctico
+
+
+
+## Videoclase 1. Neo4J
+## Notas:
+- ¿Cuál es el principal enfoque de Neo4j como base de datos?
+  - Representación de datos en forma de grafos.
+- ¿Qué versión de Neo4j se recomienda para entornos de desarrollo?
+  - Community
+- ¿Cuál es un requisito previo esencial para instalar Neo4j?
+  - Instalar Java (OpenJDK 8 u Oracle Java 8)
+- ¿Cómo se accede a la interfaz web de Neo4j una vez instalado?
+  - Accediendo a la URL http://localhost:7474.
+- ¿Qué variable de entorno debe configurarse para ejecutar Neo4j desde la consola?
+  - NEO4J_HOME
+
+## Videoclase 2. 
+## Notas:
+- ¿Qué representan los nodos en un grafo de Neo4j?
+  - Entidades con propiedades.->En Neo4j, los nodos representan entidades con propiedades que permiten describir cualidades o características de esas entidades.
+- ¿Qué característica es obligatoria en una relación en Neo4j?
+  - Debe tener una dirección definida -> Las relaciones en Neo4j siempre deben tener una dirección clara, especificando el nodo de inicio y el nodo final
+- ¿Cuál de los siguientes tipos de dato no es soportado por las propiedades en los nodos y relaciones de Neo4j?
+  - Arrays -> Neo4j soporta tipos de datos como números, cadenas y booleanos para las propiedades de los nodos y relaciones, pero no menciona arrays en este contexto
+- ¿Qué permite el uso de índices en Neo4j?
+  - Mejorar el rendimiento de las consultas -> os índices en Neo4j mejoran el rendimiento de las consultas, permitiendo un acceso más rápido a los nodos y relaciones.
+- ¿Qué función cumple el Native GPE en Neo4j?
+  - Almacena grafos en formato nativo -> Neo4j utiliza el Native GPE para almacenar los datos en formato nativo de grafos, sin necesidad de utilizar una base de datos SQL o NoSQL adicional.
+
+## Videoclase 3. Introducción a CQL
+## Notas:
+- ¿Qué significa CQL en Neo4j?
+  - Cypher Query Language.
+- ¿Qué operador lógico se utiliza en CQL para combinar varias condiciones en una consulta?
+  - AND
+- ¿Qué cláusula en CQL se utiliza para limitar el número de resultados devueltos por una consulta?
+  - LIMIT
+- ¿Cuál es la función principal de la herramienta Neo4j Bloom?
+  - Permitir a los usuarios explorar patrones y clústeres usando lenguaje natural.
+- ¿En qué formatos se pueden guardar los resultados de las consultas en Neo4j?
+  - En JSON, XML, tabular y formato visual.
+
+
+## Cuestionario 
+1. ¿Cuáles son los principales componentes de un grafo?
+A. El esquema, los nodos, las relaciones y las propiedades.
+B. Nodos, relaciones y propiedades. -> Correcto 
+C. Nodos y relaciones, las propiedades están implícitas en cada uno.
+D. Ninguna de las anteriores es correcta.
+
+2. ¿Qué afirmación define las características principales del modelo de grafos?
+A. El modelo representa datos en nodos, relaciones y propiedades.
+B. Las propiedades son pares clave-valor.
+C. Las relaciones conectan los nodos.
+D. Todas las anteriores son correctas. -> Correcto 
+
+3. ¿Qué es CQL?
+A. El lenguaje de consulta para Neo4j Graph Database.
+B. Un lenguaje para insertar y borrar nodos y relaciones.
+C. Un lenguaje enfocado a encontrar solo nodos dentro de un grafo.
+D. Todas las afirmaciones anteriores son correctas. -> Correcto 
+
+4. ¿Qué hace la siguiente instrucción: MATCH ( n ) DETACH DELETE n?
+A. Limpia la base de datos.
+B. Borra todos los nodos y relaciones de la base de datos. -> Correcto 
+C. Borra solo los nodos existentes.
+D. Borra los nodos y sus propiedades.
+
+5.- La cláusula que borra etiquetas y propiedades es:
+A. DELETE.
+B. UNWIND.
+C. REMOVE. -> Corrrecto -> REMOVE permite eliminar tanto las etiquetas como las propiedades de nodos y relaciones
+D. DROP
+
+6. ¿Qué significa n en la siguiente instrucción: MATCH ( n ) RETURN n.name, n.runs ORDER BY n.runs?
+A. Cualquier nodo y relación.
+B. Cualquier nodo. -> Correcto 
+C. Cualquier relación con las propiedades name y runs.
+D. Los nodos cuya propiedad name tiene un valor.
+
+7. ¿La instruction MATCH ( n ) RETURN n.name order by n.name qué retorna?
+A. Un grafo con los nodos n.
+B. Un listado.
+C. Un listado y un grafo.
+D. Una lista ordenada de las propiedades nombre de todos los nodos.-> correcto 
+
+8. ¿La instrucción CREATE (Pepe)-[r:CANTA_EN{name='Padro'}]-(Concierto) genera algún tipo de error al ser ejecutada?
+A. No, crea los nodos Pepe y Concierto y su relación CANTA_EN.
+B. Sí, la propiedad de la relación es incorrecta.-> Correcto 
+C. Sí, no se indica una dirección o sentido de la relación. 
+D. Todas las respuestas anteriores son correctas.
+
+9. La instrucción CREATE (Juan)-[r:HIJO_DE]->(Alma) crea:
+A. Los nodos Juan y Alma y una relación entre ellos llamada HIJO_DE. -> Correcto
+B. Una relación entre los nodos Juan y Alma llamada HIJO_DE. 
+C. Una relación saliente de Juan hacia Ana llamada HIJO_DE.
+D. Ninguna de las anteriores es correcta
+
+
+10. Indica qué hace la siguiente instrucción: MATCH (a:Jugador), (b:Juego) WHERE a.name = "Rabino" AND b.name = "Casino" CREATE (a)-[r:TRABAJA_EN {partida:1, victorias:5}]->(b) RETURN a,b
+A. Crea los nodos a y b y asigna la relación TRABAJA_EN.
+B. Crea la relación TRABAJA_EN sobre los nodos a y b.
+C. Busca los nodos a y b que cumplan la condición del WHERE y luego asigna la
+relación TRABAJA_EN entre ellos. -> correcto 
+D. Todas las respuestas anteriores son correctas.
+
+
+## Tema 9: Redis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Videoclase 1. 
+## Notas:
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+
+## Videoclase 2. 
+## Notas:
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+
+## Videoclase 3. 
+## Notas:
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+
+
+## Cuestionario 
+
