@@ -2448,6 +2448,258 @@ D. Todas las respuestas anteriores son correctas.
 ## Tema 9: Redis
 
 
+## 9.2. Conceptos generales
+
+- Redis surgió como un simple diccionario remoto (REmote DIctionary Server).
+- Actualmente se define como una base de datos multimodelo que permite búsquedas,
+mensajería, transmisión, gráficos 
+- Es parte del gran número de bases de datos NoSQL 
+- Redis es una de las más populares y más utilizada dentro de la tipología de bases de datos clave-valor. 
+- Es una base de datos altamente veloz. 
+- Trabaja con la información en memoria.
+- Usa  tipología (clave-valor)
+
+**Características de Redis**
+- Las estructuras de datos son la clave principal de Redis
+- Redis permite pensar en casos concretos ahí radica la estrategia del uso de estructuras de datos. 
+- Soporta las siguientes estructura de datos: 
+  - String.
+  - Lists.
+  - Sets.
+  - Sorted sets.
+  - Hashes.
+  - Bit arrays.
+  - Streams.
+  - HyperLogLogs
+
+![Ejemplo](../01_BasesDatosParaDatosMasivos/info/info_010.png)
+
+![Ejemplo](../01_BasesDatosParaDatosMasivos/info/info_011.png)
+
+- Soporta el patrón publicar/suscribir (pub/sub).
+-  Se ejecuta del lado del servidor, principalmente en los sistemas operativos basados
+en Unix como Linux y Mac, y también como un contenedor Docker en Microsoft
+Windows.
+-  La instalación de Redis es sencilla y su disponibilidad es casi inmediata una vez es
+público. 
+- El servidor espera las conexiones de los clientes, bien sea de forma programática o a través de la interfaz de línea de comandos(CLI).
+- Como toda base de datos NoSQL, no es necesario definir un modelo de datos para
+poder trabajar con Redis. 
+- El comando SET se utiliza para crear datos dentro de la base de datos actual, sin la
+necesidad de definir una estructura previa.  
+
+
+**Flexibilidad de Redis y uso de memoria**
+- Por su flexibilidad no se necesita un modelo de datos previo. 
+- Redis almacena los datos en memoria RAM y en memoria flash en caso se que los datos se incrementen.
+- Algo que radica su flexibilidad es su adminitración de la memoria cuando usa datos de manera recurrente este lo almacena en RAM si no se usa tanto en memoria Flash 
+- LRU (Least Recently Used) -> Usado Menos Recientemente   
+- Redis emplea diferentes métodos para cumplir con las propiedades ACID (Atomicity,Consistency, Isolation y Durability).
+
+
+## 9.3. Modelo de datos, estructura y módulos
+- Redis es una base de datos que soporta múltiples modelos de datos para
+que estos se representen de múltiples formas, permitiendo así representar varios casos
+de uso simultáneamente.
+- Una base de datos de cualquier tipo obliga a pensar y decidir
+sobre la forma de representar los datos dentro del almacén de datos. La forma que se
+decida es la que luego definirá cómo se insertarán los datos y cómo se leerán.
+- Redis almacena los datos mediante claves, las cuales pueden ser de cualquier tipo
+porque realmente son elementos binarios. 
+- Una imagen puede ser usada como clave dentro de la base de datos. Aunque existe esta posibilidad,
+por lo general las claves son cadenas simples.
+- Los bitmaps, por su parte, son una forma de almacenamiento de cadenas donde se
+pueden representar muchos elementos de datos que posean, por ejemplo, un estado
+determinado activado (1) o desactivado (0).
+- En un escenario donde solo se quiere saber estos estados, Redis es útil por el rápido
+acceso y manipulación de dichos valores.
+- SETBIT y GETBIT son comandos específicos para trabajar con tipos bitmaps. Se utilizan
+para crear o cambiar un valor y recuperar un valor, respectivamente. Otros comandos
+son BITOP y BITFIELD.
+
+
+## Lists
+En determinados escenarios una lista puede ser una matriz, pero Redis la utiliza como
+lista vinculada que permite operaciones de escrituras muy rápidas. Se usan para
+almacenar datos con algún tipo de relación.
+
+## Sets
+Los sets son parecidos a las lists, pero se diferencian en dos aspectos:
+1. En la forma de almacenar los valores porque utiliza una sola clave para almacenar varios valores.
+2. En la forma de recuperar los valores; no se usa índice de posición y tampoco se ordenan.
+
+## Hashes
+Se emplean para almacenar colecciones de pares clave-valor. Un hash tiene una
+clave, pero dentro de su estructura hay espacio para más campos y valores. El estado
+actual de una aplicación es algo que se suele almacenar en un hash.  
+
+El comando para crear el hash es HSET. Este permite recuperar valores concretos en
+un hash concreto.
+
+## Sets ordenados
+Una variante de sets es su versión ordenada de los valores. Este tipo de datos se
+utiliza cuando se quiere almacenar datos que deben estar clasificados. Al igual que
+hash, una sola clave puede almacenar varios elementos. Cada valor está puntuado
+con un número.
+
+## HyperLogLog
+Este es un tipo de datos especializado muy útil en Redis. Se utiliza para mantener un
+recuento estimado de elementos únicos. Un caso de uso común es emplearlo para
+llevar a cabo un seguimiento de un recuento general de visitantes únicos al aula
+virtual. 
+
+## Estructuras
+Una funcionalidad interesante de Redis es el patrón publisher/subscriber (pub/sub)
+el cual actúa como un mecanismo para intercambiar mensajes. Al usarlo, un
+publicador crea un par clave-valor y otros clientes se suscriben a él para recibir dicho
+mensaje (el par clave-valor creado).
+
+## Geoespacial
+La indexación geoespacial es un patrón común utilizado para codificar datos basados
+en la latitud y la longitud, la cual facilita y agiliza el trabajo con datos espaciales. 
+
+## 9.4. Arquitectura y topología
+
+- Redis separa la administración del clúster de la arquitectura para que las solicitudes sean
+atendidas tan rápido como lo serían si el servidor no se estuviera ejecutando en un clúster 
+- Un servidor dentro de un clúster se denomina nodo en Redis. Los nodos podrán ser primarios o secundarios.
+
+- El clúster de Redis Enterprise consta de los siguientes componentes:
+- Capa de datos: en esta capa los datos se almacenan y administran, haciendo parte del
+mismo núcleo como si se tratase de una única instancia de Redis (open source).
+- Administrador de clústeres: se encarga del estado general del clúster, su supervisión,
+el reequilibrio, la compartición, el aprovisionamiento y el desaprovisionamiento de
+nodos, entre otras tareas.
+- Proxy de latencia cero: los nodos del clúster utilizan un proxy para proporcionar
+comunicación sin estado y multiproceso entre el cliente y el nodo.
+- API REST: se utiliza para la gestión del clúster
+
+
+**Alta disponibilidad**
+Es importante en este punto volver a diferenciar las dos versiones que ofrece Redis para
+trabajar. Por un lado, está Redis Open Source y, por otra parte, está Redis Enterprise.
+Cuando se quiere conseguir una alta disponibilidad, con Redis Open Source el gasto en
+RAM dificulta las réplicas del dato de forma simultánea.
+
+## 9.5. Despliegue en Docker
+
+Para que puedas poner en marcha un servidor de Redis, en este apartado se propone
+una instalación basada en Docker que permita de forma rápida acceder a Redis y realizar
+las pruebas de los comandos antes vistos. A continuación, se indican los pasos de
+instalación
+
+## 9.6. Drivers
+Redis se integra con muchos lenguajes de programación conocidos. De forma
+programática, desde estos lenguajes, es necesario crear los mecanismos para realizar
+dicha conexión. Los clientes y controladores generalmente se comparten bajo una
+licencia de código abierto, aunque la licencia varía según el proyecto. 
+
+## Cuestionario 
+
+1. Las siguientes son estructuras de Redis:
+A. String, integer, float, sets y lists.
+B. Lists, sets, hashes, stream y bit arrays. -> Correcto 
+C. HyperLogsLogs, hashes, sets, string y float.
+D. Ninguna de las anteriores es correcta.
+
+2. ¿Cuál de estas afirmaciones es verdadera?
+A. No es necesario definir previamente un modelo de datos antes de usar o guardar datos en Redis.
+B. Redis se caracteriza por el tratamiento de distintos tipos de datos, los cuales se pueden aplicar en distintos casos de uso.
+C. Redis es una base de datos clave-valor.
+D. Todas las anteriores son correctas. -> Correcto 
+
+3. ¿Cómo se llama el cliente de Redis?
+A. Cliente Redis Long.
+B. redis-cli. -> Correcto 
+C. cli-rediss.
+D. Ninguna de las anteriores es correcta.
+
+4. ¿Cuál de estas instrucciones muestra todos los elementos de una lista llamada clientes?
+A. LINDEX clientes 0.
+B. LRANGE clientes 0 -1. -> Correcto 
+C. LRANGE clientes 0 *.
+D. GET clientes 1.
+
+5. ¿Cuál de estas instrucciones permite añadir un elemento a la colección llamada frutas?
+A. SADD frutas mango. -> Correcto 
+B. SADD mango frutas.
+C. SMEMBERS frutas mango.
+D. SISMEMBERS frutas mango.
+
+6. ¿Qué hace la siguiente instrucción: SET user pep?
+A. Establece un usuario en pep.
+B. Crea un elemento llamado user con el valor pep. -> Correcto 
+C. Muestra el valor de user y pep.
+D. Guarda el valor user en pep.
+
+7. ¿Qué son las colecciones ordenadas?
+A. Una colección cuyos elementos se ordenan por la clave.
+B. Una colección cuyos elementos se ordenan por el orden en que se añaden
+los valores.
+C. Una colección cuyos elementos se ordenan por los valores.  -> Correcto 
+D. Ninguna de las anteriores es correcta.
+
+
+8. El patrón pub/sub permite:
+A. Publicar datos cada cierto tiempo en un puerto concreto.
+B. Crea un canal para que los clientes se suscriban y reciban los valores emitidos. ->  Correcto 
+C. Publicar datos en stream para ser consumido.
+D. Todas las anteriores son correctas.
+
+
+9. Redis es una base de datos clave-valor que utiliza:
+A. RAM y memoria flash. 
+B. Solo RAM. -> Correcto 
+C. RAM y memoria caché.
+D. RAM SSD y Sweap.
+
+
+10. ¿Qué afirmación es verdadera?
+A. Dentro de un clúster de Redis, un servidor determinado se denomina cliente.
+B. Cada nodo puede ser un nodo primario (maestro), pero no un nodo secundario (esclavo).
+C. La administración del clúster se realiza en una capa de la arquitectura del clúster de Redis. -> Correcto 
+D. El almacenamiento de datos de series de tiempo es otra tarea común en Redis.
+
+
+## Videoclase 1. 
+## Notas:
+- ¿Cuál es la principal característica que distingue a Redis de otras bases de datos NoSQL?
+  - Funciona en memoria para accesos rápidos a datos.
+- ¿Qué tipo de estructuras de datos admite Redis además de strings?
+  - Listas, sets y hashes.
+- ¿Cuál de los siguientes comandos se utiliza en Redis para almacenar un valor asociado a una clave?
+  - SET
+- ¿En qué contexto es más útil Redis?
+  - Acceso inmediato a datos en aplicaciones en tiempo real.
+- ¿Qué características ofrece la versión Enterprise de Redis en comparación con la versión estándar?
+  - Almacenamiento en memoria flash.
+
+## Videoclase 2. Tipos de datos en Redis
+## Notas:
+- ¿Cuál de los siguientes tipos de datos no es compatible con Redis?
+  - Tablas relacionales.
+- ¿Qué módulo de Redis se utiliza para trabajar con datos de grafos?
+  - RedisGraph.
+- ¿Qué característica principal ofrece Redis Enterprise para garantizar alta disponibilidad?
+  - Agrupamiento en clústeres y fragmentación.
+- ¿Cómo Redis Enterprise optimiza la gestión de la replicación en RAM sin necesidad de una tercera réplica costosa?
+  - Usando un tercer servidor para la resolución del quorum.
+- ¿Cuál es el propósito de RedisSearch como módulo adicional en Redis?
+  - Proporcionar búsqueda de texto completo.
+
+## Videoclase 3. 
+## Notas:
+- ¿Qué puerto se utiliza para las conexiones HTTPS en Redis desplegado con Docker?
+  - 8443
+- ¿Qué comando se utiliza para iniciar un contenedor de Redis en Docker?
+  - docker run -d --cap-add sys_resource --name rp -p 8443:8443 -p 9443:9443.
+- ¿Qué cliente de Redis es recomendado para Node.js?
+  - node_redis
+- ¿Qué comando se utiliza para conectarse a Redis desde Docker usando redis-cli?
+  - redis-cli -p 9443.
+- ¿Qué cliente de Redis es más recomendado para trabajar con Python?
+  - redis-py.
+
 
 
 
