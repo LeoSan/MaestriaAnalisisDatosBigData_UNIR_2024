@@ -52,8 +52,6 @@ operaciones necesarias para procesar el contenido desde un programa de software.
 - JSON
 - XML. 
 
-
-
 **Bases de datos**
 Una base de datos es un conjunto de datos persistente utilizado por un sistema de
 software. Siguiendo con las definiciones, y tal y como se menciona en la bibliografía,
@@ -2701,17 +2699,365 @@ D. El almacenamiento de datos de series de tiempo es otra tarea común en Redis.
   - redis-py.
 
 
+## Tema 10: Datos en el cloud
+
+**Conceptos**
+El uso del cloud implica, por un lado, confiar en la infraestructura de otros
+proveedores y, por otra parte, usar y explotar nuestra información siguiendo
+determinados protocolos. Existen proveedores que cuentan con sus propias
+infraestructuras en el cloud. En otros casos, algunos dependen de otros proveedores
+del cloud para proporcionar los mismos servicios. 
+
+Oracle define el cloud computing como la capacidad de alquilar sus tecnologías de la
+información, en lugar de comprarlas. En lugar de invertir mucho en bases de datos,
+software y equipos, las empresas optan por acceder a la potencia de cálculo a través de
+Internet y pagar por lo que consumen 
+
+
+**Entre los beneficios más destacados que ofrece el cloud computing se mencionan los
+siguientes:**
+
+- Escalabilidad horizontal y vertical: cuando aumentan las necesidades de las
+compañías debido a su propio negocio, el cloud se adapta y crece en función de la
+demanda de recursos.
+
+- Migraciones flexibles: las empresas pueden migrar ciertos recursos hacia o desde
+la nube, o hacia diferentes proveedores de nube, según lo deseen, o
+automáticamente para obtener mejores ahorros de costos, un mejor rendimiento
+o para usar nuevos servicios a medida que surgen.
+
+- Infraestructura: los clientes pueden estimar y calcular los recursos para los
+distintos elementos de la infraestructura. Aunque suene negativo, los
+administradores de TI no tienen la tarea de estimar y gestionar directamente los
+recursos de la compañía.
+
+- Resistencia cargas de trabajo: el servicio en la nube provee el almacenamiento
+constante de los datos en distintas ubicaciones en todo el mundo.
+
+- Pago por uso: los costes se aplican por unidades concretas de recursos usados, sin
+recargos y con una facturación de servicios muy transparente.
+
+- Protección antidesastres: el cloud elimina la necesidad de invertir en hardware para
+copias de seguridad. Los servidores son globales y la gestión de copias la lleva
+directamente el proveedor a nivel mundial.
+
+- Actualizaciones automáticas, trabajo remoto y aumento de la capacidad de
+colaboración: no es necesario llevar a cabo procesos de actualización de hardware o
+software. los servicios de cara al usuario operan independientemente de la
+infraestructura, todo lo que el cliente necesita es un mecanismo de conexión a través
+de Internet.
+
+- Seguridad: el cloud brinda los mejores estándares de seguridad disponibles en el
+mercado. El cliente, las aplicaciones, los datos y el código están protegidos y
+monitorizados las 24 horas.
+
+## 10.3. Modelos de cloud computing
+- Cloud privado: como su nombre indica, son servicios cloud creados para una
+organización específica y solo para ella. 
+  - OpenStack: https://www.openstack.org
+  - CloudStack: https://cloudstack.apache.org
+  - VMware: https://cloud.vmware.com
+
+- Cloud público: Las empresas en este caso acceden a servicios del cloud a través de
+Internet. Estos servicios se ajustan a la demanda del servicio y se miden (a efectos de
+costes y facturación) con la demanda del servicio por minutos u horas. Las
+suscripciones son otra forma de prolongar el contrato y los servicios.
+  - Microsoft Azure: https://azure.microsoft.com
+  - Google Cloud Platform (GPC): https://cloud.google.com
+  - Servicios web de Amazon: https://aws.amazon.com
+  - IBM: https://www.ibm.com/cloud
+
+- Cloud híbrido: es una fusión de servicios de cloud público (GCP, AWS o Azure) y un
+cloud privado local. Las soluciones en local se usarán más para aplicaciones críticas
+dentro de la compañía, mientras que el cloud público abordará las demandas del
+servicio
+
+  - IBM: https://www.ibm.com/it-infrastructure/z/capabilities/hybrid-cloud
+  - AWS: https://aws.amazon.com/enterprise/hybrid
+
+
+## 10.4. Tipos de servicios cloud
+Software as a Service (SaaS)
+En este tipo de servicios, el proveedor del cloud centra su servicio en alojar e
+implementar software del cliente en su entorno
+
+Platform as a Service (PaaS)
+Este tipo de servicio ofrece acceso a herramientas y plataformas adecuadas para
+cubrir las necesidades de entornos de desarrollo para crear y gestionar aplicaciones
+web, móviles o de proceso.
+
+Infrastructure as a service (IaaS)
+También llamado HaaS o Hardware as a Service. En este otro tipo, el servicio se
+enfoca en ofrecer infraestructura como servicio para que el cliente haga uso del
+mismo a demanda. Los clientes solo tienen que preocuparse de sus procesos y
+análisis, delegando a los proveedores del servicio los componentes de infraestructura
+con capacidad de cómputo, almacenamiento y de red para ejecutar los procesos del
+cliente.
+
+En IaaS el proveedor dispone de infraestructura para proveer de máquinas virtuales
+a sus clientes. Con ellas se abstraen los recursos de un ordenador con un hypervisor
+o VMM (Virtual Machine Monitor), el cual crea capas entre máquina host y el sistema
+operativo virtualizado
+
+Function as a Service (FaaS)
+Otro de los servicios que se ofrecen sobre el cloud son funciones como servicio. Este
+servicio lo utilizan desarrolladores para implementar la lógica de back-end sin la
+necesidad de configurar y levantar un servidor.
+
+
+Container as a Service (CaaS)
+Es un modelo de servicio en la nube que permite a los usuarios cargar, organizar,
+iniciar, detener, escalar y administrar contenedores, aplicaciones y clústeres. La base
+de este servicio es la virtualización basada en contenedores, una interfaz de
+programación de aplicaciones (API) y una interfaz de portal web.
+
+
+Enfoque del servicio
+Estos servicios brindan varios niveles de abstracción sobre las máquinas que
+finalmente ejecutan dichos servicios. Cada servicio opera sobre un nivel diferente de
+responsabilidad dentro del entorno del proveedo
+
+![alt text](../01_BasesDatosParaDatosMasivos/info/info_012.png)
+
+![alt text](../01_BasesDatosParaDatosMasivos/info/info_013.png)
+
+
+## 10.5. Virtualización
+
+La virtualización permite crear entornos virtuales simulando un entorno físico. El
+entorno virtual por lo general incluye características y versiones del hardware que
+representa, de los sistemas operativos que ejecuta, de los dispositivos de
+almacenamiento configurados, de la memoria RAM empleada, etc 
+
+Con la virtualización es posible convertir un único equipo físico o servidor en varias
+máquinas virtuales. En él, cada máquina virtual puede interactuar
+independientemente y levantar sistemas operativos o aplicaciones diferentes
+mientras comparten los recursos de la máquina host. 
+
+Los IaaS utilizan con frecuencia la virtualización de servidores para ofrecer sus
+servicios. Mediante un software de virtualización crean sobre un servidor físico
+máquinas virtuales que luego se ofrecen a los clientes para su uso
+
+
+## Hipervisores
+Los hipervisores son software que se encargan de separar los recursos físicos de los
+entornos virtuales. Estos se pueden instalar en un hardware concreto como servidor
+o hacer parte de un sistema operativo existente. En el primer caso, es el mecanismo
+que utilizan las grandes empresas dedicadas a la virtualización. En el segundo caso,
+se refiere a lo que se suele hacer a la hora de virtualizar algún sistema operativo sobre
+un ordenador con sistema operativo funcionando
+
+El hipervisor gestiona los recursos físicos y los divide de tal forma que todos los
+entornos virtuales puedan usarlos. Estos recursos se comparten según las demandas
+de cada virtualización y del propio entorno físico donde están alojadas. Cuando un
+usuario interactúa con una virtualización, lo hace dentro del entorno virtual conocido
+comúnmente como máquina de guest o máquina virtual
+
+
+## Tipología de la virtualización
+
+**Virtualización de escritorio:**
+Permite que un servidor centralizado ofrezca y
+administre escritorios de forma individual. 
+
+Es común confundirla con la
+virtualización de los sistemas operativos. Sin embargo, en la virtualización de los
+escritorios existe la figura de administrador o herramienta de administración
+automatizada que configura los entornos simulados de escritorio en cientos de
+máquinas físicas al mismo tiempo. 
+
+**Virtualización de red:**
+
+se caracteriza porque divide el ancho de banda de una red
+en canales independientes que se asignan a servidores o dispositivos específicos.
+
+La virtualización de las funciones de red (NFV) permite separar las funciones de
+una red para luego distribuirlas entre los entornos correspondientes. Esta
+virtualización reduce la cantidad de componentes físicos tales como
+conmutadores, enrutadores, servidores, cables, centrales, entre otros, necesarios
+para crear redes independientes.
+
+
+**Virtualización de datos o almacenamiento:** 
+Combina recursos de almacenamiento
+en red y los muestra como un solo dispositivo de almacenamiento accesible para
+varios usuarios. La virtualización de datos permite a las empresas aplicar sobre
+ellos capacidad de procesamiento, reuniéndolos desde varias fuentes y facilitando
+la integración de nuevos orígenes de datos. 
+
+## 10.6. Docker
+
+Docker es un motor de código abierto cuya función principal es facilitar la
+implementación de aplicaciones en contenedores. Su creador es Docker Inc,
+conocidos en fechas pasadas como dotCloud Inc
+
+Docker propone un sistema de implementación de aplicaciones sobre un entorno de
+ejecución de contenedores virtualizado
+
+Su entorno se caracteriza por ser rápido,
+ligero y por facilitar la ejecución de su código. 
+
+Docker se diferencia de una máquina virtual por su sencillez y requerimientos
+mínimos para ejecutar un host
+
+
+## Cómo funciona Docker
+En un principio Docker usaba LinuX Containers (LXC) para crear sus contenedores,
+pero posteriormente cambió a runC (libcontainer). Este último se ejecuta en el mismo
+sistema operativo que su host, permitiendo compartir los recursos del sistema
+operativo del host. El sistema de archivos que utiliza se basa en capas (AuFS) y
+permite gestionar las redes del mismo 
+
+AuFS es un sistema de archivos basado en capas, lo cual permite que se fusionen
+capas de solo lectura y capas de escritura.
+
+
+## Máquinas virtuales vs. Docker
+Una máquina virtual completa utiliza su propio conjunto de recursos asignados y
+comparte los mínimos recursos posibles. Está mucho más aislada y por ello es muy
+pesada (requiere más recursos propios). Docker ofrece menos aislamiento, pero sus
+contenedores son más livianos (requieren menos recursos).
+
+Esto último permite que se ejecuten muchos contenedores en un mismo host sin destrozarlo.
+
+
+![alt text](../01_BasesDatosParaDatosMasivos/info/info_014.png)
+
+En el caso de máquinas virtuales completas, en un host es probable que el número
+de máquinas ejecutándose a la vez sea muy limitado. Por otro lado, una máquina
+virtual suele tardar unos minutos en iniciarse (como cualquier sistema operativo
+común), mientras que los contenedores Docker/LXC/runC tardan unos pocos
+segundos.
+
+Existen pros y contras para cada tipo de virtualización. Si se necesita un aislamiento
+total con recursos garantizados, una máquina virtual completa es la mejor opción. Si
+por el contrario solo desea aislar procesos concretos entre sí y desea ejecutar muchos
+de ellos en un único host de tamaño razonable, Docker/LXC/runC podría ser de
+mucha utilidad.
+
+
+Los componentes centrales que constituyen Docker son:
+- El cliente y el servidor de Docker: 
+Docker es una aplicación cliente-servidor. El cliente se comunica con el servidor o
+demonio de Docker, que es quien hace todo el trabajo. Docker incluye cliente
+mediante línea de comandos, el cual implementa una API RESTful completa
+
+- Imágenes.
+
+Las imágenes son los componentes básicos de Docker. Los contenedores se ejecutan
+a partir de imágenes concretas. Las imágenes definen el ciclo de vida de Docker y se
+basan en un formato en capas
+
+
+- Registros.
+
+Existen dos tipos de registro: públicos y privados. Docker almacena las imágenes que
+crea en registros. Docker, Inc., utiliza un registro público de imágenes, llamado
+Docker Hub. Es recomendable crear una cuenta en Docker Hub y usarla para
+compartir y almacenar tus propias imágenes
+
+- Contenedores
+
+Docker permite crear e implementar contenedores donde luego empaqueta
+aplicaciones y servicios. A partir de las imágenes, los contenedores se lanzan con uno
+más proceso en ejecución
+
+## Cuestionario 
+1. ¿Cuáles son los beneficios del cloud computing?
+A. Escalabilidad, flexibilidad, seguridad, pago por uso… -> Correcto 
+B. Flexibilidad, pago por uso y seguridad.
+C. Escalabilidad y portabilidad.
+D. Ninguno de los anteriores.
 
 
 
+2. ¿Cuántos modelos de cloud existen?
+A. Dos: público y privado.
+B. Tres: público, privado y de pago.
+C. Tres: público, privado e híbrido. -> Correcto 
+D. Ninguno de los anteriores.
+
+3. Una afirmación verdadera sobre SaaS:
+A. SaaS es ofrecer servicios de sistemas operativos virtualizados.
+B. Se centra en alojar e implementar software del cliente en el cloud para que
+este luego lo use a demanda.
+C. Significa Software como Servicio y ofrece al cliente licencia de todo tipo de
+software. -> Correcto 
+D. El cliente usa este servicio como repositorio para guardar todo el software
+que compra la compañía y así no instalarlo en sus servidores principales.
 
 
+4. ¿En qué se parecen PaaS e IaaS?
+A. En nada, cada uno ofrece servicios totalmente diferentes.
+B. PaaS ofrece determinados servicios como parte de un contexto de
+plataforma; IaaS, por su parte, puede que ofrezca servicios similares, pero de
+forma independiente. -> Correcto 
+C. Ambos ofrecen servicios parecidos, solo que uno le da un enfoque más
+corporativo y el otro se centra más en resolver problemas puntuales del cliente.
+D. Ninguna de las anteriores es correcta.
+
+Tal y como se indica, los servicios podrán ser similares en ciertos casos, pero el
+enfoque del primero va orientado a que el cliente disfrute de las ventajas de toda una
+plataforma de trabajo y no de servicios individualizados.
 
 
+5. ¿Qué clase de servicio se podría considerar Google Docs?
+A. IaaS.
+B. PaaS.
+C. SaaS.-> correcto 
+D. PaaS y SaaS.
 
 
+Google Docs ofrece software a sus clientes mediante el cloud, por ende, el modelo
+de servicio que más se ajusta es SaaS.
+
+6. El encargado de gestionar los recursos físicos y distribuirlos de forma equitativa
+para que las virtualizaciones hagan uso de ellos es:
+A. Docker.
+B. Cloud computing.
+C. SaaS.
+D. Hipervisor. -> Correcto 
+Esta es la responsabilidad del hipervisor. Docker incorpora un hipervisor, pero existen
+otros que utilizan otros mecanismos y configuraciones
+
+7. Los componentes de Docker son:
+A. Los registros.
+B. Las imágenes.
+C. Los contenedores.
+D. Todos los anteriores son correctos. -> Correcto 
 
 
+8. Para trabajar con contenedores en Docker, ¿qué es lo primero que debemos
+descargar?
+A. El propio contenedor.
+B. Imágenes. -> Correcto 
+C. Registros.
+D. Ninguno de los anteriores.
+
+La imagen posee el kernel del sistema operativo sobre el cual se creará el contenedor.
+Por lo tanto, es lo primero que debemos descargar.
+
+
+9. ¿Qué hace el comando docker rm id_contenedor?
+A. Borra todos los contenedores que se hayan creado previamente.
+B. Borra el contenedor y limpia la imagen para crear nuevos contenedores.
+C. Borra el contenedor cuyo id corresponde con el descrito siempre que esté
+detenido. -> Correcto 
+D. Borra un contenedor cuyo id es id_contenedor.
+
+Docker no permite borrar contenedores que se estén ejecutando, por ello,
+previamente debemos detener el contenedor y luego borrarlo con esta instrucción.
+Es necesario también usar el id del contenedor que se quiere borrar.
+
+
+10. ¿Qué hace el comando docker images?
+A. Muestra la lista de imágenes creadas o existentes. -> Correcto 
+B. Muestra las imágenes con sus correspondientes contenedores asociados.
+C. Muestra las imágenes que se están ejecutando.
+D. Ninguna de las anteriores.
+Este comando permite visualizar todas las imágenes creadas hasta el momento en
+Docker. Con él podrás conocer el repositorio de cada máquina, su etiqueta y el
+tamaño del espacio ocupado.
 
 
 
