@@ -3060,6 +3060,85 @@ Docker. Con él podrás conocer el repositorio de cada máquina, su etiqueta y e
 tamaño del espacio ocupado.
 
 
+## Videoclase 1. 
+## Notas:
+- ¿Cuál es uno de los beneficios clave de la computación en la nube?
+  - Escalabilidad horizontal y vertical según la demanda. -> no de los beneficios clave del cloud computing es la escalabilidad horizontal y vertical, lo que permite ajustar los recursos de manera flexible según las necesidades de las cargas de trabajo
+  
+- ¿Qué modelo de servicio en la nube permite alquilar infraestructura física completa para el desarrollo y despliegue de aplicaciones?
+  - IaaS. -> El modelo IaaS (Infraestructura como Servicio) permite a las empresas alquilar infraestructura física para desarrollar y desplegar sus aplicaciones.
+
+
+- ¿Qué tipo de cloud es exclusivo para una sola organización y permite una mayor personalización de hardware y software?
+  - Cloud privado.-> El cloud privado es exclusivo para una organización, lo que permite personalizar el hardware, software y almacenamiento, ofreciendo mayor control y seguridad.
+
+
+- ¿Qué beneficio ofrece la computación en la nube en términos de protección contra desastres?
+  - Gestión global de copias y recuperación antidesastres.
+
+
+- ¿Cuál de los siguientes es un proveedor de cloud público?
+  - AWS.-> WS (Amazon Web Services) es uno de los proveedores de cloud público mencionados, junto con Microsoft Azure y Google Cloud Platform.
+
+## Videoclase 2. Tipos de Servicios en el Cloud
+## Notas:
+- ¿Qué característica define a Software as a Service (SaaS?
+  - Acceso a aplicaciones a través de Internet.
+
+En SaaS, las aplicaciones se alojan e implementan por el proveedor y son accesibles a través de Internet, con un modelo de pago por uso.
+
+
+- ¿Cuál es la principal diferencia entre IaaS y FaaS en los servicios cloud?
+  - IaaS proporciona infraestructura virtual, mientras que FaaS se enfoca en la lógica de back-end sin servidor.
+
+IaaS proporciona infraestructura virtual a demanda, mientras que FaaS permite implementar la lógica de back-end sin necesidad de servidores, centrándose en el código.
+
+
+- ¿Qué permite la virtualización en el cloud computing?
+  - Ejecutar múltiples máquinas virtuales en un solo servidor físico.
+
+La virtualización permite crear múltiples máquinas virtuales en un solo servidor físico, optimizando el uso de recursos y mejorando la escalabilidad.
+
+- ¿Cuál es la principal diferencia entre Docker y las máquinas virtuales tradicionales?
+  - Docker es más ligero y rápido que las máquinas virtuales.
+
+Docker es más ligero y rápido que las máquinas virtuales tradicionales, ya que utiliza contenedores que comparten el mismo sistema operativo, lo que lo hace más eficiente en términos de recursos.
+
+- ¿Qué es Docker Hub?
+  - Un registro público de imágenes de Docker.
+
+Docker Hub es un registro público donde se almacenan y comparten imágenes de Docker, facilitando el acceso a componentes para la creación de contenedores.
+
+## Videoclase 3. Uso de Docker
+## Notas:
+- ¿Qué opción se debe habilitar durante la instalación de Docker Desktop en Windows?
+  - Enable Hyper-V Windows Features.
+
+Durante la instalación de Docker Desktop en Windows, es necesario habilitar la opción Enable Hyper-V Windows Features para permitir que Docker funcione correctamente en Windows.
+
+
+- ¿Qué comando se utiliza para descargar la imagen de MongoDB en Docker?
+  - docker pull mongo.
+
+El comando docker pull mongo se utiliza para descargar la imagen de MongoDB en Docker.
+
+
+- ¿Qué comando se utiliza para descargar la imagen de MongoDB en Docker?
+  - docker run -it -v e:/MongoDB/mongodata:/data/db --name mongodb -d mongo.
+
+El comando docker run -it -v e:/MongoDB/mongodata:/data/db --name mongodb -d mongo se utiliza para iniciar un contenedor de MongoDB en Docker con un volumen que mapea un directorio local al almacenamiento de la base de datos.
+
+
+- ¿Qué comando se utiliza para ver los contenedores activos en Docker?
+  - docker ps.
+
+El comando docker ps se utiliza para ver los contenedores activos en Docker.
+
+
+- ¿Cómo se pueden gestionar los contenedores de MongoDB en Docker (detener, iniciar, eliminar)?
+  - docker stop/start/rm.
+
+
 
 
 
