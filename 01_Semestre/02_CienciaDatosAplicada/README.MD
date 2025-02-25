@@ -2843,3 +2843,19 @@ B. Mejora en la precisión del diagnóstico médico.
 C. Incremento en la satisfacción y fidelidad del cliente. -> Correcto 
 D. Optimización de rutas logísticas.
 
+
+
+
+## Videoclase 1: La inteligencia Artificial en la Ciencia de Datos
+## Notas:
+- ¿Cuál es el papel del procesamiento del lenguaje natural (NLP) en la inteligencia artificial aplicada?
+  - Facilitar la comprensión y generación de lenguaje humano por máquinas para mejorar la interacción con usuarios.
+- ¿Qué ventajas ofrece la integración de IA y ciencia de datos para la toma de decisiones en empresas?
+  - Permite automatizar decisiones en tiempo real mediante el análisis de grandes volúmenes de datos, mejorando la precisión y eficiencia operativa.
+- ¿Cómo mejora la visión por computadora los procesos industriales en manufactura?
+  - 
+Permite la detección automática de defectos en productos durante la producción, mejorando la calidad y reduciendo los desperdicios.
+- ¿Qué beneficio clave proporciona el uso de datos masivos en la IA?
+  - Facilita el entrenamiento de modelos de IA al permitir el aprendizaje de grandes cantidades de datos, mejorando la precisión de las predicciones.
+- ¿Cuál es una aplicación de la IA generativa en el diseño gráfico y publicidad?
+  - Permite crear nuevas obras de arte y variaciones de diseño, mejorando la creatividad y eficiencia en campañas publicitarias.
