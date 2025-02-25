@@ -2597,12 +2597,249 @@ B. Falso.
 
 ## 10.2. Objetivos de la Inteligencia Artificial aplicada
 
+- Automatización de tareas repetitivas y monótonas
+    - La automatización de tareas repetitivas y monótonas ha sido uno de los principales motores del desarrollo de la IA
+
+**Aplicaciones:** 
+- Industria manufacturera: robots industriales que ensamblan productos en líneas de
+producción, como en la fabricación de automóviles.
+- Servicios al cliente: chatbots y asistentes virtuales que responden consultas
+frecuentes, gestionan reservas y solucionan problemas básicos.
+- Oficinas: sistemas de gestión documental que automatizan la clasificación y archivo
+de documentos, así como la generación de informes financieros y contables.
+
+
+- Mejora de la toma de decisiones
+    - La capacidad de la IA para analizar grandes conjuntos de datos y extraer patrones y tendencias permite a las organizaciones tomar decisiones más informadas y precisas. 
+
+**Aplicaciones:** 
+- Finanzas: algoritmos de IA que analizan datos de mercado y predicen movimientos
+financieros para la gestión de inversiones y la detección de fraudes.
+- Salud: sistemas de apoyo a la decisión clínica que analizan historiales médicos y
+datos de pacientes para proporcionar diagnósticos más precisos y personalizados.
+- Marketing: plataformas que segmentan clientes y personalizan campañas
+publicitarias basadas en el análisis del comportamiento de los usuarios y sus
+preferencias.
+
+- Personalización de experiencias y servicios
+    - La IA permite a las empresas ofrecer productos y servicios altamente personalizados, mejorando la experiencia del cliente y aumentando la satisfacción y fidelidad. 
+
+**Aplicaciones:**
+- E-commerce: recomendaciones de productos basadas en el historial de navegación
+y compras del usuario, como las que ofrece Amazon.
+- Educación: plataformas de aprendizaje adaptativo que ajustan el contenido y el ritmo
+de enseñanza según el progreso y las necesidades del estudiante.
+- Entretenimiento: servicios de streaming como Netflix que sugieren películas y series
+basadas en los gustos y hábitos de visualización del usuario. 
+
+
+- Innovación y desarrollo tecnológico
+    - La IA impulsa la innovación al abrir nuevas posibilidades tecnológicas y permitir la creación de soluciones que antes eran inimaginables. Desde el descubrimiento de nuevos materiales hasta avances en biotecnología, la IA está en el centro de las revoluciones tecnológicas contemporáneas
+
+
+**Aplicaciones:**
+- Investigación científica: utilización de algoritmos de IA para modelar fenómenos
+complejos y acelerar el descubrimiento de nuevos fármacos y materiales.
+- Automoción: desarrollo de vehículos autónomos que utilizan la IA para navegar y
+operar de manera segura, reduciendo el riesgo de accidentes y mejorando la
+eficiencia del tráfico.
+- Energía: optimización de redes eléctricas inteligentes y gestión eficiente de recursos
+energéticos mediante el análisis de datos de consumo y producción.
+
+
+- Mejora de la interacción humano-máquina
+    - La mejora de la interacción humano-máquina es fundamental para aumentar la
+    accesibilidad y usabilidad de las tecnologías avanzadas. Interfaces intuitivas y
+    amigables permiten a los usuarios aprovechar al máximo las capacidades de la IA sin
+    necesidad de conocimientos técnicos avanzados
+
+
+**Aplicaciones:**
+- Asistentes de voz: sistemas como Alexa y Google Assistant que mejoran
+continuamente en el reconocimiento de voz y la comprensión del lenguaje natural,
+permitiendo interacciones más fluidas y naturales.
+- Realidad aumentada y virtual: interfaces inmersivas que se utilizan en educación,
+entretenimiento y formación profesional, ofreciendo experiencias interactivas y
+atractivas.
+- Robótica colaborativa: robots diseñados para trabajar junto a humanos en entornos
+compartidos, mejorando la eficiencia y seguridad en sectores como la manufactura y
+la logística.
+
+- Resolución de problemas complejos
+    La capacidad de la IA para analizar grandes volúmenes de datos y realizar cálculos
+    avanzados permite abordar problemas complejos en diversas áreas. 
+
+**Aplicaciones:**
+- Ciencias ambientales: modelado y predicción de fenómenos climáticos para
+entender mejor el cambio climático y desarrollar estrategias de mitigación.
+- Biomedicina: análisis de datos genómicos y moleculares para identificar patrones y
+desarrollar tratamientos personalizados basados en las características individuales
+de cada paciente.
+- Seguridad: detección y prevención de ciberataques mediante el análisis de patrones
+de comportamiento y la implementación de respuestas automáticas.
+
+- Optimización de recursos
+    - La IA permite una gestión más eficiente de los recursos mediante la optimización de
+    procesos y la predicción de necesidades.
+
+**Aplicaciones:**
+- Logística: optimización de rutas de transporte, gestión de inventarios y reducción de
+tiempos de entrega mediante el uso de algoritmos de optimización.
+- Agricultura: implementación de agricultura de precisión utilizando drones y sensores
+para monitorear cultivos y optimizar el uso de agua, fertilizantes y pesticidas.
+- Energía: gestión inteligente de redes eléctricas que permite una distribución eficiente
+de la energía, integración de fuentes renovables y reducción de pérdidas.
+
+
+
 ## 10.3. Datos masivos en la Inteligencia Artificial
 
+La relación entre datos masivos y la IA es simbiótica: los datos masivos proporcionan
+la materia prima necesaria para entrenar modelos de IA, mientras que los algoritmos
+de IA ofrecen las herramientas necesarias para analizar y extraer valor de estos
+datos.
+
+- Salud:
+    - Predicción y diagnóstico:
+    - Medicina personalizada:
+- Finanzas:
+    - Detección de fraudes:
+    - Análisis de riesgos:
+- Marketing y publicidad:
+    - Personalización
+    - Análisis de sentimientos
+- Transporte y logística:
+    - Optimización de rutas
+    - Mantenimiento predictivo
+
+
 ## 10.4. La visión, el lenguaje natural y conocimiento
+
+La inteligencia artificial (IA) ha logrado avances significativos en tres áreas clave: la
+visión por computadora, el procesamiento del lenguaje natural (NLP) y la
+representación del conocimiento. Estas tecnologías permiten a los sistemas de IA
+interpretar y comprender el mundo visual, comunicarse en lenguaje humano y
+organizar información de manera eficiente. 
+
+**Visión por computadora**
+La visión por computadora permite a los sistemas de IA interpretar y analizar
+información visual del entorno. Esta tecnología se basa en algoritmos avanzados y
+redes neuronales convolucionales 
+
+**Procesamiento del lenguaje natural (NLP)**
+El procesamiento del lenguaje natural (NLP) permite a las máquinas comprender,
+interpretar y generar lenguaje humano, lo cual es crucial para mejorar la interacción
+entre humanos y máquinas. 
+
+**Representación y gestión del conocimiento**
+La representación del conocimiento implica la organización y estructuración de
+información de manera que pueda ser utilizada eficientemente por los sistemas de
+IA.
+
+
 
 
 ## 10.5. Ejemplos de aplicación de la Inteligencia Artificial
 
+IA Generativa: un ejemplo actual de la aplicación de la IA
+La inteligencia artificial generativa, una rama avanzada de la IA, ha emergido como
+una tecnología transformadora capaz de crear contenido nuevo a partir de datos
+existentes.
 
+Generación de textos
+La IA generativa ha revolucionado la creación de contenido textual
+
+Creación de imágenes
+Modelos como DALL-E y GANs pueden generar imágenes realistas y creativas a
+partir de descripciones textuales.
+
+Música y Audio
+La IA generativa también se aplica en la creación de música y contenido de audio.
+Modelos como Jukedeck y OpenAI's MuseNet pueden componer música en varios
+estilos y géneros, 
+
+Modelado 3D y animación
+La generación de contenido 3D ha sido potenciada por la IA generativa, permitiendo
+la creación de modelos y animaciones complejas con menor esfuerzo humano
+
+Impacto y futuro de la IA generativa
+La IA generativa está transformando diversas industrias al automatizar la creación de
+contenido y ofrecer nuevas herramientas creativas. Sin embargo, también plantea
+desafíos, como la necesidad de gestionar el uso ético de la tecnología, evitar la
+generación de contenido malicioso o engañoso, y garantizar que las creaciones de IA
+respeten los derechos de propiedad intelectual.
+
+## Cuestionario 
+
+1. ¿Cuál es una de las principales aplicaciones de la IA generativa en el campo de
+la salud?
+A. Diagnóstico de enfermedades utilizando imágenes médicas. -> Correcto 
+B. Creación de algoritmos de búsqueda.
+C. Desarrollo de videojuegos.
+D. Automatización de procesos financieros.
+
+
+2. ¿Cuál de las siguientes es una ventaja clave de la visión por computadora?
+A. Requiere menos datos para entrenar modelos precisos.
+B. Puede analizar imágenes y videos con gran precisión y velocidad. -> Correcto 
+C. Es menos costosa que otros métodos de IA.
+D. No plantea preocupaciones de privacidad.
+
+
+3. ¿Qué tecnología se utiliza comúnmente en el procesamiento del lenguaje natural
+para comprender el contexto de las palabras en una oración?
+A. Redes convolucionales.
+B. Algoritmos genéticos.
+C. Redes neuronales recurrentes. -> Correcto 
+D. Redes de retropropagación.
+
+
+4. ¿Cuál es uno de los desafíos principales de los modelos de IA generativa?
+A. Requieren una infraestructura de hardware muy simple.
+B. No pueden generar datos sintéticos.
+C. Pueden perpetuar sesgos presentes en los datos de entrenamiento.-> Correcto 
+D. Son fáciles de implementar sin conocimientos técnicos.
+
+5. ¿Cuál de las siguientes opciones describe mejor una red generativa adversaria (GAN)?
+A. Un algoritmo que clasifica datos en categorías predefinidas
+B. Una red neuronal que traduce texto de un idioma a otro
+C. Un modelo de IA que genera datos nuevos y realistas mediante la
+competencia entre dos redes neuronales -> Correcto
+D. Un sistema que optimiza rutas de transporte
+
+
+6. ¿Qué es el aprendizaje supervisado en el contexto del aprendizaje automático?
+A. Un método donde la máquina aprende a partir de datos no etiquetados.
+B. Un enfoque que no requiere datos de entrenamiento.
+C. Un método donde la máquina aprende a partir de datos etiquetados
+proporcionados por humanos. -> Correcto 
+D. Un proceso que implica solo la optimización de hardware.
+
+
+7. ¿Cuál es una aplicación práctica de los sistemas expertos en la medicina?
+A. Automatización de la fabricación de automóviles.
+B. Diagnóstico de enfermedades basado en el conocimiento médico -> Correcto 
+acumulado.
+C. Desarrollo de videojuegos.
+D. Análisis de sentimientos en redes sociales.
+
+
+8. ¿Qué herramienta se utiliza comúnmente para la representación del
+conocimiento en IA?
+A. Redes convolucionales.
+B. Algoritmos genéticos.
+C. Grafos de conocimiento. -> Correcto 
+D. Redes neuronales recurrentes.
+
+9. ¿Cuál de las siguientes es una desventaja de la IA generativa en el ámbito de la privacidad?
+A. Requiere menos datos para entrenar modelos precisos.
+B. Puede generar contenido malicioso o engañoso. -> Correcto 
+C. Facilita la creación de modelos predictivos.
+D. Mejora la personalización de servicios.
+
+10. ¿Qué ventaja ofrece la personalización a través del uso de IA en el marketing?
+A. Reducción de costos de producción.
+B. Mejora en la precisión del diagnóstico médico.
+C. Incremento en la satisfacción y fidelidad del cliente. -> Correcto 
+D. Optimización de rutas logísticas.
 
