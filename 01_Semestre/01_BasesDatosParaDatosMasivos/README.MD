@@ -1,5 +1,3 @@
-
-
 ## Tema 1. Métodos de captura de información
 
 ## 1.2. Origen y calidad de los datos
@@ -90,61 +88,66 @@ de base de datos.
 A. Dato.
 B. Información.
 C. Conocimiento.
-D. Las respuestas A y B son correctas.
+D. Las respuestas A y B son correctas. -> correcto 
+
+
 2. ¿Qué métodos pueden utilizarse para la transformación de información a
 conocimiento?
-A. Contextualización, agregación y cálculo.
+A. Contextualización, agregación y cálculo. ->correcto 
 B. Repercusión, conexión y conversación.
 C. Categorización, corrección y agregación.
 D. Análisis, investigación y discusión.
+
+
 3. ¿Qué métrica de calidad describe la proporción en la que un conjunto de datos
 contiene a la población que representa?
 A. Precisión.
 B. Consistencia.
-C. Completitud.
+C. Completitud. ->correcto 
 D. Interpretabilidad.
+
 4. ¿Cuál de los siguientes es un ejemplo de método de captura manual?
 A. Web scraping.
-B. Encuestas.
+B. Encuestas.  ->correcto
 C. Acceso a bases de datos relacionales.
 D. Lectura de termómetro digital.
-Test
-Bases de Datos para el Big Data
-Tema 1. Test
-44
+
 5. ¿En qué categoría de captura de datos entra la lectura de información del
 acelerómetro y giroscopio de un teléfono móvil?
 A. Captura manual.
 B. Procesamiento de documentos.
 C. Acceso a datos públicos.
-D. Sensores.
+D. Sensores.  ->correcto
+
 6. ¿Qué elemento es utilizado para delimitar valores en un fichero CSV?
-A. Coma.
+A. Coma.  ->correcto
 B. CRLF.
 C. Comillas dobles.
 D. Espacio.
+
 7. ¿Sobre qué estructuras se basa el formato JSON?
 A. Objetos y diccionarios.
 B. Tablas hash.
-C. Objetos y arrays.
+C. Objetos y arrays. -> Correcto
 D. Listas enlazadas.
+
 8. ¿Cuál de las siguientes condiciones sobre XML es verdadera?
-A. Un documento solo puede tener un elemento raíz.
+A. Un documento solo puede tener un elemento raíz.  -> Correcto
 B. El contenido de un elemento debe ser otro elemento.
 C. Todo elemento debe tener un atributo llamado «id».
 D. Los atributos deben de ser de tipo numérico.
-Test
-Bases de Datos para el Big Data
-Tema 1. Test
-45
+
+
 9. ¿Qué nombre recibe un conjunto de datos persistente utilizado por un sistema de
 software?
 A. Archivo.
 B. Base de datos.
 C. Registro.
-D. Las respuestas A y B son correctas.
+D. Las respuestas A y B son correctas. -> Correcto
+
+
 10. ¿Cuál es la instrucción de SQL para consultar información?
-A. SELECT.
+A. SELECT.  -> Correcto
 B. INSERT.
 C. UPDATE.
 D. DELETE.
@@ -433,69 +436,78 @@ se compara como es mongo vs BD relacional
 
 1. ¿Qué tipo de base de datos NoSQL se caracteriza por operaciones de lectura y
 escritura básicas, además de ser apropiados para entornos de gestión de caché?
-A. Almacén clave-valor simple.
+A. Almacén clave-valor simple. ->Correcto
 B. Almacén clave-valor sofisticado.
 C. Base de datos relacional.
 D. Almacén de documentos.
+
+
 2. ¿En qué categoría de base de datos NoSQL se clasifica a MongoDB?
 A. Almacén clave-valor simple.
 B. Almacén clave-valor sofisticado.
 C. Base de datos relacional.
-D. Almacén de documentos.
+D. Almacén de documentos. ->Correcto
+
+
 3. ¿Cuál de las siguientes afirmaciones es correcta?
-A. Cassandra se caracteriza porque todos sus nodos actúan por igual y se
-agrupan en anillo.
+A. Cassandra se caracteriza porque todos sus nodos actúan por igual y se agrupan en anillo.
 B. Cassandra y Neo4j están desarrolladas en Java.
-C. Neo4j es una base de datos transaccional compatible con ACID y que
-almacena y procesa grafos nativos.
-D. Todas las afirmaciones anteriores son correctas.
+C. Neo4j es una base de datos transaccional compatible con ACID y que almacena y procesa grafos nativos.
+D. Todas las afirmaciones anteriores son correctas. ->Correcto
+
+
 4. ¿Cuál es el equivalente a un registro en MongoDB?
 A. Base de datos.
 B. Collection.
 C. Tabla.
-D. Documento.
-Test
-Bases de Datos para el Big Data
-Tema 2. Test
-35
+D. Documento. ->Correcto
+
+
 5. ¿Cuál es el término equivalente a una tabla en MongoDB?
 A. Base de datos.
-B. Collection.
+B. Collection. ->Correcto
 C. Registro.
 D. Documento.
+
+
 6. ¿Cuándo se detalla el uso de la primera base de datos NoSQL?
 A. En 2007, cuando Amazon liberó DynamoDB.
 B. Con Carlo Strozzi en 1998.
-C. En 1965 con MultiValue.
+C. En 1965 con MultiValue. -> Correcto
 D. Eric Evans en 2009.
+
+
 7. ¿Cuál de las siguientes es una ventaja de las bases de datos NoSQL?
 A. No generan cuellos de botella.
 B. Tecnología madura.
 C. Responden a la necesidad de escalabilidades horizontal demandada cada
 vez por más empresas y, además, de manera sencilla.
-D. Las respuestas A y C son correctas.
+D. Las respuestas A y C son correctas. -> Correcto
+
+
 8. ¿Cuál de las siguientes afirmaciones es correcta?
-A. Todo sistema distribuido no puede garantizar a la vez que haya
-consistencia, disponibilidad y tolerancia a particiones.
+A. Todo sistema distribuido no puede garantizar a la vez que haya consistencia, 
+disponibilidad y tolerancia a particiones. -> Correcto
 B. Un sistema distribuido garantiza al menos disponibilidad y consistencia.
 C. Un sistema distribuido que garantiza la consistencia y la tolerancia a
 particiones no sacrifica por ello la disponibilidad.
 D. Todas las afirmaciones anteriores son correctas
-Test
-Bases de Datos para el Big Data
-Tema 2. Test
-36
+
+
+
 9. ¿Qué patrón de diseño de MongoDB permite incluir un documento dentro de
 otro?
-A. Uno-a-uno con documentos embebidos.
+A. Uno-a-uno con documentos embebidos. -> Correcto
 B. Uno-a-uno con documentos referidos.
 C. Uno-a-varios con documentos referidos.
 D. Las respuestas B y C son correctas.
+
+
 10. ¿Qué patrón de diseño de MongoDB permite incluir una lista de referencias a
 otros documentos dentro de un documento principal?
 A. Uno-a-uno con documentos embebidos.
 B. Uno-a-uno con documentos referidos.
-C. Uno-a-varios con documentos referidos.
+C. Uno-a-varios con documentos referidos. -> Correcto
 D. Las respuestas B y C son correctas.
 
 
@@ -781,8 +793,6 @@ print (e);
   - Se fomenta la participación y comentarios en el foro sobre los resultados de las operaciones.
 
 
-
-
 ## MongoDB y Las operaciones de lectura y actualización
 
 > Lectura de datos en MongoDB
@@ -954,8 +964,10 @@ db.libros.deleteMany({precio : {$gte : 50 }})
 datos con la que se trabajará?
 A. select.
 B. find.
-C. use.
+C. use.  ->correcto
 D. Las respuestas A y C son correctas.
+
+
 2. ¿Cuál de las siguientes afirmaciones es correcta?
 A. MongoBooster es una herramienta GUI multiplataforma que facilita la
 construcción de consultas.
@@ -963,62 +975,70 @@ B. MongoDB Compass es una herramienta no propietaria para la
 manipulación externa de bases de datos MongoDB.
 C. MongoBooster y MongoDB Compass proporcionan información estadística
 y de rendimiento de una base de datos MongoDB.
-D. Todas las afirmaciones anteriores son correctas.
+D. Todas las afirmaciones anteriores son correctas.->correcto
+
+
 3. ¿Cuál será el resultado al insertar un documento que posee un atributo más al
 resto de atributos de la colección?
 A. Dará un fallo al insertar los datos porque el modelo de datos es diferente.
-B. Insertará los datos a la colección.
+B. Insertará los datos a la colección. ->correcto
 C. Insertará los datos a la colección y creará el nuevo atributo vacío en el
 resto de documentos.
 D. Insertará los datos a la colección, pero sin el nuevo atributo para cumplir
 con el modelo.
-Test
-Bases de Datos para el Big Data
-Tema 3. Test
-52
+
+
 4. ¿Qué comando puede utilizarse en MongoDB para la creación de un nuevo
 documento dentro de una collection?
 A. save.
 B. insert.
 C. create.
-D. Las respuestas A y B son correctas.
+D. Las respuestas A y B son correctas. ->correcto
+
+
 5. ¿Cuál es el nombre del atributo especial en las collections de MongoDB que
 ayuda a identificar de manera única a cada documento?
-A. _id.
+A. _id.  ->correcto
 B. ID.
 C. Primary key.
 D. Identifier.
+
+
 6. ¿Qué método permite modificar los datos de un documento sin tener que incluir
 el documento completo como argumento?
 A. save.
 B. store.
-C. update.
+C. update. ->correcto
 D. set.
+
+
 7. La operación MongoDB equivalente a JOIN en SQL es:
 A. Se puede conseguir concatenando sentencias find en la misma operación.
-B. El aggregation framework.
+B. El aggregation framework. ->correcto
 C. MongoDB no tiene operación equivalente a JOIN hasta su versión 3.2.
 D. Ninguna de las anteriores es cierta.
-Test
-Bases de Datos para el Big Data
-Tema 3. Test
-53
+
+
 8. ¿Qué situación tiene que darse para que el comando save actualice un
 documento?
-A. Que el argumento contenga un identificador existente en la collection.
+A. Que el argumento contenga un identificador existente en la collection. ->correcto
 B. Que el segundo argumento en el comando sea el valor true.
 C. Que el argumento se parezca en más de un 50 % a un documento en la
 collection.
 D. save no puede utilizarse para actualizar documentos.
+
+
 9. ¿Qué comando se utiliza en MongoDB para eliminar un conjunto de
 documentos?
 A. save.
-B. delete.
+B. delete. -> Correcto
 C. remove.
 D. unset.
+
+
 10. ¿Qué comando puede aplicarse sobre el resultado de una consulta en
 MongoDB para restringir el número de documentos retornados?
-A. limit.
+A. limit. -> Correcto
 B. restrict.
 C. skip.
 D. sort.
