@@ -2859,3 +2859,69 @@ Permite la detección automática de defectos en productos durante la producció
   - Facilita el entrenamiento de modelos de IA al permitir el aprendizaje de grandes cantidades de datos, mejorando la precisión de las predicciones.
 - ¿Cuál es una aplicación de la IA generativa en el diseño gráfico y publicidad?
   - Permite crear nuevas obras de arte y variaciones de diseño, mejorando la creatividad y eficiencia en campañas publicitarias.
+
+## Videoclase 2. 
+## Notas:
+- ¿Cómo impacta la computación en el borde en las aplicaciones de IA en tiempo real?
+  - Reduce la latencia al procesar grandes conjuntos de datos cerca de su fuente, mejorando la eficiencia y privacidad en aplicaciones como vehículos autónomos.
+
+- ¿Qué papel desempeñan las técnicas de visualización avanzada en la analítica de datos masivos?
+  - Permiten a los usuarios interpretar datos complejos de forma intuitiva, facilitando la toma de decisiones informadas mediante herramientas interactivas.
+
+- ¿Cuál es el impacto de la IA en la automatización industrial basada en datos?
+  - Permite el mantenimiento predictivo y optimiza los procesos de manufactura, reduciendo tiempos de inactividad y mejorando la seguridad operativa.
+
+- ¿Cómo contribuye la personalización basada en IA y Big Data al e-commerce?
+  - Mejora la experiencia del usuario mediante motores de recomendación que analizan historial de compra y navegación, aumentando la satisfacción y las ventas.
+
+- ¿Qué desafío ético plantea el uso de IA en la gestión de Big Data y el uso de datos personales?
+  - Garantizar la privacidad y cumplir con normativas como GDPR, asegurando que los datos sean manejados de forma ética y segura.   
+
+
+## Videoclase 3. 
+## Notas:
+- ¿Qué beneficio tiene la inteligencia artificial en el desarrollo de software?
+  - Automatiza tareas repetitivas de codificación, depuración y pruebas, acelerando el proceso de desarrollo y mejorando la calidad del software.
+- ¿Cómo se utiliza la IA en la navegación y el transporte?
+  - Optimiza rutas y mejora la seguridad mediante el análisis de datos de tráfico en tiempo real.
+- ¿Cuál es una aplicación de la IA en la seguridad y cumplimiento normativo?
+  - Automatizar la detección de amenazas cibernéticas en tiempo real, identificando comportamientos anómalos, asegurando el cumplimiento normativo.
+- ¿Cómo se está aplicando la IA en la agricultura moderna?
+  - Emplea visión por computadora y análisis de datos para monitorear la salud del suelo, gestionar el riego, y optimizar la fertilización de cultivos.
+- ¿Qué ventaja ofrece la IA en el sector educativo?
+  - Personaliza el aprendizaje adaptando el contenido a las necesidades individuales de los estudiantes, mejorando los resultados educativos y la eficiencia del proceso.
+
+
+## Tema 11. Aplicaciones en Industria 4.0
+
+## 11.2. Conceptos de la Industria 4.0
+
+es un término que se refiere a la
+transformación completa de los procesos de producción mediante la integración de
+tecnologías digitales avanzadas.
+
+**Sistemas ciberfísicos (CPS)** 
+Los sistemas ciberfísicos son la columna vertebral de la Industria 4.0. Estos sistemas
+integran el mundo físico con el digital, utilizando sensores, actuadores y redes de
+comunicación para recopilar y procesar datos en tiempo real. Los CPS permiten la
+monitorización y control de procesos físicos a través de algoritmos computacionales
+y modelos digitales.
+
+**Internet de las cosas industrial (IIoT)**
+El IIoT extiende el concepto del internet de las cosas al ámbito industrial. En este
+contexto, los objetos físicos como máquinas, herramientas y equipos están
+equipados con sensores que recopilan datos sobre su funcionamiento y estado
+
+**Big data y análisis de datos**
+El análisis de grandes volúmenes de datos es otro pilar crucial de la Industria 4.0. La
+cantidad de datos generados por los sensores y dispositivos en una fábrica
+inteligente es inmensa. Big data se refiere a la capacidad de manejar y analizar estos
+datos para extraer información valiosa que puede utilizarse para mejorar los
+procesos de producción. 
+
+
+
+## 11.3. Objetivos de la Industria 4.0
+## 11.4. Datos masivos en la industria 4.0
+## 11.5. Cadena de suministros, producción y distribución
+
