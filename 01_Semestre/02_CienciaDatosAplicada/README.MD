@@ -3233,7 +3233,6 @@ En lugar de presentar simplemente un gráfico de líneas, puedes crear una narra
 - Infografía: Resume los principales hallazgos y el mensaje clave de la historia.
 
 
-
 ## 12.4. Tecnología blockchain
 
 La tecnología blockchain, o cadena de bloques, es un sistema de registro
