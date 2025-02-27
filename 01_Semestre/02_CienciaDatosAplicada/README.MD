@@ -3144,16 +3144,16 @@ D. iCloud.
 
 ## Videoclase 3. 
 ## Notas:
-- 
-  - 
-- 
-  - 
-- 
-  - 
-- 
-  - 
-- 
-  - 
+- ¿Cómo optimiza la ciencia de datos la gestión de la energía en los centros de datos?
+  - Utiliza algoritmos de Big Data para ajustar dinámicamente la distribución de carga y enfriamiento, reduciendo el consumo energético y las emisiones de carbono.
+- ¿Qué impacto tiene el mantenimiento predictivo en la industria 4.0?
+  - Reduce el tiempo de inactividad no planificado al anticipar fallas, permitiendo una intervención proactiva y eficiente.
+- ¿Cómo contribuye la impresión 3D a mejorar la eficiencia operativa en la fabricación industrial?
+  - Facilita la creación rápida y personalizada de piezas, reduciendo costos y tiempos de desarrollo.
+- ¿Qué ventaja proporciona la automatización inteligente en la industria?
+  - Permite la monitorización en tiempo real y ajuste automático de procesos, mejorando la flexibilidad y la productividad sin intervención constante.
+- ¿Cómo contribuye la ciencia de datos a la sostenibilidad en la industria 4.0?
+  - Optimiza el uso de recursos y energía mediante análisis de datos en tiempo real, reduciendo costos, enfocando inversiones y mejorando el impacto ambiental
 
 
 ## Tema 12. Nuevas aplicaciones y tendencias
@@ -3164,6 +3164,13 @@ dispositivos y objetos a través de Internet, permitiendo que se comuniquen entr
 con los usuarios. Este fenómeno está impulsado por la miniaturización de los
 sensores, la mejora de las tecnologías de comunicación y la creciente capacidad de
 procesamiento y almacenamiento de datos.
+
+## Tienen 4 Capas 
+- Capa de dispositivos: son sensores conectados que permite capturar información del enterno 
+- Capa de Comunicación: son los dispositivos que permiten la conectividad y la subida de los datos bien sea redes  wifis, 5g  Utiliza protocolos como Wi-Fi y Bluetooth para transferir datos entre dispositivos, asegurando una transmisión eficiente y en tiempo real.
+- Capa de procesamientos de eventos: son los algoritmos desarrollados para dar alertas en tiempo real ya que analizan los datos para generar insights 
+- capa comunicación cliente: Permite reflejar en un dashboard o en dispositivos los resultados ya analizados para ayudar en la toma de deciciones  
+
 
 ## 12.3. La importancia de contar historias con tus datos o data storytelling
 E l storytelling de datos es la práctica de comunicar información compleja y
@@ -3233,6 +3240,29 @@ En lugar de presentar simplemente un gráfico de líneas, puedes crear una narra
 - Infografía: Resume los principales hallazgos y el mensaje clave de la historia.
 
 
+# El proceso de creación de una historia con datos
+
+## Introducción al proyecto:
+
+* Establecer el propósito del proyecto y el problema a resolver.
+* Contextualizar la importancia del análisis.
+
+## Confrontación:
+
+* Explicar por qué es crucial resolver el problema y los diferentes enfoques considerados.
+* Mantener a la audiencia interesada e intrigada mediante la presentación de desafíos y obstáculos encontrados durante el análisis.
+
+## Resolución:
+
+* Presentar la solución propuesta y cómo supera los obstáculos anteriores.
+* Invitar a la audiencia a hacer preguntas y proporcionar feedback.
+
+## Estructura del principio de la pirámide:
+
+* Responder primero a la pregunta principal.
+* Apoyar la respuesta con argumentos sólidos y datos.
+* Concluir con implicaciones y recomendaciones prácticas.
+
 ## 12.4. Tecnología blockchain
 
 La tecnología blockchain, o cadena de bloques, es un sistema de registro
@@ -3246,6 +3276,18 @@ proporciona una capa adicional de seguridad y confianza en la gestión de regist
 En el sector financiero, la blockchain tiene el potencial de transformar las
 transacciones bancarias y de valores, haciendo que sean más rápidas, seguras y
 menos costosas
+
+**Proof of Work (PoW):**
+
+* **Descripción:** requiere que los nodos resuelvan problemas criptográficos complejos para validar transacciones y agregar nuevos bloques. Este proceso es intensivo en recursos, pero asegura que solo los nodos honestos puedan añadir bloques a la cadena.
+
+* **Uso común:** utilizado por Bitcoin y otras criptomonedas. Asegura la integridad y seguridad de la red a través de la competencia entre los nodos.
+
+**Proof of Stake (PoS):**
+
+* **Descripción:** los nodos validadores son seleccionados en función de la cantidad de criptomonedas que poseen y están dispuestos a «apostar». Este método es más eficiente energéticamente y reduce el riesgo de centralización.
+
+* **Ventajas:** mayor eficiencia energética y seguridad contra ciertos tipos de ataques.
 
 **Aplicaciones**
 - Sector financiero: transferencias internacionales
@@ -3319,39 +3361,39 @@ D. Mayor consumo de energía.
 
 ## Videoclase 1. 
 ## Notas:
-- 
-  - 
-- 
-  - 
-- 
-  - 
-- 
-  - 
-- 
-  - 
+- ¿Cuál es el impacto del Internet de las Cosas (IoT) en la agricultura de precisión?
+  - Mejora el rendimiento de los cultivos al proporcionar datos en tiempo real sobre humedad, temperatura y nutrientes, optimizando el uso de recursos.
+- ¿Cómo contribuye el IoT al mantenimiento predictivo industrial?
+  - Monitorea continuamente variables como vibración y temperatura, permitiendo predecir fallos antes de que ocurran, reduciendo costos de mantenimiento.
+- ¿Cuál es la importancia de la capa de comunicación en el IoT?
+  - Utiliza protocolos como Wi-Fi y Bluetooth para transferir datos entre dispositivos, asegurando una transmisión eficiente y en tiempo real.
+- ¿Cómo impacta el IoT en la gestión energética?
+  - Recopila datos en tiempo real sobre consumo energético, permitiendo ajustar la distribución y uso de energía para mejorar la eficiencia y reducir costos.
+- ¿Qué desafío clave enfrenta el IoT en el sector financiero?
+  - Proteger la integridad de los datos recopilados por dispositivos conectados para evitar fraudes y garantizar transacciones seguras.
 
 ## Videoclase 2. 
 ## Notas:
-- 
-  - 
-- 
-  - 
-- 
-  - 
-- 
-  - 
-- 
-  - 
+- ¿Cuál es el propósito principal del Data Storytelling según la videoclase?
+  - Transformar datos complejos en narrativas comprensibles y persuasivas para facilitar la toma de decisiones basadas en datos.
+- ¿Qué estrategia es clave para un Data Storytelling efectivo?
+  - Conocer a la audiencia y adaptar la narrativa a sus necesidades y nivel de comprensión, anticipando posibles preguntas y reacciones.
+- ¿Cuál es un beneficio clave del Data Storytelling para las organizaciones?
+  - Hace la información compleja más accesible, promoviendo una cultura basada en datos y facilitando la toma de decisiones informadas en todos los niveles.
+- ¿Qué reto se menciona para el futuro del Data Storytelling?
+  - Mantener un equilibrio entre la complejidad técnica de los datos y la simplicidad narrativa para no abrumar a la audiencia.
+- ¿Qué ejemplo de éxito en Data Storytelling se mencionan?
+  - Spotify Wrapped, que utiliza datos de uso para crear una narrativa personalizada sobre la actividad musical del usuario durante el año.
 
 ## Videoclase 3. 
 ## Notas:
-- 
-  - 
-- 
-  - 
-- 
-  - 
-- 
-  - 
-- 
-  - 
+- ¿Qué es la tecnología Blockchain y cuál es su función principal?
+  - Una base de datos distribuida que proporciona seguridad, transparencia y eficiencia al eliminar intermediarios y registrar transacciones de manera descentralizada.
+- ¿Qué mecanismo de consenso en Blockchain es más eficiente energéticamente?
+  - Proof of Stake (PoS), que selecciona validadores según la cantidad de criptomonedas que poseen, reduciendo el consumo de energía.
+- ¿Cómo contribuye Blockchain a la trazabilidad en la cadena de suministro?
+  - Registra cada transacción de forma inmutable, permitiendo el seguimiento del origen y recorrido de productos hasta el consumidor final.
+- ¿Cuál es una aplicación emergente de Blockchain en redes sociales?
+  - Verificar la autenticidad de la información y combatir las noticias falsas rastreando la fuente de las publicaciones.
+- ¿Qué desafío enfrenta Blockchain en su implementación global?
+  - Problemas de escalabilidad y desafíos regulatorios que dificultan su adopción masiva y su integración con sistemas existentes.
