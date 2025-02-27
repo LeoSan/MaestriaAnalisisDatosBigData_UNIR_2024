@@ -2919,9 +2919,440 @@ inteligente es inmensa. Big data se refiere a la capacidad de manejar y analizar
 datos para extraer información valiosa que puede utilizarse para mejorar los
 procesos de producción. 
 
-
-
 ## 11.3. Objetivos de la Industria 4.0
+
+La mejora de la eficiencia operativa es uno de los objetivos primordiales de la
+Industria 4.0. La implementación de tecnologías como los sistemas ciberfísicos
+(CPS), el Internet de las Cosas (IoT) y la inteligencia artificial (IA) permite la
+monitorización y control en tiempo real de los procesos productivos. Estos avances
+tecnológicos facilitan la optimización de los recursos, la reducción de desperdicios y
+la minimización de tiempos de inactividad mediante el mantenimiento predictivo. Las
+fábricas inteligentes, equipadas con sensores y conectadas a través de redes,
+pueden ajustar sus operaciones de manera autónoma para maximizar la
+productividad y la eficiencia.
+
+
 ## 11.4. Datos masivos en la industria 4.0
+
+
+En la industria 4.0, los datos masivos, conocidos como big data, desempeñan un
+papel crucial en la optimización de los procesos de producción y en la toma de
+decisiones estratégicas
+
+## Ejemplos concretos y aplicaciones prácticas
+
+**Mantenimiento predictivo**
+
+- Ejemplo: General Electric (GE) utiliza sensores en sus turbinas y motores aéreos
+para recopilar datos en tiempo real. Estos datos son analizados para predecir
+posibles fallos y programar el mantenimiento antes de que ocurran problemas, lo que
+reduce significativamente el tiempo de inactividad y los costos de reparación.
+
+- Aplicación práctica: la integración de sensores IoT en maquinaria industrial permite
+monitorizar continuamente el estado de los equipos y anticipar fallos, mejorando la
+eficiencia y prolongando la vida útil de los activos.                     
+
+
+**Optimización de la cadena de suministro**
+- Ejemplo: Walmart utiliza análisis de big data para optimizar su cadena de suministro.
+Analiza datos de ventas, inventarios y patrones de compra para predecir la demanda
+de productos y ajustar el stock en tiempo real.
+
+- Aplicación práctica: las empresas pueden utilizar datos masivos para obtener una
+visibilidad completa de la cadena de suministro, optimizando la logística, mejorando
+la precisión en la previsión de la demanda y reduciendo los costos operativos.
+
+**Personalización de productos**
+
+- Ejemplo: Nike emplea big data para personalizar las experiencias de compra de sus
+clientes. A través del análisis de datos de comportamiento de compra y preferencias
+de los clientes, Nike ofrece recomendaciones personalizadas y diseños de productos
+a medida.
+
+- Aplicación práctica: las empresas pueden analizar datos de clientes para ofrecer
+productos personalizados, mejorando la satisfacción del cliente y aumentando la
+lealtad a la marca
+
+
+## Plataformas conocidas del mercado
+
+**Apache Hadoop**
+Es una de las plataformas más utilizadas para el almacenamiento y procesamiento
+de grandes volúmenes de datos. Hadoop permite a las empresas manejar datos
+estructurados y no estructurados a gran escala de manera eficiente.
+
+**Apache Spark**
+Conocido por su velocidad y capacidad de procesamiento en tiempo real, Spark es
+ideal para análisis rápidos y complejos de big data. Es ampliamente utilizado en
+aplicaciones de machine learning y análisis predictivo.
+
+**Microsoft Azure:**
+Azure ofrece servicios de big data y análisis a través de su plataforma en la nube.
+Permite a las empresas almacenar, procesar y analizar grandes volúmenes de datos
+con herramientas como Azure HDInsight y Azure Synapse Analytics.
+
+**Google BigQuery**
+Es un almacén de datos completamente administrado que permite realizar consultas
+SQL rápidas y en tiempo real. BigQuery es ideal para el análisis de grandes
+conjuntos de datos y se integra con otras herramientas de Google Cloud Platform. 
+
+## Ventajas del uso de datos masivos
+
+**Mejora de la toma de decisiones**
+El análisis de grandes volúmenes de datos proporciona información valiosa que
+ayuda a las empresas a tomar decisiones informadas y basadas en evidencia.
+
+**Aumento de la eficiencia operativa**
+La capacidad de analizar datos en tiempo real permite optimizar los procesos de
+producción, reducir desperdicios y mejorar la eficiencia general.
+
+**Personalización y satisfacción del cliente**
+El análisis de datos de clientes permite ofrecer productos y servicios personalizados,
+mejorando la experiencia del cliente y aumentando la lealtad a la marca.
+
+**Reducción de costos**
+Las técnicas de mantenimiento predictivo y la optimización de la cadena de
+suministro pueden reducir significativamente los costos operativos y de
+mantenimiento
+
+
+## Desventajas del uso de datos masivos
+
+**Complejidad y costo de implementación**
+La implementación de soluciones de Big Data puede ser costosa y compleja,
+requiriendo inversiones significativas en infraestructura y capacitación del personal
+
+**Problemas de privacidad y seguridad**
+El manejo de grandes volúmenes de datos sensibles plantea riesgos de privacidad y
+seguridad y requiere medidas estrictas de ciberseguridad para proteger la
+información
+
+**Calidad de los datos**
+La precisión de los análisis de big data depende de la calidad de los datos. Datos
+incompletos o incorrectos pueden llevar a conclusiones erróneas y decisiones
+ineficaces
+
+**Gestión del cambio**
+La adopción de tecnologías de big data requiere cambios en la cultura organizacional
+y en los procesos empresariales, lo que puede ser un desafío para algunas
+organizaciones.
+
 ## 11.5. Cadena de suministros, producción y distribución
 
+La cadena de suministro en la Industria 4.0 se caracteriza por la integración y la
+visibilidad en tiempo real. Las tecnologías como el Internet de las Cosas (IoT), el Big
+Data y la inteligencia artificial permiten a las empresas monitorear y gestionar cada
+eslabón de la cadena de suministro de manera más eficiente. 
+
+## Cuestionarios 
+
+1. ¿Cuál de las siguientes tecnologías es un pilar fundamental de la Industria 4.0?
+A. Blockchain.
+B. Realidad Virtual.
+C. Sistemas Ciberfísicos. ->Correcto  
+D. Redes Sociales.
+
+
+2. ¿Qué objetivo principal tiene el uso de Big Data en la Industria 4.0?
+A. Reducir el uso de tecnología.
+B. Incrementar el volumen de producción.
+C. Optimizar procesos de producción y mantenimiento.->Correcto  
+D. Limitar la conectividad de dispositivos.
+
+
+3. ¿Cuál es una aplicación práctica de la fabricación aditiva en la Industria 4.0?
+A. Producción en masa de productos idénticos.
+B. Creación de piezas personalizadas y prototipos. -> Correcto 
+C. Aumentar los costos de producción.
+D. Reducción de la conectividad entre dispositivos.
+
+
+4. ¿Qué plataforma es ampliamente utilizada para el almacenamiento y procesamiento de grandes volúmenes de datos en la Industria 4.0?
+A. Apache Hadoop. -> Correcto 
+B. Microsoft Excel.
+C. Facebook.
+D. Instagram
+
+
+5. ¿Cuál es una ventaja clave del uso de robots colaborativos (cobots) en la producción industrial?
+A. Incremento de errores en la producción.
+B. Eliminación de la intervención humana.
+C. Mejora de la eficiencia y reducción de errores.  -> Correcto 
+D. Disminución de la calidad del producto.
+
+
+6. ¿Cuál de las siguientes es una plataforma conocida para el análisis de big data en tiempo real?
+A. Microsoft Word.
+B. Apache Spark. -> Correcto 
+C. Adobe Photoshop.
+D. Google Docs.
+
+
+7. ¿Qué tecnología permite la creación de réplicas virtuales de productos y procesos en la Industria 4.0?
+A. Realidad Virtual.
+B. Gemelos Digitales.-> Correcto 
+C. Redes Sociales.
+D. Computación Cuántica.
+
+
+8. ¿Cuál es una desventaja significativa del uso de Big Data en la Industria 4.0?
+A. Reducción de costos operativos.
+B. Mejora en la toma de decisiones.
+C. Complejidad y costo de implementación. -> Correcto 
+D. Aumento de la eficiencia operativa.
+
+
+9. ¿Qué ventaja proporciona la integración de la cadena de suministro digital en la Industria 4.0?
+A. Aumento de la burocracia.
+B. Reducción de la visibilidad de los procesos.
+C. Mejora de la coordinación y optimización logística. ->Correcto 
+D. Disminución de la capacidad de respuesta.
+
+
+10. ¿Qué herramienta en la nube es conocida por permitir consultas SQL rápidas y en tiempo real para grandes conjuntos de datos?
+A. Microsoft Azure. 
+B. Google BigQuery. ->Correcto 
+C. Dropbox.
+D. iCloud.
+
+
+## Videoclase 1. 
+## Notas:
+- ¿Cuál es uno de los propósitos de Big Data en la Industria 4.0?
+  - Proporcionar datos en tiempo real para la toma de decisiones estratégicas y la optimización de procesos, mejorando la eficiencia y la calidad de los procesos.
+- ¿Cómo se utiliza la simulación en la optimización de procesos de manufactura?
+  - Utiliza herramientas para modelar y evaluar diferentes escenarios antes de aplicarlos.
+- ¿Qué beneficios ofrece la robótica avanzada en las líneas de producción?
+  - Reduce errores humanos, mejora la seguridad laboral y aumenta la flexibilidad en las líneas de producción.
+- ¿Cuál es la importancia del uso de Blockchain en la gestión de la cadena de suministro?
+  - Garantiza la transparencia y trazabilidad en todas las etapas, mejorando la eficiencia y reduciendo riesgos de fraude.
+- ¿Cómo contribuye la fabricación aditiva a la personalización en masa?
+  - Utiliza, por ejemplo, impresión 3D y Big Data para crear componentes personalizados de manera eficiente, reduciendo costos y tiempos de producción.
+
+## Videoclase 2. 
+## Notas:
+- ¿Qué técnicas utiliza el análisis predictivo en la gestión de inventarios?
+  - Se basa en algoritmos de Machine Learning que analizan datos históricos y actuales para optimizar la planificación de producción y ajustar niveles de stock en tiempo real.
+- ¿Cómo mejora el uso de blockchain la trazabilidad en las cadenas de suministro?
+  - Asegura la transparencia de los datos a lo largo de todas las etapas, garantizando la autenticidad del producto desde su origen hasta el consumidor final.
+- ¿Qué ventaja ofrecen los gemelos digitales en la cadena de suministro?
+  -  Automatiza tareas repetitivas y administrativas, reduciendo errores humanos y mejorando la productividad general en la cadena de suministro.
+- ¿Cuál es la función de los dispositivos IoT en la gestión de la cadena de suministro?
+  - Recopilar datos en tiempo real sobre condiciones de productos y almacenamiento, facilitando la respuesta rápida a cambios en la demanda.
+- ¿Cómo contribuye la automatización de procesos con RPA a la eficiencia operativa?
+  - Automatiza tareas repetitivas y administrativas, reduciendo errores humanos y mejorando la productividad general en la cadena de suministro.
+
+## Videoclase 3. 
+## Notas:
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+
+
+## Tema 12. Nuevas aplicaciones y tendencias
+
+## 12.2. Internet de las cosas
+El Internet de las cosas (IoT, por sus siglas en inglés) se refiere a la interconexión de
+dispositivos y objetos a través de Internet, permitiendo que se comuniquen entre sí y
+con los usuarios. Este fenómeno está impulsado por la miniaturización de los
+sensores, la mejora de las tecnologías de comunicación y la creciente capacidad de
+procesamiento y almacenamiento de datos.
+
+## 12.3. La importancia de contar historias con tus datos o data storytelling
+E l storytelling de datos es la práctica de comunicar información compleja y
+estadística mediante narrativas que faciliten su comprensión y relevancia. Esta
+técnica se basa en la idea de que los seres humanos son naturalmente atraídos por
+las historias, lo que hace que los datos presentados en forma narrativa sean más
+fáciles de entender y recordar. El storytelling de datos es especialmente valioso en el
+contexto empresarial, donde los líderes deben tomar decisiones basadas en datos y
+comunicar estos insights de manera efectiva a diferentes audiencias
+
+
+
+📝El storytelling es el arte de contar historias para comunicar un mensaje de manera efectiva.
+
+👾 Implica estructurar la información en una narrativa que atrape la atención de la audiencia, genere conexión emocional y facilite la comprensión. 
+
+🤖En el contexto de los datos, el storytelling ayuda a transformar números y estadísticas en relatos significativos.
+
+🤖Elementos clave del storytelling
+
+- Personajes: Pueden ser personas reales, entidades abstractas o incluso los propios datos personificados.
+
+- Trama: La secuencia de eventos que da sentido a la historia. En datos, la trama puede ser la evolución de una tendencia, la comparación entre grupos o la explicación de una causa y efecto.
+
+- Conflicto: El desafío o problema que los personajes deben superar. En datos, el conflicto puede ser una discrepancia, una anomalía o una pregunta sin respuesta.
+
+- Resolución: La solución al conflicto, la conclusión de la historia. En datos, la resolución puede ser la respuesta a la pregunta, la identificación de una oportunidad o la toma de una decisión.
+
+- Mensaje: La idea principal que se quiere transmitir. En datos, el mensaje debe ser claro, conciso y relevante para la audiencia.
+
+
+👽 Ejemplo práctico: Storytelling con datos de ventas
+
+Imagina que tienes un conjunto de datos con las ventas mensuales de una empresa de comercio electrónico durante el último año. 
+
+En lugar de presentar simplemente un gráfico de líneas, puedes crear una narrativa más atractiva:
+
+👯🏽‍♂️Personajes:
+-  "La empresa", representada por el director de ventas.
+- "Los clientes", segmentados en diferentes grupos demográficos.
+- "El producto estrella", un artículo que destaca en las ventas.
+
+💅🏽Trama:
+- "A principios de año, las ventas estaban estancadas".
+- "El director de ventas implementó una nueva campaña de marketing dirigida a un segmento específico de clientes".
+- "Las ventas del producto estrella aumentaron significativamente".
+- "La empresa experimentó un crecimiento sostenido durante el resto del año".
+
+🤳🏽Conflicto:
+- "¿Cómo podemos aumentar las ventas y llegar a nuevos clientes?".
+
+🤯Resolución:
+"La campaña de marketing dirigida y el enfoque en el producto estrella fueron clave para el éxito".
+
+👂🏽Mensaje:
+"La segmentación de clientes y la promoción de productos clave pueden impulsar el crecimiento de las ventas".
+
+
+📊Ilustración de la narrativa
+
+- Gráfico de líneas: Muestra la evolución de las ventas mensuales, destacando el punto de inflexión después de la campaña de marketing.
+
+- Gráfico de barras: Compara las ventas del producto estrella antes y después de la campaña.
+
+- Mapa de calor: Indica los segmentos de clientes que respondieron mejor a la campaña.
+
+- Infografía: Resume los principales hallazgos y el mensaje clave de la historia.
+
+
+
+## 12.4. Tecnología blockchain
+
+La tecnología blockchain, o cadena de bloques, es un sistema de registro
+descentralizado que permite la transferencia segura y transparente de activos
+digitales. Aunque la blockchain es conocida principalmente por su uso en
+criptomonedas como Bitcoin, sus aplicaciones se extienden mucho más allá. Una de
+las características clave de la blockchain es su inmutabilidad, lo que significa que una
+vez que se registra una transacción, no puede ser alterada ni eliminada. Esto
+proporciona una capa adicional de seguridad y confianza en la gestión de registros.
+
+En el sector financiero, la blockchain tiene el potencial de transformar las
+transacciones bancarias y de valores, haciendo que sean más rápidas, seguras y
+menos costosas
+
+**Aplicaciones**
+- Sector financiero: transferencias internacionales
+- Gestión de la cadena de suministro: trazabilidad de productos
+- Votación electrónica: transparencia y seguridad
+- Propiedad intelectual: protección y gestión de derechos
+- Contratos inteligentes: automatización y eficiencia
+
+## Cuestionario 
+
+1. ¿Qué es el Internet de las Cosas (IoT)?
+A. Una red de dispositivos interconectados que pueden comunicarse entre sí y con los usuarios. -> Correcto
+B. Una nueva red social.
+C. Un tipo de software de inteligencia artificial.
+D. Una plataforma de comercio electrónico.
+
+2. ¿Cuál es un ejemplo de aplicación de IoT en la salud?
+A. Videojuegos.
+B. Monitores de actividad física como Fitbit. -> Correcto 
+C. Plataformas de redes sociales.
+D. Aplicaciones de streaming de música.
+
+3. ¿Qué tecnología se combina frecuentemente con IoT para mejorar la eficiencia operativa en la industria?
+A. Realidad virtual.
+B. Edge computing. -> Correcto 
+C. Redes sociales.
+D. Publicidad en línea.
+
+4. ¿Cuál de las siguientes es una preocupación principal del IoT?
+A. Falta de contenido de entretenimiento.
+B. Seguridad y privacidad de los datos. -> Correcto 
+C. Costos de desarrollo de software.
+D. Baja velocidad de Internet
+
+5. ¿Qué sector ha implementado IoT para la trazabilidad de productos?
+A. Industria de los videojuegos.
+B. Sector agrícola. -> Correcto 
+C. Servicios de streaming.
+D. Fabricación de automóviles.
+
+6. ¿Qué es la tecnología blockchain?
+A. Una base de datos centralizada.
+B. Un sistema de registro descentralizado. -> Correcto 
+C. Un tipo de red social.
+D. Un motor de búsqueda.
+
+7. ¿Cuál es un uso común de la tecnología blockchain fuera de las criptomonedas?
+A. Juegos en línea.
+B. Gestión de la cadena de suministro.-> Correcto 
+C. Mensajería instantánea.
+D. Servicios de entrega de alimentos.
+
+8. ¿Qué característica clave de la blockchain asegura que una vez que se registra una transacción, no puede ser alterada?
+A. Escalabilidad.
+B. Inmutabilidad. -> Correcto 
+C. Facilidad de uso.
+D. Compatibilidad con todos los dispositivos
+
+9. ¿Qué plataforma utiliza contratos inteligentes para automatizar acuerdos?
+A. Facebook.
+B. Ethereum. -> Correcto 
+C. Netflix.
+D. Google Docs.
+
+10. ¿Qué beneficio proporciona la blockchain en el sector financiero?
+A. Mayor costo de transacciones.
+B. Procesamiento más lento.
+C. Transacciones más rápidas y seguras. -> Correcto 
+D. Mayor consumo de energía.
+
+
+## Videoclase 1. 
+## Notas:
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+
+## Videoclase 2. 
+## Notas:
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+
+## Videoclase 3. 
+## Notas:
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
+- 
+  - 
