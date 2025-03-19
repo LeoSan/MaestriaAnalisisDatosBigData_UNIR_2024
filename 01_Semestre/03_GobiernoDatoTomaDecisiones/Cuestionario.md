@@ -709,3 +709,140 @@ los siguientes no es cierto?
   - B. Rectificación.
   - C. Oposición.
   - D. Legitimación.
+  - 
+
+# Cuestionario TEMA 9
+
+1. Identifica cuáles de los siguientes son principios de la privacidad por diseño:
+  - A. Privacidad por defecto.
+  - B. Privacidad incrustada en el diseño.
+  - C. Seguridad extremo a extremo.
+  - D. Todos los anteriores son correctos.
+
+2. ¿Qué países forman el Comité de Protección de Datos RGPD, antiguo Grupo de
+trabajo del artículo 29 (WP29)?
+  - A. Los miembros de la UE.
+  - B. Los miembros de la OCDE.
+  - C. Los países miembros del G8.
+  - D. Alemania, Francia, Italia, España y Reino Unido.
+
+3. Identifica cuáles de los siguientes aspectos se corresponden con las amenazas
+del big data definidas por el WP29:
+  - A. Magnitud de la recopilación.
+  - B. Seguridad de los datos.
+  - C. Aumento dramático de las posibilidades de vigilancia del gobierno.
+  - D. Todas las anteriores son correctas.
+
+4. ¿Qué afirmación de las siguientes respecto a las evaluaciones de impacto es
+falsa?
+  - A. La ley vigente obliga a la realización de evaluaciones de impacto cada seis meses de manera obligatoria.
+  - B. La evaluación de impacto es un proceso sistemático y reproducible.
+  - C. El resultado de la evaluación se debe plasmar en un documento.
+  - D. La evaluación de impacto debe ser un proceso periódico.
+
+5. ¿En qué casos de los siguientes no se recomienda la realización de una
+evaluación de impacto?
+  - A. Cuando el tratamiento afecta a un número elevado de personas.
+  - B. Cuando se traten grandes volúmenes de datos personales.
+  - C. Cuando existan transferencias internacionales.
+  - D. Cuando el tratamiento sea esporádico, limitado y afecte a personas de interés público.
+
+6. ¿Cuáles de los siguientes tratamientos no requieren la realización de una evaluación de impacto?
+  - A. Los realizados bajo las directrices de las autoridades de control.
+  - B. Los necesarios para el cumplimiento de una obligación legal.
+  - C. Los realizados por autónomos que ejerzan de forma individual.
+  - E. Ninguno de los anteriores requiere la realización de una evaluación de impacto.
+
+7. De entre los siguientes, ¿cuál no es un principio de la privacidad por diseño?
+  - A. Privacidad por defecto.
+  - B. Privacidad por diseño (incrustada en el diseño).
+  - C. Seguridad de extremo a extremo.
+  - D. Privacidad global.
+
+8. En big data, ¿qué principio de entre los siguientes se ve principalmente afectado por el overcollecting?
+  - A. Principio de minimización de datos.
+  - B. Principio de limitación de la finalidad.
+  - C. Exactitud de los datos.
+  - D. Confidencialidad e integridad.
+
+9. El interés legítimo puede dar base legal al tratamiento de datos personales. De
+entre las siguientes, indica qué afirmación al respecto es incorrecta:
+  - A. Si un tratamiento se basa en el interés legítimo, no requiere el consentimiento del afectado.
+  - B. El interés legítimo se aplica bajo la responsabilidad del responsable de tratamiento, que en su caso deberá demostrar que dicho interés no es anulado por los intereses o derechos y libertades fundamentales del interesado.
+  - C. El interés legítimo permite justificar cualquier tratamiento de datos de carácter personal.
+  - D. El derecho de información se debe garantizar, aunque la base legal del tratamiento sea el interés legítimo.
+
+10. Una universidad va a realizar un tratamiento de datos biométricos a gran escala
+que afectará a todos los miembros de la comunidad educativa. Es este contexto,
+¿cuál de las siguientes afirmaciones no es correcta?
+  - A. Es necesario realizar una EIPD, al ser datos biométricos destinados a la identificación unívoca de las personas a gran escala.
+  - B. Los datos biométricos no son datos de carácter personal.
+  - C. Los datos biométricos pertenecen a categorías especiales de datos.
+  - D. No es necesario realizar una EIPD porque es una pyme
+
+# Cuestionario TEMA 10
+
+1. La ley de protección de datos no se aplica sobre los datos disociados obtenidos
+tras un proceso de disociación.
+  - A. Verdadero.
+  - B. Falso.
+
+2. ¿Cuáles de las siguientes técnicas no es de disociación-anonimización?
+  - A. Asignación al azar.
+  - B. Generalización.
+  - C. Adición de ruido.
+  - D. T-Combinación.
+
+3. ¿Cuáles de los siguientes son riesgos asociados a las técnicas de
+anonimización?
+  - A. Singularización.
+  - B. Vinculabilidad.
+  - C. Inferencia.
+  - D. Todos los anteriores son correctos.
+
+4. La generalización es una técnica del tipo:
+  - A. Técnicas que implican la modificación de datos.
+  - B. Técnicas que implican la reducción de atributos.
+  - C. Técnicas que implican la supresión de datos.
+  - D. Técnica de pseudoanonimización.
+
+5. La Dra. Sweeney concluyó que en EE. UU. es posible identificar al 87 % de los
+ciudadanos unívocamente, a partir de los datos de:
+  - A. El número de la seguridad social.
+  - B. El número de licencia de conducir y el estado emisor.
+  - C. El código postal completo, sexo y fecha de nacimiento con el año incluido.
+  - D. El código postal completo, sexo, fecha de nacimiento con el año incluido y raza.
+
+6. ¿Cuál de los siguientes riesgos no es de reidentificación?
+  - A. Riesgo de singularización.
+  - B. Riesgo de vinculabilidad.
+  - C. Riesgo de inferencia.
+  - D. Riesgo de polarización.
+
+7. De entre las siguientes técnicas, ¿cuál ofrece mejores resultados en términos de
+menores riesgos de reidentificación?
+  - A. Seudonimización.
+  - B. Adición de ruido.
+  - C. K-anonimato.
+  - D. l-Diversity/t-Closeness.
+
+8. De entre las siguientes técnicas, ¿cuál ofrece los peores resultados en términos
+de menores riesgos de reidentificación?
+  - A. Seudonimización.
+  - B. Adición de ruido.
+  - C. K-anonimato.
+  - D. l-Diversity/t-Closeness.
+
+9. Teniendo en consideración el siguiente conjunto de datos, el resultado de aplicar
+k-anonimato, indica cuál es valor k del conjunto:
+  - A. k = 2.
+  - B. k = 3.
+  - C. k = 4.
+  - D. k = 5.
+
+10. Teniendo en consideración el siguiente conjunto de datos, el resultado de
+aplicar l‑Diversity, indica cuál es el valor l del conjunto:
+  - A. l = 1.
+  - B. l = 2.
+  - C. l = 3.
+  - D. l = 4.
