@@ -1,1 +1,711 @@
-Cuestionario 
+# Cuestionario TEMA 1
+
+1.- ¿Qué beneficio trae para la empresa la dirección estratégica?
+  - A. La convierte en una empresa más competitiva.
+  - B. Gestión integral en la evaluación de la decisión.
+  - C. Ayuda en la implantación de indicadores.
+  - D. Todas son correctas.
+
+2.-  Elementos del plan estratégico:
+  - A. Información, metodología y alta gerencia.
+  - B. Información y metodología.
+  - C. Pensamiento estratégico.
+  - D. B y C son correctas.
+
+3.- Menciona los elementos del modelo de gestión estratégica:
+  - A. Misión y visión.
+  - B. Objetivos estratégicos.
+  - C. A y B son correctas.
+  - D. Pensamiento sistémico y procesos internos.
+
+4.- ¿Qué preguntas se deben responder para crear la misión de una empresa?
+  - A. ¿Qué?, ¿cómo?, ¿cuándo? y ¿por qué?
+  - B. ¿Quiénes somos?, ¿qué hacemos? y ¿cómo lo hacemos?
+  - C. ¿Para quién lo hacemos? y ¿dónde lo hacemos?
+  - D. B y C son correctas.
+
+5.- ¿Qué elementos componen la visión?
+  - A. Ámbito, valores y misión.
+  - B. Horizonte de tiempo, negocio y datos.
+  - C. Ámbito de acción y estrategia.
+  - D. Ninguna es correcta.
+
+6.- ¿Por qué es importante implementar el gobierno de datos?
+  - A. Porque los datos van a ser de calidad.
+  - B. Porque se respeta la ley de protección de datos.
+  - C. Porque cada persona dentro de la empresa sabe qué debe hacer.
+  - D. Porque se logra gestionar el activo más importante de la organización (el
+dato) y se toman mejores decisiones.
+
+7.- Menciona las perspectivas del cuadro de mando integral:
+  - A. Financiera, cliente y valores.
+  - B. Financiera, cliente, procesos y aprendizaje.
+  - C. Aprendizaje, organizacional y procesos.
+  - D. Ninguna es correcta.
+
+8. Menciona dos elementos que componen el cuadro de mando integral:
+  - A. Indicadores y metas.
+  - B. Mapa estratégico e indicadores estratégicos.
+  - C. Perspectivas y modelo de gestión.
+  - D. A y B son correctas.    
+
+9.- Menciona cuatro etapas del proceso de toma de decisiones:
+  - A. Decisión, identificación de criterios, selección de opciones e información.
+  - B. Implantación de opciones, identificación del problema, desarrollo de opciones y evaluación de la decisión.
+  - C. Datos, identificación de criterios, identificación de problemas y análisis de alternativas.
+  - D. A y C son correctas.
+
+10. ¿Qué elementos intervienen en la decisión?
+  - A. Decisión, información y acción.
+  - B. Realimentación, resultado e información.
+  - Acción, datos y decisión.
+  - D. B y C son correctas.
+
+# Cuestionario TEMA 2
+
+1.- Elige la respuesta correcta. 
+  - A. Los datos no tienen relevancia, pues no tienen ningún significado si no se contextualizan.
+  - B. Si el dato está bien contextualizado, obtenemos información veraz y confiable.
+  - C. El dato es una pieza fundamental en las empresas hoy en día, si los datos cumplen un ciclo de vida y se tienen maestros de datos, se garantiza el éxito en los procesos BI y BA. -> correcto  
+  - D. La información sin ser procesada genera conocimiento.
+
+2.- El ciclo de vida del dato en el gobierno de datos incluye: 
+  - A. Creación, uso y destrucción. -> Correcta
+  - B. Almacenaje, distribución y archivo.
+  - C. Creación, distribución y destrucción.
+  - D. A y B son correctas.
+
+3.- No forma parte de los pasos importantes para construir un ecosistema BI. 
+  - A. Entender y tener en cuenta los objetivos estratégicos es fundamental para poder dar respuesta a lo que la organización se traza como meta.
+  - B. Evaluar el estado actual y el estado deseado en cuanto a madurez de la organización.
+  - C. Definir una estrategia BI, definir una ruta y diseñar y construir las aplicaciones.
+  - D. Crear modelos de predicción.
+
+4.- ¿Cuáles son los cuatro pilares de Gartner para la construcción básica de business analytics? 
+  - A. Proceso, clientes.
+  - B. Información, personas.
+  - C. Procesos, tecnologías.
+  - D. B y C son correctas. -> Correcta
+
+5.- Menciona dos pasos del proceso de business analytics: 
+  - A. Predictivo, analítico.
+  - B. Descriptivo, transformador.
+  - C. Descriptivo, predictivo.-> Correcto
+  - D. Ninguna es correcta.
+
+Descriptivo: Consiste en analizar los datos históricos para entender qué ha sucedido en el pasado. Se utilizan técnicas estadísticas y visualizaciones para describir patrones, tendencias y relaciones entre variables.
+
+Predictivo: Se basa en los análisis descriptivos para construir modelos que permitan predecir futuros eventos o comportamientos. Se utilizan técnicas de machine learning y estadística para identificar patrones y relaciones que pueden ser extrapolados al futuro
+
+6.- ¿Por qué es importante crear datos maestros? 
+  - A. Evita duplicidad de datos.
+  - B. Aumenta la confiabilidad de los datos. -> Correcto
+  - C. A y B son correctas.
+  - D. A y B son incorrectas.
+
+7.- Menciona una diferencia del business analytics frente al business intelligence. 
+   - A. En el BA se realiza análisis predictivo y prescriptivo, en el BI se analizan datos pasados.->Correcto
+   - B. Uso de bases de datos NoSQL.
+   - C. Uso de administración de bases de datos.
+   - D. Integración y divulgación.
+
+8.- Identifica la afirmación falsa con respecto a los beneficios del business analytics: 
+  - A. Las organizaciones obtienen ventaja competitiva.
+  - B. Se puede realizar minería de datos para detectar patrones entre datos.
+  - C. Se pueden simular diferentes escenarios y crear estrategias para mitigar riesgos.
+  - D. Se puede realizar un análisis descriptivo y diagnóstico de los datos.
+
+9.- El análisis que da respuesta a la pregunta de cómo se manejarán futuros escenarios es: 
+   - A. Análisis descriptivo. 
+   - B. Análisis predictivo. 
+   - C. Análisis prescriptivo.-> Correcto ya que da una receta de pasos a seguir para dar solución a un problema futuro
+   - D. Ninguna es correcta.
+
+10.- El business intelligence es: 
+  - A. Reactivo. -> Correcto
+  - B. Proactivo.
+  - C. Predictivo.
+  - D. Ninguno de los anteriores.
+
+# Cuestionario TEMA 3
+
+1.- ¿Cuáles son etapas del proceso ETL? 
+  - A. Extracción.
+  - B. Transformación.
+  - C. Subida de datos brutos.
+  - D. A y B son correctas. -> Correcto
+
+2.- Los data mart: 
+  - A. Son los metadatos del data warehouse.
+  - B. Son estructuras de datos específicas para un departamento, el conjunto de data marts compone un data warehouse. -> Correcto
+  - C. Permiten acceder directamente al data warehouse.
+  - D. Son una fuente de datos.
+
+3.- Son arquitecturas para implementar un data warehouse: 
+  - A. Arquitectura mecánica.
+  - B. Arquitectura de una sola capa.
+  - C. Arquitectura de dos capas.
+  - D. B y C son correctas. -> Correcto
+
+4.- ¿Cuáles pueden ser dos posibles fuentes de datos para un data warehouse? 
+  - A. Bases de datos relacionales y archivos de texto plano. -> Correcto
+  - B. Archivos XML y codificación de archivos HTML.
+  - C. Archivos PDF y documentos en papel.
+  - D. Ninguna de las anteriores.
+
+5.- ¿Cuáles pueden ser posibles fuentes de datos para un data lake? 
+  - A. Bases de datos relacionales y archivos de texto plano.
+  - B. Archivos XML y codificación de archivos HTML.
+  - C. Archivos PDF y fotos. D. Todos las anteriores. -> Correcto
+
+6.- El autor Bill Inmon definió las características que debe cumplir un data warehouse. ¿Cuáles son? 
+  - A. Orientado a un área e integrado.
+  - B. Portátil y fácil de manejar.
+  - C. Indexado en el tiempo y no volátil. -> Correcto
+  - D. Consistente y fácil.
+
+7.- ¿Cuál es la función del data datawarehouse y del data lake? 
+  -  A. Aumentar el trabajo de los usuarios.
+  -  B. Ayudar en la toma de decisiones. -> Correcto
+  -  C. Centralizar los datos para facilitar el manejo.
+  -  D. Ninguna de las anteriores.
+
+8.- Es falso si hablamos de ETL: 
+  - A. Los datos se transforman en un servidor intermedio antes de subir al DW.
+  - B. El tiempo de carga, sobre todo la primera vez, es muy rápido. -> Correcto
+  - C. Altos niveles de mantenimiento.
+  - D. Las estructuras pueden llegar a ser complejas.
+
+9.- Es falso si hablamos de ELT: 
+  - A. Los datos se cargan y se transforman en un servidor intermedio antes de subir al DW. -> Correcto
+  - B. El tiempo de carga es muy rápido.
+  - C. Bajo nivel de mantenimiento.
+  - D. Es nuevo y complejo de implementar.
+
+10.- Es cierto si hablamos de metadatos: 
+  A. Son un repositorio central de información. 
+  B. Da significado a cada componente, variable y atributo que reside en el DW. 
+  C. Contiene información sobre la estructura del data lake. 
+  D. A y B son verdaderos. -> Correcto
+
+# Cuestionario TEMA 4
+1.- Son principios básicos del desarrollo de DW según Kimball: 
+  - A. Centrarse en el negocio.
+  - B. Incrementos significativos
+  - C. Los datos como centro de análisis.
+  - D. A y B son correctas. -> Correcto
+
+2.- No es una tarea dentro de la metodología Kimball: 
+  - A. Crear el maestro de datos. -> Correcto
+  - B. Diseño e implementación de ETL.
+  - C. Diseño de arquitectura técnica.
+  - D. Selección de herramientas de implementación.
+
+3.- Son áreas de conocimiento dentro de la metodología PMI: 
+  - A. DevOps.
+  - B. CRISP-DM.
+  - C. Costes.
+  - D. Alcance. -> Correcto
+
+4.- ¿Cuáles son las rutas para el desarrollo del data warehouse según la metodología Kimball? 
+  - A. Tecnologías.
+  - B. Procesos.
+  - C. Datos.
+  - D. A y C son correctas. -> Correcto
+
+5.- ¿Cómo se pueden obtener los requerimientos del data warehouse? 
+  - A. A través de entrevistas.
+  - B. Por medio de sesiones facilitadoras.
+  - C. Por los clientes externos.
+  - D. A y B son correctas. -> Correcta
+
+6.- ¿Cuántas características define Inmon para el DW? 
+  - A. 1.
+  - B. 8.
+  - C. 4. -> Correcto
+  - D. 6.
+
+7.- Son nuevos roles incorporados en los últimos años: 
+  - A. Ingeniero de datos y analista de datos. -> Correcto
+  - B. Consumidor de datos.
+  - C. Usuarios finales.
+  - D. Consumidores de información.
+
+8.- Según el estudio publicado por el BI & Analytics Trend Monitor de BARC, son tendencias del business intelligence: 
+  - A. Creación de grandes empresas.
+  - B. Almacenamiento de gran cantidad de datos.
+  - C. Desarrollo ágil de BI. -> Correcto
+  - D. Generación de alertas.
+
+9.- Menciona dos etapas de la metodología PMI: 
+  - A. Pretratamiento de los datos brutos. 
+  - B. Inicialización y cierre de los datos maestros.
+  - C. Control y ejecución del proceso.
+  - D. Control y supervisión. -> Correcto
+
+10.- La metodología DevOps permite: A. Aplicar velocidad a los proyectos subidos a AWS. 
+  B. Aplicar velocidad a los proyectos subidos a Azure. 
+  C. Entrega rápida, confiabilidad y escalado de proyectos. -> Correcto 
+  D. Actuar lento pero seguro en proyectos BI.
+
+## video Clase 1
+Kimball enfatiza la importancia de centrarse en las necesidades del negocio y en la entrega de incrementos significativos durante el desarrollo de un data warehouse (DW). Estos principios garantizan que el DW sea relevante y útil para la organización.
+
+La metodología Kimball se centra en el diseño de procesos ETL, arquitectura técnica y la selección de herramientas, pero no incluye la creación de un maestro de datos como una tarea específica dentro de su enfoque
+
+El Project Management Institute (PMI) define áreas de conocimiento como costes y alcance, esenciales para la gestión de proyectos. Estas áreas no incluyen metodologías específicas como DevOps o CRISP-DM.
+
+¿Cuáles son las rutas para el desarrollo del data warehouse, según la metodología Kimball?
+
+Kimball sugiere rutas como la implementación de tecnologías adecuadas y la gestión de datos efectivos para el desarrollo de un data warehouse. Estas rutas aseguran un diseño robusto y eficiente
+Los requerimientos del data warehouse se pueden obtener mediante entrevistas con stakeholders y sesiones facilitadoras. Estos métodos permiten una comprensión detallada de las necesidades y expectativas del proyecto.
+
+## video Clase 2
+
+¿Cuántas características define Inmon para el DW?
+
+Bill Inmon define cuatro características fundamentales para un data warehouse: orientado a temas, integrado, no volátil y variable en el tiempo. Estas características aseguran la consistencia y fiabilidad de los datos almacenados.
+Son nuevos roles incorporados en los últimos años
+
+En los últimos años, han surgido nuevos roles como ingeniero de datos y analista de datos, que se especializan en la gestión y análisis de grandes volúmenes de datos, convirtiéndose en posiciones clave en las organizaciones modernas.
+Según el estudio publicado por el BI & Analytics Trend Monitor de BARC, son tendencias del business intelligence
+
+El desarrollo ágil de Business Intelligence es una tendencia identificada por el BI & Analytics Trend Monitor de BARC. Esta metodología permite una adaptación rápida a las necesidades cambiantes y mejora la eficiencia en la entrega de soluciones BI.
+Menciona dos etapas de la metodología PMI
+
+Dentro de la metodología PMI, las etapas de control y supervisión son fundamentales para asegurar que el proyecto se mantenga en curso y cumpla con los objetivos establecidos. Estas etapas permiten la gestión eficaz del proyecto a lo largo de su ciclo de vida.
+La metodología DevOps permite
+
+La metodología DevOps está diseñada para aumentar la velocidad de entrega, confiabilidad y escalabilidad de los proyectos. Esta práctica combina el desarrollo y las operaciones para mejorar la eficiencia y la calidad de los productos tecnológicos.
+
+
+## video Clase 3 
+
+¿Cuál es uno de los principios básicos de la metodología Kimball?
+
+Correcto. La metodología Kimball se enfoca en el negocio y en crear una infraestructura de información completa y útil.
+¿Cuál es uno de los pasos en la planificación de un proyecto según la metodología Kimball?
+
+Correcto. Es crucial definir con precisión el alcance y los requerimientos del negocio para una planificación efectiva del proyecto.
+¿Cuál es una pregunta clave que puede ayudar en el análisis de requerimientos?
+
+Correcto. Preguntarse cómo se compartirá la información es esencial para asegurar que los datos sean accesibles y útiles dentro de la organización.
+¿Qué rol en la estructura DAMA es responsable de la arquitectura y la integración de datos de alto nivel?
+
+Correcto. El arquitecto de datos es responsable de la arquitectura y la integración de datos de alto nivel.
+¿Qué tendencia en BI para 2022 se menciona en el documento?
+
+Correcto. La encuesta de BARC destaca la importancia de entender las decisiones de compra y los beneficios comerciales a través de encuestas y estudios.
+
+# Cuestionario TEMA 5
+
+1.- El marketing como filosofía: 
+  - A. Defiende el establecimiento de unas relaciones permanentes con los clientes. -> correcto
+  - B. Defiende el establecimiento de unas relaciones no permanentes con los clientes
+  
+2.- La venta es un proceso: 
+  - A. En sentido único.
+  - B. En doble sentido. -> correcto
+
+3.- El marketing como disciplina científica: 
+- A. Es reconocido como una rama de la economía que se dedica a estudiar los canales de distribución.
+- B. Es reconocido como una ciencia aplicada del comportamiento que trata de comprender las relaciones entre compradores y vendedores. -> correcto
+
+4.- El concepto de marketing está estrechamente vinculado con la relación de intercambio. 
+  - A. Correcto. -> correcto
+  - B. Incorrecto.
+
+5.- La satisfacción de necesidades es: 
+  - A. El elemento motivador que anula el proceso de intercambio.
+  - B. El elemento motivador que facilita el proceso de intercambio. -> correcto
+
+6.- Cuando se habla de producto, desde el punto de vista del marketing, nos estamos refiriendo a: 
+  - A. Los bienes tangibles.
+  - B. Los objetos tangibles e intangibles -> correcto
+
+7.- Los bienes son: 
+  - A. Objetos físicos y, como tales, tangibles. -> correcto
+  - B. Objetos materiales e inmateriales.
+
+8.- El enfoque actual del marketing hacia el mercado y en relación con el cliente: 
+  - A. Solo es posible con un mejor conocimiento de las necesidades individuales del cliente. -> correcto
+  - B. Implica un profundo conocimiento del mercado absoluto.
+
+9.- El sistema de inteligencia de marketing aporta información: 
+  - A. Sobre aspectos relacionados con la situación y los resultados conseguidos por la empresa.
+  - B. Sobre los aspectos que tienen lugar en el entorno y que son más significativos para la empresa. -> correcto
+
+10.- La investigación de marketing consiste en: 
+  - A. El diseño sistemático, el análisis de datos y la recogida de información relevante para resolver un problema concreto al que se enfrenta la empresa. -> correcto
+  - B. El diseño sistemático, el análisis de datos y la recogida de información relevante para resolver una complicación hipotética a la que se enfrenta la empresa.
+
+## Videoclase 1. Fundamentos del Marketing
+El marketing como filosofía
+Defiende el establecimiento de unas relaciones permanentes con los clientes. -> El marketing como filosofía busca construir relaciones duraderas con los clientes, basadas en la confianza y la satisfacción continua de sus necesidades y expectativas.
+
+La venta es un proceso
+En doble sentido. -> La venta es un proceso de comunicación bidireccional donde tanto el vendedor como el comprador intercambian información y valor, con el objetivo de satisfacer necesidades y establecer relaciones comerciales.
+
+El marketing como disciplina científica
+Es reconocido como una ciencia aplicada del comportamiento que trata de comprender las relaciones entre compradores y vendedores. -> El marketing es una ciencia aplicada que estudia y analiza el comportamiento de los consumidores y las dinámicas entre compradores y vendedores, enfocándose en satisfacer necesidades y construir relaciones de valor.
+
+El concepto de marketing está estrechamente vinculado con la relación de intercambio.
+Correcto.-> El marketing se basa en la relación de intercambio, donde se intercambian productos o servicios por algo de valor, generalmente dinero, para satisfacer las necesidades y deseos de las partes involucradas.
+
+La satisfacción de necesidades es
+El elemento motivador que facilita el proceso de intercambio -> La satisfacción de necesidades es el principal motor detrás del proceso de intercambio. Es la razón por la que los consumidores buscan productos o servicios que cumplan con sus deseos y expectativas.
+
+## Videoclase 2. Productos y Enfoque en el Cliente
+Cuando se habla de producto, desde el punto de vista del marketing, nos estamos refiriendo a
+Los objetos tangibles e intangibles. -> En marketing, el término "producto" incluye tanto bienes tangibles como servicios intangibles. Esto abarca cualquier oferta que pueda satisfacer una necesidad o deseo del consumidor.
+
+Los bienes son
+Objetos físicos y, como tales, tangibles. -> Los bienes son productos físicos que pueden ser vistos y tocados, a diferencia de los servicios, que son intangibles y no pueden ser percibidos físicamente.
+
+El enfoque actual del marketing hacia el mercado y en relación con el cliente
+Solo es posible con un mejor conocimiento de las necesidades individuales del cliente. -> El enfoque moderno del marketing se centra en la personalización y en entender profundamente las necesidades individuales de los clientes para ofrecer soluciones personalizadas y crear relaciones de largo plazo.
+
+El sistema de inteligencia de marketing aporta información
+Sobre los aspectos que tienen lugar en el entorno y que son más significativos para la empresa. -> La inteligencia de marketing proporciona información valiosa sobre el entorno externo, ayudando a la empresa a adaptarse a cambios y aprovechar oportunidades relevantes.
+
+La investigación de marketing consiste en
+El diseño sistemático, el análisis de datos y la recogida de información relevante para resolver un problema concreto al que se enfrenta la empresa. -> La investigación de marketing se enfoca en recopilar y analizar datos para resolver problemas específicos y tomar decisiones informadas que beneficien a la empresa y sus estrategias de mercado.
+
+## Videoclase 3. Inteligencia e Investigación de Marketing
+¿Qué es el Sistema de Información de Marketing (SIM)?
+Un sistema que recolecta, almacena, analiza y distribuye información de marketing para la toma de decisiones. -> Correcto. El SIM se utiliza para gestionar información relevante para la toma de decisiones en marketing.
+
+¿Cuáles son algunos de los beneficios del consumo colaborativo mencionados en el documento?
+Eliminación de intermediarios, mayor especialización y capacidad de elección. -> Correcto. El consumo colaborativo ofrece beneficios como la eliminación de intermediarios, mayor especialización y capacidad de elección.
+
+¿Qué tipo de datos se consideran esenciales para el análisis de clientes?
+Datos transaccionales y demográficos. -> Correcto. Los datos transaccionales y demográficos son esenciales para un análisis efectivo de clientes.
+
+¿Cuál es uno de los objetivos principales de la creación de un buyer persona?
+Identificar las necesidades y comportamientos de los clientes para personalizar estrategias de marketing. -> Correcto. La creación de un buyer persona ayuda a identificar y entender mejor a los clientes para personalizar las estrategias de marketing.
+
+¿Qué herramienta se menciona como útil para el análisis de datos en marketing estratégico?
+Google Analytics. -> Correcto. Google Analytics se menciona como una herramienta útil para el análisis de datos en marketing estratégico.
+
+
+# Cuestionario TEMA 6 
+1.- ¿Puede un sitio web tener más páginas vistas que visitas? 
+  - A. No.
+  - B. Sí. -> correcto
+  - C. Solo a veces. D. Todas son correctas.
+
+2.- ¿Cuándo finaliza, en general, una sesión en Google Analytics? 
+  - A. A los 30 minutos de iniciarse la sesión. -> correcto
+  - B. A los 20 minutos de iniciarse la sesión.
+  - C. A los 15 minutos de iniciarse la sesión.
+  - D. Cuando apagas el ordenador.
+
+3.- ¿En un test A/B hay que insertar alguna etiqueta de Google Analytics en nuestra web? 
+  - A. Nunca.
+  - B. Solo si no funciona.
+  - C. Un código que se inserta en la página original y en la de objetivo. -> correcto
+  - D. Todas son correctas.
+
+4.- La velocidad de un sitio es importante para: 
+  - A. La experiencia de navegación del usuario.
+  - B. La experiencia de usuario y el posicionamiento.
+  - C. Solo el posicionamiento.
+  - D. A y B son correctas. -> correcto
+
+5.- Elige la opción que corresponda a una métrica: 
+  - A. Visitas.
+  - B. Usuarios en España.
+  - C. Provienen de Yahoo.
+  - D. Todas son correctas. -> correcto
+
+6.- ¿Qué herramientas sirven para analizar la velocidad del sitio web? 
+  - A. Google Webmaster Tools.
+  - B. Photoshop.
+  - C. Yslow.
+  - D. A y C son correctas -> correcto
+
+7.- Relaciona el indicador con lo que mide:Las herramientas web: ¿en qué indicador basan sus datos?
+  - A. Cookies. -> correcto
+  - B. Código de Java.
+  - C. A y B son correctas.
+  - D. Ninguna es correcta.
+
+8.- ¿A qué corresponde la siguiente definición? 
+![image](https://github.com/user-attachments/assets/a3ff9ef9-1abb-430c-a0e7-264ebe1aeacd)
+
+
+9.- Las herramientas web: ¿en qué indicador basan sus datos?
+  - A. Cookies.
+  - B. Código de Java.
+  - C. A y B son correctas.
+  - D. Ninguna es correcta.
+
+10. ¿A qué corresponde la siguiente definición? Es la medida en la cual un sitio web
+puede ser usado por usuarios específicos para conseguir objetivos específicos con
+efectividad, eficiencia y satisfacción en un contexto de uso concreto, mediante test de
+usuarios o directamente con la analítica web.
+  - A. Analítica web.
+  - B. Usabilidad.
+  - C. Engagement.
+  - D. Ninguna es correcta.
+
+
+# Cuestionario TEMA 7
+
+1.- ¿Qué métrica no es básica para el análisis web? 
+  - A. Visitas.
+  - B. Porcentaje de rebote.
+  - C. Tiempo real. -> correcto
+  - D. Todas son correctas.
+
+2.- Según Kotler, el cuarto y definitivo paso en el proceso de marketing es: 
+  - A. El diseño del programa de marketing.
+  - B. La consecución de relaciones beneficiosas con los clientes.
+  - C. Entender el mercado y las necesidades de los clientes.
+  - D. Diseñar una estrategia adecuada con el foco en el cliente. -> Correcto
+
+3.- Según el profesor Peppers, el beneficio global obtenido a través de la gestión del conocimiento, basada en una estrategia de marketing relacional es del: 
+-   A. 42 %. -> Correcto
+-   B. 24 %.
+-   C. 30 %.
+-   D. 60 %.
+
+4.- Entre los factores clave para la implantación de un buen CRM, no se encuentra: 
+  - A. La tecnología.
+  - B. Una buena comunicación con el cliente.
+  - C. Perspectiva a largo plazo.
+  - D. Todos los anteriores son factores clave. -> Correcto
+
+5.- La A de assurance en el modelo RATER se traduce por: 
+  - A. Capacidad de los empleados en dar un buen servicio. ->Correcto
+  - B. La presencia física del personal, material, etc. que proporciona el servicio.
+  - C. La capacidad de suministrar atención y cuidado como a uno mismo.
+  - D. Disposición a atender al cliente de forma rápida y amable.
+
+6.- Según Domínguez y Muñoz, entre las bases para un buen CRM no está: 
+  - A. Identificar las expectativas del cliente: qué quiere, cómo y cuándo lo quiere.
+  - B. Comparar las características del servicio prestado y las expectativas del cliente y determinar las áreas de mejora.
+  - C. Comunicación omnicanal permanente y de valor con el cliente (si no tienes nada interesante que decir, mejor no digas nada).
+  - D. Todas deberían estar en un buen CRM. ->Correcto
+
+7.- Una palabra clave que nos recuerde qué significa CRM puede ser: 
+  - A. Cliente. -> Correcto
+  - B. Transformación.
+  - C. Diferencia.
+  - D. Marca.
+
+8.- Según Ignasi Vidal, el máximo nivel de marketing relacional sería: 
+  -  A. El estadístico.
+  -  B. El de socio.->Correcto
+  -  C. El básico.
+  -  D. El proactivo.
+
+9.- La razón principal del marketing relacional es: 
+  - A. Mantener y fidelizar clientes ->Correcto
+  - B. Vender más.
+  - C. Analizar el servicio al cliente.
+  - D. Realizar promociones.
+
+10.- Como ejemplo de comunicación proactiva e interactiva, podemos destacar: 
+  - A. Utilización multicanal (móvil, e-mail, RR. SS.) para estar en contacto útil con los clientes. 
+  - B. Información puntual del estado de sus pedidos (entrega, posventa, etc.). 
+  - C. Servicio 24 horas. 
+  - D. Todos los anteriores son ejemplos válidos. ->Correcto
+
+11.- La capacidad de suministrar atención y cuidado como a uno mismo es reconocida en el modelo RATER como: 
+  - A. Reliabilty.
+  - B. Empathy. ->Correcto
+  - C. Assurance.
+  - D. Tangibles
+
+## Videoclase 1. Fundamentos del Marketing Relacional
+
+Según Kotler, el cuarto y definitivo paso en el proceso de marketing es
+La consecución de relaciones beneficiosas con los clientes. - Kotler señala que el cuarto paso del proceso de marketing es la construcción de relaciones beneficiosas con los clientes, lo cual es fundamental para lograr fidelización y satisfacción a largo plazo.
+
+Según el profesor Peppers, el beneficio global obtenido a través de la gestión del conocimiento, basada en una estrategia de marketing relacional es del
+42 %. -> El profesor Peppers indica que el beneficio global alcanzado mediante la gestión del conocimiento y estrategias de marketing relacional puede llegar a un 42%, mostrando la importancia de estas 
+prácticas en la optimización de los resultados empresariales.
+
+Entre los factores clave para la implantación de un buen CRM, no se encuentra
+Todos los anteriores son factores clave. -> Para una implantación exitosa de CRM, es crucial contar con tecnología adecuada, una comunicación efectiva con el cliente y una perspectiva a largo plazo. Estos elementos son esenciales para una gestión eficiente de las relaciones con los clientes.
+La A de assurance en el modelo RATER se traduce por
+
+Capacidad de los empleados en dar un buen servicio -> En el modelo RATER, "assurance" se refiere a la competencia y cortesía de los empleados y su capacidad para inspirar confianza y seguridad a los clientes.
+Según Domínguez y Muñoz, entre las bases para un buen CRM no está
+Todas deberían estar en un buen CRM. -> Un buen CRM debe incluir la identificación de expectativas del cliente, evaluación continua del servicio y comunicación efectiva. Estos aspectos son fundamentales para optimizar la relación con los clientes y mejorar la experiencia del usuario.
+
+## Videoclase 2. Implementación de CRM
+Nota
+
+Una palabra clave que nos recuerde qué significa CRM puede ser
+Cliente - La palabra "cliente" es clave en CRM (Customer Relationship Management) ya que este sistema se enfoca en la gestión de las relaciones con los clientes para mejorar su satisfacción y fidelidad.
+Según Ignasi Vidal, el máximo nivel de marketing relacional sería
+
+El de socio - El máximo nivel de marketing relacional, según Ignasi Vidal, es el de "socio", donde la relación con el cliente es tan estrecha que se convierte en una asociación mutua beneficiosa, más allá de una simple transacción comercial.
+
+La razón principal del marketing relacional es
+Mantener y fidelizar clientes.
+
+Como ejemplo de comunicación proactiva e interactiva, podemos destacar
+Todos los anteriores son ejemplos válidos.
+
+La capacidad de suministrar atención y cuidado como a uno mismo es reconocida en el modelo RATER como
+En el modelo RATER, "empathy" se refiere a la capacidad de entender y compartir los sentimientos del cliente, proporcionando un servicio personalizado y atento que haga sentir al cliente valorado y cuidado.
+
+## Videoclase 3. Comunicación Proactiva y Social CRM
+
+Nota
+¿Cuál es una de las características principales del marketing relacional?
+Relaciones duraderas con los clientes
+
+¿Qué tipo de marketing relacional se caracteriza por la falta de contacto con el cliente?
+Marketing relacional básico.
+
+¿Qué beneficios ofrece el CRM en la gestión de relaciones con los clientes?
+Facilita la toma de decisiones y mejora el servicio al cliente
+
+¿Cuál es uno de los factores clave del marketing relacional, según Ignasi Vidal?
+Conocimiento profundo de los hábitos y preferencias del cliente
+
+¿Cuál es una ventaja del Social CRM?
+Mayor implicación o engagement con los clientes
+
+## Video 1:
+Nota:
+¿Qué métrica no es básica para el análisis web?
+Tiempo real.
+
+¿Puede un sitio web tener más páginas vistas que visitas?
+SI -> Es posible que un sitio web tenga más páginas vistas que visitas, ya que una sola visita puede incluir múltiples página vistas durante la misma sesión de navegación.
+
+¿Cuándo finaliza, en general, una sesión en Google Analytics?
+A los 30 minutos de iniciarse la sesión. -> En Google Analytics, una sesión finaliza después de 30 minutos de inactividad. Este es el tiempo estándar de expiración para una sesión, a menos que se configure de otra manera.
+
+¿En un test A/B hay que insertar alguna etiqueta de Google Analytics en nuestra web?
+Un código que se inserta en la página original y en la de objetivo. -> Para realizar un test A/B, es necesario insertar un código de seguimiento en ambas versiones de la página (la original y la de prueba) para rastrear y comparar el rendimiento de cada versión.
+La velocidad de un sitio es importante para
+A y B son correctas. -> La velocidad de un sitio web afecta tanto la experiencia de navegación del usuario como el posicionamiento en los motores de búsqueda, ya que los sitios más rápidos suelen tener una mejor clasificación y proporcionan una mejor experiencia al usuario.
+
+## Video 2
+Nota:
+Elige la opción que corresponda a una métrica
+
+Visitas. -> "Visitas" es una métrica que cuantifica el número de veces que los usuarios acceden a un sitio web. Las otras opciones, como "Usuarios en España" o "Provienen de Yahoo", son más bien segmentaciones o fuentes de tráfico.
+¿Qué herramientas sirven para analizar la velocidad del sitio web?
+
+Herramientas como Google Webmaster Tools (ahora conocido como Google Search Console) y Yslow son útiles para analizar la velocidad de un sitio web y proporcionar recomendaciones para mejorar el rendimiento.
+Relaciona el indicador con lo que mide
+
+Transacciones - numeros de venta
+Visitas totales -visitas web
+Porcentaje de rebote - visitas muy cortas
+Webs de referencia - paginas de procedencia
+Las herramientas web: ¿en qué indicador basan sus datos?
+
+Las herramientas web suelen basar sus datos en cookies para rastrear usuarios y sesiones, y en el uso de código JavaScript para capturar y enviar información sobre las interacciones de los usuarios con el sitio.
+¿A qué corresponde la siguiente definición? Es la medida en la cual un sitio web puede ser usado por usuarios específicos para conseguir objetivos específicos con efectividad, eficiencia y satisfacción en un contexto de uso concreto, mediante test de usuarios o directamente con la analítica web.
+
+Usabilidad - La definición se refiere a la usabilidad de un sitio web, que mide cuán fácil y eficiente es para los usuarios alcanzar sus objetivos dentro de un sitio, y evalúa la satisfacción del usuario con la experiencia.
+
+## Video 3
+
+¿Qué métrica se utiliza para medir la rentabilidad de una inversión en marketing digital?
+Correcto. El ROI (Return on Investment) se utiliza para medir la rentabilidad de una inversión en marketing digital.
+
+¿Cuál es una métrica de rendimiento comúnmente utilizada para medir el éxito de una campaña publicitaria basada en impresiones?
+Correcto. El CPM (Coste por mil) se utiliza para medir el coste de mil impresiones en una campaña publicitaria.
+
+¿Qué representa el porcentaje de rebote en el análisis web?
+El porcentaje de visitantes que abandonan el sitio después de ver solo una página.
+
+¿Cuál es el propósito de los embudos de conversión en la analítica web?
+Seguir y analizar los pasos de los usuarios a lo largo de un proceso, como una compra, para identificar puntos de abandono.
+
+¿Qué métrica se utiliza para medir la efectividad de los anuncios en términos de interacción del usuario?
+CTR - Correcto. El CTR (Click Through Rate) mide el porcentaje de usuarios que hacen clic en un anuncio en comparación con el número total de impresiones del anuncio.
+Cuestionario
+
+# Cuestionario TEMA 8 
+
+1. De entre los siguientes, ¿cuáles tienen la consideración de datos de carácter
+personal por parte del RGPD?
+  - A. Un nombre.
+  - B. Un número de identificación.
+  - C. Información genética.
+  - D. Todos los anteriores.
+
+2. De entre los siguientes datos, ¿cuáles no tienen la consideración de datos de
+categorías especiales?
+  - A. Las opiniones políticas.
+  - B. Los datos de ingresos mensuales.
+  - C. Los tratamientos de datos genéticos.
+  - D. Los datos relativos a la salud de las personas.
+
+3. Cuando nuestros datos de carácter personal se quieren incorporar a un
+tratamiento por una organización, está obligada a:
+  - A. Informar sobre quién o quiénes son los responsables del tratamiento.
+  - B. Informar sobre la finalidad por la que recaban los datos y se van a realizar
+los tratamientos.
+  - C. Informar si procede de los destinatarios o grupos de destinatarios de las
+comunicaciones de datos que se vayan a efectuar.
+  - D. Todas las respuestas anteriores son ciertas.
+
+4. De las operaciones siguientes, indica cuáles se consideran tratamiento de datos:
+  - A. Recogida de datos de clientes en un formulario online.
+  - B. Conservación de datos en copias de seguridad.
+  - C. Consulta de datos de forma telemática.
+  - D. Todas las respuestas anteriores son ciertas.
+
+ 5.- De entre los siguientes, indica cuáles son principios de la protección de datos
+conforme al RGPD.
+  - A. Minimización de datos.
+  - B. Exactitud de los datos.
+  - C. Responsabilidad proactiva.
+  - D. Todos los anteriores.
+6. De entre los siguientes, indica cuáles son obligaciones del responsable de
+tratamiento conforme al RGPD.
+  - A. Atender a las autoridades de control.
+  - B. Notificar las fallas de seguridad a las autoridades de control y afectados,
+cuando sea preciso.
+  - C. Seleccionar diligentemente y formalizar la relación con los encargados de
+tratamiento.
+  - D. Todas las anteriores.
+
+7. Respecto a las transferencias internacionales a EE. UU., indica qué afirmación es
+cierta:
+  - A. Si existe el consentimiento del afectado, se puede realizar dicha
+transferencia.
+  - B. Si EE. UU. dispone de una decisión de adecuación de la Comisión que
+reconoce un nivel de protección en materia de protección de datos
+equivalente al de la UE.
+  - C. Las organizaciones de EE. UU. certificadas de acuerdo con el Escudo de
+Privacidad (Privacy Shield) tienen reconocido un nivel de protección
+equivalente al de la UE.
+  - D. En ningún caso se pueden transferir datos a organizaciones residentes en
+EE. UU.
+
+8. Indica qué afirmación es verdadera:
+  - A. Las legislaciones en protección de datos de EE. UU. y la UE son
+legislaciones tipo ómnibus y equivalentes.
+  - B. La exportación de datos desde la UE a EE. UU. es libre.
+  - C. A nivel internacional, la mayoría de los países ofrecen un nivel fuerte de
+protección en materia de protección de datos equivalente al de la UE.
+  - D. Existe disparidad entre los marcos legales de la UE y de EE. UU.
+
+9. Las trasferencias internacionales de datos son una práctica habitual, pero ¿son
+legales?
+  - A. Sí, siempre que el usuario adecuadamente informado consienta a la
+transferencia.
+  - B. Sí, cuando es necesaria para ejecutar un contrato entre el afectado y el
+responsable del tratamiento.
+  - C. Sí, si existe una decisión de la Comisión que reconoce, sobre el país
+destinatario, un nivel de protección equivalente al de la UE.
+  - D. En todos los casos anteriores son legales.
+
+10. Respecto a los derechos que el RGPD reconoce a los afectados, ¿cuál de entre
+los siguientes no es cierto?
+  - A. Acceso.
+  - B. Rectificación.
+  - C. Oposición.
+  - D. Legitimación.
