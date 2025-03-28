@@ -66,7 +66,7 @@ dato) y se toman mejores decisiones.
 1.- Elige la respuesta correcta. 
   - A. Los datos no tienen relevancia, pues no tienen ningún significado si no se contextualizan.
   - B. Si el dato está bien contextualizado, obtenemos información veraz y confiable.
-  - C. El dato es una pieza fundamental en las empresas hoy en día, si los datos cumplen un ciclo de vida y se tienen maestros de datos, se garantiza el éxito en los procesos BI y BA. -> correcto  
+  - C. El dato es una pieza fundamental en las empresas hoy en día, si los datos cumplen un ciclo de vida y se tienen maestros de datos, se garantiza el éxito en los procesos BI y BA. -> **Correcto**  
   - D. La información sin ser procesada genera conocimiento.
 
 2.- El ciclo de vida del dato en el gobierno de datos incluye: 
@@ -90,7 +90,7 @@ dato) y se toman mejores decisiones.
 5.- Menciona dos pasos del proceso de business analytics: 
   - A. Predictivo, analítico.
   - B. Descriptivo, transformador.
-  - C. Descriptivo, predictivo.-> Correcto
+  - C. Descriptivo, predictivo.-> **Correcto**
   - D. Ninguna es correcta.
 
 Descriptivo: Consiste en analizar los datos históricos para entender qué ha sucedido en el pasado. Se utilizan técnicas estadísticas y visualizaciones para describir patrones, tendencias y relaciones entre variables.
@@ -99,12 +99,12 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
 
 6.- ¿Por qué es importante crear datos maestros? 
   - A. Evita duplicidad de datos.
-  - B. Aumenta la confiabilidad de los datos. -> Correcto
+  - B. Aumenta la confiabilidad de los datos. -> **Correcto**
   - C. A y B son correctas.
   - D. A y B son incorrectas.
 
 7.- Menciona una diferencia del business analytics frente al business intelligence. 
-   - A. En el BA se realiza análisis predictivo y prescriptivo, en el BI se analizan datos pasados.->Correcto
+   - A. En el BA se realiza análisis predictivo y prescriptivo, en el BI se analizan datos pasados.->**Correcto**
    - B. Uso de bases de datos NoSQL.
    - C. Uso de administración de bases de datos.
    - D. Integración y divulgación.
@@ -118,11 +118,11 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
 9.- El análisis que da respuesta a la pregunta de cómo se manejarán futuros escenarios es: 
    - A. Análisis descriptivo. 
    - B. Análisis predictivo. 
-   - C. Análisis prescriptivo.-> Correcto ya que da una receta de pasos a seguir para dar solución a un problema futuro
+   - C. Análisis prescriptivo.-> **Correcto** ya que da una receta de pasos a seguir para dar solución a un problema futuro
    - D. Ninguna es correcta.
 
 10.- El business intelligence es: 
-  - A. Reactivo. -> Correcto
+  - A. Reactivo. -> **Correcto**
   - B. Proactivo.
   - C. Predictivo.
   - D. Ninguno de los anteriores.
@@ -133,11 +133,11 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   - A. Extracción.
   - B. Transformación.
   - C. Subida de datos brutos.
-  - D. A y B son correctas. -> Correcto
+  - D. A y B son correctas. -> **Correcto**
 
 2.- Los data mart: 
   - A. Son los metadatos del data warehouse.
-  - B. Son estructuras de datos específicas para un departamento, el conjunto de data marts compone un data warehouse. -> Correcto
+  - B. Son estructuras de datos específicas para un departamento, el conjunto de data marts compone un data warehouse. -> **Correcto**
   - C. Permiten acceder directamente al data warehouse.
   - D. Son una fuente de datos.
 
@@ -145,10 +145,10 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   - A. Arquitectura mecánica.
   - B. Arquitectura de una sola capa.
   - C. Arquitectura de dos capas.
-  - D. B y C son correctas. -> Correcto
+  - D. B y C son correctas. -> **Correcto**
 
 4.- ¿Cuáles pueden ser dos posibles fuentes de datos para un data warehouse? 
-  - A. Bases de datos relacionales y archivos de texto plano. -> Correcto
+  - A. Bases de datos relacionales y archivos de texto plano. -> **Correcto**
   - B. Archivos XML y codificación de archivos HTML.
   - C. Archivos PDF y documentos en papel.
   - D. Ninguna de las anteriores.
@@ -156,28 +156,28 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
 5.- ¿Cuáles pueden ser posibles fuentes de datos para un data lake? 
   - A. Bases de datos relacionales y archivos de texto plano.
   - B. Archivos XML y codificación de archivos HTML.
-  - C. Archivos PDF y fotos. D. Todos las anteriores. -> Correcto
+  - C. Archivos PDF y fotos. D. Todos las anteriores. -> **Correcto**
 
 6.- El autor Bill Inmon definió las características que debe cumplir un data warehouse. ¿Cuáles son? 
   - A. Orientado a un área e integrado.
   - B. Portátil y fácil de manejar.
-  - C. Indexado en el tiempo y no volátil. -> Correcto
+  - C. Indexado en el tiempo y no volátil. -> **Correcto**
   - D. Consistente y fácil.
 
 7.- ¿Cuál es la función del data datawarehouse y del data lake? 
   -  A. Aumentar el trabajo de los usuarios.
-  -  B. Ayudar en la toma de decisiones. -> Correcto
+  -  B. Ayudar en la toma de decisiones. -> **Correcto**
   -  C. Centralizar los datos para facilitar el manejo.
   -  D. Ninguna de las anteriores.
 
 8.- Es falso si hablamos de ETL: 
   - A. Los datos se transforman en un servidor intermedio antes de subir al DW.
-  - B. El tiempo de carga, sobre todo la primera vez, es muy rápido. -> Correcto
+  - B. El tiempo de carga, sobre todo la primera vez, es muy rápido. -> **Correcto**
   - C. Altos niveles de mantenimiento.
   - D. Las estructuras pueden llegar a ser complejas.
 
 9.- Es falso si hablamos de ELT: 
-  - A. Los datos se cargan y se transforman en un servidor intermedio antes de subir al DW. -> Correcto
+  - A. Los datos se cargan y se transforman en un servidor intermedio antes de subir al DW. -> **Correcto**
   - B. El tiempo de carga es muy rápido.
   - C. Bajo nivel de mantenimiento.
   - D. Es nuevo y complejo de implementar.
@@ -186,17 +186,17 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   A. Son un repositorio central de información. 
   B. Da significado a cada componente, variable y atributo que reside en el DW. 
   C. Contiene información sobre la estructura del data lake. 
-  D. A y B son verdaderos. -> Correcto
+  D. A y B son verdaderos. -> **Correcto**
 
 # Cuestionario TEMA 4
 1.- Son principios básicos del desarrollo de DW según Kimball: 
   - A. Centrarse en el negocio.
   - B. Incrementos significativos
   - C. Los datos como centro de análisis.
-  - D. A y B son correctas. -> Correcto
+  - D. A y B son correctas. -> **Correcto**
 
 2.- No es una tarea dentro de la metodología Kimball: 
-  - A. Crear el maestro de datos. -> Correcto
+  - A. Crear el maestro de datos. -> **Correcto**
   - B. Diseño e implementación de ETL.
   - C. Diseño de arquitectura técnica.
   - D. Selección de herramientas de implementación.
@@ -205,13 +205,13 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   - A. DevOps.
   - B. CRISP-DM.
   - C. Costes.
-  - D. Alcance. -> Correcto
+  - D. Alcance. -> **Correcto**
 
 4.- ¿Cuáles son las rutas para el desarrollo del data warehouse según la metodología Kimball? 
   - A. Tecnologías.
   - B. Procesos.
   - C. Datos.
-  - D. A y C son correctas. -> Correcto
+  - D. A y C son correctas. -> **Correcto**
 
 5.- ¿Cómo se pueden obtener los requerimientos del data warehouse? 
   - A. A través de entrevistas.
@@ -222,11 +222,11 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
 6.- ¿Cuántas características define Inmon para el DW? 
   - A. 1.
   - B. 8.
-  - C. 4. -> Correcto
+  - C. 4. -> **Correcto**
   - D. 6.
 
 7.- Son nuevos roles incorporados en los últimos años: 
-  - A. Ingeniero de datos y analista de datos. -> Correcto
+  - A. Ingeniero de datos y analista de datos. -> **Correcto**
   - B. Consumidor de datos.
   - C. Usuarios finales.
   - D. Consumidores de información.
@@ -234,18 +234,18 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
 8.- Según el estudio publicado por el BI & Analytics Trend Monitor de BARC, son tendencias del business intelligence: 
   - A. Creación de grandes empresas.
   - B. Almacenamiento de gran cantidad de datos.
-  - C. Desarrollo ágil de BI. -> Correcto
+  - C. Desarrollo ágil de BI. -> **Correcto**
   - D. Generación de alertas.
 
 9.- Menciona dos etapas de la metodología PMI: 
   - A. Pretratamiento de los datos brutos. 
   - B. Inicialización y cierre de los datos maestros.
   - C. Control y ejecución del proceso.
-  - D. Control y supervisión. -> Correcto
+  - D. Control y supervisión. -> **Correcto**
 
 10.- La metodología DevOps permite: A. Aplicar velocidad a los proyectos subidos a AWS. 
   B. Aplicar velocidad a los proyectos subidos a Azure. 
-  C. Entrega rápida, confiabilidad y escalado de proyectos. -> Correcto 
+  C. Entrega rápida, confiabilidad y escalado de proyectos. -> **Correcto** 
   D. Actuar lento pero seguro en proyectos BI.
 
 ## video Clase 1
@@ -283,60 +283,60 @@ La metodología DevOps está diseñada para aumentar la velocidad de entrega, co
 
 ¿Cuál es uno de los principios básicos de la metodología Kimball?
 
-Correcto. La metodología Kimball se enfoca en el negocio y en crear una infraestructura de información completa y útil.
+**Correcto**. La metodología Kimball se enfoca en el negocio y en crear una infraestructura de información completa y útil.
 ¿Cuál es uno de los pasos en la planificación de un proyecto según la metodología Kimball?
 
-Correcto. Es crucial definir con precisión el alcance y los requerimientos del negocio para una planificación efectiva del proyecto.
+**Correcto**. Es crucial definir con precisión el alcance y los requerimientos del negocio para una planificación efectiva del proyecto.
 ¿Cuál es una pregunta clave que puede ayudar en el análisis de requerimientos?
 
-Correcto. Preguntarse cómo se compartirá la información es esencial para asegurar que los datos sean accesibles y útiles dentro de la organización.
+**Correcto**. Preguntarse cómo se compartirá la información es esencial para asegurar que los datos sean accesibles y útiles dentro de la organización.
 ¿Qué rol en la estructura DAMA es responsable de la arquitectura y la integración de datos de alto nivel?
 
-Correcto. El arquitecto de datos es responsable de la arquitectura y la integración de datos de alto nivel.
+**Correcto**. El arquitecto de datos es responsable de la arquitectura y la integración de datos de alto nivel.
 ¿Qué tendencia en BI para 2022 se menciona en el documento?
 
-Correcto. La encuesta de BARC destaca la importancia de entender las decisiones de compra y los beneficios comerciales a través de encuestas y estudios.
+**Correcto**. La encuesta de BARC destaca la importancia de entender las decisiones de compra y los beneficios comerciales a través de encuestas y estudios.
 
 # Cuestionario TEMA 5
 
 1.- El marketing como filosofía: 
-  - A. Defiende el establecimiento de unas relaciones permanentes con los clientes. -> correcto
+  - A. Defiende el establecimiento de unas relaciones permanentes con los clientes. -> **Correcto**
   - B. Defiende el establecimiento de unas relaciones no permanentes con los clientes
   
 2.- La venta es un proceso: 
   - A. En sentido único.
-  - B. En doble sentido. -> correcto
+  - B. En doble sentido. -> **Correcto**
 
 3.- El marketing como disciplina científica: 
 - A. Es reconocido como una rama de la economía que se dedica a estudiar los canales de distribución.
-- B. Es reconocido como una ciencia aplicada del comportamiento que trata de comprender las relaciones entre compradores y vendedores. -> correcto
+- B. Es reconocido como una ciencia aplicada del comportamiento que trata de comprender las relaciones entre compradores y vendedores. -> **Correcto**
 
 4.- El concepto de marketing está estrechamente vinculado con la relación de intercambio. 
-  - A. Correcto. -> correcto
+  - A. Correcto. -> **Correcto**
   - B. Incorrecto.
 
 5.- La satisfacción de necesidades es: 
   - A. El elemento motivador que anula el proceso de intercambio.
-  - B. El elemento motivador que facilita el proceso de intercambio. -> correcto
+  - B. El elemento motivador que facilita el proceso de intercambio. -> **Correcto**
 
 6.- Cuando se habla de producto, desde el punto de vista del marketing, nos estamos refiriendo a: 
   - A. Los bienes tangibles.
-  - B. Los objetos tangibles e intangibles -> correcto
+  - B. Los objetos tangibles e intangibles -> **Correcto**
 
 7.- Los bienes son: 
-  - A. Objetos físicos y, como tales, tangibles. -> correcto
+  - A. Objetos físicos y, como tales, tangibles. -> **Correcto**
   - B. Objetos materiales e inmateriales.
 
 8.- El enfoque actual del marketing hacia el mercado y en relación con el cliente: 
-  - A. Solo es posible con un mejor conocimiento de las necesidades individuales del cliente. -> correcto
+  - A. Solo es posible con un mejor conocimiento de las necesidades individuales del cliente. -> **Correcto**
   - B. Implica un profundo conocimiento del mercado absoluto.
 
 9.- El sistema de inteligencia de marketing aporta información: 
   - A. Sobre aspectos relacionados con la situación y los resultados conseguidos por la empresa.
-  - B. Sobre los aspectos que tienen lugar en el entorno y que son más significativos para la empresa. -> correcto
+  - B. Sobre los aspectos que tienen lugar en el entorno y que son más significativos para la empresa. -> **Correcto**
 
 10.- La investigación de marketing consiste en: 
-  - A. El diseño sistemático, el análisis de datos y la recogida de información relevante para resolver un problema concreto al que se enfrenta la empresa. -> correcto
+  - A. El diseño sistemático, el análisis de datos y la recogida de información relevante para resolver un problema concreto al que se enfrenta la empresa. -> **Correcto**
   - B. El diseño sistemático, el análisis de datos y la recogida de información relevante para resolver una complicación hipotética a la que se enfrenta la empresa.
 
 ## Videoclase 1. Fundamentos del Marketing
@@ -350,7 +350,7 @@ El marketing como disciplina científica
 Es reconocido como una ciencia aplicada del comportamiento que trata de comprender las relaciones entre compradores y vendedores. -> El marketing es una ciencia aplicada que estudia y analiza el comportamiento de los consumidores y las dinámicas entre compradores y vendedores, enfocándose en satisfacer necesidades y construir relaciones de valor.
 
 El concepto de marketing está estrechamente vinculado con la relación de intercambio.
-Correcto.-> El marketing se basa en la relación de intercambio, donde se intercambian productos o servicios por algo de valor, generalmente dinero, para satisfacer las necesidades y deseos de las partes involucradas.
+**Correcto**.-> El marketing se basa en la relación de intercambio, donde se intercambian productos o servicios por algo de valor, generalmente dinero, para satisfacer las necesidades y deseos de las partes involucradas.
 
 La satisfacción de necesidades es
 El elemento motivador que facilita el proceso de intercambio -> La satisfacción de necesidades es el principal motor detrás del proceso de intercambio. Es la razón por la que los consumidores buscan productos o servicios que cumplan con sus deseos y expectativas.
@@ -373,29 +373,29 @@ El diseño sistemático, el análisis de datos y la recogida de información rel
 
 ## Videoclase 3. Inteligencia e Investigación de Marketing
 ¿Qué es el Sistema de Información de Marketing (SIM)?
-Un sistema que recolecta, almacena, analiza y distribuye información de marketing para la toma de decisiones. -> Correcto. El SIM se utiliza para gestionar información relevante para la toma de decisiones en marketing.
+Un sistema que recolecta, almacena, analiza y distribuye información de marketing para la toma de decisiones. -> **Correcto**. El SIM se utiliza para gestionar información relevante para la toma de decisiones en marketing.
 
 ¿Cuáles son algunos de los beneficios del consumo colaborativo mencionados en el documento?
-Eliminación de intermediarios, mayor especialización y capacidad de elección. -> Correcto. El consumo colaborativo ofrece beneficios como la eliminación de intermediarios, mayor especialización y capacidad de elección.
+Eliminación de intermediarios, mayor especialización y capacidad de elección. -> **Correcto**. El consumo colaborativo ofrece beneficios como la eliminación de intermediarios, mayor especialización y capacidad de elección.
 
 ¿Qué tipo de datos se consideran esenciales para el análisis de clientes?
-Datos transaccionales y demográficos. -> Correcto. Los datos transaccionales y demográficos son esenciales para un análisis efectivo de clientes.
+Datos transaccionales y demográficos. -> **Correcto**. Los datos transaccionales y demográficos son esenciales para un análisis efectivo de clientes.
 
 ¿Cuál es uno de los objetivos principales de la creación de un buyer persona?
-Identificar las necesidades y comportamientos de los clientes para personalizar estrategias de marketing. -> Correcto. La creación de un buyer persona ayuda a identificar y entender mejor a los clientes para personalizar las estrategias de marketing.
+Identificar las necesidades y comportamientos de los clientes para personalizar estrategias de marketing. -> **Correcto**. La creación de un buyer persona ayuda a identificar y entender mejor a los clientes para personalizar las estrategias de marketing.
 
 ¿Qué herramienta se menciona como útil para el análisis de datos en marketing estratégico?
-Google Analytics. -> Correcto. Google Analytics se menciona como una herramienta útil para el análisis de datos en marketing estratégico.
+Google Analytics. -> **Correcto**. Google Analytics se menciona como una herramienta útil para el análisis de datos en marketing estratégico.
 
 
 # Cuestionario TEMA 6 
 1.- ¿Puede un sitio web tener más páginas vistas que visitas? 
   - A. No.
-  - B. Sí. -> correcto
+  - B. Sí. -> **Correcto**
   - C. Solo a veces. D. Todas son correctas.
 
 2.- ¿Cuándo finaliza, en general, una sesión en Google Analytics? 
-  - A. A los 30 minutos de iniciarse la sesión. -> correcto
+  - A. A los 30 minutos de iniciarse la sesión. -> **Correcto**
   - B. A los 20 minutos de iniciarse la sesión.
   - C. A los 15 minutos de iniciarse la sesión.
   - D. Cuando apagas el ordenador.
@@ -403,29 +403,29 @@ Google Analytics. -> Correcto. Google Analytics se menciona como una herramienta
 3.- ¿En un test A/B hay que insertar alguna etiqueta de Google Analytics en nuestra web? 
   - A. Nunca.
   - B. Solo si no funciona.
-  - C. Un código que se inserta en la página original y en la de objetivo. -> correcto
+  - C. Un código que se inserta en la página original y en la de objetivo. -> **Correcto**
   - D. Todas son correctas.
 
 4.- La velocidad de un sitio es importante para: 
   - A. La experiencia de navegación del usuario.
   - B. La experiencia de usuario y el posicionamiento.
   - C. Solo el posicionamiento.
-  - D. A y B son correctas. -> correcto
+  - D. A y B son correctas. -> **Correcto**
 
 5.- Elige la opción que corresponda a una métrica: 
   - A. Visitas.
   - B. Usuarios en España.
   - C. Provienen de Yahoo.
-  - D. Todas son correctas. -> correcto
+  - D. Todas son correctas. -> **Correcto**
 
 6.- ¿Qué herramientas sirven para analizar la velocidad del sitio web? 
   - A. Google Webmaster Tools.
   - B. Photoshop.
   - C. Yslow.
-  - D. A y C son correctas -> correcto
+  - D. A y C son correctas -> **Correcto**
 
 7.- Relaciona el indicador con lo que mide:Las herramientas web: ¿en qué indicador basan sus datos?
-  - A. Cookies. -> correcto
+  - A. Cookies. -> **Correcto**
   - B. Código de Java.
   - C. A y B son correctas.
   - D. Ninguna es correcta.
@@ -455,17 +455,17 @@ usuarios o directamente con la analítica web.
 1.- ¿Qué métrica no es básica para el análisis web? 
   - A. Visitas.
   - B. Porcentaje de rebote.
-  - C. Tiempo real. -> correcto
+  - C. Tiempo real. -> **Correcto**
   - D. Todas son correctas.
 
 2.- Según Kotler, el cuarto y definitivo paso en el proceso de marketing es: 
   - A. El diseño del programa de marketing.
   - B. La consecución de relaciones beneficiosas con los clientes.
   - C. Entender el mercado y las necesidades de los clientes.
-  - D. Diseñar una estrategia adecuada con el foco en el cliente. -> Correcto
+  - D. Diseñar una estrategia adecuada con el foco en el cliente. -> **Correcto**
 
 3.- Según el profesor Peppers, el beneficio global obtenido a través de la gestión del conocimiento, basada en una estrategia de marketing relacional es del: 
--   A. 42 %. -> Correcto
+-   A. 42 %. -> **Correcto**
 -   B. 24 %.
 -   C. 30 %.
 -   D. 60 %.
@@ -474,10 +474,10 @@ usuarios o directamente con la analítica web.
   - A. La tecnología.
   - B. Una buena comunicación con el cliente.
   - C. Perspectiva a largo plazo.
-  - D. Todos los anteriores son factores clave. -> Correcto
+  - D. Todos los anteriores son factores clave. -> **Correcto**
 
 5.- La A de assurance en el modelo RATER se traduce por: 
-  - A. Capacidad de los empleados en dar un buen servicio. ->Correcto
+  - A. Capacidad de los empleados en dar un buen servicio. ->**Correcto**
   - B. La presencia física del personal, material, etc. que proporciona el servicio.
   - C. La capacidad de suministrar atención y cuidado como a uno mismo.
   - D. Disposición a atender al cliente de forma rápida y amable.
@@ -486,22 +486,22 @@ usuarios o directamente con la analítica web.
   - A. Identificar las expectativas del cliente: qué quiere, cómo y cuándo lo quiere.
   - B. Comparar las características del servicio prestado y las expectativas del cliente y determinar las áreas de mejora.
   - C. Comunicación omnicanal permanente y de valor con el cliente (si no tienes nada interesante que decir, mejor no digas nada).
-  - D. Todas deberían estar en un buen CRM. ->Correcto
+  - D. Todas deberían estar en un buen CRM. ->**Correcto**
 
 7.- Una palabra clave que nos recuerde qué significa CRM puede ser: 
-  - A. Cliente. -> Correcto
+  - A. Cliente. -> **Correcto**
   - B. Transformación.
   - C. Diferencia.
   - D. Marca.
 
 8.- Según Ignasi Vidal, el máximo nivel de marketing relacional sería: 
   -  A. El estadístico.
-  -  B. El de socio.->Correcto
+  -  B. El de socio.->**Correcto**
   -  C. El básico.
   -  D. El proactivo.
 
 9.- La razón principal del marketing relacional es: 
-  - A. Mantener y fidelizar clientes ->Correcto
+  - A. Mantener y fidelizar clientes ->**Correcto**
   - B. Vender más.
   - C. Analizar el servicio al cliente.
   - D. Realizar promociones.
@@ -510,11 +510,11 @@ usuarios o directamente con la analítica web.
   - A. Utilización multicanal (móvil, e-mail, RR. SS.) para estar en contacto útil con los clientes. 
   - B. Información puntual del estado de sus pedidos (entrega, posventa, etc.). 
   - C. Servicio 24 horas. 
-  - D. Todos los anteriores son ejemplos válidos. ->Correcto
+  - D. Todos los anteriores son ejemplos válidos. ->**Correcto**
 
 11.- La capacidad de suministrar atención y cuidado como a uno mismo es reconocida en el modelo RATER como: 
   - A. Reliabilty.
-  - B. Empathy. ->Correcto
+  - B. Empathy. ->**Correcto**
   - C. Assurance.
   - D. Tangibles
 
@@ -611,10 +611,10 @@ Usabilidad - La definición se refiere a la usabilidad de un sitio web, que mide
 ## Video 3
 
 ¿Qué métrica se utiliza para medir la rentabilidad de una inversión en marketing digital?
-Correcto. El ROI (Return on Investment) se utiliza para medir la rentabilidad de una inversión en marketing digital.
+**Correcto**. El ROI (Return on Investment) se utiliza para medir la rentabilidad de una inversión en marketing digital.
 
 ¿Cuál es una métrica de rendimiento comúnmente utilizada para medir el éxito de una campaña publicitaria basada en impresiones?
-Correcto. El CPM (Coste por mil) se utiliza para medir el coste de mil impresiones en una campaña publicitaria.
+**Correcto**. El CPM (Coste por mil) se utiliza para medir el coste de mil impresiones en una campaña publicitaria.
 
 ¿Qué representa el porcentaje de rebote en el análisis web?
 El porcentaje de visitantes que abandonan el sitio después de ver solo una página.
@@ -623,93 +623,126 @@ El porcentaje de visitantes que abandonan el sitio después de ver solo una pág
 Seguir y analizar los pasos de los usuarios a lo largo de un proceso, como una compra, para identificar puntos de abandono.
 
 ¿Qué métrica se utiliza para medir la efectividad de los anuncios en términos de interacción del usuario?
-CTR - Correcto. El CTR (Click Through Rate) mide el porcentaje de usuarios que hacen clic en un anuncio en comparación con el número total de impresiones del anuncio.
+CTR - **Correcto**. El CTR (Click Through Rate) mide el porcentaje de usuarios que hacen clic en un anuncio en comparación con el número total de impresiones del anuncio.
 Cuestionario
 
 # Cuestionario TEMA 8 
 
-1. De entre los siguientes, ¿cuáles tienen la consideración de datos de carácter
-personal por parte del RGPD?
+1. De entre los siguientes, ¿cuáles tienen la consideración de datos de carácter personal por parte del RGPD?
   - A. Un nombre.
   - B. Un número de identificación.
   - C. Información genética.
-  - D. Todos los anteriores.
+  - D. Todos los anteriores. -> **Correcto** 
 
-2. De entre los siguientes datos, ¿cuáles no tienen la consideración de datos de
-categorías especiales?
-  - A. Las opiniones políticas.
-  - B. Los datos de ingresos mensuales.
+2. De entre los siguientes datos, ¿cuáles no tienen la consideración de datos de categorías especiales?
+  - A. Las opiniones políticas. 
+  - B. Los datos de ingresos mensuales. ->  **Correcto** 
   - C. Los tratamientos de datos genéticos.
   - D. Los datos relativos a la salud de las personas.
 
-3. Cuando nuestros datos de carácter personal se quieren incorporar a un
-tratamiento por una organización, está obligada a:
+3. Cuando nuestros datos de carácter personal se quieren incorporar a un tratamiento por una organización, está obligada a:
   - A. Informar sobre quién o quiénes son los responsables del tratamiento.
-  - B. Informar sobre la finalidad por la que recaban los datos y se van a realizar
-los tratamientos.
-  - C. Informar si procede de los destinatarios o grupos de destinatarios de las
-comunicaciones de datos que se vayan a efectuar.
-  - D. Todas las respuestas anteriores son ciertas.
+  - B. Informar sobre la finalidad por la que recaban los datos y se van a realizar los tratamientos.
+  - C. Informar si procede de los destinatarios o grupos de destinatarios de las comunicaciones de datos que se vayan a efectuar.
+  - D. Todas las respuestas anteriores son ciertas. -> **Correcto** 
 
 4. De las operaciones siguientes, indica cuáles se consideran tratamiento de datos:
   - A. Recogida de datos de clientes en un formulario online.
   - B. Conservación de datos en copias de seguridad.
   - C. Consulta de datos de forma telemática.
-  - D. Todas las respuestas anteriores son ciertas.
+  - D. Todas las respuestas anteriores son ciertas. -> **Correcto** 
 
- 5.- De entre los siguientes, indica cuáles son principios de la protección de datos
-conforme al RGPD.
+ 5.- De entre los siguientes, indica cuáles son principios de la protección de datos conforme al RGPD.
   - A. Minimización de datos.
   - B. Exactitud de los datos.
   - C. Responsabilidad proactiva.
-  - D. Todos los anteriores.
-6. De entre los siguientes, indica cuáles son obligaciones del responsable de
-tratamiento conforme al RGPD.
+  - D. Todos los anteriores. -> **Correcto** 
+    
+6. De entre los siguientes, indica cuáles son obligaciones del responsable de tratamiento conforme al RGPD.
   - A. Atender a las autoridades de control.
-  - B. Notificar las fallas de seguridad a las autoridades de control y afectados,
-cuando sea preciso.
-  - C. Seleccionar diligentemente y formalizar la relación con los encargados de
-tratamiento.
-  - D. Todas las anteriores.
+  - B. Notificar las fallas de seguridad a las autoridades de control y afectados, cuando sea preciso.
+  - C. Seleccionar diligentemente y formalizar la relación con los encargados de tratamiento.
+  - D. Todas las anteriores. -> **Correcto** 
 
-7. Respecto a las transferencias internacionales a EE. UU., indica qué afirmación es
-cierta:
-  - A. Si existe el consentimiento del afectado, se puede realizar dicha
-transferencia.
-  - B. Si EE. UU. dispone de una decisión de adecuación de la Comisión que
-reconoce un nivel de protección en materia de protección de datos
-equivalente al de la UE.
-  - C. Las organizaciones de EE. UU. certificadas de acuerdo con el Escudo de
-Privacidad (Privacy Shield) tienen reconocido un nivel de protección
-equivalente al de la UE.
-  - D. En ningún caso se pueden transferir datos a organizaciones residentes en
-EE. UU.
+7. Respecto a las transferencias internacionales a EE. UU., indica qué afirmación es cierta:
+  - A. Si existe el consentimiento del afectado, se puede realizar dicha transferencia.
+  - B. Si EE. UU. dispone de una decisión de adecuación de la Comisión que reconoce un nivel de protección en materia de protección de datos equivalente al de la UE. -> **Correcto**
+  - C. Las organizaciones de EE. UU. certificadas de acuerdo con el Escudo de Privacidad (Privacy Shield) tienen reconocido un nivel de protección equivalente al de la UE.
+  - D. En ningún caso se pueden transferir datos a organizaciones residentes en EE. UU.
 
 8. Indica qué afirmación es verdadera:
-  - A. Las legislaciones en protección de datos de EE. UU. y la UE son
-legislaciones tipo ómnibus y equivalentes.
+  - A. Las legislaciones en protección de datos de EE. UU. y la UE son legislaciones tipo ómnibus y equivalentes.
   - B. La exportación de datos desde la UE a EE. UU. es libre.
-  - C. A nivel internacional, la mayoría de los países ofrecen un nivel fuerte de
-protección en materia de protección de datos equivalente al de la UE.
-  - D. Existe disparidad entre los marcos legales de la UE y de EE. UU.
+  - C. A nivel internacional, la mayoría de los países ofrecen un nivel fuerte de protección en materia de protección de datos equivalente al de la UE.
+  - D. Existe disparidad entre los marcos legales de la UE y de EE. UU.  **Correcto**
 
-9. Las trasferencias internacionales de datos son una práctica habitual, pero ¿son
-legales?
-  - A. Sí, siempre que el usuario adecuadamente informado consienta a la
-transferencia.
-  - B. Sí, cuando es necesaria para ejecutar un contrato entre el afectado y el
-responsable del tratamiento.
-  - C. Sí, si existe una decisión de la Comisión que reconoce, sobre el país
-destinatario, un nivel de protección equivalente al de la UE.
-  - D. En todos los casos anteriores son legales.
+9. Las trasferencias internacionales de datos son una práctica habitual, pero ¿son legales?
+  - A. Sí, siempre que el usuario adecuadamente informado consienta a la transferencia.
+  - B. Sí, cuando es necesaria para ejecutar un contrato entre el afectado y el responsable del tratamiento.
+  - C. Sí, si existe una decisión de la Comisión que reconoce, sobre el país destinatario, un nivel de protección equivalente al de la UE.
+  - D. En todos los casos anteriores son legales. -> **Correcto**
 
-10. Respecto a los derechos que el RGPD reconoce a los afectados, ¿cuál de entre
-los siguientes no es cierto?
+10. Respecto a los derechos que el RGPD reconoce a los afectados, ¿cuál de entre los siguientes no es cierto?
   - A. Acceso.
   - B. Rectificación.
   - C. Oposición.
-  - D. Legitimación.
-  - 
+  - D. Legitimación. -> **Correcto**
+
+
+## Video 1: La protección de datos. Panorama general. 
+
+- ¿Cuál de los siguientes no es un principio del RGPD?
+  -  Accesibilidad completa.  -> El RGPD no incluye un principio denominado «accesibilidad completa». Los principios listados en el RGPD incluyen la licitud, lealtad y transparencia (B), así como la integridad y confidencialidad (D). La minimización de datos (A) es también un principio clave del RGPD que asegura que solo los datos necesarios para los fines específicos del tratamiento son procesados.
+
+- ¿Qué entiende el RGPD por datos biométricos?
+  - Datos obtenidos a partir de procesos técnicos para identificación única. -> Según el RGPD, los datos biométricos son aquellos obtenidos a partir de un tratamiento técnico específico que se refiere a características físicas, fisiológicas o de comportamiento que permiten o confirman la identificación única de una persona. Las opciones A, B, y D se refieren a otros tipos de datos personales que también están regulados, pero no se definen como datos biométricos.
+ 
+- ¿Qué es necesario para que una transferencia internacional de datos personales sea legal bajo el RGPD sin necesidad de mecanismos específicos de garantía?
+  - Consentimiento explícito del interesado. -> Para que las transferencias internacionales de datos sean legales sin mecanismos específicos adicionales, el país receptor debe tener un marco legal considerado equivalente al de la UE por la Comisión Europea. 
+
+- En el contexto del RGPD, ¿qué no se considera un dato personal?
+  - Números aleatorios sin ninguna referencia personal o contextual. -> Números aleatorios que no están vinculados o no pueden ser vinculados a una persona específica o contexto no se consideran datos personales bajo el RGPD. 
+
+- ¿Qué requiere el RGPD en relación con los datos transferidos a un país fuera de la UE que no tenga un nivel adecuado de protección de datos?
+  - Todas las anteriores. -> Cuando los datos se transfieren a un país fuera de la UE que no cuenta con un nivel adecuado de protección de datos, el RGPD requiere que se implementen medidas técnicas y organizativas adecuadas
+
+
+## Video 2: El RGPD. Conceptos y principios. 
+- ¿Qué no está permitido bajo el RGPD sin consentimiento explícito, a menos que se apliquen excepciones legales específicas?
+  - Tratamiento de categorías especiales de datos personales. -> 
+
+- ¿Cuál de los siguientes no es un derecho del interesado bajo el RGPD?
+  - Derecho a obtener beneficios económicos de sus datos. -> El RGPD otorga varios derechos a los individuos, como la portabilidad, ser informado sobre violaciones y acceso a sus datos, pero no incluye el derecho a obtener beneficios económicos directamente de sus datos. Las otras opciones son derechos reales bajo el RGPD.
+
+- ¿Qué principio del RGPD exige que cualquier información y comunicación relacionada con el tratamiento de datos personales sea fácilmente accesible y comprensible, usando un lenguaje claro y sencillo?
+  - Transparencia. -> El principio de transparencia requiere que toda la información y comunicación relacionada con el tratamiento de los datos sea accesible y comprensible
+
+- ¿Cuál de los siguientes no es un objetivo del RGPD?
+  -Proteger a las personas de la comercialización indebida de sus datos personales -> Mientras que el RGPD busca proteger los datos personales y permitir un mayor control por parte de los individuos, su enfoque no es específicamente prevenir la «comercialización indebida», aunque puede ser un efecto secundario de sus provisiones. Las otras opciones son objetivos explícitos del RGPD.
+
+- Según el RGPD, ¿Cuál es la base legal que permite el tratamiento de datos personales sin el consentimiento del interesado?
+  - Todas las anteriores. -> El RGPD permite el tratamiento de datos personales sin el consentimiento del interesado bajo varias condiciones, incluyendo el cumplimiento de una obligación legal, la protección de intereses vitales y cuando el tratamiento es necesario para los intereses legítimos del responsable del tratamiento, siempre que no se sobrepongan los derechos del interesado. Todas las opciones son válidas y están contempladas en el reglamento.
+   - Cumplimiento de una obligación legal.
+   - Intereses legítimos perseguidos por el responsable del tratamiento, siempre que no se requiera el consentimiento por la naturaleza de los datos.
+   - Protección de intereses vitales del interesado o de otra persona.
+
+## Video 3: 
+
+- ¿Qué requiere el RGPD respecto al consentimiento para el tratamiento de categorías especiales de datos personales?
+  - Consentimiento explícito siempre -> El RGPD requiere que el consentimiento para el tratamiento de categorías especiales de datos personales sea explícito, abordando datos como los relativos a salud, raza, creencias religiosas, entre otros. Las opciones B y D son incorrectas porque minimizan la importancia del consentimiento explícito requerido por el RGPD. La opción C es incorrecta porque limita la regla a solo datos de salud, cuando en realidad se aplica a todas las categorías especiales.
+
+- ¿Cuál es una obligación del encargado del tratamiento bajo el RGPD?
+  - Garantizar el respeto a la confidencialidad de los datos. -> El encargado del tratamiento tiene la obligación de garantizar el respeto a la confidencialidad de los datos que maneja por cuenta del responsable del tratamiento. La opción A generalmente recae sobre el responsable del tratamiento, no el encargado. La opción C también es una responsabilidad del responsable del tratamiento en la mayoría de los casos. La opción D es incorrecta porque establecer la base legal para el tratamiento de datos es responsabilidad del responsable del tratamiento, no del encargado.
+
+
+- ¿Qué derecho permite al interesado recibir sus datos personales en un formato estructurado, comúnmente utilizado y legible por máquina?
+  - Derecho de portabilidad -> El derecho de portabilidad permite al interesado recibir sus datos personales en un formato estructurado y transferirlos a otro responsable. El derecho de acceso (A) permite al interesado verificar la posesión y uso de sus datos. El derecho de oposición (C) permite rechazar ciertos usos de sus datos. El derecho de supresión (D), o derecho al olvido, permite solicitar la eliminación de datos personales.
+
+- ¿Qué derecho permite a los interesados oponerse al tratamiento de sus datos personales en ciertas circunstancias, incluyendo el marketing directo?
+  - Derecho de oposición -> El derecho de oposición permite a los interesados oponerse al tratamiento de sus datos personales, especialmente en casos de marketing directo, investigación o si el tratamiento se basa en intereses legítimos del responsable del tratamiento. Las opciones A, B y C son derechos diferentes que permiten acceso, corrección o eliminación de datos, respectivamente, pero no incluyen la capacidad de oponerse al tratamiento en sí.
+
+- ¿Qué requiere el RGPD para el tratamiento de datos de menores de edad en relación con los servicios de la sociedad de la información?
+  - Consentimiento de los padres para menores de 16 años.  -> El RGPD estipula que el tratamiento de datos personales de menores en relación con los servicios de la sociedad de la información requiere el consentimiento de los padres o tutores si el menor tiene menos de 16 años, aunque los estados miembros pueden legislar para que esta edad sea tan baja como 13 años. Las opciones B, C y D no reflejan correctamente esta regulación, ya que simplifican o alteran los requisitos de edad y consentimiento.
 
 # Cuestionario TEMA 9
 
@@ -717,11 +750,10 @@ los siguientes no es cierto?
   - A. Privacidad por defecto.
   - B. Privacidad incrustada en el diseño.
   - C. Seguridad extremo a extremo.
-  - D. Todos los anteriores son correctos.
+  - D. Todos los anteriores son correctos. -> **Correcto**
 
-2. ¿Qué países forman el Comité de Protección de Datos RGPD, antiguo Grupo de
-trabajo del artículo 29 (WP29)?
-  - A. Los miembros de la UE.
+2. ¿Qué países forman el Comité de Protección de Datos RGPD, antiguo Grupo de trabajo del artículo 29 (WP29)?
+  - A. Los miembros de la UE. -> **Correcto**
   - B. Los miembros de la OCDE.
   - C. Los países miembros del G8.
   - D. Alemania, Francia, Italia, España y Reino Unido.
@@ -731,11 +763,11 @@ del big data definidas por el WP29:
   - A. Magnitud de la recopilación.
   - B. Seguridad de los datos.
   - C. Aumento dramático de las posibilidades de vigilancia del gobierno.
-  - D. Todas las anteriores son correctas.
+  - D. Todas las anteriores son correctas. -> **Correcto**
 
 4. ¿Qué afirmación de las siguientes respecto a las evaluaciones de impacto es
 falsa?
-  - A. La ley vigente obliga a la realización de evaluaciones de impacto cada seis meses de manera obligatoria.
+  - A. La ley vigente obliga a la realización de evaluaciones de impacto cada seis meses de manera obligatoria. -> **Correcto**
   - B. La evaluación de impacto es un proceso sistemático y reproducible.
   - C. El resultado de la evaluación se debe plasmar en un documento.
   - D. La evaluación de impacto debe ser un proceso periódico.
@@ -745,22 +777,22 @@ evaluación de impacto?
   - A. Cuando el tratamiento afecta a un número elevado de personas.
   - B. Cuando se traten grandes volúmenes de datos personales.
   - C. Cuando existan transferencias internacionales.
-  - D. Cuando el tratamiento sea esporádico, limitado y afecte a personas de interés público.
+  - D. Cuando el tratamiento sea esporádico, limitado y afecte a personas de interés público. -> **Correcto**
 
 6. ¿Cuáles de los siguientes tratamientos no requieren la realización de una evaluación de impacto?
   - A. Los realizados bajo las directrices de las autoridades de control.
   - B. Los necesarios para el cumplimiento de una obligación legal.
   - C. Los realizados por autónomos que ejerzan de forma individual.
-  - E. Ninguno de los anteriores requiere la realización de una evaluación de impacto.
+  - E. Ninguno de los anteriores requiere la realización de una evaluación de impacto. -> **Correcto**
 
 7. De entre los siguientes, ¿cuál no es un principio de la privacidad por diseño?
   - A. Privacidad por defecto.
   - B. Privacidad por diseño (incrustada en el diseño).
-  - C. Seguridad de extremo a extremo.
+  - C. Seguridad de extremo a extremo. -> **Correcto**
   - D. Privacidad global.
 
 8. En big data, ¿qué principio de entre los siguientes se ve principalmente afectado por el overcollecting?
-  - A. Principio de minimización de datos.
+  - A. Principio de minimización de datos. -> **Correcto**
   - B. Principio de limitación de la finalidad.
   - C. Exactitud de los datos.
   - D. Confidencialidad e integridad.
@@ -769,7 +801,7 @@ evaluación de impacto?
 entre las siguientes, indica qué afirmación al respecto es incorrecta:
   - A. Si un tratamiento se basa en el interés legítimo, no requiere el consentimiento del afectado.
   - B. El interés legítimo se aplica bajo la responsabilidad del responsable de tratamiento, que en su caso deberá demostrar que dicho interés no es anulado por los intereses o derechos y libertades fundamentales del interesado.
-  - C. El interés legítimo permite justificar cualquier tratamiento de datos de carácter personal.
+  - C. El interés legítimo permite justificar cualquier tratamiento de datos de carácter personal. -> **Correcto**
   - D. El derecho de información se debe garantizar, aunque la base legal del tratamiento sea el interés legítimo.
 
 10. Una universidad va a realizar un tratamiento de datos biométricos a gran escala
@@ -778,7 +810,7 @@ que afectará a todos los miembros de la comunidad educativa. Es este contexto,
   - A. Es necesario realizar una EIPD, al ser datos biométricos destinados a la identificación unívoca de las personas a gran escala.
   - B. Los datos biométricos no son datos de carácter personal.
   - C. Los datos biométricos pertenecen a categorías especiales de datos.
-  - D. No es necesario realizar una EIPD porque es una pyme
+  - D. No es necesario realizar una EIPD porque es una pyme -> **Correcto**
 
 # Cuestionario TEMA 10
 
