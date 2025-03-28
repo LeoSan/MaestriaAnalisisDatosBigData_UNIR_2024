@@ -4,29 +4,29 @@
   - A. La convierte en una empresa más competitiva.
   - B. Gestión integral en la evaluación de la decisión.
   - C. Ayuda en la implantación de indicadores.
-  - D. Todas son correctas.
+  - D. Todas son correctas. -> **Correcto**  
 
 2.-  Elementos del plan estratégico:
   - A. Información, metodología y alta gerencia.
   - B. Información y metodología.
   - C. Pensamiento estratégico.
-  - D. B y C son correctas.
+  - D. B y C son correctas. -> **Correcto**  
 
 3.- Menciona los elementos del modelo de gestión estratégica:
   - A. Misión y visión.
   - B. Objetivos estratégicos.
-  - C. A y B son correctas.
+  - C. A y B son correctas.  -> **Correcto**
   - D. Pensamiento sistémico y procesos internos.
 
 4.- ¿Qué preguntas se deben responder para crear la misión de una empresa?
   - A. ¿Qué?, ¿cómo?, ¿cuándo? y ¿por qué?
   - B. ¿Quiénes somos?, ¿qué hacemos? y ¿cómo lo hacemos?
   - C. ¿Para quién lo hacemos? y ¿dónde lo hacemos?
-  - D. B y C son correctas.
+  - D. B y C son correctas.  -> **Correcto**
 
 5.- ¿Qué elementos componen la visión?
   - A. Ámbito, valores y misión.
-  - B. Horizonte de tiempo, negocio y datos.
+  - B. Horizonte de tiempo, negocio y datos. -> **Correcto**
   - C. Ámbito de acción y estrategia.
   - D. Ninguna es correcta.
 
@@ -34,12 +34,11 @@
   - A. Porque los datos van a ser de calidad.
   - B. Porque se respeta la ley de protección de datos.
   - C. Porque cada persona dentro de la empresa sabe qué debe hacer.
-  - D. Porque se logra gestionar el activo más importante de la organización (el
-dato) y se toman mejores decisiones.
+  - D. Porque se logra gestionar el activo más importante de la organización (el dato) y se toman mejores decisiones. -> **Correcto**
 
 7.- Menciona las perspectivas del cuadro de mando integral:
   - A. Financiera, cliente y valores.
-  - B. Financiera, cliente, procesos y aprendizaje.
+  - B. Financiera, cliente, procesos y aprendizaje. -> **Correcto**
   - C. Aprendizaje, organizacional y procesos.
   - D. Ninguna es correcta.
 
@@ -47,16 +46,10 @@ dato) y se toman mejores decisiones.
   - A. Indicadores y metas.
   - B. Mapa estratégico e indicadores estratégicos.
   - C. Perspectivas y modelo de gestión.
-  - D. A y B son correctas.    
-
-9.- Menciona cuatro etapas del proceso de toma de decisiones:
-  - A. Decisión, identificación de criterios, selección de opciones e información.
-  - B. Implantación de opciones, identificación del problema, desarrollo de opciones y evaluación de la decisión.
-  - C. Datos, identificación de criterios, identificación de problemas y análisis de alternativas.
-  - D. A y C son correctas.
+  - D. A y B son correctas.                   -> **Correcto**   
 
 10. ¿Qué elementos intervienen en la decisión?
-  - A. Decisión, información y acción.
+  - A. Decisión, información y acción.        -> **Correcto**   
   - B. Realimentación, resultado e información.
   - Acción, datos y decisión.
   - D. B y C son correctas.
@@ -70,7 +63,7 @@ dato) y se toman mejores decisiones.
   - D. La información sin ser procesada genera conocimiento.
 
 2.- El ciclo de vida del dato en el gobierno de datos incluye: 
-  - A. Creación, uso y destrucción. -> Correcta
+  - A. Creación, uso y destrucción. -> **Correcto**  
   - B. Almacenaje, distribución y archivo.
   - C. Creación, distribución y destrucción.
   - D. A y B son correctas.
@@ -79,13 +72,13 @@ dato) y se toman mejores decisiones.
   - A. Entender y tener en cuenta los objetivos estratégicos es fundamental para poder dar respuesta a lo que la organización se traza como meta.
   - B. Evaluar el estado actual y el estado deseado en cuanto a madurez de la organización.
   - C. Definir una estrategia BI, definir una ruta y diseñar y construir las aplicaciones.
-  - D. Crear modelos de predicción.
+  - D. Crear modelos de predicción. -> **Correcto**  
 
 4.- ¿Cuáles son los cuatro pilares de Gartner para la construcción básica de business analytics? 
   - A. Proceso, clientes.
   - B. Información, personas.
   - C. Procesos, tecnologías.
-  - D. B y C son correctas. -> Correcta
+  - D. B y C son correctas. -> **Correcto**  
 
 5.- Menciona dos pasos del proceso de business analytics: 
   - A. Predictivo, analítico.
@@ -217,7 +210,7 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   - A. A través de entrevistas.
   - B. Por medio de sesiones facilitadoras.
   - C. Por los clientes externos.
-  - D. A y B son correctas. -> Correcta
+  - D. A y B son correctas. > **Correcto**
 
 6.- ¿Cuántas características define Inmon para el DW? 
   - A. 1.
@@ -435,7 +428,7 @@ Google Analytics. -> **Correcto**. Google Analytics se menciona como una herrami
 
 
 9.- Las herramientas web: ¿en qué indicador basan sus datos?
-  - A. Cookies.
+  - A. Cookies. -> **Correcto**
   - B. Código de Java.
   - C. A y B son correctas.
   - D. Ninguna es correcta.
@@ -445,7 +438,7 @@ puede ser usado por usuarios específicos para conseguir objetivos específicos 
 efectividad, eficiencia y satisfacción en un contexto de uso concreto, mediante test de
 usuarios o directamente con la analítica web.
   - A. Analítica web.
-  - B. Usabilidad.
+  - B. Usabilidad. -> **Correcto**
   - C. Engagement.
   - D. Ninguna es correcta.
 
