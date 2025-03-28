@@ -962,6 +962,7 @@ que afectará a todos los miembros de la comunidad educativa. Es este contexto,
   - D. No es necesario realizar una EIPD porque es una pyme -> **Correcto**
 
 ## Videoclase 1. Big Data y privacidad.
+
 - ¿Qué aspecto de Big Data plantea un desafío significativo para la privacidad, según el RGPD?
   - El potencial para identificar patrones ocultos y realizar perfiles detallados. -> La capacidad de Big Data para identificar patrones ocultos y realizar perfiles detallados plantea un desafío significativo para la privacidad, ya que puede llevar a conclusiones o decisiones automatizadas que afecten a los individuos sin su consentimiento explícito o conocimiento. 
 
@@ -1086,3 +1087,53 @@ aplicar l‑Diversity, indica cuál es el valor l del conjunto:
   - B. l = 2.
   - C. l = 3.
   - D. l = 4.
+
+## Videoclase 1. 
+-
+
+
+-
+
+
+-
+
+
+-
+
+
+-
+
+
+
+## Videoclase 2. 
+-
+
+
+-
+
+
+-
+
+
+-
+
+
+-
+
+
+
+## Videoclase 3. 
+-
+
+
+-
+
+
+-
+
+
+-
+
+
+-
+
