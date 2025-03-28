@@ -54,6 +54,27 @@
   - Acción, datos y decisión.
   - D. B y C son correctas.
 
+
+## Videoclase 1. Fundamentos de la Dirección Estratégica
+## Notas 
+
+
+## Videoclase 2. Elementos Clave del Gobierno de Datos
+## Notas: 
+- El gobierno de datos es crucial para asegurar la calidad y protección de los datos, lo que a su vez facilita la toma de decisiones informadas y estratégicas en la organización.
+- El cuadro de mando integral evalúa la organización desde cuatro perspectivas clave: financiera, cliente, procesos internos y aprendizaje y crecimiento, proporcionando una visión equilibrada del desempeño.
+- Los elementos fundamentales del cuadro de mando integral incluyen indicadores y metas, que miden el desempeño, así como el mapa e indicadores estratégicos, que guían la implementación de la estrategia.
+- Las etapas del proceso de toma de decisiones incluyen identificar el problema, desarrollar opciones, implementar las opciones seleccionadas y evaluar los resultados para retroalimentar el proceso.
+- En la toma de decisiones intervienen elementos como la información disponible, la acción a tomar y los datos que sustentan la decisión, así como la realimentación y los resultados obtenidos.
+
+## Videoclase 3. Estrategias Competitivas y Herramientas de Análisis
+## Notas: 
+- Correcto. La DAMA define la gobernanza de datos como el ejercicio de autoridad y control a través de la gestión de los activos de datos.
+- Correcto. Implementar un gobierno de datos facilita la disponibilidad, usabilidad, integridad y seguridad de los datos en la organización.
+- Correcto. La estrategia competitiva se enfoca en cómo una empresa competirá en el mercado.
+- Correcto. El análisis PESTEL se utiliza para evaluar el entorno político, económico, social, tecnológico, ecológico y legal que afecta a la empresa.
+- Correcto. Una de las perspectivas del Cuadro de Mando Integral (CMI) es la perspectiva financiera, que evalúa el rendimiento financiero de la empresa.
+
 # Cuestionario TEMA 2
 
 1.- Elige la respuesta correcta. 
@@ -120,6 +141,58 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   - C. Predictivo.
   - D. Ninguno de los anteriores.
 
+
+## Videoclase 1. Importancia del Dato en BI y BA.
+-  La gestión adecuada de los datos, a través de un ciclo de vida bien definido y el uso de datos maestros, es crucial para el éxito en Business Intelligence (BI) y Business Analytics (BA). Esta respuesta reconoce la importancia de los datos como un activo estratégico que, cuando se maneja adecuadamente, mejora los procesos de toma de decisiones.
+
+- El ciclo de vida de los datos en la gestión del gobierno de datos incluye fases críticas como la creación, el uso y la eventual destrucción de los datos. Este ciclo garantiza que los datos sean manejados adecuadamente durante toda su existencia, asegurando su calidad y relevancia. 
+
+- La creación de modelos de predicción no es un paso fundamental en la construcción de un ecosistema de BI (Business Intelligence). Los pasos clave incluyen entender los objetivos estratégicos, evaluar la madurez organizacional y definir una estrategia clara para implementar aplicaciones BI.
+
+- La creación de modelos de predicción no es un paso fundamental en la construcción de un ecosistema de BI (Business Intelligence). Los pasos clave incluyen entender los objetivos estratégicos, evaluar la madurez organizacional y definir una estrategia clara para implementar aplicaciones BI.
+
+- El proceso de business analytics incluye etapas como el análisis descriptivo, que examina datos históricos, y el análisis predictivo, que se enfoca en prever tendencias y patrones futuros. Estas etapas son fundamentales para extraer información útil y tomar decisiones informadas.
+
+## Videoclase 2. Datos Maestros y su GestiónPágina
+
+- La creación de datos maestros es vital para evitar la duplicidad de datos y mejorar la confiabilidad de la información dentro de la organización. Esto asegura que todos los departamentos trabajen con una única fuente de verdad, optimizando la eficiencia operativa y la calidad de los datos.
+
+- Business Analytics (BA) se enfoca en el análisis predictivo y prescriptivo, proporcionando recomendaciones basadas en datos actuales y futuros. Por otro lado, Business Intelligence (BI) se centra principalmente en el análisis de datos históricos para entender el desempeño pasado.
+
+- La afirmación "Se puede realizar un análisis descriptivo y diagnóstico de los datos" no es falsa; de hecho, es uno de los beneficios del business analytics. Sin embargo, esta opción fue marcada incorrectamente en el contexto de la pregunta, lo cual puede confundir al usuario.
+
+- Business Intelligence (BI) es considerado reactivo, ya que se centra en analizar datos históricos para entender el rendimiento pasado y tomar decisiones basadas en lo que ya ha ocurrido. No se anticipa a eventos futuros, a diferencia de los enfoques predictivos o prescriptivos.
+
+- El análisis prescriptivo se enfoca en recomendar acciones para manejar futuros escenarios, basándose en datos y modelos predictivos. Este tipo de análisis va más allá de predecir lo que sucederá, proporcionando recomendaciones específicas para optimizar los resultados futuros.
+
+
+# Nota: 
+- Actividades del gobierno de datos: 
+    - Entender las necesecidades de integración de los datos 
+    - Identificar fuentes y contribuyentes 
+    - Definir y Mantener la Arquitectura de integración 
+    - Implementar las soluciones de admin
+    - Definir y mantener las reglas de coincidencia 
+    - Establecer los registros de ORO
+    - Definir y mantener las jerarquias 
+    - Planificar e implementar 
+    - Replicar y Distribuirlos 
+    - Administrar los cambios de Datos Maestros y referencias. 
+
+- Objetivos: Gestion de los datos maestros  
+    - Mejorar la calidad de los datos y su integración  através de las fuentes, estrategias y las tecnologicas
+    - Proporcionar una vision de 360 grados para asegurar la calidad de los reportos, 
+
+## Videoclase 3. Análisis Predictivo y Prescriptivo
+
+## Nota:
+- Correcto. Un objetivo principal del gobierno de datos es mejorar la calidad e integración de los datos.
+- Correcto. Es crucial determinar quién necesita qué información para asegurar que los datos adecuados estén disponibles para las personas correctas.
+- Correcto. La fase de mantener y usar se encarga de asegurar la integridad y seguridad de los datos durante su utilización.
+- Correcto. Business intelligence se refiere a la integración de datos para facilitar el análisis y la toma de decisiones en una organización.
+- Correcto. Los datos duplicados se refieren a la presencia de registros repetidos en una base de datos, lo cual puede afectar la calidad y precisión de la información.
+  
+
 # Cuestionario TEMA 3
 
 1.- ¿Cuáles son etapas del proceso ETL? 
@@ -180,6 +253,44 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   B. Da significado a cada componente, variable y atributo que reside en el DW. 
   C. Contiene información sobre la estructura del data lake. 
   D. A y B son verdaderos. -> **Correcto**
+
+## Videoclase 1. Fundamentos de Data Warehouse
+## Notas: 
+- El proceso ETL (Extract, Transform, Load) incluye las etapas de extracción de datos de diversas fuentes y su transformación en un formato adecuado para la carga en el destino final, como un data warehouse.
+- Los data marts son subconjuntos del data warehouse orientados a áreas específicas de negocio, facilitando el acceso a datos relevantes para análisis departamentales.
+- Las arquitecturas de una y dos capas son comunes en la implementación de data warehouses. La arquitectura de una sola capa integra datos directamente en el almacén de datos, mientras que la de dos capas incluye una capa adicional para procesamiento o almacenamiento.
+- Las fuentes de datos para un data warehouse pueden incluir bases de datos relacionales y archivos de texto plano, que proporcionan datos estructurados y semiestructurados.
+- Un data lake puede almacenar datos de una variedad de fuentes, incluidos archivos de texto plano, XML, HTML, PDF y multimedia como fotos. Esta flexibilidad permite almacenar datos estructurados, semiestructurados y no estructurados.
+
+## Videoclase 2. Metodologías para Desarrollo de DWPágina
+## Notas:   
+
+- Kimball DataWarehouse menciona que se construye de un conjunto de datasmart independientes orientado al negocios en especifico en vez de un enfonque centralizado es un desarrollo gradual y una entrega de valor mas rapida. 
+
+- Kimbal usa mucho OLAP 
+- Cubos olap, representan una forma eficiente para visualizar datos para un análisis mas profundo, se asemeja a una estructura bidimensional compuestos por dimensiones, jerarquias, medidas, la verdadera capacidad de los cubos es que permite al usuario visualizar análisis multidimensionales, permite validar datos desde multiples perspectivas. 
+- Concepto de Tablas 
+    - **Estrella** todo radica de una sola tabla principal y todos los demas la rodean 
+    - **Copo de Nieve** todo radica de una sola tabla principal y todos los demas la rodean pero ciertas tablas tienen su tablas hijas 
+    - **Constelación** ya es un esquema donde las tablas tienen sus hijos y no solo la tabla principal es el centro de atención. 
+    - 
+
+- Bill Inmon definió que un data warehouse debe ser indexado en el tiempo y no volátil, proporcionando un almacenamiento consistente y estable de datos históricos para análisis.
+- Tanto los data warehouses como los data lakes están diseñados para centralizar y organizar datos, con el objetivo de facilitar la toma de decisiones basada en datos.
+- En el proceso ETL, el tiempo de carga inicial puede ser considerablemente largo debido a la necesidad de transformar y limpiar grandes volúmenes de datos.
+- En ELT (Extract, Load, Transform), los datos se cargan primero en el destino y luego se transforman, a diferencia del ETL tradicional. Por lo tanto, la afirmación de que se transforman en un servidor intermedio antes de la carga es falsa.
+- Los metadatos actúan como un repositorio central que proporciona significado y contexto a los datos almacenados en un data warehouse. Incluyen información sobre la estructura, componentes y atributos, facilitando la comprensión y uso de los datos.
+- No es lo mismo ELT que ETL notaaaaaa 
+
+
+## Videoclase 3. Innovaciones y Roles en Data Management 
+## Notas:  
+- Correcto. Los Data Warehouses son repositorios de datos estructurados, mientras que los Data Lakes pueden almacenar datos en cualquier formato.
+- Correcto. ELT permite cargar datos rápidamente en el Data Lake y realizar las transformaciones necesarias en el sistema de destino.
+- Correcto. El Data Mesh promueve la descentralización y asigna la propiedad de los datos a los dominios que mejor los entienden.
+- Correcto. Los cubos OLAP se utilizan para el procesamiento analítico en línea, permitiendo análisis de datos multidimensionales rápidos.
+- Correcto. Las tablas de hechos en un Data Warehouse almacenan datos numéricos del negocio y se conectan con las tablas de dimensión.
+
 
 # Cuestionario TEMA 4
 1.- Son principios básicos del desarrollo de DW según Kimball: 
@@ -442,6 +553,51 @@ usuarios o directamente con la analítica web.
   - C. Engagement.
   - D. Ninguna es correcta.
 
+
+## Video 1: 
+## Nota: 
+- ¿Qué métrica no es básica para el análisis web?
+    - Tiempo real. 
+- ¿Puede un sitio web tener más páginas vistas que visitas?
+    - SI -> Es posible que un sitio web tenga más páginas vistas que visitas, ya que una sola visita puede incluir múltiples página vistas durante la misma sesión de navegación.
+- ¿Cuándo finaliza, en general, una sesión en Google Analytics?
+    -  A los 30 minutos de iniciarse la sesión. -> En Google Analytics, una sesión finaliza después de 30 minutos de inactividad. Este es el tiempo estándar de expiración para una sesión, a menos que se configure de otra manera.
+- ¿En un test A/B hay que insertar alguna etiqueta de Google Analytics en nuestra web?
+    - Un código que se inserta en la página original y en la de objetivo. -> Para realizar un test A/B, es necesario insertar un código de seguimiento en ambas versiones de la página (la original y la de prueba) para rastrear y comparar el rendimiento de cada versión.
+- La velocidad de un sitio es importante para
+    - A y B son correctas. -> La velocidad de un sitio web afecta tanto la experiencia de navegación del usuario como el posicionamiento en los motores de búsqueda, ya que los sitios más rápidos suelen tener una mejor clasificación y proporcionan una mejor experiencia al usuario.
+
+## Video 2
+## Nota: 
+- Elige la opción que corresponda a una métrica
+    - Visitas. -> "Visitas" es una métrica que cuantifica el número de veces que los usuarios acceden a un sitio web. Las otras opciones, como "Usuarios en España" o "Provienen de Yahoo", son más bien segmentaciones o fuentes de tráfico.
+
+- ¿Qué herramientas sirven para analizar la velocidad del sitio web? 
+    - Herramientas como Google Webmaster Tools (ahora conocido como Google Search Console) y Yslow son útiles para analizar la velocidad de un sitio web y proporcionar recomendaciones para mejorar el rendimiento.
+- Relaciona el indicador con lo que mide
+    - Transacciones - numeros de venta 
+    - Visitas totales -visitas web 
+    - Porcentaje de rebote - visitas muy cortas 
+    - Webs de referencia - paginas de procedencia 
+
+- Las herramientas web: ¿en qué indicador basan sus datos?
+    -  Las herramientas web suelen basar sus datos en cookies para rastrear usuarios y sesiones, y en el uso de código JavaScript para capturar y enviar información sobre las interacciones de los usuarios con el sitio.
+      
+- ¿A qué corresponde la siguiente definición? Es la medida en la cual un sitio web puede ser usado por usuarios específicos para conseguir objetivos específicos con efectividad, eficiencia y satisfacción en un contexto de uso concreto, mediante test de usuarios o directamente con la analítica web.
+    - Usabilidad - La definición se refiere a la usabilidad de un sitio web, que mide cuán fácil y eficiente es para los usuarios alcanzar sus objetivos dentro de un sitio, y evalúa la satisfacción del usuario con la experiencia.
+
+## Video 3 
+
+- ¿Qué métrica se utiliza para medir la rentabilidad de una inversión en marketing digital?
+    - Correcto. El ROI (Return on Investment) se utiliza para medir la rentabilidad de una inversión en marketing digital.
+- ¿Cuál es una métrica de rendimiento comúnmente utilizada para medir el éxito de una campaña publicitaria basada en impresiones?
+    - Correcto. El CPM (Coste por mil) se utiliza para medir el coste de mil impresiones en una campaña publicitaria.
+- ¿Qué representa el porcentaje de rebote en el análisis web?
+    - El porcentaje de visitantes que abandonan el sitio después de ver solo una página.
+- ¿Cuál es el propósito de los embudos de conversión en la analítica web?
+    - Seguir y analizar los pasos de los usuarios a lo largo de un proceso, como una compra, para identificar puntos de abandono.
+- ¿Qué métrica se utiliza para medir la efectividad de los anuncios en términos de interacción del usuario?
+    - CTR - Correcto. El CTR (Click Through Rate) mide el porcentaje de usuarios que hacen clic en un anuncio en comparación con el número total de impresiones del anuncio.   
 
 # Cuestionario TEMA 7
 
