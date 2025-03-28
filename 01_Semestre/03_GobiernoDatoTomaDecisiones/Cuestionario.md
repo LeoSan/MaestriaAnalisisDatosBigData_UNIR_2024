@@ -1002,6 +1002,23 @@ que afectará a todos los miembros de la comunidad educativa. Es este contexto,
 
 ## Videoclase 3. Big Data y cumplimiento (II).
 
+- ¿Cuál es el objetivo principal de la protección de datos por defecto, según el RGPD?
+  - Maximizar la eficiencia del tratamiento de datos. -> La protección de datos por defecto busca minimizar el uso de datos personales, asegurando que solo se recolecten y procesen los datos necesarios para los fines específicos
+
+- ¿Cuál es uno de los principios clave de la privacidad por diseño?
+   - Evaluación de impacto antes de iniciar el tratamiento de datos. -> La privacidad por diseño incluye el principio de realizar una evaluación de impacto antes de iniciar el tratamiento de datos para identificar y mitigar riesgos potenciales.
+
+- ¿Qué característica es esencial en una Evaluación de Impacto de Protección de Datos (EIPD)?
+  - Debe ser un proceso sistemático y reproducible. -> Una EIPD debe ser sistemática y reproducible, permitiendo una evaluación consistente de los riesgos y medidas de mitigación.
+
+- ¿Cuál es la ventaja de implementar la privacidad por diseño?
+  - Facilita el cumplimiento normativo desde el principio. -> La privacidad por diseño facilita el cumplimiento normativo desde el inicio, integrando principios de privacidad en el desarrollo de sistemas y procesos
+
+- ¿Qué enfoque ayuda a asegurar que el diseño de un sistema cumpla con los principios del RGPD?
+  - Integrar la privacidad en cada fase del desarrollo del sistema. -> Integrar la privacidad en cada fase del desarrollo asegura que el sistema cumpla con los principios del RGPD desde el inicio, previniendo problemas de cumplimiento futuros.
+
+
+
 # Cuestionario TEMA 10
 
 1. La ley de protección de datos no se aplica sobre los datos disociados obtenidos
