@@ -961,13 +961,46 @@ que afectará a todos los miembros de la comunidad educativa. Es este contexto,
   - C. Los datos biométricos pertenecen a categorías especiales de datos.
   - D. No es necesario realizar una EIPD porque es una pyme -> **Correcto**
 
-## Videoclase 1. Fundamentos del Marketing Relacional
+## Videoclase 1. Big Data y privacidad.
+- ¿Qué aspecto de Big Data plantea un desafío significativo para la privacidad, según el RGPD?
+  - El potencial para identificar patrones ocultos y realizar perfiles detallados. -> La capacidad de Big Data para identificar patrones ocultos y realizar perfiles detallados plantea un desafío significativo para la privacidad, ya que puede llevar a conclusiones o decisiones automatizadas que afecten a los individuos sin su consentimiento explícito o conocimiento. 
+
+- ¿Cómo se relaciona el principio de «minimización de datos» del RGPD con Big Data?
+  - Impone que solo se recolecten los datos necesarios para fines específicos. -> El principio de minimización de datos del RGPD impone que solo se recolecten los datos estrictamente necesarios para cumplir con los fines específicos establecidos, lo que puede entrar en conflicto con la recolección masiva de datos característica de Big Data
+  
+- ¿Qué principio del RGPD se ve más desafiado por las prácticas de Big Data?
+  - Limitación de la finalidad. -> El principio de limitación de la finalidad, que exige que los datos se recolecten para fines específicos y explícitos, se ve particularmente desafiado por Big Data, que a menudo implica la recolección de grandes volúmenes de datos sin un propósito predefinido claro
+  
+- ¿Qué estrategia de cumplimiento del RGPD es crítica cuando se trabaja con Big Data en términos de seguridad de datos?
+  - Implementación de medidas de seguridad avanzadas desde el inicio del proyecto. -> La implementación de medidas de seguridad avanzadas desde el inicio de cualquier proyecto de Big Data es crucial para asegurar la protección y la integridad de los datos personales, en línea con los requerimientos del RGPD. Las opciones B, C y D son estrategias que pueden ser útiles en ciertos contextos, pero no abordan directamente la seguridad de los datos como lo hace la opción A.
+  
+- ¿Cuál de los siguientes no es un desafío directo de Big Data en relación con el RGPD?
+  - Integrar nuevos tipos de datos de manera continua -> Mientras que integrar continuamente nuevos tipos de datos es un desafío técnico y operacional para las organizaciones que utilizan Big Data, no es un desafío directo relacionado con los requisitos del RGPD como lo son la transparencia, la exactitud y la capacidad de los interesados para revisar y corregir sus datos (B y C). La opción A, incremento de la transparencia, es en realidad un objetivo del RGPD, no un desafío.
+
+## Videoclase 2.  Big Data y cumplimiento (I).
+
+- ¿Cuál de los siguientes datos no se considera un dato personal, según el RGPD?
+  - Nombre de la empresa.  -> El RGPD define los datos personales como cualquier información relacionada con una persona física identificada o identificable. Los nombres de empresas no son datos personales porque no se refieren a una persona física
+
+  
+- ¿Qué técnica altera los datos de manera irreversible para que el interesado no pueda ser identificado directa o indirectamente?
+  - Anonimización. -> La anonimización altera los datos de forma irreversible para que no puedan ser vinculados a una persona específica, eliminando así el estatus de dato personal.  
 
 
-## Videoclase 2. 
+- ¿Cuál de las siguientes es una medida efectiva para proteger la privacidad de los datos personales según el RGPD?
+  - Uso de anonimización cuando sea posible. -> El uso de la anonimización es una medida efectiva para proteger la privacidad, ya que elimina el estatus de dato personal al impedir la identificación de los interesados
 
 
-## Videoclase 3. 
+- ¿Qué afirma el RGPD respecto a la seudonimización?
+  - Permite la reidentificación de datos bajo ciertas condiciones. -> La seudonimización es un proceso reversible que de-identifica temporalmente los datos, permitiendo la reidentificación bajo condiciones controladas.
+
+  
+- ¿Qué desafío presenta el uso de servicios en la nube para el cumplimiento del RGPD?
+  - Dificultad para conocer todos los agentes implicados en el procesamiento de datos. -> El uso de servicios en la nube introduce complejidades en la cadena de procesamiento de datos, dificultando conocer todos los agentes y proveedores de servicios involucrados, lo que puede complicar el cumplimiento del RGPD.
+
+
+
+## Videoclase 3. Big Data y cumplimiento (II).
 
 # Cuestionario TEMA 10
 
