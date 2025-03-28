@@ -1429,7 +1429,30 @@ Medios consultados:
 
 ## 9.2. ¿Amenaza el big data a la privacidad?
 
+
+**Gestión de los riesgos**
+La gestión de riesgos "incluye los procesos relacionados con llevar a cabo la planificación de la gestión, la identificación, el análisis, la planificación de respuesta a los riesgos, implementación de respuesta, así como su monitoreo y control".
+
+A través de la gestión de los riesgos, se trabaja para incrementar la probabilidad e impacto de las oportunidades (eventos positivos) y a la vez, reducir la probabilidad e impacto de las amenazas (eventos negativos).
+
 ![image](https://github.com/user-attachments/assets/a244fdd6-f7a4-44ae-8b23-cbfa39c527df)
+
+- **planificación de la gestión**
+![image](https://github.com/user-attachments/assets/9d555e77-c91a-4ff3-80d2-1de04fb82be3)
+
+- La identificación
+![image](https://github.com/user-attachments/assets/6e410dd2-3a6c-4cc2-9027-8a8ae8f010a7)
+
+- El análisis la planificación de respuesta a los riesgos
+
+![image](https://github.com/user-attachments/assets/9234795a-8f77-46c8-8524-95a0bd97f4ae)
+
+- Implementación de respuesta
+
+![image](https://github.com/user-attachments/assets/6972d0d6-5e1c-48a4-a37c-df37f0b057b6)
+
+- Monitoreo y control
+![image](https://github.com/user-attachments/assets/3dffe736-151f-42e7-9c06-ecf91e47c80b)
 
 
 ## 9.3. Cómo cumplir con la protección de datos en el big data
