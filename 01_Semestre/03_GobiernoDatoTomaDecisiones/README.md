@@ -1469,6 +1469,27 @@ A través de la gestión de los riesgos, se trabaja para incrementar la probabil
 
 ![image](https://github.com/user-attachments/assets/9068313b-edb7-45a0-b18d-4790e70d1cce)
 
+## Matriz De Riesgos 
+![image](https://github.com/user-attachments/assets/38126583-0246-407e-a9cf-ecdb8625da4f)
+
+## Pasos Especificos 
+![image](https://github.com/user-attachments/assets/dec3fdfa-6904-4836-8460-4b378d70b5d3)
+
+![image](https://github.com/user-attachments/assets/ecf1cc11-0433-4a70-a4ec-799afb052ba1)
+
+![image](https://github.com/user-attachments/assets/fa58a0a7-f28a-4a5e-8fb5-7a0d0e5357bd)
+
+- ISO 27001 -> Gestiona la seguridad de los datos
+- ISO 27005 -> Geestiona los riesgos de los datos   
+
+![image](https://github.com/user-attachments/assets/0f0fd97a-8da6-4261-bb7f-81dd596e2a11)
+
+![image](https://github.com/user-attachments/assets/8cc5dc79-b481-45bc-9ca8-7e0b50ade97b)
+
+![image](https://github.com/user-attachments/assets/8cfedc6f-d6cd-46d1-9f40-10e8868ce1d8)
+
+![image](https://github.com/user-attachments/assets/472a422f-7526-4e49-a990-f97492ad29fd)
+
 
 # Tema 10. La disociación de datos personales y técnicas de anonimización
 
