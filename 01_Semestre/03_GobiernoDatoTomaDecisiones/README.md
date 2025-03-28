@@ -1432,10 +1432,19 @@ Medios consultados:
 ![image](https://github.com/user-attachments/assets/a244fdd6-f7a4-44ae-8b23-cbfa39c527df)
 
 
-
 ## 9.3. Cómo cumplir con la protección de datos en el big data
+
+![image](https://github.com/user-attachments/assets/e9a55514-b7eb-4593-8b67-34a63d3cd59d)
+
 ## 9.4. Privacidad por diseño
+
+![image](https://github.com/user-attachments/assets/74d5ea42-01ed-44c4-a17a-d33febaf3bd1)
+
 ## 9.5. Evaluaciones de impacto (PIA/EIPD)
+
+![image](https://github.com/user-attachments/assets/885ac5ef-a127-4fa9-aeb9-fd0a8b6e5fd2)
+
+![image](https://github.com/user-attachments/assets/9068313b-edb7-45a0-b18d-4790e70d1cce)
 
 
 # Tema 10. La disociación de datos personales y técnicas de anonimización
