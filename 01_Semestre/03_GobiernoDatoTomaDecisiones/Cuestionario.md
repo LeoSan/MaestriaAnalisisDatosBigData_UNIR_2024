@@ -805,44 +805,53 @@ que afectará a todos los miembros de la comunidad educativa. Es este contexto,
   - C. Los datos biométricos pertenecen a categorías especiales de datos.
   - D. No es necesario realizar una EIPD porque es una pyme -> **Correcto**
 
+## Videoclase 1. Fundamentos del Marketing Relacional
+
+
+## Videoclase 2. 
+
+
+## Videoclase 3. 
+
 # Cuestionario TEMA 10
 
 1. La ley de protección de datos no se aplica sobre los datos disociados obtenidos
 tras un proceso de disociación.
-  - A. Verdadero.
+  - A. Verdadero. -> **Correcto**
   - B. Falso.
 
 2. ¿Cuáles de las siguientes técnicas no es de disociación-anonimización?
   - A. Asignación al azar.
   - B. Generalización.
   - C. Adición de ruido.
-  - D. T-Combinación.
+  - D. T-Combinación. -> **Correcto**
 
 3. ¿Cuáles de los siguientes son riesgos asociados a las técnicas de
 anonimización?
   - A. Singularización.
   - B. Vinculabilidad.
   - C. Inferencia.
-  - D. Todos los anteriores son correctos.
+  - D. Todos los anteriores son correctos. -> **Correcto**
 
 4. La generalización es una técnica del tipo:
-  - A. Técnicas que implican la modificación de datos.
+  - A. Técnicas que implican la modificación de datos. -> **Correcto**
   - B. Técnicas que implican la reducción de atributos.
   - C. Técnicas que implican la supresión de datos.
   - D. Técnica de pseudoanonimización.
+
 
 5. La Dra. Sweeney concluyó que en EE. UU. es posible identificar al 87 % de los
 ciudadanos unívocamente, a partir de los datos de:
   - A. El número de la seguridad social.
   - B. El número de licencia de conducir y el estado emisor.
-  - C. El código postal completo, sexo y fecha de nacimiento con el año incluido.
+  - C. El código postal completo, sexo y fecha de nacimiento con el año incluido. -> **Correcto**
   - D. El código postal completo, sexo, fecha de nacimiento con el año incluido y raza.
 
 6. ¿Cuál de los siguientes riesgos no es de reidentificación?
   - A. Riesgo de singularización.
   - B. Riesgo de vinculabilidad.
   - C. Riesgo de inferencia.
-  - D. Riesgo de polarización.
+  - D. Riesgo de polarización. -> **Correcto**
 
 7. De entre las siguientes técnicas, ¿cuál ofrece mejores resultados en términos de
 menores riesgos de reidentificación?
@@ -853,7 +862,7 @@ menores riesgos de reidentificación?
 
 8. De entre las siguientes técnicas, ¿cuál ofrece los peores resultados en términos
 de menores riesgos de reidentificación?
-  - A. Seudonimización.
+  - A. Seudonimización. -> **Correcto**
   - B. Adición de ruido.
   - C. K-anonimato.
   - D. l-Diversity/t-Closeness.
