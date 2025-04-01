@@ -1501,10 +1501,42 @@ A través de la gestión de los riesgos, se trabaja para incrementar la probabil
 
 
 ## 10.4. Técnicas de anonimización
+
+<img width="731" alt="Captura de pantalla 2025-03-31 a la(s) 18 18 51" src="https://github.com/user-attachments/assets/341177c2-ad39-422e-a0d9-0692717fe0f8" />
+
+
 ## 10.5. K-anonimato y sus variantes
+
+<img width="686" alt="Captura de pantalla 2025-03-31 a la(s) 18 23 00" src="https://github.com/user-attachments/assets/3889fb01-2254-43ac-a373-c01e1fb0ac28" />
+
+
+<img width="757" alt="Captura de pantalla 2025-03-31 a la(s) 18 24 29" src="https://github.com/user-attachments/assets/edd10ee9-b391-4a1a-a55f-f7f61e6443fd" />
+
+<img width="709" alt="Captura de pantalla 2025-03-31 a la(s) 18 25 45" src="https://github.com/user-attachments/assets/31fffe33-88af-4108-b748-93a35fd2e13e" />
+
+
+<img width="792" alt="Captura de pantalla 2025-03-31 a la(s) 18 29 14" src="https://github.com/user-attachments/assets/a5069dbc-9924-4ac4-8a48-32d8c9c0dfb2" />
+
 ## 10.6. Herramientas de software
 ## 10.7. Riesgos asociados a las técnicas de anonimización
+
+<img width="714" alt="Captura de pantalla 2025-03-31 a la(s) 18 46 56" src="https://github.com/user-attachments/assets/a20a5827-6b45-4096-8cc0-b0c816d7c66f" />
+
+<img width="755" alt="Captura de pantalla 2025-03-31 a la(s) 18 49 32" src="https://github.com/user-attachments/assets/a17952d6-606b-4bd5-93f7-0769681bb0e6" />
+
+<img width="790" alt="Captura de pantalla 2025-03-31 a la(s) 18 50 25" src="https://github.com/user-attachments/assets/bdac93c4-2f83-4d8a-963b-88adde3c2dae" />
+
+
+<img width="731" alt="Captura de pantalla 2025-03-31 a la(s) 18 54 21" src="https://github.com/user-attachments/assets/dac5fd01-b7e0-4c58-9b1c-753dc709602b" />
+
+<img width="790" alt="Captura de pantalla 2025-03-31 a la(s) 18 50 25" src="https://github.com/user-attachments/assets/072d4fb2-9d61-44b2-8bc7-59b96fd43e58" />
+
+
+
 ## 10.8. Principios a la hora de construir un data warehouse
+
+<img width="682" alt="Captura de pantalla 2025-03-31 a la(s) 18 55 45" src="https://github.com/user-attachments/assets/150d587d-1b4a-4d45-9a72-fc2c33cee928" />
+
 
 
 
