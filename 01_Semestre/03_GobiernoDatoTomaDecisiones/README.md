@@ -1494,6 +1494,12 @@ A través de la gestión de los riesgos, se trabaja para incrementar la probabil
 # Tema 10. La disociación de datos personales y técnicas de anonimización
 
 ## 10.3. La disociación y anonimización de datos
+
+<img width="537" alt="Captura de pantalla 2025-03-31 a la(s) 18 13 37" src="https://github.com/user-attachments/assets/d0f667fe-8adb-4611-a6aa-32b34c26844b" />
+
+<img width="692" alt="Captura de pantalla 2025-03-31 a la(s) 18 14 35" src="https://github.com/user-attachments/assets/962fd7e9-97e0-4453-8cdc-6b75264b7238" />
+
+
 ## 10.4. Técnicas de anonimización
 ## 10.5. K-anonimato y sus variantes
 ## 10.6. Herramientas de software
