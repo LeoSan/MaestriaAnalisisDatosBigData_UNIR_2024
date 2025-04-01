@@ -1088,38 +1088,40 @@ aplicar l‑Diversity, indica cuál es el valor l del conjunto:
   - C. l = 3.
   - D. l = 4.
 
-## Videoclase 1. 
--
+## Videoclase 1. Disociación y anonimización de datos (I). 
+- ¿Qué describe mejor la seudonimización?
+  - Un tratamiento de datos que no puede atribuirse a un interesado sin información adicional. -> La seudonimización trata los datos de manera que no pueden atribuirse directamente a un individuo sin información adicional, lo que coincide con la definición en el PDF y la PPT
+
+- En el contexto de los microdatos, ¿Qué objetivo tiene la técnica de reducción de atributos?
+  - Disminuir el detalle de la información para proteger la privacidad. -> La técnica de reducción de atributos en microdatos busca reducir el nivel de detalle para proteger la privacidad, minimizando los riesgos de reidentificación
+   
+- ¿Cuál de los siguientes es un resultado directo del proceso de anonimización?
+  - Los datos no permiten ningún tipo de reidentificación -> La anonimización resulta en datos que no permiten ningún tipo de reidentificación, haciendo imposible establecer un nexo entre los datos y los sujetos a los que se refieren   
+
+-  ¿Qué busca esencialmente la técnica de agregación de datos en la gestión de microdatos?
+  - Reducir la especificidad de los datos para proteger la privacidad. -> La agregación de datos en microdatos tiene como objetivo reducir la especificidad, generalmente agrupando datos para crear categorías más amplias, lo que protege la privacidad al hacer menos probable la identificación directa de individuos
 
 
--
+- ¿Qué resulta del uso de «generalización» en el contexto de técnicas de anonimización?
+  - Datos con atributos diluidos para dificultar la identificación directa. -> La generalización diluye los atributos específicos de los datos, reduciendo la especificidad para dificultar la identificación directa mientras se retiene cierto nivel de utilidad para análisis   
 
 
--
+## Videoclase 2. Disociación y anonimización de datos (II). 
 
+- ¿Qué asegura el k-anonimato en un conjunto de datos?
+  - Que cada registro es indistinguible de al menos otros k-1 registros.  -> El k-anonimato asegura que cada registro en el conjunto de datos no puede distinguirse de al menos otros k-1 registros que tienen el mismo atributo, proporcionando protección contra la identificación directa
 
--
+- ¿Cuál es un riesgo principal asociado con el k-anonimato?
+  - No previene completamente los ataques de inferencia. -> Aunque el k-anonimato reduce la posibilidad de identificación directa, no previene completamente los ataques de inferencia donde se puede deducir información sobre un individuo basándose en otros registros
 
+- En términos de técnicas en macrodatos, ¿qué describe mejor las técnicas basadas en restricciones?
+  - Introducen limitaciones para reducir los atributos que facilitan la reidentificación -> Las técnicas basadas en restricciones en el ámbito de macrodatos introducen limitaciones específicas en el conjunto de datos para eliminar o modificar atributos que pueden facilitar la reidentificación
 
--
+- ¿Cuál es el propósito de implementar técnicas de anonimización basadas en restricciones en macrodatos?
+  - Limitar la exposición de datos sensibles reduciendo atributos identificables. -> Las técnicas basadas en restricciones en macrodatos tienen como objetivo limitar la exposición de datos sensibles mediante la reducción o modificación de atributos que pueden facilitar la reidentificación de individuos
 
-
-
-## Videoclase 2. 
--
-
-
--
-
-
--
-
-
--
-
-
--
-
+- ¿Qué consecuencia tiene la implementación de la i-diversity en un conjunto de datos que ya cumple con el k-anonimato?
+  - Proporciona una diversidad de información en cada grupo de k-anonimato. -> La i-diversity en un conjunto de datos k-anónimo proporciona una capa adicional de protección al asegurar que hay una diversidad de información en cada grupo, lo que reduce los riesgos de inferencia y singularización
 
 
 ## Videoclase 3. 
