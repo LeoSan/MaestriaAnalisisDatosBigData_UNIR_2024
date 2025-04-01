@@ -1124,18 +1124,19 @@ aplicar l‑Diversity, indica cuál es el valor l del conjunto:
   - Proporciona una diversidad de información en cada grupo de k-anonimato. -> La i-diversity en un conjunto de datos k-anónimo proporciona una capa adicional de protección al asegurar que hay una diversidad de información en cada grupo, lo que reduce los riesgos de inferencia y singularización
 
 
-## Videoclase 3. 
--
+## Videoclase 3. Riesgos de la anonimización.
 
+- ¿Cuál es una gran amenaza para la reidentificación en la era digital?
+   - El uso extensivo de Internet y redes sociales -> El uso extensivo de Internet y las redes sociales es identificado como un factor que incrementa el riesgo de reidentificación, ya que proporciona múltiples fuentes de información que pueden ser utilizadas para reconstruir identidades incluso a partir de datos supuestamente anónimos.
 
--
+- ¿Qué implica el principio de no confiar en un enfoque de «liberar y olvidar» en el contexto de la anonimización de datos?
+  - La anonimización de datos requiere un monitoreo y revisión continua. -> El principio de no confiar en el enfoque de “liberar y olvidar” subraya la necesidad de un monitoreo y revisión continua de los datos anonimizados para asegurar que sigan siendo seguros frente a nuevas técnicas de reidentificación
 
+- ¿Qué subraya la necesidad de reevaluar periódicamente los conjuntos de datos anonimizados?
+  - La posibilidad de que las técnicas de anonimización se vuelvan obsoletas. -> La necesidad de reevaluar periódicamente los conjuntos de datos anonimizados se debe a la posibilidad de que las técnicas de anonimización se vuelvan obsoletas frente a nuevas tecnologías y métodos de análisis de datos.
 
--
+- ¿Qué aspecto de la hiperconectividad moderna aumenta los riesgos de reidentificación de datos anonimizados?
+  - El acceso expandido y la agregación de datos desde múltiples fuentes. -> El acceso expandido y la agregación de datos desde múltiples fuentes, una característica de la hiperconectividad moderna, aumentan los riesgos de re-identificación al proporcionar más puntos de datos que pueden ser correlacionados para identificar a individuos
 
-
--
-
-
--
-
+- ¿Qué medida es fundamental para mitigar los riesgos asociados con la reidentificación en conjuntos de datos anonimizados?
+  -  Implementar y revisar continuamente múltiples técnicas de anonimización. -> Implementar y revisar continuamente múltiples técnicas de anonimización es esencial para mitigar los riesgos asociados con la re-identificación, ya que cada técnica puede abordar diferentes aspectos y vulnerabilidades, mejorando la robustez general de la protección.
