@@ -249,10 +249,10 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   - D. Es nuevo y complejo de implementar.
 
 10.- Es cierto si hablamos de metadatos: 
-  A. Son un repositorio central de información. 
-  B. Da significado a cada componente, variable y atributo que reside en el DW. 
-  C. Contiene información sobre la estructura del data lake. 
-  D. A y B son verdaderos. -> **Correcto**
+ - A. Son un repositorio central de información. 
+ - B. Da significado a cada componente, variable y atributo que reside en el DW. 
+  - C. Contiene información sobre la estructura del data lake. 
+ - D. A y B son verdaderos. -> **Correcto**
 
 ## Videoclase 1. Fundamentos de Data Warehouse
 ## Notas: 
@@ -347,10 +347,11 @@ Predictivo: Se basa en los análisis descriptivos para construir modelos que per
   - C. Control y ejecución del proceso.
   - D. Control y supervisión. -> **Correcto**
 
-10.- La metodología DevOps permite: A. Aplicar velocidad a los proyectos subidos a AWS. 
-  B. Aplicar velocidad a los proyectos subidos a Azure. 
-  C. Entrega rápida, confiabilidad y escalado de proyectos. -> **Correcto** 
-  D. Actuar lento pero seguro en proyectos BI.
+10.- La metodología DevOps permite: 
+- A. Aplicar velocidad a los proyectos subidos a AWS. 
+  - B. Aplicar velocidad a los proyectos subidos a Azure. 
+ - C. Entrega rápida, confiabilidad y escalado de proyectos. -> **Correcto** 
+ - D. Actuar lento pero seguro en proyectos BI.
 
 ## video Clase 1
 Kimball enfatiza la importancia de centrarse en las necesidades del negocio y en la entrega de incrementos significativos durante el desarrollo de un data warehouse (DW). Estos principios garantizan que el DW sea relevante y útil para la organización.
