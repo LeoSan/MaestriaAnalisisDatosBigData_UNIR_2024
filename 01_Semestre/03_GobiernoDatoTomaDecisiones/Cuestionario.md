@@ -1141,3 +1141,150 @@ aplicar l‑Diversity, indica cuál es el valor l del conjunto:
 
 - ¿Qué medida es fundamental para mitigar los riesgos asociados con la reidentificación en conjuntos de datos anonimizados?
   -  Implementar y revisar continuamente múltiples técnicas de anonimización. -> Implementar y revisar continuamente múltiples técnicas de anonimización es esencial para mitigar los riesgos asociados con la re-identificación, ya que cada técnica puede abordar diferentes aspectos y vulnerabilidades, mejorando la robustez general de la protección.
+  -  
+
+# Cuestionario desarrollado por el profesor
+
+**Pregunta 1:** ¿Cuál es la función principal de la dirección estratégica?
+**Respuesta:** B) Integrar estrategias y tácticas para alcanzar objetivos a largo plazo.
+
+**Pregunta 2:** ¿Qué autor define la planificación estratégica como un proceso continuo de toma de decisiones?
+**Respuesta:** C) Peter Drucker.
+
+**Pregunta 3:** ¿Cuál es el propósito principal de la planificación estratégica?
+**Respuesta:** B) Definir y organizar tareas para cumplir con la visión de la empresa.
+
+**Pregunta 4:** ¿Qué elemento es esencial para la elaboración del plan estratégico?
+**Respuesta:** B) La información sobre el mercado y los competidores.
+
+**Pregunta 5:** ¿Cuál es uno de los aspectos clave que las empresas deben analizar para definir su estrategia en el mercado?
+**Respuesta:** B) La satisfacción del cliente y sus necesidades.
+
+**Pregunta 6:** ¿Qué significa la sigla PEST en el análisis externo?
+**Respuesta:** A) Político, Económico, Social y Tecnológico.
+
+**Pregunta 7:** ¿Cuál es uno de los objetivos del análisis PEST?
+**Respuesta:** B) Identificar los factores externos que pueden cambiar en el futuro.
+
+**Pregunta 8:** ¿Qué elementos analiza principalmente el PEST en comparación con el DAFO?
+**Respuesta:** B) Factores externos que afectan el mercado.
+
+**Pregunta 9:** ¿Quiénes introdujeron el concepto de Cuadro de Mando Integral (CMI)?
+**Respuesta:** B) Robert Kaplan y David Norton.
+
+**Pregunta 10:** ¿Cuál es una de las características de los objetivos estratégicos?
+**Respuesta:** B) Deben ser realistas y medibles.
+
+**Pregunta 11:** ¿Cuál es la principal meta del gobierno de datos?
+**Respuesta:** B) Eliminar problemas como silos de datos y KPI inconsistentes.
+
+**Pregunta 12:** ¿Por qué es importante implementar el gobierno de datos en una organización?
+**Respuesta:** B) Mejora la disponibilidad, usabilidad, integridad y seguridad de los datos.
+
+**Pregunta 13:** ¿Cuál de los siguientes es un tipo de dato que se utiliza en inteligencia de negocios?
+**Respuesta:** A) Booleano: solo tiene dos valores, verdadero y falso.
+
+**Pregunta 14:** ¿Qué componente del proceso de preparación de datos se encarga de completar datos faltantes y resolver problemas de ruido?
+**Respuesta:** B) Limpieza.
+
+**Pregunta 15:** ¿Cuál es el objetivo principal de la gestión de datos maestros (MDM)?
+**Respuesta:** B) Unificar datos críticos en un solo sitio.
+
+**Pregunta 16:** ¿Qué puede causar un error en los datos maestros?
+**Respuesta:** B) Problemas serios al cliente, como impagos.
+
+**Pregunta 17:** ¿Cuál es el objetivo principal del business intelligence (BI)?
+**Respuesta:** A) Descubrir tendencias o patrones para mejorar la empresa.
+
+**Pregunta 18:** ¿Quiénes necesitan el business intelligence dentro de una empresa?
+**Respuesta:** B) Todas las personas que tienen que tomar decisiones.
+
+**Pregunta 19:** ¿Cuál es una de las características que define big data?
+**Respuesta:** B) Se caracteriza por conjuntos de datos grandes, diversos y que cambian rápidamente.
+
+**Pregunta 20:** ¿Qué aspecto del business intelligence se menciona en el texto como fundamental para la exploración de información?
+**Respuesta:** B) El desarrollo de nuevos conocimientos y la comprensión del rendimiento empresarial.
+
+**Pregunta 21:** ¿Cuál es la función principal del proceso ETL en un proyecto de business intelligence?
+**Respuesta:** B) Extraer, transformar y cargar datos para su uso en el data warehouse.
+
+**Pregunta 22:** ¿Qué aspecto del proceso ETL se menciona como un desafío importante?
+**Respuesta:** C) Aumentar la complejidad del proceso.
+
+**Pregunta 23:** ¿Cuál de los siguientes es un método de extracción de datos utilizado en el proceso ETL?
+**Respuesta:** A) Extracción estática.
+
+**Pregunta 24:** ¿Cuál de los siguientes es un objetivo principal de la etapa de limpieza de datos en el proceso ETL?
+**Respuesta:** B) Eliminar errores y corregir datos faltantes.
+
+**Pregunta 25:** ¿Cuál es uno de los principales objetivos de la analítica web?
+**Respuesta:** B) Conocer el comportamiento de los usuarios.
+
+**Pregunta 26:** ¿Qué es fundamental para analizar los resultados obtenidos en la analítica web?
+**Respuesta:** B) Definir claramente los objetivos a alcanzar como organización.
+
+**Pregunta 27:** ¿Qué mide el número de visitantes únicos en un sitio web?
+**Respuesta:** B) El número de visitantes no duplicados que han accedido al sitio web.
+
+**Pregunta 28:** ¿Cuál de las siguientes métricas indica el interés de los usuarios por un sitio web?
+**Respuesta:** C) Duración media de la visita.
+
+**Pregunta 29:** Es el propósito de la organización y marca la diferencia entre una empresa y otra con la misma función.
+**Respuesta:** b) Misión.
+
+**Pregunta 30:** Son cálculos que le permiten a la organización conocer si está cumpliendo o no con los objetivos estratégicos propuestos.
+**Respuesta:** a) Indicadores.
+
+**Pregunta 31:** Está centrada en la creación de valor para los dueños, con altos índices de rendimiento y garantía de crecimiento y mantenimiento del negocio.
+**Respuesta:** a) Perspectivas financieras.
+
+**Pregunta 32:** Enmarcan los objetivos estratégicos, sus indicadores y sus metas, además de permitir tener una visión global de la empresa.
+**Respuesta:** a) Perspectivas.
+
+**Pregunta 33:** Es una disciplina que integra las distintas estrategias y tácticas empresariales, analiza decisiones tomadas y observa sus consecuencias o efectos durante un período de tiempo, aparte de su pretensión de alcanzar objetivos empresariales a largo plazo.
+**Respuesta:** b) Dirección estratégica.
+
+**Pregunta 34:** Es una herramienta de gran utilidad para entender el crecimiento o bajada de un mercado y, como resultado, la posición, el potencial y la dirección de nuestro negocio.
+**Respuesta:** b) PEST.
+
+**Pregunta 35:** La información es el principio del conocimiento. Son datos con un significado o función especial o el resultado de combinar diferentes datos, es decir, son datos con contexto.
+**Respuesta:** a) Verdadero
+
+**Pregunta 36:** Datos estructurados son estos datos son aquellos que tienen una estructura definida y que no cambian independientemente de cuál sea su origen.
+**Respuesta:** a) Verdadero
+
+**Pregunta 37:** Base de datos es un almacén en el que se pueden organizar datos, para evitar la redundancia y mejorar el acceso a estos. Diferentes programas y usuarios deben poder utilizar los datos guardados.
+**Respuesta:** a) Verdadero
+
+**Pregunta 38:** Datos estructurados son aquellos datos que no disponen de una estructura bien definida. Es decir, no poseen un modelo (o estructura) definido o no están ordenados de ninguna forma.
+**Respuesta:** b) Falso.
+
+**Pregunta 39:** Son declaraciones específicas concretadas en períodos de tiempo y deben ser medibles y cuantificables.
+**Respuesta:** d) Metas
+
+**Pregunta 40:** Es el propósito de la organización y marca la diferencia entre una empresa y otra con la misma función.
+**Respuesta:** b) Misión.
+
+**Pregunta 41:** Está centrada en la creación de valor para los dueños, con altos índices de rendimiento y garantía de crecimiento y mantenimiento del negocio.
+**Respuesta:** c) Perspectivas financieras.
+
+**Pregunta 42:** Es el estado ideal de la empresa, lo que esta aspira a ser o estar en un futuro cercano o lejano, y está fundamentada en la realidad a través del desarrollo de metas y de indicadores de desempeño.
+**Respuesta:** d) Visión.
+
+**Pregunta 43:** Data warehouse busca almacenar los datos de una forma que facilite y maximice su flexibilidad, facilidad de acceso y administración.
+**Respuesta:** Verdadero
+
+**Pregunta 44:** Datos estructurados son estos datos son aquellos que tienen una estructura definida y que no cambian independientemente de cuál sea su origen.
+**Respuesta:** Verdadero
+
+**Pregunta 45:** El proceso de ETL consume entre el 60 y el 80 % del tiempo de un proyecto de business intelligence, por lo que es un proceso fundamental en el ciclo de vida del proyecto.
+**Respuesta:** Verdadero
+
+**Pregunta 46:** El business intelligence (BI) es un proceso de intercambio para explorar y analizar información no estructurada de la empresa o sobre una determinada área (con frecuencia almacenada en un data warehouse), para descubrir tendencias o patrones.
+**Respuesta:** Falso
+
+**Pregunta 47:** Es una herramienta gerencial que permite a los directivos y al personal de las empresas en general administrar y comunicar las estrategias, monitorear permanentemente la organización y utilizar los resultados de las medidas para la evaluación del desempeño, lo que facilita el logro de los objetivos.
+**Respuesta:** a) Cuadro de mando.
+
+**Pregunta 48:** Es el estado ideal de la empresa, lo que esta aspira a ser o estar en un futuro cercano o lejano, y está fundamentada en la realidad a través del desarrollo de metas y de indicadores de desempeño.
+**Respuesta:** a) Visión.  
