@@ -113,4 +113,21 @@ datos que el experto humano es incapaz de obtener.
     - Técnicas de aprendizaje automático.
 
 
+## Videoclase 3: 
+
+- En el proceso de generación de conocimiento, la minería de datos:
+    - Ocurre después de la transformación y limpieza de los mismos
+- En el proceso de generación de conocimiento, la interpretación y evaluación de los datos:
+    - Ocurre después de las acciones de minería de datos.
+- En el proceso de generación de conocimiento, la valoración de la calidad de los datos recogidos de las fuentes externas:
+    - La valoración de la calidad de los datos recogidos de las fuentes externas no está incluida en dicho proceso
+- ¿En qué fase del proceso KDD entran los criterios de éxito o métricas específicas para los modelos de IA?:
+    - Evaluación de resultados.
+- En un caso real, si queremos predecir la cantidad de personal de caja para una hora determinada en una entidad bancaria haciendo uso de un proceso de descubrimiento de conocimiento KDD, ¿cuál de las siguientes fases no estaría incluida en dicho proceso?:
+    - Todas podrían formar parte de un proceso KDD.
+
+
 # Tema 1: Tema 2. Python para la implementación de técnicas de inteligencia artificial
+
+
+## Videoclase 1. Escribiendo en Python

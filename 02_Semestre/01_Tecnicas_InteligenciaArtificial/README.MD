@@ -8,6 +8,10 @@ La imagen presenta un diagrama que ilustra dos conceptos principales interrelaci
 
 **Descubrimiento del Conocimiento en Bases de Datos (KDD):**
 
+## Pasos 
+- Paso 1: Recopilamos información 
+- Paso 2: 
+
 Este proceso se describe como una secuencia de pasos que transforma datos brutos en conocimiento útil. Las etapas son:
 
 1.  **Datos:** Se inicia con una base de datos (BD) como fuente de información.

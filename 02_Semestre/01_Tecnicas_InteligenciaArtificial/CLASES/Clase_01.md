@@ -44,10 +44,9 @@ Es el resultado y esfuerzo de un conjunto de técnicas en mátematicas, estadist
 
 ## Video 1 
 - El Poder del Dato 
-- El conunto de datos adecuado 
+- El conjunto de datos adecuado 
 - Conjunto de técnicas para evaluar el dato. 
 
-## Video 2: 
 
 
 
