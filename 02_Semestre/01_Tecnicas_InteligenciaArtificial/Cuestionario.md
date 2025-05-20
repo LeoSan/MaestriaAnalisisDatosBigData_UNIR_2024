@@ -3,12 +3,12 @@
 1. Indica cuáles de las siguientes afirmaciones son correctas:
 A. La escuela de la Inteligencia Artificial Fuerte defiende que las máquinas pueden llegar a tener conciencia.
 B. La escuela de la Inteligencia Artificial Débil no defiende que los procesos cerebrales puedan ser simulados en un computador.
-C. El juego de imitación de Turing consiste en que una máquina consiga mantener una conversación tal y como lo haría un humano.
+C. El juego de imitación de Turing consiste en que una máquina consiga mantener una conversación tal y como lo haría un humano. -> **Correcto**
 D. Las técnicas de aprendizaje automático no forman parte del campo de la inteligencia artificial.
 
 2. Indica cuál de las siguientes afirmaciones no es correcta:
 A. La minería de datos utiliza técnicas de aprendizaje automático para descubrir patrones en grandes cantidades de datos.
-B. La minería de datos tiene un objetivo fundamentalmente teórico.
+B. La minería de datos tiene un objetivo fundamentalmente teórico. -> **Correcto**
 C. Existe una fase en los procedimientos KDD que consiste en ejecutar técnicas de inteligencia artificial.
 D. En los procedimientos KDD, previo a la fase de minería de datos, se dan otras fases de selección y transformación de los datos.
 
@@ -17,57 +17,57 @@ experiencia en el aprendizaje de conceptos. La experiencia:
 A. Consiste en un conjunto de objetos específicos denominados instancias.
 B. Consiste en una serie de ejemplos y no-ejemplos.
 C. Consiste en una serie de instancias con atributos de entrada y de salida.
-D. Consiste en un conjunto de datos denominado datos de prueba.
+D. Consiste en un conjunto de datos denominado datos de prueba. -> **Correcto**
 
 4. Identificar la clase de una instancia desconocida en base a sus atributos, que se
 presentan comunes a ejemplos previos encontrados de esa clase es una tarea de:
 A. Discriminación.
 B. Generalización.
-C. Clasificación.
+C. Clasificación. -> **Correcto**
 D. Descripción.
 
 5. Una tarea de aprendizaje consiste en descubrir los síntomas comunes de un
 grupo de pacientes que presentan una enfermedad bien conocida. Se trata de un
 problema de aprendizaje de tipo:
-A. Supervisado.
+A. Supervisado.  -> **Correcto**
 B. No-supervisado.
 
 6. Una tarea de aprendizaje consiste en descubrir los síntomas comunes de un
 grupo de pacientes con diagnóstico desconocido. Se trata de un problema de
 aprendizaje de tipo:
 A. Supervisado.
-B. No-supervisado.
+B. No-supervisado.  -> **Correcto**
 
 7. Indica cuál de las siguientes afirmaciones no es cierta, respecto al
 descubrimiento de conocimiento en bases de datos:
 A. Es un procedimiento completo necesario para extraer conocimiento a partir
 de los datos de una base de datos.
-B. Sea cual sea el procedimiento KDD las fases siempre son las mismas.
+B. Sea cual sea el procedimiento KDD las fases siempre son las mismas. -> **Correcto**
 C. La interpretación de los resultados forma parte del procedimiento KDD.
 D. Es un proceso que puede ser iterativo.
 
 8. Indica cuál de las siguientes afirmaciones no es correcta:
 A. Los datos de entrenamiento son un conjunto de instancias.
 B. Los datos de entrenamiento pueden contener no-ejemplos.
-C. Los atributos son denominados también ejemplos.
+C. Los atributos son denominados también ejemplos.  -> **Correcto**
 D. Al concepto que se aprende se le llama también clase.
 E. El concepto es un conjunto de instancias.
 
 9. Indica cuáles de las siguientes afirmaciones son correctas respecto al
 aprendizaje de conceptos:
 A. Los problemas de aprendizaje se resuelven a veces como una búsqueda
-en un espacio de hipótesis.
+en un espacio de hipótesis. -> **Correcto**
 B. Siempre se aplican las técnicas de búsqueda de la mejor hipótesis sobre el
 espacio completo de posibles hipótesis.
 C. El tamaño de los datos de entrenamiento no influye en el resultado del
 aprendizaje.
 D. Se pueden encontrar en la práctica distintas descripciones de un concepto.
-E. El sobreajuste consiste en generalizar demasiado.
+E. El sobreajuste consiste en generalizar demasiado. -> **Correcto**
 
 10. Indica cuál de las siguientes frases no es correcta respecto a un sistema
 experto:
 A. Se incorpora en el sistema el conocimiento de un experto humano.
-B. Raramente se ha aplicado un sistema experto a un problema real con éxito.
+B. Raramente se ha aplicado un sistema experto a un problema real con éxito. -> **Correcto**
 C. Suele estar limitado a un dominio de conocimiento.
 D. Puede ser complementado con técnicas de aprendizaje automático como
 las redes neuronales para obtener reglas a partir de grandes cantidades de
