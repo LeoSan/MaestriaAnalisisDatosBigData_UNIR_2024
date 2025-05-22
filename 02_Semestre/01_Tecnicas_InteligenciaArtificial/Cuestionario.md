@@ -84,7 +84,7 @@ datos que el experto humano es incapaz de obtener.
     - Modelos de inteligencia artificial adecuados.
     - Un entorno de ejecución que permita correr los modelos.
     - Un conjunto de datos útil y completo.
-    - Todas son válidas. -> Correcto 
+    - Todas son válidas. -> **Correcto**
 
 - Con respecto a las métricas para la evaluación de los modelos de IA:
     - Cada tipología de problemas comprende una serie de métricas específicas => Cada métrica específica, evalúa la capacidad de nuestro modelo de Inteligencia Artificial de forma bien diferenciada: unas para regresión, otras para clasificación.
@@ -93,7 +93,7 @@ datos que el experto humano es incapaz de obtener.
     - a.Disponer de un conjunto útil y completo.
     - b.Disponer de un conjunto actualizado.
     - c.Seleccionar técnicas de IA y métricas adecuadas acordes a los datos.
-    - d.Todas las anteriores son válidas -> Correcto
+    - d.Todas las anteriores son válidas -> **Correcto**
 
 ## Videoclase 2. Aprendizaje supervisado VS Aprendizaje no supervisado
 
@@ -131,3 +131,17 @@ datos que el experto humano es incapaz de obtener.
 
 
 ## Videoclase 1. Escribiendo en Python
+- ¿Se pueden incluir celdas de código y celdas de texto en Jupyter?:
+    - Únicamente en trabajos de Inteligencia Artificial.
+- Un fichero de salida generado por Jupyter notebook se puede ejecutar:
+    - Únicamente en entornos Jupyter notebook. =Los ficheros de salida para Jupyter notebook tienen una extensión específica (IPNYB) para que sean ejecutados únicamente en entornos Jupyter.>
+- ¿Se pueden importar librerías de inteligencia artificial en Jupyter notebook?:  
+    - Sí, pero añadiendo las necesarias cuando no están incluidas en el entorno Python por defecto, mediante la sentencia pip install.
+- Si se necesita cargar en Jupyter Notebook un dataset disponible en Internet podemos:
+    - a.Bajarlo a nuestro sistema de archivos y cargarlo con alguna función de pandas como read.
+    - b.Cargarlo directamente desde su URL recogida mediante el método get de la librería requests.
+    - c.Abrirlo desde una unidad en la nube previamente montada en nuestro entorno Jupyter notebook.
+    - d.Todas las anteriores son válidas -> **Correcto**
+- La ejecución de código Python en Jupyter notebook puede realizarse:
+    - Tanto celda a celda como todas las celdas desde un punto.
+
