@@ -145,3 +145,24 @@ datos que el experto humano es incapaz de obtener.
 - La ejecución de código Python en Jupyter notebook puede realizarse:
     - Tanto celda a celda como todas las celdas desde un punto.
 
+## Videoclase 2. 
+- Numpy y Scipy son librerías de:
+    - Cálculo científico sobre las que se apoyan librerías de Aprendizaje Automático =>
+- Keras es una librería de redes neuronales que, apoyada en otras librerías, permite el manejo de arrays o matrices multidimensionales:
+    - Verdadero -> Keras es una librería especializada en la creación de arquitecturas de redes neuronales, que a su vez se apoya en otras como NumPy para manejo de matrices multidimensionales.
+
+- Scikit Learn permite:
+    - Manejo de estructuras de datos de otras librerías de cálculo científico como Numpy o Scipy.
+    - Creación de modelos de aprendizaje automático.
+    - Gestión de las diferentes métricas de evaluación de resultados.
+    - Todas las anteriores son ciertas -> **Correcto**
+    
+- Queremos crear una red neuronal convolucional y mostrar sus resultados de entrenamiento y evaluación de forma gráfica, necesitamos incluir:
+    - a.Solo Keras.
+    - b.Keras y Seaborn.
+    - c.Keras, Scikit learn y Seaborn.
+    - d. Ninguna de las anteriores -> **Correcto**
+
+    Keras, Scikit learn y Seaborn.
+- Matplotlib y Seaborn son librerías:
+    - Ninguna de las anteriores

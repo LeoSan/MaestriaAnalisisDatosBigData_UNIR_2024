@@ -139,12 +139,7 @@ página 19
 - NO Tiene etiquetas
     - Agrupación  
     - Detención de anomalías  
-
-
-
-
-
-
+    
 ## 1.4. Etapas en el descubrimiento de conocimiento
 
 # Temario 2: Python para la implementación de técnicas de inteligencia artificial
@@ -260,6 +255,12 @@ puede modificar el contenido de los elementos.
 - Son también similares a los objetos nativos de JavaScript que pueden ser convertidos a y desde JSON. Sin embargo son mucho más flexibles y una clave no tiene por qué ser sólo de tipo cadena, sino que puede ser cualquier objeto, incluso un entero, un flotante o un complejo, por
 
 ## 2.6. Librerías útiles para el análisis de datos
+- Numpy -> 
+- SciPy -> 
+
+MLL
+- scikit Learn 
+
 
 ## 2.7. La librería NumPy para el manejo de datos
 
