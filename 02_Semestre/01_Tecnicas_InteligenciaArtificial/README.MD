@@ -255,14 +255,86 @@ puede modificar el contenido de los elementos.
 - Son también similares a los objetos nativos de JavaScript que pueden ser convertidos a y desde JSON. Sin embargo son mucho más flexibles y una clave no tiene por qué ser sólo de tipo cadena, sino que puede ser cualquier objeto, incluso un entero, un flotante o un complejo, por
 
 ## 2.6. Librerías útiles para el análisis de datos
-- Numpy -> 
-- SciPy -> 
+> NumPy 
+Es una librería muy popular para el procesamiento de grandes matrices y
+matrices multidimensionales, con la ayuda de una gran colección de funciones
+matemáticas de alto nivel. Es muy útil para los cálculos científicos fundamentales en
+machine learning. Es particularmente útil para el álgebra lineal, la transformación de
+Fourier y las capacidades de números aleatorios. Otras librerías de alto nivel como
+TensorFlow utilizan NumPy internamente para la manipulación de tensores
 
-MLL
-- scikit Learn 
+> SciPy
+Es una biblioteca muy popular entre los ingenieros de machine learning, ya que
+contiene diferentes módulos para la optimización, el álgebra lineal, la integración y la
+estadística. Hay una diferencia entre la biblioteca de SciPy y la pila de SciPy (SciPy
+stack). La librería SciPy es uno de los paquetes centrales que componen la pila de
+SciPy. SciPy también es muy útil para la manipulación de imágenes.
+
+> Scikit-learn.
+Es una de las librerías de machine learning más populares para los
+algoritmos de machine learning clásico. Está construida sobre dos bibliotecas
+básicas de Python, NumPy y SciPy. Scikit-learn soporta la mayoría de los algoritmos
+de aprendizaje supervisado y no supervisado
+
+> Theano.
+El machine learning es básicamente matemáticas y estadística. Theano es una
+popular librería que se utiliza para definir, evaluar y optimizar las expresiones
+matemáticas que implican conjuntos multidimensionales de manera eficiente. 
+
+Se consigue optimizando la utilización de la CPU y la GPU. Se utiliza ampliamente para
+pruebas unitarias y autoverificación para detectar y diagnosticar diferentes tipos de
+errores. Theano es una biblioteca muy potente que se ha utilizado en proyectos
+científicos de gran escala e intensivos en computación durante mucho tiempo, pero
+es lo suficientemente sencilla y accesible para que pequeños desarrolladores la
+utilicen en sus propios proyectos.
+
+> Keras.
+Es una de las librerías de Machine Learning más populares para Python. Es
+una API de redes neuronales de alto nivel capaz de funcionar sobre TensorFlow,
+CNTK, o Theano. Puede funcionar sin problemas en la CPU y la GPU. Keras permite
+que sea realmente sencillo construir y diseñar redes neuronales para los
+principiantes en el machine learning. Una de las mejores características de Keras es
+que permite la creación de prototipos de forma fácil y rápida.
+
+> TensorFlow.
+TensorFlow es una biblioteca de código abierto muy popular para el cálculo numérico
+de alto rendimiento, desarrollada por el equipo de Google Brain en Google. Como su
+nombre lo sugiere, TensorFlow es un marco de trabajo que implica la definición y ejecución de cálculos que implican tensores.
+
+> PyTorch
+Es otra de las librerías más populares de machine learning de código abierto
+para Python basada en Torch, que es una biblioteca de machine learning de código
+abierto que se implementa en C con un wrapper en Lua. Tiene una extensa selección
+de herramientas y librerías que incluye visión artificial (Computer Vision) o
+Procesamiento de Lenguaje Natural (NLP), entre otros. Permite a los desarrolladores
+realizar cálculos tensoriales con aceleración en la GPU y también es de ayuda en la
+
+> Pandas.
+Pandas es una popular librería de Python para el análisis de datos. No está
+directamente relacionada con el machine learning. Como sabemos, los dataset han
+ser preparados antes del entrenamiento. En este caso, Pandas es muy útil, ya que
+fue desarrollada específicamente para la extracción y preparación de datos.
+Proporciona estructuras de datos de alto nivel y una amplia variedad de herramientas
+para el análisis de datos. Asimismo, proporciona muchos métodos incorporados para
+tantear, combinar y filtrar datos. 
+
+> Matplotlib.
+Es una biblioteca de Python muy popular para la visualización de datos. Al
+igual que Pandas, no está directamente relacionada con el machine learning. Es
+particularmente útil cuando un programador quiere visualizar los patrones de los
+datos. Es una librería de ploteo en 2D usada para crear gráficos y diagramas en 2D.
 
 
 ## 2.7. La librería NumPy para el manejo de datos
+
+## Conceptos básicos y arrays en NumPy
+
+Tal y como hemos visto, la librería NumPy nos permite trabajar con arrays de forma
+muy eficiente, así como álgebra lineal, transformadas de Fourier y matrices. Aunque
+Python dispone de listas que permiten trabajar con arrays, estas son muy lentas.
+NumPy proporciona arrays 50 veces más rápidos, en parte porque los elementos
+están todos almacenados en posiciones contiguas de memoria y en parte porque
+parte de NumPy está escrita en C/C++
 
 ## 2.8. Importación de datos
 

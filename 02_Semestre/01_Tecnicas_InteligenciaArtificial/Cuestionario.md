@@ -127,7 +127,7 @@ datos que el experto humano es incapaz de obtener.
     - Todas podrían formar parte de un proceso KDD.
 
 
-# Tema 1: Tema 2. Python para la implementación de técnicas de inteligencia artificial
+# Tema 2. Python para la implementación de técnicas de inteligencia artificial
 
 
 ## Videoclase 1. Escribiendo en Python
@@ -145,7 +145,7 @@ datos que el experto humano es incapaz de obtener.
 - La ejecución de código Python en Jupyter notebook puede realizarse:
     - Tanto celda a celda como todas las celdas desde un punto.
 
-## Videoclase 2. 
+## Videoclase 2. Librerías para IA
 - Numpy y Scipy son librerías de:
     - Cálculo científico sobre las que se apoyan librerías de Aprendizaje Automático =>
 - Keras es una librería de redes neuronales que, apoyada en otras librerías, permite el manejo de arrays o matrices multidimensionales:
@@ -166,3 +166,21 @@ datos que el experto humano es incapaz de obtener.
     Keras, Scikit learn y Seaborn.
 - Matplotlib y Seaborn son librerías:
     - Ninguna de las anteriores
+
+## Videoclase 3. Datasets
+
+- Kaggle es una plataforma:
+    - De aprendizaje automático colaborativo que incluye datasets.
+
+-  Google posee una plataforma específica para:
+    - Búsqueda de datasets abiertos.
+
+- ¿Quién puede descargar datasets públicos del portal de datos abiertos del Gobierno de España?:
+    - Cualquier usuario, siempre y cuando el dataset sea público.
+
+- Mockaroo permite:
+    - Ninguna de las anteriores 
+
+- Queremos buscar un conjunto de datos sobre información del COVID-19 en España, ¿dónde podemos acudir?:
+    - Todas las anteriores.
+
