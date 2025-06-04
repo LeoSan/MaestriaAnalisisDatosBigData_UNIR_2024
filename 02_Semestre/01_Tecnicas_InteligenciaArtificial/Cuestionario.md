@@ -129,6 +129,82 @@ datos que el experto humano es incapaz de obtener.
 
 # Tema 2. Python para la implementación de técnicas de inteligencia artificial
 
+1. Indica la respuesta correcta:
+A. Python es un lenguaje fuertemente tipado y de tipado estático.
+B. Python es un lenguaje de programación declarativo.
+C. Python es un lenguaje de programación imperativo, fuertemente tipado, de
+tipado dinámico.  -> **Correcto**
+D. Python es un lenguaje de programación multiparadigma y débilmente
+tipado.
+
+2. Indica el resultado por pantalla de la siguiente sentencia en Python: print(int(2 +
+2j))
+A. 2.
+B. 2 + 2j.
+C. 0.
+D. Resultará un error. -> **Correcto**
+
+3. Si en Python la variable x es una cadena str cuyo contenido es "Bienvenidos",
+¿cuál será el resultado de la siguiente sentencia? print(x[-4:-2])
+A. [-4 -3 -2].
+B. Error. 
+C. id.-> **Correcto**
+D. -6.
+
+4. Indica la respuesta **incorrecta.** Cuando hablamos de Python:
+A. Las listas son colecciones ordenadas y cuyos elementos pueden ser
+modificados.
+B. Las tuplas son colecciones no ordenadas y cuyos elementos no pueden ser
+modificados. -> **Correcto**
+C. Los conjuntos son colecciones no ordenadas y cuyos elementos no pueden
+estar duplicados.
+D. Los diccionarios son colecciones no ordenadas de elementos clave-valor
+que pueden ser modificados.
+
+5. Si en un programa en Python existe una variable x de tipo tupla y realizamos la
+asignación y = x, señala la opción correcta:
+A. Al modificar un elemento de y, el mismo elemento en x se verá modificado.
+B. Al modificar un elemento de y, el mismo elemento en x no se verá
+modificado.
+C. No podemos modificar ningún elemento de y, por ser una tupla. -> **Correcto**
+D. Ninguna de las anteriores es correcta.
+
+6. Si en un programa en Python existe una variable x de tipo lista y realizamos la
+asignación y = x, señala la opción correcta:
+A. Al modificar un elemento de y, el mismo elemento en x se verá modificado. -> **Correcto**
+B. Al modificar un elemento de y, el mismo elemento en x no se verá
+modificado.
+C. No podemos modificar ningún elemento de y, por ser una lista.
+D. Ninguna de las anteriores es correcta.
+
+7. ¿Cuál de las siguientes preguntas es correcta?
+A. TensorFlow fue desarrollada por Google Brain.
+B. Pandas permite la carga sencilla de datasets en CSV.
+C. Keras es una librería especialmente enfocada para trabajar con redes
+neuronales artificiales.
+D. Todas las anteriores. -> **Correcto**
+
+8. ¿Con qué función se puede importar un dataset en formato CSV desde un
+archivo local o una URL?
+A. pandas.importdataset().
+B. pandas.readcsv(). -> **Correcto**
+C. pandas.readurl().
+D. pandas.importcsv().
+
+9. ¿Cuál es el objetivo de TensorFlow Lite?
+A. Para el uso de librerías gratuitas.
+B. TensorFlow Lite no existe.
+C. Para su uso con el lenguaje Go.
+D. Para su uso en dispositivos móviles con reducida capacidad de cálculo. -> **Correcto**
+
+10. Para mostrar gráficos por pantalla aplicando técnicas machine learning con
+Python, emplearía:
+A. Keras.
+B. Scikit-learn.
+C. Matplotlib. -> **Correcto**
+D. SciPy.
+
+
 
 ## Videoclase 1. Escribiendo en Python
 - ¿Se pueden incluir celdas de código y celdas de texto en Jupyter?:

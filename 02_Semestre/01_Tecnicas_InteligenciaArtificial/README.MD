@@ -332,11 +332,230 @@ datos. Es una librería de ploteo en 2D usada para crear gráficos y diagramas e
 Tal y como hemos visto, la librería NumPy nos permite trabajar con arrays de forma
 muy eficiente, así como álgebra lineal, transformadas de Fourier y matrices. Aunque
 Python dispone de listas que permiten trabajar con arrays, estas son muy lentas.
+
 NumPy proporciona arrays 50 veces más rápidos, en parte porque los elementos
 están todos almacenados en posiciones contiguas de memoria y en parte porque
 parte de NumPy está escrita en C/C++
 
+Podemos trabajar con escalares, vectores, matrices, arrays tridimensionales o
+cualquier otra dimensión diferente. El método ndim nos permite obtener la dimensión
+del array, mientras que con el operador corchete podemos acceder a los diferentes
+elementos según los índices en cada dimensión
+
+## Array Slicing
+
+Al igual que con los tipos built-in datos (cadenas, listas, etc.), en los arrays NumPy se
+puede hacer un slicing de los arrays utilizando notación de corchetes y dos puntos,
+pero, con mucha mayor flexibilidad:
+
+## Tipos de datos en NumPy
+NumPy nos permite especificar con mucho mayor detalle los tipos de datos de los
+elementos en nuestros arrays:
+- i – integer
+- b – boolean
+- u - unsigned integer
+- f – float
+- c - complex float
+- m – timedelta
+- M – datetime
+- O – object
+- S – string
+- U - unicode string
+- V - chunk o trozo de memoria para otro tipo de dato ( void )
+
+- En los tipos de datos i, u, f, S, U podemos especificar el tamaño en bytes, además.
+- Esto se especifica con la propiedad dtype:
+- Si un valor no puede ser convertido, se lanzará una excepción de tipo ValueError.
+- Si queremos convertir el tipo de datos de un array existente, usaremos el método 
+
+## Copy y view
+La principal diferencia entre una copia (obtenida con el método copy() ) y una vista
+(obtenida con el método view() ) de un array NumPy es que la copia es un nuevo
+array, mientras que la vista es una vista, valga la redundancia, del array original. Es similar al concepto de asignación por referencia o de clonado de los datos en Python
+
+## La forma (shape) de un array
+Con el atributo shape podemos obtener una tupla indicando en cada índica el
+número de elementos en cada dimensión. Si hemos definido una dimensión mínima
+con ndmin en la creación del array, esta será una forma de visualizarlo. El método
+reshape() nos permite redimensionar un array (cambios entre 1-D y 2-D o 3D). Dicho
+método devuelve una vista, no una copia. Con reshape(-1) podemos aplanar un
+array multidimensional en un array unidimensiona
+
+## Operaciones con varios arrays
+Podemos concatenar arrays uno a continuación del otro con concatenate(),
+especificando sobre qué eje (si no se especifica, se considerará el eje 0):
+
+## Búsquedas en arrays
+Podemos utilizar el método where() para realizar búsquedas de los elementos que
+cumplan con una condición pasado como argumento a dicho método. Algunos
+sencillos ejemplos de su uso incluyen la búsqueda de un valor específico o buscar
+todos los elementos pares del array:
+
+## Ordenando arrays
+Con el método sort() obtenemos una copia del array, manteniendo el original
+inalterado. Si ordenamos un array 2-D, el orden se hará fila a fila:
+
+## Filtrado de arrays
+Para ello, se usa un array de booleanos que permiten indicar mediante valores True o
+False si el elemento correspondiente se mantendrá o no tras el filtrado.
+
 ## 2.8. Importación de datos
 
+Aunque ya hemos visto algunas en los ejemplos en la sección de librerías, vamos a
+ver las diferentes formas que tenemos para importar datos en Python a la hora de
+aplicar métodos machine learning 
+
+
+- Importación de archivos en formato .txt.
+- Importación de archivos planos CSV mediante la librería estándar de Python.
+- Importación de archivos planos CSV mediante NumPy.
+- Importación de archivos planos CSV mediante Pandas.
+- Importación desde una URL.
+- Importación desde otras librerías (toy datasets).
+
+## Importación de archivos en formato .txt
+- En todos los casos en los que manejemos ficheros, nos interesa asegurarnos
+primero de que estamos en el directorio correcto, a no ser que queramos utilizar una
+ruta absoluta
+
+## Importación de archivos planos CSV mediante la librería estándar de Python
+- En el caso de que trabajemos con archivos CSV, hemos de tener en cuenta, no solo
+la ubicación, sino detalles como:
+- Si tiene cabecera (header).
+- Si tiene comentarios (incluidos con #).
+- Qué tipo de delimitador utiliza el fichero (coma, punto y coma, espacios en blanco,
+etc.)
+
+## Importación de archivos planos CSV mediante Pandas
+
+- Esta forma es muy popular dadas las ventajas que ofrece Pandas en este sentido.
+- Usaremos la función readcsv() para la carga, la cual nos ofrece una gran versatilidad
+a la hora de importar los datos. Con una única línea permite:
+
+- Detectar automáticamente los headers sin que se lo tengamos que especificar.
+Saltar líneas con el modificador skiprow.
+
+- Detectar automáticamente el tipo de datos (entero, flotante, cadenas, etc.)
+- Identificar campos erróneos o vacíos.
+- Convertir los datos CSV en un dataframe de Pandas, que son estructuras de datos
+especialmente diseñadas para aplicar técnicas de ciencia de datos, siendo posible
+su uso como tablas o series temporales.
+- Emplear la opción chunksize para cargar los datos en fragmentos de tamaño
+configurable en lugar de cargar todos los datos en un único espacio de memoria. De
+este modo, se mejora la eficiencia.
+
+## Importación desde una URL
+- También podemos cargar directamente los datos desde una URL usando Pandas:
+
+
+## Importación desde otras librerías
+(toy datasets)
+Como ya hemos visto con anterioridad, existen datasets que vienen incluidos «de
+serie» en las librerías de machine learning. Lo hemos visto en los ejemplos de scikitlearn, pero también los hay incluidos en paquetes como statsmodels o seaborn. Este
+tipo de conjuntos de datos para hacer pruebas se conocen como «toy datasets»
+
+
 ## 2.9. Introducción a Machine Learning con librerías en Python
+
+## Medias, medianas, modas, desviación estándar, varianza y percentiles
+Como hemos visto con anterioridad, podemos dividir los tipos de datos de nuestro
+dataset en:
+
+Medidas de Tendencia Central
+Estas medidas nos dicen dónde está el "centro" o el valor más típico de un conjunto de datos.
+
+## Media (Promedio)
+La media es lo que comúnmente conocemos como promedio. Se calcula sumando todos los valores de un conjunto de datos y dividiendo el resultado entre el número total de valores.
+
+¿Cómo recordarla? Piensa en tu promedio de calificaciones. Sumas todas tus notas y divides entre el número de materias.
+Ejemplo: Si tus edades son 10, 12, 11, 13, 14. La media es (10+12+11+13+14)/5=60/5=12. La edad promedio es 12 años.
+
+## Mediana
+La mediana es el valor que se encuentra justo en el medio de un conjunto de datos cuando estos están ordenados de menor a mayor (o de mayor a menor). Si hay un número par de datos, la mediana es el promedio de los dos valores centrales.
+
+¿Cómo recordarla? Piensa en la "línea media" de una carretera; es el punto central.
+Ejemplo:
+Datos impares: 10, 11, 12, 13, 14. La mediana es 12.
+Datos pares: 10, 11, 12, 13, 14, 15. La mediana es (12+13)/2=12.5.
+
+### Moda
+La moda es el valor que aparece con mayor frecuencia en un conjunto de datos. Puede haber una moda (unimodal), varias modas (multimodal) o ninguna moda si todos los valores son únicos.
+
+¿Cómo recordarla? Piensa en la "moda" en la ropa; es lo que "más se usa" o "más se repite".
+Ejemplo:
+10, 11, 12, 13, 12, 14. La moda es 12.
+10, 11, 12, 13, 14. No hay moda.
+
+
+## Medidas de Dispersión
+Estas medidas nos dicen qué tan dispersos o separados están los datos entre sí.
+
+## Desviación Estándar
+La desviación estándar mide el promedio de qué tan lejos están los datos de la media. Un valor bajo indica que los datos están cerca de la media, mientras que un valor alto indica que están más dispersos.
+
+¿Cómo recordarla? Piensa que te dice qué tan "desviados" o "apartados" están los datos de su centro (la media) en promedio. Es una medida clave de la "variabilidad" de los datos.
+Concepto clave: Es la raíz cuadrada de la varianza.
+
+## Varianza
+La varianza mide la dispersión total de los datos alrededor de la media. Es el promedio de los cuadrados de las diferencias de cada dato con la media. Se usa para calcular la desviación estándar.
+
+¿Cómo recordarla? Piensa que te dice qué tanta "variación" o "diferencia" hay en tus datos con respecto a la media. Es el paso previo a la desviación estándar.
+Concepto clave: La varianza está en unidades cuadradas de los datos originales, por eso se le saca raíz cuadrada para obtener la desviación estándar y que esté en las mismas unidades que los datos.
+
+## Medidas de Posición
+Estas medidas nos dicen la posición de un valor específico dentro de un conjunto de datos ordenado.
+
+## Percentiles
+Los percentiles dividen un conjunto de datos ordenado en 100 partes iguales. Un percentil indica el porcentaje de datos que caen por debajo de un valor específico. Por ejemplo, si sacaste 85 en un examen y eso te pone en el percentil 90, significa que el 90% de los estudiantes sacaron menos de 85.
+
+¿Cómo recordarlos? Piensa en "por ciento" (parte de cien). Te dice qué porcentaje de los datos están por debajo de un valor.
+Ejemplo: El percentil 25 (P25) es el valor por debajo del cual cae el 25% de los datos. El percentil 50 (P50) es la mediana, ya que el 50% de los datos están por debajo de este valor.
+
+## Resumen para memorizar:
+- Media: Promedio, el "centro" aritmético.
+- Mediana: El valor de en medio cuando los datos están ordenados.
+- Moda: El valor que más se repite (el que está de "moda").
+- Desviación Estándar: Qué tan alejados están los datos de la media, en promedio (en las mismas unidades que los datos).
+- Varianza: La dispersión total de los datos respecto a la media (la desviación estándar al cuadrado).
+- Percentiles: Dividen los datos en 100 partes, indicando el porcentaje de datos por debajo de un valor.
+
+
+- Numéricos:
+    - Discretos (el número de hijos por mujer).
+    - Continuos (la longitud del pétalo de una flor).
+- Categóricos (perro, gato, loro).
+- Ordinales (suspenso, aprobado, notable, sobresaliente).
+
+NumPy y SciPy nos ofrecen métodos rápidos para calcular diferentes medidas de un
+conjunto de datos, como la media, la mediana, la moda, la desviación estándar, la
+varianza y determinados percentiles, por ejemplo, el percentil 75:
+
+## Distribución de los datos
+Podemos generar una gran cantidad de datos aleatorios con NumPy y mostrar el
+histograma representando la distribución de los datos usando Matplotlib.
+
+## Regresiones
+Una forma clásica de aprendizaje supervisado cuando se tienen datos continuos es
+la regresión, que puede ser lineal o polinómica, además de otros muchos más tipos
+más complejos
+
+## TensorFlow 2.0 Crash Course
+ 2  horas de tensorFlow 
+https://www.youtube.com/watch?v=6g4O5UOH304&ab_channel=freeCodeCamp.org 
+
+# Tema 3. Árboles de decisión
+
+3.3. Descripción de la tarea de inducción
+3.4. Algoritmo básico de aprendizaje de árboles de
+decisión: ID3
+3.5. Espacio de búsqueda y bias inductivo
+3.6. Métodos de selección de atributos
+3.7. Sobreajuste y poda de árboles
+3.8. Medidas de la precisión de la clasificación. Curva
+ROC
+3.9. Simplificación de árboles de decisión mediante poda:
+algoritmo C4.5
+3.10. Ensemble Learning y Random Forest
+3.11. Aplicaciones y ejemplos de implementación
+
 
