@@ -132,12 +132,6 @@ dt_model = DecisionTreeClassifier(
     min_samples_split=4,   # Mínimo de muestras para dividir
     min_samples_leaf=2     # Mínimo de muestras en hoja
 )
-# Parámetros relevantes a explicar:
-# criterion: función para medir la calidad de una división (gini o entropy)
-# max_depth: profundidad máxima del árbol
-# min_samples_split: número mínimo de muestras requeridas para dividir un nodo interno
-# min_samples_leaf: número mínimo de muestras requeridas para estar en un nodo hoja
-
 dt_model.fit(X_train, y_train)
 y_pred_dt = dt_model.predict(X_test)
 
@@ -146,15 +140,10 @@ print("\n 📋 Random Forest Classifier: ")
 
 from sklearn.ensemble import RandomForestClassifier
 
-rf_model = RandomForestClassifier(random_state=42)
-# Parámetros relevantes a explicar:
-# n_estimators: número de árboles en el bosque
-# criterion: igual que Decision Tree
-# max_depth: igual que Decision Tree
-# min_samples_split: igual que Decision Tree
-# min_samples_leaf: igual que Decision Tree
-# bootstrap: si se utilizan muestras de arranque al construir los árboles
-
+rf_model = RandomForestClassifier(
+    n_estimators=100
+    , random_state=42
+)
 rf_model.fit(X_train, y_train)
 y_pred_rf = rf_model.predict(X_test)
 

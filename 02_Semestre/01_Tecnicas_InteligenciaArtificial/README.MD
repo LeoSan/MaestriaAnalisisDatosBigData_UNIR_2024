@@ -543,6 +543,48 @@ más complejos
  2  horas de tensorFlow 
 https://www.youtube.com/watch?v=6g4O5UOH304&ab_channel=freeCodeCamp.org 
 
+Fundamentos de Machine Learning
+1. Regresión Lineal con Python
+🔗 https://youtu.be/1CGbP0l0iqo?si=DZnQW4ClqyZaOJhJ
+📌 Explicación de la regresión lineal y su implementación en Python.
+
+2. Codificación de Datos Categóricos
+https://youtu.be/KUEsLv8EaVY?si=ER1EN3ZutSwN9kCx
+📌 Métodos para transformar variables categóricas en datos numéricos para modelos de ML.
+
+3. Escalamiento, Normalización y Estandarización de Datos
+https://youtu.be/-VuR14Qyl7E?si=sfjLg1Zg4rlXXn6q
+📌 Técnicas para preparar datos antes de alimentar un modelo de aprendizaje automático.
+
+
+Algoritmos de Aprendizaje Automático
+4. Random Forest (Bosque Aleatorio
+https://youtu.be/yOCJQLf_YFI?si=qj_tImJhBxBLxHI1
+📌 Explicación de este método de ensamblado basado en árboles de decisión.
+
+5. Entropía en Árboles de Decisión
+https://youtu.be/GWX2YcnaELg?si=KrWBYM5uRI1EHKyk
+📌 Concepto clave en la división de nodos dentro de árboles de decisión.
+
+6. Impureza GINI en Árboles de Decisión
+https://youtu.be/PFn31_hzQ2Y?si=ZUOD5-ejUK3zICWB
+📌 Otro criterio fundamental en la construcción de árboles de decisión.
+
+Evaluación y Optimización de Modelos
+7. Matriz de Confusión: Precisión, Accuracy, Recall y F1-Score
+https://youtu.be/uaGMk43XTOw?si=EdxWX8czQOzQpaQR
+📌 Cómo evaluar el rendimiento de los modelos de clasificación.
+
+8. Curva ROC y AUC
+https://youtu.be/Uyfcqn3Nidc?si=1ubow-pNmcaQlEB5
+📌 Análisis de la capacidad discriminativa de un modelo de clasificación.
+
+9. Optimización de Modelos: Hiperparámetros
+https://youtu.be/YAfS8-BXp8Q?si=wmuqpBY0sCIkGfqD
+📌 Técnicas para mejorar el rendimiento de los modelos de ML mediante el ajuste de hiperparámetros.
+
+
+
 # Tema 3. Árboles de decisión
 
 3.3. Descripción de la tarea de inducción
