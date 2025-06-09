@@ -215,7 +215,7 @@ print("\n Matriz de Confusión (Decision Tree):")
 print(cm_dt)
 
 # Visualizar la Matriz de Confusión
-disp_dt = ConfusionMatrixDisplay(confusion_matrix=cm_dt, display_labels=le.inverse_transform(sorted(y.unique()))) # Usa las etiquetas originales
+disp_dt = ConfusionMatrixDisplay(confusion_matrix=cm_dt, display_labels=le.inverse_transform(sorted(y.unique())))
 disp_dt.plot(cmap=plt.cm.Blues)
 plt.title('Matriz de Confusión: Decision Tree')
 plt.show()
@@ -228,23 +228,21 @@ print("\n Reporte de Clasificación (Decision Tree):")
 for class_label, metrics in report_dt.items():
     if class_label in le.inverse_transform(sorted(y.unique())): # Solo para las clases reales
         recall = metrics['recall'] # TP Rate
-        # Para FP Rate, es un poco más complejo y depende de si es binario o multiclase
-        # FP = Suma de la columna - True Positives para esa clase
-        # TN = Suma de las filas y columnas excepto la fila y columna de esa clase
-        # FP Rate = FP / (FP + TN)
-
         print(f"Clase '{class_label}':")
         print(f"  TP Rate (Recall): {recall:.4f}")
-        # Para FP Rate por clase:
-        # True Negatives (TN) for a class 'i': sum of all cells NOT in row 'i' AND NOT in column 'i'
-        # False Positives (FP) for a class 'i': sum of column 'i' cells MINUS True Positives of class 'i'
-        TP_dt = cm_dt[le.transform([class_label])[0], le.transform([class_label])[0]] # True Positive for this class
-        FN_dt = np.sum(cm_dt[le.transform([class_label])[0], :]) - TP_dt # False Negatives for this class
-        FP_dt = np.sum(cm_dt[:, le.transform([class_label])[0]]) - TP_dt # False Positives for this class
-        TN_dt = np.sum(cm_dt) - (TP_dt + FN_dt + FP_dt) # True Negatives for this class
+
+        TP_dt = cm_dt[le.transform([class_label])[0], le.transform([class_label])[0]] # Verdadero positivo en esta class
+        FN_dt = np.sum(cm_dt[le.transform([class_label])[0], :]) - TP_dt # Falso Negativos en esta class
+        FP_dt = np.sum(cm_dt[:, le.transform([class_label])[0]]) - TP_dt # Falsop positivo en esta class
+        TN_dt = np.sum(cm_dt) - (TP_dt + FN_dt + FP_dt) # Verdadero negativos en esta class
 
         # Manejar la división por cero si FP + TN es 0
-        fp_rate_dt = FP_dt / (FP_dt + TN_dt) if (FP_dt + TN_dt) > 0 else 0
+        result = FP_dt + TN_dt
+        if result == 0:
+            fp_rate_dt = FP_dt
+        else:
+            fp_rate_dt = FP_dt / result
+
         print(f"  FP Rate: {fp_rate_dt:.4f}")
         print("-" * 20)
 
