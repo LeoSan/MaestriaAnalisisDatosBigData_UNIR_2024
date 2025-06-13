@@ -131,7 +131,6 @@ def main():
     plt.tight_layout()
     plt.show()
 
-
     # PASO 4: PREPARACIÓN PARA MODELADO
     print("\n🎯 Paso 4: ------------ Preparación del dataset para modelado ------------------------ 🎯")
     

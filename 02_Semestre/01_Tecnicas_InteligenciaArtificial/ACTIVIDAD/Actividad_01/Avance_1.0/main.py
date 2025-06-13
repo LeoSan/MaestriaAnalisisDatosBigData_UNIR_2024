@@ -1,291 +1,283 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import LabelEncoder
-
-
-#Importación del dataset De Vehiculos
-print("\n🎯 Paso 0: ----------------- Importamos el DataSet Vehiculos :------------------ 🎯")
-url_descarga_directa = 'https://drive.google.com/uc?export=download&id=1jY1JAwakImo53OxBA0oiJTlAH9G5vi3d'
-df = pd.read_csv(url_descarga_directa, sep=';')
-
-#Caracterización del dataset
-print("\n📋 Primeras 5 filas del dataset:")
-print(df.head())
-
-print("\n📋 INFORMACIÓN DETALLADA:")
-print(df.info())
-
-## Preprocesamiento de Datos
-print("\n🎯 Paso 1: ------------ Preprocesamiento de Datos ------------------------ 🎯")
-df_encoded = df.copy()
-#print("\n🎯 DISTRIBUCIÓN DE LA VARIABLE OBJETIVO (class):")
-# Columnas a codificar
-# 'class' es la columna objetivo
-
-features = ['Buying', 'Maintenance', 'Doors', 'Person', 'lug_boot', 'safety']
-target = 'class'
-
-# Aplicamos LabelEncoder a cada columna categórica, incluyendo la columna objetivo
-for col in features + [target]:
-    le = LabelEncoder()
-    df_encoded[col] = le.fit_transform(df_encoded[col])
-    print(f" 🔍 Mapeo de {col}: {dict(zip(le.classes_, le.transform(le.classes_)))}")
-
-print("\n 📋 Primeras 5 filas del dataset codificado:")
-print(df_encoded.head())
-
-#Caracterización del Dataset
-print("\n🎯 Paso 2: ------------ Caracterización del Dataset ------------------------ 🎯")
-
-print(f"\n 📋 Número total de instancias: {df_encoded.shape[0]}")
-print(f"\n 📋 Número de atributos de entrada: {df_encoded.shape[1] - 1}") # Excluyendo la columna 'class'
-print(f"\n 📋 Dataset Vehiculos con {df_encoded.shape[0]} filas y {df_encoded.shape[1]} columnas")
-print("\n 📋 Descripción de atributos de entrada y su tipo:")
-
-columan_desc = {"Buying":"Precio de compra del vehículo, clasificado en categorías como vhigh (muy alto), high (alto), med (medio) y low (bajo)."
-                , "Maintenance":"Costo de mantenimiento del vehículo, con la misma categorización que buying."
-                , "Doors":"Número de puertas del automóvil, expresado en valores numéricos como '2', '3', '4', o '5more' (5 o más)."
-                , "Person":"Capacidad de ocupantes del automóvil, con valores como '2', '4' y 'more (más de 4)."
-                , "lug_boot":"Tamaño del maletero, categorizado como small (pequeño), med (medio) o big (grande)"
-                , "safety":"Nivel de seguridad del automóvil, clasificado como low (bajo), med (medio) o high (alto)"}
-
-for col in features:
-    print(f" 🔍 Atributo: {col}, Descripción: [{columan_desc[col]}], Tipo: [categórico]") # Agrega el significado real
-    print(f" Valores únicos (antes de codificar): {df[col].unique()}")
-    
-print("\n 📋 Información de la clase objetivo:")
-print(f"\n - Columna de clase: '{target}'")
-print(f"\n - Número de clases: {df_encoded[target].nunique()}")
-
-print("\n 📋 Representación de las clases y su conteo:")
-print(df[target].value_counts()) # Mostrar conteo de valores originales antes de codificar para mayor claridad
-print(f"\n 📋 Porcentajes:")
-print((df[target].value_counts() / len(df) * 100).round(2))
-
-print(f"\n 📋 Tipo de valor de la clase (después de codificación): {df_encoded[target].dtype}")
-#print(f"\n 📋 Memoria utilizada: {df_encoded.memory_usage(deep=True).sum()} bytes")
-
-# Verificar valores desconocidos (nulos)
-print("\n 📋 Valores nulos por columna:")
-print(df_encoded.isnull().sum())
-
-print("\n 📋 ESTADÍSTICAS DESCRIPTIVAS:")
-print(df_encoded.describe(include='all'))
-
-##Descripción Gráfica datos Originales
-print("\n🎯 Paso 3: ------------ Descripción Gráfica datos originales------------------------ 🎯")
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-plt.figure(figsize=(15, 10))
-
-# Histograma de la distribución de las clases
-plt.subplot(2, 2, 1)
-sns.countplot(x=target, data=df)
-plt.title('Distribución de la Clase de Aceptabilidad de Coches')
-plt.xlabel('Clase (original)')
-plt.ylabel('Conteo')
-
-# Histograma de algunas características de entrada (después de codificación)
-plt.subplot(2, 2, 2)
-sns.countplot(x='Buying', data=df) # O df_encoded si prefieres los valores numéricos
-plt.title('Distribución de Costo de Compra')
-
-plt.subplot(2, 2, 3)
-sns.countplot(x='Doors', data=df)
-plt.title('Distribución de Número de Puertas')
-
-plt.tight_layout()
-plt.show()
-
-## Entrenamiento y Evaluación de Modelos
-print("\n🎯 Paso 4: ------------ Procesasamiento del dataset Transformaciones previas necesarias para la modelación------------------------ 🎯")
-## División del Dataset en Entrenamiento y Prueba
-# Definimos las características de entrada (X) y la variable objetivo (y)   
-X = df_encoded[features]
-y = df_encoded[target]
-# Divido el dataset en conjuntos de entrenamiento y prueba
-# utilizo una proporción de 70-30% o 80-20%
-# Aseguramos que la división mantenga la proporción de clases utilizando stratify=y
-# stratify=y es importante para mantener la misma proporción de clases en los conjuntos de entrenamiento y prueba
-
+from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, 
-    test_size=0.3,      # 30% para prueba
-    random_state=42,    # Para reproducibilidad
-    stratify=y          # Mantener proporción de clases
-)
-print("\n 📋 Divido el dataset en conjuntos de entrenamiento y prueba. Una proporción común es 70-30% o 80-20% ")
-print(f"\n ✅ Dimensiones de X_train: {X_train.shape}")
-print(f"\n ✅ Dimensiones de X_test: {X_test.shape}")
-
-## Selección y Entrenamiento de Modelos
-print("\n 📋 Selección y Entrenamiento de Modelos ")
-print("\n 📋 Decision Tree Classifier ")
-
 from sklearn.tree import DecisionTreeClassifier
-
-dt_model = DecisionTreeClassifier(
-    random_state=42,
-    max_depth=5,           # Profundidad máxima
-    min_samples_split=4,   # Mínimo de muestras para dividir
-    min_samples_leaf=2     # Mínimo de muestras en hoja
-)
-dt_model.fit(X_train, y_train)
-y_pred_dt = dt_model.predict(X_test)
-
-##Random Forest Classifier:
-print("\n 📋 Random Forest Classifier: ")
-
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import (accuracy_score, confusion_matrix, classification_report, 
+                           ConfusionMatrixDisplay, precision_recall_fscore_support)
+import warnings
+warnings.filterwarnings('ignore')
 
-rf_model = RandomForestClassifier(
-    n_estimators=100
-    , random_state=42
-)
-rf_model.fit(X_train, y_train)
-y_pred_rf = rf_model.predict(X_test)
+# Configuración de estilo para gráficos
+plt.style.use('default')
+sns.set_palette("husl")
 
-## Entrenamiento y Evaluación de Modelos
-print("\n🎯 Paso 5: ------------ Entrenamiento y Evaluación de Modelos------------------------ 🎯")
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, ConfusionMatrixDisplay 
+def main():
+    # PASO 0: IMPORTACIÓN DEL DATASET
+    print("\n🎯 Paso 0: ----------------- Importamos el DataSet Vehículos :------------------ 🎯")
+    
+    try:
+        url_descarga_directa = 'https://drive.google.com/uc?export=download&id=1jY1JAwakImo53OxBA0oiJTlAH9G5vi3d'
+        df = pd.read_csv(url_descarga_directa, sep=';')
+        print("✅ Dataset cargado exitosamente")
+    except Exception as e:
+        print(f"❌ Error al cargar el dataset: {e}")
+        return
 
-print("\n 🧠 ------- Métricas de Clasificación -------")
-print("\n 🧠 Evaluación del Modelo Decision Tree ---")
-print(f"\n 🧠 Accuracy Decision Tree: {accuracy_score(y_test, y_pred_dt):.4f}")
-print("\n 🧠 Matriz de Confusión Decision Tree:")
-print(confusion_matrix(y_test, y_pred_dt))
-print("\n 🧠 Reporte de Clasificación Decision Tree:")
-print(classification_report(y_test, y_pred_dt, target_names=[str(cls) for cls in le.inverse_transform(sorted(y.unique()))]))
+    # Caracterización inicial del dataset
+    print("\n📋 Primeras 5 filas del dataset:")
+    print(df.head())
+    
+    print("\n📋 INFORMACIÓN DETALLADA:")
+    print(df.info())
 
-print("\n 🧠 Evaluación del Modelo Random Forest ---")
-print(f"\n 🧠 Accuracy Random Forest: {accuracy_score(y_test, y_pred_rf):.4f}")
-print("\n 🧠 Matriz de Confusión Random Forest:")
-print(confusion_matrix(y_test, y_pred_rf))
-print("\n 🧠 Reporte de Clasificación Random Forest:")
-print(classification_report(y_test, y_pred_rf, target_names=[str(cls) for cls in le.inverse_transform(sorted(y.unique()))]))
+    # PASO 1: PREPROCESAMIENTO DE DATOS
+    print("\n🎯 Paso 1: ------------ Preprocesamiento de Datos ------------------------ 🎯")
+    
+    df_encoded = df.copy()
+    features = ['Buying', 'Maintenance', 'Doors', 'Person', 'lug_boot', 'safety']
+    target = 'class'
+    
+    # Diccionario para almacenar los encoders
+    encoders = {}
+    
+    # Aplicamos LabelEncoder a cada columna categórica
+    for col in features + [target]:
+        le = LabelEncoder()
+        df_encoded[col] = le.fit_transform(df_encoded[col])
+        encoders[col] = le  # Guardamos el encoder para uso posterior
+        print(f"🔍 Mapeo de {col}: {dict(zip(le.classes_, le.transform(le.classes_)))}")
 
-## Evaluación y Comparación de Resultados
-print("\n🎯 Paso 6: ------------  Evaluación y Comparación de Resultados ------------------------ 🎯")
+    print("\n📋 Primeras 5 filas del dataset codificado:")
+    print(df_encoded.head())
 
-print("\n 📈 -------Comparación Gráfica de Resultados: -------")
-   
-# Ejemplo de comparación de accuracy
-models = ['Decision Tree', 'Random Forest']
-accuracies = [accuracy_score(y_test, y_pred_dt), accuracy_score(y_test, y_pred_rf)]
+    # PASO 2: CARACTERIZACIÓN DEL DATASET
+    print("\n🎯 Paso 2: ------------ Caracterización del Dataset ------------------------ 🎯")
 
-plt.figure(figsize=(8, 5))
-sns.barplot(x=models, y=accuracies)
-plt.title('Comparación de Accuracy entre Modelos')
-plt.ylabel('Accuracy')
-plt.ylim(0, 1)
-plt.show()
+    print(f"\n📋 Número total de instancias: {df_encoded.shape[0]}")
+    print(f"📋 Número de atributos de entrada: {df_encoded.shape[1] - 1}")
+    print(f"📋 Dataset Vehículos con {df_encoded.shape[0]} filas y {df_encoded.shape[1]} columnas")
 
-# Visualización de matrices de confusión
-fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+    # Descripción mejorada de atributos
+    column_desc = {
+        "Buying": "Precio de compra del vehículo, clasificado en categorías como vhigh (muy alto), high (alto), med (medio) y low (bajo).",
+        "Maintenance": "Costo de mantenimiento del vehículo, con la misma categorización que buying.",
+        "Doors": "Número de puertas del automóvil, expresado en valores numéricos como '2', '3', '4', o '5more' (5 o más).",
+        "Person": "Capacidad de ocupantes del automóvil, con valores como '2', '4' y 'more' (más de 4).",
+        "lug_boot": "Tamaño del maletero, categorizado como small (pequeño), med (medio) o big (grande)",
+        "safety": "Nivel de seguridad del automóvil, clasificado como low (bajo), med (medio) o high (alto)"
+    }
 
-sns.heatmap(confusion_matrix(y_test, y_pred_dt), annot=True, fmt='d', cmap='Blues', ax=axes[0])
-axes[0].set_title('Matriz de Confusión: Decision Tree')
-axes[0].set_xlabel('Predicho')
-axes[0].set_ylabel('Real')
+    print("\n📋 Descripción de atributos de entrada y su tipo:")
+    for col in features:
+        print(f"🔍 Atributo: {col}")
+        print(f"   Descripción: {column_desc[col]}")
+        print(f"   Tipo: categórico")
+        print(f"   Valores únicos: {sorted(df[col].unique())}")
+        print()
 
-sns.heatmap(confusion_matrix(y_test, y_pred_rf), annot=True, fmt='d', cmap='Blues', ax=axes[1])
-axes[1].set_title('Matriz de Confusión: Random Forest')
-axes[1].set_xlabel('Predicho')
-axes[1].set_ylabel('Real')
+    # Información de la clase objetivo
+    print("📋 Información de la clase objetivo:")
+    print(f"- Columna de clase: '{target}'")
+    print(f"- Número de clases: {df_encoded[target].nunique()}")
+    
+    print("\n📋 Distribución de las clases:")
+    class_counts = df[target].value_counts()
+    class_percentages = (class_counts / len(df) * 100).round(2)
+    
+    for clase, count in class_counts.items():
+        percentage = class_percentages[clase]
+        print(f"   {clase}: {count} instancias ({percentage}%)")
 
-plt.tight_layout()
-plt.show()
+    # Verificar valores nulos
+    print("\n📋 Valores nulos por columna:")
+    null_counts = df_encoded.isnull().sum()
+    if null_counts.sum() == 0:
+        print("✅ No hay valores nulos en el dataset")
+    else:
+        print(null_counts)
 
-# --- Para el Modelo Decision Tree ---
-print("\n 📈 --- Métricas del Modelo Decision Tree ---")
+    print("\n📋 ESTADÍSTICAS DESCRIPTIVAS:")
+    print(df_encoded.describe(include='all'))
 
-# 1. Instancias clasificadas correctamente e incorrectamente
-correct_dt = accuracy_score(y_test, y_pred_dt) * len(y_test)
-incorrect_dt = len(y_test) - correct_dt
 
-print(f"\n 🧠 Instancias clasificadas correctamente (Decision Tree): {int(correct_dt)}")
-print(f"\n 🧠 Instancias clasificadas incorrectamente (Decision Tree): {int(incorrect_dt)}")
+    # PASO 3: VISUALIZACIÓN DE DATOS
+    print("\n🎯 Paso 3: ------------ Descripción Gráfica datos originales ------------------------ 🎯")
+    
+    # Crear figura con subplots mejorados
+    fig, axes = plt.subplots(2, 3, figsize=(18, 12))
+    fig.suptitle('Análisis Exploratorio del Dataset de Vehículos', fontsize=16, fontweight='bold')
 
-# 2. Matriz de Confusión
-cm_dt = confusion_matrix(y_test, y_pred_dt)
+    # Distribución de la clase objetivo
+    sns.countplot(data=df, x=target, ax=axes[0, 0])
+    axes[0, 0].set_title('Distribución de Clases de Aceptabilidad')
+    axes[0, 0].set_xlabel('Clase')
+    axes[0, 0].set_ylabel('Conteo')
+    axes[0, 0].tick_params(axis='x', rotation=45)
 
-print("\n Matriz de Confusión (Decision Tree):")
-print(cm_dt)
+    # Distribuciones de características
+    characteristics = ['Buying', 'Maintenance', 'Doors', 'safety', 'lug_boot']
+    
+    for i, char in enumerate(characteristics):
+        row = (i + 1) // 3
+        col = (i + 1) % 3
+        sns.countplot(data=df, x=char, ax=axes[row, col])
+        axes[row, col].set_title(f'Distribución de {char}')
+        axes[row, col].tick_params(axis='x', rotation=45)
 
-# Visualizar la Matriz de Confusión
-disp_dt = ConfusionMatrixDisplay(confusion_matrix=cm_dt, display_labels=le.inverse_transform(sorted(y.unique())))
-disp_dt.plot(cmap=plt.cm.Blues)
-plt.title('Matriz de Confusión: Decision Tree')
-plt.show()
+    plt.tight_layout()
+    plt.show()
 
-# 3. TP Rate y FP Rate (usando classification_report o calculándolos manualmente desde la CM)
-# El classification_report te da Precision, Recall (TP Rate), F1-Score y Support
-report_dt = classification_report(y_test, y_pred_dt, output_dict=True, target_names=le.inverse_transform(sorted(y.unique())))
+    # PASO 4: PREPARACIÓN PARA MODELADO
+    print("\n🎯 Paso 4: ------------ Preparación del dataset para modelado ------------------------ 🎯")
+    
+    # Definir características y variable objetivo
+    X = df_encoded[features]
+    y = df_encoded[target]
+    
+    # División del dataset con validación
+    X_train, X_test, y_train, y_test = train_test_split(
+        X,      #   Características de entrada 
+        y,      #   Variable objetivo
+        test_size=0.3,      # 30% para prueba
+        random_state=42,    # Para reproducibilidad
+        stratify=y          # Mantener proporción de clases
+    )
+    
+    print("📋 División del dataset completada:")
+    print(f"✅ Dimensiones de X_train: {X_train.shape}")
+    print(f"✅ Dimensiones de X_test: {X_test.shape}")
+    print(f"✅ Proporción de entrenamiento: {X_train.shape[0]/(X_train.shape[0]+X_test.shape[0]):.1%}")
+    print(f"✅ Proporción de prueba: {X_test.shape[0]/(X_train.shape[0]+X_test.shape[0]):.1%}")
 
-print("\n Reporte de Clasificación (Decision Tree):")
-for class_label, metrics in report_dt.items():
-    if class_label in le.inverse_transform(sorted(y.unique())): # Solo para las clases reales
-        recall = metrics['recall'] # TP Rate
-        print(f"Clase '{class_label}':")
-        print(f"  TP Rate (Recall): {recall:.4f}")
 
-        TP_dt = cm_dt[le.transform([class_label])[0], le.transform([class_label])[0]] # Verdadero positivo en esta class
-        FN_dt = np.sum(cm_dt[le.transform([class_label])[0], :]) - TP_dt # Falso Negativos en esta class
-        FP_dt = np.sum(cm_dt[:, le.transform([class_label])[0]]) - TP_dt # Falsop positivo en esta class
-        TN_dt = np.sum(cm_dt) - (TP_dt + FN_dt + FP_dt) # Verdadero negativos en esta class
+    # PASO 5: ENTRENAMIENTO DE MODELOS
+    print("\n🎯 Paso 5: ------------ Entrenamiento de Modelos ------------------------ 🎯")
+    
+    # Decision Tree con parámetros optimizados
+    print("🌳 Entrenando Arbol de Decisión...")
+    dt_model = DecisionTreeClassifier(
+        random_state=42,         # Semilla para reproducibilidad    
+        max_depth=10,            # Profundidad máxima del árbol
+        min_samples_split=5,     # Mínimo de muestras para dividir un nodo   
+        min_samples_leaf=2,      # Mínimo de muestras en una hoja
+        criterion='gini'         # Criterio de división
+    )
+    dt_model.fit(X_train, y_train)
+    y_pred_dt = dt_model.predict(X_test)
+    
+    # Random Forest
+    print("🌲 Entrenando Bosque Aleatorio...")
+    rf_model = RandomForestClassifier(
+        n_estimators=100,    # Número de árboles en el bosque
+        random_state=42,     # Semilla para reproducibilidad
+        max_depth=10,        # Profundidad máxima de los árboles
+        min_samples_split=5, # Mínimo de muestras para dividir un nodo
+        min_samples_leaf=2   # Mínimo de muestras en una hoja 
+    )
+    rf_model.fit(X_train, y_train)
+    y_pred_rf = rf_model.predict(X_test)
 
-        # Manejar la división por cero si FP + TN es 0
-        result = FP_dt + TN_dt
-        if result == 0:
-            fp_rate_dt = FP_dt
-        else:
-            fp_rate_dt = FP_dt / result
 
-        print(f"  FP Rate: {fp_rate_dt:.4f}")
-        print("-" * 20)
+    # PASO 6: EVALUACIÓN DE MODELOS
+    print("\n🎯 Paso 6: ------------ Evaluación de Modelos ------------------------ 🎯")
+    
+    # Función para evaluar modelo
+    def evaluate_model(y_true, y_pred, model_name, encoder):
+        """Función para evaluar un modelo de clasificación"""
+        print(f"\n🧠 ------- Evaluación del Modelo {model_name} -------")
+        
+        # efectividad
+        efectividad = accuracy_score(y_true, y_pred)
+        print(f"🎯 Efectividad: {efectividad:.4f} ({efectividad*100:.2f}%)")
 
-print("\n")
+        
+        # Instancias correctas e incorrectas
+        correct = int(efectividad * len(y_true))
+        incorrect = len(y_true) - correct
+        print(f"✅ Instancias clasificadas correctamente: {correct}")
+        print(f"❌ Instancias clasificadas incorrectamente: {incorrect}")
+        
+        # Matriz de confusión
+        cm = confusion_matrix(y_true, y_pred)
+        print(f"\n📊 Matriz de Confusión:")
+        print(cm)
+        
+        # Reporte de clasificación
+        class_names = encoder.inverse_transform(sorted(np.unique(y_true)))
+        print(f"\n📈 Reporte de Clasificación:")
+        print(classification_report(y_true, y_pred, target_names=class_names))
+        
+        return efectividad, cm, class_names
 
-# --- Para el Modelo Random Forest ---
-print("\n 🧠 Métricas del Modelo Random Forest ---")
+    # Evaluar ambos modelos
+    target_encoder = encoders[target]
+    
+    dt_efectividad, dt_cm, class_names = evaluate_model(y_test, y_pred_dt, "Árbol decisión", target_encoder)
+    rf_efectividad, rf_cm, class_names = evaluate_model(y_test, y_pred_rf, "Bosque Aleatorio", target_encoder)
 
-# 1. Instancias clasificadas correctamente e incorrectamente
-correct_rf = accuracy_score(y_test, y_pred_rf) * len(y_test)
-incorrect_rf = len(y_test) - correct_rf
 
-print(f"\n 🧠Instancias clasificadas correctamente (Random Forest): {int(correct_rf)}")
-print(f"\n 🧠Instancias clasificadas incorrectamente (Random Forest): {int(incorrect_rf)}")
+    # PASO 7: COMPARACIÓN Y VISUALIZACIÓN DE RESULTADOS
+    print("\n🎯 Paso 7: ------------ Comparación de Resultados ------------------------ 🎯")
+    
+    # Comparación de accuracies
+    models = ['Árbol decisión', 'Bosque Aleatorio']
+    accuracies = [dt_efectividad, rf_efectividad]
+    
+    # Gráfico de comparación
+    fig, axes = plt.subplots(1, 3, figsize=(18, 6))
+    
+    # Comparación de efectividad
+    bars = axes[0].bar(models, accuracies, color=['skyblue', 'red'])
+    axes[0].set_title('Comparación de efectividad entre Modelos', fontweight='bold')
+    axes[0].set_ylabel('efectividad')
+    axes[0].set_ylim(0, 1)
+    
+    # Agregar valores en las barras
+    for bar, acc in zip(bars, accuracies):
+        height = bar.get_height()
+        axes[0].text(bar.get_x() + bar.get_width()/2., height + 0.01,
+                    f'{acc:.3f}', ha='center', va='bottom', fontweight='bold')
+    
+    # Matrices de confusión
+    sns.heatmap(dt_cm, annot=True, fmt='d', cmap='Blues', ax=axes[1],
+                xticklabels=class_names, yticklabels=class_names)
+    axes[1].set_title('Matriz de Confusión: Árbol decisión', fontweight='bold')
+    axes[1].set_xlabel('Predicho')
+    axes[1].set_ylabel('Real')
+    
+    sns.heatmap(rf_cm, annot=True, fmt='d', cmap='Reds', ax=axes[2],
+                xticklabels=class_names, yticklabels=class_names)
+    axes[2].set_title('Matriz de Confusión: Bosque Aleatorio', fontweight='bold')
+    axes[2].set_xlabel('Predicho')
+    axes[2].set_ylabel('Real')
+    
+    plt.tight_layout()
+    plt.show()
 
-# 2. Matriz de Confusión
-cm_rf = confusion_matrix(y_test, y_pred_rf)
-print("\n 🧠 Matriz de Confusión (Random Forest):")
-print(cm_rf)
+    # Resumen final
+    print("\n🏆 RESUMEN FINAL:")
+    print("=" * 50)
+    print(f"🌳 Árbol decisión - efectividad: {dt_efectividad:.4f} ({dt_efectividad*100:.2f}%)")
+    print(f"🌲 Bosque Aleatorio - efectividad: {rf_efectividad:.4f} ({rf_efectividad*100:.2f}%)")
+    
+    best_model = "Bosque Aleatorio" if rf_efectividad > dt_efectividad else "Árbol decisión"
+    best_efectividad = max(rf_efectividad, dt_efectividad)
+    print(f"\n🥇 Mejor modelo: {best_model} con {best_efectividad:.4f} de efectividad")
+    
+    # Importancia de características para Bosque Aleatorio
+    if rf_efectividad >= dt_efectividad:
+        print(f"\n📊 Importancia de características ({best_model}):")
+        feature_importance = pd.DataFrame({
+            'feature': features,
+            'importance': rf_model.feature_importances_
+        }).sort_values('importance', ascending=False)
+        
+        for _, row in feature_importance.iterrows():
+            print(f"   {row['feature']}: {row['importance']:.4f}")
 
-# Visualizar la Matriz de Confusión
-disp_rf = ConfusionMatrixDisplay(confusion_matrix=cm_rf, display_labels=le.inverse_transform(sorted(y.unique())))
-disp_rf.plot(cmap=plt.cm.Blues)
-plt.title('Matriz de Confusión: Random Forest')
-plt.show()
-
-# 3. TP Rate y FP Rate
-report_rf = classification_report(y_test, y_pred_rf, output_dict=True, target_names=le.inverse_transform(sorted(y.unique())))
-
-print("\n 🧠 Reporte de Clasificación (Random Forest):")
-for class_label, metrics in report_rf.items():
-    if class_label in le.inverse_transform(sorted(y.unique())):
-        recall = metrics['recall'] # TP Rate
-
-        print(f"Clase '{class_label}':")
-        print(f"  TP Rate (Recall): {recall:.4f}")
-
-        # Para FP Rate por clase:
-        TP_rf = cm_rf[le.transform([class_label])[0], le.transform([class_label])[0]]
-        FN_rf = np.sum(cm_rf[le.transform([class_label])[0], :]) - TP_rf
-        FP_rf = np.sum(cm_rf[:, le.transform([class_label])[0]]) - TP_rf
-        TN_rf = np.sum(cm_rf) - (TP_rf + FN_rf + FP_rf)
-
-        fp_rate_rf = FP_rf / (FP_rf + TN_rf) if (FP_rf + TN_rf) > 0 else 0
-        print(f"  FP Rate: {fp_rate_rf:.4f}")
-        print("-" * 20)
+if __name__ == "__main__":
+    main()
