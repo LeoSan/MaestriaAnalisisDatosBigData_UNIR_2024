@@ -587,17 +587,251 @@ https://youtu.be/YAfS8-BXp8Q?si=wmuqpBY0sCIkGfqD
 
 # Tema 3. Árboles de decisión
 
-3.3. Descripción de la tarea de inducción
-3.4. Algoritmo básico de aprendizaje de árboles de
-decisión: ID3
-3.5. Espacio de búsqueda y bias inductivo
-3.6. Métodos de selección de atributos
-3.7. Sobreajuste y poda de árboles
-3.8. Medidas de la precisión de la clasificación. Curva
-ROC
-3.9. Simplificación de árboles de decisión mediante poda:
-algoritmo C4.5
-3.10. Ensemble Learning y Random Forest
-3.11. Aplicaciones y ejemplos de implementación
+## 3.3. Descripción de la tarea de inducción
+
+### Resumen: Descripción de la tarea de inducción en árboles de decisión
+
+El objetivo de la **inducción** en el aprendizaje automático es tomar información específica (observaciones, experiencias) y usarla para encontrar conocimiento general o patrones ocultos. En el caso de los **árboles de decisión**, esto significa construir un árbol que pueda clasificar nuevos datos basándose en ejemplos que ya han sido clasificados.
+
+#### ¿Cómo se construye un árbol de decisión?
+
+Un árbol de decisión se construye **seleccionando atributos** que ayuden a dividir los datos en grupos cada vez más homogéneos (es decir, que contengan ejemplos de la misma clase).
+
+* **Selección del atributo**: Este es un paso crucial. El algoritmo elige el "mejor" atributo para hacer la primera división. Por ejemplo, si estamos clasificando si se puede jugar al tenis, podría ser el "ambiente".
+* **Creación de ramas**: Una vez que se selecciona un atributo, se crean ramas a partir de ese punto.
+    * Si el atributo tiene valores **discretos** (como "soleado", "nublado", "lluvioso"), se crea una rama para cada valor.
+    * Si el atributo es **numérico** (como la temperatura), se establece un punto de corte (por ejemplo, si la temperatura es "mayor a X" o "menor a X").
+* **Proceso iterativo**: Este proceso de seleccionar un atributo y ramificar el árbol se repite para cada subconjunto de datos hasta que se cumplen ciertas condiciones:
+    * Todos los ejemplos en un nodo pertenecen a la misma clase (¡éxito, llegamos a una "hoja" del árbol!).
+    * No quedan más atributos para dividir los datos. En este caso, el nodo se convierte en una hoja y se etiqueta con la clase más común entre los ejemplos que llegaron a ese punto.
+    * No hay ejemplos para una rama (lo que se maneja etiquetando la hoja con la clase mayoritaria del conjunto original de datos).
+
+#### Ejemplo práctico: ¿Se puede jugar al aire libre?
+
+El texto usa un ejemplo clásico para ilustrar esto: clasificar si es un buen día para jugar al aire libre (como al tenis) basándose en factores como el ambiente, la temperatura, la humedad y el viento. El algoritmo "aprende" de ejemplos pasados para decidir, por ejemplo, que si el "Ambiente" es "nublado", ¡siempre se puede jugar!
+
+#### Es un algoritmo "Divide y Vencerás" (y "Codicioso")
+
+Este tipo de algoritmo se conoce como **"divide y vencerás"** porque rompe un problema grande en problemas más pequeños y manejables. También se le llama **"codicioso"** (greedy) porque en cada paso toma la mejor decisión en ese momento sin "mirar hacia atrás" para ver si una decisión anterior podría haberse mejorado.
+
+En resumen, los árboles de decisión aprenden a clasificar datos construyendo una serie de "preguntas" (basadas en atributos) que, al seguir las respuestas, te llevan a una clasificación final.
+
+
+## 3.4. Algoritmo básico de aprendizaje de árboles de decisión: ID3
+
+## Algoritmo ID3: Cómo los árboles de decisión aprenden a clasificar
+
+El **algoritmo ID3** es una forma específica y popular de construir un **árbol de decisión**. Imagina que estás construyendo un árbol genealógico, pero en lugar de personas, son decisiones. ID3 hace esto de **arriba hacia abajo**, empezando por la "raíz" y ramificándose.
+
+### La clave: La ganancia de información
+
+ID3 tiene un truco principal para decidir qué atributo usar en cada "ramificación" del árbol: la **ganancia de información**. Este concepto viene de la **teoría de la información** y básicamente busca el atributo que nos dé la *mayor claridad* o *la mejor pista* para clasificar los ejemplos.
+
+Piensa así: si tienes un montón de datos mezclados (algunos "sí", algunos "no"), la ganancia de información te dice qué pregunta (qué atributo) te va a ayudar a separar esos datos de la forma más efectiva, haciendo que los grupos resultantes sean lo más "puros" posible (es decir, que todos en un grupo sean "sí" o todos sean "no").
+
+### ¿Cómo mide ID3 esta "claridad" o "pureza"?
+
+Para entender la ganancia de información, primero necesitamos entender la **entropía**:
+
+* **Entropía**: Es una medida de la **heterogeneidad** o **mezcla** de un conjunto de ejemplos.
+    * Si todos los ejemplos en un grupo son de la misma clase (por ejemplo, todos son "sí"), la entropía es **cero (0)**. ¡Perfecta pureza!
+    * Si los ejemplos están perfectamente mezclados (por ejemplo, la mitad son "sí" y la mitad son "no" en una clasificación de dos clases), la entropía es **uno (1)**. ¡Máxima mezcla!
+    * Si están parcialmente mezclados, el valor de la entropía estará entre 0 y 1.
+
+    Matemáticamente, la entropía ($H(E)$) se calcula con la siguiente fórmula:
+    $$H(E) = - \sum_{i=1}^{n} p_i \log_2(p_i)$$
+    donde $p_i$ es la proporción de ejemplos que pertenecen a la clase $i$.
+
+* **Ganancia de Información (Gain)**: Una vez que entendemos la entropía, la ganancia de información se vuelve sencilla. Mide **cuánto se reduce la entropía** si dividimos los ejemplos usando un atributo específico. Es decir, qué tan efectivo es ese atributo para "limpiar" la mezcla.
+
+    La fórmula para calcular la ganancia de información de un atributo A en un conjunto de ejemplos E es:
+    $$Gain(E, A) = H(E) - \sum_{v \in Values(A)} \frac{|E_v|}{|E|} H(E_v)$$
+    donde:
+    * $H(E)$ es la entropía del conjunto original.
+    * $Values(A)$ son los posibles valores del atributo A.
+    * $E_v$ es el subconjunto de ejemplos donde el atributo A toma el valor $v$.
+    * $|E_v|$ y $|E|$ son el número de ejemplos en los subconjuntos.
+
+### Pasos del Algoritmo ID3 en acción
+
+1.  **Inicio**: Se empieza con todos los datos en la "raíz" del árbol.
+2.  **Calcular Ganancia**: Para cada atributo disponible, ID3 calcula su ganancia de información.
+3.  **Seleccionar el Mejor Atributo**: Se elige el atributo que tiene la **mayor ganancia de información**. Este será el que mejor "clasifique" o separe los ejemplos.
+4.  **Ramificar**: Se crea una rama por cada posible valor de ese atributo. Los ejemplos se distribuyen por estas ramas según el valor de ese atributo que tengan.
+5.  **Repetir**: Este proceso se repite para cada rama (cada "nodo hijo") con los ejemplos que llegaron a esa rama, y con los atributos que aún no se han utilizado en ese camino del árbol.
+6.  **Parada**: El proceso se detiene en una rama cuando:
+    * Todos los ejemplos en esa rama pertenecen a la misma clase (¡Ya se clasificaron!).
+    * Ya no quedan atributos para dividir (en este caso, el nodo se convierte en una hoja y se etiqueta con la clase más común entre los ejemplos que llegaron allí).
+    * No hay ejemplos en una rama específica.
+
+### Ejemplo del "Problema del Tiempo"
+
+El texto menciona que, para el problema de si jugar al aire libre, el algoritmo ID3 probablemente seleccionaría el atributo "**ambiente**" como el primero para ramificar el árbol. Esto se debe a que, al calcular la ganancia de información, "ambiente" es el que ofrece la mayor reducción de entropía. Por ejemplo, todos los días "nublados" resultan en "sí" (jugar al aire libre), lo que hace que esa rama sea pura y se convierta en una hoja de inmediato.
+
+En esencia, ID3 es un método **"codicioso"** (greedy) que siempre busca el mejor atributo en el momento actual para dividir los datos, construyendo el árbol paso a paso sin retroceder.
+
+## 3.5. Espacio de búsqueda y bias inductivo
+
+### La Búsqueda de ID3 en el Espacio de Posibles Soluciones
+
+Imagina que existen muchísimos árboles de decisión posibles que podrían explicar tus datos. El **ID3** tiene la tarea de encontrar el árbol "correcto" que se ajuste a tus **ejemplos de entrenamiento** (los datos que ya conoces y están clasificados).
+
+* **Búsqueda en Escalada (Hill Climbing)**: ID3 busca esta solución subiendo una "colina". Empieza con árboles sencillos y va construyendo árboles más complejos paso a paso. Se guía por la **ganancia de información**; cada paso que da es hacia el árbol que, hasta ese momento, clasifica mejor los datos.
+* **Espacio de Hipótesis Completo**: Una gran ventaja de ID3 es que explora un conjunto **completo** de posibles árboles. Esto significa que **nunca se quedará sin una solución** dentro del rango de lo que puede construir.
+* **Un Camino a la Vez**: Sin embargo, ID3 solo se concentra en **una única solución posible** a la vez. No compara múltiples árboles "buenos" simultáneamente. Esto es como tener solo un camino en la colina; si ese camino te lleva a una cima que no es la más alta de todas (una **óptima local**), te quedarás ahí sin saber que hay una mejor cima en otro lugar.
+* **Sin Marcha Atrás (Greedy)**: Una vez que ID3 toma una decisión (elegir un atributo para un nodo), **no retrocede** para reconsiderar esa elección. Esta es la naturaleza "codiciosa" (greedy) del algoritmo. Puede llevar a construir un árbol que funciona bien para los datos de entrenamiento, pero que quizás no sea el mejor árbol posible a nivel global.
+* **Robusto a Errores y Coste Computacional**: ID3 es bueno para manejar datos con errores porque usa **todos los ejemplos** en cada cálculo de ganancia de información. Esto lo hace robusto, pero también significa que puede ser **computacionalmente más costoso** que otros métodos que solo usan una parte de los ejemplos en cada paso.
+
+---
+
+### El "Bias" (Sesgo) Inductivo de ID3: ¿Por qué elige ciertos árboles?
+
+El **bias inductivo** de un algoritmo se refiere a los **criterios o preferencias** que usa para seleccionar una solución (una hipótesis) entre muchas posibles. En el caso de ID3, su sesgo se basa en dos premisas principales:
+
+1.  **Preferencia por Árboles Cortos**: ID3 tiende a preferir los **árboles más cortos** (con menos nodos y ramas) sobre los árboles más largos. Aunque no siempre garantiza que encontrará el árbol más corto *absoluto* (porque no hace una búsqueda exhaustiva de todos los posibles árboles), su enfoque de "búsqueda en escalada" y "codicioso" lo inclina hacia la simplicidad.
+
+2.  **Atributos con Mayor Ganancia de Información Cerca de la Raíz**: ID3 siempre colocará los atributos que proporcionan la **mayor ganancia de información** (los que mejor dividen los datos) **más cerca de la raíz** del árbol. Esto tiene sentido, ya que si un atributo es muy bueno para clasificar, es lógico usarlo al principio para hacer las divisiones más importantes.
+
+#### ¿Por qué es importante preferir árboles cortos?
+
+Preferir árboles cortos es crucial para la **generalización**. Un árbol más corto y simple a menudo puede **clasificar correctamente nuevos datos** (instancias que no se usaron para entrenar el árbol) de manera más efectiva. Los árboles muy complejos pueden "memorizar" los datos de entrenamiento perfectamente, pero luego fallan al aplicarse a datos nuevos que nunca han visto. Esto se conoce como **sobreajuste (overfitting)**, y preferir árboles cortos es una estrategia para evitarlo.
+
+En resumen, ID3 busca un árbol que clasifique bien los datos de entrenamiento, guiándose por la ganancia de información. Su "prejuicio" lo lleva a favorecer árboles más simples y a usar los atributos más informativos al principio, lo cual es beneficioso para que el árbol funcione bien no solo con los datos que ya conoce, sino también con datos completamente nuevos.
+
+## 3.6. Métodos de selección de atributos
+
+## Métodos de Selección de Atributos: Diferentes Formas de Ramificar un Árbol
+
+Cuando construyes un árbol de decisión, una de las decisiones más importantes es **qué atributo usar** para dividir tus datos en cada paso. Hay varios "métodos de selección de atributos" que los algoritmos de árboles de decisión pueden emplear para tomar esta decisión crucial. La elección del método dependerá del algoritmo que uses, de tus datos, y de lo que esperas del árbol final.
+
+### 1. Ganancia de Información (ID3)
+
+Como ya vimos, el algoritmo **ID3** utiliza la **ganancia de información**. Esta mide cuánto "clarifica" un atributo la clasificación de tus datos al reducir la **entropía** (la mezcla o impureza de las clases). El atributo con la mayor ganancia de información es el elegido para la división.
+
+### 2. Índice Gini (CART)
+
+Otro método popular es el **índice Gini**, típicamente usado en algoritmos **CART (Classification and Regression Trees)**. A diferencia de la entropía, que mide la incertidumbre, el índice Gini mide la **impureza** de un conjunto de datos.
+
+* **¿Cómo se calcula?** Se basa en la proporción de cada clase en un conjunto de ejemplos ($p_i$). La fórmula es:
+    $$Gini(E) = 1 - \sum_{i=1}^{n} p_i^2$$
+    Donde $n$ es el número de clases y $p_i$ es la proporción de ejemplos que pertenecen a la clase $i$.
+
+* **¿Cómo se usa?** El objetivo es **minimizar el índice Gini**. Esto significa que el atributo que produce los subconjuntos con el Gini más bajo (menos impureza) es el que se selecciona para la división. Es decir, buscas la mayor **reducción de impureza**.
+
+### 3. Proporción de Ganancia (C4.5)
+
+El algoritmo **C4.5** (una mejora de ID3) utiliza la **proporción de ganancia**. Este método es una adaptación de la ganancia de información y es especialmente útil cuando tienes atributos con **muchos valores diferentes**.
+
+* **El Problema de la Ganancia de Información:** La ganancia de información tiende a favorecer atributos que tienen un gran número de valores únicos. Por ejemplo, si tienes un atributo que es un "número de identificación" (ID), cada ejemplo tendrá un ID único. La ganancia de información de este atributo sería altísima porque lo divide perfectamente, pero no sería útil para clasificar nuevas instancias porque un nuevo ID no estaría en el árbol.
+
+* **La Solución de la Proporción de Ganancia:** La proporción de ganancia compensa esto. Toma la **ganancia de información** y la **divide** por una medida llamada **información de la división**. La información de la división castiga a los atributos que distribuyen los ejemplos de manera muy uniforme entre muchos valores. La fórmula es:
+    $$SplitInformation(E, A) = - \sum_{v \in Values(A)} \frac{|E_v|}{|E|} \log_2(\frac{|E_v|}{|E|})$$
+    Y luego la proporción de ganancia se calcula como:
+    $$GainRatio(E, A) = \frac{Gain(E, A)}{SplitInformation(E, A)}$$
+    Al dividir por la información de la división, se penaliza a los atributos que generan muchas ramas, haciendo que los atributos con menos valores o con valores más concentrados sean más atractivos si su ganancia de información sigue siendo alta.
+
+### 4. Longitud de Descripción Mínima (MDL - Minimum Description Length)
+
+El método MDL es un principio más general que se puede aplicar a la construcción de árboles. Busca el árbol de decisión que es más **simple** de describir.
+
+* **La Idea:** Considera el "mejor" árbol como aquel que requiere el menor número de "bits" (información) para codificar dos cosas:
+    1.  El propio árbol de decisión (su estructura y reglas).
+    2.  Los errores de clasificación que comete el árbol (casos que el árbol no clasifica correctamente).
+* **El Objetivo:** La meta es encontrar la opción más simple y concisa que explique los datos.
+
+### Consideraciones Clave
+
+* **"Bias" o Sesgo:** Cada uno de estos métodos tiene su propio **sesgo inductivo** (como vimos antes). Por ejemplo, ID3 prefiere árboles cortos y atributos informativos cerca de la raíz. CART, con el índice Gini, también busca la simplicidad.
+
+* **Complejidad vs. Precisión:** Hay un equilibrio. Un árbol más profundo y complejo puede ser muy preciso en los datos de entrenamiento (potencialmente sobreajustándose), pero puede cometer más errores en datos nuevos. Los árboles más cortos son a menudo mejores para **generalizar**, aunque podrían no ser perfectos en los datos de entrenamiento.
+
+* **No Hay un "Mejor" Método Universal:** No existe un método de selección de atributos que sea universalmente superior a todos los demás. La elección depende del contexto, los datos y los objetivos específicos del problema de clasificación.
+
+
+## 3.7. Sobreajuste y poda de árboles
+
+¡Perfecto! Este es un tema crucial en el aprendizaje automático. Comprender el **sobreajuste** y cómo **podar árboles** es fundamental para construir modelos útiles y no solo "memoriones".
+
+## Sobreajuste y Poda de Árboles de Decisión: Evitando el "Memorión"
+
+Como ya vimos, el algoritmo **ID3** (y otros similares) tienen como objetivo clasificar los datos de entrenamiento a la perfección. Sin embargo, esto puede ser contraproducente. Cuando un modelo clasifica **demasiado bien** los datos de entrenamiento, a menudo significa que se ha vuelto excesivamente complejo, ha "memorizado" cada detalle (incluido el ruido o las particularidades de la muestra) y, por lo tanto, no es bueno para **generalizar** con datos nuevos. Esto es lo que llamamos **sobreajuste (overfitting)**.
+
+### ¿Qué es exactamente el Sobreajuste?
+
+El sobreajuste ocurre cuando un árbol de decisión (o cualquier modelo) es **demasiado complejo** y se ajusta muy bien a los **datos de entrenamiento**, pero falla al aplicarse a **nuevas instancias** (datos que no ha visto antes). Es como un estudiante que memoriza cada palabra del libro, pero no entiende los conceptos, por lo que le va mal en el examen si las preguntas cambian un poco.
+
+* **Ejemplo del problema del tiempo:** Si un dato en tu tabla de entrenamiento (como el Ejemplo 7) está mal clasificado, ID3 intentará aprender a clasificarlo correctamente. Esto podría llevar a que el árbol se ramifique más y se vuelva más complejo de lo necesario solo para "explicar" ese dato erróneo, en lugar de generar un nodo hoja simple. El resultado es un árbol que es perfecto para tus datos actuales, pero que es muy probable que cometa errores con datos futuros.
+
+### Estrategias para Evitar el Sobreajuste: La Poda del Árbol
+
+El sobreajuste es un problema común, y se necesitan estrategias para **mitigarlo**. La más importante en los árboles de decisión es la **poda**. Podar un árbol es como cortar las ramas que no son realmente útiles o que hacen que el árbol sea demasiado complicado.
+
+Existen dos enfoques principales para la poda:
+
+1.  **Poda Directa del Árbol:**
+    * Después de que el árbol se ha generado completamente, se evalúan sus ramas.
+    * Se eliminan las ramificaciones que parecen ser menos fiables o que no aportan una mejora significativa a la clasificación.
+    * Cuando se poda un nodo, se convierte en una **hoja** y se le asigna la clase mayoritaria de los ejemplos que caían en ese nodo antes de la poda.
+    * Es difícil saber cuándo parar de podar, pero la idea es simplificar el árbol para mejorar su capacidad de generalización.
+
+2.  **Poda Basada en Reglas (Mapeado a Reglas):**
+    * Primero, se construye el árbol de decisión a partir de los datos de entrenamiento.
+    * Luego, cada camino desde la raíz hasta una hoja del árbol se convierte en una **regla**. Por ejemplo: `SI (Ambiente = Soleado) Y (Humedad = Alta) ENTONCES (Clase = No Jugar)`.
+    * **Poda de cada regla:** Se revisa cada regla individualmente. Si eliminar una condición (una parte del `AND`) en la regla mejora la precisión de la clasificación, esa condición se elimina.
+    * Finalmente, las reglas se ordenan por su precisión, y cuando se clasifica un nuevo ejemplo, se usan las reglas en ese orden.
+    * **Ventaja:** Este método permite podar decisiones de forma más **aislada** porque trabajas con reglas individuales, no con nodos que pueden afectar a múltiples reglas. No importa si la condición está cerca de la raíz o de la hoja; la poda se hace por regla.
+
+### ¿Cómo Saber el Tamaño Adecuado del Árbol? (Validación Cruzada)
+
+Determinar el tamaño óptimo de un árbol (cuándo dejar de crecerlo o hasta dónde podarlo) es complicado. Una técnica fundamental para hacer esto es la **validación cruzada (cross-validation)**.
+
+La validación cruzada te permite estimar qué tan bien funcionaría tu modelo con **datos nuevos** (datos de prueba) cuando no tienes un conjunto de datos de prueba separado.
+
+* **Proceso Básico:**
+    1.  **Dividir los Datos:** Tomas tu conjunto de datos disponible y lo divides en dos partes:
+        * **Datos de Entrenamiento:** Se usan para construir el árbol de decisión. (Ej. 2/3 de los datos).
+        * **Datos de Validación:** Se usan para **evaluar la precisión** del árbol podado o en crecimiento, simulando cómo clasificaría datos futuros. (Ej. 1/3 de los datos).
+    2.  **Evaluar la Poda:** Mientras podas el árbol (o decides cuándo detener su crecimiento), usas los datos de validación para ver si el árbol resultante mejora o mantiene su precisión. Si podar un nodo mejora la clasificación en los datos de validación, ¡lo podas! Esto ayuda a eliminar las ramas que se crearon por el ruido en los datos de entrenamiento.
+    3.  **Desventaja:** Necesitas suficientes datos para que tanto el conjunto de entrenamiento como el de validación sean estadísticamente significativos.
+
+* **Validación Cruzada de K-Iteraciones (K-fold Cross-Validation):**
+    * Cuando no tienes muchos datos, esta técnica es muy útil.
+    * **División:** Tus datos se dividen en "k" subconjuntos (o "folds") de igual tamaño.
+    * **Iteraciones:** El proceso se repite "k" veces. En cada repetición:
+        * Un subconjunto se usa como **datos de validación (prueba)**.
+        * Los **"k-1" subconjuntos restantes** se usan como **datos de entrenamiento**.
+    * **Resultado Final:** Al final, se promedian los resultados obtenidos en cada una de las "k" iteraciones para tener una estimación más robusta del rendimiento del modelo.
+    * **Común:** Un valor común para "k" es 10 (validación cruzada de 10 iteraciones) ya que suele dar buenos resultados.
+
+En resumen, el sobreajuste es un problema de "memorización" que hace que el árbol sea inútil con datos nuevos. La **poda** es la solución, simplificando el árbol para que **generalice** mejor. La **validación cruzada** es la herramienta clave para saber cuándo y cuánto podar, ayudándonos a encontrar el equilibrio perfecto entre un modelo que aprende bien y uno que funciona bien en el mundo real.
+
+
+
+## 3.8. Medidas de la precisión de la clasificación. Curva ROC
+## 3.9. Simplificación de árboles de decisión mediante poda: algoritmo C4.5
+## 3.10. Ensemble Learning y Random Forest
+## 3.11. Aplicaciones y ejemplos de implementación
+
+
+
+# Tabla Comparativa de Técnicas de Preprocesamiento de Datos
+
+| Técnica                                 | Concepto                                                                                                         | ¿Cuándo usar?                                                                                                                                                                                                                                                                                                         | Ventajas                                                                                                  | Desventajas                                                                                                                                                                                                                                                                                                     |
+| :-------------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **I. Técnicas de Codificación de Variables Categóricas** |                                                                                                                  |                                                                                                                                                                                                                                                                                                                       |                                                                                                           |                                                                                                                                                                                                                                                                                                                   |
+| **1. Codificación One-Hot** | Crea una nueva columna binaria (0 o 1) para cada categoría única en la variable original.                       | Cuando las categorías son **nominales** (sin orden) y el número de categorías no es excesivamente grande. Ideal para algoritmos que asumen independencia de características (ej., regresión lineal, SVM).                                                                                                              | Evita asumir un orden o relación numérica artificial. Fácil de entender. Compatible con la mayoría de los algoritmos. | Puede generar un gran número de columnas (alta dimensionalidad) si hay muchas categorías. Aumenta la complejidad computacional y de almacenamiento. |
+| **2. Codificación Dummy** | Similar a One-Hot, pero crea `N-1` columnas para `N` categorías. Una categoría es la de referencia (inferida).  | Para evitar la **multicolinealidad perfecta** en modelos sensibles como la regresión lineal o logística, mientras se manejan categorías nominales.                                                                                                                                                                      | Resuelve el problema de multicolinealidad. Mantiene las ventajas de One-Hot para categorías nominales.   | Aún puede generar muchas columnas.                                                                                                                                                                                                                                                                    |
+| **3. Codificación Ordinal** | Asigna un número entero a cada categoría basado en un orden predefinido por el usuario.                         | Cuando las categorías tienen un **orden intrínseco o jerarquía** (variables ordinales).                                                                                                                                                                                                                               | Reduce la dimensionalidad a una sola columna. Mantiene la información del orden si es significativo.    | Si las categorías no tienen un orden real, impone uno artificial que puede confundir al modelo (implicando distancias numéricas arbitrarias). |
+| **4. LabelEncoder** | Asigna un valor numérico entero secuencial único a cada categoría única en la variable. (Es una forma de Codificación Ordinal arbitraria). | Principalmente para codificar la **variable objetivo (y)** en clasificación. También para características (X) si el número de categorías es pequeño y el algoritmo puede manejar el orden artificial (ej., árboles de decisión, Random Forest, GBT) o si hay un orden real. | Simple y fácil de usar. Reduce la dimensionalidad a una sola columna.                                     | Impone un orden numérico arbitrario a las categorías, lo que puede ser problemático para algoritmos que interpretan distancias (ej., K-NN, SVM, regresión lineal).                                                                                                                                     |
+| **5. Codificación por Frecuencia/Conteo** | Reemplaza cada categoría con la frecuencia (o el conteo) de su aparición en el conjunto de datos.                  | Cuando la frecuencia de una categoría es un predictor potencialmente importante para el modelo. Para variables categóricas con alta cardinalidad.                                                                                                                                                              | Reduce la dimensionalidad a una sola columna. Captura información sobre la popularidad de la categoría.   | Categorías con la misma frecuencia reciben el mismo valor, perdiendo su distinción. No es útil si la frecuencia no es relevante para la predicción. |
+| **6. Codificación por Media/Objetivo** | Reemplaza cada categoría con la media de la variable objetivo (o alguna otra estadística) para esa categoría.       | Para variables categóricas con **alta cardinalidad** en problemas de regresión o clasificación.                                                                                                                                                                                                                       | Reduce la dimensionalidad drásticamente. Captura información predictiva directamente de la variable objetivo. | Puede introducir *data leakage* (fuga de datos) si no se implementa cuidadosamente (usar solo datos de entrenamiento). Susceptible a *overfitting* en categorías con pocos ejemplos. Necesita técnicas de suavizado. |
+| **7. Codificación Hash** | Transforma categorías en un espacio de dimensiones más bajas usando una función hash, mapeando a un índice fijo.     | Para variables con **cardinalidad muy alta** donde One-Hot no es factible. En escenarios donde la eficiencia computacional y de memoria son críticas.                                                                                                                                                            | Dimensionalidad fija y controlable. No requiere almacenar el mapeo. Puede manejar categorías nuevas.       | Posibilidad de **colisiones** (diferentes categorías mapeadas al mismo índice), lo que puede reducir el rendimiento. No es reversible.                                                                                                                                              |
+| **8. Codificación Binaria** | Convierte categorías a números enteros, luego esos enteros a su representación binaria, creando una columna para cada bit. | Cuando el número de categorías es grande, pero no tan extremo como para necesitar hashing, buscando un compromiso entre One-Hot y Ordinal.                                                                                                                                                                    | Reduce la dimensionalidad en comparación con One-Hot.                                                     | Las nuevas columnas tienen una relación artificial que el modelo debe aprender. Menos interpretable que One-Hot.                                                                                                                                                                    |
+| **II. Otras Técnicas de Preprocesamiento de Datos Relevantes** |                                                                                                                  |                                                                                                                                                                                                                                                                                                                       |                                                                                                           |                                                                                                                                                                                                                                                                                                                   |
+| **1. Escalado de Características** | Ajusta la escala de las características numéricas para que tengan un rango similar.                                | Para algoritmos sensibles a la escala de las características (ej., K-NN, SVM, redes neuronales, regresión, clustering basado en distancia).                                                                                                                                                                          | Mejora el rendimiento y la estabilidad de muchos algoritmos. Acelera la convergencia de algoritmos basados en gradientes. | Puede dificultar la interpretabilidad directa de las características originales.                                                                                                                                                                                                    |
+| **2. Manejo de Valores Faltantes** | Rellena los valores ausentes (NaN) en el conjunto de datos.                                                    | Siempre que haya valores faltantes en el dataset, ya que la mayoría de los algoritmos no pueden procesarlos directamente.                                                                                                                                                                                             | Permite usar el dataset completo sin eliminar filas o columnas.                                           | Una imputación incorrecta puede introducir sesgos o distorsiones en los datos. La elección del método de imputación es crucial.                                                                                                                                              |
+| **3. Discretización / Binning** | Convierte variables numéricas continuas en categorías o "bins" (intervalos).                                      | Para algoritmos que prefieren datos categóricos o rangos (ej., algunas implementaciones de árboles de decisión, reglas de asociación para datos numéricos). Para reducir el ruido en datos continuos.                                                                                                             | Puede mejorar la robustez a los outliers. Permite usar técnicas de minería de reglas en datos continuos.   | Pérdida de información detallada de la variable numérica. La elección de los límites de los bins puede ser arbitrante o crítica.                                                                                                                                          |
+| **4. Reducción de Dimensionalidad** | Reduce el número de características (columnas), conservando la mayor cantidad de información posible.             | Cuando hay un número excesivo de características (especialmente después de One-Hot Encoding), para combatir la "maldición de la dimensionalidad", reducir el tiempo de entrenamiento y mejorar el rendimiento.                                                                                                | Reduce la complejidad del modelo. Acelera el entrenamiento. Puede mejorar la interpretabilidad (si las componentes son claras). | Puede llevar a una pérdida de información (aunque se busca minimizarla). Las nuevas características (componentes) a menudo son menos interpretables que las originales.                                                                                                     |
+| **5. Generación de Características (Feature Engineering)** | Crea nuevas características a partir de las existentes que pueden ayudar al modelo a aprender patrones.                      | Siempre que se pueda extraer información adicional relevante de los datos brutos que no sea directamente evidente para el modelo.                                                                                                                                                                           | Puede mejorar significativamente el rendimiento del modelo. Aporta conocimiento de dominio al proceso.   | Requiere creatividad, conocimiento del dominio y a menudo es un proceso iterativo y que consume mucho tiempo. Puede introducir *overfitting* si no se valida bien.                                                                                                        |
 
 
