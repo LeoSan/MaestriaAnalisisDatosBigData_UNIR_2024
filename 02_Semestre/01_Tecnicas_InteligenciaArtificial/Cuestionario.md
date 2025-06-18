@@ -260,3 +260,147 @@ D. SciPy.
 - Queremos buscar un conjunto de datos sobre información del COVID-19 en España, ¿dónde podemos acudir?:
     - Todas las anteriores.
 
+
+# Tema 3: Árboles de decisión
+
+1. Completa esta sentencia con la opción correcta: «La clasificación mediante
+árboles de decisión es una tarea de aprendizaje de tipo [...]»:
+A. Supervisado. -> **correcto**
+B. No-supervisado.
+C. Supervisado y no supervisado.
+D. Ninguna de las anteriores.
+
+2. Indica cuáles de las siguientes afirmaciones son verdaderas:
+A. El algoritmo ID3 permite valores numéricos en los atributos.
+B. El algoritmo C4.5 permite valores numéricos en los atributos de salida.
+C. Los algoritmos ID3 y C4.5 permiten valores nominales en los atributos de salida. -> **correcto**
+D. El algoritmo C4.5 permite valores numéricos y nominales en los atributos de entrada. -> **correcto**
+
+3. Marca de las siguientes opciones aquellas en las que resulta adecuado utilizar un árbol de decisión en la tarea de aprendizaje:
+A. No se conoce la clase de las instancias disponibles.
+B. La función objetivo tiene valores de salida discretos. -> **correcto**
+C. Existen varios atributos de salida.
+D. Los datos de entrenamiento contienen errores. -> **correcto**
+
+4. Indica cuál de las siguientes afirmaciones es correcta:
+A. El método de selección de los atributos especifica una heurística para
+seleccionar el atributo que mejor discrimina los ejemplos para una clase. -> **correcto**
+B. Un algoritmo básico de construcción de árboles de decisión recibe como
+entrada los datos de entrenamiento y los atributos de las instancias, y obtiene
+como salida un método de selección de atributos.
+C. El método codicioso es un método de selección de atributos.
+D. C4.5 no utiliza un método de selección de atributos.
+
+5. Cuando se tienen atributos con un gran número de posibles valores ¿qué método de selección de atributos conviene utilizar?
+A. Ganancia de información.
+B. Proporción de ganancia. -> **correcto**
+C. Indice Gini.
+D. Longitud de descripción mínima.
+
+6. Indica cuáles de las siguientes afirmaciones son correctas respecto a ID3:
+A. ID3 se basa en el método codicioso o greedy. -> **correcto**
+B. ID3 considera como heurística que el atributo cuyo conocimiento aporta mayor información en la predicción de la clase es el más útil. -> **correcto**
+C. ID3 utiliza la medida de proporción de ganancia.
+D. ID3 trabaja con un espacio de hipótesis incompleto.
+
+7. Indica las respuestas correctas en relación con los métodos de aprendizaje
+integrado:
+A. En los métodos stacking se utilizan los mismos datos de entrada a
+diferentes algoritmos en paralelo. Finalmente se utiliza un algoritmo decisor
+para dar la respuesta final. -> **correcto**. El texto dice: "entrenar diferentes algoritmos (por ejemplo, un k-NN, un árbol de decisión y un SVM... ) utilizando los mismos datos y utilizarlos en paralelo para clasificar la misma entrada. Finalmente, se promedian las salidas de los diferentes algoritmos para obtener un valor de salida final, normalmente utilizando un algoritmo de regresión". El "algoritmo decisor" o "algoritmo de regresión" que promedia las salidas es la forma en que se combinan.
+
+
+
+B. En los métodos bagging se utilizan el mismo tipo de algoritmos en paralelo,
+a los cuales se pasa como entrada diferentes subconjuntos aleatorios a partir
+del dataset inicial. -> **correcto**. El texto afirma: "en los métodos bagging... se utiliza un conjunto de algoritmos en paralelo en los que todos los algoritmos son iguales (por ejemplo, todos son árboles de decisión), pero cada uno de ellos se entrena con un subconjunto aleatorio de datos extraídos del mismo conjunto de datos de entrenamiento".
+
+C. Random forest es un tipo de método boosting utilizando árboles de
+decisión en serie.
+D. En los métodos boosting se parte de un dataset inicial y se entrenan
+diferentes algoritmos uno a uno secuencialmente, introduciendo como entrada
+de cada algoritmo un conjunto aleatorio del dataset inicial.
+
+8. Indica cuáles de las siguientes afirmaciones son correctas respecto a C4.5:
+A. C4.5 utiliza la medida de proporción de ganancia. -> **correcto**. El texto establece explícitamente: "El método de selección de atributos que utiliza C4.5 es la medida de proporción de ganancia."
+B. C4.5 utiliza un método de prepoda.
+C. C4.5 poda el árbol utilizando datos de prueba.
+D. C4.5 realiza una poda una vez se ha generado el árbol. -> **correcto**. Como se mencionó en la explicación del punto B, el texto dice: "C4.5 realiza una poda tras la generación del árbol (pospoda)... Una vez que el árbol ha sido generado, C4.5 elimina aquellos nodos del árbol..."
+
+9. Indica cuáles de las siguientes afirmaciones son correctas respecto al método de
+validación cruzada:
+A. Utiliza un conjunto de datos de validación y un conjunto de datos de
+entrenamiento. -> **correcto**.
+B. La validación cruzada divide los datos disponibles en dos subconjuntos.
+C. La validación cruzada no se puede utilizar para evaluar la efectividad de
+una poda.
+D. Cuando se tienen pocos datos no conviene utilizar la validación cruzada
+con k iteraciones.
+
+10. Indica cuáles de las siguientes afirmaciones son correctas respecto a las medidas de precisión en la clasificación:
+A. La tasa de error de una muestra es el cociente entre el número de instancias erróneamente clasificadas y el número total de instancias. -> **correcto**. Esta es la definición estándar de la tasa de error (que es 1 menos la precisión). El texto menciona que "la tasa de error tendría un valor terror = e/N, siendo N el número de instancias que lo alcanzan". Aquí, 'e' representa las instancias clasificadas erróneamente.
+
+B. Cuanto mayor sea el número de instancias, el intervalo de confianza será
+mayor.
+
+C. C4.5 utiliza los propios datos de entrenamiento para calcular la tasa de error. -> **correcto** El texto lo dice claramente en la sección sobre la poda pesimista de C4.5: "C4.5 no utiliza un conjunto de ejemplos para la validación separado de los datos de entrenamiento, sino que la validación la realiza a partir de los mismos datos de entrenamiento". Y luego añade: "Esta estimación, al ser calculada sobre los mismos datos de entrenamiento, resulta en una estimación claramente optimista...
+
+D. Cuanto mayor nivel de confianza se requiere se obtiene un intervalo de
+confianza menor.
+
+
+# Video Clase 1: El conocimiento representado en un árbol de decisión
+
+- El aprendizaje que podemos experimentar con un árbol de decisión es:
+    - Aprendizaje inductivo. => Se trata de un tipo de aprendizaje inductivo mediante el cual podemos extraer conclusiones a partir de premisas o reglas formadas en el propio árbol.
+
+- ¿Mediante qué operador se establecen las divisiones en un árbol de decisión?:
+    - Disyunción => En los nodos de decisión del árbol se establecen las sucesivas ramificaciones a partir de la aplicación de un operador OR sobre un atributo determinado.
+
+- ¿Cuáles de las siguientes afirmaciones pueden ser consideradas ventajas de la representación del conocimiento mediante árboles de decisión?
+    - Independencia de la distribución de valores.
+    - No se requiere conocimiento previo del dominio del problema.
+    - Facilidad en la interpretación del árbol.
+    - Todas las anteriores => Correcta 
+
+- En un árbol de decisión para un problema de clasificación, las hojas deben ser:
+    - Valores categóricos => En un árbol de clasificación, las hojas representan la salida del árbol, quedando esta circunscrita a categorías.
+
+- Supón un problema de predicción del voto en unas elecciones entre cinco candidatos posibles. En base a una serie de características de los votantes como el barrio de residencia, el nivel de estudios y los ingresos mensuales, ¿podríamos hacer uso de un árbol de regresión para generar reglas o premisas que permitan realizar dicha predicción?:
+    - No, debería de tratarse de un árbol de clasificación. => Se trata de un problema de predicción de una categoría entre cinco posibles, por lo que estaríamos en un problema de clasificación, cuyas reglas o premisas podrían estar perfectamente representadas mediante un árbol de decisión.
+
+
+# Video Clase 2:  Evaluación mediante Curvas ROC
+
+- Accuracy, recall, precisión y f1-score son métricas:
+    - Para evaluar problemas de clasificación
+
+- La funcionalidad del umbral en los problemas de clasificación es:
+    - Fijar un valor entre 0 y 1 que marque la pertenencia de un elemento a una clase u otra en clasificación binaria. => El umbral marca un valor a partir del cual la clasificación de un elemento es considerada para la clase positiva en un problema de clasificación binaria.
+
+- En un clasificador, FP Rate mide exactamente:
+    - a capacidad del clasificador para descartar instancias que no pertenecen a una clase, entre instancias de esa misma clase. => FP Rate mide la tasa de falsos positivos sobre el total de instancias en una clase determinada.
+
+- La curva ROC se construye:
+    - Sobre la sensibilidad y especificidad del modelo.
+
+- A menor área AUC bajo una curva ROC, tenemos que:
+    - El clasificador tendrá un peor desempeño. => AUC mide el desempeño a nivel de discriminación de un clasificador determinado, en la forma que, a mayor área bajo la curva y más cercana su medida a 1, mejor será dicho desempeño.
+
+# Video Clase 3: Ensemble learning
+
+- ¿Qué tipología de aprendizaje proponen los modelos de ensemble?:
+- Aprendizaje integrado
+
+- Los métodos de Stacking:
+- Proponen la ejecución de varios algoritmos diferentes en paralelo.
+
+- Los métodos de Bagging:
+- Proponen la ejecución de varios algoritmos iguales en paralelo.
+
+- Los métodos de Boosting:
+- Los métodos de boosting se basan en la ejecución de varios algoritmos de forma secuencial priorizando a la salida de cada clasificador intermedio los peores resultados, de forma iterativa hasta obtener unos resultados óptimos.
+
+- Random Forest es un método de ensemble de la categoría:
+- Bagging => Random Forest plantea la ejecución de varios árboles en paralelo y combinando sus salidas para producir un resultado único
+
