@@ -115,73 +115,60 @@ D. A y C son ciertas.
 # TEMA 2: Estadística computacional
 
 1. R soporta datos de tipo numérico en sus bases de datos:
-A. Verdadero.
+A. Verdadero. -> **Correcto**
 B. Falso.
 C. Solo si se introducen como tipo .txt .
 D. Ninguna de las propuestas es correcta.
 
 2. R soporta datos de tipo categórico en sus bases de datos:
-A. Verdadero.
+A. Verdadero. -> **Correcto**
 B. Falso.
 C. Solo si van acompañados de algún valor numérico.
 D. Ninguna de las propuestas es correcta.
 
 3. Histogram() es la etiqueta para desarrollar una función que elabore histogramas
 en un algoritmo desarrollado con R:
-A. Incorrecto.
+A. Incorrecto. -> **Correcto**
 B. Correcto.
 C. Falta colocar las etiquetas para completar el histograma.
 D. Ninguna de las propuestas es correcta.
 
-4. En estos momentos, R es un software que ofrece soporte ilimitado a la solución
-de problemas estadísticos en el entorno Big Data.
+4. En estos momentos, R es un software que ofrece soporte ilimitado a la solución de problemas estadísticos en el entorno Big Data.
 A. Sí, pero con limitaciones.
-B. Nos impone la necesidad de trabajar para evitar problemas de asignación
-de memoria.
-C. Posibilita el uso de funciones de código abierto para optimizar los recursos
-de memoria.
-D. Todas las respuestas anteriores son correctas.
+B. Nos impone la necesidad de trabajar para evitar problemas de asignación de memoria.
+C. Posibilita el uso de funciones de código abierto para optimizar los recursos de memoria.
+D. Todas las respuestas anteriores son correctas. -> **Correcto**
 
-5. ¿Por qué puede ser relevante la irrupción del código R en temas de
-ciberseguridad?
+5. ¿Por qué puede ser relevante la irrupción del código R en temas de ciberseguridad?
 A. Facilita el tratamiento de muchos datos.
-B. Prima la lógica de los programas y la capacidad creativa del desarrollador a
-los mecanismos de control internos.
-C. Posibilidad de paralelización de procesos al tener las estructuras
-modularizadas.
-D. Todas las propuestas anteriores son correctas.
+B. Prima la lógica de los programas y la capacidad creativa del desarrollador a los mecanismos de control internos.
+C. Posibilidad de paralelización de procesos al tener las estructuras modularizadas.
+D. Todas las propuestas anteriores son correctas. -> **Correcto**
 
-6. Uno de los objetivos básicos de la programación es la capacidad de desarrollar
-código que sea reutilizable:
-A. Verdadero, pero no aplicable al contexto estadístico donde cada código
-debe limitarse a un problema específico.
-B. Verdadero, extensible al área de la estadística donde se pretenden crear
-códigos generalistas que puedan ser utilizados sobre distintos escenarios.
-C. Falso, siempre se debe empezar el código de cero al implementar un
-problema.
+6. Uno de los objetivos básicos de la programación es la capacidad de desarrollar código que sea reutilizable:
+A. Verdadero, pero no aplicable al contexto estadístico donde cada código debe limitarse a un problema específico.
+B. Verdadero, extensible al área de la estadística donde se pretenden crear códigos generalistas que puedan ser utilizados sobre distintos escenarios. -> **Correcto**
+C. Falso, siempre se debe empezar el código de cero al implementar un problema.
 D. Ninguna de las anteriores.
 
 7. Sobre el uso de la programación por módulos en R:
 A. Facilita la reutilización de código.
 B. Permite detectar errores (bugs) en un proceso de validación de código.
 C. Hace el código más expresivo.
-D. Todas las anteriores son correctas.
+D. Todas las anteriores son correctas. -> **Correcto**
 
 8. R no permite compartir librerías con otros lenguajes:
 A. Verdadero, asociado a la seguridad propia del lenguaje.
-B. Verdadero, en la línea de garantizar un uso matemáticamente correcto de
-los datos.
-C. Falso, las librerías se pueden compartir con otros lenguajes de
-programación.
+B. Verdadero, en la línea de garantizar un uso matemáticamente correcto de los datos.
+C. Falso, las librerías se pueden compartir con otros lenguajes de programación. -> **Correcto**
 D. Ninguna de las anteriores.
 
 9. ¿Puede R trabajar con varios tipos de ficheros de datos?
 A. Sí, siempre que sean almacenables como .txt .
-B. Sí, puede trabajar con varios tipos de ficheros, ejemplo .txt, .csv .
+B. Sí, puede trabajar con varios tipos de ficheros, ejemplo .txt, .csv . -> **Correcto**
 
-10. ¿Puede un solo código R tratar simultáneamente variables categóricas y
-numéricas?
-A. Sí, es algo estándar.
+10. ¿Puede un solo código R tratar simultáneamente variables categóricas y numéricas?
+A. Sí, es algo estándar. -> **Correcto**
 B. No, una u otra, nunca simultáneamente. Puede dar errores en el proceso
 de compilación.
 C. No, deben transformase a uno u otro tipo y elegir un tipo para cada código.
@@ -221,5 +208,22 @@ D. Ninguna de las anteriores es correcta
 - Carga de datos, limpieza y exploración de los datos. => B es correcta porque el flujo típico de trabajo en la estadística computacional incluye la carga de los datos, su limpieza para eliminar errores o valores atípicos, y la exploración inicial para entender la estructura y características de los datos antes de realizar análisis más avanzados.
 
 ## Videoclase 3. Introducción al Software R para Estadística Computacional
+
+- ¿Qué es R en el contexto de la estadística computacional?
+- Un lenguaje y entorno de programación para el análisis estadístico.
+
+- ¿Cuál es la diferencia principal entre R y RStudio?
+- R es un lenguaje de programación y RStudio es un entorno de desarrollo integrado (IDE) para trabajar con R.
+
+- ¿Cuál es la principal ventaja de usar R en estadística computacional?
+- Su capacidad para manejar grandes volúmenes de datos y su amplia variedad de paquetes.
+
+- ¿Para qué sirve la ventana Environment en RStudio?
+- Para mostrar el estado actual de las variables y objetos creados en la sesión.
+
+- ¿Cuál es la función principal de la consola en R?
+- Permitir la ejecución inmediata de comandos de R.
+
+
 
 # Tema 3. Medidas que resumen la información

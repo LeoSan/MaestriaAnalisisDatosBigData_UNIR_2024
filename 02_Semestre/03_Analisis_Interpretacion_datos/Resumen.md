@@ -880,6 +880,352 @@ El texto menciona tres pilares fundamentales que son aplicables a cualquier leng
 
 ## 2.5. Presentación del software «R»
 
+¡Excelente\! Vamos a sumergirnos en la presentación de **R**, una herramienta esencial en el análisis de datos.
+
+-----
+
+### Presentación del Software "R": Tu Compañero para el Análisis de Datos
+
+**R** es mucho más que un simple programa; es un **lenguaje de programación y un entorno** diseñado específicamente para la computación estadística y los gráficos. Es una de las herramientas más populares y poderosas en el mundo de la ciencia de datos.
+
+-----
+
+### Características Clave de R
+
+1.  **Es Abierto (Open Source) y Gratuito:**
+
+      * Puedes descargarlo e instalarlo sin costo alguno desde su sitio web oficial: [www.r-project.org](https://www.r-project.org/).
+      * Al ser "open source", significa que su **código fuente es público**. Esto permite a usuarios avanzados estudiar cómo funciona internamente y, si lo desean, contribuir a su desarrollo. Esto también fomenta una comunidad activa que constantemente lo mejora.
+
+2.  **Completa Caja de Herramientas Estadísticas:**
+
+      * R viene con implementaciones para **"todas" las herramientas estadísticas** imaginables. Desde las más básicas (como medias y medianas) hasta las más avanzadas (modelos complejos, análisis multivariante).
+      * Si una herramienta específica es muy nueva o de nicho, es muy probable que algún usuario la haya desarrollado y la haya puesto a disposición como una **"librería" (o paquete)** de acceso libre.
+
+3.  **Potente Herramienta de Cálculo Numérico y Orientación a Objetos:**
+
+      * R es muy eficiente para realizar cálculos matemáticos intensivos.
+      * Su diseño de **programación orientada a objetos** (aunque no se profundiza en el texto, implica que puedes organizar tu código en estructuras que facilitan el trabajo con datos complejos) le permite manejar distintos formatos de datos externos de manera eficaz.
+
+4.  **Capacidad de "Hibridación" con Otros Lenguajes:**
+
+      * R puede interactuar y compartir librerías con otros lenguajes de programación de alto rendimiento como **C, C++ y Fortran**. Esto es útil cuando necesitas realizar operaciones muy específicas o de muy alta velocidad que R por sí solo podría no optimizar tan bien.
+
+5.  **Flexible, Reproducible, Código Abierto e Interfaces de Línea de Comandos:**
+
+      * **Flexible:** Puede resolver prácticamente cualquier problema estadístico y puedes crear tus propias funciones si las que existen no son suficientes.
+      * **Reproducible:** Gracias a las buenas prácticas de programación (código claro y modular), puedes reutilizar tu código con diferentes conjuntos de datos, garantizando que tus análisis sean consistentes y puedan ser replicados por otros.
+      * **Código Abierto:** Como se mencionó, permite la identificación de errores y la introducción de mejoras por parte de la comunidad.
+      * **Línea de Comandos:** Trabajar con comandos te da un control superior, permitiéndote personalizar y optimizar tus análisis más allá de lo que una interfaz gráfica predefinida podría ofrecer.
+
+-----
+
+### Primeros Pasos: Instalación y Estructuras Básicas en R
+
+El objetivo principal de R es leer, manipular, operar y guardar datos. Es muy versátil y puede trabajar con diversos tipos de datos.
+
+#### 1\. Instalación:
+
+  * Simplemente descarga el **ejecutable** para tu sistema operativo desde [www.r-project.org](https://www.r-project.org/) e instálalo como cualquier otro programa.
+
+#### 2\. Estructuras Básicas para Guardar Datos:
+
+  * **Importar desde un archivo externo (`.txt`):**
+
+      * **Paso 1: Preparar el archivo.** Crea un archivo de texto plano (ej. `edad.txt`) con tus datos. Por ejemplo:
+        ```
+        edad
+        10
+        20
+        30
+        10
+        40
+        80
+        ```
+      * **Paso 2: Establecer el directorio de trabajo.** En la consola de R, usa el comando `setwd()` para ir a la carpeta donde guardaste el archivo.
+        ```r
+        setwd("c:/PRACTICAS/") # Asegúrate de que esta ruta exista en tu computadora
+        ```
+      * **Paso 3: Leer el archivo.** Usa `read.table()` para cargar los datos en una variable (una "tabla" o "dataframe" en R).
+        ```r
+        TablaEdad <- read.table("edad.txt", dec=".", header=TRUE)
+        ```
+          * `dec="."`: Indica que el punto es el separador decimal.
+          * `header=TRUE`: Indica que la primera fila del archivo contiene los nombres de las columnas.
+          * Ahora, `TablaEdad` contendrá tus datos.
+
+  * **Creación de Vectores:** Esta es una forma muy común y directa de guardar datos en R, especialmente para listas de elementos del mismo tipo.
+
+      * Para crear una lista de edades directamente en R:
+        ```r
+        edad <- c(10, 20, 30, 10, 40, 80)
+        ```
+          * `c()` significa "concatenar" o "combinar".
+
+#### 3\. Operaciones Básicas:
+
+  * R puede funcionar como una **calculadora**:
+    ```r
+    4 + 5 # Resultado: 9
+    ```
+  * Puedes realizar todas las **operaciones algebraicas** conocidas y usar funciones matemáticas integradas (como exponenciales).
+
+#### 4\. Uso de Librerías y Funciones:
+
+  * R tiene **miles de funciones** incorporadas y disponibles a través de librerías.
+
+  * **La rutina de trabajo:**
+
+    1.  **Definir el problema:** ¿Qué necesitas resolver? (Ej. Recodificar una variable).
+    2.  **Buscar soluciones existentes:** Investiga si R ya tiene una función o una librería que haga lo que necesitas. La documentación de R y las búsquedas en línea (a menudo usando términos en inglés como "R software recoding") son tus mejores aliados.
+    3.  **Cargar la librería (si es necesario):** Si la función pertenece a una librería que no está cargada por defecto, debes cargarla con el comando `library()`.
+    4.  **Usar la función:** Aplica la función con la sintaxis correcta.
+
+  * **Ejemplo de Recodificación:**
+
+      * Supongamos que tienes una variable de deportes con "si" y "no".
+        ```r
+        deportistas <- c("si", "no", "si", "si")
+        ```
+      * Para recodificar "si" a 1 y "no" a 0, necesitas la **librería `car`** y la función `recode()`:
+        ```r
+        library(car) # Cargar la librería "car"
+        deportistas_recodificado <- recode(deportistas, "'si'=1; else=0")
+        print(deportistas_recodificado) # Ver el resultado
+        # Resultado esperado: 1, 0, 1, 1
+        ```
+
+#### 5\. Representación de Datos: Variables Categóricas y Numéricas
+
+  * R maneja diferentes **clases de variables**, siendo las principales:
+
+      * **Categóricas (o Nominales):** Representan categorías (ej. "aprobados", "suspensos", "rojo", "azul").
+      * **Numéricas (o Cuantitativas):** Representan cantidades (ej. edad, altura, ingresos).
+
+  * **Ejemplo con `summary()`:**
+
+      * **Variable Categórica:**
+        ```r
+        notaUnir_categorica <- c(rep("aprobados", 20), rep("suspensos", 10))
+        # rep() es una función útil para "reproducir" un valor varias veces
+        summary(notaUnir_categorica)
+        # Te mostrará la longitud, clase y modo de la variable. Para categóricas,
+        # te indicará cuántas veces aparece cada categoría (20 "aprobados", 10 "suspensos").
+        ```
+      * **Variable Numérica:**
+        ```r
+        notaUnir_numerica <- c(rep(8, 20), rep(3, 10))
+        summary(notaUnir_numerica)
+        # Te mostrará estadísticas descriptivas clave: Mínimo, Primer Cuartil (25%),
+        # Mediana (50%), Media, Tercer Cuartil (75%) y Máximo.
+        ```
+      * Recuerda que `summary()` no da todos los estadísticos; para otros (ej. desviación estándar), necesitarás funciones específicas.
+
+-----
+
+### Perspectivas y Limitaciones de R
+
+  * **Amplio Potencial:** R puede usarse para cualquier problema estadístico y tipo de datos. Desde análisis descriptivos básicos y visualización, hasta operaciones avanzadas con bases de datos, **machine learning** y **modelado matemático avanzado**.
+  * **Limitaciones (Hardware):**
+      * **Memoria Operativa:** R trabaja principalmente en la RAM. Para cálculos muy extensos, es crucial **guardar el progreso periódicamente** en el disco duro para evitar pérdidas.
+      * **Grandes Bases de Datos:** Aunque R es potente, algunas funciones pueden colapsar con bases de datos extremadamente grandes. Para esto, existen **paquetes auxiliares** que ayudan a manejar y dividir estos datos de forma más eficiente.
+
+-----
+
+### Conclusión y Motivación
+
+R te permite ser más que un simple usuario; te da la capacidad de **usar y crear soluciones** en el campo emergente de la estadística computacional. Aunque su curva de aprendizaje puede no ser la más intuitiva al principio (requiere investigar la sintaxis y las funciones), el poder y la flexibilidad que ofrece lo convierten en una herramienta indispensable para cualquier científico de datos. La clave está en **definir tu problema, investigar las soluciones existentes y adaptar los ejemplos** a tus necesidades.
+
+-----
+
+¡Claro\! Con gusto te armo un **resumen práctico y una guía rápida de R**, y te describo cómo podrías estructurar un mapa mental para visualizarlo mejor. El objetivo es que captures lo esencial de R para tu maestría.
+
+-----
+
+## Guía Rápida: Lo Esencial para Empezar
+
+**R** es tu navaja suiza para el **análisis, visualización y modelado de datos**. Es **gratis, de código abierto** y super flexible.
+
+### 1\. Preparando el Terreno: Instalación y Entorno
+
+  * **Descarga e Instala R:** Ve a [www.r-project.org](https://www.r-project.org/) y descarga la versión para tu sistema operativo. Sigue los pasos de instalación.
+  * **¡Recomendación clave\! Instala RStudio:** Aunque puedes usar R directamente, **RStudio** (también gratuito) es un entorno de desarrollo integrado (IDE) que hace la vida muchísimo más fácil. Te ofrece un editor de código, consola, visor de variables, gráficos y ayuda, todo en un mismo lugar. ¡Búscalo y descárgalo\!
+  * **Directorio de Trabajo (`setwd()`):** Es tu "base de operaciones". Aquí R buscará y guardará tus archivos por defecto.
+    ```r
+    # Para saber dónde estás:
+    getwd()
+
+    # Para cambiar tu directorio (usa tus propias rutas, con barras /):
+    setwd("C:/MisDocumentos/MaestriaR")
+    ```
+
+### 2\. Guardando y Manejando Datos: Estructuras Básicas
+
+R trabaja con diferentes formas de guardar información. Aquí las más importantes para empezar:
+
+  * **Vectores (`c()`):** Son listas de elementos del *mismo tipo* (todos números, todas palabras, etc.).
+    ```r
+    # Vector numérico (edades de personas)
+    edades <- c(10, 20, 30, 10, 40, 80)
+
+    # Vector de texto (respuestas "si/no")
+    respuestas_deporte <- c("si", "no", "si", "si", "no")
+    ```
+  * **Data Frames:** Son como las tablas de Excel. Tienen filas y columnas, y cada columna puede ser un tipo diferente de datos (una columna de números, otra de texto). Es la estructura más común para tus **bases de datos**.
+    ```r
+    # Crear un Data Frame manualmente
+    datos_alumnos <- data.frame(
+      Nombre = c("Ana", "Juan", "Maria"),
+      Edad = c(25, 30, 28),
+      Notas = c(9.5, 8.0, 7.2)
+    )
+
+    # Ver los datos
+    print(datos_alumnos)
+
+    # Acceder a una columna específica (ej. la columna Edad)
+    print(datos_alumnos$Edad)
+    ```
+  * **Importar Datos Externos:** Lo más común es leer datos de archivos (CSV, TXT, Excel).
+    ```r
+    # Para archivos de texto o CSV (recuerda que el archivo debe estar en tu setwd() o indicar la ruta completa)
+    mis_datos <- read.csv("mi_archivo.csv", header = TRUE, sep = ",")
+    # 'header=TRUE' si la primera fila tiene nombres de columnas
+    # 'sep=","' si las columnas están separadas por comas (usa ';', '\t', etc., según tu archivo)
+
+    # Para Excel necesitas un paquete adicional (ver "Librerías")
+    # install.packages("readxl")
+    # library(readxl)
+    # mis_datos_excel <- read_excel("mi_archivo.xlsx")
+    ```
+
+### 3\. ¡Manos a la Obra\! Operaciones y Funciones
+
+R es como una súper calculadora con miles de trucos.
+
+  * **Operaciones Básicas:**
+    ```r
+    4 + 5       # Suma
+    10 - 3      # Resta
+    2 * 6       # Multiplicación
+    15 / 3      # División
+    2^3         # Potencia (2 elevado a 3)
+    sqrt(16)    # Raíz cuadrada
+    log(10)     # Logaritmo natural
+    ```
+  * **Funciones para Entender tus Datos (`summary()`):**
+    ```r
+    # Para un vector numérico (te da min, max, media, mediana, cuartiles)
+    notas <- c(8, 6, 9, 7, 5, 10)
+    summary(notas)
+
+    # Para un vector de texto (te da conteos de cada categoría)
+    sexo <- c("M", "F", "F", "M", "M", "F")
+    summary(sexo) # Mostrará el conteo de "F" y "M"
+
+    # Para un Data Frame (te da un resumen por cada columna)
+    summary(datos_alumnos)
+    ```
+  * **Librerías (`library()`):** R es modular. Las funciones avanzadas están organizadas en "paquetes" o "librerías". Debes instalarlos una vez y luego cargarlos cada vez que inicies una sesión de R y los necesites.
+    ```r
+    # Instalar una librería (solo la primera vez)
+    install.packages("dplyr") # 'dplyr' es genial para manipular datos
+    install.packages("ggplot2") # 'ggplot2' es increíble para gráficos
+
+    # Cargar una librería (cada vez que inicias R y la vas a usar)
+    library(dplyr)
+    library(ggplot2)
+
+    # Ejemplo de uso de una función de librería (con recodificación, como en el texto)
+    # install.packages("car") # Instalar si no la tienes
+    library(car)
+    deportistas_recodificado <- recode(respuestas_deporte, "'si'=1; else=0")
+    print(deportistas_recodificado)
+    ```
+
+### 4\. ¡Siempre Buenas Prácticas\!
+
+  * **Nombres Claros:** Usa nombres que digan qué son (`edad_alumnos` en vez de `x`).
+  * **Comentarios (`#`):** Explica tu código.
+    ```r
+    # Este es un comentario: R ignora todo lo que está después del '#'
+    # Cargar los datos de ventas para el análisis
+    ventas_mensuales <- read.csv("ventas.csv")
+    ```
+  * **Seccionar Código:** Organiza tu script con comentarios para separar pasos (carga de datos, limpieza, análisis).
+  * **Funciones Personalizadas (Modularidad):** Si haces algo repetidamente, crea tu propia función.
+    ```r
+    # Función para calcular el porcentaje
+    calcular_porcentaje <- function(parte, total) {
+      resultado <- (parte / total) * 100
+      return(resultado)
+    }
+
+    # Usar tu función
+    porcentaje_aprobados <- calcular_porcentaje(20, 30)
+    print(porcentaje_aprobados)
+    ```
+
+-----
+
+## Mapa Mental: Guía R para Análisis de Datos
+
+Imagina el centro de tu mapa mental como **"R para Análisis de Datos"**. De ahí, saldrán las ramas principales:
+
+  * **R Para Análisis de Datos**
+      * \--- **1. Fundamentos de R**
+          * **¿Qué es?** (Lenguaje y entorno, Open Source, Gratuito)
+          * **Instalación** (R, RStudio)
+          * **Características Clave** (Estadísticas completas, Hibridación C/C++/Fortran, OO, Flexible, Reproducible, Código Abierto)
+      * \--- **2. Estructuras de Datos**
+          * **Vectores** (Listas, un solo tipo de dato, `c()`)
+              * *Ejemplo:* `edades <- c(10, 20, 30)`
+          * **Data Frames** (Tablas, filas/columnas, distintos tipos por columna, `data.frame()`)
+              * *Ejemplo:* `datos_alumnos`
+          * **Importación** (`read.csv()`, `read.table()`, `read_excel()`)
+              * *Concepto:* `setwd()`
+      * \--- **3. Operaciones y Funciones**
+          * **Básicas** (+, -, \*, /, `sqrt()`, `log()`)
+          * **Descriptivas** (`summary()`)
+              * *Variables Categóricas*
+              * *Variables Numéricas*
+          * **Librerías/Paquetes** (`install.packages()`, `library()`)
+              * *Ejemplo:* `car` para `recode()`, `dplyr` para manipulación, `ggplot2` para visualización
+      * \--- **4. Buenas Prácticas de Programación**
+          * **Expresividad** (Nombres claros, Comentarios `#`)
+          * **Seccionar Código** (Bloques lógicos)
+          * **Modularidad** (Funciones personalizadas)
+      * \--- **5. Aplicaciones y Limitaciones**
+          * **Usos** (Descriptivos, Visualización, Machine Learning, Modelado Avanzado)
+          * **Limitaciones** (RAM para Big Data, Usar paquetes auxiliares, Guardar progreso)
+
+-----
+
+¡Claro que sí! Aquí te doy los pasos claros y sencillos para instalar **R** y **RStudio**, que es lo que realmente te recomiendo para trabajar cómodamente en tu maestría.
+
+---
+
+### Pasos para Instalar R y RStudio
+
+Instalar R y RStudio es como montar tu estación de trabajo de análisis de datos. Primero instalaremos el "motor" (R) y luego la "interfaz amigable" (RStudio).
+
+---
+
+### Paso 1: Instalar R (el Lenguaje y Entorno Base) Para MAC 
+
+1.  **Ve a la página oficial de R:** Abre tu navegador web y dirígete a:
+    [https://www.r-project.org/](https://posit.co/download/rstudio-desktop/)
+
+2.  En el enlace nos permite descargar su IDE y el lenguaje 
+
+3. Como estamos en MAC podemos usar su instalador de manera sencilla 
+    - Ejecutamos el [R-4.5.1-arm64.pkg] parecido a windows continuar + continuar 
+        - Te instala una consola que puedes ejecutar los comandos de R
+    - Ejeuctamos IDE [RStudio-2025.05.1-513.dmg] Este se instala arrastrando el dmg a la carpeta de de aplicaciones en pocas palabras es el IDE para R te permite codificar y escribir RMarkDown 
+
+
+
+---
 
 # Tema 3. Medidas que resumen la información
 
