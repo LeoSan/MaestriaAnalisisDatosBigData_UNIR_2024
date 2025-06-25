@@ -880,9 +880,39 @@ El texto menciona tres pilares fundamentales que son aplicables a cualquier leng
 
 ## 2.5. Presentación del software «R»
 
-¡Excelente\! Vamos a sumergirnos en la presentación de **R**, una herramienta esencial en el análisis de datos.
+## Notas 
+- Fue creado en 1993 
+- Fue creado por dos estadisticos [Ross y Robert]
+- Es el estandar en la ciencia de Datos
+- Usado por Google y IBM
+- Permite los analista convertir grandes volumenes en datos para tomar decisiones 
+- Es un Lenguaje de programación para analisis estadistico y grafico
+- Su base es lenguaje S creado por John Chambers en los 70s en laboratorios Bell Labs 
+- Es código abierto 
+- Ofrece herramientas para transformar limpiar y visualizar información 
 
------
+## Caracteristicas 
+- Extensibilidad a traves de paquetes -> Mas de 18k paquetes integrados 
+- Capacidad para manejar grandes volumnes de datos -> Integración con Hadoop y spark 
+- Fuerte soporte pra gráficos y visualización de datos -> fuerte vinculación con ggplot2, lattice y plotly  
+- Ofrece flexibilidad por integrarse con otras herramientas como Python, SQL y Excel 
+
+## Usos 
+- Análisis estadisticos -> Permite generar Modelado Lineal y No Líneal 
+    - Pruebas Estaditicas de Datos
+    - Series temporadas 
+- Visualización de datos -> Generación de graficos avanzados 
+    - ggplot2, lattice y plotly 
+    - Gráficos interactivos y mapas de calor
+- Uso en la Ciencia de datos y machine learning 
+    - Herramientas especializadas 
+        - CC -> Limpiar tranformar y presnetar datos 
+        - ML -> Soporte para Entrenamiento guiado y no Guiado 
+            - Implementación Arboles de Decisiones, Ramdon Forest y Redes Neuronales 
+
+
+
+
 
 ### Presentación del Software "R": Tu Compañero para el Análisis de Datos
 
@@ -1036,11 +1066,6 @@ El objetivo principal de R es leer, manipular, operar y guardar datos. Es muy ve
 
 R te permite ser más que un simple usuario; te da la capacidad de **usar y crear soluciones** en el campo emergente de la estadística computacional. Aunque su curva de aprendizaje puede no ser la más intuitiva al principio (requiere investigar la sintaxis y las funciones), el poder y la flexibilidad que ofrece lo convierten en una herramienta indispensable para cualquier científico de datos. La clave está en **definir tu problema, investigar las soluciones existentes y adaptar los ejemplos** a tus necesidades.
 
------
-
-¡Claro\! Con gusto te armo un **resumen práctico y una guía rápida de R**, y te describo cómo podrías estructurar un mapa mental para visualizarlo mejor. El objetivo es que captures lo esencial de R para tu maestría.
-
------
 
 ## Guía Rápida: Lo Esencial para Empezar
 
