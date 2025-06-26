@@ -17,3 +17,8 @@ Instalar R y RStudio es como montar tu estación de trabajo de análisis de dato
     - Ejeuctamos IDE [RStudio-2025.05.1-513.dmg] Este se instala arrastrando el dmg a la carpeta de de aplicaciones en pocas palabras es el IDE para R te permite codificar y escribir RMarkDown 
 
 ## Configuración del entorno en RStudio
+
+**Notas**
+- Es muy básica la configuracion podemos acceder en ella busando tools/ configuracion global 
+- Imagen de Ejemplo
+- [ejemplo](../info/info_001.png)
