@@ -1229,10 +1229,432 @@ Imagina el centro de tu mapa mental como **"R para Análisis de Datos"**. De ah�
 # Tema 3. Medidas que resumen la información
 
 ##  3.2. Medidas de tendencia central
+
+¡Hola! Me parece excelente tu iniciativa de buscar apoyo para comprender a fondo tu maestría. Con gusto te ayudaré a asimilar la información de la mejor manera posible, utilizando ejemplos claros y fáciles de recordar.
+
+Vamos a desglosar el Tema 3: "Medidas que resumen la información", enfocándonos en las **Medidas de Tendencia Central**.
+
+---
+
+### ¿Qué son las Medidas de Tendencia Central?
+
+Imagina que tienes una gran cantidad de datos, como las calificaciones de todos los alumnos de una clase o los salarios de todos los empleados de una empresa. Las medidas de tendencia central son como el "representante" de esos datos, un valor que se encuentra en el medio y que nos da una idea de dónde se agrupan la mayoría de ellos. Son una forma rápida de resumir un montón de números en uno solo que nos dice "¡Hey, por aquí va la cosa!".
+
+Las tres medidas principales que estudiaremos son:
+
+1.  **La Media (o Promedio)**
+2.  **La Mediana**
+3.  **La Moda**
+
+---
+
+### 1. La Media (o Promedio): El "Repartidor Equitativo"
+
+Piensa en la media como si fueras a repartir algo de forma completamente equitativa entre un grupo de personas.
+
+**¿Cómo se calcula?**
+Simplemente sumas todos los valores y luego los divides por la cantidad total de valores que tienes.
+
+* **Fórmula básica:** $\bar{x} = \frac{\sum x_i}{n}$
+    * $\sum x_i$ es la suma de todos los valores individuales.
+    * $n$ es el número total de valores.
+
+**Ejemplo simple para recordar:**
+Imagina que tienes 4 amigos y cada uno trae dulces:
+* Amigo 1: 5 dulces
+* Amigo 2: 7 dulces
+* Amigo 3: 3 dulces
+* Amigo 4: 9 dulces
+
+Para saber cuántos dulces tendría cada uno si los repartieran equitativamente (la media), harías:
+$(5 + 7 + 3 + 9) / 4 = 24 / 4 = \textbf{6 dulces por amigo}$
+
+---
+
+**Cuando los datos se repiten (Frecuencia):**
+Si tienes muchos datos y algunos valores se repiten, no tienes que sumarlos uno por uno. Puedes multiplicar cada valor por las veces que aparece (su frecuencia) y luego sumar esos resultados, dividiendo por el total de datos.
+
+* **Fórmula con frecuencia:** $\bar{x} = \frac{\sum (x_i \cdot f_i)}{N}$
+    * $x_i$ es cada valor único.
+    * $f_i$ es la frecuencia (cuántas veces se repite) de cada valor $x_i$.
+    * $N$ es el número total de datos.
+
+---
+
+**La Media Ponderada: Cuando no todo pesa igual**
+
+A veces, no todos los datos tienen la misma importancia. Piensa en tus calificaciones: un examen final generalmente "pesa" más que una tarea pequeña. La media ponderada toma esto en cuenta, multiplicando cada valor por un "peso" o importancia.
+
+* **Fórmula:** $\bar{x}_p = \frac{\sum (x_i \cdot w_i)}{\sum w_i}$
+    * $x_i$ es cada valor.
+    * $w_i$ es el peso o ponderación de cada valor $x_i$.
+
+**Ejemplo para recordar:**
+Imagina que tus calificaciones en una materia son:
+* Tarea 1: 80 (peso del 10%)
+* Examen Parcial: 70 (peso del 30%)
+* Examen Final: 90 (peso del 60%)
+
+Tu promedio ponderado sería:
+$((80 \times 0.10) + (70 \times 0.30) + (90 \times 0.60)) / (0.10 + 0.30 + 0.60)$
+$(8 + 21 + 54) / 1 = \textbf{83}$
+
+Fíjate cómo el 90 (Examen Final) tiene más impacto en tu calificación final porque su peso es mayor.
+
+---
+
+**Media Armónica: ¡Velocidades y proporciones!**
+
+Aunque es menos común, la media armónica se usa en casos muy específicos, como cuando trabajas con velocidades o tasas. La clave es que **ningún valor puede ser cero**.
+
+**Ejemplo 1 (del texto):**
+* De Madrid a Barcelona: 100 km/h
+* De Barcelona a Madrid: 120 km/h
+
+Si intentaras usar la media aritmética simple $((100 + 120) / 2 = 110)$, no sería correcto para la velocidad media en un viaje de ida y vuelta. La media armónica es la adecuada aquí.
+
+La fórmula es: $\frac{n}{\sum (1/x_i)}$ donde n es el número de valores.
+Para el ejemplo: $2 / ((1/100) + (1/120)) = 2 / (0.01 + 0.008333) = 2 / 0.018333 = \textbf{109.09 km/h}$ (aproximadamente).
+
+---
+
+**La "Debilidad" de la Media:**
+
+La media es muy útil, ¡pero tiene un punto débil! Es muy sensible a los **valores atípicos (outliers)**. Un outlier es un dato que es mucho más grande o mucho más pequeño que el resto.
+
+**Ejemplo para recordar:**
+Imagina el salario de 5 personas en una pequeña empresa:
+* Persona 1: $1,000
+* Persona 2: $1,200
+* Persona 3: $1,100
+* Persona 4: $1,300
+* Persona 5 (el dueño): $100,000
+
+Si calculas la media: $(1000 + 1200 + 1100 + 1300 + 100000) / 5 = 104600 / 5 = \textbf{$20,920}$
+
+¿Crees que $20,920 es un salario "representativo" para la mayoría de los empleados? ¡Para nada! Ese $100,000 del dueño distorsiona completamente la media, haciéndola parecer mucho más alta de lo que realmente es para la mayoría. En este caso, la media no nos da una buena idea de lo que "normalmente" ganan.
+
+---
+
+### 2. La Mediana: El "Punto Medio" Robusto
+
+La mediana es el valor que está **justo en el medio** de un conjunto de datos **ordenados**. Piensa en ella como la persona que se para en el centro de una fila después de que todos se han acomodado por altura.
+
+**La gran ventaja de la mediana:** Es **mucho más robusta** (resistente) que la media a los valores atípicos. No le afectan tanto los valores extremos.
+
+**¿Cómo se calcula?**
+
+1.  **Ordena** todos los datos de menor a mayor (¡esto es crucial!).
+2.  Busca el valor central.
+
+**Casos:**
+
+* **Si el número de observaciones es impar:** La mediana es el valor que está exactamente en el medio.
+    * **Ejemplo para recordar:** Las edades de 5 amigos: 10, 12, **15**, 18, 20.
+        * Después de ordenar: 10, 12, **15**, 18, 20
+        * La mediana es **15**. (Hay 2 valores antes y 2 después).
+
+* **Si el número de observaciones es par:** No hay un valor central exacto. La mediana es el **promedio de los dos valores centrales**.
+    * **Ejemplo para recordar:** Las edades de 6 amigos: 10, 12, 15, 18, 20, 22.
+        * Después de ordenar: 10, 12, **15**, **18**, 20, 22
+        * Los dos valores centrales son 15 y 18.
+        * La mediana es $(15 + 18) / 2 = \textbf{16.5}$.
+
+---
+
+**Retomando el ejemplo de los salarios con la mediana:**
+Salarios: $1,000, $1,100, $1,200, $1,300, $100,000
+
+1.  **Ordenar:** $1,000, $1,100, **$1,200**, $1,300, $100,000
+2.  La mediana es **$1,200**.
+
+¡Mira la diferencia! $1,200 es mucho más representativo del salario "típico" de la mayoría de los empleados que los $20,920 de la media. Por eso, en presencia de outliers, la mediana es tu mejor amiga.
+
+---
+
+**Mediana para datos agrupados en intervalos (¡Un poco más avanzado!):**
+
+Cuando los datos están agrupados en rangos (ej. 0-10, 11-20), necesitamos una fórmula especial para estimar la mediana, ya que no tenemos los valores exactos. No te preocupes por memorizarla ahora, lo importante es entender cuándo se usa.
+
+La fórmula involucra:
+* El **intervalo mediano**: Es el grupo de datos donde "cae" la mediana (donde la frecuencia acumulada alcanza la mitad del total de datos).
+* El límite inferior de ese intervalo.
+* Su amplitud (qué tan grande es el rango).
+* Su frecuencia.
+* La frecuencia acumulada de los intervalos anteriores.
+
+**Un punto clave de la Mediana:** A diferencia de la media, ¡la mediana puede usarse con **variables cualitativas ordinales**! Esto es, datos que tienen un orden pero no son números (ej. "nivel de satisfacción: bajo, medio, alto"). No puedes promediar "bajo" y "medio", pero sí puedes encontrar la categoría que está en el medio si las ordenas.
+
+---
+
+### 3. La Moda: El "Más Popular"
+
+La moda es simplemente el valor que **más se repite** en un conjunto de datos. Es como el color de coche más común que ves en la calle.
+
+**¿Cómo se calcula?**
+Solo tienes que contar qué valor aparece con mayor frecuencia.
+
+**Ejemplos para recordar:**
+
+* **Unimodal (una moda):**
+    * Colores de camisetas vendidas: Rojo, Azul, Rojo, Verde, Amarillo, Rojo, Azul.
+    * La moda es **Rojo** (aparece 3 veces).
+
+* **Bimodal (dos modas):**
+    * Número de hermanos por familia: 1, 2, 1, 3, 2, 4, 1, 2.
+    * La moda es **1 y 2** (ambos aparecen 3 veces).
+    * Una distribución bimodal significa que hay dos "picos" o grupos comunes en tus datos.
+
+* **Multimodal (varias modas):**
+    * Si hubiera tres o más valores con la misma frecuencia máxima. Es menos común, pero puede pasar.
+
+* **Sin moda:**
+    * Si todos los valores aparecen solo una vez o con la misma frecuencia.
+    * Números: 1, 2, 3, 4, 5. No hay moda.
+
+---
+
+### En Resumen: Elige la Medida Correcta
+
+* **Media:** Tu primera opción, el promedio. Útil cuando los datos son simétricos y no hay muchos outliers. ¡Cuidado con los extremos!
+* **Mediana:** La "media" de los datos ordenados. ¡Tu mejor amiga cuando hay outliers! Funciona muy bien para datos con valores extremos o distribuciones asimétricas. También sirve para datos cualitativos ordinales.
+* **Moda:** El valor que más se repite. Útil para identificar el elemento más común y es la única medida de tendencia central que puedes usar con **datos cualitativos nominales** (ej. colores, tipos de frutas, que no tienen un orden).
+
 ## 3.3. Medidas de tendencia central robustas
+
+### ¿Por qué necesitamos Medidas de Tendencia Central Robustas?
+
+Como vimos en la sesión anterior, la **media aritmética** es como una balanza: si pones un peso muy grande en un extremo (un **outlier**), la balanza se inclina y ya no te da una idea del "peso" promedio de la mayoría de los objetos. Es muy sensible a esos valores extremos.
+
+La **mediana**, por otro lado, es naturalmente robusta a los outliers. Simplemente encuentra el valor del medio y no le importa cuán grandes o pequeños sean los extremos. Sin embargo, su interpretación a veces no es tan intuitiva como la de la media, y queremos una medida que sea "parecida" a la media pero que no se vea afectada por esos valores atípicos.
+
+Aquí es donde entran en juego las **medidas de tendencia central robustas**, que son variaciones de la media diseñadas para ignorar o mitigar el impacto de los outliers. Nos centraremos en dos: la **media recortada** y la **media winsorizada**.
+
+---
+
+### 1. Media Recortada (Trimmed Mean): "Cortando los Extremos"
+
+Imagina que tienes una fila de personas ordenadas por altura, y quieres calcular la altura promedio de la "gente normal" sin que los gigantes o los enanos extremos afecten el resultado. Lo que harías es "recortar" a los más altos y a los más bajos de los extremos y luego promediar a los que quedan en el medio.
+
+Eso es exactamente lo que hace la media recortada: **elimina un cierto porcentaje de datos de cada extremo** del conjunto (una vez ordenados) y luego calcula la media con los datos restantes.
+
+* **¿Cómo funciona?**
+    1.  **Ordena** todos los datos de menor a mayor.
+    2.  Decide un **porcentaje de recorte** (por ejemplo, 10%).
+    3.  Calcula cuántos datos corresponden a ese porcentaje en cada extremo.
+    4.  **Elimina** esa cantidad de datos de la parte inferior y de la parte superior del conjunto ordenado.
+    5.  Calcula la **media aritmética** de los datos restantes.
+
+* **Notación:** Se suele decir "media recortada al Y%", donde Y es el porcentaje a eliminar de *cada* lado.
+    * Si Y = 0%, la media recortada es igual a la media aritmética normal (no se recorta nada).
+    * Si Y = 25%, se le llama **"centrimedia"**.
+
+**Ejemplo para recordar (el mismo del texto, pero explicado en pasos):**
+Tienes los siguientes datos y te piden calcular una media recortada al 10%:
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] (¡Ya están ordenados!)
+
+1.  **Número total de datos (n):** 10
+2.  **Porcentaje de recorte:** 10%
+3.  **Cantidad de datos a recortar por cada lado:** 10% de 10 datos = $0.10 \times 10 = \textbf{1 dato}$ por cada lado.
+4.  **Eliminar:** Quitas el 1 (el más pequeño) y el 10 (el más grande).
+    Los datos que quedan son: [2, 3, 4, 5, 6, 7, 8, 9]
+5.  **Calcular la media de los datos restantes:**
+    $(2 + 3 + 4 + 5 + 6 + 7 + 8 + 9) / 8 = 44 / 8 = \textbf{5.5}$
+
+En este caso particular del ejemplo del texto, el resultado da 6, pero es porque el ejemplo del texto es el siguiente:
+[1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+Si aplicamos el recorte al 10% de estos datos:
+1.  **Ordenar:** [1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+2.  **Recortar 1 dato de cada lado:**
+    Quitamos el 1 y el 11.
+    Los datos restantes son: [2, 3, 4, 5, 7, 8, 9, 10]
+3.  **Media:** $(2+3+4+5+7+8+9+10) / 8 = 48 / 8 = \textbf{6}$
+
+¡Ahí está el 6 del ejemplo! Es importante el conjunto de datos específico que se usa.
+
+* **Nivel de recorte:** A veces, en lugar de porcentajes, se habla de "nivel". Si decimos "media recortada de nivel 1", significa que se elimina 1 dato de cada extremo. "Nivel 2" eliminaría 2 datos de cada extremo, y así sucesivamente.
+
+---
+
+### 2. Media Winsorizada (Winsorized Mean): "Reemplazando los Extremos"
+
+La media winsorizada es como la media recortada, pero en lugar de simplemente eliminar los valores extremos, los **reemplaza** por los valores más cercanos que *no* fueron eliminados. Piensa que los outliers son "demasiado grandes" o "demasiado pequeños", así que los "normalizamos" al valor más extremo que consideramos aceptable.
+
+* **¿Cómo funciona?**
+    1.  **Ordena** todos los datos de menor a mayor.
+    2.  Decide un **porcentaje o nivel de "winsorización"**.
+    3.  Calcula cuántos datos extremos deben ser afectados en cada lado.
+    4.  **Reemplaza** los valores más pequeños (inferiores) por el valor más pequeño *no winsorizado*.
+    5.  **Reemplaza** los valores más grandes (superiores) por el valor más grande *no winsorizado*.
+    6.  Calcula la **media aritmética** de *todos* los datos, incluyendo los reemplazados.
+
+**Ejemplo para recordar (el mismo del texto):**
+Datos originales: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+Nos piden calcular la media winsorizada de **nivel 2**. Esto significa que los 2 valores más pequeños y los 2 valores más grandes serán modificados.
+
+1.  **Ordenar:** [1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+2.  **Identificar los valores a winsorizar:**
+    * Los 2 más pequeños: 1 y 2.
+    * Los 2 más grandes: 10 y 11.
+3.  **Identificar los valores de reemplazo:**
+    * El valor más pequeño *no winsorizado* es el 3.
+    * El valor más grande *no winsorizado* es el 9.
+4.  **Reemplazar:**
+    * Reemplazamos 1 y 2 por 3.
+    * Reemplazamos 10 y 11 por 9.
+    Los datos winsorizados son ahora: [3, 3, 3, 4, 5, 7, 8, 9, 9, 9]
+5.  **Calcular la media de los datos winsorizados:**
+    $(3+3+3+4+5+7+8+9+9+9) / 10 = 60 / 10 = \textbf{6.0}$
+
+El ejemplo del texto dice 5.9, lo que sugiere que podría haber un pequeño error de redondeo en el texto o una diferencia en la forma en que aplicaron el nivel 2. **Si seguimos la lógica de "nivel 2" como 2 valores por cada extremo, el resultado es 6.0.**
+
+Vamos a revisar el ejemplo del texto tal cual:
+"La media winsorizada de nivel 2 del ejemplo visto consistiría en realizar una media aritmética sobre el siguiente conjunto de datos:
+[2, 2, 3, 4, 5, 7, 8, 9, 9, 9] El resultado en este caso nos da un valor de 5,9."
+Si sumamos los valores que ellos proponen: $(2+2+3+4+5+7+8+9+9+9) / 10 = 58 / 10 = \textbf{5.8}$
+Esto indica que en su ejemplo, ellos reemplazaron el 1 por 2, y el 10 y 11 por 9. Si el "nivel 2" significa "reemplazar los 2 valores más pequeños y los 2 valores más grandes", entonces lo correcto sería reemplazar 1 y 2 por el 3, y 10 y 11 por el 9, como hicimos en mi explicación. La ligera discrepancia es importante notarla, pero el **concepto fundamental** de reemplazar es el mismo. Lo que sí es claro es que el 5.9 que menciona el texto no se obtiene con sus propios números [2, 2, 3, 4, 5, 7, 8, 9, 9, 9] ya que la suma es 58 y dividido por 10 da 5.8.
+
+---
+
+### ¿Cuándo usar cada una?
+
+* **Media Recortada:** Es útil cuando quieres eliminar los outliers por completo, considerándolos ruido. Si tienes un subconjunto de datos muy ruidoso en los extremos y quieres enfocarte solo en el "centro" más típico.
+* **Media Winsorizada:** Es preferible cuando no quieres "perder" datos, sino que quieres que los outliers sigan influyendo de alguna manera (limitada) en la media, al arrastrarlos hacia el centro de la distribución. Esto puede ser útil si crees que los outliers, aunque extremos, aún contienen cierta información relevante, pero su magnitud real distorsiona demasiado.
+
+---
+
+### Conclusión: La Importancia de la Robustez
+
+La idea principal detrás de estas medias es precisamente **evitar que los valores atípicos (outliers) distorsionen la medida de tendencia central**. Al hacerlo, obtenemos un valor que es mucho más representativo de la "mayoría" de los datos, un valor de tendencia central que refleja los patrones más típicos y no los casos excepcionales.
+
+Estas herramientas son muy valiosas en el análisis de datos reales, donde los errores de medición, los eventos inusuales o los datos anómalos son una constante.
+
+
 ## 3.4. Medidas de dispersión
+
+### ¿Qué son las Medidas de Dispersión?
+
+Si las medidas de tendencia central (media, mediana, moda) nos dicen dónde está el "centro" de nuestros datos, las **medidas de dispersión** nos dicen qué tan "esparcidos" o "agrupados" están esos datos alrededor de ese centro. Son como una linterna que nos ayuda a ver si los datos están muy juntos, formando un grupo apretado, o si están muy separados, abarcando un amplio rango de valores.
+
+Imagina que dos equipos de baloncesto tienen la misma altura promedio (la media), pero en el Equipo A, todos miden casi lo mismo, mientras que en el Equipo B, hay jugadores muy bajitos y otros muy altos. Las medidas de dispersión nos ayudarían a ver esa diferencia.
+
+Vamos a explorar las más importantes:
+
+1.  **Rango**
+2.  **Varianza**
+3.  **Desviación Típica (o Estándar)**
+4.  **Coeficiente de Variación**
+
+---
+
+### 1. Rango: La "Distancia Total"
+
+El **rango** es la medida de dispersión más sencilla y directa. Simplemente nos dice la "distancia" entre el valor más pequeño y el valor más grande en nuestro conjunto de datos.
+
+* **¿Cómo se calcula?**
+    $\text{Rango} = \text{Valor Máximo} - \text{Valor Mínimo}$
+
+**Ejemplo para recordar:**
+Tienes las calificaciones de un examen en tu clase: 5, 7, 8, 9, 10.
+* Valor Máximo = 10
+* Valor Mínimo = 5
+* Rango = $10 - 5 = \textbf{5}$
+
+**Limitación:** El rango es fácil de calcular, pero tiene una gran debilidad: solo usa dos valores (el extremo superior e inferior) y **ignora por completo cómo se distribuyen los datos intermedios**. Por ejemplo, dos conjuntos de datos podrían tener el mismo rango pero ser muy diferentes por dentro.
+
+---
+
+### 2. Varianza: El "Promedio de las Desviaciones Cuadradas"
+
+La **varianza** es una medida de dispersión mucho más completa que el rango porque toma en cuenta **todos los valores** en el conjunto de datos. La idea es ver cuánto se "desvía" cada dato individual de la media y luego promediar esas desviaciones.
+
+* **El concepto clave:** Mide la **dispersión promedio** de los datos respecto a su **media**.
+* **¿Por qué se eleva al cuadrado?** Cuando calculamos la diferencia de cada dato con la media, algunas diferencias serán positivas (el dato es mayor que la media) y otras serán negativas (el dato es menor que la media). Si las sumáramos directamente, se anularían entre sí, dando un resultado de cero. Al elevarlas al cuadrado, todas se vuelven positivas, y así podemos sumarlas para obtener una medida real de dispersión.
+
+* **Fórmula (Varianza Poblacional):** $\sigma^2 = \frac{\sum (x_i - \mu)^2}{N}$
+    * $\sigma^2$ (sigma al cuadrado) es la varianza poblacional.
+    * $x_i$ es cada valor individual de los datos.
+    * $\mu$ (mu) es la media de la población.
+    * $N$ es el número total de datos en la población.
+
+**Ejemplo simple para entender la idea:**
+Imagina 3 personas con las siguientes edades: 10, 12, 14.
+1.  **Calcula la media ($\mu$):** $(10 + 12 + 14) / 3 = 12$
+2.  **Calcula la desviación de cada dato respecto a la media y elévala al cuadrado:**
+    * $(10 - 12)^2 = (-2)^2 = 4$
+    * $(12 - 12)^2 = (0)^2 = 0$
+    * $(14 - 12)^2 = (2)^2 = 4$
+3.  **Suma las desviaciones al cuadrado:** $4 + 0 + 4 = 8$
+4.  **Divide por el número de datos (N):** $8 / 3 = \textbf{2.67}$ (Esta sería la varianza)
+
+**Puntualización importante (el denominador n vs. n-1):**
+Cuando trabajamos con una **muestra** de datos (que es lo más común), la fórmula de la varianza muestral divide por $(n-1)$ en lugar de $n$. Esto se hace para que el estimador de la varianza sea **"insesgado"**, es decir, que sea una estimación más precisa de la varianza real de la población. No te preocupes por los detalles ahora, solo recuerda que si ves $(n-1)$ es porque se está trabajando con una muestra.
+
+---
+
+### 3. Desviación Típica o Desviación Estándar ($\sigma$): La "Dispersión Promedio en Unidades Originales"
+
+El problema con la varianza es que, al elevar las desviaciones al cuadrado, la unidad de medida de la varianza también está al cuadrado. Si tus datos son edades en años, la varianza estará en "años cuadrados", ¡lo cual es difícil de interpretar!
+
+Para solucionar esto, simplemente tomamos la **raíz cuadrada de la varianza**. Esto nos devuelve a las unidades originales de los datos y es mucho más fácil de interpretar.
+
+* **¿Cómo se calcula?** Es la raíz cuadrada positiva de la varianza.
+    $\sigma = \sqrt{\sigma^2}$
+
+* **Fórmula (Desviación Típica Poblacional):** $\sigma = \sqrt{\frac{\sum (x_i - \mu)^2}{N}}$
+
+**Ejemplo simple (continuando con las edades):**
+* Varianza ($\sigma^2$) = 2.67
+* Desviación Típica ($\sigma$) = $\sqrt{2.67} = \textbf{1.63}$
+
+Esto significa que, en promedio, las edades se desvían alrededor de 1.63 años de la media (12 años).
+
+**Ejemplo 3 (del texto, con Gasol):**
+El texto menciona una fórmula alternativa para calcular la varianza/desviación típica, que es computacionalmente más eficiente, especialmente con tablas de frecuencia:
+$\sigma = \sqrt{\frac{\sum x_i^2 \cdot f_i}{N} - \mu^2}$
+Esta fórmula es matemáticamente equivalente a la anterior y se usa cuando ya tienes la media y quieres una forma más directa de calcular la varianza, o cuando trabajas con datos agrupados o con frecuencias. Lo importante es que, al final, la desviación típica nos dará un número que representa la dispersión en las mismas unidades que los puntos de Gasol (puntos anotados).
+
+---
+
+### 4. Coeficiente de Variación (CV): Comparando la "Dispersión Relativa"
+
+La desviación típica nos dice la dispersión en las unidades de los datos. Pero, ¿qué pasa si queremos comparar la dispersión de dos conjuntos de datos que están en **escalas o unidades de medida completamente diferentes**? Por ejemplo, comparar la dispersión de los pesos (en kg) y las estaturas (en metros) de un grupo de personas.
+
+Aquí es donde entra el **coeficiente de variación**. Nos da una medida de la dispersión **relativa** a la media. Al dividir la desviación típica por la media, las unidades se "cancelan", dejándonos con un valor sin unidades que podemos usar para comparar.
+
+* **¿Cómo se calcula?**
+    $\text{CV} = \frac{\sigma}{\mu}$
+
+**Ejemplo 4 (del texto):**
+* **Variable 1: Estatura**
+    * Media ($\mu_{\text{estatura}}$) = 1.68 m
+    * Desviación Típica ($\sigma_{\text{estatura}}$) = 0.07 m
+    * $\text{CV}_{\text{estatura}} = 0.07 / 1.68 = \textbf{0.0417}$ (o 4.17%)
+
+* **Variable 2: Peso**
+    * Media ($\mu_{\text{peso}}$) = 57 Kg
+    * Desviación Típica ($\sigma_{\text{peso}}$) = 5 Kg
+    * $\text{CV}_{\text{peso}} = 5 / 57 = \textbf{0.0877}$ (o 8.77%)
+
+**Conclusión:**
+Al comparar los CV, vemos que $\text{CV}_{\text{peso}}$ (0.0877) es casi el doble de $\text{CV}_{\text{estatura}}$ (0.0417). Esto significa que, **relativamente a su propia media**, el peso de las mujeres en esa población es casi dos veces más variable (o disperso) que su estatura. Aunque 5 kg es un número mayor que 0.07 m, el CV nos dice que esa variación es más significativa en el contexto del peso que en el de la estatura.
+
+---
+
+### Resumen General de Medidas de Dispersión:
+
+* **Rango:** Rápido, pero ignora la mayoría de los datos y es muy sensible a los outliers.
+* **Varianza ($\sigma^2$):** Toma en cuenta todos los datos, pero sus unidades están al cuadrado, lo que dificulta la interpretación directa. Es el paso intermedio para la desviación típica.
+* **Desviación Típica ($\sigma$):** La más usada y fácil de interpretar. Mide la dispersión promedio en las mismas unidades que los datos originales. ¡Tu mejor amiga para entender la "escala" de la dispersión!
+* **Coeficiente de Variación (CV):** Ideal para comparar la dispersión entre conjuntos de datos que tienen diferentes unidades o escalas. Nos da una idea de la dispersión "relativa".
+
+Comprender la dispersión es tan importante como entender la tendencia central. Te permite ver si tu "centro" es representativo de un grupo homogéneo o de uno muy diverso.
+
+
 ## 3.5. Medidas de dispersión robustas
 ## 3.6. Medidas de posición y forma
 ## 3.7 Gráficos de caja
 ## 3.8 Datos atípicos y análisis exploratorio de datos
+
+Materia 02 - Analisis Interpretación de datos - Tema 1
 

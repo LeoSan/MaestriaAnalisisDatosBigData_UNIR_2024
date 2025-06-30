@@ -1,6 +1,7 @@
 ## Curso de R 
 ### Pasos para Instalar R y RStudio
 
+# Modulo 1
 Instalar R y RStudio es como montar tu estación de trabajo de análisis de datos. Primero instalaremos el "motor" (R) y luego la "interfaz amigable" (RStudio).
 ---
 
@@ -22,3 +23,5 @@ Instalar R y RStudio es como montar tu estación de trabajo de análisis de dato
 - Es muy básica la configuracion podemos acceder en ella busando tools/ configuracion global 
 - Imagen de Ejemplo
 - [ejemplo](../info/info_001.png)
+
+# Modulo 2

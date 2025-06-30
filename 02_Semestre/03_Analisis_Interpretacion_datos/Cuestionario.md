@@ -227,3 +227,136 @@ D. Ninguna de las anteriores es correcta
 
 
 # Tema 3. Medidas que resumen la información
+
+
+1. ¿Cuántos cuartiles hay en una distribución de datos?
+A. Paradójicamente hay dos, puesto que son tres pero como la mediana es el
+segundo se quedan en dos.
+B. 4.
+C. 3. -> **Correcto**
+D. Depende si el conjunto de datos presenta frecuencias repetidas.
+
+
+2. ¿Qué cuantiles equivalen a la mediana?
+A. El quinto decil.
+B. El segundo percentil.
+C. El segundo cuartil.
+D. Las respuestas A y C son correctas. -> **Correcto**
+
+
+3. La mediana…
+A. Es el valor central pero solo si el conjunto de datos es par.
+B. Es el valor central pero solo si el conjunto de datos es impar.
+C. Es el valor central siempre. -> **Correcto**
+D. Depende si el conjunto de datos presenta frecuencias repetidas.
+
+
+4. La media…
+A. Se ve afectada drásticamente por los valores extremos.
+B. Es una medida con una representatividad mayor que la mediana.
+C. Es más útil que la mediana para las variables cualitativas.
+D. No es útil ni calculable para las variables cualitativas.
+E. Las respuestas A y D son correctas. -> **Correcto**
+
+5. La medida estadística que menos se ve afectada por los valores atípicos es:
+A. La desviación estadística.
+B. La mediana. -> **Correcto**
+C. La media aritmética.
+D. La media armónica.
+
+
+6. En la fórmula de la mediana para datos agrupados: ¿Qué representan las letras y
+símbolos?
+A. es el límite inferior del intervalo mediano. -> **Correcto**
+B. corresponde con la posición que debería ocupar la mediana dentro del
+conjunto de datos.
+C. es la altura de cada intervalo.
+D. es el límite inferior del intervalo anterior al mediano.
+E. Las repuestas A y B son correctas.
+
+
+7. La varianza…:
+A. Es parecida a la desviación típica.
+B. Aporta la misma información sobre la dispersión que la desviación típica.
+C. junto con la desviación típica y la desviación estándar conforman las
+medidas de dispersión más conocidas.
+D. Es el cuadrado de la desviación típica.
+E. Las repuestas B y D son correctas. -> **Correcto**
+
+
+8. El diagrama de cajas se construye con:
+A. Cuatro valores: La mediana, el cuartil 1, el cuartil 3 y la desviación típica.
+B. Cuatro valores: La mediana, el cuartil 1, el cuartil 3 y la varianza.
+C. Cinco valores: La mediana, el cuartil 1, el cuartil 3, el mínimo y el máximo.
+D. Los cinco valores de C. más los valores atípicos sin los cuales no se puede
+construir. -> **Correcto**
+
+
+9. Una medida estadística que nos permite comparar entre diferentes poblaciones
+es:
+A. El coeficiente de variación. -> **Correcto**
+B. La desviación estándar.
+C. La puntuación tipificada.
+D. Las respuestas A y C son correctas.
+
+10. En cuanto a la asimetría…
+A. Es positiva cuando la cola está a la derecha y la Moda es mayor que la
+media.
+B. Es negativa cuando la cola está a la izquierda y la Moda es mayor que la
+media.
+C. Es negativa cuando la cola está a la derecha y la Moda es menor que la
+media.
+D. Es positiva cuando la cola está a la derecha y la Moda es menor que la
+media.
+E. Las respuestas B y D son correctas. -> **Correcto**
+
+## Videoclase 1. Medidas de Tendencia Central y Dispersión
+- ¿Cuál de las siguientes es una medida de tendencia central?
+- Media
+
+- ¿Qué mide la mediana en un conjunto de datos?
+- El valor central cuando los datos están ordenados.
+
+- ¿Cuál es la principal diferencia entre la media y la moda?
+- La media es el promedio de todos los valores, mientras que la moda es el valor que más se repite.
+
+- ¿Qué mide la desviación estándar?
+- La dispersión de los datos respecto a la media.
+
+- ¿Cuál de las siguientes es una medida de dispersión?
+- Rango.
+
+# Videoclase 2. Medidas de Dispersión Robusta y Posición
+- ¿Qué es la desviación absoluta mediana (MAD)?
+- Una medida robusta que indica la mediana de las desviaciones absolutas respecto a la mediana del conjunto de datos.
+
+- ¿Qué es la media truncada?
+- Una media calculada después de eliminar un porcentaje de los valores más altos y más bajos del conjunto de datos.
+
+- ¿Qué mide un percentil en un conjunto de datos?
+- La posición de un valor dentro de un conjunto de datos, dividiendo este en 100 partes iguales.
+
+- ¿Cuál de las siguientes es una característica de las medidas de dispersión robusta?
+- Son menos sensibles a los valores atípicos.
+
+- ¿Qué representa el cuartil 3 (Q3) en un conjunto de datos?
+- El valor debajo del cual se encuentra el 75 % de los datos.
+
+# Videoclase 3. Gráficos de Caja y Análisis Exploratorio de Datos
+
+- ¿Qué muestra un gráfico de caja (boxplot)?
+- La distribución de un conjunto de datos, incluyendo la mediana, cuartiles y posibles valores atípicos.
+
+- ¿Qué indican los extremos de los «bigotes» en un gráfico de caja?
+- Los valores mínimo y máximo dentro de un rango de datos sin contar los valores atípicos.
+
+- ¿Cómo se identifican los valores atípicos en un gráfico de caja?
+- Como puntos individuales fuera de los «bigotes» del gráfico.
+
+- ¿Cuál es el propósito del análisis exploratorio de datos (EDA)?
+- La mediana del conjunto de datos.
+
+- ¿Qué información proporciona la línea central en un gráfico de caja?
+- La mediana del conjunto de datos.
+
+# Tema 4. Regresión y correlación
