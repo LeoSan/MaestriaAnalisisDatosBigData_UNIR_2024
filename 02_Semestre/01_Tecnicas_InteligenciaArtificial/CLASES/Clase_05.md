@@ -1,95 +1,63 @@
 # Primera Clase 
-> 16 Mayo 2025 - Presencial - Grabada 
+> 30 Junio 2025 - Presencial 
 
 - Profesora: Adriana Cervantes Castillo
 
-# Tema: Redes Neuronales 
-**Caracteristicas**
-- Inspiarda de la bilogia huamana
-- trata de emular el funcionamiento del cerebro humamano pero aun sin conciencia
-- son utilies una vez apredndiad la funcion obejtivo se puede usar facil despues
-- El tiempo de entrenamiento es mucho mayor que arbol de decisiones
-- Se considera de modelo de caja negra por lo dificil de seguir
-- Es muy usada porque se adapta puede trabajar con datos ruidosos y tener buenos resultados
-- Se usa en problemas complejos con mucha información o dificil de comprender. 
+Claro que sí. La imagen muestra una tabla de contenido con cinco tipos de redes neuronales. Te explicaré cada una de ellas de una manera sencilla para que las recuerdes fácilmente:
 
-**Como funciona**
-- se genera aprenizaje cuando las neuronas se conectan
-- Generalmente son tres capas la capa de entrada, capa oculta, capa de salida
-- Si no tienes dominio del problemas los Pesos de cada entrada se esocgen de manera aleatoria
-- Cada neurona se le llama percetrón
-- Internamente solo es una condicional llamada umbral que permite tomar la decisión basada de la cantidad total de entradas
-  - Como inciamos:
-      - Primero la creamos
-      - Segundo la Compilación
-      - Tercero la entrenamos
-      - Cuarto la Optimizamos
-- Flatten es una propiedad que aplasta las imagenes en vectores
-- Dense: Nos indica el tipo de la densidad
+---
 
-**Referencias**
-- https://www.youtube.com/watch?v=CU24iC3grq8&t=22s
-- https://www.youtube.com/watch?v=iX on3VxZzk&t=250s
-- https://www.youtube.com/watch?v=CU241C3grq8 https://www.youtube.com/watch?v=uM4u7P2xk08
-- https://www.youtube.com/watch?v=ITH4mUc|DVk
-- https://colab.research.google.com/drive/1EjxAt OFrdpNgCNmV15XMCE8RI3PF3sD?usp=sharIng#scrollTo=hzkGVPqnSvRE
-- https://colab.research.google.com/drive/1GA2GnhpAIVO7|LV88|W1NgvAhflskh8q?hl=es
-- https://keras-io.translate.goog/examples/vision/mnist_convnet/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr pto=tc
+## Contenido: Tipos de Redes Neuronales
 
-**Introducción a las Redes Neuronales**
+### 1. Redes Prealimentadas (Feedforward Neural Networks)
 
-Las redes neuronales son un modelo computacional inspirado en el funcionamiento del cerebro humano. Su bioinspiración radica en cómo las neuronas reciben estímulos, transmiten impulsos nerviosos y se conectan entre sí (sinapsis).
+* **Imagina un camino de una sola dirección:** Piensa en la información como un río que fluye desde una fuente (la entrada) hacia un destino final (la salida). En las redes prealimentadas, los datos viajan en una única dirección, sin retroceder ni formar ciclos.
+* **Capas de información:** El río pasa por diferentes "estaciones de peaje" (capas ocultas) antes de llegar a su destino. Cada estación procesa la información y la pasa a la siguiente.
+* **¿Para qué sirven?** Son las redes neuronales más básicas y se usan para tareas como:
+    * **Clasificación:** Decidir si una imagen es de un perro o un gato.
+    * **Regresión:** Predecir el precio de una casa.
+* **Recuerdo fácil:** "Prealimentadas" porque la información se **pre-alimenta** hacia adelante.
 
-**Características y Ventajas:**
+### 2. Redes Neuronales Recurrentes (Recurrent Neural Networks - RNNs)
 
-* Son adecuadas para resolver **problemas complejos**.
-* El **tiempo de entrenamiento** de las redes neuronales puede ser largo.
-* Una vez aprendida la función objetivo, la **evaluación de nuevas instancias es rápida**.
-* Se comportan de manera **robusta frente al ruido**, lo que les permite ofrecer buenos resultados incluso si los ejemplos de entrenamiento contienen errores.
+* **Imagina un cerebro con memoria:** A diferencia del río de una sola dirección, las RNNs tienen la capacidad de recordar lo que ha pasado antes. Piensa en alguien que está leyendo un libro; para entender la frase actual, necesita recordar las frases anteriores.
+* **Bucles internos:** Tienen un "bucle de memoria" que les permite tomar decisiones basadas no solo en la entrada actual, sino también en las entradas pasadas.
+* **¿Para qué sirven?** Son ideales para datos secuenciales, donde el orden importa:
+    * **Procesamiento de Lenguaje Natural (PLN):** Traducir idiomas, completar texto (como tu teclado).
+    * **Reconocimiento de voz:** Entender lo que dices.
+    * **Generación de música:** Crear secuencias musicales.
+* **Recuerdo fácil:** "Recurrentes" porque la información **re-circula** dentro de la red, como un recuerdo.
 
-**Aprendizaje con Redes Neuronales:**
+### 3. Redes Autoencoders (Autoencoders)
 
-El objetivo del aprendizaje es ajustar la red neuronal para que, dado un **conjunto de datos de entrenamiento** (pares de entradas y salidas conocidas), las salidas de la red se ajusten lo mejor posible a las salidas esperadas.
+* **Imagina un "artista" que comprime y descomprime:** Piensa en un autoencoder como un artista que primero toma una imagen y la reduce a su "esencia" o las características más importantes (codificación), y luego intenta reconstruirla lo más parecido posible a la original a partir de esa esencia (decodificación).
+* **Dos partes principales:**
+    * **Codificador:** Comprime la información de entrada en una representación más pequeña y densa.
+    * **Decodificador:** Descomprime esa representación para recrear la entrada original.
+* **¿Para qué sirven?** Principalmente para:
+    * **Reducción de dimensionalidad:** Simplificar datos complejos.
+    * **Detección de anomalías:** Encontrar cosas "raras" o fuera de lo común (como un billete falso).
+    * **Eliminación de ruido en imágenes:** Limpiar fotos borrosas.
+* **Recuerdo fácil:** "Autoencoder" porque se **auto-codifican** y **auto-decodifican** a sí mismas.
 
-Durante la formación de la red, los **pesos sinápticos** se asignan inicialmente de forma aleatoria. La diferencia entre la salida obtenida y la esperada se conoce como **error (o pérdida/costo)**, y este valor se utiliza para ajustar los pesos en cada iteración.
+### 4. Redes Neuronales Convolucionales (Convolutional Neural Networks - CNNs)
 
-**Componentes clave que determinan el funcionamiento de una red neuronal:**
+* **Imagina un "ojo" que busca patrones específicos:** Piensa en las CNNs como un detective con una lupa, que busca características específicas en una imagen (bordes, texturas, formas). No ven la imagen completa de una vez, sino que se enfocan en pequeñas partes.
+* **Filtros (convoluciones):** Usan "filtros" o "máscaras" que se deslizan sobre la imagen para detectar estos patrones. Cada filtro es como un pequeño detector de una característica particular.
+* **¿Para qué sirven?** Son el "rey" para el procesamiento de imágenes:
+    * **Reconocimiento de imágenes:** Identificar objetos, personas o escenas en fotos.
+    * **Clasificación de imágenes:** Decir si una imagen es de un perro, un gato, etc.
+    * **Visión por computadora:** En coches autónomos, reconocimiento facial.
+* **Recuerdo fácil:** "Convolucionales" porque usan **convoluciones** (esos filtros deslizantes) para ver la imagen.
 
-* **Arquitectura de la red:** Esto incluye el número de capas, el número de neuronas por capa y las conexiones entre neuronas de diferentes capas.
-* **Función de activación:** Como la función signo o la función escalón, que determina la salida de una neurona.
-* **Algoritmo de aprendizaje:** Principalmente la regla de aprendizaje para ajustar los pesos.
+### 5. Redes Generativas Antagónicas (Generative Adversarial Networks - GANs)
 
-**Tipos de Perceptrones:**
-
-* **Perceptrón simple:** Una unidad básica de una red neuronal que recibe múltiples señales de entrada ($x_1, x_2, \dots, x_n$), las multiplica por pesos sinápticos ($w_1, w_2, \dots, w_n$), suma estos productos y pasa el resultado a través de una función de activación para producir una salida ($y$).
-* **Perceptrón multicapa:** Consiste en múltiples capas de neuronas, incluyendo una capa de entrada, una o varias capas intermedias (o capas ocultas) y una capa de salida. Las conexiones van en una dirección, formando una red hacia adelante.
-
-**Cómo crear una Red Neuronal con TensorFlow y Keras en Python (Pasos):**
-
-1.  **Creación (1- creación):**
-    * Se importa `datasets`, `Sequential` de `tensorflow.keras` y `Flatten`, `Dense` de `tensorflow.keras.layers`.
-    * Se inicializa un modelo secuencial (`modelo = Sequential()`).
-    * Se añaden capas al modelo:
-        * `Flatten(input_shape=(28,28))`: Aplana la entrada para que sea una única dimensión.
-        * `Dense(128, activation = 'relu')`: Una capa densa con 128 neuronas y función de activación ReLU.
-        * `Dense(10, activation = 'softmax')`: Una capa de salida con 10 neuronas (probablemente para 10 clases) y función de activación softmax.
-
-2.  **Compilación (2 - compilación):**
-    * Se configura el proceso de aprendizaje del modelo.
-    * `modelo.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])`:
-        * `optimizer='adam'`: El algoritmo de optimización para ajustar los pesos.
-        * `loss='categorical_crossentropy'`: La función de pérdida para problemas de clasificación con múltiples clases.
-        * `metrics=['accuracy']`: Métrica para evaluar el rendimiento del modelo durante el entrenamiento.
-
-3.  **Entrenamiento (3 - entrenamiento):**
-    * Se entrena el modelo con los datos.
-    * `modelo.fit(x_train, y_train, epochs=10, verbose=1)`:
-        * `x_train`, `y_train`: Datos de entrenamiento y sus etiquetas.
-        * `epochs=10`: Número de veces que el modelo recorrerá todo el conjunto de datos de entrenamiento.
-        * `verbose=1`: Muestra una barra de progreso durante el entrenamiento.
-
-4.  **Predicción (4 - predicción):**
-    * Una vez entrenado, el modelo puede hacer predicciones sobre nuevos datos.
-    * `predicciones = modelo.predict(x_test)`: Realiza predicciones sobre el conjunto de datos de prueba (`x_test`).
-
-
+* **Imagina dos artistas rivales:** Piensa en dos artistas:
+    * **El Generador (falsificador):** Intenta crear algo tan real que engañe al otro artista (por ejemplo, una imagen de una persona que no existe).
+    * **El Discriminador (detective):** Intenta distinguir entre lo que es real y lo que el Generador creó (lo "falso").
+* **Juego de "gato y ratón":** Ambos se entrenan al mismo tiempo. El Generador mejora para crear cosas más realistas, y el Discriminador mejora para detectar mejor las falsificaciones.
+* **¿Para qué sirven?** Son asombrosas para generar contenido nuevo y realista:
+    * **Creación de imágenes realistas:** Rostros de personas que no existen, paisajes, objetos.
+    * **Transferencia de estilo:** Hacer que una foto parezca una pintura de Van Gogh.
+    * **Generación de datos sintéticos:** Crear datos para entrenar otros modelos.
+* **Recuerdo fácil:** "Generativas" porque **generan** cosas nuevas. "Antagónicas" porque hay una **antagonía** (rivalidad) entre el generador y el discriminador.
