@@ -404,3 +404,303 @@ confianza menor.
 - Random Forest es un método de ensemble de la categoría:
 - Bagging => Random Forest plantea la ejecución de varios árboles en paralelo y combinando sus salidas para producir un resultado único
 
+
+# Tema 4:  Reglas
+
+1. Si en un problema se desea identificar los síntomas correspondientes a tres
+enfermedades conocidas, las técnicas apropiadas para resolver el problema son
+(selecciona las opciones adecuadas):
+A. Árboles de decisión.
+B. Algoritmo apriori.
+C. Algoritmo de recubrimiento secuencial.
+D. Algoritmo PRISM.
+
+
+2. Si en un problema se desea identificar relaciones entre síntomas de personas
+que presentan ciertas enfermedades, las técnicas apropiadas son:
+A. Árboles de decisión.
+B. Algoritmo apriori.
+C. Algoritmo de recubrimiento secuencial.
+D. Algoritmo PRISM.
+
+
+3. Indica cuáles de las siguientes afirmaciones son verdaderas:
+A. Las reglas de clasificación predicen la clase.
+B. Las reglas de asociación predicen combinaciones de atributos o la propia
+clase.
+C. Los algoritmos que aprenden reglas de asociación buscan combinaciones
+de pares atributo-valor que ocurren con cierta frecuencia.
+D. Las reglas de asociación tienen el mismo objetivo que las reglas de
+clasificación.
+
+4. Si se quiere conocer el porcentaje de ejemplos que cumplen una regla respecto
+del total de ejemplos, se ha de aplicar la medida de:
+A. Cobertura.
+B. Soporte.
+C. Confianza.
+D. Cubierta.
+
+
+5. Si se quiere conocer el porcentaje de ejemplos que cumplen una regla respecto
+de todos los ejemplos que sólo cumplen el antecedente, se ha de aplicar la medida
+de:
+A. Cobertura.
+B. Soporte.
+C. Confianza.
+D. Cubierta.
+
+
+6. ¿Cuáles de los siguientes algoritmos se puede emplear para el aprendizaje de
+reglas de clasificación?
+A. PRISM.
+B. C4.5.
+C. Apriori.
+D. ID3.
+
+7. Indica cuál de las siguientes afirmaciones es correcta:
+A. No es posible mapear árboles de decisión a reglas de clasificación.
+B. Los algoritmos de recubrimiento secuencial aprenden una regla en cada
+iteración.
+C. En cada iteración, el algoritmo de recubrimiento secuencial exige que la
+regla cubra todos los ejemplos positivos.
+D. Apriori es un algoritmo de recubrimiento secuencial.
+
+
+8. Indica cuáles de las siguientes afirmaciones son correctas:
+A. El procedimiento básico, para aprender una regla, utilizado en los
+algoritmos de recubrimiento secuencial tiene como parámetro el conjunto de
+todas las clases.
+B. El procedimiento, básico para aprender una regla, utilizado en los
+algoritmos de recubrimiento secuencial añade a la regla un único par atributovalor en cada iteración.
+C. El procedimiento de recubrimiento secuencial devuelve una única regla.
+D. El algoritmo de recubrimiento secuencial elimina los ejemplos cubiertos por
+la regla generada en cada iteración.
+
+
+9. Indica cuáles de las siguientes afirmaciones son correctas respecto al algoritmo
+PRISM:
+A. Es un algoritmo de recubrimiento secuencial.
+B. Utiliza la medida de precisión o confianza para generar las reglas.
+C. Parte de la regla más específica alcanzando la más general.
+D. Es un algoritmo de generación de conjuntos de reglas de los más simples
+
+10. Indica cuáles de las siguientes afirmaciones son verdaderas respecto al
+algoritmo apriori:
+A. Genera ítem-sets.
+B. Utiliza la medida de confianza para evaluar las reglas obtenidas.
+C. No genera reglas sino ítem-sets.
+D. Valora los ítem-sets generados mediante una medida de confianza.
+
+## Videoclase 1. “A priori” y reglas de asociación
+
+- El algoritmo Apriori puede ser considerado:
+- Una forma de representación del conocimiento.
+- Un modelo de búsqueda de relaciones en los datos.
+- Un sistema de generación de reglas.
+- Todas las anteriores son válidas. -> **correcto** 
+
+- ¿Qué es un ítem-set?:
+- Un conjunto de pares atributo-valor.
+
+- El algoritmo Apriori tiene tres fases, que son:
+- El algoritmo Apriori tiene dos fases.
+
+
+- Al inicio del algoritmo Apriori buscamos que los pares ítem-set cumplan:
+- Un nivel de cobertura mínimo.
+
+
+- ¿Cuál de los siguientes supuestos reales podría ser codificado como un conjunto de reglas de asociación?
+- Todos podrían ser codificados como reglas de asociación.
+
+## Videoclase 2. PRISM y reglas de clasificación
+
+- PRISM es un algoritmo de:
+- Recubrimiento secuencial.
+
+- PRISM está planteado de forma que pueda resolver:
+- Ninguna de las anteriores.
+
+- ¿Qué método utiliza PRISM para seleccionar la mejor restricción?:
+- Se selecciona la mejor restricción en base a la confianza y en caso de empate se escoge la restricción de mayor cobertura.
+
+
+- El algoritmo PRISM termina generando una regla cuando:
+- No hay ejemplos negativos cubiertos por la regla.
+
+- De los siguientes casos de uso, ¿cuáles podrían ser modelados por un sistema de generación de reglas de clasificación como PRISM?:
+- Ninguno de los anteriores.
+
+
+
+
+## Videoclase 3. Otros algoritmos de clasificación
+
+
+- ¿En qué paradigma encuadramos los modelos de clasificación Naive Bayes, SVM y KNN?:
+- Aprendizaje supervisado.
+
+- Naive Bayes en un modelo de inteligencia artificial:
+- Probabilístico => Se trata de un modelo probabilístico basado en la probabilidad condicionada.
+
+- Las máquinas de vectores de soporte o SVM son un modelo de inteligencia artificial:
+- De transformación de dimensionalidad.
+
+- En el método de los K-vecinos, el parámetro K indica:
+- El número de puntos más cercanos a un punto dado.
+
+- Queremos sobre nuestra base de datos de clientes de una gran tienda de muebles, establecer asociaciones de preferencia de compra entre aquellos que adquieren un sillón motorizado. Podremos modelar nuestro problema mediante:
+- Ninguna de las anteriores.
+
+
+
+# Tema 5: Redes neuronales artificiales
+
+1. Indica cuáles de las siguientes afirmaciones son correctas:
+A. Las neuronas artificiales simulan el comportamiento de las neuronas
+biológicas.
+B. Las neuronas artificiales pueden tener varias salidas que toman valores
+diferentes.
+C. Las neuronas artificiales pueden tener varias entradas que toman valores
+diferentes.
+D. Las entradas de las neuronas artificiales se ponderan con un peso.
+2. Selecciona las opciones correctas. En la fase de entrenamiento de una red
+neuronal:
+A. Se ajusta el número de capas de la red neuronal.
+B. Se ajustan los pesos de los enlaces que conectan las neuronas.
+C. Se ajusta el número de neuronas por capa de la red neuronal.
+D. Ninguna de las anteriores.
+3. Indica cuál de las afirmaciones siguientes son correctas respecto a la regla de
+aprendizaje del perceptrón:
+A. Se utiliza para calcular las salidas de la red.
+B. Utiliza la diferencia entre la salida real y la salida esperada para ajustar los
+pesos.
+C. Se puede establecer una tasa de aprendizaje en la regla que pondera la
+relevancia del último peso calculado.
+D. Se utiliza para ajustar los pesos de la red.
+
+4. Indica cuáles de las siguientes funciones pueden ser utilizadas como funciones
+de activación en redes neuronales:
+A. Función escalón.
+B. Función sigmoide.
+C. Función tangente hiperbólica.
+D. Todas las anteriores son correctas.
+5. Selecciona la opción más correcta. El funcionamiento de una red neuronal queda
+determinado por:
+A. El número de capas, número de neuronas y las conexiones entre
+neuronas.
+B. La función de activación, el número de capas, el número de neuronas y los
+pesos entre las neuronas.
+C. El algoritmo de aprendizaje, la regla de aprendizaje, el número de capas,
+número de neuronas y las conexiones entre neuronas.
+D. El algoritmo de aprendizaje, la función de activación, el número de capas,
+número de neuronas y las conexiones entre neuronas.
+6. Indica cuáles de las siguientes afirmaciones son correctas:
+A. Las redes neuronales multicapa son redes bidireccionales.
+B. Las redes neuronales multicapa son redes asociativas.
+C. Las redes neuronales multicapa son redes de alimentación hacia adelante.
+D. Las redes neuronales multicapa son redes unidireccionales
+
+7. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
+multicapa de retropropagación:
+A. Todas las neuronas de una capa se conectan con todas las neuronas de
+las capas posteriores.
+B. Para el ajuste de los pesos se utiliza el gradiente del error.
+C. Para el ajuste de los pesos se utiliza el error cuadrático medio.
+D. Se utilizan las mismas fórmulas para calcular los pesos relativos a las
+neuronas de salida y los relativos a las neuronas ocultas.
+8. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
+recurrentes:
+A. Emulan la capacidad de almacenamiento de la memoria humana.
+B. Emulan la capacidad de asociación de la memoria humana.
+C. Las salidas de la red alimentan las entradas.
+D. La red Hopfield es una red recurrente.
+9. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
+Hopfield:
+A. El estado de la red viene determinado por los pesos de los enlaces.
+B. El objetivo es que la red sea capaz de almacenar unos determinados
+estados.
+C. El objetivo es que la red sea capaz de almacenar unas memorias
+fundamentales.
+D. No es preciso comprobar que la red sea capaz de almacenar memorias
+fundamentales.
+
+10. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
+Hopfield:
+A. Son redes bidireccionales asociativas.
+B. Se utilizan en reconocimiento de imágenes.
+C. Siempre alcanzan un estado estable correspondiente a una memoria
+fundamental.
+D. Con pocas neuronas y conexiones son capaces de almacenar una gran
+cantidad de información
+
+
+## Videoclase 1. Bioinspiración de las RNA
+- ¿Qué implica que las redes neuronales artificiales sean bioinspiradas?:
+- Emulan un comportamiento presente en la naturaleza, como el del cerebro humano.
+
+- ¿Qué función realizan las dendritas de las neuronas
+- Reciben el impulso nervioso. => Las dendritas son las partes de la neurona encargadas de recibir el impulso nervioso
+
+
+- ¿Con qué parte de la neurona podríamos identificar la salida de una red neuronal artificial?:
+- Axón -> El axón neuronal es el que envía la señal a otras neuronas o a efectores como los músculos, trazando un símil posible con la salida de una red neuronal. 1
+
+- ¿Cuáles de las siguientes afirmaciones no puede ser considerada ventaja de una red neuronal artificial?:
+- Necesidad muy escasa de recurso computacional. => Por lo general, las redes neuronales artificiales tienen unos requisitos computacionales considerables.
+
+- ¿Cuáles de las siguientes afirmaciones pueden ser consideradas desventajas de una red neuronal artificial?
+- Necesidad de gran cantidad de datos.
+- Dificultad de interpretación del proceso para llegar a los resultados.
+-  Cierta tendencia al sobreajuste.
+-  Todas las anteriores. -> *CORRECTO*
+
+## Videoclase 2. Tipología de RNA
+- La red neuronal más longeva es:
+- El perceptrón.
+
+- Las funciones de activación en las redes neuronales feedforward pueden ser:
+- Todas las anteriores -> Tanto la sigmoide, como la tangente hiperbólica y arco tangente, son funciones que pueden ser usadas en las RNA feedforward.
+
+- El mecanismo de retropropagación transmite el error recogido a la salida de la red neuronal únicamente hacia la capa oculta en conexión directa con la capa de salida:
+- Falso. Se redirige a toda la red =>  El error se transmite a toda la red neuronal para provocar una nueva actualización de pesos en función de los resultados obtenidos.
+
+- Si nuestro dataset está formado por series temporales de temperaturas recogidas a lo largo de una semana, un modelo óptimo de red neuronal para resolver un problema de predicción sería:
+- Una red neuronal recurrente.
+
+- Una convolución en una red neuronal convolucional es:
+- La aplicación de un filtro o máscara para extracción de características en imágenes.
+
+## Videoclase 3. Casos de uso RNA
+- ¿En qué paradigma encuadramos las redes neuronales artificiales?:
+- Ninguna de las anteriores.
+
+- ¿Qué tipo de problema tendríamos que afrontar para predecir la tensión arterial de un paciente en base a un conjunto de características del mismo?:
+- Clasificación.
+
+- ¿Qué tipo de RNA implementaríamos para un vehículo autónomo que necesita soporte a la toma de decisiones mediante reconocimiento de patrones en imágenes en tiempo real captadas en la propia vía?
+- Red neuronal convolucional.
+
+- Contamos con una base de clientes etiquetada. El predecir mediante una red neuronal si un cliente de un préstamo bancario amortizará el mismo en tiempo o no podría ser resuelto mediante técnicas de:
+- Clasificación.
+
+- Deseamos simular el comportamiento de una máquina de clasificación de monedas mediante una red neuronal, ¿es posible?:
+- Sí, mediante una red neuronal feedforward que pueda predecir la clase de una moneda determinada a través de datos aprendidos.
+
+# TEMA 6: 
+
+## Videoclase 1. Bioinspiración de las RNA
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+- 

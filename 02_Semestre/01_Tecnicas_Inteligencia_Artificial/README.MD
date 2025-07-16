@@ -1060,5 +1060,20 @@ Se realiza un experimento práctico comparando el rendimiento de un Árbol de De
 
 ![Ejemplo Categoria](../01_Tecnicas_InteligenciaArtificial/info/info_001.png)
 
-# Tema 4: 
+# Tema 4: Reglas
+
+## 4.2. Reglas de clasificación y reglas de asociación
+## 4.3. Algoritmos de aprendizaje de reglas de clasificación
+## 4.4. Algoritmos de aprendizaje de reglas de asociación
+## 4.5. Aplicaciones y ejemplos de implementación
+
+
+# TEMA 5: REDES NEURONALES 
+
+# 5.2. Introducción. Fundamento biológico
+# 5.3. La neurona artificial. El perceptrón
+# 5.4. Redes neuronales multicapa
+# 5.5. Redes neuronales recurrentes. Redes Hopfield
+# 5.6. Hacia el deep learning
+# 5.7. Aplicaciones y ejemplos de implementación
 
