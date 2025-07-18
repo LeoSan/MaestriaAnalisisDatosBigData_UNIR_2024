@@ -1070,10 +1070,42 @@ Se realiza un experimento práctico comparando el rendimiento de un Árbol de De
 
 # TEMA 5: REDES NEURONALES 
 
-# 5.2. Introducción. Fundamento biológico
-# 5.3. La neurona artificial. El perceptrón
-# 5.4. Redes neuronales multicapa
-# 5.5. Redes neuronales recurrentes. Redes Hopfield
-# 5.6. Hacia el deep learning
-# 5.7. Aplicaciones y ejemplos de implementación
+## 5.2. Introducción. Fundamento biológico
+## 5.3. La neurona artificial. El perceptrón
+## 5.4. Redes neuronales multicapa
+## 5.5. Redes neuronales recurrentes. Redes Hopfield
+## 5.6. Hacia el deep learning
+## 5.7. Aplicaciones y ejemplos de implementación
 
+
+## Tema 6:  Deep learning
+
+## 6.2. El papel del deep learning dentro del machine learning
+## 6.3. Redes neuronales y deep learning
+## 6.4. Redes prealimentadas profundas
+## 6.5. Redes neuronales recurrentes profundas
+## 6.6. Autoencoders
+
+![Autoencoders](../01_Tecnicas_InteligenciaArtificial/info/info_004.png)
+![Arquitectura](../01_Tecnicas_InteligenciaArtificial/info/info_005.png)
+![Caso de uso](../01_Tecnicas_InteligenciaArtificial/info/info_006.png)
+## 6.7. Redes neuronales convolucionales
+
+
+![Ejemplo Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_002.png)
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_003.png)
+
+## 6.8. Redes generativas antagónicas
+
+## 6.9. Aprendizaje por refuerzo
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_007.png)
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_008.png)
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_009.png)
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_010.png)
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_011.png)
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_012.png)
+
+
+## 6.10. Aprendizaje por refuerzo profundo
+## 6.11. Ejemplos de implementación

@@ -564,12 +564,15 @@ diferentes.
 C. Las neuronas artificiales pueden tener varias entradas que toman valores
 diferentes.
 D. Las entradas de las neuronas artificiales se ponderan con un peso.
+
+
 2. Selecciona las opciones correctas. En la fase de entrenamiento de una red
 neuronal:
 A. Se ajusta el número de capas de la red neuronal.
 B. Se ajustan los pesos de los enlaces que conectan las neuronas.
 C. Se ajusta el número de neuronas por capa de la red neuronal.
 D. Ninguna de las anteriores.
+
 3. Indica cuál de las afirmaciones siguientes son correctas respecto a la regla de
 aprendizaje del perceptrón:
 A. Se utiliza para calcular las salidas de la red.
@@ -585,6 +588,7 @@ A. Función escalón.
 B. Función sigmoide.
 C. Función tangente hiperbólica.
 D. Todas las anteriores son correctas.
+
 5. Selecciona la opción más correcta. El funcionamiento de una red neuronal queda
 determinado por:
 A. El número de capas, número de neuronas y las conexiones entre
@@ -595,6 +599,7 @@ C. El algoritmo de aprendizaje, la regla de aprendizaje, el número de capas,
 número de neuronas y las conexiones entre neuronas.
 D. El algoritmo de aprendizaje, la función de activación, el número de capas,
 número de neuronas y las conexiones entre neuronas.
+
 6. Indica cuáles de las siguientes afirmaciones son correctas:
 A. Las redes neuronales multicapa son redes bidireccionales.
 B. Las redes neuronales multicapa son redes asociativas.
@@ -609,12 +614,14 @@ B. Para el ajuste de los pesos se utiliza el gradiente del error.
 C. Para el ajuste de los pesos se utiliza el error cuadrático medio.
 D. Se utilizan las mismas fórmulas para calcular los pesos relativos a las
 neuronas de salida y los relativos a las neuronas ocultas.
+
 8. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
 recurrentes:
 A. Emulan la capacidad de almacenamiento de la memoria humana.
 B. Emulan la capacidad de asociación de la memoria humana.
 C. Las salidas de la red alimentan las entradas.
 D. La red Hopfield es una red recurrente.
+
 9. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
 Hopfield:
 A. El estado de la red viene determinado por los pesos de los enlaces.
@@ -687,20 +694,135 @@ cantidad de información
 - Deseamos simular el comportamiento de una máquina de clasificación de monedas mediante una red neuronal, ¿es posible?:
 - Sí, mediante una red neuronal feedforward que pueda predecir la clase de una moneda determinada a través de datos aprendidos.
 
-# TEMA 6: 
+# TEMA 6:  Deep learning
 
-## Videoclase 1. Bioinspiración de las RNA
--
+
+
+
+## Videoclase 1. Tipología redes neuronales convolucionales y su aplicación práctica
+- La idea de base tras un modelo convolucional es:
+- La reducción del tamaño de las imágenes preservando sus características.
+
+- ¿Cuáles de las siguientes capas no se encuentran en un modelo convolucional?:
+- Todas se encuentran en una red neuronal convolucional. => La red puede contener capas de muestreo, entrada y salida, así como convolucionales.
+
+- ¿En qué consiste el overfitting?:
+- Pérdida de capacidad generalización por parte del modelo. => El overfitting es la pérdida de capacidad de generalización por parte del modelo, que «memoriza» los patrones que encuentra en los datos de entrenamiento.
+
+- Cuál de las siguientes técnicas no es considerada como de regularización en una red neuronal convolucional:
+- Reducción del tamaño de la imagen. => Reducir el tamaño de una imagen no es una técnica de regularización válida, además, dificultará al modelo poder extraer características relevantes.
+
+- ¿Qué librería de inteligencia artificial nos permite la configuración de arquitecturas de red neuronal convolucional?:
+- TensorFlow.
+
+# Videoclase 2. Autoencoders
+
+- La idea de base tras un autoencoder es:
+- La reducción de los datos preservando sus características.  => El planteamiento de los autoencoders se basa en la reducción de la información de entrada para aprender lo fundamental de la misma.
+
+- ¿Qué proporción mantienen las capas de entrada y salida de un autoencoder?:
+- Deben ser iguales. => La entrada y la salida de un autoencoder deben ser del mismo tamaño, ya que el proceso de decodificación devuelve el tamaño original a la entrada.
+
+- ¿Cuál de las siguientes tipologías no es considerada para los autoencoders?:
+- Integrado. => Las tipologías más comunes de autoencoder son apilado, variacional, disperso y de adición de ruido.
+
+- ¿Cuál de los siguientes casos de uso no podría ser modelado mediante un autoencoder?:
+- Predicción del precio de una vivienda sobre un conjunto de datos etiquetados.
+
+- ¿Qué librería de inteligencia artificial nos permite la creación de autoencoders?:
+- TensorFlow
+
+# Videoclase 3. Aprendizaje por refuerzo
+
+- ¿Qué cambio de paradigma plantea el aprendizaje por refuerzo?:
+- De minimizar el error a maximizar la recompensa => El aprendizaje supervisado plantea como máxima la minimización del error cometido, mientras que el aprendizaje por refuerzo en enfoca en obtener recompensas máximas sobre un entorno.
+
+- ¿Cuáles de los siguientes conceptos no relacionan a agente y ambiente en un entorno de aprendizaje por refuerzo?:
+- Función de activación. => La función de activación es propia de redes neuronales, no del paradigma del aprendizaje por refuerzo.
+
+- El aprendizaje por refuerzo sigue un enfoque:
+- Model-free. => l aprendizaje por refuerzo no se basa en la interacción con un modelo de datos y predicciones sobre instancias conocidas, si no sobre la relación con el ambiente. 
+
+- Si deseamos optimizar nuestro sistema de aprendizaje por refuerzo, deberemos potenciar:
+- El equilibrio entre técnicas de exploración y de explotación =< >
+
+- ¿Cuál de los siguientes supuestos no se podría plantear mediante el paradigma del aprendizaje por refuerzo?:
+- Clasificar un automóvil entre varias gamas posibles.
+
+
+
+
+# Tema 7: 
+
+# 
+- 
 - 
 
--
--
+- 
+- 
 
--
--
+- 
+- 
 
--
--
+- 
+- 
 
--
+- 
+- 
+
+
+# 
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+
+# 
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+
+
+
+
+
+
+
+# 
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
 - 
