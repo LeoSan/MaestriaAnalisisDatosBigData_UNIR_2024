@@ -1109,3 +1109,24 @@ Se realiza un experimento práctico comparando el rendimiento de un Árbol de De
 
 ## 6.10. Aprendizaje por refuerzo profundo
 ## 6.11. Ejemplos de implementación
+
+
+# Tema 7: Clustering. Agrupamiento o clasificación no supervisada
+
+## 7.2. Conceptos. Tipos de algoritmos de clustering.Medida de distancia
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_013.png)
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_014.png)
+
+
+## 7.3. Agrupamiento exclusivo. El algoritmo k-means
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_015.png)
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_016.png)
+
+## 7.4. Agrupamiento jerárquico. Algoritmo de agrupamiento jerárquico aglomerativo
+## 7.5. Agrupamiento probabilista. El algoritmo EM
+## 7.6. Agrupamiento solapado. El algoritmo Fuzzy C-means
+## 7.7. Aplicaciones y ejemplos de implementación

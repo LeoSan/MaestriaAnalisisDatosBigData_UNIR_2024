@@ -696,6 +696,95 @@ cantidad de información
 
 # TEMA 6:  Deep learning
 
+1. ¿Cuáles de las siguientes ramas pertenecen al aprendizaje automático clásico?
+A. Aprendizaje supervisado.
+B. Aprendizaje ensemble.
+C. Deep Learning.
+D. Aprendizaje por refuerzo.
+
+
+2. Indica todas las respuestas correctas. Los autoencoders:
+A. Siempre tienen un número par de capas
+B. Son redes neuronales asimétricas.
+C. Se pueden emplear para la compresión de imágenes.
+D. Son un tipo de redes convolucionales profundas.
+
+3. Señala todas las respuestas correctas. Los clasificadores Naïve Bayes:
+A. Son un tipo de redes de creencias.
+B. Son un tipo de redes Bayesianas.
+C. Se basan en que las características son fuertemente dependientes entre sí.
+D. Tienen un número impar de capas de neuronas recurrentes.
+
+
+4. Señala todas las respuestas correctas. Las redes generativas antagónicas:
+A. Están siempre formadas por una red convolucional y una red
+deconvolucional.
+B. Pueden estar formadas por una red convolucional y una red prealimentada.
+C. Están formadas por una red generativa y una red discriminativa.
+D. No son apropiadas para aplicaciones Deepfake al no ser redes profundas.
+
+
+5. Señala todas las respuestas incorrectas. Las técnicas de aprendizaje por
+refuerzo:
+A. Están siempre basadas en algoritmos evolutivos.
+B. Pueden aplicarse en el ámbito de los vehículos autónomos.
+C. Nunca requieren un dataset de entrenamiento, pues no necesitan modelos.
+D. Se pueden aplicar para crear software que comercie de forma
+automatizada.
+
+
+6. En un escenario de aprendizaje por refuerzo, un agente actúa con una tasa de
+exploración igual a 0.9 en un momento dado. Señala las respuestas incorrectas:
+A. En el estado actual, el agente explorará el 90 % del entorno y, tras ello,
+dará por finalizada la iteración.
+B. Existe una probabilidad del 10 % de que el agente decida explorar el
+entorno.
+C. Existe una probabilidad del 90 % de que el agente no decida explotar las
+recompensas existentes en el entorno por medio de sus acciones.
+D. Decidirá explorar el entorno con un 90 % de probabilidades solo si esta es
+su primera iteración.
+
+
+7. Señala las respuestas correctas. Las memorias de largo y corto plazo (LSTM –
+long and short-term memories):
+A. Surgieron para mejorar los perceptrones multicapa, incrementando el
+número de capas ocultas.
+B. Tienen celdas especiales en las que un valor puede ser almacenado, leído
+o restablecido, por medio de puertas de entrada, salida y olvido.
+C. Son menos expresivas que su variación las Gated recurrent units (GRU).
+D. Son apropiadas para aplicaciones de reconocimiento de voz.
+
+8. Señala todas las respuestas correctas:
+A. TensorFlow es una librería de redes neuronales utilizada como alternativa
+a Keras.
+B. TensorFlow solo puede ser empleado bajo lenguaje Python.
+C. TensorFlow Lite permite la aplicación de redes neuronales en dispositivos
+móviles.
+D. TensorFlow es una librería específica para resolver problemas de
+mecánica mediante análisis numérico.
+
+
+9. Señala todas las respuestas correctas:
+A. El algoritmo Q-Learning puede trabajar con datos de entrenamiento
+etiquetados y no etiquetados.
+B. El algoritmo Q-Learning presenta un problema de sobreestimación del valor
+de la acción en algunos escenarios.
+C. El algoritmo Double Q-Learning utiliza siempre dos redes neuronales con la
+misma arquitectura de capas.
+D. El algoritmo Double Q-Learning presenta un problema de sobreestimación
+del valor de la acción en todos los escenarios.
+
+10. Señala todas las respuestas correctas:
+A. Las redes deconvolucionales pueden aplicarse para obtener una imagen
+sintética a partir de una etiqueta.
+B. Las redes gráficas inversas convolucionales profundas (DCIGN) son
+autoencoders variacionales en los que cuales se utilizan dos redes
+deconvolucionales.
+C. Las redes convolucionales no son aptas para aplicaciones de
+reconocimiento facial.
+D. En las redes convolucionales la última etapa de convolución se conecta
+siempre a una etapa deconvolucionadora para obtener las probabilidades de
+que una entrada pertenezca a una clase
 
 
 
@@ -752,7 +841,148 @@ cantidad de información
 
 
 
-# Tema 7: 
+# Tema 7: Clustering. Agrupamiento o clasificación no supervisada
+
+
+1. Indica cuáles de las siguientes afirmaciones son correctas:
+A. El clústering permite agrupar objetos similares entre sí.
+B. El clústering es un método de aprendizaje supervisado.
+C. El clústering puede resultar útil como etapa previa a la aplicación de un
+método de aprendizaje supervisado.
+D. El clústering da lugar a árboles de decisión.
+
+2. Indica cuál de las siguientes afirmaciones es correcta:
+A. Diferentes algoritmos de clústering dan lugar a los mismos agrupamientos
+finales.
+B. Los algoritmos jerárquicos aglomerativos generan clústeres pequeños que
+iterativamente van agrupando entre sí.
+C. Los agrupamientos solapados se obtienen aplicando algoritmos de
+clústering jerárquicos.
+D. Los algoritmos de clústering no permiten detectar datos anómalos.
+
+3. Si se pretende generar agrupamientos exclusivos se ha de aplicar:
+A. Algoritmo Fuzzy C-means.
+B. Algoritmo k-means.
+C. Algoritmo EM.
+D. Ninguno de los anteriores.
+
+4. Si se pretende crear agrupamientos con formas irregulares se ha de aplicar:
+A. Algoritmo k-means.
+B. Algoritmos basados en densidad.
+C. Algoritmo Fuzzy C-means.
+D. Ninguno de los anteriores
+
+5. Si se pretende modelar los clústeres mediante una función probabilista se ha de
+aplicar:
+A. Algoritmo Fuzzy C-means.
+B. Algoritmo k-means.
+C. Algoritmo EM.
+D. Ninguno de los anteriores.
+
+6. Si se mide la similitud entre dos clústeres mediante la medida de enlace
+completo:
+A. Se tiene en cuenta la similitud entre los dos puntos más cercanos de
+ambos clústeres.
+B. Se tiene en cuenta la similitud entre los dos puntos más lejanos de ambos
+clústeres.
+C. Se tiene en cuenta la distancia promedio que existe entre todos los puntos
+de ambos clústeres.
+D. Se tiene en cuenta la distancia entre los centroides de ambos clústeres.
+
+7. Indica cuáles de las siguientes afirmaciones, respecto del algoritmo k-means, son
+correctas:
+A. El algoritmo k-means asigna los objetos a los clústeres en función de su
+cercanía al centroide de cada clúster.
+B. En cada iteración el algoritmo k-means mantiene fijos los centroides.
+C. Es un algoritmo basado en densidad.
+D. En cada iteración el algoritmo recalcula los centroides
+
+8. Indica cuáles de las siguientes afirmaciones, respecto a los algoritmos de
+clústering jerárquicos, son correctas:
+A. Se utiliza la medida de utilidad de la categoría para realizar particiones.
+B. En un algoritmo divisorio inicialmente a cada clúster se le asigna un objeto.
+C. Utilizan una matriz de similitud para llevar a cabo la decisión de agrupar
+clústeres.
+D. Se puede utilizar la medida de enlace promedio para calcular las distancias
+entre clústeres.
+
+
+9. Indica cuáles de las siguientes afirmaciones son correctas respecto al algoritmo
+EM:
+A. Es un algoritmo basado en densidades.
+B. Tiene como base el modelo estadístico denominado mezclas finitas.
+C. El objetivo es conocer los parámetros de una función probabilista general
+que modela los clústeres.
+D. En la fase de esperanza se calculan las probabilidades de pertenencia de
+las instancias a los clústeres.
+
+
+10. Indica cuáles de las siguientes afirmaciones son correctas respecto al algoritmo
+Fuzzy C-means:
+A. Una instancia puede pertenecer a más de un clúster si se aplica el
+algoritmo Fuzzy C-means.
+B. Las variables de entrada son conjuntos difusos.
+C. Los clústeres se modelan como conjuntos difusos.
+D. Permite obtener clústeres jerárquicos.
+
+
+# Videoclase 1. Descubrimiento de patrones mediante clustering
+- ¿En qué paradigma encuadramos las técnicas de clustering?
+- Aprendizaje supervisado.
+
+- ¿Cuál es la filosofía de las técnicas de clustering?
+- Agrupación de objetos con características comunes.
+
+- ¿Cuáles de las siguientes tipologías no está considerada como de agrupamiento?
+- Todas las anteriores. => Las técnicas de agrupamiento se pueden dividir en exclusivas, jerárquicas, aglomerativas, y además solapadas y probabilistas.
+
+- En las técnicas de clustering se asigna un objeto a un clúster determinado cuando
+- El valor del objeto coincide con algún valor de objeto dentro del clúster.
+
+- ¿Cuál de los siguientes problemas no podría ser resuelto mediante técnicas de clustering?
+- Predecir la longitud de un vídeo que más puede interesar a un usuario.
+
+
+## Videoclase 2. K-means
+- El algoritmo k-means es una técnica
+- De agrupamiento exclusivo.
+
+- ¿Qué determina el valor de K en el algoritmo K-means?
+- El número de grupos para el algoritmo.
+
+- ¿Cuál de los siguientes conceptos no puede ser considerada una fortaleza de k-means?
+- Independencia del dominio.
+
+- ¿Cuál de los siguientes conceptos es considerado una debilidad de k-means?
+- Aleatoriedad. => k-means presenta un componente de aleatoriedad que puede suponer el no encontrar el conjunto óptimo de clústeres.
+
+- El algoritmo k-means
+- Ninguna de las anteriores. =>  k-means podría, sobre un conjunto de datos no etiquetado, establecer una serie de grupos o categorías que podrían ser consideradas como las clases de salida de un algoritmo de aprendizaje supervisado.
+
+- Metodo Euclidiano => calculo de la distancia de tres puntos solo es el calculo de la hipotenusa de un triangulo  
+
+
+# Videoclase 3. Agrupamiento jerárquico
+- El agrupamiento jerárquico aglomerativo
+- Crea grupos de forma ascendente, hasta que incluye todos los elementos en un único grupo.
+
+- El agrupamiento jerárquico divisivo
+- Crea grupos de forma descendente, hasta que consigue un único grupo con todos los elementos.
+
+- ¿Cómo se denomina el gráfico que ilustra un agrupamiento jerárquico?
+- Histograma.
+
+- En el paso inicial de un algoritmo de agrupamiento jerárquico divisivo
+- Se asigna cada elemento a un grupo.
+
+- ¿Qué librería de inteligencia artificial contiene los métodos de agrupamiento jerárquico?
+- Scikit Learn.
+
+
+
+
+
+
 
 # 
 - 
@@ -771,41 +1001,6 @@ cantidad de información
 - 
 
 
-# 
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-
-# 
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-
-
 
 
 
@@ -826,3 +1021,7 @@ cantidad de información
 
 - 
 - 
+
+
+
+
