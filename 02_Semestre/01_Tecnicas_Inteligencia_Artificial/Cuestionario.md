@@ -305,11 +305,10 @@ D. ID3 trabaja con un espacio de hipótesis incompleto.
 
 7. Indica las respuestas correctas en relación con los métodos de aprendizaje
 integrado:
+
 A. En los métodos stacking se utilizan los mismos datos de entrada a
 diferentes algoritmos en paralelo. Finalmente se utiliza un algoritmo decisor
 para dar la respuesta final. -> **correcto**. El texto dice: "entrenar diferentes algoritmos (por ejemplo, un k-NN, un árbol de decisión y un SVM... ) utilizando los mismos datos y utilizarlos en paralelo para clasificar la misma entrada. Finalmente, se promedian las salidas de los diferentes algoritmos para obtener un valor de salida final, normalmente utilizando un algoritmo de regresión". El "algoritmo decisor" o "algoritmo de regresión" que promedia las salidas es la forma en que se combinan.
-
-
 
 B. En los métodos bagging se utilizan el mismo tipo de algoritmos en paralelo,
 a los cuales se pasa como entrada diferentes subconjuntos aleatorios a partir
@@ -410,33 +409,35 @@ confianza menor.
 1. Si en un problema se desea identificar los síntomas correspondientes a tres
 enfermedades conocidas, las técnicas apropiadas para resolver el problema son
 (selecciona las opciones adecuadas):
-A. Árboles de decisión.
+A. Árboles de decisión. -> **correcto**
 B. Algoritmo apriori.
-C. Algoritmo de recubrimiento secuencial.
+C. Algoritmo de recubrimiento secuencial.  -> **correcto**
 D. Algoritmo PRISM.
 
 
 2. Si en un problema se desea identificar relaciones entre síntomas de personas
 que presentan ciertas enfermedades, las técnicas apropiadas son:
 A. Árboles de decisión.
-B. Algoritmo apriori.
+B. Algoritmo apriori. -> **correcto**
 C. Algoritmo de recubrimiento secuencial.
 D. Algoritmo PRISM.
 
 
 3. Indica cuáles de las siguientes afirmaciones son verdaderas:
-A. Las reglas de clasificación predicen la clase.
+
+A. Las reglas de clasificación predicen la clase. -> **correcto**
 B. Las reglas de asociación predicen combinaciones de atributos o la propia
-clase.
+clase. -> **correcto**
 C. Los algoritmos que aprenden reglas de asociación buscan combinaciones
-de pares atributo-valor que ocurren con cierta frecuencia.
+de pares atributo-valor que ocurren con cierta frecuencia. -> **correcto**
 D. Las reglas de asociación tienen el mismo objetivo que las reglas de
 clasificación.
+
 
 4. Si se quiere conocer el porcentaje de ejemplos que cumplen una regla respecto
 del total de ejemplos, se ha de aplicar la medida de:
 A. Cobertura.
-B. Soporte.
+B. Soporte. -> **correcto**
 C. Confianza.
 D. Cubierta.
 
@@ -446,21 +447,27 @@ de todos los ejemplos que sólo cumplen el antecedente, se ha de aplicar la medi
 de:
 A. Cobertura.
 B. Soporte.
-C. Confianza.
+C. Confianza.-> **correcto**
 D. Cubierta.
 
 
 6. ¿Cuáles de los siguientes algoritmos se puede emplear para el aprendizaje de
 reglas de clasificación?
 A. PRISM.
-B. C4.5.
+B. C4.5. -> **correcto**
 C. Apriori.
-D. ID3.
+D. ID3. -> **correcto**
+
+**NOTA:**
+- B. C4.5: Es un algoritmo muy conocido que se utiliza para construir árboles de decisión. A partir de un árbol de decisión, se pueden extraer fácilmente reglas de clasificación "si-entonces".
+
+- D. ID3: Es otro algoritmo fundamental para la construcción de árboles de decisión, predecesor de C4.5, y también se utiliza para generar modelos de clasificación que pueden ser representados como reglas.
+
 
 7. Indica cuál de las siguientes afirmaciones es correcta:
 A. No es posible mapear árboles de decisión a reglas de clasificación.
 B. Los algoritmos de recubrimiento secuencial aprenden una regla en cada
-iteración.
+iteración. -> **correcto**
 C. En cada iteración, el algoritmo de recubrimiento secuencial exige que la
 regla cubra todos los ejemplos positivos.
 D. Apriori es un algoritmo de recubrimiento secuencial.
@@ -471,10 +478,10 @@ A. El procedimiento básico, para aprender una regla, utilizado en los
 algoritmos de recubrimiento secuencial tiene como parámetro el conjunto de
 todas las clases.
 B. El procedimiento, básico para aprender una regla, utilizado en los
-algoritmos de recubrimiento secuencial añade a la regla un único par atributovalor en cada iteración.
+algoritmos de recubrimiento secuencial añade a la regla un único par atributo valor en cada iteración. -> **correcto**
 C. El procedimiento de recubrimiento secuencial devuelve una única regla.
 D. El algoritmo de recubrimiento secuencial elimina los ejemplos cubiertos por
-la regla generada en cada iteración.
+la regla generada en cada iteración. -> **correcto**
 
 
 9. Indica cuáles de las siguientes afirmaciones son correctas respecto al algoritmo
@@ -486,8 +493,8 @@ D. Es un algoritmo de generación de conjuntos de reglas de los más simples
 
 10. Indica cuáles de las siguientes afirmaciones son verdaderas respecto al
 algoritmo apriori:
-A. Genera ítem-sets.
-B. Utiliza la medida de confianza para evaluar las reglas obtenidas.
+A. Genera ítem-sets. -> **correcto**
+B. Utiliza la medida de confianza para evaluar las reglas obtenidas. -> **correcto**
 C. No genera reglas sino ítem-sets.
 D. Valora los ítem-sets generados mediante una medida de confianza.
 
@@ -557,44 +564,46 @@ D. Valora los ítem-sets generados mediante una medida de confianza.
 # Tema 5: Redes neuronales artificiales
 
 1. Indica cuáles de las siguientes afirmaciones son correctas:
-A. Las neuronas artificiales simulan el comportamiento de las neuronas
-biológicas.
-B. Las neuronas artificiales pueden tener varias salidas que toman valores
-diferentes.
-C. Las neuronas artificiales pueden tener varias entradas que toman valores
-diferentes.
-D. Las entradas de las neuronas artificiales se ponderan con un peso.
+A. Las neuronas artificiales simulan el comportamiento de las neuronas biológicas. -> **correcto**
+B. Las neuronas artificiales pueden tener varias salidas que toman valores diferentes.
+C. Las neuronas artificiales pueden tener varias entradas que toman valores diferentes. -> **correcto**
+D. Las entradas de las neuronas artificiales se ponderan con un peso. -> **correcto**
 
 
 2. Selecciona las opciones correctas. En la fase de entrenamiento de una red
 neuronal:
 A. Se ajusta el número de capas de la red neuronal.
-B. Se ajustan los pesos de los enlaces que conectan las neuronas.
+B. Se ajustan los pesos de los enlaces que conectan las neuronas. -> **correcto**
 C. Se ajusta el número de neuronas por capa de la red neuronal.
 D. Ninguna de las anteriores.
 
 3. Indica cuál de las afirmaciones siguientes son correctas respecto a la regla de
 aprendizaje del perceptrón:
 A. Se utiliza para calcular las salidas de la red.
-B. Utiliza la diferencia entre la salida real y la salida esperada para ajustar los
-pesos.
-C. Se puede establecer una tasa de aprendizaje en la regla que pondera la
-relevancia del último peso calculado.
-D. Se utiliza para ajustar los pesos de la red.
+B. Utiliza la diferencia entre la salida real y la salida esperada para ajustar los pesos. -> **correcto**
+C. Se puede establecer una tasa de aprendizaje en la regla que pondera la relevancia del último peso calculado. -> **correcto**
+D. Se utiliza para ajustar los pesos de la red. -> **correcto**
 
 4. Indica cuáles de las siguientes funciones pueden ser utilizadas como funciones
 de activación en redes neuronales:
-A. Función escalón.
-B. Función sigmoide.
+A. Función escalón. 
+B. Función sigmoide. 
 C. Función tangente hiperbólica.
-D. Todas las anteriores son correctas.
+D. Todas las anteriores son correctas. -> **correcto**
+
+*Notas*: 
+- A. Función escalón (Step function): Fue una de las primeras funciones de activación utilizadas, especialmente en el perceptrón original. Produce una salida binaria (por ejemplo, 0 o 1) si la entrada supera un umbral.
+
+- B. Función sigmoide (Sigmoid function): También conocida como función logística, es muy común en redes neuronales, especialmente en las capas de salida para problemas de clasificación binaria, ya que comprime la entrada a un rango entre 0 y 1.
+
+- C. Función tangente hiperbólica (Hyperbolic tangent function - tanh): Similar a la función sigmoide, pero comprime la entrada a un rango entre -1 y 1. A menudo se prefiere sobre la sigmoide en capas ocultas porque su salida está centrada en cero, lo que puede facilitar el entrenamiento.
 
 5. Selecciona la opción más correcta. El funcionamiento de una red neuronal queda
 determinado por:
 A. El número de capas, número de neuronas y las conexiones entre
 neuronas.
 B. La función de activación, el número de capas, el número de neuronas y los
-pesos entre las neuronas.
+pesos entre las neuronas. -> **correcto**
 C. El algoritmo de aprendizaje, la regla de aprendizaje, el número de capas,
 número de neuronas y las conexiones entre neuronas.
 D. El algoritmo de aprendizaje, la función de activación, el número de capas,
@@ -603,14 +612,25 @@ número de neuronas y las conexiones entre neuronas.
 6. Indica cuáles de las siguientes afirmaciones son correctas:
 A. Las redes neuronales multicapa son redes bidireccionales.
 B. Las redes neuronales multicapa son redes asociativas.
-C. Las redes neuronales multicapa son redes de alimentación hacia adelante.
-D. Las redes neuronales multicapa son redes unidireccionales
+C. Las redes neuronales multicapa son redes de alimentación hacia adelante. -> **correcto**
+D. Las redes neuronales multicapa son redes unidireccionales -> **correcto**
+
+**Notas** 
+- C. Las redes neuronales multicapa son redes de alimentación hacia adelante.
+    - Verdadero. Este es el tipo más común de red neuronal multicapa, donde la información fluye en una sola dirección, desde la capa de entrada, a través de una o más capas ocultas, hasta la capa de salida, sin bucles ni retroalimentación.
+
+- D. Las redes neuronales multicapa son redes unidireccionales.
+    - Verdadero. Esta afirmación es equivalente a la anterior. "Unidireccional" significa que la información solo fluye en una dirección (hacia adelante), lo cual es una característica fundamental de las redes de alimentación hacia adelante.
 
 7. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
 multicapa de retropropagación:
+
 A. Todas las neuronas de una capa se conectan con todas las neuronas de
 las capas posteriores.
-B. Para el ajuste de los pesos se utiliza el gradiente del error.
+
+B. Para el ajuste de los pesos se utiliza el gradiente del error.  -> **correcto**
+=> Verdadero. La retropropagación (backpropagation) es el algoritmo fundamental utilizado para entrenar redes neuronales multicapa. Su función principal es calcular el gradiente de la función de error (o pérdida) con respecto a cada peso de la red. Este gradiente indica la dirección y magnitud en la que los pesos deben ajustarse para minimizar el error, y luego se utiliza un algoritmo de optimización (como el descenso de gradiente) para realizar dicho ajuste.
+
 C. Para el ajuste de los pesos se utiliza el error cuadrático medio.
 D. Se utilizan las mismas fórmulas para calcular los pesos relativos a las
 neuronas de salida y los relativos a las neuronas ocultas.
@@ -626,20 +646,34 @@ D. La red Hopfield es una red recurrente.
 Hopfield:
 A. El estado de la red viene determinado por los pesos de los enlaces.
 B. El objetivo es que la red sea capaz de almacenar unos determinados
-estados.
+estados. -> **correcto**
 C. El objetivo es que la red sea capaz de almacenar unas memorias
-fundamentales.
+fundamentales. -> **correcto**
 D. No es preciso comprobar que la red sea capaz de almacenar memorias
 fundamentales.
 
+**Notas** 
+- B. El objetivo es que la red sea capaz de almacenar unos determinados estados.
+    - Verdadero. Las redes de Hopfield son un tipo de red neuronal recurrente utilizadas principalmente como sistemas de memoria asociativa. Su objetivo es almacenar un conjunto de patrones (o "estados") como atractores estables en su dinámica, de modo que cuando se presenta una entrada ruidosa o parcial de uno de esos patrones, la red converge al patrón almacenado más cercano.
+
+- C. El objetivo es que la red sea capaz de almacenar unas memorias fundamentales.
+    - Verdadero. Esta afirmación es sinónima de la anterior. Los "estados determinados" o "patrones" que una red de Hopfield está diseñada para almacenar y recuperar se conocen comúnmente como "memorias fundamentales".
+
 10. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
 Hopfield:
-A. Son redes bidireccionales asociativas.
-B. Se utilizan en reconocimiento de imágenes.
+A. Son redes bidireccionales asociativas. -> **correcto**
+B. Se utilizan en reconocimiento de imágenes. -> **correcto**
 C. Siempre alcanzan un estado estable correspondiente a una memoria
 fundamental.
 D. Con pocas neuronas y conexiones son capaces de almacenar una gran
 cantidad de información
+
+**Notas**
+- A. Son redes bidireccionales asociativas.
+    - Verdadero. Las redes de Hopfield son un tipo de red neuronal recurrente en la que las conexiones entre las neuronas suelen ser simétricas (bidireccionales). Su función principal es actuar como una memoria asociativa, es decir, son capaces de almacenar patrones y recuperarlos a partir de entradas parciales o ruidosas.
+
+- B. Se utilizan en reconocimiento de imágenes.
+    - Verdadero. Aunque hoy en día redes más avanzadas (como las CNN) son dominantes, las redes de Hopfield fueron conceptualmente importantes y se aplicaron en el pasado para tareas relacionadas con el reconocimiento de patrones y la compleción de imágenes, donde se busca restaurar una imagen completa a partir de una versión incompleta o ruidosa.
 
 
 ## Videoclase 1. Bioinspiración de las RNA
@@ -697,52 +731,73 @@ cantidad de información
 # TEMA 6:  Deep learning
 
 1. ¿Cuáles de las siguientes ramas pertenecen al aprendizaje automático clásico?
-A. Aprendizaje supervisado.
-B. Aprendizaje ensemble.
+A. Aprendizaje supervisado. -> **correcto**
+B. Aprendizaje ensemble. -> **correcto**
 C. Deep Learning.
-D. Aprendizaje por refuerzo.
+D. Aprendizaje por refuerzo. -> **correcto**
 
+**Notas**
+
+A. Aprendizaje supervisado: Es una de las ramas fundamentales y más clásicas del aprendizaje automático, donde el modelo aprende de datos etiquetados (input-output pairs) para hacer predicciones.
+
+B. Aprendizaje ensemble: Las técnicas ensemble (como Random Forest, Bagging o Boosting) combinan múltiples modelos de aprendizaje automático clásico para mejorar la robustez y la precisión. Se consideran una parte importante y avanzada del aprendizaje automático clásico.
+
+D. Aprendizaje por refuerzo: Es una rama principal del aprendizaje automático donde un agente aprende a tomar decisiones a través de la interacción con un entorno para maximizar una recompensa. Sus fundamentos se establecieron hace varias décadas.
 
 2. Indica todas las respuestas correctas. Los autoencoders:
 A. Siempre tienen un número par de capas
 B. Son redes neuronales asimétricas.
-C. Se pueden emplear para la compresión de imágenes.
+C. Se pueden emplear para la compresión de imágenes. -> **correcto**
 D. Son un tipo de redes convolucionales profundas.
 
 3. Señala todas las respuestas correctas. Los clasificadores Naïve Bayes:
-A. Son un tipo de redes de creencias.
-B. Son un tipo de redes Bayesianas.
+A. Son un tipo de redes de creencias. -> **correcto**
+B. Son un tipo de redes Bayesianas. -> **correcto**
 C. Se basan en que las características son fuertemente dependientes entre sí.
 D. Tienen un número impar de capas de neuronas recurrentes.
 
 
+**Notas** 
+- A. Son un tipo de redes de creencias.
+    - Verdadero. Las redes de creencias son otro nombre para las redes Bayesianas. Los clasificadores Naïve Bayes son la forma más simple de red Bayesiana, con una estructura de red específica donde todos los nodos de características son hijos de un único nodo de clase y no hay conexiones entre los nodos de características.
+
+- B. Son un tipo de redes Bayesianas.
+    - Verdadero. Esta es la clasificación fundamental de los clasificadores Naïve Bayes. Se derivan del teorema de Bayes y representan relaciones probabilísticas condicionales entre variables.
+
 4. Señala todas las respuestas correctas. Las redes generativas antagónicas:
-A. Están siempre formadas por una red convolucional y una red
-deconvolucional.
-B. Pueden estar formadas por una red convolucional y una red prealimentada.
-C. Están formadas por una red generativa y una red discriminativa.
+A. Están siempre formadas por una red convolucional y una red deconvolucional.
+B. Pueden estar formadas por una red convolucional y una red prealimentada. -> **correcto**
+C. Están formadas por una red generativa y una red discriminativa. -> **correcto**
 D. No son apropiadas para aplicaciones Deepfake al no ser redes profundas.
+
+**Notas**
+- B. Pueden estar formadas por una red convolucional y una red prealimentada.
+    - Verdadero. Es posible que una de las redes (generador o discriminador) sea de tipo convolucional (común en tareas de imagen) y la otra sea una red prealimentada (feedforward) más tradicional (que puede ser densa o también convolucional si es profunda). Lo importante es que haya dos redes que desempeñen los roles de generador y discriminador.
+
+- C. Están formadas por una red generativa y una red discriminativa.
+    - Verdadero. Esta es la definición fundamental y el principio central de las GANs. Consisten en una red generativa (el "generador") que crea datos sintéticos y una red discriminativa (el "discriminador") que intenta distinguir entre los datos reales y los generados. Ambas redes se entrenan en un juego de suma cero.
 
 
 5. Señala todas las respuestas incorrectas. Las técnicas de aprendizaje por
 refuerzo:
-A. Están siempre basadas en algoritmos evolutivos.
+A. Están siempre basadas en algoritmos evolutivos. -> **correcto**
 B. Pueden aplicarse en el ámbito de los vehículos autónomos.
-C. Nunca requieren un dataset de entrenamiento, pues no necesitan modelos.
+C. Nunca requieren un dataset de entrenamiento, pues no necesitan modelos. -> **correcto**
 D. Se pueden aplicar para crear software que comercie de forma
 automatizada.
 
 
 6. En un escenario de aprendizaje por refuerzo, un agente actúa con una tasa de
 exploración igual a 0.9 en un momento dado. Señala las respuestas incorrectas:
+
 A. En el estado actual, el agente explorará el 90 % del entorno y, tras ello,
-dará por finalizada la iteración.
+dará por finalizada la iteración. -> **correcto**
 B. Existe una probabilidad del 10 % de que el agente decida explorar el
-entorno.
+entorno. -> **correcto**
 C. Existe una probabilidad del 90 % de que el agente no decida explotar las
 recompensas existentes en el entorno por medio de sus acciones.
 D. Decidirá explorar el entorno con un 90 % de probabilidades solo si esta es
-su primera iteración.
+su primera iteración. -> **correcto**
 
 
 7. Señala las respuestas correctas. Las memorias de largo y corto plazo (LSTM –
@@ -750,16 +805,16 @@ long and short-term memories):
 A. Surgieron para mejorar los perceptrones multicapa, incrementando el
 número de capas ocultas.
 B. Tienen celdas especiales en las que un valor puede ser almacenado, leído
-o restablecido, por medio de puertas de entrada, salida y olvido.
+o restablecido, por medio de puertas de entrada, salida y olvido. -> **correcto**
 C. Son menos expresivas que su variación las Gated recurrent units (GRU).
-D. Son apropiadas para aplicaciones de reconocimiento de voz.
+D. Son apropiadas para aplicaciones de reconocimiento de voz. -> **correcto**
 
 8. Señala todas las respuestas correctas:
 A. TensorFlow es una librería de redes neuronales utilizada como alternativa
 a Keras.
 B. TensorFlow solo puede ser empleado bajo lenguaje Python.
 C. TensorFlow Lite permite la aplicación de redes neuronales en dispositivos
-móviles.
+móviles. -> **correcto**
 D. TensorFlow es una librería específica para resolver problemas de
 mecánica mediante análisis numérico.
 
@@ -768,15 +823,23 @@ mecánica mediante análisis numérico.
 A. El algoritmo Q-Learning puede trabajar con datos de entrenamiento
 etiquetados y no etiquetados.
 B. El algoritmo Q-Learning presenta un problema de sobreestimación del valor
-de la acción en algunos escenarios.
+de la acción en algunos escenarios. -> **correcto**
 C. El algoritmo Double Q-Learning utiliza siempre dos redes neuronales con la
-misma arquitectura de capas.
+misma arquitectura de capas. -> **correcto**
 D. El algoritmo Double Q-Learning presenta un problema de sobreestimación
 del valor de la acción en todos los escenarios.
 
+**notas**
+
+- B. El algoritmo Q-Learning presenta un problema de sobreestimación del valor de la acción en algunos escenarios.
+    - Verdadero. El Q-Learning estándar tiende a sobreestimar los valores de las acciones (Q-values). Esto ocurre porque en la fase de actualización se toma el valor máximo de Q del siguiente estado, lo que introduce un sesgo optimista, especialmente en entornos con recompensas estocásticas o cuando las estimaciones de Q-values son ruidosas.
+
+- C. El algoritmo Double Q-Learning utiliza siempre dos redes neuronales con la misma arquitectura de capas.
+    - Verdadero. El Double Q-Learning (y su adaptación a redes neuronales, Double DQN) resuelve el problema de sobreestimación del Q-Learning utilizando dos estimadores de valor de acción (dos redes neuronales o dos tablas Q separadas en el caso tabular). Una se usa para seleccionar la siguiente acción y la otra para evaluar el valor de esa acción. Estas dos redes se mantienen con la misma arquitectura para que representen dos estimaciones independientes pero consistentes de la función Q.
+
 10. Señala todas las respuestas correctas:
 A. Las redes deconvolucionales pueden aplicarse para obtener una imagen
-sintética a partir de una etiqueta.
+sintética a partir de una etiqueta. -> **correcto**
 B. Las redes gráficas inversas convolucionales profundas (DCIGN) son
 autoencoders variacionales en los que cuales se utilizan dos redes
 deconvolucionales.
@@ -786,6 +849,9 @@ D. En las redes convolucionales la última etapa de convolución se conecta
 siempre a una etapa deconvolucionadora para obtener las probabilidades de
 que una entrada pertenezca a una clase
 
+**Notas** 
+- A. Las redes deconvolucionales pueden aplicarse para obtener una imagen sintética a partir de una etiqueta.
+    - Verdadero. Las capas "deconvolucionales" (o más precisamente, capas de convolución transpuesta) se utilizan comúnmente en redes generativas (como los generadores en las GANs o los decodificadores en los Autoencoders Variacionales) para convertir representaciones de baja dimensión (como un vector latente o una etiqueta codificada) en imágenes de mayor resolución. Por ejemplo, se puede entrenar una red para generar la imagen de un "gato" a partir de la etiqueta "gato".
 
 
 ## Videoclase 1. Tipología redes neuronales convolucionales y su aplicación práctica
@@ -845,86 +911,138 @@ que una entrada pertenezca a una clase
 
 
 1. Indica cuáles de las siguientes afirmaciones son correctas:
-A. El clústering permite agrupar objetos similares entre sí.
+A. El clústering permite agrupar objetos similares entre sí. -> **correcto**
 B. El clústering es un método de aprendizaje supervisado.
 C. El clústering puede resultar útil como etapa previa a la aplicación de un
-método de aprendizaje supervisado.
+método de aprendizaje supervisado. -> **correcto**
 D. El clústering da lugar a árboles de decisión.
+
+**Notas** 
+- A. El clústering permite agrupar objetos similares entre sí.
+    - Verdadero. Esta es la definición fundamental del clustering: organizar un conjunto de objetos en grupos (clusters) de tal manera que los objetos en el mismo grupo sean más similares entre sí que a los de otros grupos.
+
+- C. El clústering puede resultar útil como etapa previa a la aplicación de un método de aprendizaje supervisado.
+    - Verdadero. El clustering se utiliza a menudo como un paso de preprocesamiento. Por ejemplo, puede ayudar a segmentar el conjunto de datos en subgrupos homogéneos. Luego, se pueden aplicar modelos de aprendizaje supervisado específicos para cada subgrupo, lo que puede mejorar la precisión y el rendimiento general. También puede usarse para la reducción de dimensionalidad o la detección de anomalías antes de una tarea supervisada.
 
 2. Indica cuál de las siguientes afirmaciones es correcta:
 A. Diferentes algoritmos de clústering dan lugar a los mismos agrupamientos
 finales.
 B. Los algoritmos jerárquicos aglomerativos generan clústeres pequeños que
-iterativamente van agrupando entre sí.
+iterativamente van agrupando entre sí. -> **correcto**
 C. Los agrupamientos solapados se obtienen aplicando algoritmos de
 clústering jerárquicos.
 D. Los algoritmos de clústering no permiten detectar datos anómalos.
 
 3. Si se pretende generar agrupamientos exclusivos se ha de aplicar:
 A. Algoritmo Fuzzy C-means.
-B. Algoritmo k-means.
+B. Algoritmo k-means. -> **correcto**
 C. Algoritmo EM.
 D. Ninguno de los anteriores.
 
 4. Si se pretende crear agrupamientos con formas irregulares se ha de aplicar:
 A. Algoritmo k-means.
-B. Algoritmos basados en densidad.
+B. Algoritmos basados en densidad. -> **correcto**
 C. Algoritmo Fuzzy C-means.
 D. Ninguno de los anteriores
+
+**Notas** 
+- Algoritmos basados en densidad (como DBSCAN - Density-Based Spatial Clustering of Applications with Noise): Estos algoritmos definen los clústeres como regiones densas de puntos de datos, separadas por regiones de menor densidad. No asumen formas predefinidas para los clústeres (como esféricas o elípticas), lo que les permite descubrir agrupaciones de formas arbitrarias e irregulares, incluso si están anidadas o entrelazadas.
+
+Analicemos las otras opciones:
+
+A. Algoritmo k-means: K-means tiende a formar clústeres de forma esférica o convexa y de tamaño similar. No es efectivo para identificar clústeres con formas irregulares o no convexas.
+
+C. Algoritmo Fuzzy C-means: Similar a K-means, Fuzzy C-means (que permite la pertenencia a múltiples clústeres) también se basa en centroides y tiende a producir clústeres de formas esféricas o elípticas, por lo que tampoco es adecuado para formas irregulares.
 
 5. Si se pretende modelar los clústeres mediante una función probabilista se ha de
 aplicar:
 A. Algoritmo Fuzzy C-means.
 B. Algoritmo k-means.
-C. Algoritmo EM.
+C. Algoritmo EM. -> **correcto**
 D. Ninguno de los anteriores.
+
+**Notas**
+El Algoritmo EM es un algoritmo iterativo que se utiliza comúnmente para encontrar los parámetros de modelos probabilísticos, como los Modelos de Mezcla Gaussiana (GMM). En el clustering basado en GMM, se asume que los datos provienen de una mezcla de varias distribuciones de probabilidad (típicamente gaussianas), y cada distribución representa un clúster. El algoritmo EM estima los parámetros de estas distribuciones (media, covarianza y los pesos de cada componente de la mezcla) y la probabilidad de que cada punto de dato pertenezca a cada clúster. Esto encaja directamente con la idea de modelar clústeres mediante una función probabilista.
 
 6. Si se mide la similitud entre dos clústeres mediante la medida de enlace
 completo:
 A. Se tiene en cuenta la similitud entre los dos puntos más cercanos de
 ambos clústeres.
 B. Se tiene en cuenta la similitud entre los dos puntos más lejanos de ambos
-clústeres.
+clústeres. -> **correcto**
 C. Se tiene en cuenta la distancia promedio que existe entre todos los puntos
 de ambos clústeres.
 D. Se tiene en cuenta la distancia entre los centroides de ambos clústeres.
 
+
+**Notas** 
+El método de enlace completo define la distancia entre dos clústeres como la distancia máxima entre cualquier par de puntos, donde un punto pertenece al primer clúster y el otro punto pertenece al segundo clúster. Esto significa que la distancia entre los clústeres está dominada por los "vecinos más lejanos" de los dos clústeres.
+
 7. Indica cuáles de las siguientes afirmaciones, respecto del algoritmo k-means, son
 correctas:
 A. El algoritmo k-means asigna los objetos a los clústeres en función de su
-cercanía al centroide de cada clúster.
+cercanía al centroide de cada clúster. -> **correcto**
 B. En cada iteración el algoritmo k-means mantiene fijos los centroides.
 C. Es un algoritmo basado en densidad.
-D. En cada iteración el algoritmo recalcula los centroides
+D. En cada iteración el algoritmo recalcula los centroides -> **correcto**
+
+**Notas**
+- A. El algoritmo k-means asigna los objetos a los clústeres en función de su cercanía al centroide de cada clúster.
+    - Verdadero. Esta es la primera etapa fundamental de cada iteración del algoritmo k-means: asignar cada punto de datos al clúster cuyo centroide es el más cercano.
+
+- D. En cada iteración el algoritmo recalcula los centroides.
+    - Verdadero. Después de la fase de asignación de puntos a los clústeres, el algoritmo k-means recalcula los centroides de cada clúster tomando la media de todos los puntos que han sido asignados a ese clúster en la iteración actual. Este proceso se repite hasta que los centroides ya no cambian significativamente.
 
 8. Indica cuáles de las siguientes afirmaciones, respecto a los algoritmos de
 clústering jerárquicos, son correctas:
 A. Se utiliza la medida de utilidad de la categoría para realizar particiones.
 B. En un algoritmo divisorio inicialmente a cada clúster se le asigna un objeto.
 C. Utilizan una matriz de similitud para llevar a cabo la decisión de agrupar
-clústeres.
+clústeres. -> **correcto**
 D. Se puede utilizar la medida de enlace promedio para calcular las distancias
-entre clústeres.
+entre clústeres. -> **correcto**
+
+**Notas** 
+- C. Utilizan una matriz de similitud para llevar a cabo la decisión de agrupar clústeres.
+    - Verdadero. Los algoritmos de clustering jerárquicos, ya sean aglomerativos o divisorios, dependen fundamentalmente de una matriz de distancias o similitudes que contenga las distancias (o similitudes) entre todos los pares de objetos o entre clústeres. Esta matriz se actualiza en cada paso para decidir qué clústeres fusionar o dividir.
+
+- D. Se puede utilizar la medida de enlace promedio para calcular las distancias entre clústeres.
+    - Verdadero. El enlace promedio (Average Linkage) es uno de los métodos de "enlace" o "linkage" más comunes utilizados en el clustering jerárquico. Define la distancia entre dos clústeres como la distancia promedio entre todos los pares de puntos de los dos clústeres (donde cada par consiste en un punto de un clúster y un punto del otro). Otros métodos incluyen enlace simple, enlace completo y el método de Ward.
 
 
 9. Indica cuáles de las siguientes afirmaciones son correctas respecto al algoritmo
 EM:
 A. Es un algoritmo basado en densidades.
-B. Tiene como base el modelo estadístico denominado mezclas finitas.
+B. Tiene como base el modelo estadístico denominado mezclas finitas. -> **correcto**
 C. El objetivo es conocer los parámetros de una función probabilista general
-que modela los clústeres.
+que modela los clústeres. -> **correcto**
 D. En la fase de esperanza se calculan las probabilidades de pertenencia de
-las instancias a los clústeres.
+las instancias a los clústeres. -> **correcto**
 
+**Notas** 
+- B. Tiene como base el modelo estadístico denominado mezclas finitas.
+    - Verdadero. El algoritmo EM es un método iterativo utilizado para encontrar estimaciones de máxima verosimilitud de los parámetros en modelos estadísticos donde las variables dependen de variables latentes no observadas. Es fundamental para entrenar modelos de mezclas finitas, como los Modelos de Mezcla Gaussiana (GMM), donde se asume que los datos provienen de una combinación de varias distribuciones de probabilidad.
+
+- C. El objetivo es conocer los parámetros de una función probabilista general que modela los clústeres.
+    - Verdadero. En el contexto del clustering, el EM busca estimar los parámetros (como las medias, covarianzas y los pesos de mezcla) de las distribuciones de probabilidad que definen cada clúster, de modo que la combinación de estas funciones probabilistas modela la distribución general de los datos.
+
+- D. En la fase de esperanza se calculan las probabilidades de pertenencia de las instancias a los clústeres.
+    - Verdadero. La fase de Esperanza (E-step) del algoritmo EM consiste en calcular las probabilidades (o responsabilidades) de que cada punto de dato pertenezca a cada uno de los clústeres, utilizando los parámetros actuales del modelo.
 
 10. Indica cuáles de las siguientes afirmaciones son correctas respecto al algoritmo
 Fuzzy C-means:
 A. Una instancia puede pertenecer a más de un clúster si se aplica el
-algoritmo Fuzzy C-means.
+algoritmo Fuzzy C-means. -> **correcto**
 B. Las variables de entrada son conjuntos difusos.
-C. Los clústeres se modelan como conjuntos difusos.
+C. Los clústeres se modelan como conjuntos difusos. -> **correcto**
 D. Permite obtener clústeres jerárquicos.
 
+**Notas* 
+- A. Una instancia puede pertenecer a más de un clúster si se aplica el algoritmo Fuzzy C-means.
+    - Verdadero. Esta es la característica distintiva de Fuzzy C-means. A diferencia de los algoritmos de clustering "duro" (como K-means), Fuzzy C-means asigna a cada punto de dato un grado de pertenencia a cada clúster, lo que permite que una instancia tenga un nivel de membresía en múltiples clústeres simultáneamente.
+
+- C. Los clústeres se modelan como conjuntos difusos.
+    - Verdadero. En Fuzzy C-means, los clústeres no son particiones discretas, sino que se interpretan como conjuntos difusos. Cada punto de dato tiene un grado de pertenencia (un valor entre 0 y 1) a cada uno de estos conjuntos difusos, que representan los clústeres.
 
 # Videoclase 1. Descubrimiento de patrones mediante clustering
 - ¿En qué paradigma encuadramos las técnicas de clustering?
@@ -980,7 +1098,7 @@ D. Permite obtener clústeres jerárquicos.
 
 
 
-
+# Tema 8:
 
 
 
