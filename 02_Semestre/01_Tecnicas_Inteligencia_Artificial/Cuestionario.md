@@ -1102,21 +1102,22 @@ D. Permite obtener clústeres jerárquicos.
 
 
 
-# 
-- 
-- 
+# Videoclase 1. Sistemas de recomendación colaborativa
+- En el filtrado colaborativo basado en usuarios
+    - Se recomienda contenido similar a los ítems que han recomendado otros usuarios con características similares. => El filtrado colaborativo establece recomendaciones para un usuario basadas en la similitud con otros usuarios que previamente han recomendado ese contenido.
 
-- 
-- 
+- Las técnicas de cálculo de similitud, como la del coseno, pueden ser aplicadas a
+    - Tanto cálculo de similitud entre ítems como usuarios. => La medida coseno puede ser considerada tanto para cálculo de similitud entre ítems, como para cálculo de similitud entre usuarios.
 
-- 
-- 
+- En un sistema SLOPE-ONE, si únicamente tenemos dos usuarios y dos ítems, habiendo valorado el usuario 1 el primer ítem 8/10 y el segundo 9/10 ¿Qué valoración haría el usuario 2 del segundo ítem si ha valorado el primero con 7/10?
+    - 8/10. => El algoritmo establece el cálculo del valor faltante como el cociente entre la suma de todas las diferencias en valoraciones entre ítem 2 e ítem 1 y el número de usuarios cuya valoración es conocida, sumado a la valoración conocida del usuario.
 
-- 
-- 
+- El algoritmo ítem a ítem comienza con una tabla donde para cada usuario y una serie de contenidos, tenemos si el usuario recomienda dicho contenido
+    - Falso, el algoritmo comienza con una tabla de ítems y los ítems similares. => El primer paso del algoritmo ítem a ítem, es la recogida en una tabla donde para cada usuario y una serie de contenidos, marcamos si el usuario recomienda dicho contenido.
 
-- 
-- 
+- Los sistemas de recomendación colaborativa:
+    - Están dentro del paradigma del aprendizaje difuso. => Podemos considerar los sistemas de recomendación colaborativa dentro del aprendizaje supervisado, ya que contamos con un conjunto de datos etiquetado en base a preferencias de usuario
+
 
 
 
