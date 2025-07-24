@@ -55,3 +55,30 @@ Porque validando las variables nos encontramos con categiorias nominales y el n�
 - Variables Numéricas (Features): adult_mortality, infant_deaths, alcohol, percentage_expenditure, hepatitis_b, measles, bmi, under_five_deaths, polio, total_expenditure, diphtheria, hiv/aids, gdp, population, thinness__1_19_years, thinness_5_9_years, income_composition_of_resources, schooling, year.
 
 - Variables Categóricas (Features): country, status
+- 
+## Definición de Graficas 
+Se discución con el equipo y se usó las siguientes graficas por su amplia demostración de los datos: 
+
+a) Histogramas para Variables Numéricas:
+Muestran la distribución de una sola variable. Nos ayudó a ver si la distribución es normal, sesgada, bimodal, Para life_expectancy entre otras características numéricas importantes: GDP, Schooling, Adult Mortality, HIV/AIDS, etc.
+
+b) Diagramas de Dispersión (Scatter Plots) para Relaciones  Numéricas:
+Nos mostró la visualización y la relación entre dos variables numéricas. fue excelente ya que nos permitió identificar correlaciones, tendencias y posibles valores atípicos.
+
+Comparación 
+- life_expectancy vs. GDP: ¿Mayor PIB significa mayor esperanza de vida?
+- life_expectancy vs. Schooling: ¿Más años de escolaridad se relacionan con mayor esperanza de vida?
+- life_expectancy vs. Adult Mortality: ¿Mayor mortalidad adulta se relaciona con menor esperanza de vida? (esperaríamos una correlación negativa).
+- life_expectancy vs. HIV/AIDS: ¿Relación con la prevalencia de VIH/SIDA?
+
+c) Diagramas de Cajas y Bigotes (Box Plots):
+Nos permitió visualizar la distribución de una variable numérica en función de una variable categórica. Muestra la mediana, los cuartiles y la presencia de valores atípicos.
+
+Comparación 
+- life_expectancy por Status (Developing/Developed): ¿Hay diferencias claras en la esperanza de vida entre países desarrollados y en desarrollo?
+
+d) Mapa de Calor de Correlación (Heatmap):
+Nos permitió ver la representación visual de la matriz de correlación, haciendo que sea muy fácil identificar relaciones fuertes (positivas o negativas) en un par de vistazos.
+
+Consideramos estas como las mas utiles y faciles de comprender y de desarrollar, sabemos que existe una gran variedad de graficas y de extender mas la comprensión de la data, debemos nosotros como futuros analistas ampliar nuestra experiencia y adquirir mas criterios de analisis y de curiosidad para mejorar en este mundo de la big data. 
+
