@@ -43,8 +43,15 @@
 
     - Status: 
 
-- Variables Clave: (Life expectancy) consideramos esta variable numérica continua y es el objetivo de la predicción, lo que la hace la variable de salida perfecta para un problema de regresión y nos apoya para resolver la problemática de estudio. 
-
-
+- Variables Clave: (Life expectancy) consideramos esta variable numérica continua y es el objetivo de la predicción, lo que la hace la variable de salida perfecta para un problema de regresión y nos apoya para resolver la problemática de estudio.
+ 
 - Técnicas de Preprocesamiento de Datos: Usaremos 'Codificación One-Hot'
 Porque validando las variables nos encontramos con categiorias nominales y el número de categorias no es muy grande y el OneHotEncoder para las variables categóricas, que es lo más adecuado para este caso, y cómo manejar las variables numéricas sin aplicarles codificación inapropiada.Consideramos que el dataset LifeExpectancyData.csv las variables que típicamente serían categóricas y se beneficiarían del One-Hot Encoding son 'Country' y 'Status'. Las demás variables que se mencionan como ('Adult Mortality', 'infant deaths', 'Schooling', 'GDP', 'HIV/AIDS', 'Income composition of resources', 'Year', y 'Life expectancy') son numéricas y deben tratarse como tal, posiblemente con escalado si es necesario para el modelo, pero no con codificación que altere su significado numérico.
+
+## Variables clave que vamos a caracterizar:
+
+- Variable Objetivo (Target): life_expectancy
+
+- Variables Numéricas (Features): adult_mortality, infant_deaths, alcohol, percentage_expenditure, hepatitis_b, measles, bmi, under_five_deaths, polio, total_expenditure, diphtheria, hiv/aids, gdp, population, thinness__1_19_years, thinness_5_9_years, income_composition_of_resources, schooling, year.
+
+- Variables Categóricas (Features): country, status
