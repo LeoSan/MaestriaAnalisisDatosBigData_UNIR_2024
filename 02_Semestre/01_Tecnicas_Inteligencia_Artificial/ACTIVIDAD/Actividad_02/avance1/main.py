@@ -29,23 +29,152 @@ def main():
     except Exception as e:
         print(f"❌ Error al cargar el dataset: {e}")
         return
-    
-    # PASO 1: PREPROCESAMIENTO DE DATOS
-    print("\n🎯 Paso 1: ------------ Preprocesamiento de Datos ------------------------ 🎯")
-    # Limpiamos los nombres de las columnas
-    df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('-', '_').str.replace('.', '', regex=False).str.lower()
 
-    print("\n📋 Primeras 5 filas del dataset después de limpieza de columnas:")
+    # PASO 1: PREPROCESAMIENTO DE DATOS (Incluyendo imputación)
+    print("\n🎯 Paso 1: ------------ Preprocesamiento de Datos (para caracterización) ------------------------ 🎯")
+    # Limpiamos los nombres de las columnas
+	df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('-', '_').str.replace('.', '', regex=False).str.lower()    
+
+    # Identificamos columnas categóricas y numéricas
+    # Incluimos todas las numéricas relevantes, incluyendo 'life_expectancy' para la caracterización
+    numerical_cols_for_eda = [
+        'life_expectancy', 'adult_mortality', 'infant_deaths', 'alcohol', 
+        'percentage_expenditure', 'hepatitis_b', 'measles', 'bmi', 
+        'under_five_deaths', 'polio', 'total_expenditure', 'diphtheria', 
+        'hiv/aids', 'gdp', 'population', 'thinness__1_19_years', 
+        'thinness_5_9_years', 'income_composition_of_resources', 'schooling', 'year'
+    ]
+    categorical_cols_for_eda = ['country', 'status']
+
+    # Imputamos los valores faltantes para poder realizar la caracterización
+    imputer_numerical = SimpleImputer(strategy='mean')
+    imputer_categorical = SimpleImputer(strategy='most_frequent')
+
+    for col in numerical_cols_for_eda:
+        if col in df.columns and df[col].isnull().any():
+            print(f"Imputando valores nulos en columna numérica para EDA: {col}")
+            df[col] = imputer_numerical.fit_transform(df[[col]])
+
+    for col in categorical_cols_for_eda:
+        if col in df.columns and df[col].isnull().any():
+            print(f"Imputando valores nulos en columna categórica para EDA: {col}")
+            df[col] = imputer_categorical.fit_transform(df[[col]])
+
+    print("\n📋 Depurando: Primeras 5 filas del dataset después de limpieza de columnas:")
     print(df.head())
 
-    print("\n📋 INFORMACIÓN DETALLADA DESPUÉS DE LIMPIEZA DE COLUMNAS:")
+    print("\n📋 Depurando: INFORMACIÓN DETALLADA DESPUÉS DE LIMPIEZA DE COLUMNAS:")
     print(df.info())    
 
     print("\n📋 Depurando: Nombres de columnas después de la limpieza:")
     print(df.columns.tolist())
     print("\n📋 Depurando: Forma del DataFrame después de la limpieza:", df.shape)
 
-    # Identificamos las columnas categóricas y numéricas
+    # --- INICIO: APARTADO A - CARACTERIZACIÓN DEL DATASET ---
+    print("\n🎯 Paso 2: ------------ Gráficas ------------------------ 🎯")
+    print("\n🎯 Apartado A: ------------ Caracterización del Dataset ------------------------ 🎯")
+
+    # 1. Iniciamos Caracterización en Modo Texto
+    print("\n--- 1.1: Estadísticas Descriptivas de Variables Numéricas ---")
+    print(df[numerical_cols_for_eda].describe().round(2))
+
+    print("\n--- 1.2: Estadísticas Descriptivas de Variables Categóricas ---")
+    print(df[categorical_cols_for_eda].describe())
+
+    print("\n--- 1.3: Conteo de Valores Únicos para 'Status' ---")
+    print(df['status'].value_counts())
+    print(f"\nNúmero total de países únicos: {df['country'].nunique()}")
+
+    print("\n--- 1.4: Matriz de Correlación (primeras 5x5 columnas) ---")
+    # Se muestra el valor de las correlaciones con la variable objetivo o un subconjunto relevante
+    correlation_matrix = df[numerical_cols_for_eda].corr()
+    print(correlation_matrix.head(5).iloc[:, :5].round(2)) # Muestra solo un subconjunto para no saturar la memoria
+
+    # Se muestra la correlación de todas las features con 'life_expectancy'
+    print("\n--- 1.5: Correlación de Features Numéricas con 'life_expectancy' ---")
+    print(correlation_matrix['life_expectancy'].sort_values(ascending=False).round(2))
+
+    # 2. Inicia Caracterización Gráfica
+    print("\n--- 2.1: Histogramas para variables clave ---")
+    plt.figure(figsize=(15, 10))
+    
+    plt.subplot(2, 2, 1)
+    sns.histplot(df['life_expectancy'], kde=True)
+    plt.title('Distribución de la Esperanza de Vida')
+    plt.xlabel('Esperanza de Vida')
+    plt.ylabel('Frecuencia')
+
+    plt.subplot(2, 2, 2)
+    sns.histplot(df['gdp'], kde=True)
+    plt.title('Distribución del PIB')
+    plt.xlabel('PIB')
+    plt.ylabel('Frecuencia')
+
+    plt.subplot(2, 2, 3)
+    sns.histplot(df['schooling'], kde=True)
+    plt.title('Distribución de Años de Escolaridad')
+    plt.xlabel('Años de Escolaridad')
+    plt.ylabel('Frecuencia')
+
+    plt.subplot(2, 2, 4)
+    sns.histplot(df['adult_mortality'], kde=True)
+    plt.title('Distribución de Mortalidad Adulta')
+    plt.xlabel('Mortalidad Adulta')
+    plt.ylabel('Frecuencia')
+    
+    plt.tight_layout()
+    plt.show()
+
+    print("\n--- 2.2: Diagramas de Dispersión (Scatter Plots) con Esperanza de Vida ---")
+    plt.figure(figsize=(15, 10))
+
+    plt.subplot(2, 2, 1)
+    sns.scatterplot(x='gdp', y='life_expectancy', data=df, alpha=0.6)
+    plt.title('Esperanza de Vida vs. PIB')
+    plt.xlabel('PIB')
+    plt.ylabel('Esperanza de Vida')
+
+    plt.subplot(2, 2, 2)
+    sns.scatterplot(x='schooling', y='life_expectancy', data=df, alpha=0.6)
+    plt.title('Esperanza de Vida vs. Escolaridad')
+    plt.xlabel('Años de Escolaridad')
+    plt.ylabel('Esperanza de Vida')
+
+    plt.subplot(2, 2, 3)
+    sns.scatterplot(x='adult_mortality', y='life_expectancy', data=df, alpha=0.6)
+    plt.title('Esperanza de Vida vs. Mortalidad Adulta')
+    plt.xlabel('Mortalidad Adulta')
+    plt.ylabel('Esperanza de Vida')
+
+    plt.subplot(2, 2, 4)
+    sns.scatterplot(x='hiv/aids', y='life_expectancy', data=df, alpha=0.6)
+    plt.title('Esperanza de Vida vs. HIV/AIDS')
+    plt.xlabel('Prevalencia HIV/AIDS')
+    plt.ylabel('Esperanza de Vida')
+
+    plt.tight_layout()
+    plt.show()
+
+    print("\n--- 2.3: Diagrama de Cajas y Bigotes para Esperanza de Vida por Status ---")
+    plt.figure(figsize=(8, 6))
+    sns.boxplot(x='status', y='life_expectancy', data=df)
+    plt.title('Esperanza de Vida por Estado de Desarrollo del País')
+    plt.xlabel('Estado del País')
+    plt.ylabel('Esperanza de Vida')
+    plt.show()
+
+    print("\n--- 2.4: Mapa de Calor de Correlación ---")
+    plt.figure(figsize=(12, 10))
+    # Selecciona un subconjunto de columnas si el heatmap es demasiado grande
+    cols_for_heatmap = ['life_expectancy', 'adult_mortality', 'infant_deaths', 'gdp', 'schooling', 
+                        'hiv/aids', 'income_composition_of_resources', 'bmi', 'alcohol']
+    sns.heatmap(df[cols_for_heatmap].corr(), annot=True, cmap='coolwarm', fmt=".2f", linewidths=.5)
+    plt.title('Mapa de Calor de Correlación de Características Seleccionadas')
+    plt.show()
+
+    print("\n🎯 Paso 3: ------------ Aplicacando Técnica de Preprocesamiento de Datos Usaremos 'Codificación One-Hot ------------------------ 🎯")
+
+    # Identificamos las columnas categóricas y numéricas para nuestro estudio 
     categorical_features = ['country', 'status']
     numerical_features = ['adult_mortality', 'infant_deaths', 'schooling', 'gdp', 'hiv/aids', 'income_composition_of_resources', 'year'] 
     
@@ -59,10 +188,6 @@ def main():
             return  # Salir si faltan columnas críticas
         else:
             print(f"✅ Todas las columnas en {col_list_name} existen en el DataFrame.")
-
-    # Paso 1.1: Imputación de valores faltantes
-    imputer_numerical = SimpleImputer(strategy='mean')
-    imputer_categorical = SimpleImputer(strategy='most_frequent')
 
     for col in numerical_features:
         if col in df.columns and df[col].isnull().any():
