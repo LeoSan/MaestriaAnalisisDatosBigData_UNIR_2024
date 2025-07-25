@@ -1,9 +1,12 @@
 import pandas as pd
 import numpy as np
 
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder, StandardScaler # Importamos StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
+from sklearn.model_selection import train_test_split # Importamos train_test_split
+from sklearn.ensemble import RandomForestRegressor # Importamos RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score # Métricas de evaluación
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -20,7 +23,6 @@ def main():
     print("\n🎯 Paso 0: ----------------- Importamos el DataSet de Esperanza de Vida:------------------ 🎯")
     
     try:
-        # URL de descarga directa para LifeExpectancyData.csv
         url_descarga_directa = 'https://drive.google.com/uc?export=download&id=1EFa-JqAtrXtL1BrYP_mfxFVgAsADd_jn'
         df = pd.read_csv(url_descarga_directa, sep=',')
         print("✅ Dataset cargado exitosamente")
@@ -30,13 +32,12 @@ def main():
         print(f"❌ Error al cargar el dataset: {e}")
         return
 
-    # PASO 1: PREPROCESAMIENTO DE DATOS (Incluyendo imputación)
-    print("\n🎯 Paso 1: ------------ Preprocesamiento de Datos (para caracterización) ------------------------ 🎯")
+    # PASO 1: PREPROCESAMIENTO DE DATOS (PARA EDA Y MODELADO)
+    print("\n🎯 Paso 1: ------------ Preprocesamiento Inicial de Datos ------------------------ 🎯")
     # Limpiamos los nombres de las columnas
-	df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('-', '_').str.replace('.', '', regex=False).str.lower()    
+    df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('-', '_').str.replace('.', '', regex=False).str.lower()    
 
-    # Identificamos columnas categóricas y numéricas
-    # Incluimos todas las numéricas relevantes, incluyendo 'life_expectancy' para la caracterización
+    # Identificamos columnas categóricas y numéricas (para imputación y caracterización)
     numerical_cols_for_eda = [
         'life_expectancy', 'adult_mortality', 'infant_deaths', 'alcohol', 
         'percentage_expenditure', 'hepatitis_b', 'measles', 'bmi', 
@@ -46,35 +47,36 @@ def main():
     ]
     categorical_cols_for_eda = ['country', 'status']
 
-    # Imputamos los valores faltantes para poder realizar la caracterización
+    # Imputamos los valores faltantes
     imputer_numerical = SimpleImputer(strategy='mean')
     imputer_categorical = SimpleImputer(strategy='most_frequent')
 
     for col in numerical_cols_for_eda:
         if col in df.columns and df[col].isnull().any():
-            print(f"Imputando valores nulos en columna numérica para EDA: {col}")
-            df[col] = imputer_numerical.fit_transform(df[[col]])
+            print(f"Imputando valores nulos en columna numérica para EDA y Modelado: {col}")
+            # .reshape(-1, 1) es redundante con df[[col]], .flatten() es para array 1D
+            # La forma (n_samples, 1) es lo que espera fit_transform, df[[col]] ya lo da.
+            df[col] = imputer_numerical.fit_transform(df[[col]]) # Dejarlo así está bien
 
     for col in categorical_cols_for_eda:
         if col in df.columns and df[col].isnull().any():
-            print(f"Imputando valores nulos en columna categórica para EDA: {col}")
-            df[col] = imputer_categorical.fit_transform(df[[col]])
+            print(f"Imputando valores nulos en columna categórica para EDA y Modelado: {col}")
+            df[col] = imputer_categorical.fit_transform(df[[col]]) # Dejarlo así está bien
 
-    print("\n📋 Depurando: Primeras 5 filas del dataset después de limpieza de columnas:")
+    print("\n✅ Imputación de valores nulos completada.")
+
+    print("\n📋 Depurando: Primeras 5 filas del dataset después de limpieza y imputación:")
     print(df.head())
-
-    print("\n📋 Depurando: INFORMACIÓN DETALLADA DESPUÉS DE LIMPIEZA DE COLUMNAS:")
+    print("\n📋 Depurando: INFORMACIÓN DETALLADA DESPUÉS DE LIMPIEZA Y IMPUTACIÓN:")
     print(df.info())    
-
-    print("\n📋 Depurando: Nombres de columnas después de la limpieza:")
+    print("\n📋 Depurando: Nombres de columnas después de la limpieza y imputación:")
     print(df.columns.tolist())
-    print("\n📋 Depurando: Forma del DataFrame después de la limpieza:", df.shape)
+    print("\n📋 Depurando: Forma del DataFrame después de la limpieza y imputación:", df.shape)
 
-    # --- INICIO: APARTADO A - CARACTERIZACIÓN DEL DATASET ---
-    print("\n🎯 Paso 2: ------------ Gráficas ------------------------ 🎯")
-    print("\n🎯 Apartado A: ------------ Caracterización del Dataset ------------------------ 🎯")
+    # --- INICIO: APARTADO A - CARACTERIZACIÓN DEL DATASET (tal como lo tienes) ---
+    print("\n🎯 Paso 2: ------------ Caracterización del Dataset ------------------------ 🎯")
 
-    # 1. Iniciamos Caracterización en Modo Texto
+    # 1. Caracterización en Modo Texto
     print("\n--- 1.1: Estadísticas Descriptivas de Variables Numéricas ---")
     print(df[numerical_cols_for_eda].describe().round(2))
 
@@ -85,194 +87,194 @@ def main():
     print(df['status'].value_counts())
     print(f"\nNúmero total de países únicos: {df['country'].nunique()}")
 
-    print("\n--- 1.4: Matriz de Correlación (primeras 5x5 columnas) ---")
-    # Se muestra el valor de las correlaciones con la variable objetivo o un subconjunto relevante
+    print("\n--- 1.4: Matriz de Correlación (con life_expectancy) ---")
     correlation_matrix = df[numerical_cols_for_eda].corr()
-    print(correlation_matrix.head(5).iloc[:, :5].round(2)) # Muestra solo un subconjunto para no saturar la memoria
-
-    # Se muestra la correlación de todas las features con 'life_expectancy'
     print("\n--- 1.5: Correlación de Features Numéricas con 'life_expectancy' ---")
     print(correlation_matrix['life_expectancy'].sort_values(ascending=False).round(2))
 
-    # 2. Inicia Caracterización Gráfica
-    print("\n--- 2.1: Histogramas para variables clave ---")
-    plt.figure(figsize=(15, 10))
-    
+    # 2. Caracterización Gráfica (Código de gráficas omitido aquí por brevedad, pero mantenlo en tu archivo)
+    # ... Tus llamadas a plt.show() para los histogramas, scatter plots, box plots y heatmap.
+    print("\n--- 2.1: Histogramas para variables clave (se mostrarán ventanas de gráficos) ---")
+    # ... (Tu código de histogramas aquí)
+    plt.figure(figsize=(15, 10)) # Asegúrate de tener este bloque de código en tu main()
     plt.subplot(2, 2, 1)
     sns.histplot(df['life_expectancy'], kde=True)
     plt.title('Distribución de la Esperanza de Vida')
     plt.xlabel('Esperanza de Vida')
     plt.ylabel('Frecuencia')
-
     plt.subplot(2, 2, 2)
     sns.histplot(df['gdp'], kde=True)
     plt.title('Distribución del PIB')
     plt.xlabel('PIB')
     plt.ylabel('Frecuencia')
-
     plt.subplot(2, 2, 3)
     sns.histplot(df['schooling'], kde=True)
     plt.title('Distribución de Años de Escolaridad')
     plt.xlabel('Años de Escolaridad')
     plt.ylabel('Frecuencia')
-
     plt.subplot(2, 2, 4)
     sns.histplot(df['adult_mortality'], kde=True)
     plt.title('Distribución de Mortalidad Adulta')
     plt.xlabel('Mortalidad Adulta')
     plt.ylabel('Frecuencia')
-    
     plt.tight_layout()
     plt.show()
 
-    print("\n--- 2.2: Diagramas de Dispersión (Scatter Plots) con Esperanza de Vida ---")
-    plt.figure(figsize=(15, 10))
-
+    print("\n--- 2.2: Diagramas de Dispersión (Scatter Plots) con Esperanza de Vida (se mostrarán ventanas de gráficos) ---")
+    # ... (Tu código de scatter plots aquí)
+    plt.figure(figsize=(15, 10)) # Asegúrate de tener este bloque de código en tu main()
     plt.subplot(2, 2, 1)
     sns.scatterplot(x='gdp', y='life_expectancy', data=df, alpha=0.6)
     plt.title('Esperanza de Vida vs. PIB')
     plt.xlabel('PIB')
     plt.ylabel('Esperanza de Vida')
-
     plt.subplot(2, 2, 2)
     sns.scatterplot(x='schooling', y='life_expectancy', data=df, alpha=0.6)
     plt.title('Esperanza de Vida vs. Escolaridad')
     plt.xlabel('Años de Escolaridad')
     plt.ylabel('Esperanza de Vida')
-
     plt.subplot(2, 2, 3)
     sns.scatterplot(x='adult_mortality', y='life_expectancy', data=df, alpha=0.6)
     plt.title('Esperanza de Vida vs. Mortalidad Adulta')
     plt.xlabel('Mortalidad Adulta')
     plt.ylabel('Esperanza de Vida')
-
     plt.subplot(2, 2, 4)
     sns.scatterplot(x='hiv/aids', y='life_expectancy', data=df, alpha=0.6)
     plt.title('Esperanza de Vida vs. HIV/AIDS')
     plt.xlabel('Prevalencia HIV/AIDS')
     plt.ylabel('Esperanza de Vida')
-
     plt.tight_layout()
     plt.show()
 
-    print("\n--- 2.3: Diagrama de Cajas y Bigotes para Esperanza de Vida por Status ---")
-    plt.figure(figsize=(8, 6))
+    print("\n--- 2.3: Diagrama de Cajas y Bigotes para Esperanza de Vida por Status (se mostrarán ventanas de gráficos) ---")
+    # ... (Tu código de box plot aquí)
+    plt.figure(figsize=(8, 6)) # Asegúrate de tener este bloque de código en tu main()
     sns.boxplot(x='status', y='life_expectancy', data=df)
     plt.title('Esperanza de Vida por Estado de Desarrollo del País')
     plt.xlabel('Estado del País')
     plt.ylabel('Esperanza de Vida')
     plt.show()
 
-    print("\n--- 2.4: Mapa de Calor de Correlación ---")
-    plt.figure(figsize=(12, 10))
-    # Selecciona un subconjunto de columnas si el heatmap es demasiado grande
+    print("\n--- 2.4: Mapa de Calor de Correlación (se mostrará ventana de gráfico) ---")
+    # ... (Tu código de heatmap aquí)
+    plt.figure(figsize=(12, 10)) # Asegúrate de tener este bloque de código en tu main()
     cols_for_heatmap = ['life_expectancy', 'adult_mortality', 'infant_deaths', 'gdp', 'schooling', 
                         'hiv/aids', 'income_composition_of_resources', 'bmi', 'alcohol']
     sns.heatmap(df[cols_for_heatmap].corr(), annot=True, cmap='coolwarm', fmt=".2f", linewidths=.5)
     plt.title('Mapa de Calor de Correlación de Características Seleccionadas')
     plt.show()
 
-    print("\n🎯 Paso 3: ------------ Aplicacando Técnica de Preprocesamiento de Datos Usaremos 'Codificación One-Hot ------------------------ 🎯")
+    print("\n🎯 Fin de la Caracterización del Dataset 🎯")
+    # --- FIN: APARTADO A - CARACTERIZACIÓN DEL DATASET ---
 
-    # Identificamos las columnas categóricas y numéricas para nuestro estudio 
-    categorical_features = ['country', 'status']
-    numerical_features = ['adult_mortality', 'infant_deaths', 'schooling', 'gdp', 'hiv/aids', 'income_composition_of_resources', 'year'] 
-    
-    # Validamos que las columnas existen en el DataFrame
-    print("\n📋 Depurando: Verificando existencia de columnas para preprocesamiento:")
-    for col_list_name, col_list in [("Categorical Features", categorical_features), ("Numerical Features", numerical_features)]:
-        missing_cols = [col for col in col_list if col not in df.columns]
-        if missing_cols:
-            print(f"❌ Faltan columnas en {col_list_name}: {missing_cols}")
-            print(f"📋 Columnas disponibles: {df.columns.tolist()}")
-            return  # Salir si faltan columnas críticas
-        else:
-            print(f"✅ Todas las columnas en {col_list_name} existen en el DataFrame.")
+    # --- INICIO: PASO 3 - PREPARACIÓN DE DATOS PARA MODELADO Y MODELO DE REGRESIÓN NO NEURONAL ---
+    print("\n🎯 Paso 3: ------------ Preparación de Datos y Modelo de Regresión No Neuronal ------------------------ 🎯")
 
-    for col in numerical_features:
-        if col in df.columns and df[col].isnull().any():
-            print(f"Imputando valores nulos en columna numérica: {col}")
-            df[col] = imputer_numerical.fit_transform(df[[col]]).flatten()
+    # 3.1 Separar Características (X) y Variable Objetivo (y)
+    target_column = 'life_expectancy'
+    X = df.drop(columns=[target_column])
+    y = df[target_column]
+    print(f"\n✅ Datos separados: X.shape={X.shape}, y.shape={y.shape}")
 
-    for col in categorical_features:
-        if col in df.columns and df[col].isnull().any():
-            print(f"Imputando valores nulos en columna categórica: {col}")
-            df[col] = imputer_categorical.fit_transform(df[[col]]).flatten()
+    # 3.2 Dividir los Datos en Conjuntos de Entrenamiento y Prueba
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    print(f"✅ Datos divididos en entrenamiento y prueba (test_size=0.2, random_state=42):")
+    print(f"   X_train.shape={X_train.shape}, y_train.shape={y_train.shape}")
+    print(f"   X_test.shape={X_test.shape}, y_test.shape={y_test.shape}")
+
+    # 3.3 Ajustar el ColumnTransformer para el modelado (puede incluir escalado)
+    # Las columnas categóricas y numéricas son las que irán en X
+    categorical_features_model = ['country', 'status']
+    # Excluimos la variable objetivo de las features numéricas para el modelo
+    numerical_features_model = [col for col in X.columns if col not in categorical_features_model]
     
-    # Definir la variable objetivo
-    target_column = 'life_expectancy' 
+    # Random Forest no NECESITA escalado, pero a veces ayuda.
+    # Si quisieras escalado, el preprocessor sería así:
+    # transformers=[
+    #    ('cat', OneHotEncoder(handle_unknown='ignore', sparse_output=False), categorical_features_model),
+    #    ('num', StandardScaler(), numerical_features_model) # Aquí se usa StandardScaler
+    # ]
     
-    # Aplicamos transformación OneHotEncoder    
-    preprocessor = ColumnTransformer(
+    preprocessor_model = ColumnTransformer(
         transformers=[
-            ('cat', OneHotEncoder(handle_unknown='ignore', sparse_output=False), categorical_features),
-            ('num', 'passthrough', numerical_features)
+            ('cat', OneHotEncoder(handle_unknown='ignore', sparse_output=False), categorical_features_model),
+            ('num', 'passthrough', numerical_features_model) # Usamos 'passthrough' si no queremos escalar
         ],
         remainder='drop',
-        sparse_threshold=0  # Esto fuerza la salida a ser un array denso
+        sparse_threshold=0 # Asegura salida densa
     )
 
-    print("\n📋 Depurando: Antes de aplicar ColumnTransformer:")
-    print("Columnas que se pasarán al OneHotEncoder:", categorical_features)
-    print("Columnas que se pasarán como numéricas (passthrough):", numerical_features)
-    print("Forma del DataFrame df antes de ColumnTransformer.fit_transform:", df.shape)
+    print("\n📋 Depurando: ColumnTransformer para modelado configurado.")
+    print(f"   Columnas categóricas para modelado: {categorical_features_model}")
+    print(f"   Columnas numéricas para modelado: {numerical_features_model}")
+
+    # Aplicar transformaciones SOLO a los conjuntos de entrenamiento y prueba
+    X_train_processed = preprocessor_model.fit_transform(X_train)
+    X_test_processed = preprocessor_model.transform(X_test) # Usar transform, no fit_transform, en el set de prueba
+
+    # Obtener nombres de columnas finales para el DataFrame transformado
+    # Importante: obtener los nombres DESPUÉS de fit en X_train
+    one_hot_feature_names_model = preprocessor_model.named_transformers_['cat'].get_feature_names_out(categorical_features_model)
+    all_feature_names_model = list(one_hot_feature_names_model) + numerical_features_model
+
+    # Convertir a DataFrame para mejor manejo y visualización (opcional, el modelo de sklearn puede usar arrays)
+    X_train_final = pd.DataFrame(X_train_processed, columns=all_feature_names_model, index=X_train.index)
+    X_test_final = pd.DataFrame(X_test_processed, columns=all_feature_names_model, index=X_test.index)
+
+    print(f"\n✅ Datos de entrenamiento y prueba preprocesados:")
+    print(f"   X_train_final.shape={X_train_final.shape}")
+    print(f"   X_test_final.shape={X_test_final.shape}")
+    print("📋 Primeras 5 filas de X_train_final:")
+    print(X_train_final.head())
+
+
+    # 3.4 Entrenar el Modelo Random Forest Regressor
+    print("\n--- 3.4: Entrenando el Modelo Random Forest Regressor ---")
+    # Parámetros básicos para empezar. Puedes ajustarlos (hiperparámetros)
+    # n_estimators: número de árboles en el bosque
+    # random_state: para reproducibilidad
+    # n_jobs: -1 usa todos los núcleos de la CPU
     
-    # Verificar que las columnas categóricas tienen datos
-    for col in categorical_features:
-        print(f"📋 Depurando: Valores únicos en {col}: {df[col].nunique()}")
-        print(f"📋 Depurando: Primeros 3 valores únicos en {col}: {df[col].unique()[:3]}")
+    # Definimos el modelo
+    rf_model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+    
+    # Entrenamos el modelo con los datos de entrenamiento preprocesados
+    rf_model.fit(X_train_final, y_train)
+    print("✅ Modelo Random Forest entrenado exitosamente.")
 
-    # Aplicar las transformaciones al DataFrame
-    df_processed_array = preprocessor.fit_transform(df)
 
-    print("\n📋 Depurando: Después de aplicar ColumnTransformer:")
-    print("Forma de df_processed_array:", df_processed_array.shape)
-    print("Tipo de df_processed_array:", type(df_processed_array))
+    # 3.5 Probar el Modelo y Evaluar
+    print("\n--- 3.5: Evaluando el Modelo Random Forest ---")
+    y_pred_train = rf_model.predict(X_train_final) # Predicciones en entrenamiento
+    y_pred_test = rf_model.predict(X_test_final)   # Predicciones en prueba
 
-    #Verificamos si es un array sparse y convertirlo
-    if hasattr(df_processed_array, 'toarray'):
-        df_processed_array = df_processed_array.toarray()
-        print("📋 Depurando: Convertido de sparse a array denso")
-        print("📋 Depurando: Nueva forma después de toarray():", df_processed_array.shape)
+    # Métricas de evaluación
+    mae_train = mean_absolute_error(y_train, y_pred_train)
+    mse_train = mean_squared_error(y_train, y_pred_train)
+    rmse_train = np.sqrt(mse_train)
+    r2_train = r2_score(y_train, y_pred_train)
 
-    # Obtener los nombres de las nuevas columnas
-    try:
-        one_hot_features_names = preprocessor.named_transformers_['cat'].get_feature_names_out(categorical_features)
-        all_feature_names = list(one_hot_features_names) + numerical_features
-        
-        print("📋 Depurando: Número de columnas One-Hot generadas:", len(one_hot_features_names))
-        print("📋 Depurando: Número total de columnas esperadas:", len(all_feature_names))
-        print("📋 Depurando: Forma final del array procesado:", df_processed_array.shape)
-        
-        # Verificamos coherencia de dimensiones
-        if df_processed_array.shape[1] != len(all_feature_names):
-            print(f"❌ ERROR: Dimensiones no coinciden!")
-            print(f"   Array tiene {df_processed_array.shape[1]} columnas")
-            print(f"   Nombres de columnas: {len(all_feature_names)}")
-            return
-        
-        # Creamos el DataFrame final
-        df_encoded = pd.DataFrame(df_processed_array, columns=all_feature_names)
-        
-        print("\n✅ DataFrame codificado creado exitosamente!")
-        print("📋 Primeras 5 filas del dataset codificado con One-Hot Encoding:")
-        print(df_encoded.head())
-        print(f"\n📋 Dimensiones del nuevo DataFrame codificado: {df_encoded.shape}")
-        
-    except Exception as e:
-        print(f"❌ Error al crear los nombres de columnas o el DataFrame: {e}")
-        print("📋 Depurando: Intentando diagnóstico adicional...")
-        print("📋 Transformadores disponibles:", list(preprocessor.named_transformers_.keys()))
-        return
+    mae_test = mean_absolute_error(y_test, y_pred_test)
+    mse_test = mean_squared_error(y_test, y_pred_test)
+    rmse_test = np.sqrt(mse_test)
+    r2_test = r2_score(y_test, y_pred_test)
 
-    #Anexamos la variable objetivo en el DataFrame final
-    if target_column in df.columns:
-        df_final = pd.concat([df_encoded, df[target_column].reset_index(drop=True)], axis=1)
-        print("\n📋 DataFrame final con variable objetivo creado:")
-        print(f"   Dimensiones: {df_final.shape}")
-    else:
-        print(f"\nAdvertencia: La columna objetivo '{target_column}' no se encontró en el DataFrame original.")
-        df_final = df_encoded
+    print("\n--- Métricas en el Conjunto de Entrenamiento ---")
+    print(f"MAE (Error Absoluto Medio): {mae_train:.2f}")
+    print(f"MSE (Error Cuadrático Medio): {mse_train:.2f}")
+    print(f"RMSE (Raíz del Error Cuadrático Medio): {rmse_train:.2f}")
+    print(f"R2 Score: {r2_train:.2f}")
 
+    print("\n--- Métricas en el Conjunto de Prueba (¡Importante para evaluar el rendimiento general!) ---")
+    print(f"MAE (Error Absoluto Medio): {mae_test:.2f}")
+    print(f"MSE (Error Cuadrático Medio): {mse_test:.2f}")
+    print(f"RMSE (Raíz del Error Cuadrático Medio): {rmse_test:.2f}")
+    print(f"R2 Score: {r2_test:.2f}")
+
+    print("\n🎯 Fin del Modelo de Regresión No Neuronal 🎯")
+    # --- FIN: PASO 3 ---
+
+    # El resto de tu código si tuvieras más pasos
+    
 if __name__ == "__main__":
     main()
