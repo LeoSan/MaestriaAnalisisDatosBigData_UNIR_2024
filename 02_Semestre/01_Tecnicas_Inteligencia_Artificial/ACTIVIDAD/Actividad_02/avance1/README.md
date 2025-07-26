@@ -16,7 +16,8 @@
     - activamos entorno asi -> ´source ./avance2/bin/activate´
     - Ejecutamos así ´python3 main.py´ estando en el directorio -> ~/Documents/Dev/python/maestria
 
-# Parte  1 Descripción del Dataset
+
+# PARTE TECNICA PARA SOLVENTAR **Actividad de Regresión (Apartado A)**
 
 - Nombre del Dataset: 'LifeExpectancyData.csv'.
 - Fuente: Se extrajo el dataset de la plataforma Kaggle cuyo enlace publico se consigue en el siguiente enlace público  'https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who/suggestions'
@@ -122,6 +123,16 @@ Para la evalución de nuestro modelo de red neuronal comienza utilizando el mét
 Ahora para obtener métricas adicionales como el **R2 Score y el RMSE**, es necesario primero generar las predicciones del modelo sobre el conjunto de prueba. Esto se logra con **model_nn.predict(X_test_final)**. Es importante destacar que la salida de **predict()** es un array 2D con una sola columna **(n_samples, 1),** por lo que aplicamos **.flatten()** para convertirlo en un array 1D. Esta conversión es fundamental, ya que funciones de métricas como r2_score esperan que tanto los valores reales (y_test) como las predicciones (y_pred_nn) tengan la misma forma unidimensional.
 
 Por ultimo las predicciones transformadas y los valores reales del conjunto de prueba, se calcularón manualmente el **R2 Score y el RMSE**. Estas métricas complementan el MSE y el MAE, ofreciendo una visión más completa del desempeño del modelo. El R2 Score, en particular, nos indica qué proporción de la varianza en la esperanza de vida es explicada por nuestro modelo, mientras que el RMSE nos da una medida del error en la misma escala que la variable objetivo, permitiendo una comparación directa con los resultados obtenidos del modelo Random Forest.
+
+
+# PARTE TECNICA PARA SOLVENTAR **Actividad de Clasificación (Apartado B)**
+
+- Nombre del Dataset: 'LifeExpectancyData.csv'.
+- Fuente: Se extrajo el dataset de la plataforma Kaggle cuyo enlace publico se consigue en el siguiente enlace público  'https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who/suggestions'
+
+- Hipótesis: Se desea predecir la esperanza de vida de un conjunto de datos generales,  usando un dataset con información de otros países para el 2030. 
+
+- Context
 
 
 
