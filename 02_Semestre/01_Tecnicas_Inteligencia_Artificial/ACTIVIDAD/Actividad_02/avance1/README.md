@@ -20,7 +20,7 @@
 # PARTE TECNICA PARA SOLVENTAR **Actividad de Regresión (Apartado A)**
 
 - Nombre del Dataset: 'LifeExpectancyData.csv'.
-- Fuente: Se extrajo el dataset de la plataforma Kaggle cuyo enlace publico se consigue en el siguiente enlace público  'https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who/suggestions'
+- Fuente: Se extrajo el dataset de la plataforma Kaggle cuyo enlace publico se consigue en el siguiente enlace público  '[https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who/suggestions](https://www.kaggle.com/code/qusaybtoush1990/students-adaptability-accuracy-91-4/notebook)'
 
 - Hipótesis: Se desea predecir la esperanza de vida de un conjunto de datos generales,  usando un dataset con información de otros países para el 2030. 
 
@@ -127,12 +127,13 @@ Por ultimo las predicciones transformadas y los valores reales del conjunto de p
 
 # PARTE TECNICA PARA SOLVENTAR **Actividad de Clasificación (Apartado B)**
 
-- Nombre del Dataset: 'LifeExpectancyData.csv'.
+- Nombre del Dataset: 'students_adaptability_level_online_education.csv'.
 - Fuente: Se extrajo el dataset de la plataforma Kaggle cuyo enlace publico se consigue en el siguiente enlace público  'https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who/suggestions'
 
-- Hipótesis: Se desea predecir la esperanza de vida de un conjunto de datos generales,  usando un dataset con información de otros países para el 2030. 
+- Hipótesis: Es una dataset para iniciar en este campo del modelado y entrenamientos de analisis de datos  partiremos de esta hipotesis
+  - "¿Es posible predecir el nivel de adaptabilidad de un estudiante al aprendizaje online (Bajo, Moderado, Alto) basándose en sus características demográficas, educativas, económicas y tecnológicas?" 
 
-- Context
+- Context:  Se tomaran las siguientes variables para validar la hipotesis y aplicar el conocimiento adquirido durante las clases las variables son:
 
 
 
