@@ -1089,7 +1089,85 @@ D. Permite obtener clústeres jerárquicos.
 - Scikit Learn.
 
 
-# Tema 8:
+# Tema 8:Sistemas de recomendación
+
+1. Los sistemas que utilizan valoraciones de los usuarios para recomendar contenidos emplean técnicas de:
+A. Filtrado demográfico.
+B. Filtrado colaborativo. -> **Correcto**
+C. Filtrado basado en contenidos.
+D. Filtrado basado en usuarios.
+
+2. Los sistemas que utilizan información descriptiva de los contenidos para
+recomendar contenidos emplean técnicas de:
+A. Filtrado demográfico.
+B. Filtrado colaborativo. -> **Correcto**
+C. Filtrado basado en contenidos.
+D. Filtrado basado en usuarios.
+
+3. Indica **cuáles** de las siguientes afirmaciones son correctas:
+A. Se pueden utilizar árboles de decisión o reglas inducidas para representar
+el perfil del usuario en un sistema recomendador. -> **Correcto**
+B. Algunos sistemas recomendadores utilizan técnicas de clústering para
+generar grupos de usuarios con perfil similar. -> **Correcto**
+C. Las técnicas de clústering no son utilizadas por los sistemas
+recomendadores.
+D. Los sistemas de recomendación nunca solicitan información al usuario de
+manera explícita.
+
+4. Indica **cuáles** de las siguientes afirmaciones son correctas:
+A. Los sistemas de filtrado colaborativo basado en ítems calculan la similitud
+entre ítems.  -> **Correcto**
+B. Los sistemas de filtrado colaborativo basado en ítems calculan la similitud
+entre usuarios.
+C. Los sistemas de filtrado basado en contenidos calculan la similitud entre
+ítems.  -> **Correcto**
+D. Los sistemas de filtrado colaborativo basado en usuarios calculan la
+similitud entre ítems.
+
+5. Slope One es un algoritmo empleado en los sistemas de:
+A. Filtrado demográfico.
+B. Filtrado colaborativo basado en usuarios.
+C. Filtrado basado en contenidos.
+D. Filtrado colaborativo basado en ítems. -> **Correcto**
+
+6. La función de predicción de la valoración de un ítem en el algoritmo Slope One se
+basa en:
+A. La media de valoraciones dadas al ítem por los usuarios.
+B. La media de la diferencia de valoraciones entre ítems. -> **Correcto**
+C. La mediana de valoraciones dadas al ítem por los usuarios.
+D. El valor máximo de la diferencia de valoraciones entre ítems
+
+7. Marca las **frases que son correctas** respecto al algoritmo de filtrado colaborativo
+ítem a ítem:
+A. Se basa en encontrar ítems similares.-> **Correcto**
+B. Se basa en encontrar usuarios similares.
+C. Se basa en metadatos de los ítems.
+D. Se basa en datos binarios como las adquisiciones o no adquisiciones de
+los ítems por parte de los usuarios.-> **Correcto**
+
+8. ¿Qué sistemas presentan problemas para recomendar ítems recientemente
+incorporados al sistema?
+A. Filtrado colaborativo basado en usuarios.-> **Correcto**
+B. Filtrado basado en contenidos.
+C. Filtrado colaborativo basado en ítems.-> **Correcto**
+D. Ninguno de los anteriores.
+
+
+9. Indica cuáles de las siguientes afirmaciones son correctas respecto al modelo
+TF-IDF.
+A. Es un modelo utilizado en los sistemas recomendadores basados en
+contenidos. -> **Correcto**
+B. Utiliza la similitud del coseno para medir la similitud entre documentos. -> **Correcto**
+C. Utiliza la función TF-IDF para calcular la similitud entre documentos.
+D. Favorece a los documentos largos frente a los cortos.
+
+10. Algunos problemas que los recomendadores basados en contenido presentan
+son:
+A. Al usuario no siempre le interesan los ítems similares. -> **Correcto**
+B. Cuando un ítem no está valorado no es recomendado.
+C. No tienen en cuenta información subjetiva. -> **Correcto**
+D. No puede ofrecer información a usuarios atípicos, que no son similares a
+otros usuarios.
 
 ## Videoclase 1. Sistemas de recomendación colaborativa
 - En el filtrado colaborativo basado en usuarios
