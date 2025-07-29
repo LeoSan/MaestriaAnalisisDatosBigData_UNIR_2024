@@ -1102,7 +1102,7 @@ D. Permite obtener clústeres jerárquicos.
 
 
 
-# Videoclase 1. Sistemas de recomendación colaborativa
+## Videoclase 1. Sistemas de recomendación colaborativa
 - En el filtrado colaborativo basado en usuarios
     - Se recomienda contenido similar a los ítems que han recomendado otros usuarios con características similares. => El filtrado colaborativo establece recomendaciones para un usuario basadas en la similitud con otros usuarios que previamente han recomendado ese contenido.
 
@@ -1118,6 +1118,36 @@ D. Permite obtener clústeres jerárquicos.
 - Los sistemas de recomendación colaborativa:
     - Están dentro del paradigma del aprendizaje difuso. => Podemos considerar los sistemas de recomendación colaborativa dentro del aprendizaje supervisado, ya que contamos con un conjunto de datos etiquetado en base a preferencias de usuario
 
+## Video clase 2: 
+- Un sistema de recomendación basada en contenido
+- Ubica su foco sobre la representación de los contenidos.
+  
+- En un sistema de recomendación basada en contenido, ¿qué ítems se recomiendan a un usuario que previamente ha adquirido un ítem?
+- Aquellos que hayan adquirido usuarios que adquirieron ítems similares.
+
+- A grandes rasgos, ¿qué plantea la técnica VSM Vector Space Model?
+- Estructuración de información a partir de su representación vectorial.
+
+- El método TF-IDF podría ser utilizado para
+- Todas las anteriores.
+
+- Los sistemas de recomendación basada en contenidos
+- Ninguna de las anteriores.
+
+## Video clase 3: 
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
 
 
 
@@ -1125,7 +1155,13 @@ D. Permite obtener clústeres jerárquicos.
 
 
 
-# 
+
+
+
+
+
+
+## Video clase 3: 
 - 
 - 
 
@@ -1140,6 +1176,28 @@ D. Permite obtener clústeres jerárquicos.
 
 - 
 - 
+
+
+
+
+
+
+## Video clase 3: 
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
 
 
 
