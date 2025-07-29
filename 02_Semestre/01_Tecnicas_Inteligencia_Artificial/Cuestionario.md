@@ -1134,7 +1134,7 @@ D. Permite obtener clústeres jerárquicos.
 - Los sistemas de recomendación basada en contenidos
 - Ninguna de las anteriores.
 
-## Video clase 3: 
+## Videoclase 3. Sistemas de recomendación híbridos  
 - 
 - 
 
