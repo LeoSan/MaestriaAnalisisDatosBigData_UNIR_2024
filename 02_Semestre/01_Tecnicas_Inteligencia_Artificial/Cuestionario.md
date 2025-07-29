@@ -1135,19 +1135,20 @@ D. Permite obtener clústeres jerárquicos.
 - Ninguna de las anteriores.
 
 ## Videoclase 3. Sistemas de recomendación híbridos  
-- 
-- 
+- En la actualidad, los sistemas de recomendación híbridos
+- Mejoran las características de los sistemas de recomendación colaborativos o basada en contenidos.
 
-- 
-- 
+- ¿Cuál de las siguientes no es una tipología de hibridación?
+- Sistemas entrelazados. =Los sistemas híbridos de recomendación de contenidos se dividen en ponderados, conmutados, mixtos, combinados, en cascada y meta-recomendadores.
 
-- 
-- 
+- ¿En cuáles de los siguientes tipos de sistema de recomendación híbrida no influye el orden en el que se plantean los distintos sistemas componentes?
+- En cascada.
 
-- 
-- 
+- En un sistema de recomendación mixto
+- Se presentan varias recomendaciones al mismo tiempo.
 
-- 
+- ¿Qué tienen en común las plataformas como Amazon, Netflix y Spotify?
+- Requieren de modelos de alta eficiencia para aportar soluciones rápidas y realistas a sus usuarios.
 
 
 
