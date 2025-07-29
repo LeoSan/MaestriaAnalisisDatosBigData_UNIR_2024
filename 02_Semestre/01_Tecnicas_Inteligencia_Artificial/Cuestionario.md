@@ -348,7 +348,7 @@ D. Cuanto mayor nivel de confianza se requiere se obtiene un intervalo de
 confianza menor.
 
 
-# Video Clase 1: El conocimiento representado en un árbol de decisión
+## Video Clase 1: El conocimiento representado en un árbol de decisión
 
 - El aprendizaje que podemos experimentar con un árbol de decisión es:
     - Aprendizaje inductivo. => Se trata de un tipo de aprendizaje inductivo mediante el cual podemos extraer conclusiones a partir de premisas o reglas formadas en el propio árbol.
@@ -369,7 +369,7 @@ confianza menor.
     - No, debería de tratarse de un árbol de clasificación. => Se trata de un problema de predicción de una categoría entre cinco posibles, por lo que estaríamos en un problema de clasificación, cuyas reglas o premisas podrían estar perfectamente representadas mediante un árbol de decisión.
 
 
-# Video Clase 2:  Evaluación mediante Curvas ROC
+## Video Clase 2:  Evaluación mediante Curvas ROC
 
 - Accuracy, recall, precisión y f1-score son métricas:
     - Para evaluar problemas de clasificación
@@ -386,7 +386,7 @@ confianza menor.
 - A menor área AUC bajo una curva ROC, tenemos que:
     - El clasificador tendrá un peor desempeño. => AUC mide el desempeño a nivel de discriminación de un clasificador determinado, en la forma que, a mayor área bajo la curva y más cercana su medida a 1, mejor será dicho desempeño.
 
-# Video Clase 3: Ensemble learning
+## Video Clase 3: Ensemble learning
 
 - ¿Qué tipología de aprendizaje proponen los modelos de ensemble?:
 - Aprendizaje integrado
@@ -538,9 +538,6 @@ D. Valora los ítem-sets generados mediante una medida de confianza.
 - De los siguientes casos de uso, ¿cuáles podrían ser modelados por un sistema de generación de reglas de clasificación como PRISM?:
 - Ninguno de los anteriores.
 
-
-
-
 ## Videoclase 3. Otros algoritmos de clasificación
 
 
@@ -559,8 +556,6 @@ D. Valora los ítem-sets generados mediante una medida de confianza.
 - Queremos sobre nuestra base de datos de clientes de una gran tienda de muebles, establecer asociaciones de preferencia de compra entre aquellos que adquieren un sillón motorizado. Podremos modelar nuestro problema mediante:
 - Ninguna de las anteriores.
 
-
-
 # Tema 5: Redes neuronales artificiales
 
 1. Indica cuáles de las siguientes afirmaciones son correctas:
@@ -568,7 +563,6 @@ A. Las neuronas artificiales simulan el comportamiento de las neuronas biológic
 B. Las neuronas artificiales pueden tener varias salidas que toman valores diferentes.
 C. Las neuronas artificiales pueden tener varias entradas que toman valores diferentes. -> **correcto**
 D. Las entradas de las neuronas artificiales se ponderan con un peso. -> **correcto**
-
 
 2. Selecciona las opciones correctas. En la fase de entrenamiento de una red
 neuronal:
@@ -870,7 +864,7 @@ que una entrada pertenezca a una clase
 - ¿Qué librería de inteligencia artificial nos permite la configuración de arquitecturas de red neuronal convolucional?:
 - TensorFlow.
 
-# Videoclase 2. Autoencoders
+## Videoclase 2. Autoencoders
 
 - La idea de base tras un autoencoder es:
 - La reducción de los datos preservando sus características.  => El planteamiento de los autoencoders se basa en la reducción de la información de entrada para aprender lo fundamental de la misma.
@@ -887,7 +881,7 @@ que una entrada pertenezca a una clase
 - ¿Qué librería de inteligencia artificial nos permite la creación de autoencoders?:
 - TensorFlow
 
-# Videoclase 3. Aprendizaje por refuerzo
+## Videoclase 3. Aprendizaje por refuerzo
 
 - ¿Qué cambio de paradigma plantea el aprendizaje por refuerzo?:
 - De minimizar el error a maximizar la recompensa => El aprendizaje supervisado plantea como máxima la minimización del error cometido, mientras que el aprendizaje por refuerzo en enfoca en obtener recompensas máximas sobre un entorno.
@@ -908,8 +902,6 @@ que una entrada pertenezca a una clase
 
 
 # Tema 7: Clustering. Agrupamiento o clasificación no supervisada
-
-
 1. Indica cuáles de las siguientes afirmaciones son correctas:
 A. El clústering permite agrupar objetos similares entre sí. -> **correcto**
 B. El clústering es un método de aprendizaje supervisado.
@@ -1044,7 +1036,7 @@ D. Permite obtener clústeres jerárquicos.
 - C. Los clústeres se modelan como conjuntos difusos.
     - Verdadero. En Fuzzy C-means, los clústeres no son particiones discretas, sino que se interpretan como conjuntos difusos. Cada punto de dato tiene un grado de pertenencia (un valor entre 0 y 1) a cada uno de estos conjuntos difusos, que representan los clústeres.
 
-# Videoclase 1. Descubrimiento de patrones mediante clustering
+## Videoclase 1. Descubrimiento de patrones mediante clustering
 - ¿En qué paradigma encuadramos las técnicas de clustering?
 - Aprendizaje supervisado.
 
@@ -1080,7 +1072,7 @@ D. Permite obtener clústeres jerárquicos.
 - Metodo Euclidiano => calculo de la distancia de tres puntos solo es el calculo de la hipotenusa de un triangulo  
 
 
-# Videoclase 3. Agrupamiento jerárquico
+## Videoclase 3. Agrupamiento jerárquico
 - El agrupamiento jerárquico aglomerativo
 - Crea grupos de forma ascendente, hasta que incluye todos los elementos en un único grupo.
 
@@ -1097,10 +1089,7 @@ D. Permite obtener clústeres jerárquicos.
 - Scikit Learn.
 
 
-
 # Tema 8:
-
-
 
 ## Videoclase 1. Sistemas de recomendación colaborativa
 - En el filtrado colaborativo basado en usuarios
@@ -1148,7 +1137,7 @@ D. Permite obtener clústeres jerárquicos.
 - Se presentan varias recomendaciones al mismo tiempo.
 
 - ¿Qué tienen en común las plataformas como Amazon, Netflix y Spotify?
-- Requieren de modelos de alta eficiencia para aportar soluciones rápidas y realistas a sus usuarios.
+- Requieren de modelos de alta eficiencia para aportar soluciones rápidas y realistas a sus usuarios. => La eficiencia es la máxima de los sistemas de recomendación de las principales plataformas, para intentar mantener al usuario y establecer recomendaciones óptimas.
 
 
 
@@ -1158,11 +1147,8 @@ D. Permite obtener clústeres jerárquicos.
 
 
 
-
-
-
-
-## Video clase 3: 
+# Tema 9:
+## Video clase 1: 
 - 
 - 
 
@@ -1178,10 +1164,20 @@ D. Permite obtener clústeres jerárquicos.
 - 
 - 
 
+## Video clase 2: 
+- 
+- 
 
+- 
+- 
 
+- 
+- 
 
+- 
+- 
 
+- 
 
 ## Video clase 3: 
 - 
