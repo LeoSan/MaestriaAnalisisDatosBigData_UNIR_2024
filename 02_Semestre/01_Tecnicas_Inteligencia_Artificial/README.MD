@@ -1130,3 +1130,48 @@ Se realiza un experimento práctico comparando el rendimiento de un Árbol de De
 ## 7.5. Agrupamiento probabilista. El algoritmo EM
 ## 7.6. Agrupamiento solapado. El algoritmo Fuzzy C-means
 ## 7.7. Aplicaciones y ejemplos de implementación
+
+
+
+## Tema 9:  Resolución de problemas mediante búsqueda
+
+
+## 9.2. Introducción. «El mundo de los bloques»
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_017.png)
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_018.png)
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_019.png)
+
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_020.png)
+
+![Arquitectura Convolucion ](../01_Tecnicas_InteligenciaArtificial/info/info_021.png)
+
+## 9.3. Dirección de la búsqueda
+## 9.4. Búsqueda exhaustiva o a ciegas
+## 9.5. Búsqueda heurística
+## 9.6. Búsqueda en juegos
+## 9.7. Costes
+## 9.8. Aplicaciones prácticas y ejemplos de implementación
+
+# TEMA 10: . Gestión de la incertidumbre e imprecisión en sistemas expertos
+
+## 10.3. Razonamiento bayesiano
+
+![ejemplo 01 ](../01_Tecnicas_InteligenciaArtificial/info/info_022.png)
+
+![ejemplo 02](../01_Tecnicas_InteligenciaArtificial/info/info_023.png)
+
+![ejemplo 03](../01_Tecnicas_InteligenciaArtificial/info/info_024.png)
+
+![ejemplo 04](../01_Tecnicas_InteligenciaArtificial/info/info_025.png)
+
+## 10.4. Factores de certeza
+
+## 10.5. Lógica difusa
+
+## 10.6. Inferencia difusa
+
+## 10.7. Aplicaciones y ejemplos de implementación

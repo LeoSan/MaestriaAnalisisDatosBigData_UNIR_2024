@@ -677,7 +677,6 @@ cantidad de información
 - ¿Qué función realizan las dendritas de las neuronas
 - Reciben el impulso nervioso. => Las dendritas son las partes de la neurona encargadas de recibir el impulso nervioso
 
-
 - ¿Con qué parte de la neurona podríamos identificar la salida de una red neuronal artificial?:
 - Axón -> El axón neuronal es el que envía la señal a otras neuronas o a efectores como los músculos, trazando un símil posible con la salida de una red neuronal. 1
 
@@ -779,7 +778,6 @@ B. Pueden aplicarse en el ámbito de los vehículos autónomos.
 C. Nunca requieren un dataset de entrenamiento, pues no necesitan modelos. -> **correcto**
 D. Se pueden aplicar para crear software que comercie de forma
 automatizada.
-
 
 6. En un escenario de aprendizaje por refuerzo, un agente actúa con una tasa de
 exploración igual a 0.9 en un momento dado. Señala las respuestas incorrectas:
@@ -897,8 +895,6 @@ que una entrada pertenezca a una clase
 
 - ¿Cuál de los siguientes supuestos no se podría plantear mediante el paradigma del aprendizaje por refuerzo?:
 - Clasificar un automóvil entre varias gamas posibles.
-
-
 
 
 # Tema 7: Clustering. Agrupamiento o clasificación no supervisada
@@ -1088,7 +1084,6 @@ D. Permite obtener clústeres jerárquicos.
 - ¿Qué librería de inteligencia artificial contiene los métodos de agrupamiento jerárquico?
 - Scikit Learn.
 
-
 # Tema 8:Sistemas de recomendación
 
 1. Los sistemas que utilizan valoraciones de los usuarios para recomendar contenidos emplean técnicas de:
@@ -1218,15 +1213,257 @@ otros usuarios.
 - Requieren de modelos de alta eficiencia para aportar soluciones rápidas y realistas a sus usuarios. => La eficiencia es la máxima de los sistemas de recomendación de las principales plataformas, para intentar mantener al usuario y establecer recomendaciones óptimas.
 
 
+# Tema 9: Resolución de problemas mediante búsqueda
+
+1. Indica cuáles de las siguientes afirmaciones son correctas respecto a los
+problemas de búsqueda de estados:
+A. La resolución de un problema mediante búsqueda conlleva definir
+únicamente dos descriptores: los de operación y los de estado.
+B. La resolución de un problema mediante búsqueda conlleva definir
+únicamente dos descriptores: los de operación y los de estado.
+C. La búsqueda de estados se aplica en juegos y en robótica. -> **Correcto**
+D. La resolución de un problema de búsqueda se puede describir como la
+búsqueda de un camino a través de un conjunto de estados que permite
+alcanzar un estado objetivo desde un estado inicial. -> **Correcto**
+
+
+2. Cuando se conoce un estado inicial y múltiples estados objetivos, ¿qué búsqueda
+es más conveniente aplicar en principio?
+A. Búsqueda hacia adelante. -> **Correcto**
+B. Búsqueda hacia atrás.
+
+3. Si he de justificar el motivo por el que se da un razonamiento se suele utilizar:
+A. Búsqueda hacia adelante.
+B. Búsqueda hacia atrás. -> **Correcto**
+
+4. Indica cuáles de las siguientes afirmaciones son correctas respecto a los
+algoritmos de búsqueda a ciegas:
+A. La búsqueda en amplitud sigue una estrategia LIFO para expandir los
+nodos.
+B. La búsqueda en profundidad garantiza que se encuentre la solución por el
+camino más corto.
+C. La búsqueda en profundidad no tiene en cuenta ninguna información sobre
+el problema. -> **Correcto**
+D. La búsqueda en profundidad iterativa intenta combinar las ventajas de la
+búsqueda en amplitud y la búsqueda en profundidad. -> **Correcto**
+
+5. Indica cuáles de las siguientes afirmaciones son correctas respecto a los
+algoritmos de búsqueda heurística:
+A. Utilizan información heurística que es información sobre el problema para
+encontrar la solución. -> **Correcto**
+B. El heurístico es una función que permite garantizar encontrar la solución
+óptima.
+C. Facilitan la aceleración de la búsqueda. -> **Correcto**
+D. El heurístico puede utilizarse para, una vez expandido el nodo, decidir qué
+nodo hijo ha de ser considerado en primer lugar. -> **Correcto**
+
+6. Indica la afirmación correcta relacionada con la búsqueda heurística:
+A. La escalada por máxima pendiente presenta problemas de máximos
+locales pero no de mesetas.
+B. La escalada simple considera todos los posibles movimientos a partir del
+estado actual, escogiendo el mejor de ellos.
+C. El algoritmo de búsqueda «primero el mejor» puede presentar problemas
+de memoria. -> **Correcto**
+D. El heurístico en un algoritmo A* ha de ser admisible, esto es, no debe
+sobreestimar el coste desde el nodo origen al nodo actual.
+
+7. Si no se dispone de información útil de un problema de búsqueda, ¿qué método
+de los siguientes se podría en principio aplicar para resolverlo?
+A. Búsqueda en profundidad. -> **Correcto**
+B. Búsqueda «mejor el primero».
+C. Escalada por máxima pendiente.
+D. Ninguno de los anteriores.
+
+8. Si se dispone de información útil de un problema de búsqueda, ¿qué método de
+los siguientes se podría, en principio, aplicar para resolverlo?
+A. Búsqueda en profundidad iterativa.
+B. Búsqueda en profundidad acotada.
+C. Búsqueda «mejor el primero». -> **Correcto**
+D. Ninguno de los anteriores.
+
+9. Indica cuáles de las siguientes afirmaciones relativas al algoritmo Minimax de
+búsqueda en juegos son ciertas:
+A. Minimax es un algoritmo utilizado en la búsqueda en juegos. -> **Correcto**
+B. El algoritmo Minimax desarrolla todo el espacio de estados.
+C. Minimax se aplica a juegos de información completa, pero suma no nula.
+D. Minimax toma las decisiones óptimas en cada jugada de tal forma que si es
+posible Min ganará la partida.
+
+10. Si se desea minimizar el coste del proceso de búsqueda se ha de:
+A. Minimizar el coste debido a la expansión del árbol.
+B. Minimizar el coste debido a la estrategia de control.
+C. Minimizar la suma de los costes debidos a la expansión del árbol y a la
+estrategia de control. -> **Correcto**
+D. Minimizar los costes debidos a la expansión del árbol y utilizar el mejor
+heurístico posible.
+
+## Video clase 1: Propósito y tipología de búsquedasPágina
+
+- ¿Qué estructura común presenta un problema de búsqueda?
+- Estado inicial, estado objetivo y operadores de transición entre estados. =>  Un problema de búsqueda necesita una estructura mínima sobre un conjunto de estados, que comprende un estado final y otro inicial, y una serie de operadores de transición a aplicar sobre el conjunto de estados
+
+- El algoritmo de búsqueda en profundidad se encuentra encuadrado en la tipología
+- Búsqueda no informada. => a que no posee una heurística que guíe el proceso de búsqueda.
+
+- Un algoritmo de búsqueda no informada
+- Ninguna de las anteriores. => Los algoritmos de búsqueda no informada no poseen ninguna función que guíe el proceso de búsqueda.
+
+- El algoritmo de búsqueda en profundidad
+- Es completo y no óptimo.
+
+- ¿Qué dos listas manejamos en un planificador STRIP?
+- Lista de efectos y lista de eliminados. => Guardamos los efectos creados al aplicar las proposiciones y los efectos que dejan de existir (eliminados).
+
+
+## Video clase 2:  Búsqueda heurística y A*
+- El algoritmo A* se puede encuadrar en la categoría de
+- Búsqueda informada.
+
+- ¿Cuál de las siguientes heurísticas podría valer como método para guiar la búsqueda?:
+- Todas las anteriores.
+
+- Una heurística debe ser
+- Admisible y consistente. => Una heurística debe no sobreestimar el coste de dar con la solución (admisible) y en cada nodo, no superar el coste de alcanzar el objetivo desde el sucesor más la distancia al sucesor (consistente).
+
+- ¿Qué necesitamos para poder implementar el algoritmo A*?
+- Todas las anteriores.
+
+- ¿Qué mide la función heurística del algoritmo A*?
+- El coste de ir desde un nodo al siguiente. => La función heurística fija el coste, mediante el método establecido, para alcanzar el nodo meta desde un nodo cualquiera.
+
+## Video clase 3: Búsqueda en juegos mediante estrategia MINIMAX
+- ¿Qué tipos de escenarios podemos encontrar en la búsqueda entre adversarios?
+- Cooperativos, colaborativos y antagónicos. => Los escenarios para la búsqueda entre adversarios pueden tener metas comunes (cooperativos), metas independientes (colaborativos) y metas opuestas (antagónicos).
+
+- Podemos considerar la búsqueda entre adversarios como
+- Ninguna de las anteriores.
+
+- ¿Cuál de las siguientes afirmaciones sobre la búsqueda entre adversarios es falsa?
+- Cada acción no influye en la decisión de otros agentes. => En la búsqueda entre adversarios, cada acción influye en la decisión que tomarán posteriormente otros agentes.
+
+- ¿Cómo se define la función de utilidad para una estrategia minimax?
+- Diferencia entre las posibilidades de ganar de un jugador y las posibilidades de ganar del otro.  =>  La función de utilidad se define como el número de posibilidades de ganar en el juego por parte de un jugador, menos el número de posibilidades de ganar que tiene el otro jugador.
+
+- Con respecto a la poda alfa-beta presente en la estrategia minimax, si en un nodo max tenemos almacenado el valor 7 como máximo de los encontrados hasta el momento, y nos llega un valor Beta=8 ¿se producirá la poda?
+- No, ya que la condición de poda establece que Alfa deba ser mayor o igual a Beta.
+
+# TEMA 10: Gestión de la incertidumbre e imprecisión en sistemas expertos
+
+1. Completa la siguiente sentencia con la opción adecuada: «Si no se sabe con
+certeza que el consecuente de las reglas es resultado de las evidencias en los
+antecedentes, puedo modelar el sistema utilizando […]» (varias respuestas posibles):
+A. Variables difusas.
+B. Conjuntos difusos.
+C. Factores de certeza. -> **Correcto**
+D. Inferencia bayesiana. -> **Correcto**
+
+2. Completa la siguiente sentencia con la opción adecuada: «Si no se puede
+precisar el valor exacto de las variables en los antecedentes de las reglas, se puede
+diseñar el sistema utilizando […]»:
+A. Factores de certeza.
+B. Teorema de Bayes.
+C. Lógica difusa. -> **Correcto**
+D. Grados de certeza.
+
+3. Indica cuales de las siguientes afirmaciones son ciertas:
+A. Una limitación de la inferencia bayesiana es que puede implicar la
+necesidad de conocer un gran número de probabilidades. -> **Correcto**
+B. Una ventaja de la inferencia bayesiana es que el coste computacional es
+bajo.
+C. Una ventaja de utilizar factores de certeza frente a inferencia bayesiana es
+que el primero implica menos coste computacional. -> **Correcto**
+D. Un factor de certeza puede tener un valor negativo. -> **Correcto**
+
+4. Indica la opción que finalice de manera correcta la siguiente frase: «En una regla
+cuyos antecedentes presentan una conjunción, el factor de certeza del consecuente
+se calcula de la siguiente manera [...]»:
+A. El producto del máximo factor de confianza de los antecedentes por el
+factor de confianza del consecuente.
+B. El producto del mínimo factor de confianza de los antecedentes por el
+factor de confianza del consecuente. -> **Correcto**
+C. No se utilizan factores de confianza en los antecedentes.
+D. Ninguna de las anteriores opciones es correcta.
+
+5. Indica cuáles de las siguientes afirmaciones son correctas:
+A. Una gran ventaja de la lógica difusa es poder expresar las reglas mediante
+palabras de uso cotidiano. -> **Correcto**
+B. Las reglas en la lógica difusa emplean variables numéricas.
+C. La lógica difusa se basa en el uso de conjuntos difusos. -> **Correcto**
+D. La función de pertenencia indica si una variable pertenece o no pertenece
+a un conjunto.
+
+6. Indica cuáles de las siguientes afirmaciones son correctas:
+A. Una variable lingüística es una variable cuyos valores son términos
+lingüísticos. -> **Correcto**
+B. Los modificadores lingüísticos modelan adjetivos.
+C. Los modificadores lingüísticos modifican la forma del conjunto difuso. -> **Correcto**
+D. Las reglas difusas emplean variables lingüísticas. -> **Correcto**
+
+7. Indica cuáles de las siguientes afirmaciones son correctas:
+A. Las entradas a un sistema de control difuso son variables precisas o
+abruptas.
+B. Las salidas de un sistema de control difuso son variables precisas o
+abruptas.-> **Correcto**
+C. La base de conocimiento de un sistema de control difuso básico contiene
+las reglas difusas. -> **Correcto**
+D. Un sistema de control difuso básico realiza una codificación, una inferencia
+lógica y una decodificación. -> **Correcto**
+
+8. Los métodos que calculan el grado de verdad de las premisas o antecedentes de
+las reglas y lo aplican a la conclusión se denominan:
+A. Métodos de composición.
+B. Métodos de implicación. -> **Correcto**
+C. Modificadores.
+D. Métodos de decodificación.
+
+9. Completa la siguiente frase. El método centroide es un método de:
+A. Composición.
+B. Implicación.
+C. Decodificación. -> **Correcto**
+D. Codificación.
+
+10. ¿A qué se refiere el método min-max?
+A. A un método de implicación y composición.
+B. A un método de composición. -> **Correcto**
+C. A un método bayesiano.
+D. A un método de decodificación.
+
+## Video clase 1: Videoclase 1. Razonamiento bayesiano
+- ¿Qué facción de las siguientes no caracteriza a la incertidumbre en la representación de la información?
+- Datos deslocalizados => La localización del dato no es un factor a tener en cuenta para considerar incertidumbre en un sistema de información.
+
+- Con la probabilidad condicionada estudiamos
+- La probabilidad de ocurrencia de una hipótesis respecto a un hecho observado. => La probabilidad condicionada es fundamenta en el cálculo de la probabilidad de ocurrencia de una hipótesis una vez ha acontecido un hecho.
+
+- En entornos de incertidumbre y en términos de probabilidad, ¿cuánto deben sumar todas las evidencias planteadas y que conducen a corroborar o refutar una hipótesis?
+- 1
+
+- ¿Cuáles de las siguientes afirmaciones puede ser consideradas como limitaciones del razonamiento bayesiano?
+- Todas las anteriores. => En el razonamiento bayesiano el rango de conocimiento de las probabilidades posibles debe ser muy alto, lo que conlleva una necesidad de recurso computacional elevada también. Además, se depende de cómo de fiables sean los datos estadísticos de base, por lo que es fundamental la interacción con un experto en la problemática.
+
+- ¿Qué modelo surge como para poder paliar las limitaciones del razonamiento bayesiano?
+- El modelo de Naïve-Bayes. => El modelo de Naïve Bayes simplifica las limitaciones planteando una solución de clasificación en base a probabilidad condicionada.
+
+
+## Video clase 2: Factores de certeza
+- Los factores de certeza son
+- Un modelo alternativo al razonamiento bayesiano. => Los factores de certeza surgen en los años 70 como alternativa para paliar las deficiencias del modelo de razonamiento bayesiano.
+
+- ¿Qué limitaciones puede presentar un modelo basado en factores de certeza como MYCIN?
+- Incoherencias en salidas con entradas similares. => En el sistema de recomendación terapéutica MYCIN, se podían dar incoherencias cuando las enfermedades a diagnosticar incluían sintomatologías muy similares.
+
+- Un factor de certeza para una regla con solo un antecedente se calcula en función de
+- Los factores de certeza de antecedente y consecuente. => El cálculo se realiza como el producto de los factores de certeza individuales de antecedente y consecuente.
+
+- Un factor de certeza para una regla con varios antecedentes en forma de conjunción se calcula en función de
+- El mínimo de los factores de certeza presentes en el antecedente.=> En el caso de disponer de múltiples antecedentes formando una conjunción, los factores de certeza de las reglas se propagan (calculan) como el mínimo de los factores de certeza presentes en el antecedente y el factor de certeza del consecuente.
+
+- Un factor de certeza para una regla con varios antecedentes en forma de disyunción se calcula en función de
+- El máximo de los factores de certeza presentes en el antecedente. => En el caso de disponer de múltiples antecedentes formando una disyunción, los factores de certeza de las reglas se propagan (calculan) como el máximo de los factores de certeza presentes en el antecedente y el factor de certeza del consecuente o.
 
 
 
-
-
-
-
-# Tema 9:
-## Video clase 1: 
+## Video clase 3: Búsqueda en juegos mediante estrategia MINIMAX
 - 
 - 
 
@@ -1242,36 +1479,6 @@ otros usuarios.
 - 
 - 
 
-## Video clase 2: 
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-
-## Video clase 3: 
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
 
 
 
