@@ -1171,7 +1171,13 @@ Se realiza un experimento práctico comparando el rendimiento de un Árbol de De
 ## 10.4. Factores de certeza
 
 ## 10.5. Lógica difusa
+![ejemplo 04](../01_Tecnicas_InteligenciaArtificial/info/info_026.png)
+
+![ejemplo 04](../01_Tecnicas_InteligenciaArtificial/info/info_027.png)
 
 ## 10.6. Inferencia difusa
 
+
 ## 10.7. Aplicaciones y ejemplos de implementación
+
+![ejemplo 04](../01_Tecnicas_InteligenciaArtificial/info/info_028.png)
