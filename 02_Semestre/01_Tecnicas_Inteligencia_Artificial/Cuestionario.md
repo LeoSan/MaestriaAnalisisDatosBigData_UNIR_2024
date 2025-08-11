@@ -316,6 +316,7 @@ del dataset inicial. -> **correcto**. El texto afirma: "en los métodos bagging.
 
 C. Random forest es un tipo de método boosting utilizando árboles de
 decisión en serie.
+
 D. En los métodos boosting se parte de un dataset inicial y se entrenan
 diferentes algoritmos uno a uno secuencialmente, introduciendo como entrada
 de cada algoritmo un conjunto aleatorio del dataset inicial.
@@ -486,10 +487,10 @@ la regla generada en cada iteración. -> **correcto**
 
 9. Indica cuáles de las siguientes afirmaciones son correctas respecto al algoritmo
 PRISM:
-A. Es un algoritmo de recubrimiento secuencial.
-B. Utiliza la medida de precisión o confianza para generar las reglas.
+A. Es un algoritmo de recubrimiento secuencial. -> **correcto**
+B. Utiliza la medida de precisión o confianza para generar las reglas. -> **correcto**
 C. Parte de la regla más específica alcanzando la más general.
-D. Es un algoritmo de generación de conjuntos de reglas de los más simples
+D. Es un algoritmo de generación de conjuntos de reglas de los más simples -> **correcto**
 
 10. Indica cuáles de las siguientes afirmaciones son verdaderas respecto al
 algoritmo apriori:
@@ -635,6 +636,8 @@ A. Emulan la capacidad de almacenamiento de la memoria humana.
 B. Emulan la capacidad de asociación de la memoria humana.
 C. Las salidas de la red alimentan las entradas.
 D. La red Hopfield es una red recurrente.
+*NOTA*
+- Puede ser opcion multiple GEMI las marca todas toca investigar mas
 
 9. Indica cuáles de las siguientes afirmaciones son correctas respecto de las redes
 Hopfield:
@@ -1220,7 +1223,11 @@ otros usuarios.
 
 
 
+## Videoclase 3. Lógica e inferencia difusa
+- En la teoría de conjuntos tradicional, la pertenencia de un elemento a un conjunto se modelo como
+- Un valor binario pertenece/no pertenece.
 
+<<<<<<< HEAD
 
 
 
@@ -1260,18 +1267,19 @@ otros usuarios.
 ## Video clase 3: 
 - 
 - 
+=======
+- ¿Cuál de las siguientes no es una ventaja que plantea la lógica difusa?
+- Todas las anteriores pueden ser consideradas ventajas.
+>>>>>>> f674d0b (Falta resumir las clases del PDF)
 
-- 
-- 
+- ¿Qué define un conjunto difuso?
+- Una graduación de probabilidad de pertenencia de un valor a un conjunto.
 
-- 
-- 
+- ¿Cuáles de los siguientes componentes no forma parte del modelo de variables lingüísticas?
+- Un conjunto de reglas léxicas.
 
-- 
-- 
-
-- 
-- 
+- Supongamos el sistema de control presente en un aparato de aire acondicionado, que demanda un funcionamiento suave y adaptativo. ¿Tendría sentido modelar su comportamiento mediante un sistema de lógica difusa?
+- Sí, mediante reglas y conjuntos difusos que se adapten a los distintos rangos de temperatura susceptibles de ser usados por un ser humano
 
 
 
