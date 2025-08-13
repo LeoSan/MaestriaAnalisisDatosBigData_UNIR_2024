@@ -227,3 +227,153 @@ C. Es una tecnología propietaria y no es código abierto.
 
 # Tema 3. Spark I
 
+1. ¿Cuál es la principal fortaleza de Spark?
+A. Opera en memoria principal, lo que hace que los cálculos sean mucho más
+rápidos.
+B. Nunca da lugar a movimiento de datos entre máquinas (shuffle).
+C. Las respuestas A y B son correctas.
+D. Las respuestas A y B son incorrectas.
+2. ¿Qué tipo de procesos se benefician especialmente de Spark?
+A. Los procesos en modo batch, como, por ejemplo, una consulta SQL.
+B. Los proceso aplicados a datos no demasiado grandes.
+C. Los algoritmos de aprendizaje automático que dan varias pasadas sobre
+los mismos datos.
+D. Las respuestas A, B y C son correctas.
+3. ¿Cuál es la estructura de datos fundamental en Spark?
+A. RDD.
+B. DataFrame.
+C. SparkSession.
+D. SparkContext
+4. En una operación de Spark en la que sea necesario movimiento de datos…
+A. Siempre debemos escribirlos primero en el disco local del nodo emisor.
+B. No hay acceso al disco local, puesto que Spark opera siempre en memoria.
+C. Spark nunca provoca movimiento de datos, a diferencia de MapReduce.
+D. Las respuestas A, B y C son incorrectas.
+
+
+5. Elige la respuesta correcta: Cuando se ejecuta una transformación en Spark
+sobre un RDD…
+A. Se crea inmediatamente un RDD con el resultado de la transformación.
+B. Se modifica inmediatamente el RDD con el resultado de la transformación.
+C. Se añade la transformación al DAG, que creará un RDD con el resultado
+de la transformación cuando se materialice el RDD resultante.
+D. Se añade la transformación al DAG, que modificará el RDD original con el
+resultado de la transformación cuando se materialice el RDD resultante.
+6. Elige la respuesta correcta: La acción collect de Spark…
+A. No existe como acción; es una transformación.
+B. Aplica una función a cada fila del RDD de entrada y devuelve otro RDD.
+C. Lleva todo el contenido del RDD al driver y podría provocar una excepción.
+D. Lleva algunos registros del RDD al driver.
+7. Elige la respuesta incorrecta: Un PairRDD…
+A. Es un tipo de RDD que permite realizar tareas de agregación y joins.
+B. Es un tipo de RDD que contiene una tupla con un número variable de
+componentes.
+C. Es un tipo de RDD cuyo primer componente se considera la clave y el
+segundo, el valor.
+D. Se define como cualquier otro RDD, pero con un formato concreto.
+
+8. ¿Qué es un executor de Spark?
+A. Cada uno de los nodos del clúster de Spark.
+B. Un proceso creado en los nodos del clúster, preparado para recibir trabajos
+de Spark.
+C. Un nodo concreto del clúster que orquesta los trabajos ejecutados en él.
+D. Ninguna de las definiciones anteriores es correcta.
+9. La acción map de Spark…
+A. No existe como acción; es una transformación.
+B. Aplica una función a cada fila del RDD de entrada y devuelve otro RDD.
+C. Lleva todo el contenido del RDD al driver y podría provocar una excepción.
+D. Lleva ciertos registros del RDD al driver.
+10. Cuando Spark ejecuta una acción…
+A. Se materializan en la memoria RAM de los workers todos los RDD
+intermedios necesarios para calcular el resultado de la acción y después se
+liberan todos.
+B. Se añade la acción al DAG y no hace nada en ese momento.
+C. Se materializan los RDD intermedios necesarios que no estuviesen ya
+materializados, se calcula el resultado de la acción y se liberan los no
+cacheados.
+D. Ninguna de las respuestas anteriores es correcta.
+
+
+## Videoclase 1. Spark 
+
+- ¿Cuál es la principal ventaja de Apache Spark sobre Hadoop MapReduce? 
+- Procesamiento de datos en memoria, lo que aumenta la velocidad. 
+
+- ¿Qué componente de Apache Spark es responsable de gestionar la distribución de tareas y recursos en un clúster?
+- ClusterManager => El administrador de clúster o Clúster Manager en Spark hace referencia a la comunicación del driver con el backend para adquirir recursos físicos y poder ejecutar los executors.
+
+- ¿Cuál de los siguientes lenguajes de programación no es soportado de manera nativa por Apache Spark? 
+- Ruby.
+
+- ¿Qué es un RDD (Resilient Distributed Dataset) en Apache Spark? 
+- Una estructura de datos fundamental que permite el procesamiento distribuido tolerante a fallos.
+
+- ¿Qué operación en Apache Spark se utiliza para aplicar una función a cada elemento de un RDD y devolver un nuevo RDD? 
+-  Map => Esta función se utiliza para aplicar una transformación a cada elemento de un RDD (Resilient Distributed Dataset). Toma una función como argumento y aplica esa función a cada elemento del RDD, devolviendo un nuevo RDD con los resultados.
+
+
+
+## Videoclase 2. Spark Arquitectura 
+
+- ¿Cuál es la estructura de datos fundamental en Apache Spark que permite el procesamiento distribuido y tolerante a fallos? 
+- RDD (Resilient Distributed Dataset). => RDD (Resilient Distributed Dataset): Es la principal abstracción de datos, el tipo de dato básico que tiene Apache Spark.  Los RDD están particionados en los distintos nodos del clúster, ya que Apache Spark se suele instalar en un clúster o conjunto de máquinas, por lo que esos RRDs se encuentran distribuidos sobre esas máquinas. Con ello se consigue la tolerancia a fallos, porque si falla una máquina tenemos el fichero en otras máquinas.
+
+- ¿Qué componente de Apache Spark gestiona los recursos del clúster y asigna recursos para las aplicaciones? 
+- ClusterManager. => ClusterManager: El administrador de clúster o Clúster Manager en Spark hace referencia a la comunicación del driver con el backend para adquirir recursos físicos y poder ejecutar los executors.
+
+- ¿Cuál es la diferencia principal entre un DataFrame y un RDD en Apache Spark? 
+- Los DataFrames proporcionan una API optimizada y utilizan un planificador de consultas, mientras que los RDDs son colecciones distribuidas de objetos. => Tanto los RDD como los conjuntos de datos proporcionan una API de estilo OOP, mientras que los DataFrames proporcionan una API de estilo SQL. En los RDD, le especificamos al motor Spark cómo realizar una determinada tarea, mientras que, con los DataFrames y los conjuntos de datos, especificamos qué hacer y el motor Spark se encarga del resto.
+
+- ¿En qué modo de despliegue de Apache Spark el Driver Program corre en el mismo proceso que la aplicación? 
+- Local Mode.=>En modo local toda la infraestructura de Spark se aloja en una sola JVM dentro de una sola computadora, el driver y el resource manager tambien se encuentran alojados.
+
+- ¿Qué componente en Apache Spark es responsable de ejecutar una serie de transformaciones y acciones en un RDD? 
+- Executor. => Executor: Los executors en Spark hacen referencia al proceso en el que estos realizan la carga de trabajo. De manera que los executors obtienen sus tareas desde el driver y llevan a cabo la carga, la transformación y el almacenamiento de los datos.
+
+
+
+
+##  Videoclase 3. Spark Transformaciones 
+
+- ¿Cuál es la característica principal de las transformaciones en Spark? 
+- Son perezosas y construyen un plan de ejecución que se ejecuta cuando se llama a una acción. => Transformaciones Lazy: Las transformaciones en RDD son «lazy» (perezosas), lo que significa que no se ejecutan de inmediato. En su lugar, se registran y se ejecutan solamente cuando se realiza una acción. Esto permite la optimización y la ejecución eficiente de las operaciones.
+
+- ¿Qué transformación en Apache Spark devuelve un nuevo RDD que solo contiene los elementos del RDD original que satisfacen una función predicada?
+- Filter => En Spark, la función Filtro devuelve un nuevo conjunto de datos formado al seleccionar aquellos elementos de la fuente en los que la función devuelve verdadero. Por lo tanto, recupera sólo los elementos que satisfacen la condición dada.. 
+
+- ¿Cuál transformación en Apache Spark combina múltiples RDDs en un solo RDD? 
+- Union => Nos devuelve la unión de dos o más RDDs
+
+- ¿Qué transformación en Apache Spark agrupa los elementos de un RDD según una clave y devuelve un RDD de pares clave-valor? 
+- GroupByKey =>  Agrupa los valores de cada clave en el RDD en una única secuencia Hash particiona el RDD resultante con particiones numPartitions.
+
+- ¿Qué transformación en Apache Spark une dos RDDs de pares clave-valor por sus claves y devuelve un nuevo RDD de pares clave y tuplas de valores? 
+- Join => Devuelve un RDD que contiene todos los pares de elementos con claves coincidentes en self y other. Cada par de elementos se devolverá como una tupla (k, (v1, v2)), donde (k, v1) está en uno mismo y (k, v2) está en otro.Realiza una unión hash en todo el clúster.
+
+
+
+# TEMA 4:
+
+
+
+# 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+
+
