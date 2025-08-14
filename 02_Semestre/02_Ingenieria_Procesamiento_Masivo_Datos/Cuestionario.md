@@ -313,9 +313,6 @@ D. Ninguna de las respuestas anteriores es correcta.
 - ¿Qué componente en Apache Spark es responsable de ejecutar una serie de transformaciones y acciones en un RDD? 
 - Executor. => Executor: Los executors en Spark hacen referencia al proceso en el que estos realizan la carga de trabajo. De manera que los executors obtienen sus tareas desde el driver y llevan a cabo la carga, la transformación y el almacenamiento de los datos.
 
-
-
-
 ##  Videoclase 3. Spark Transformaciones 
 
 - ¿Cuál es la característica principal de las transformaciones en Spark? 
@@ -451,8 +448,6 @@ D. No existe en Spark; map es una acción
 -
 
 
-
-
 # Tema 5. Spark III 
 
 
@@ -584,9 +579,115 @@ D. collect.
 
 
 
+# Tema 6. Apache Kafka
 
-<<<<<<< HEAD
-=======
+1. ¿Qué es Apache Kafka?
+A. Un sistema de mensajería que utiliza Spark para funcionar.
+B. Un bus de datos distribuido, en el que varias aplicaciones pueden leer y escribir. -> **correcto**
+C. Un sistema de colas basado en MapReduce.
+D. Un sistema de data warehousing.
+
+
+2. Cuando usamos Kafka…
+A. Cada aplicación elige el tipo de mensajes que desea leer. -> **correcto**
+B. Todas las aplicaciones reciben todos los mensajes.
+C. Solo las aplicaciones registradas en Spark pueden acceder al bus.
+D. Cada aplicación puede leer solo un tipo de mensajes.
+
+
+3. ¿Cuál de estas funciones es típica de Kafka?
+A. Transmitir mensajes generados por una aplicación a otras que los utilizan. -> **correcto**
+B. Almacenar información accesible para distintas aplicaciones, tal como lo
+hace una base de datos.
+C. Realizar procesados de flujos de información.
+D. Ninguna de las opciones anteriores es correcta.
+
+
+4. Un topic de Kafka…
+A. Es una partición de los datos subyacentes. -> **correcto**
+B. Es un conjunto de mensajes que comparten la misma estructura.
+C. Es equivalente a una base de datos.
+D. Es una máquina que almacena cierto tipo de datos.
+
+
+5. Si en un grupo de consumidores hay más consumidores suscritos a un topic que particiones tiene dicho topic:
+A. Kafka reparte los mensajes entre todos consumidores de una misma partición.
+B. Kafka no permite que esto ocurra y denegará la suscripción al consumidor.
+C. Uno o más consumidores quedarán ociosos, sin poder consumir mensajes.  -> **correcto**
+D. Todos los consumidores reciben mensajes de todas las particiones.
+
+
+6. Cuando un proceso productor de Kafka utiliza envío asíncrono:
+A. Se bloquea en espera de la respuesta que confirme que todo ha ido bien.
+B. Prosigue su ejecución, ya que, al ser asíncrono, no espera respuesta alguna.
+C. Prosigue su ejecución y Kafka invocará el método que el productor indicó cuando tenga disponible la respuesta. -> **correcto**
+D. Ninguna de las respuestas anteriores es correcta.
+
+
+7. ¿Qué implica que un bróker contenga la partición líder de un topic?
+A. Que será quien reciba y procese las peticiones de lectura y escritura a esapartición. -> **correcto**
+B. Que decidirá si un consumidor está autorizado para suscribirse al topic.
+C. Que será quien centralice las peticiones de escritura que reciben todos losbrókeres que contengan dicha partición.
+D. Las tres opciones anteriores son correctas.
+
+
+8. ¿Cuál de las siguientes afirmaciones sobre Kafka es correcta?
+A. Un mensaje en Kafka se elimina según el primer consumidor lo lee.
+B. Un mensaje en Kafka se elimina siempre tras pasar una semana en elbróker.
+C. Un mensaje en Kafka se elimina cuando lo han leído el númeroconfigurado de consumidores.
+D. Un mensaje en Kafka se elimina cuando se cumple el tiempo o tamañoconfigurados.  -> **correcto**
+
+
+9. El bróker encargado de supervisar qué brókeres se unen y cuáles dejan el clústeres:
+A. El bróker líder.
+B. El bróker controlador.  -> **correcto**
+C. El bróker sincronizado (in-sync).
+D. Se encarga Zookeeper.
+
+
+10. Un clúster Kafka está compuesto:
+A. Por uno o varios brókeres, y siempre incluye Zookeeper para gestionar metadatos.
+B. Por, al menos, dos o más brókeres, y se complementa a veces con Zookeeper para facilitar la gestión de metadatos.
+C. Por uno o varios brókeres, y se complementa a veces con Zookeeper para facilitar la gestión de metadatos.  -> **correcto**
+D. Ninguna de las opciones es correct
+
+## Videoclase 1. Spark - Dataframes 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+##  
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
 ## 
 
 -
@@ -606,4 +707,578 @@ D. collect.
 
 
 
->>>>>>> 3cd296d (UPDATE)
+# Tema 7. Hive e Impala
+
+1. Un ejemplo ideal de alguien que puede utilizar Hive es:
+A. Un analista con conocimientos de SQL que quiere consultar datos
+estructurados almacenados en HDFS. -> **correcto**
+B. Un programador con conocimientos de MapReduce que quiere consultar
+imágenes y vídeos.
+C. Una persona de negocios, con alto conocimiento de Excel, que quiere
+consultar rápidamente datos masivos guardados en una base de datos
+relacional como MySQL.
+D. Los tres casos anteriores son buenos casos de uso.
+
+
+2. Sobre Apache Hive:
+A. Existen versiones libres y de pago.
+B. Permite consultar archivos almacenados en HDFS utilizando lenguaje SQL. -> **correcto**
+C. Requiere poseer una base de datos relacional que funcione como respaldo.
+D. Solo se puede usar como parte de la distribución de Cloudera.
+
+
+3. Hive se define como:
+A. Una base de datos SQL distribuida.
+B. Un motor de ejecución distribuido para consultas SQL.
+C. Una base de datos NoSQL distribuida.
+D. Un traductor de consultas SQL a trabajos de procesado distribuidos. -> **correcto**
+
+
+4. Para usar Hive:
+A. Solo se puede utilizar a través de un intérprete de línea de comandos.
+B. Se puede usar únicamente a través de una conexión JDBC.
+C. Es posible usarlo desde herramientas de BI que dispongan de conector ODBC. -> **correcto**
+D. Ninguna de las respuestas anteriores es correcta.
+
+
+
+5. ¿Cuál de las siguientes afirmaciones sobre Hive es correcta?
+A. Hive siempre utiliza como motor de ejecución Apache Spark.
+B. MySQL puede funcionar como metastore de Hive. -> **correcto**
+C. Un fichero de texto plano puede funcionar como metastore de Hive.
+D. Ninguna de las opciones anteriores es correcta.
+
+
+
+6. ¿Cuál de las siguientes afirmaciones sobre Hive es correcta?
+A. Cuando se ejecuta la sentencia DROP sobre una tabla, Hive siempre borra los metadatos relacionados con dicha tabla.
+B. Cuando se ejecuta la sentencia DROP sobre una tabla, Hive siempre borra los datos relacionados con esta tabla
+C. Cuando se ejecuta la sentencia DROP sobre una tabla, Hive nunca borra ningún dato ni metadato.
+D. Cuando se ejecuta la sentencia DROP sobre una tabla, Hive siempre borra los datos y metadatos. -> **correcto**
+
+
+7. Señala la respuesta correcta:
+A. Impala está pensado para procesados en bloque (batch), mientras que Hive está dirigido a peticiones interactivas.
+B. Impala está dirigido a peticiones interactivas, mientras que Hive está pensado para procesados en bloque (batch). -> **correcto**
+C. Tanto Impala como Hive están pensados para peticiones interactivas.
+D. Tanto Impala como Hive están pensados para procesados en bloque.
+
+
+8. ¿Cuál de las siguientes afirmaciones sobre Impala es correcta?
+A. Impala utiliza como motor de ejecución Apache Spark.
+B. Impala utiliza como motor de ejecución Apache tez.
+C. El motor de ejecución de Impala es configurable, igual que en Hive.
+D. Ninguna de las opciones anteriores es correcta. -> **correcto**
+
+
+9. El proceso de Impala que se encarga de ejecutar las consultas del usuario es…
+A. El proceso statestored.
+B. El proceso impalad. -> **correcto**
+C. El proceso initd.
+D. El proceso catalogd.
+
+
+10. La manera de ejecutar Impala en un clúster de ordenadores es…
+A. Mediante un proceso que está corriendo en cada máquina y accede directamente a los datos de HDFS de ese nodo.  -> **correcto**
+B. Mediante el motor de ejecución de Apache Spark que se ejecuta en el clúster y sobre el cual nos proporciona una abstracción SQL.
+C. Mediante las consultas SQL traducidas por Impala al metastore de Hive.
+D. Ninguna de las anteriores es correcta.
+
+
+
+##  
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+## 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+
+## 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+# Tema 8. Cloud computing
+
+1. ¿Cómo se puede definir cloud computing?
+A. Es la interconexión de una serie de ordenadores.
+B. Es el proceso de planificar y ejecutar una serie de tareas
+C. Son una serie de servicios de computación ofrecidos a través de Internet.
+D. Ninguna de las respuestas anteriores son correctas.
+
+
+2. ¿Qué modelos de servicio cloud existen?
+A. Público, privado e híbrido.
+B. IaaS, PaaS y SaaS.
+C. Microsoft Azure, Google Cloud Platform y Amazon Web Services.
+D. Servidores de cómputo, almacenamiento y bases de datos.
+
+
+3. ¿Cuál de las siguientes propiedades no es una ventaja de cloud computing?
+A. Coste menor de infraestructura por economías de escala.
+B. Control total de la infraestructura que soporta los servicios.
+C. Flexibilidad a la hora de escalar la infraestructura necesaria.
+D. Alta disponibilidad de los servicios gracias a la replicación.
+
+
+4. ¿Cuál de las siguientes opciones no es un tipo de nube?
+A. Nube pública.
+B. Nube privada.
+C. Nube secundaria.
+D. Nube híbrida
+
+
+5. ¿Qué tipo de servicio no es habitual entre los servicios en la nube?
+A. Máquina virtual
+B. Máquina física.
+C. Almacenamiento virtual.
+D. Interconexión de servicios.
+
+
+6. ¿Qué dos conceptos hacen posible los servicios de computación en la nube?
+A. Virtualización y disminución de costes.
+B. Disminución de costes y abstracción.
+C. Disminución de costes y flexibilidad.
+D. Abstracción y virtualización.
+
+
+7. ¿Qué tarea reemplaza el uso de servicios en la nube?
+A. Compra e instalación de servidores.
+B. Actualización y mantenimiento de servidores.
+C. Dimensionamiento previo y adquisición de servidores para aumentar la
+capacidad según los requisitos de las aplicaciones.
+D. Todas las anteriores.
+
+
+8. Relaciona los servicios de Microsoft Azure con su temática correspondiente
+
+
+9. Para ejecutar un clúster Hadoop en Microsoft Azure:
+A. Solo se puede usar el servicio HDInsight.
+B. Es obligatorio contratar una o varias instancias VM e instalar el clúster en
+ellas.
+C. Microsoft Azure no permite ejecutar clústeres Hadoop.
+D. Se puede usar el servicio HDInsight u optar por una alternativa IaaS.
+
+
+10. Si se quieren utilizar servicios relacionados con machine learning en Microsoft
+Azure:
+A. Es necesario disponer de un equipo de expertos en machine learning que
+entiendan y puedan usar los servicios que provee Microsoft Azure.
+B. Microsoft Azure no proporciona ningún servicio de machine learning. Es
+necesario contratar un servicio de cómputo sobre el que instalar todo el
+entorno necesario para desarrollar modelos.
+C. Existen tanto opciones para conocedores de machine learning, que
+disponen de mayor flexibilidad para construir sus modelos, como servicios de
+inteligencia artificial que no requieren conocimientos de machine learning.
+D. Microsoft Azure no está diseñado ni orientado a ofrecer servicios de
+machine learning de ninguna forma
+
+
+
+
+
+## Videoclase 1. Spark - Dataframes 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+##  
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+## 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+# Tema 9. Cloud computing II
+
+1. ¿Cómo se distribuyen los recursos de la infraestructura de AWS?
+A. Se dividen en zonas, que, a su vez, tienen dos o más subzonas.
+B. Se dividen en regiones, que, a su vez, engloban dos o más zonas de
+disponibilidad.
+C. Se dividen en zonas de disponibilidad, que, a su vez, contienen dos o más
+centros de datos.
+D. No existe ninguna división, todos los recursos son globales e
+indistinguibles.
+
+2. Una empresa quiere utilizar los servicios de AWS para almacenar datos
+personales y sensibles de sus clientes. ¿Cuál es el elemento más limitante a la hora
+de determinar dónde almacenar dichos datos?
+A. El coste, ya que, dependiendo de dónde se almacenen dichos datos, este
+puede ser mayor o menor.
+B. La latencia, ya que se tardaría mucho en obtener los datos si están
+almacenados lejos de donde se realiza la consulta.
+C. La legislación, porque, al ser información sensible, solo se pueden
+almacenar en lugares muy concretos para no incurrir en delitos.
+D. Todos los elementos anteriores tienen la misma importancia y hay que
+tenerlos en cuenta por igual
+
+3. Una de las mayores ventajas de usar AWS como proveedor de servicios cloud
+es:
+A. Que tiene responsabilidad sobre toda la infraestructura, los servicios y los
+datos necesarios para desplegar nuestras aplicaciones.
+B. Que tiene responsabilidad sobre toda la seguridad concerniente a nuestra
+aplicación, desde el firewall al control de acceso.
+C. Que tiene la responsabilidad sobre la infraestructura y garantiza ciertos
+niveles de servicio al respecto.
+D. Todas las afirmaciones previas son correctas.
+
+
+4. ¿Qué afirmación sobre las instancias de cómputo EC2 es incorrecta?
+A. Permiten elegir la imagen (AMI) que instalar en ellas de entre una colección
+predefinida o una proporcionada por el usuario.
+B. Poseen un conjunto predeterminado de configuraciones de cómputo,
+memoria y red, de donde escoger obligatoriamente la configuración
+predefinida que se desee.
+C. Se pueden contratar tantas instancias EC2 como se desee.
+D. Cada instancia EC2 está ligada a un servicio EBS para almacenamiento
+persistente.
+
+
+5. ¿Cómo se interconectan los servicios AWS que contrata un usuario?
+A. Mediante una red global que comparten todos los servicios contratados por
+todos los usuarios en AWS.
+B. Mediante una red propia del usuario que conecta las direcciones IP de los
+servicios contratados.
+C. Los distintos servicios contratados son independientes y autocontenidos,
+por lo que no necesitan ni pueden comunicarse con otros.
+D. Mediante el servicio de interconexión AWS VPC.
+
+6. Indica qué caso de uso no es propio de S3:
+A. Sistema de arranque de una instancia EC2.
+B. Almacenamiento de ficheros accesibles desde instancias EC2.
+C. Almacenamiento de ficheros accesibles desde un navegador web.
+D. Almacenamiento de archivo de ficheros de escaso acceso.
+
+7. Se quiere desplegar una base de datos relacional de forma rápida y que no
+suponga una carga de mantenimiento para el departamento de IT, más allá de la
+gestión de los datos contenidos. ¿Qué servicio AWS escogerías?
+A. Instancia EC2 e instalación de MySQL.
+B. AWS RDS.
+C. AWS DynamoDB.
+D. AWS ECS e instalación de MySQL.
+
+
+8. ¿Cuál de las siguientes opciones es la mejor para desplegar un servicio de
+almacenamiento distribuido en AWS?
+A. Varias instancias EC2 sobre las que el usuario instala un clúster Hadoop,
+que incluye HDFS.
+B. Varios contenedores ECS sobre los que el usuario instala un clúster
+Hadoop, que incluye HDFS.
+C. Un clúster EMR, con su propio sistema de almacenamiento distribuido.
+D. Un clúster EMR, con el sistema de almacenamiento HDFS.
+9. Amazon SageMaker es un servicio de AWS destinado a:
+A. Construir y entrenar modelos de machine learning desde cero.
+B. Utilizar modelos de machine learning preconstruidos.
+C. Realizar consultas interactivas sobre grandes conjuntos de datos.
+D. Catalogar todos los datos existentes en los diferentes servicios AWS
+
+10. Si se quieren manejar flujos de datos en tiempo real, ¿qué servicio AWS no
+sería adecuado?
+A. Amazon Kinesis Streams.
+B. Amazon MSK.
+C. Amazon Redshift.
+D. Instancias EC2 con Kafka instalado
+
+
+
+
+## Videoclase 1. Spark - Dataframes 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+##  
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+## 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+
+# Tema 10. Cloud computing III
+
+1. ¿Cómo se organizan los recursos, los servicios y las políticas de seguridad que
+contrata y configura un usuario u organización en Google Cloud?
+A. En folders, que contienen proyectos.
+B. En proyectos, que contienen folders.
+C. En proyectos y zonas.
+D. En zonas, que contienen diferentes folders.
+
+
+2. Si queremos aumentar la disponibilidad de un servicio GCP, ¿qué debemos
+hacer?
+A. Desplegarlo en la región más cercana a su uso.
+B. Desplegarlo en una región que no presente problemas legales con la
+información que gestiona.
+C. Desplegarlo como recurso regional o multirregional.
+D. Desplegar una instancia VM que esté siempre ejecutándose.
+
+
+3. Elige la respuesta incorrecta:
+A. GCP proporciona una serie de servicios de AI bajo AI Platform, para
+usuarios no expertos en el dominio, los cuales quieran usar AI en sus
+aplicaciones sin desarrollar ningún modelo.
+B. GCP proporciona una serie de servicios de AI bajo AI Platform, para
+usuarios expertos en el dominio que quieran usar AI en sus aplicaciones
+desarrollando sus propios modelos.
+C. GCP proporciona una serie de servicios de AI bajo Cloud AI Building
+Blocks, para usuarios no expertos en el dominio, los cuales quieran usar AI en
+sus aplicaciones sin desarrollar ningún modelo.
+D. Entre los servicios AI para uso directo, se pueden encontrar herramientas
+de clasificación de imágenes o vídeo, o traductores entre diferentes idiomas
+
+
+4. En cuanto a la seguridad, ¿qué esquema sigue GCP?
+A. Un esquema de seguridad compartida, donde GCP se hace siempre cargo
+de todos los niveles, excepto de los datos.
+B. Un esquema de seguridad compartida, donde GCP se hace cargo de
+ciertos niveles, que dependen del servicio desplegado.
+C. El usuario debe hacerse cargo de la seguridad de todo el sistema, que
+sigue un modelo de cuatro capas.
+D. Un esquema de seguridad compartida de cuatro capas, donde el usuario
+solo se hace cargo de la capa a más alto nivel y Google Cloud, de todos los
+aspectos de las otras tres.
+
+
+5. ¿Qué opción es más interesante para ejecutar tareas cortas y no críticas, que se
+podrían repetir si fuera necesario?
+A. Instancias VM normales.
+B. Preemptible instances VM.
+C. Sole-tenant VM instances.
+D. One use VM instances.
+
+6. Una empresa quiere almacenar los datos históricos de las nóminas de los
+empleados, con el único objetivo de hacer frente a una posible auditoría en los cinco
+años siguientes al pago de cada nómina ¿Qué opción de almacenamiento de GCP
+es la más adecuada en cuanto a acceso y coste?
+A. Cloud Storage Coldline.
+B. BigTable.
+C. Cloud Storage Archive.
+D. Cloud Persistent Disks
+
+
+7. Cuando se crea un proyecto en Google Cloud, ¿cómo se interconectan los
+servicios que engloba?
+A. Se crea una VPC, que contiene el rango de direcciones IP que se asignan
+los servicios.
+B. Hay que definir siempre manualmente las subredes de una VPC para tener
+disponibles direcciones IP que asignar a los servicios.
+C. Se crea automáticamente una subred dentro de la VPC, que contiene el
+rango de direcciones IP disponibles para asignar a los servicios.
+D. Un proyecto solo se puede interconectar con otro, pero los servicios dentro
+de un proyecto no se interconectan y, por tanto, no se necesitan direcciones
+IP.
+
+
+8. Elige la respuesta incorrecta: Si quisiéramos desplegar un clúster Hadoop en
+GCP, podríamos…
+A. Usar varias instancias VM configuradas manualmente como clúster e
+instalar las herramientas del ecosistema Hadoop deseadas.
+B. Usar el servicio Dataproc.
+C. Usar el servicio Dataflow.
+D. Usar varios contenedores GKE configurados manualmente como clúster e
+instalar las herramientas del ecosistema Hadoop deseadas.
+
+
+9. ¿A qué base de datos de código libre se asemeja BigTable?
+A. Es un motor propietario único de Google, muy diferente a cualquier otra
+base de datos existente.
+B. MongoDB.
+C. Cassandra.
+D. HBase.
+
+
+10. Relaciona cada servicio GCP con el que sería su equivalente en proyectos
+Apache
+
+## Videoclase 1. Spark - Dataframes 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+##  
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+## 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+
