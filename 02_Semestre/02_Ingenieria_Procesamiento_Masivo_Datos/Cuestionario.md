@@ -112,7 +112,7 @@ cantidades inmensas de datos heterogéneos. -> **correcto**
 
 1. ¿Cuánto ocupa en total un archivo de 500 MB almacenado en HDFS, sin
 replicación, si se asume el tamaño de bloque por defecto?
-A. Ocupará 500 MB.
+A. Ocupará 500 MB. -> **correcto**
 B. Ocupará 512 MB, que son 4 bloques de 128 MB, y hay 12 MB
 desperdiciados.
 C. Ocupará lo que resulte de multiplicar 500 MB por el número de datanodes
@@ -120,59 +120,48 @@ del clúster.
 
 
 2. ¿Cuál de las siguientes afirmaciones respecto a HDFS es cierta?
-A. El tamaño de bloque debe ser siempre pequeño para no desperdiciar
-espacio.
-B. El factor de replicación es configurable por fichero y su valor, por defecto,
-es 3.
+A. El tamaño de bloque debe ser siempre pequeño para no desperdiciar espacio.
+B. El factor de replicación es configurable por fichero y su valor, por defecto, es 3. -> **correcto**
 C. Las dos respuestas anteriores son correctas.
 
 3. ¿Qué afirmación es cierta sobre el proceso de escritura en HDFS?
-A. El cliente manda al namenode el fichero, que, a su vez, se encarga de
-escribirlo en los diferentes datanodes.
-B. El cliente escribe los bloques en todos los datanodes que le ha
-especificado el namenode.
-C. El cliente escribe los bloques en un datanode y este envía la orden de
-escritura a los demás.
+A. El cliente manda al namenode el fichero, que, a su vez, se encarga de escribirlo en los diferentes datanodes.
+B. El cliente escribe los bloques en todos los datanodes que le ha especificado el namenode. -> **correcto**
+C. El cliente escribe los bloques en un datanode y este envía la orden de escritura a los demás.
 
 4. En un clúster de varios nodos donde no hemos configurado la topología…
 A. Es imposible que dos réplicas del mismo bloque caigan en el mismo nodo.
-B. Es imposible que dos réplicas del mismo bloque caigan en el mismo rack.
+B. Es imposible que dos réplicas del mismo bloque caigan en el mismo rack. -> **correcto**
 C. Las dos respuestas anteriores son falsas.
 
 5. Cuando usamos namenodes federados…
-A. Cada datanode puede albergar datos de uno de los subárboles.
+A. Cada datanode puede albergar datos de uno de los subárboles. -> **correcto**
 B. La caída de un namenode no tiene ningún efecto en el clúster.
 C. Ninguna de las respuestas anteriores es correcta.
 
 6. ¿Por qué se dice que HDFS es un sistema escalable?
-A. Porque reemplazar un nodo por otro más potente no afecta a los
-namenodes.
+A. Porque reemplazar un nodo por otro más potente no afecta a los namenodes.
 B. Porque un clúster es capaz de almacenar datos a gran escala.
-C. Porque se puede aumentar la capacidad del clúster añadiendo más nodos.
+C. Porque se puede aumentar la capacidad del clúster añadiendo más nodos. -> **correcto**
 
 7. ¿Qué tipo de uso suele darse a los ficheros de HDFS?
 A. Ficheros de cualquier tamaño que se almacenan temporalmente.
-B. Ficheros de gran tamaño que se crean, no se modifican, y sobre los que se
-realizan frecuentes lecturas.
+B. Ficheros de gran tamaño que se crean, no se modifican, y sobre los que se realizan frecuentes lecturas. -> **correcto**
 C. Ficheros de gran tamaño que suelen modificarse constantemente.
 
 8. La alta disponibilidad de los namenodes de HDFS implica que…
-A. La caída de un namenode apenas deja sin servicio al sistema de ficheros
-durante un minuto antes de que otro entre en acción.
+A. La caída de un namenode apenas deja sin servicio al sistema de ficheros durante un minuto antes de que otro entre en acción. -> **correcto**
 B. Es posible escalar los namenodes añadiendo más nodos.
-C. La caída de un datanode deja sin servicio al sistema durante unos pocos
-segundos hasta que este es sustituido.
+C. La caída de un datanode deja sin servicio al sistema durante unos pocos segundos hasta que este es sustituido.
 
 9. El comando de HDFS para moverse a la carpeta /mydata es…
 A. hdfs dfs –cd /mydata.
 B. hdfs dfs –ls /mydata.
-C. No existe ningún comando equivalente en HDFS.
+C. No existe ningún comando equivalente en HDFS. -> **correcto**
 
 10. ¿Qué inconveniente presenta MapReduce?
-A. No es capaz de procesar datos distribuidos cuando son demasiado
-grandes.
-B. Entre las fases map y reduce , siempre lleva a cabo escrituras a disco y
-movimiento de datos entre máquinas.
+A. No es capaz de procesar datos distribuidos cuando son demasiado grandes.
+B. Entre las fases map y reduce , siempre lleva a cabo escrituras a disco y movimiento de datos entre máquinas. -> **correcto**
 C. Es una tecnología propietaria y no es código abierto.
 
 
@@ -228,69 +217,63 @@ C. Es una tecnología propietaria y no es código abierto.
 # Tema 3. Spark I
 
 1. ¿Cuál es la principal fortaleza de Spark?
-A. Opera en memoria principal, lo que hace que los cálculos sean mucho más
-rápidos.
+A. Opera en memoria principal, lo que hace que los cálculos sean mucho más rápidos.  -> **correcto**
 B. Nunca da lugar a movimiento de datos entre máquinas (shuffle).
 C. Las respuestas A y B son correctas.
 D. Las respuestas A y B son incorrectas.
+
 2. ¿Qué tipo de procesos se benefician especialmente de Spark?
 A. Los procesos en modo batch, como, por ejemplo, una consulta SQL.
 B. Los proceso aplicados a datos no demasiado grandes.
-C. Los algoritmos de aprendizaje automático que dan varias pasadas sobre
-los mismos datos.
+C. Los algoritmos de aprendizaje automático que dan varias pasadas sobre los mismos datos.  -> **correcto**
 D. Las respuestas A, B y C son correctas.
+
 3. ¿Cuál es la estructura de datos fundamental en Spark?
-A. RDD.
+A. RDD. -> **correcto**
 B. DataFrame.
 C. SparkSession.
 D. SparkContext
+
 4. En una operación de Spark en la que sea necesario movimiento de datos…
 A. Siempre debemos escribirlos primero en el disco local del nodo emisor.
 B. No hay acceso al disco local, puesto que Spark opera siempre en memoria.
 C. Spark nunca provoca movimiento de datos, a diferencia de MapReduce.
-D. Las respuestas A, B y C son incorrectas.
+D. Las respuestas A, B y C son incorrectas. -> **correcto**
 
-
-5. Elige la respuesta correcta: Cuando se ejecuta una transformación en Spark
-sobre un RDD…
+5. Elige la respuesta correcta: Cuando se ejecuta una transformación en Spark sobre un RDD…
 A. Se crea inmediatamente un RDD con el resultado de la transformación.
 B. Se modifica inmediatamente el RDD con el resultado de la transformación.
-C. Se añade la transformación al DAG, que creará un RDD con el resultado
-de la transformación cuando se materialice el RDD resultante.
-D. Se añade la transformación al DAG, que modificará el RDD original con el
-resultado de la transformación cuando se materialice el RDD resultante.
+C. Se añade la transformación al DAG, que creará un RDD con el resultado de la transformación cuando se materialice el RDD resultante. -> **correcto**
+D. Se añade la transformación al DAG, que modificará el RDD original con el resultado de la transformación cuando se materialice el RDD resultante.
+
 6. Elige la respuesta correcta: La acción collect de Spark…
 A. No existe como acción; es una transformación.
 B. Aplica una función a cada fila del RDD de entrada y devuelve otro RDD.
-C. Lleva todo el contenido del RDD al driver y podría provocar una excepción.
+C. Lleva todo el contenido del RDD al driver y podría provocar una excepción. -> **correcto**
 D. Lleva algunos registros del RDD al driver.
+
 7. Elige la respuesta incorrecta: Un PairRDD…
 A. Es un tipo de RDD que permite realizar tareas de agregación y joins.
-B. Es un tipo de RDD que contiene una tupla con un número variable de
-componentes.
-C. Es un tipo de RDD cuyo primer componente se considera la clave y el
-segundo, el valor.
+B. Es un tipo de RDD que contiene una tupla con un número variable de componentes. -> **correcto**
+C. Es un tipo de RDD cuyo primer componente se considera la clave y el segundo, el valor.
 D. Se define como cualquier otro RDD, pero con un formato concreto.
 
 8. ¿Qué es un executor de Spark?
 A. Cada uno de los nodos del clúster de Spark.
-B. Un proceso creado en los nodos del clúster, preparado para recibir trabajos
-de Spark.
+B. Un proceso creado en los nodos del clúster, preparado para recibir trabajos de Spark. -> **correcto**
 C. Un nodo concreto del clúster que orquesta los trabajos ejecutados en él.
 D. Ninguna de las definiciones anteriores es correcta.
+
 9. La acción map de Spark…
-A. No existe como acción; es una transformación.
+A. No existe como acción; es una transformación. -> **correcto**
 B. Aplica una función a cada fila del RDD de entrada y devuelve otro RDD.
 C. Lleva todo el contenido del RDD al driver y podría provocar una excepción.
 D. Lleva ciertos registros del RDD al driver.
+
 10. Cuando Spark ejecuta una acción…
-A. Se materializan en la memoria RAM de los workers todos los RDD
-intermedios necesarios para calcular el resultado de la acción y después se
-liberan todos.
+A. Se materializan en la memoria RAM de los workers todos los RDD intermedios necesarios para calcular el resultado de la acción y después se liberan todos.
 B. Se añade la acción al DAG y no hace nada en ese momento.
-C. Se materializan los RDD intermedios necesarios que no estuviesen ya
-materializados, se calcula el resultado de la acción y se liberan los no
-cacheados.
+C. Se materializan los RDD intermedios necesarios que no estuviesen ya materializados, se calcula el resultado de la acción y se liberan los no cacheados. -> **correcto**
 D. Ninguna de las respuestas anteriores es correcta.
 
 
@@ -352,8 +335,67 @@ D. Ninguna de las respuestas anteriores es correcta.
 
 
 
-# TEMA 4:
+# TEMA 4: Spark II
 
+1. Elige la respuesta correcta respecto a los DataFrames de Spark:
+A. Un RDD es una envoltura de un DataFrame de objetos de tipo Row.
+B. Un DataFrame es una envoltura de un RDD de objetos de tipo Row. -> **correcto**
+C. Un DataFrame es una envoltura de un objeto de tipo Row que contiene RDD.
+D. Ninguna de las respuestas anteriores es correcta.
+
+2. Elige la respuesta correcta sobre los DataFrames de Spark:
+A. Puesto que representan una estructura de datos más compleja que un RDD, no es posible distribuirlos en memoria.
+B. Puesto que son un envoltorio de un RDD, suponen una estructura de datos que sigue estando distribuida en memoria. -> **correcto**
+C. Son una estructura de datos no distribuida en memoria, al igual que los DataFrames de Python o los data.frames de R.
+D. Son una estructura de datos distribuida en disco.
+
+3. ¿Qué mecanismo ofrece la API estructurada de DataFrames para leer datos?
+A. Método read de la Spark Session. -> **correcto**
+B. Método read del Spark Context.
+C. No ofrece ningún método, sino que se utiliza la API de RDD para leer datos.
+D. Método ingest de la Spark Session.
+
+4. ¿Es obligatorio especificar explícitamente el esquema del DataFrame cuando se
+leen datos de fichero?
+A. No, porque solo se pueden leer ficheros estructurados como Parquet, que
+ya contienen información sobre su esquema.
+B. Sí, porque, si no se indica el esquema, Spark no es capaz de leer ficheros
+CSV, ya que no sabe con qué tipo almacenar cada campo.
+C. No, porque, si no se indica el esquema, Spark guardará todos los campos
+de los que no sepa su tipo como strings.  -> **correcto**
+D. No, porque, si no se indica el esquema y se intenta leer ficheros sin
+esquema implícito, Spark lanzará un error.
+
+5. Seleccione la respuesta incorrecta: ¿Por qué es aconsejable utilizar DataFrames
+en Spark en lugar de RDD?
+A. Porque son más intuitivos y fáciles de manejar a alto nivel.
+B. Porque son más rápidos, debido a optimizaciones realizadas por Catalyst.
+C. Porque los DataFrames ocupan menos en disco. -> **correcto**
+D. Las respuestas A y B son correctas.
+
+6. Tras ejecutar la operación b = df.withColumn(“nueva”, 2*col(“calif”)):
+A. El DataFrame contenido en df tendrá una nueva columna, llamada nueva.
+B. Llevaremos al driver el resultado de multiplicar 2 por la columna calif.
+C. El DataFrame contenido en b tendrá una columna más que df. -> **correcto**
+D. El DataFrame contenido en b tendrá una única columna llamada nueva
+
+7. ¿Cuál es la operación con la que nos quedamos con el subconjunto de filas de un DataFrame que cumplen una determinada condición?
+A. sample.
+B. filter. -> **correcto**
+C. map.
+D. show.
+
+8. Las API estructuradas de DataFrames y Spark SQL…
+A. Son API que no se pueden combinar: una vez que se empieza a usar una de ellas, se tienen que hacer todas las tareas con la misma API.
+B. Se pueden aplicar funciones de la API de DataFrames sobre el resultado de consultas de Spark SQL. -> **correcto**
+C. Se pueden aplicar el método s q l para lanzar consultas SQL sobre DataFrames sin registrar.
+D. Ninguna de las opciones anteriores es correcta.
+
+9. La transformación map de Spark…
+A. No se puede aplicar a un DataFrame porque pertenece a la API de RDD.
+B. Se puede aplicar a un DataFrame porque pertenece a la API estructurada de DataFrames.
+C. Se puede aplicar a un DataFrame porque envuelve un RDD al que se puede acceder mediante el atributo rdd . -> **correcto**
+D. No existe en Spark; map es una acción
 
 
 # 
@@ -373,6 +415,135 @@ D. Ninguna de las respuestas anteriores es correcta.
 -
 -
 
+# 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+# 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+
+# Tema 5. Spark III 
+
+
+1. ¿Qué diferencia Spark MLlib de Spark ML?
+A. Spark MLlib ofrece interfaz para DataFrames en todos sus componentes, mientras que Spark ML sigue utilizando RDD y ha quedado obsoleta. 
+B. Spark MLlib no permite cachear los resultados de los modelos, mientras que Spark ML sí.
+C. Spark MLlib es más rápida entrenando modelos que Spark ML.
+D. Ninguna de las respuestas anteriores es correcta.
+
+2. ¿Qué tipo de componentes ofrece Spark ML?
+A. Estimadores y transformadores para ingeniería de variables y para normalizar datos.
+B. Estimadores y transformadores para preparar los datos para el formato requerido por los algoritmos de aprendizaje automático de Spark.
+C. Solo pipelines que no dan acceso a los estimadores internos.
+D. Las respuestas A y B anteriores son correctas.
+
+
+3. ¿Cuál es el método principal de un estimator de Spark ML?
+A. El método fit.
+B. El método transform.
+C. El método estimate.
+D. El método describe.
+
+
+4. ¿A qué interfaz pertenecen los algoritmos de machine learning de Spark cuando
+aún no han sido entrenados?
+A. Transformer.
+B. Estimator.
+C. Pipeline.
+D. DataFrame.
+
+5. ¿A qué interfaz pertenecen los modelos de Spark ML cuando ya han sido
+entrenados con datos?
+A. Transformer.
+B. Estimator.
+C. Pipeline.
+D. DataFrame.
+
+
+6. ¿Qué ocurre si creamos un StringIndexer para codificar las etiquetas de una variable en el dataset de entrenamiento y después creamos otro StringIndexer para codificar los datos de test en el momento de elaborar predicciones?
+A. Obtendremos la misma codificación en los dos.
+B. Da un error, porque un mismo StringIndexer no puede añadirse a dos pipelines.
+C. Podríamos obtener codificaciones distintas de la misma etiqueta en los datos de entrenamiento y en los de test, lo que falsearía los resultados de las predicciones.
+D. Ninguna de las respuestas anteriores es correcta.
+
+
+7. ¿Cuál es la estructura principal que maneja Spark Structured Streaming?
+A. DStreams.
+B. DStreams DataFrames.
+C. Streaming DataFrames.
+D. Streaming RDD.
+
+8. Spark Streaming permite leer flujos de datos:
+A. Solo desde tecnologías de ingesta de datos como Apache Kafka.
+B. Desde cualquier fuente de datos, siempre que contenga un esquema, como, por ejemplo, una base de datos.
+C. Desde fuentes como Apache Kafka y HDFS, si activamos la inferencia de esquema.
+D. Las respuestas A, B y C son incorrectas.
+
+9. En Spark Streaming, una vez se ejecuta la acción start:
+A. El driver espera automáticamente a que concluya la recepción de flujo para
+finalizar su ejecución.
+B. Hay que ejecutar un método para indicar al driver que no finalice
+automáticamente y que espere a que concluya la recepción del flujo.
+C. Un flujo de datos no tiene fin y, por tanto, el driver nunca puede finalizar.
+D. Ninguna de las opciones anteriores es correcta.
+
+10. ¿Qué acciones pueden realizarse en Spark Structured Streaming?
+A. take.
+B. show.
+C. start.
+D. collect.
+
+
+
+
+
+# 
+
+-
+- 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
 
 
 
