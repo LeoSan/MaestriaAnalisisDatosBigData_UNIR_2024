@@ -460,17 +460,17 @@ D. No existe en Spark; map es una acción
 A. Spark MLlib ofrece interfaz para DataFrames en todos sus componentes, mientras que Spark ML sigue utilizando RDD y ha quedado obsoleta. 
 B. Spark MLlib no permite cachear los resultados de los modelos, mientras que Spark ML sí.
 C. Spark MLlib es más rápida entrenando modelos que Spark ML.
-D. Ninguna de las respuestas anteriores es correcta.
+D. Ninguna de las respuestas anteriores es correcta. -> **correcto**
 
 2. ¿Qué tipo de componentes ofrece Spark ML?
 A. Estimadores y transformadores para ingeniería de variables y para normalizar datos.
 B. Estimadores y transformadores para preparar los datos para el formato requerido por los algoritmos de aprendizaje automático de Spark.
 C. Solo pipelines que no dan acceso a los estimadores internos.
-D. Las respuestas A y B anteriores son correctas.
+D. Las respuestas A y B anteriores son correctas.  -> **correcto**
 
 
 3. ¿Cuál es el método principal de un estimator de Spark ML?
-A. El método fit.
+A. El método fit. -> **correcto**
 B. El método transform.
 C. El método estimate.
 D. El método describe.
@@ -479,13 +479,13 @@ D. El método describe.
 4. ¿A qué interfaz pertenecen los algoritmos de machine learning de Spark cuando
 aún no han sido entrenados?
 A. Transformer.
-B. Estimator.
+B. Estimator. -> **correcto**
 C. Pipeline.
 D. DataFrame.
 
 5. ¿A qué interfaz pertenecen los modelos de Spark ML cuando ya han sido
 entrenados con datos?
-A. Transformer.
+A. Transformer. -> **correcto**
 B. Estimator.
 C. Pipeline.
 D. DataFrame.
@@ -494,14 +494,14 @@ D. DataFrame.
 6. ¿Qué ocurre si creamos un StringIndexer para codificar las etiquetas de una variable en el dataset de entrenamiento y después creamos otro StringIndexer para codificar los datos de test en el momento de elaborar predicciones?
 A. Obtendremos la misma codificación en los dos.
 B. Da un error, porque un mismo StringIndexer no puede añadirse a dos pipelines.
-C. Podríamos obtener codificaciones distintas de la misma etiqueta en los datos de entrenamiento y en los de test, lo que falsearía los resultados de las predicciones.
+C. Podríamos obtener codificaciones distintas de la misma etiqueta en los datos de entrenamiento y en los de test, lo que falsearía los resultados de las predicciones. -> **correcto**
 D. Ninguna de las respuestas anteriores es correcta.
 
 
 7. ¿Cuál es la estructura principal que maneja Spark Structured Streaming?
 A. DStreams.
 B. DStreams DataFrames.
-C. Streaming DataFrames.
+C. Streaming DataFrames. -> **correcto**
 D. Streaming RDD.
 
 8. Spark Streaming permite leer flujos de datos:
@@ -516,12 +516,12 @@ finalizar su ejecución.
 B. Hay que ejecutar un método para indicar al driver que no finalice
 automáticamente y que espere a que concluya la recepción del flujo.
 C. Un flujo de datos no tiene fin y, por tanto, el driver nunca puede finalizar.
-D. Ninguna de las opciones anteriores es correcta.
+D. Ninguna de las opciones anteriores es correcta. -> **correcto**
 
 10. ¿Qué acciones pueden realizarse en Spark Structured Streaming?
 A. take.
-B. show.
-C. start.
+B. show. 
+C. start. -> **correcto**
 D. collect.
 
 
