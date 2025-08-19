@@ -395,57 +395,66 @@ C. Se puede aplicar a un DataFrame porque envuelve un RDD al que se puede accede
 D. No existe en Spark; map es una acción
 
 
-# 
+## Videoclase 1. Spark - Dataframes 
 
--
-- 
+- ¿Qué es un DataFrame en Spark? 
+- Una colección distribuida de datos organizados en columnas nombradas. => Un DataFrame en Spark es una colección distribuida de datos organizados en columnas nombradas, similar a una tabla en una base de datos relacional.
 
--
--
+- ¿Cuál de las siguientes es una fuente de datos válida para crear un DataFrame en Spark? 
+- Archivos CSV
 
--
--
+- ¿Cuál es el método correcto para leer un archivo CSV en un DataFrame en Spark? 
+- spark.read.csv("ruta/al/archivo.csv") 
 
--
--
+- ¿Cuál es el propósito de SparkSession en Apache Spark? 
+- Crear DataFrames y ejecutar SQL sobre ellos. => SparkSession es el punto de entrada para todas las funcionalidades de Spark, permitiendo crear DataFrames, ejecutar SQL, crear vistas temporales y leer datos de diversas fuente
 
--
--
-
-# 
-
--
-- 
-
--
--
-
--
--
-
--
--
-
--
--
+- ¿Qué implica definir un esquema en el contexto de Spark? 
+- Definir la estructura de los datos con columnas y tipos de datos. => Definir un esquema en Spark implica especificar la estructura de los datos, incluyendo las columnas y sus tipos de datos, lo que facilita su manipulación y análisis.
 
 
-# 
+*NOTA*
+- El analisis EDA en resumen es la visualición de los calculos de los datos del dataset debemos validar su: 
+    - count()  Total de datos
+    - mean() promedio
+    - stddev() desviación standar => indica qué tan dispersos están los datos con respecto a su media. En otras palabras, muestra la variabilidad o dispersión de un conjunto de datos
+    - min() mínimos 
+    - Max() máximos 
 
--
-- 
+## Videoclase 2. Manipulación de dataframes
 
--
--
+- ¿Qué significa que los dataframes en Spark sean inmutables? 
+- Las operaciones sobre dataframes devuelven un nuevo dataframe sin modificar el original. => La inmutabilidad de los dataframes en Spark significa que cualquier operación realizada sobre ellos devuelve un nuevo dataframe, dejando el dataframe original sin cambios.
 
--
--
+- ¿Cuál es la diferencia entre transformaciones y acciones en Spark? 
+- Las transformaciones devuelven un nuevo dataframe y las acciones desencadenan la ejecución de las transformaciones. => Las transformaciones en Spark devuelven un nuevo dataframe sin ejecutar la operación hasta que se realiza una acción, que es la que desencadena la ejecución de todas las transformaciones previas.
 
--
--
+- ¿Qué hace el método count() cuando se aplica a un dataframe en Spark? 
+- Cuenta las filas del dataframe y devuelve un entero. => El método count() cuenta las filas del dataframe y devuelve el resultado como un entero. 
 
--
--
+- ¿Qué realiza la operación collect() en Spark cuando se aplica a un dataframe? 
+- Devuelve todas las filas del dataframe al driver como una lista de objetos row. => La operación collect() devuelve todas las filas del dataframe al driver como una lista de objetos row, lo que implica que el resultado debe caber en la memoria del driver.
+
+- ¿Qué hace la operación take No cuando se aplica a un dataframe en Spark? 
+- Devuelve las primeras n filas del dataframe como una lista de objetos row.
+
+
+## Videoclase 3. Spark SQL 
+
+- ¿Qué hace la transformación select en un dataframe de Spark? 
+- Selecciona y devuelve un nuevo dataframe que solo contiene las columnas especificadas 
+
+- ¿Cuál es el propósito de la transformación withColumn en Spark SQL? 
+- Crear una nueva columna o reemplazar una existente en el dataframe.
+
+- ¿Qué hace la transformación filter en un dataframe de Spark? 
+- Selecciona filas del dataframe que cumplen con una condición.
+
+- ¿Cuál es el resultado de utilizar groupBy seguido de agg en un dataframe de Spark? 
+- Agrupa los datos por una o más columnas y aplica agregaciones.  => La operación groupBy seguida de agg agrupa los datos por una o más columnas y permite aplicar funciones de agregación a cada grupo.
+
+- ¿Cuál es el propósito del método sql en Spark SQL? 
+- Ejecutar consultas SQL sobre dataframes registrados como tablas. => El método sql en Spark SQL permite ejecutar consultas SQL sobre dataframes que han sido registrados como tablas, traduciendo las consultas a trabajos optimizados de Spark.
 
 
 # Tema 5. Spark III 
@@ -523,40 +532,66 @@ D. collect.
 
 
 
-## Videoclase 1. Spark - Dataframes 
+## Videoclase 1. Spark MLlib
 
--
-- 
+- ¿Qué es Spark MLlib? 
+- Una biblioteca de aprendizaje automático de Spark.  => s la biblioteca de aprendizaje automático de Apache Spark que proporciona herramientas para el análisis de datos, incluyendo algoritmos de clasificación, regresión, clustering, filtrado colaborativo, y más.
 
--
--
+- ¿Cuál de los siguientes es un algoritmo de clasificación disponible en Spark MLlib? 
+- Random Forest.=> es un algoritmo de clasificación y regresión que está disponible en Spark MLlib. K-means es un algoritmo de clustering y Linear Regression es un algoritmo de regresión.
 
--
--
+- ¿Qué método se utiliza para dividir un DataFrame en conjuntos de entrenamiento y prueba en Spark MLlib? 
+- RamdonSplit() => El método `randomSplit()` se utiliza para dividir un DataFrame en varios subconjuntos de forma aleatoria. Por ejemplo, `df.randomSplit([0.8, 0.2])` divide el DataFrame en dos conjuntos, uno para entrenamiento (80%) y otro para prueba (20%).
 
--
--
+- ¿Cuál de los siguientes es un algoritmo de clustering disponible en Spark MLlib? 
+- K-means. => es un algoritmo de clustering que está disponible en Spark MLlib. Decision Tree y Logistic Regression son algoritmos de clasificación.
 
--
--
+- ¿Cómo se puede evaluar el rendimiento de un modelo de clasificación en Spark MLlib? 
+- Usando la métrica de Silhouette score.
+
+*NOTA*: TENER CLARO ESTO 
+- K-means. => es un algoritmo de clustering que está disponible en Spark MLlib.
+- Decision Tree y Logistic Regression son algoritmos de clasificación.
+- Random Forest.=> es un algoritmo de clasificación y regresión que está disponible en Spark MLlib. 
+- K-means es un algoritmo de clustering 
+- Linear Regression es un algoritmo de regresión.
+
+##  Videoclase 2. Spark Streaming y structured streaming
+
+- ¿Qué es Spark Streaming?
+- Una biblioteca de Spark para el procesamiento y análisis de datos en tiempo real. => es una extensión de Apache Spark que permite el procesamiento de flujos de datos en tiempo real. Se usa para procesar datos en tiempo real provenientes de diversas fuentes como Kafka, Flume, Kinesis, o sockets TCP. 
+
+- ¿Qué objeto en Spark Streaming se utiliza para definir un flujo de datos? 
+- DStream. => Un `DStream` (Discretized Stream) es la abstracción básica en Spark Streaming que representa un flujo continuo de datos. Cada `DStream` es una secuencia continua de RDDs.
+
+- ¿Qué método se usa para crear un contexto de streaming en Spark Streaming? 
+- StreamingContext()  => `StreamingContext` es el objeto principal en Spark Streaming que se utiliza para crear un contexto de streaming. Ejemplo: `ssc = StreamingContext(sparkContext, batchDuration)`.
+
+- ¿Cómo se puede leer un flujo de datos desde un socket TCP en Spark Streaming? 
+- ssc.socketTextStream(hostname, port)  => El método `socketTextStream()` se utiliza para leer un flujo de datos de texto desde un socket TCP. Ejemplo: `ssc.socketTextStream("localhost", 9999)`.
+
+- ¿Cómo se puede iniciar el procesamiento de un flujo de datos en Spark Streaming? 
+- ssc.start()  => se utiliza para iniciar el procesamiento de datos en el contexto de streaming. Ejemplo: `ssc.start()`. 
 
 
-##  
 
--
-- 
+## Videoclase 3. Ejemplos de MLlib y Streaming
 
--
--
+- ¿Cuál es el propósito de la opción outputMode en Spark Structured Streaming? 
+- Especificar cómo se estructuran los resultados del flujo de salida.  => La opción outputMode especifica cómo se estructuran los resultados del flujo de salida. Los modos de salida comunes son `append`, `complete`, y `update`. Ejemplo: `df.writeStream.outputMode("append").format("console").start()`.
 
--
--
+- ¿Qué es un trigger en Spark Structured Streaming? 
+- es una configuración que controla la frecuencia con la que se procesa el flujo de datos. Ejemplo: `df.writeStream.trigger(processingTime='10 seconds').start()`.
 
--
--
+- ¿Cómo se puede especificar una fuente de datos Kafka en Spark Structured Streaming? 
+- spark.readStream.kafka("topics")  => Para especificar una fuente de datos Kafka en Spark Structured Streaming, se utiliza el método `readStream` con el formato `kafka` y la opción `subscribe`. Ejemplo: `spark.readStream.format("kafka").option("subscribe", "topic_name").load()`.
 
--
--
+- ¿Cuál de los siguientes modos de salida en Spark Structured Streaming solo agrega nuevas filas al resultado? 
+- append. => El modo de salida `append` solo agrega nuevas filas al resultado, sin modificar las filas existentes. Es adecuado para flujos donde solo se necesita agregar datos nuevos. Ejemplo: `df.writeStream.outputMode("append").format("console").start()`. 
+
+- ¿Qué método se usa para aplicar una transformación de ventana en un flujo de datos en Spark Structured Streaming? 
+- groupBy() =>  el método `window()` se utiliza para aplicar una transformación de ventana en un flujo de datos, permitiendo agrupar datos en intervalos de tiempo. Ejemplo: `df.groupBy(window("timestamp", "10 minutes")).count()`.
+
 
 
 
@@ -576,6 +611,66 @@ D. collect.
 
 -
 -
+
+# Tema 6: 
+
+
+
+
+## Videoclase 1. Spark - Dataframes 
+
+- ¿Qué es Apache Kafka? 
+- Un sistema de mensajería basado en publicación-suscripción. => se describe como un bus de datos único de métricas basado en el patrón de publicación-suscripción
+
+- ¿Cuál es una característica principal del patrón de publicación-suscripción utilizado por Apache Kafka? 
+- Los receptores se suscriben a clases de mensajes para recibir los datos. => En el patrón de publicación-suscripción de Apache Kafka, los emisores clasifican los mensajes bajo ciertas clases (topics), y los receptores interesados se suscriben a estas clases para recibir los mensajes
+
+- ¿Cómo se asegura Apache Kafka de manejar el gran volumen de datos en aplicaciones de e-commerce? 
+-Utilizando múltiples servidores frontend para recopilar métricas.  => En una aplicación web de compras, se utilizan varios servidores frontend para recopilar diferentes métricas de los usuarios y enviar estos datos a un servidor encargado de procesarlos
+
+- ¿Cuál es el propósito de utilizar Apache Kafka en una gran aplicación web de compras? 
+- Mejorar la experiencia del usuario en tiempo real mediante recomendaciones.
+
+- ¿Cuál de las siguientes opciones no es una función de Apache Kafka?
+- Procesamiento en tiempo real de transacciones financieras. => se utiliza principalmente para la publicación y suscripción de mensajes y para el transporte de métricas de navegación, pero no específicamente para el procesamiento en tiempo real de transacciones financieras
+
+
+##  Videoclase 2. Apache Kafka: conceptos fundamentales
+
+- ¿Qué es Apache Kafka? 
+- Un bus de datos distribuido y replicado.  => Apache Kafka es un bus de datos (también llamado cola de mensajes) distribuido y replicado basado en el paradigma publicación/suscripción. Se utiliza para la mensajería entre aplicaciones, donde los mensajes se insertan y consumen en un cierto orden 
+
+- ¿Cuál es la unidad de información en Kafka? 
+- Mensaje.  => En Kafka, la unidad de información es el mensaje, que es equivalente a un registro (fila) de una base de datos. Un mensaje es simplemente un array de bytes sin significado para Kafka
+
+- ¿Qué es un topic en Kafka? 
+- Una tabla de base de datos => En Kafka, un topic es equivalente a una tabla de base de datos e indica la agrupación de los mensajes, estructurando todos de la misma forma. Los topics contienen particiones para escalabilidad y replicación de los datos
+
+- ¿Cuál es el papel de Zookeeper en un clúster de Kafka? 
+- Almacenar metadatos del clúster. => Zookeeper almacena los metadatos del clúster de Kafka, incluyendo una lista de los brokers del clúster. Cada bróker tiene un Id único para registrarse en Zookeeper, y el primer bróker que se registra actúa como controlador que selecciona las particiones líderes.
+
+- ¿Cómo se sincronizan los brokers con réplicas followers en Kafka? 
+- Solicitando regularmente los últimos mensajes al bróker líder.  => Para mantenerse sincronizados, los brokers con réplicas followers solicitan regularmente al bróker con la réplica líder los últimos mensajes que este haya recibido. El líder es responsable de saber qué réplicas followers están sincronizadas y cuáles no
+
+
+
+## Videoclase 3. Productores y consumidores
+
+- ¿Cómo se sincronizan los brokers con réplicas followers en Kafka?
+- Serializa la clave y el valor del mensaje.  => Kafka primero serializa la clave y el valor del mensaje, convirtiéndolos en secuencias binarias de bytes que pueden ser transmitidos por la red
+
+- ¿Cuál de los siguientes no es un método de envío en Kafka? 
+- Envío encriptado. => Kafka soporta tres métodos de envío: enviar y olvidar, envío síncrono y envío asíncrono. El envío encriptado no es un método soportado por Kafka.
+
+
+- ¿Qué ocurre cuando el broker recibe un bloque de mensajes en Kafka? 
+- Envía una respuesta si el bloque se escribió con éxito. => Cuando el broker recibe un bloque de mensajes, envía una respuesta indicando si la escritura fue exitosa. Si se escribió con éxito, la respuesta es un objeto RecordMetadata, de lo contrario, se puede intentar reenviar antes de devolver un error.
+
+- ¿Qué método de envío en Kafka permite al productor continuar su ejecución sin esperar la respuesta?
+- Envío asíncrono. => En el envío asíncrono, el productor incluye un callback que Kafka invoca automáticamente cuando se recibe la respuesta, permitiendo al proceso continuar su ejecución sin esperar la respuesta.
+
+- ¿Cuál es la función de un callback en el envío asíncrono en Kafka?  
+- Notificar al productor sobre el éxito o fracaso del envío. => En el envío asíncrono, el callback es invocado automáticamente por Kafka cuando se recibe la respuesta y permite examinar el éxito o fracaso del envío.
 
 
 
@@ -1282,3 +1377,4 @@ Apache
 
 
 
+-
