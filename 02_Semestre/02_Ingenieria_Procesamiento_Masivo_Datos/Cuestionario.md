@@ -593,8 +593,6 @@ D. collect.
 - groupBy() =>  el método `window()` se utiliza para aplicar una transformación de ventana en un flujo de datos, permitiendo agrupar datos en intervalos de tiempo. Ejemplo: `df.groupBy(window("timestamp", "10 minutes")).count()`.
 
 
-
-
 ## 
 
 -
@@ -611,67 +609,6 @@ D. collect.
 
 -
 -
-
-# Tema 6: 
-
-
-
-
-## Videoclase 1. Spark - Dataframes 
-
-- ¿Qué es Apache Kafka? 
-- Un sistema de mensajería basado en publicación-suscripción. => se describe como un bus de datos único de métricas basado en el patrón de publicación-suscripción
-
-- ¿Cuál es una característica principal del patrón de publicación-suscripción utilizado por Apache Kafka? 
-- Los receptores se suscriben a clases de mensajes para recibir los datos. => En el patrón de publicación-suscripción de Apache Kafka, los emisores clasifican los mensajes bajo ciertas clases (topics), y los receptores interesados se suscriben a estas clases para recibir los mensajes
-
-- ¿Cómo se asegura Apache Kafka de manejar el gran volumen de datos en aplicaciones de e-commerce? 
--Utilizando múltiples servidores frontend para recopilar métricas.  => En una aplicación web de compras, se utilizan varios servidores frontend para recopilar diferentes métricas de los usuarios y enviar estos datos a un servidor encargado de procesarlos
-
-- ¿Cuál es el propósito de utilizar Apache Kafka en una gran aplicación web de compras? 
-- Mejorar la experiencia del usuario en tiempo real mediante recomendaciones.
-
-- ¿Cuál de las siguientes opciones no es una función de Apache Kafka?
-- Procesamiento en tiempo real de transacciones financieras. => se utiliza principalmente para la publicación y suscripción de mensajes y para el transporte de métricas de navegación, pero no específicamente para el procesamiento en tiempo real de transacciones financieras
-
-
-##  Videoclase 2. Apache Kafka: conceptos fundamentales
-
-- ¿Qué es Apache Kafka? 
-- Un bus de datos distribuido y replicado.  => Apache Kafka es un bus de datos (también llamado cola de mensajes) distribuido y replicado basado en el paradigma publicación/suscripción. Se utiliza para la mensajería entre aplicaciones, donde los mensajes se insertan y consumen en un cierto orden 
-
-- ¿Cuál es la unidad de información en Kafka? 
-- Mensaje.  => En Kafka, la unidad de información es el mensaje, que es equivalente a un registro (fila) de una base de datos. Un mensaje es simplemente un array de bytes sin significado para Kafka
-
-- ¿Qué es un topic en Kafka? 
-- Una tabla de base de datos => En Kafka, un topic es equivalente a una tabla de base de datos e indica la agrupación de los mensajes, estructurando todos de la misma forma. Los topics contienen particiones para escalabilidad y replicación de los datos
-
-- ¿Cuál es el papel de Zookeeper en un clúster de Kafka? 
-- Almacenar metadatos del clúster. => Zookeeper almacena los metadatos del clúster de Kafka, incluyendo una lista de los brokers del clúster. Cada bróker tiene un Id único para registrarse en Zookeeper, y el primer bróker que se registra actúa como controlador que selecciona las particiones líderes.
-
-- ¿Cómo se sincronizan los brokers con réplicas followers en Kafka? 
-- Solicitando regularmente los últimos mensajes al bróker líder.  => Para mantenerse sincronizados, los brokers con réplicas followers solicitan regularmente al bróker con la réplica líder los últimos mensajes que este haya recibido. El líder es responsable de saber qué réplicas followers están sincronizadas y cuáles no
-
-
-
-## Videoclase 3. Productores y consumidores
-
-- ¿Cómo se sincronizan los brokers con réplicas followers en Kafka?
-- Serializa la clave y el valor del mensaje.  => Kafka primero serializa la clave y el valor del mensaje, convirtiéndolos en secuencias binarias de bytes que pueden ser transmitidos por la red
-
-- ¿Cuál de los siguientes no es un método de envío en Kafka? 
-- Envío encriptado. => Kafka soporta tres métodos de envío: enviar y olvidar, envío síncrono y envío asíncrono. El envío encriptado no es un método soportado por Kafka.
-
-
-- ¿Qué ocurre cuando el broker recibe un bloque de mensajes en Kafka? 
-- Envía una respuesta si el bloque se escribió con éxito. => Cuando el broker recibe un bloque de mensajes, envía una respuesta indicando si la escritura fue exitosa. Si se escribió con éxito, la respuesta es un objeto RecordMetadata, de lo contrario, se puede intentar reenviar antes de devolver un error.
-
-- ¿Qué método de envío en Kafka permite al productor continuar su ejecución sin esperar la respuesta?
-- Envío asíncrono. => En el envío asíncrono, el productor incluye un callback que Kafka invoca automáticamente cuando se recibe la respuesta, permitiendo al proceso continuar su ejecución sin esperar la respuesta.
-
-- ¿Cuál es la función de un callback en el envío asíncrono en Kafka?  
-- Notificar al productor sobre el éxito o fracaso del envío. => En el envío asíncrono, el callback es invocado automáticamente por Kafka cuando se recibe la respuesta y permite examinar el éxito o fracaso del envío.
-
 
 
 # Tema 6. Apache Kafka
@@ -746,61 +683,58 @@ B. Por, al menos, dos o más brókeres, y se complementa a veces con Zookeeper p
 C. Por uno o varios brókeres, y se complementa a veces con Zookeeper para facilitar la gestión de metadatos.  -> **correcto**
 D. Ninguna de las opciones es correct
 
-## Videoclase 1. Spark - Dataframes 
+## Videoclase 1. Apache Kafka: Mensajeria publicación/suscripción
 
--
-- 
+- ¿Qué es Apache Kafka? 
+- Un sistema de mensajería basado en publicación-suscripción. => se describe como un bus de datos único de métricas basado en el patrón de publicación-suscripción
 
--
--
+- ¿Cuál es una característica principal del patrón de publicación-suscripción utilizado por Apache Kafka? 
+- Los receptores se suscriben a clases de mensajes para recibir los datos. => En el patrón de publicación-suscripción de Apache Kafka, los emisores clasifican los mensajes bajo ciertas clases (topics), y los receptores interesados se suscriben a estas clases para recibir los mensajes
 
--
--
+- ¿Cómo se asegura Apache Kafka de manejar el gran volumen de datos en aplicaciones de e-commerce? 
+-Utilizando múltiples servidores frontend para recopilar métricas.  => En una aplicación web de compras, se utilizan varios servidores frontend para recopilar diferentes métricas de los usuarios y enviar estos datos a un servidor encargado de procesarlos
 
--
--
+- ¿Cuál es el propósito de utilizar Apache Kafka en una gran aplicación web de compras? 
+- Mejorar la experiencia del usuario en tiempo real mediante recomendaciones.
 
--
--
-
-
-##  
-
--
-- 
-
--
--
-
--
--
-
--
--
-
--
--
+- ¿Cuál de las siguientes opciones no es una función de Apache Kafka?
+- Procesamiento en tiempo real de transacciones financieras. => se utiliza principalmente para la publicación y suscripción de mensajes y para el transporte de métricas de navegación, pero no específicamente para el procesamiento en tiempo real de transacciones financieras
 
 
+##  Videoclase 2. Apache Kafka: conceptos fundamentales
 
-## 
+- ¿Qué es Apache Kafka? 
+- Un bus de datos distribuido y replicado.  => Apache Kafka es un bus de datos (también llamado cola de mensajes) distribuido y replicado basado en el paradigma publicación/suscripción. Se utiliza para la mensajería entre aplicaciones, donde los mensajes se insertan y consumen en un cierto orden 
 
--
-- 
+- ¿Cuál es la unidad de información en Kafka? 
+- Mensaje.  => En Kafka, la unidad de información es el mensaje, que es equivalente a un registro (fila) de una base de datos. Un mensaje es simplemente un array de bytes sin significado para Kafka
 
--
--
+- ¿Qué es un topic en Kafka? 
+- Una tabla de base de datos => En Kafka, un topic es equivalente a una tabla de base de datos e indica la agrupación de los mensajes, estructurando todos de la misma forma. Los topics contienen particiones para escalabilidad y replicación de los datos
 
--
--
+- ¿Cuál es el papel de Zookeeper en un clúster de Kafka? 
+- Almacenar metadatos del clúster. => Zookeeper almacena los metadatos del clúster de Kafka, incluyendo una lista de los brokers del clúster. Cada bróker tiene un Id único para registrarse en Zookeeper, y el primer bróker que se registra actúa como controlador que selecciona las particiones líderes.
 
--
--
+- ¿Cómo se sincronizan los brokers con réplicas followers en Kafka? 
+- Solicitando regularmente los últimos mensajes al bróker líder.  => Para mantenerse sincronizados, los brokers con réplicas followers solicitan regularmente al bróker con la réplica líder los últimos mensajes que este haya recibido. El líder es responsable de saber qué réplicas followers están sincronizadas y cuáles no
 
--
--
+## Videoclase 3. Productores y consumidores
+
+- ¿Cómo se sincronizan los brokers con réplicas followers en Kafka?
+- Serializa la clave y el valor del mensaje.  => Kafka primero serializa la clave y el valor del mensaje, convirtiéndolos en secuencias binarias de bytes que pueden ser transmitidos por la red
+
+- ¿Cuál de los siguientes no es un método de envío en Kafka? 
+- Envío encriptado. => Kafka soporta tres métodos de envío: enviar y olvidar, envío síncrono y envío asíncrono. El envío encriptado no es un método soportado por Kafka.
 
 
+- ¿Qué ocurre cuando el broker recibe un bloque de mensajes en Kafka? 
+- Envía una respuesta si el bloque se escribió con éxito. => Cuando el broker recibe un bloque de mensajes, envía una respuesta indicando si la escritura fue exitosa. Si se escribió con éxito, la respuesta es un objeto RecordMetadata, de lo contrario, se puede intentar reenviar antes de devolver un error.
+
+- ¿Qué método de envío en Kafka permite al productor continuar su ejecución sin esperar la respuesta?
+- Envío asíncrono. => En el envío asíncrono, el productor incluye un callback que Kafka invoca automáticamente cuando se recibe la respuesta, permitiendo al proceso continuar su ejecución sin esperar la respuesta.
+
+- ¿Cuál es la función de un callback en el envío asíncrono en Kafka?  
+- Notificar al productor sobre el éxito o fracaso del envío. => En el envío asíncrono, el callback es invocado automáticamente por Kafka cuando se recibe la respuesta y permite examinar el éxito o fracaso del envío.
 
 # Tema 7. Hive e Impala
 
@@ -918,8 +852,6 @@ D. Ninguna de las anteriores es correcta.
 -
 
 
-
-
 ## 
 
 -
@@ -1018,7 +950,7 @@ machine learning de ninguna forma
 
 
 
-## Videoclase 1. Spark - Dataframes 
+## Videoclase 1. 
 
 -
 - 
@@ -1167,7 +1099,7 @@ D. Instancias EC2 con Kafka instalado
 
 
 
-## Videoclase 1. Spark - Dataframes 
+## Videoclase 1. 
 
 -
 - 
@@ -1320,7 +1252,7 @@ D. HBase.
 10. Relaciona cada servicio GCP con el que sería su equivalente en proyectos
 Apache
 
-## Videoclase 1. Spark - Dataframes 
+## Videoclase 1. 
 
 -
 - 
@@ -1372,9 +1304,4 @@ Apache
 -
 
 -
--
-
-
-
-
 -
