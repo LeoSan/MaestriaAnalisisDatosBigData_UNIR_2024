@@ -817,57 +817,57 @@ D. Ninguna de las anteriores es correcta.
 
 ##  
 
--
-- 
+- ¿Qué componente de la arquitectura de Apache Hive almacena los metadatos de las tablas, columnas, tipos de datos y otras estructuras? 
+- Metastore.=> El Metastore en Apache Hive es el componente que almacena los metadatos de las tablas, columnas, tipos de datos y otras estructuras de datos, permitiendo a Hive gestionar el esquema y las definiciones de los datos
 
--
--
+- ¿Cuál es la función del Driver en la arquitectura de Apache Hive? 
+- Gestionar la sesión de Hive. => El Driver en la arquitectura de Apache Hive actúa como el gestor de la sesión de Hive, procesando las consultas de HiveQL, preparándolas para la compilación y enviándolas al Compiler
 
--
--
+- ¿Qué tecnología utiliza Apache Hive para el procesamiento y análisis de grandes volúmenes de datos?
+- MapReduce. => Apache Hive utiliza MapReduce como uno de los motores de ejecución para procesar y analizar grandes volúmenes de datos, aprovechando la escalabilidad y la tolerancia a fallos de Hadoop.
 
--
--
+- ¿Para qué tipo de análisis de datos se utiliza principalmente Apache Hive? 
+- OLAP.=> Apache Hive se utiliza principalmente en modo OLAP (Online Analytical Processing) para el análisis en bloque de información empresarial, permitiendo realizar consultas multidimensionales interactivas y análisis de grandes volúmenes de datos
 
--
--
-
-
-
-## 
-
--
-- 
-
--
--
-
--
--
-
--
--
-
--
--
+- ¿Qué es una UDF (User-Defined Function) en el contexto de Apache Hive?
+- Una función personalizada creada por el usuario.  =>  Una UDF (User-Defined Function) es una función personalizada que los usuarios pueden crear para extender las capacidades de los sistemas de bases de datos o herramientas de análisis de datos, permitiendo escribir funciones específicas que no están disponibles en el lenguaje de consulta SQL estándar.
 
 
-## 
 
--
-- 
+## Videoclase 2. Impala
 
--
--
+- ¿Qué es Apache Impala? 
+- Un motor de consultas SQL de procesamiento masivamente paralelo => Apache Impala es un motor de consultas SQL de código abierto y de procesamiento masivamente paralelo (MPP) diseñado para sistemas de almacenamiento de datos como Hadoop
 
--
--
+- ¿Cuál es una de las principales ventajas de Impala en comparación con otros sistemas de procesamiento de Hadoop? 
+- Consultas de baja latencia y alto rendimiento. => A diferencia de otros sistemas de procesamiento de Hadoop, Impala ofrece consultas de baja latencia y alto rendimiento, lo que lo hace ideal para análisis en tiempo real
 
--
--
+- ¿Qué componentes clave forman parte de la arquitectura de Impala? 
+- Daemon ImpalaD, coordinador de consultas y catálogo de metadatos. => La arquitectura de Impala consta de varios componentes clave como el daemon ImpalaD, el coordinador de consultas y el catálogo de metadatos, que son esenciales para su funcionamiento eficiente 
 
--
--
+- ¿Cuál es uno de los principales casos de uso de Apache Impala? 
+- Análisis en tiempo real en sectores como finanzas, salud y comercio electrónico. => Impala se utiliza para realizar análisis en tiempo real en sectores donde la velocidad de las consultas es crítica, como finanzas, salud y comercio electrónico
+
+- ¿Qué permite la arquitectura distribuida de Impala? 
+- Procesar datos en paralelo a través de múltiples nodos en un clúster de Hadoop. => La arquitectura distribuida de Impala permite procesar datos en paralelo a través de múltiples nodos en un clúster de Hadoop, optimizando el rendimiento y escalabilidad de las consultas.
+
+
+## Videoclase 3. Ejemplos
+
+- ¿Cuál es la función principal de Apache Hive? 
+- Proporcionar una interfaz SQL para consultar datos almacenados en Hadoop. => Apache Hive es una herramienta de data warehousing construida sobre Hadoop que proporciona una interfaz de consulta similar a SQL, llamada HiveQL, para interactuar con los datos almacenados en HDFS (Hadoop Distributed File System)
+
+- ¿Cuál es una de las principales ventajas de utilizar Apache Impala sobre Apache Hive?
+- Velocidad de consulta significativamente más rápida. => Apache Impala permite realizar consultas SQL de baja latencia directamente en datos almacenados en Hadoop, ofreciendo tiempos de respuesta mucho más rápidos en comparación con Hive, que depende del procesamiento en batch de MapReduce.
+
+- ¿Qué tipo de datos puede procesar Apache Hive? 
+- Datos estructurados y semi-estructurados. => Apache Hive está diseñado principalmente para manejar datos estructurados almacenados en tablas, pero también puede trabajar con datos semi-estructurados como JSON y XML mediante el uso de formatos de almacenamiento como ORC y Parquet.
+
+- ¿Qué comando en Hive se utiliza para crear una nueva tabla? 
+- CREATE TABLE. => El comando estándar en Hive para la creación de una nueva tabla es `CREATE TABLE`, que permite definir el esquema de la tabla y las opciones de almacenamiento
+
+- ¿Cuál es una diferencia clave entre Apache Hive y Apache Impala en términos de arquitectura de ejecución? 
+- Hive utiliza MapReduce, mientras que Impala utiliza un motor de ejecución dedicado. => Apache Hive traduce consultas SQL a trabajos de MapReduce, lo cual puede ser lento debido a la sobrecarga de MapReduce. En contraste, Impala utiliza su propio motor de ejecución para proporcionar consultas de baja latencia sin depender de MapReduce
 
 
 # Tema 8. Cloud computing
@@ -1252,7 +1252,7 @@ D. HBase.
 10. Relaciona cada servicio GCP con el que sería su equivalente en proyectos
 Apache
 
-## Videoclase 1. 
+## Videoclase 1. Cloud Computing : Introducción
 
 -
 - 
