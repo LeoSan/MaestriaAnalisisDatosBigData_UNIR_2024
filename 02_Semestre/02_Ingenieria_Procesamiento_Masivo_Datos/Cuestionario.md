@@ -535,7 +535,7 @@ D. collect.
 ## Videoclase 1. Spark MLlib
 
 - ¿Qué es Spark MLlib? 
-- Una biblioteca de aprendizaje automático de Spark.  => s la biblioteca de aprendizaje automático de Apache Spark que proporciona herramientas para el análisis de datos, incluyendo algoritmos de clasificación, regresión, clustering, filtrado colaborativo, y más.
+- Una biblioteca de aprendizaje automático de Spark.  => Es la biblioteca de aprendizaje automático de Apache Spark que proporciona herramientas para el análisis de datos, incluyendo algoritmos de clasificación, regresión, clustering, filtrado colaborativo, y más.
 
 - ¿Cuál de los siguientes es un algoritmo de clasificación disponible en Spark MLlib? 
 - Random Forest.=> es un algoritmo de clasificación y regresión que está disponible en Spark MLlib. K-means es un algoritmo de clustering y Linear Regression es un algoritmo de regresión.
@@ -769,15 +769,11 @@ B. Se puede usar únicamente a través de una conexión JDBC.
 C. Es posible usarlo desde herramientas de BI que dispongan de conector ODBC. -> **correcto**
 D. Ninguna de las respuestas anteriores es correcta.
 
-
-
 5. ¿Cuál de las siguientes afirmaciones sobre Hive es correcta?
 A. Hive siempre utiliza como motor de ejecución Apache Spark.
 B. MySQL puede funcionar como metastore de Hive. -> **correcto**
 C. Un fichero de texto plano puede funcionar como metastore de Hive.
 D. Ninguna de las opciones anteriores es correcta.
-
-
 
 6. ¿Cuál de las siguientes afirmaciones sobre Hive es correcta?
 A. Cuando se ejecuta la sentencia DROP sobre una tabla, Hive siempre borra los metadatos relacionados con dicha tabla.
@@ -813,9 +809,7 @@ B. Mediante el motor de ejecución de Apache Spark que se ejecuta en el clúster
 C. Mediante las consultas SQL traducidas por Impala al metastore de Hive.
 D. Ninguna de las anteriores es correcta.
 
-
-
-##  
+##  Videoclase 1. Apache Hive
 
 - ¿Qué componente de la arquitectura de Apache Hive almacena los metadatos de las tablas, columnas, tipos de datos y otras estructuras? 
 - Metastore.=> El Metastore en Apache Hive es el componente que almacena los metadatos de las tablas, columnas, tipos de datos y otras estructuras de datos, permitiendo a Hive gestionar el esquema y las definiciones de los datos
@@ -831,8 +825,6 @@ D. Ninguna de las anteriores es correcta.
 
 - ¿Qué es una UDF (User-Defined Function) en el contexto de Apache Hive?
 - Una función personalizada creada por el usuario.  =>  Una UDF (User-Defined Function) es una función personalizada que los usuarios pueden crear para extender las capacidades de los sistemas de bases de datos o herramientas de análisis de datos, permitiendo escribir funciones específicas que no están disponibles en el lenguaje de consulta SQL estándar.
-
-
 
 ## Videoclase 2. Impala
 
@@ -875,12 +867,12 @@ D. Ninguna de las anteriores es correcta.
 1. ¿Cómo se puede definir cloud computing?
 A. Es la interconexión de una serie de ordenadores.
 B. Es el proceso de planificar y ejecutar una serie de tareas
-C. Son una serie de servicios de computación ofrecidos a través de Internet.
+C. Son una serie de servicios de computación ofrecidos a través de Internet. -> **Correcto**
 D. Ninguna de las respuestas anteriores son correctas.
 
 
 2. ¿Qué modelos de servicio cloud existen?
-A. Público, privado e híbrido.
+A. Público, privado e híbrido. -> **Correcto**
 B. IaaS, PaaS y SaaS.
 C. Microsoft Azure, Google Cloud Platform y Amazon Web Services.
 D. Servidores de cómputo, almacenamiento y bases de datos.
@@ -888,7 +880,7 @@ D. Servidores de cómputo, almacenamiento y bases de datos.
 
 3. ¿Cuál de las siguientes propiedades no es una ventaja de cloud computing?
 A. Coste menor de infraestructura por economías de escala.
-B. Control total de la infraestructura que soporta los servicios.
+B. Control total de la infraestructura que soporta los servicios.  -> **Correcto**
 C. Flexibilidad a la hora de escalar la infraestructura necesaria.
 D. Alta disponibilidad de los servicios gracias a la replicación.
 
@@ -896,13 +888,13 @@ D. Alta disponibilidad de los servicios gracias a la replicación.
 4. ¿Cuál de las siguientes opciones no es un tipo de nube?
 A. Nube pública.
 B. Nube privada.
-C. Nube secundaria.
+C. Nube secundaria. -> **Correcto**
 D. Nube híbrida
 
 
 5. ¿Qué tipo de servicio no es habitual entre los servicios en la nube?
 A. Máquina virtual
-B. Máquina física.
+B. Máquina física. -> **Correcto**
 C. Almacenamiento virtual.
 D. Interconexión de servicios.
 
@@ -911,7 +903,7 @@ D. Interconexión de servicios.
 A. Virtualización y disminución de costes.
 B. Disminución de costes y abstracción.
 C. Disminución de costes y flexibilidad.
-D. Abstracción y virtualización.
+D. Abstracción y virtualización. -> **Correcto**
 
 
 7. ¿Qué tarea reemplaza el uso de servicios en la nube?
@@ -919,19 +911,18 @@ A. Compra e instalación de servidores.
 B. Actualización y mantenimiento de servidores.
 C. Dimensionamiento previo y adquisición de servidores para aumentar la
 capacidad según los requisitos de las aplicaciones.
-D. Todas las anteriores.
+D. Todas las anteriores. -> **Correcto**
 
 
 8. Relaciona los servicios de Microsoft Azure con su temática correspondiente
-
+es una imagen 
 
 9. Para ejecutar un clúster Hadoop en Microsoft Azure:
 A. Solo se puede usar el servicio HDInsight.
 B. Es obligatorio contratar una o varias instancias VM e instalar el clúster en
 ellas.
 C. Microsoft Azure no permite ejecutar clústeres Hadoop.
-D. Se puede usar el servicio HDInsight u optar por una alternativa IaaS.
-
+D. Se puede usar el servicio HDInsight u optar por una alternativa IaaS. -> **Correcto**
 
 10. Si se quieren utilizar servicios relacionados con machine learning en Microsoft
 Azure:
@@ -942,7 +933,7 @@ necesario contratar un servicio de cómputo sobre el que instalar todo el
 entorno necesario para desarrollar modelos.
 C. Existen tanto opciones para conocedores de machine learning, que
 disponen de mayor flexibilidad para construir sus modelos, como servicios de
-inteligencia artificial que no requieren conocimientos de machine learning.
+inteligencia artificial que no requieren conocimientos de machine learning. -> **Correcto**
 D. Microsoft Azure no está diseñado ni orientado a ofrecer servicios de
 machine learning de ninguna forma
 
@@ -950,59 +941,58 @@ machine learning de ninguna forma
 
 
 
-## Videoclase 1. 
+## Videoclase 1. Cloud Computing : Introducción
 
--
-- 
+- ¿Qué es el cloud computing según el contexto proporcionado? 
+- Un modelo de entrega de servicios tecnológicos a través de Internet que abstrae los detalles de implementación. => El documento define el cloud computing como un modelo que ofrece servicios tecnológicos a través de Internet, ocultando los detalles de implementación del sistema que proporciona el servicio, lo que permite a los usuarios acceder a recursos como almacenamiento, bases de datos y computación sin conocer las especificaciones de los sistemas físicos subyacentes.
 
--
--
+- ¿Cuál de las siguientes opciones no es una ventaja del cloud computing mencionada en el documento? 
+- Necesidad de una gran inversión inicial en hardware. => El documento resalta que el cloud computing elimina la necesidad de una gran inversión inicial en hardware, ya que los servicios se pagan según el consumo y no requieren la compra de infraestructura física. 
 
--
--
+- ¿Qué permite la virtualización en el cloud computing?
+- La compartición de recursos entre múltiples usuarios. => La virtualización en el cloud computing se refiere a la compartición de recursos, como computación y almacenamiento, entre múltiples usuarios, lo que permite escalar los servicios de manera ágil y según el consumo.
 
--
--
+- ¿Qué característica del cloud computing mejora la recuperación ante desastres? 
+- La habilidad de detectar problemas y recuperarse rápidamente. => El documento menciona que la computación en la nube facilita la recuperación ante desastres y la continuidad del servicio de forma más sencilla y menos costosa, gracias a la capacidad de detectar problemas y recuperarse rápidamente. 
 
--
--
-
-
-##  
-
--
-- 
-
--
--
-
--
--
-
--
--
-
--
--
+- ¿Qué implica la escalabilidad en el contexto del cloud computing? 
+- La capacidad de un sistema para crecer y responder a un incremento de la demanda. => La escalabilidad en el cloud computing se refiere a la capacidad de un sistema para aumentar o disminuir sus recursos para responder a las variaciones en la demanda de peticiones, lo que se facilita gracias a la virtualización y la abstracción de los recursos.
 
 
 
-## 
+##  Videoclase 2. Cloud Computing : Tipos
 
--
-- 
+- ¿Cuál de los siguientes es un proveedor de nube pública? 
+- Google Cloud Platform (GCP).=>Google Cloud Platform (GCP) es uno de los principales proveedores de servicios de nube pública, junto con Amazon Web Services (AWS) y Microsoft Azure. Estos proveedores ofrecen recursos de computación, almacenamiento y red a través de Internet, accesibles para cualquier usuario mediante un modelo de pago por uso
 
--
--
+- ¿Qué modelo de despliegue de nube combina nubes públicas y privadas? 
+- Nube híbrida. => La nube híbrida combina una nube pública con una privada mediante tecnologías que permiten compartir datos y aplicaciones entre ellas. Esto proporciona mayor flexibilidad, opciones de despliegue y ayuda a optimizar la infraestructura existente.
 
--
--
+- ¿Cuál de los siguientes es un ejemplo de Software como Servicio (SaaS)? 
+- Dropbox => Dropbox es un ejemplo de Software como Servicio (SaaS), ya que proporciona almacenamiento y sincronización de archivos a través de Internet, gestionado y mantenido por el proveedor. Los usuarios acceden a las aplicaciones a través de un navegador sin necesidad de gestionar la infraestructura subyacente. 
 
--
--
+- ¿Qué modelo de servicio en la nube proporciona un entorno para desarrollar, probar y desplegar aplicaciones sin gestionar la infraestructura subyacente? 
+- PaaS => La Plataforma como Servicio (PaaS) proporciona un entorno completo bajo demanda para el desarrollo, pruebas, despliegue y gestión de aplicaciones sin que los desarrolladores tengan que preocuparse por la gestión de la infraestructura subyacente. Esto facilita la creación de aplicaciones web o móviles.
 
--
--
+- ¿Cuál es la principal ventaja de utilizar una nube pública? 
+- Escalabilidad y flexibilidad. => La nube pública ofrece una gran escalabilidad y flexibilidad, permitiendo a las empresas ajustar rápidamente sus recursos según las necesidades sin una inversión inicial alta en infraestructura. Los recursos pueden ser accedidos desde cualquier lugar con conexión a Internet, y el mantenimiento es responsabilidad del proveedor 
+
+## Videoclase 3. Cloud Computing : Microsoft Azure
+
+- ¿Qué es Microsoft Azure? 
+- Una plataforma de computación en la nube. => Microsoft Azure es una plataforma de computación en la nube que ofrece un conjunto de servicios en continuo crecimiento para resolver diferentes problemas de negocio, desde servicios para albergar aplicaciones o páginas web hasta virtualización de servidores y servicios de almacenamiento.
+
+- ¿Cuál de los siguientes servicios es parte de Azure Compute? 
+- Azure Virtual Machines.=>Azure Compute incluye servicios de cómputo bajo demanda como Azure Virtual Machines, que ofrecen máquinas virtuales Windows o Linux para ejecutar aplicaciones en la nube.
+
+- ¿Qué servicio de Azure permite la gestión centralizada de cuentas de usuario y autenticar usuarios? 
+- Azure Active Directory. => Azure Active Directory es un servicio de Azure que proporciona gestión de identidad y acceso, permitiendo autenticar usuarios, gestionar roles y grupos de acceso, y configurar permisos de acceso para distintos servicios.
+
+- ¿Cuál es la principal ventaja de usar Azure Virtual Machine Scale Sets? 
+- Permite escalar la capacidad de las máquinas virtuales según la demanda.  => Azure Virtual Machine Scale Sets permiten escalar automáticamente la capacidad de las máquinas virtuales para manejar aumentos en la carga computacional, ajustándose a la demanda. 
+
+- ¿Qué tipo de almacenamiento proporciona Azure Blob Storage? 
+- Almacenamiento de objetos grandes como archivos de texto, vídeo o imagen.  => Azure Blob Storage está orientado al almacenamiento de grandes objetos (blobs) como archivos de texto, vídeo o imagen, y datos no estructurados, siendo la opción más económica entre los servicios de almacenamiento de Azure. 
 
 
 
@@ -1011,7 +1001,7 @@ machine learning de ninguna forma
 1. ¿Cómo se distribuyen los recursos de la infraestructura de AWS?
 A. Se dividen en zonas, que, a su vez, tienen dos o más subzonas.
 B. Se dividen en regiones, que, a su vez, engloban dos o más zonas de
-disponibilidad.
+disponibilidad. -> **Correcto**
 C. Se dividen en zonas de disponibilidad, que, a su vez, contienen dos o más
 centros de datos.
 D. No existe ninguna división, todos los recursos son globales e
@@ -1025,7 +1015,7 @@ puede ser mayor o menor.
 B. La latencia, ya que se tardaría mucho en obtener los datos si están
 almacenados lejos de donde se realiza la consulta.
 C. La legislación, porque, al ser información sensible, solo se pueden
-almacenar en lugares muy concretos para no incurrir en delitos.
+almacenar en lugares muy concretos para no incurrir en delitos. -> **Correcto**
 D. Todos los elementos anteriores tienen la misma importancia y hay que
 tenerlos en cuenta por igual
 
@@ -1036,7 +1026,7 @@ datos necesarios para desplegar nuestras aplicaciones.
 B. Que tiene responsabilidad sobre toda la seguridad concerniente a nuestra
 aplicación, desde el firewall al control de acceso.
 C. Que tiene la responsabilidad sobre la infraestructura y garantiza ciertos
-niveles de servicio al respecto.
+niveles de servicio al respecto. -> **Correcto**
 D. Todas las afirmaciones previas son correctas.
 
 
@@ -1045,7 +1035,7 @@ A. Permiten elegir la imagen (AMI) que instalar en ellas de entre una colección
 predefinida o una proporcionada por el usuario.
 B. Poseen un conjunto predeterminado de configuraciones de cómputo,
 memoria y red, de donde escoger obligatoriamente la configuración
-predefinida que se desee.
+predefinida que se desee. -> **Correcto**
 C. Se pueden contratar tantas instancias EC2 como se desee.
 D. Cada instancia EC2 está ligada a un servicio EBS para almacenamiento
 persistente.
@@ -1058,10 +1048,11 @@ B. Mediante una red propia del usuario que conecta las direcciones IP de los
 servicios contratados.
 C. Los distintos servicios contratados son independientes y autocontenidos,
 por lo que no necesitan ni pueden comunicarse con otros.
-D. Mediante el servicio de interconexión AWS VPC.
+D. Mediante el servicio de interconexión AWS VPC. -> **Correcto**
+
 
 6. Indica qué caso de uso no es propio de S3:
-A. Sistema de arranque de una instancia EC2.
+A. Sistema de arranque de una instancia EC2. -> **Correcto**
 B. Almacenamiento de ficheros accesibles desde instancias EC2.
 C. Almacenamiento de ficheros accesibles desde un navegador web.
 D. Almacenamiento de archivo de ficheros de escaso acceso.
@@ -1070,7 +1061,7 @@ D. Almacenamiento de archivo de ficheros de escaso acceso.
 suponga una carga de mantenimiento para el departamento de IT, más allá de la
 gestión de los datos contenidos. ¿Qué servicio AWS escogerías?
 A. Instancia EC2 e instalación de MySQL.
-B. AWS RDS.
+B. AWS RDS. -> **Correcto**
 C. AWS DynamoDB.
 D. AWS ECS e instalación de MySQL.
 
@@ -1081,10 +1072,12 @@ A. Varias instancias EC2 sobre las que el usuario instala un clúster Hadoop,
 que incluye HDFS.
 B. Varios contenedores ECS sobre los que el usuario instala un clúster
 Hadoop, que incluye HDFS.
-C. Un clúster EMR, con su propio sistema de almacenamiento distribuido.
+C. Un clúster EMR, con su propio sistema de almacenamiento distribuido. -> **Correcto**
 D. Un clúster EMR, con el sistema de almacenamiento HDFS.
+
+
 9. Amazon SageMaker es un servicio de AWS destinado a:
-A. Construir y entrenar modelos de machine learning desde cero.
+A. Construir y entrenar modelos de machine learning desde cero. -> **Correcto**
 B. Utilizar modelos de machine learning preconstruidos.
 C. Realizar consultas interactivas sobre grandes conjuntos de datos.
 D. Catalogar todos los datos existentes en los diferentes servicios AWS
@@ -1093,11 +1086,8 @@ D. Catalogar todos los datos existentes en los diferentes servicios AWS
 sería adecuado?
 A. Amazon Kinesis Streams.
 B. Amazon MSK.
-C. Amazon Redshift.
+C. Amazon Redshift. -> **Correcto**
 D. Instancias EC2 con Kafka instalado
-
-
-
 
 ## Videoclase 1. 
 
@@ -1160,7 +1150,7 @@ D. Instancias EC2 con Kafka instalado
 
 1. ¿Cómo se organizan los recursos, los servicios y las políticas de seguridad que
 contrata y configura un usuario u organización en Google Cloud?
-A. En folders, que contienen proyectos.
+A. En folders, que contienen proyectos. -> **Correcto**
 B. En proyectos, que contienen folders.
 C. En proyectos y zonas.
 D. En zonas, que contienen diferentes folders.
@@ -1171,7 +1161,7 @@ hacer?
 A. Desplegarlo en la región más cercana a su uso.
 B. Desplegarlo en una región que no presente problemas legales con la
 información que gestiona.
-C. Desplegarlo como recurso regional o multirregional.
+C. Desplegarlo como recurso regional o multirregional.  -> **Correcto**
 D. Desplegar una instancia VM que esté siempre ejecutándose.
 
 
@@ -1184,7 +1174,7 @@ usuarios expertos en el dominio que quieran usar AI en sus aplicaciones
 desarrollando sus propios modelos.
 C. GCP proporciona una serie de servicios de AI bajo Cloud AI Building
 Blocks, para usuarios no expertos en el dominio, los cuales quieran usar AI en
-sus aplicaciones sin desarrollar ningún modelo.
+sus aplicaciones sin desarrollar ningún modelo. -> **Correcto**
 D. Entre los servicios AI para uso directo, se pueden encontrar herramientas
 de clasificación de imágenes o vídeo, o traductores entre diferentes idiomas
 
@@ -1193,7 +1183,7 @@ de clasificación de imágenes o vídeo, o traductores entre diferentes idiomas
 A. Un esquema de seguridad compartida, donde GCP se hace siempre cargo
 de todos los niveles, excepto de los datos.
 B. Un esquema de seguridad compartida, donde GCP se hace cargo de
-ciertos niveles, que dependen del servicio desplegado.
+ciertos niveles, que dependen del servicio desplegado. -> **Correcto**
 C. El usuario debe hacerse cargo de la seguridad de todo el sistema, que
 sigue un modelo de cuatro capas.
 D. Un esquema de seguridad compartida de cuatro capas, donde el usuario
@@ -1204,7 +1194,7 @@ aspectos de las otras tres.
 5. ¿Qué opción es más interesante para ejecutar tareas cortas y no críticas, que se
 podrían repetir si fuera necesario?
 A. Instancias VM normales.
-B. Preemptible instances VM.
+B. Preemptible instances VM.  -> **Correcto**
 C. Sole-tenant VM instances.
 D. One use VM instances.
 
@@ -1214,7 +1204,7 @@ años siguientes al pago de cada nómina ¿Qué opción de almacenamiento de GCP
 es la más adecuada en cuanto a acceso y coste?
 A. Cloud Storage Coldline.
 B. BigTable.
-C. Cloud Storage Archive.
+C. Cloud Storage Archive. -> **Correcto**
 D. Cloud Persistent Disks
 
 
@@ -1225,7 +1215,7 @@ los servicios.
 B. Hay que definir siempre manualmente las subredes de una VPC para tener
 disponibles direcciones IP que asignar a los servicios.
 C. Se crea automáticamente una subred dentro de la VPC, que contiene el
-rango de direcciones IP disponibles para asignar a los servicios.
+rango de direcciones IP disponibles para asignar a los servicios. -> **Correcto**
 D. Un proyecto solo se puede interconectar con otro, pero los servicios dentro
 de un proyecto no se interconectan y, por tanto, no se necesitan direcciones
 IP.
@@ -1236,7 +1226,7 @@ GCP, podríamos…
 A. Usar varias instancias VM configuradas manualmente como clúster e
 instalar las herramientas del ecosistema Hadoop deseadas.
 B. Usar el servicio Dataproc.
-C. Usar el servicio Dataflow.
+C. Usar el servicio Dataflow. -> **Correcto**
 D. Usar varios contenedores GKE configurados manualmente como clúster e
 instalar las herramientas del ecosistema Hadoop deseadas.
 
@@ -1246,11 +1236,15 @@ A. Es un motor propietario único de Google, muy diferente a cualquier otra
 base de datos existente.
 B. MongoDB.
 C. Cassandra.
-D. HBase.
+D. HBase. -> **Correcto** 
 
+**Nota:**
+BigTable se asemeja a la base de datos de código libre HBase. Ambas son bases de datos NoSQL de tipo columnar que están diseñadas para manejar grandes volúmenes de datos. HBase, de hecho, se inspiró directamente en el modelo de datos de BigTable, que fue descrito en un paper de Google en 2006.
 
 10. Relaciona cada servicio GCP con el que sería su equivalente en proyectos
 Apache
+
+imagen se debe poner 
 
 ## Videoclase 1. Cloud Computing : Introducción
 
