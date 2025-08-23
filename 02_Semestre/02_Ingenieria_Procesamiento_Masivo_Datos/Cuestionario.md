@@ -937,10 +937,6 @@ inteligencia artificial que no requieren conocimientos de machine learning. -> *
 D. Microsoft Azure no está diseñado ni orientado a ofrecer servicios de
 machine learning de ninguna forma
 
-
-
-
-
 ## Videoclase 1. Cloud Computing : Introducción
 
 - ¿Qué es el cloud computing según el contexto proporcionado? 
@@ -1091,57 +1087,58 @@ D. Instancias EC2 con Kafka instalado
 
 ## Videoclase 1. 
 
--
-- 
+- Qué es Amazon Web Services (AWS)? 
+- Una plataforma de computación en la nube. => WS es una plataforma líder en servicios de computación en la nube, proporcionando soluciones a empresas, startups, el sector público y particulares. Ofrece un amplio conjunto de servicios que incluyen almacenamiento, procesamiento, redes y seguridad, entre otros 
 
--
--
+- ¿Qué concepto describe mejor la organización geográfica de los servicios de AWS? 
+- Regiones y zonas de disponibilidad (AZ).  => AWS organiza sus servicios en regiones geográficas, cada una de las cuales contiene varias zonas de disponibilidad (AZ). Cada región es una colección de centros de datos separados geográficamente, pero interconectados para proporcionar alta disponibilidad y resiliencia.
 
--
--
+- ¿Cuál es una consideración importante al elegir una región de AWS para desplegar aplicaciones? 
+- La localización de los usuarios finales y la latencia
 
--
--
+- ¿Qué modelo de despliegue permite AWS para flexibilizar la migración de servicios entre servidores propios y la nube? 
+- Despliegue híbrido => 
 
--
--
-
-
-##  
-
--
-- 
-
--
--
-
--
--
-
--
--
-
--
+- ¿Cuál de los siguientes es un servicio IaaS proporcionado por AWS que puede utilizarse para desplegar soluciones de big data?  => Amazon EC2 es un servicio de infraestructura como servicio (IaaS) que proporciona capacidad de cómputo escalable en la nube. Es ideal para desplegar soluciones de big data, ofreciendo flexibilidad y control sobre la infraestructura subyacente.
 -
 
 
+##  Videoclase 2. Servicios
 
-## 
+- ¿Cuál de los siguientes servicios de AWS se utiliza para la encriptación y gestión de claves? 
+- AWS Key Management Service (KMS).
 
--
-- 
 
--
--
+- ¿Qué servicio de AWS permite a los usuarios ejecutar código en respuesta a eventos sin necesidad de gestionar servidores? 
+- AWS Lambda
 
--
--
+- ¿Cuál de las siguientes clases de almacenamiento de Amazon S3 está diseñada para datos a los que no se accede de forma frecuente y se almacenan en una única AZ? 
+- Amazon S3 One Zone-Infrequent Access (IA) =>  está diseñada para datos que no se acceden frecuentemente y se almacenan en una única zona de disponibilidad (AZ), ofreciendo un costo más bajo con la condición de que los datos pueden perderse en caso de un fallo en el centro de datos.
 
--
--
+- ¿Cuál de los siguientes servicios de AWS proporciona monitoreo continuo y detección de amenazas?
+- Amazon GuardDuty => es un servicio de detección inteligente de amenazas que ofrece monitoreo continuo para identificar comportamientos sospechosos y proteger las aplicaciones alojadas en AWS.
 
--
--
+- ¿Cuál de los siguientes servicios de almacenamiento en AWS es similar a un NAS y permite el acceso simultáneo a múltiples instancias EC2? 
+- Amazon EFS. => Amazon Elastic File System (EFS) => proporciona almacenamiento para archivos en la nube con acceso masivo y paralelo compartido, similar a un Network Attached Storage (NAS), permitiendo que múltiples instancias EC2 accedan al mismo sistema de ficheros simultáneamente.
+
+## Videoclase 3. Otros servicios
+
+- ¿Qué servicio de AWS facilita la ejecución de aplicaciones de Big Data en Hadoop sin que el usuario tenga que gestionar las instancias EC2? 
+- Amazon EMR. => Amazon EMR (Elastic MapReduce) es una plataforma que proporciona tecnologías Hadoop sobre instancias EC2 gestionadas por AWS, permitiendo al usuario centrarse en el uso de los servicios sin tener que gestionar las instancias ni crear el clúster por sí mismo
+
+- ¿Cuál de los siguientes servicios de AWS es específico para la extracción, transformación y carga (ETL) de datos? 
+- AWS Glue. => AWS Glue es un servicio serverless enfocado en tareas ETL (extract, transform, load), proporcionando un editor visual y un catálogo de datos para gestionar y transformar datos almacenados en diversas fuentes y formatos.
+
+- ¿Cuál de los siguientes servicios de AWS es específico para la extracción, transformación y carga (ETL) de datos? 
+- Realizar transformaciones de datos casi en tiempo real.  => Kinesis Data Firehouse permite gestionar datos casi en tiempo real, con capacidades de transformación de datos y escalado automático, ideal para cargar flujos de datos en servicios como S3, Redshift y ElasticSearch
+
+- ¿Qué característica diferencia a Amazon Redshift de Amazon RDS? 
+- Redshift es un sistema OLAP mientras que RDS es OLTP. => Amazon Redshift es un sistema de data warehousing orientado a columna optimizado para consultas OLAP (OnLine Analytical Processing), mientras que Amazon RDS está orientado a OLTP (OnLine Transaction Processing), permitiendo consultas transaccionales.
+
+- ¿Cuál es el principal caso de uso de Amazon Athena? 
+- Consultas serverless a datos almacenados en S3. => Amazon Athena es un servicio serverless que permite realizar consultas interactivas a datos almacenados en S3 sin necesidad de cargarlos, soportando muchos formatos y facilitando el análisis interactivo de datos.
+
+
 
 
 
