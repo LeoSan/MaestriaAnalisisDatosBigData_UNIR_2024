@@ -1245,54 +1245,55 @@ imagen se debe poner
 
 ## Videoclase 1. Cloud Computing : Introducción
 
--
-- 
+- ¿Qué característica de Google Cloud Platform (GCP) permite escalar recursos según la demanda?
+- Escalabilidad => Escalabilidad. La escalabilidad es la capacidad de aumentar o disminuir los recursos de acuerdo con la demanda, una característica clave de GCP.
 
--
--
+- ¿Cuál es la estructura que organiza los servicios de Google Cloud Platform para ofrecer flexibilidad, disponibilidad y rendimiento? 
+- Todas las anteriores.
 
--
--
+- ¿Qué beneficio ofrece la implementación de servicios en múltiples zonas dentro de una región? 
+- Alta disponibilidad. => Alta disponibilidad. Desplegar servicios en múltiples zonas dentro de una región proporciona redundancia, lo que asegura una mayor disponibilidad y resistencia ante fallos.
 
--
--
+- ¿Cuál de los siguientes es un ejemplo de región de Google Cloud Platform? 
+- asia-east1. => asia-east1. asia-east1 (Taiwán) es un ejemplo de región mencionada en GCP, proporcionando servicios cerca de los usuarios para reducir la latencia y cumplir con regulaciones locales de datos.
 
--
--
-
-
-##  
-
--
-- 
-
--
--
-
--
--
-
--
--
-
--
--
+- ¿Cuál es el propósito principal de las multirregiones en Google Cloud Platform? 
+- Ofrecer durabilidad y disponibilidad de datos más alta. Las multirregiones están diseñadas para ofrecer una durabilidad y disponibilidad de datos superior, adecuada para el almacenamiento y replicación de datos críticos.
 
 
+##  Videoclase 2. Servicios
 
-## 
+- ¿Qué servicio de Google Cloud Platform permite la orquestación de contenedores con Kubernetes? 
+- Google Kubernetes Engine. => Google Kubernetes Engine (GKE) es el servicio específico de Google Cloud Platform diseñado para la orquestación de contenedores utilizando Kubernetes, permitiendo una gestión simplificada y escalabilidad para implementaciones de microservicios.
 
--
-- 
+- ¿Cuál es una característica destacada de Cloud Functions en GCP?
+- Ejecución basada en eventos. => Cloud Functions es un servicio sin servidor de Google Cloud Platform que permite la ejecución de funciones en respuesta a eventos específicos, facilitando la automatización de tareas y el procesamiento en tiempo real.
 
--
--
+- ¿Qué servicio de almacenamiento en GCP está diseñado para bases de datos relacionales gestionadas? 
+- Cloud SQL. => Cloud SQL es el servicio de Google Cloud Platform que ofrece bases de datos relacionales gestionadas, compatible con MySQL, PostgreSQL y SQL Server, y es ideal para aplicaciones empresariales que requieren una alta durabilidad y acceso global. 
 
--
--
+- ¿Qué característica distingue a la Virtual Private Cloud (VPC) de GCP?
+- Aislamiento y control de red. => Aislamiento y control de red. La Virtual Private Cloud (VPC) de Google Cloud Platform permite la creación de redes privadas virtuales, ofreciendo características de aislamiento y control de red para implementaciones seguras y entornos híbridos. 
 
--
--
+- ¿Cuál es un caso de uso típico para Google Compute Engine en GCP? 
+- Aplicaciones que requieren recursos específicos. => Google Compute Engine proporciona máquinas virtuales escalables que son altamente personalizables y adecuadas para aplicaciones que requieren recursos específicos, como un alto rendimiento y personalización
 
--
--
+
+
+## Videoclase 3. Otros servicios
+
+- ¿Cuál de los siguientes servicios de Google Cloud Platform (GCP) se utiliza para el procesamiento de datos en tiempo real y por lotes? 
+- Dataflow => Dataflow es un servicio basado en Apache Beam que permite el procesamiento de datos tanto en tiempo real como en lotes. Está diseñado para optimizar mediante grafo acíclico dirigido (DAG) y soporta la paralelización y el ordenamiento topológico. 
+
+- ¿Qué servicio de GCP proporciona un sistema de mensajería y transmisión de datos en tiempo real con alta disponibilidad y escalabilidad? 
+- Pub/Sub. => es el servicio de mensajería y transmisión de datos en tiempo real de GCP, conocido por su alta disponibilidad y escalabilidad. Es utilizado para la integración de aplicaciones y el streaming de eventos.
+
+
+- ¿Cuál es una característica destacada de BigQuery en GCP? 
+- Interfaz SQL para análisis de datos a gran velocidad y escala.. =>  nterfaz SQL para análisis de datos a gran velocidad y escala. BigQuery es conocido por ser un sistema de data warehousing que utiliza una interfaz SQL para realizar análisis de datos de manera rápida y a gran escala, permitiendo la inferencia de esquemas y carga de datos en bloque o en tiempo real. 
+
+- ¿Cuál de los siguientes es un caso de uso de dataflow en GCP?
+- Procesamiento de eventos y ETL. => Procesamiento de eventos y ETL. Dataflow se utiliza principalmente para el procesamiento de eventos y ETL (Extracción, Transformación y Carga) debido a su capacidad para manejar y procesar grandes volúmenes de datos en tiempo real y en batch.
+
+- ¿Qué servicio de GCP está diseñado para la visualización de datos y la creación de informes, y se integra con varias fuentes de datos? 
+- Data Studio. => Data Studio. Data Studio es una herramienta de GCP que permite la visualización de datos y la creación de informes interactivos, con una interfaz intuitiva y la capacidad de integrarse con diversas fuentes de datos, facilitando la creación de dashboards.
