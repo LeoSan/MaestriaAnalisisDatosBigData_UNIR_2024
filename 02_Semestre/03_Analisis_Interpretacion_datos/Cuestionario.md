@@ -7,7 +7,6 @@ C. La ciencia del aprendizaje a partir de los datos.
 D. La ciencia que produce, analiza y extrae conclusiones de los datos.
 E. Las respuestas C y D son correctas. -> **Correcto**
 
-
 3. Con la estadística manejamos:
 A. Información en forma de datos.
 B. Números contextualizados.
@@ -224,10 +223,7 @@ D. Ninguna de las anteriores es correcta
 - ¿Cuál es la función principal de la consola en R?
 - Permitir la ejecución inmediata de comandos de R.
 
-
-
 # Tema 3. Medidas que resumen la información
-
 
 1. ¿Cuántos cuartiles hay en una distribución de datos?
 A. Paradójicamente hay dos, puesto que son tres pero como la mediana es el
@@ -360,3 +356,55 @@ E. Las respuestas B y D son correctas. -> **Correcto**
 - La mediana del conjunto de datos.
 
 # Tema 4. Regresión y correlación
+
+
+
+
+## Videoclase 1. Fundamentos de Correlación y Regresión Lineal
+- ¿Qué mide la correlación entre dos variables?
+- La fuerza y dirección de la relación lineal entre dos variables. => ya que la correlación mide tanto la fuerza como la dirección de la relación lineal entre dos variables.
+
+- ¿Qué valor de correlación indica una relación perfectamente positiva entre dos variables?
+- 1 => ya que un valor de correlación de 1 indica una relación lineal perfectamente positiva entre dos variables.
+
+- ¿Qué representa la pendiente en un modelo de regresión lineal simple?
+- el cambio esperado en la variable dependiente por cada unidad de cambio en la variable independiente => a que la pendiente en un modelo de regresión lineal indica el cambio esperado en la variable dependiente
+
+- ¿Qué suposición se hace sobre la relación entre las variables en la regresión lineal?
+- Que existe una relación lineal entre la variable dependiente y la variable independiente. => ya que la regresión lineal asume que existe una relación lineal entre la variable dependiente y la independiente.
+
+- ¿Cuál es el coeficiente de determinación ?2 en la regresión lineal?
+- La proporción de la variabilidad total de la variable dependiente que es explicada por el modelo. => es correcto, ya que el coeficiente de determinación ?2 indica qué proporción de la variabilidad de la variable dependiente es explicada por la regresión.
+
+## Videoclase 2. Análisis de Regresión: Técnicas y Evaluación
+- ¿Cuál es el propósito de un análisis de regresión multivariante?
+- Las diferencias entre los valores observados y los valores predichos por el modelo.
+
+- ¿Cuál es el propósito de un análisis de regresión multivariante?
+- Examinar la relación entre una variable dependiente y varias variables independientes.
+
+- ¿Qué implica un gráfico de residuos con un patrón no aleatorio?
+- Que el modelo de regresión no captura adecuadamente la relación entre las variables.
+
+- ¿En qué se diferencia la regresión no lineal de la regresión lineal?
+- La regresión no lineal modela relaciones donde la relación entre las variables no sigue una línea recta.=> ya que la regresión no lineal se utiliza cuando la relación entre las variables no puede ser modelada adecuadamente con una línea recta.
+
+- ¿Qué se evalúa al analizar los residuos en un modelo de regresión?
+- La validez de las suposiciones del modelo de regresión, como la linealidad y la homocedasticidad. => ya que el análisis de residuos permite evaluar si las suposiciones del modelo de regresión, como la linealidad y la homocedasticidad, son válidas.
+
+## Videoclase 3. Técnicas Avanzadas
+- ¿Qué es la regresión por mínimos cuadrados truncados (LTS)?
+- Una técnica robusta que minimiza el impacto de los valores atípicos al ignorar un porcentaje de los residuos más grandes.
+
+- ¿En qué casos es útil aplicar la transformación de variables en un modelo de regresión?
+- Cuando la relación entre las variables no es lineal.
+
+- ¿Qué tipo de transformación de variables es comúnmente utilizada para modelar relaciones exponenciales?
+- Transformación logarítmica.
+
+- ¿Cómo se interpreta el coeficiente ?2 en un modelo log-log?
+- Cuando ? varía en un 1%, ? varía en ?2% en promedio.
+
+- ¿Cómo se interpreta el coeficiente ?2 en un modelo lin-log?
+-  Un aumento de una unidad en 1% en ? incrementa ? en ?2/100 unidades en promedio
+
