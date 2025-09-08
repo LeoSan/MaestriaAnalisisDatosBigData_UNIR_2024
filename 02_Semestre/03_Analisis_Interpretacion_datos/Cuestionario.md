@@ -357,6 +357,115 @@ E. Las respuestas B y D son correctas. -> **Correcto**
 
 # Tema 4. Regresión y correlación
 
+1. Las frecuencias marginales son:
+A. Aquellas que se marginan dejándose fuera de los cálculos.
+
+B. Aquellas que alcanzan valores atípicos.
+
+C. Aquellas que hacen referencia a una sola variable marginando a la otra. -> **Correcto**
+
+D. Aquellas con las que se construye un diagrama de frecuencias
+bidimensional.
+
+
+2. La covarianza del mismo modo que la varianza…
+A. No puede tomar valores negativos.
+
+B. Su magnitud no nos dice mucho sobre si covarían entre sí mucho o poco las dos variables. -> **Correcto**
+
+C. Mide la dispersión entre variables.
+
+D. A y B son correctas.
+
+
+3. Un diagrama de dispersión nos permite ver:
+A. Los patrones que se «esconden» en los datos.
+
+B. Si se da algún tipo de relación lineal entre las variables
+
+C. Si existe alguna observación atípica en los datos.
+
+D. Las tres anteriores son correctas. -> **Correcto**
+
+
+4. La causalidad entre variables…
+A. Se da siempre que tengamos algún tipo de asociación entre ellas.
+
+B. No tiene por qué deducirse de la asociación que exista entre ellas. -> **Correcto**
+
+C. Es equivalente a la asociación que pueda haber entre ellas.
+
+D. A y C son correctas.
+
+5. Cuando existe un asociación aproximadamente lineal entre variables que hemos
+modelado con una regresión lineal…
+A. Una de las variables es la dependiente y la otra la independiente
+
+B. Una de las variables es la explicativa y la otra la predictora.
+
+C. La variable respuesta puede ser dependiente o independiente
+
+D. Una de las variables es la variable explicativa y la otra la variable respuesta
+
+E. A y D son correctas. -> **Correcto**
+
+
+6. Si el coeficiente de correlación es nulo:
+
+A. Puede estar existiendo otro tipo de relación entre las variables. -> **Correcto**
+
+B. No existe causalidad entre ellas.
+
+C. La asociación entre ellas es inexistente.
+
+D. B y c son correctas.
+
+7. El Método de los Mínimos Cuadrados sirve para…
+
+A. Buscar la mejor asociación entre las variables.
+
+B. Maximizar el ajuste entre los datos.
+
+C. Hallar la ecuación de la recta que minimiza las desviaciones respecto a las
+observaciones -> **Correcto**
+
+D. Complicar el análisis estadístico, pues ya está en desuso con la aparición
+de los ordenadores.
+
+
+8. El coeficiente de determinación…
+
+A. Es igual al cuadrado del coeficiente de correlación lineal.
+
+B. Es igual a la raíz del coeficiente de correlación lineal.
+
+C. Refleja el porcentaje de varianza explicado por las predicciones de la recta
+respecto al del total de observaciones.
+
+D. A y C son correctas -> **Correcto**
+
+9. Los modelos lineales se emplean más en estadística porque…
+
+A. En la vida real son más comunes los modelos donde encajan
+adecuadamente.
+
+B. Suponen una aproximación matemática sencilla a relaciones entre variables que pueden ser un tanto más complejas. -> **Correcto**
+
+C. Otros modelos como el logístico no acaban de resultar manejables y se
+dan en casos raros.
+
+D. A y C son correctas.
+
+
+10. Un scatterplot es:
+
+A. Un diagrama de residuos
+
+B. Un gráfico que muestra la relación entre dos variables cuantitativas. -> **Correcto**
+
+C. Una herramienta muy útil del Excel.
+
+D. A y C son correctas
 
 
 
@@ -408,3 +517,860 @@ E. Las respuestas B y D son correctas. -> **Correcto**
 - ¿Cómo se interpreta el coeficiente ?2 en un modelo lin-log?
 -  Un aumento de una unidad en 1% en ? incrementa ? en ?2/100 unidades en promedio
 
+
+
+# Tema 5. Probabilidad condicional y variables aleatorias
+
+
+1. Si los tres primeros lanzamientos de una moneda han resultado cara, la
+probabilidad de que obtengamos cara en el cuarto lanzamiento es:
+
+A. 1/16
+
+B. 1/4
+
+C. 1/2 -> **Correcto**
+
+D. Otro valor entre cero y uno.
+
+
+2. Dos eventos se dice que son independientes cuando:
+
+A. Siempre que ocurra A no tiene por qué ocurrir B.
+
+B. La probabilidad de su intersección es nula.
+
+C. El hecho de que ocurra uno no afecta a la probabilidad de que ocurra el otro. -> **Correcto**
+
+D. Las respuestas B y C son correctas.
+
+
+3. F(xi) es
+
+A. La función de redistribución.
+
+B. 1 - P(X > xi )
+
+C. P(X > xi )
+
+D. Las respuestas A y B son correctas. -> **Correcto**
+
+
+4. Si tiramos dos dados y sumamos sus puntuaciones. La probabilidad de obtener
+un 6,7 o un 8 es:
+
+A. La mitad.
+
+B. Más de la mitad.
+
+C. 0,44. -> **Correcto**
+
+D. F(8) – F(6)
+
+
+5. La V(X+Y) es igual a:
+A. V(X)+V(Y)+2ρσXσy
+
+B. V(X)+V(Y)
+
+C. V(X)+V(Y)+2Cov(X,Y)
+
+D. Las respuestas A y C son correctas. -> **Correcto**
+
+
+6. En una distribución binomial el parámetro «q» es:
+
+A. 1-P(éxito)
+
+B. La probabilidad del fracaso.
+
+C. 1/p
+
+D. Las respuestas A y B son correctas. -> **Correcto**
+
+
+7. La distribución normal está caracteriza por dos parámetros que son:
+
+A. u y ρ
+
+B. σ
+2
+ y ρ
+
+C. μ y p
+
+D. La media y la desviación típica.  -> **Correcto**
+
+
+8. Si X∼N (5,2) entonces la variable tipificada Z la obtenemos como…
+
+[Respuesta](../03_Analisis_Interpretacion_datos/info/info_003.png)
+
+**Respuesta C:* 
+
+9. Si tenemos un variable aleatoria que se distribuye como una :
+
+[Respuesta](../03_Analisis_Interpretacion_datos/info/info_004.png)
+
+10. En una distribución normal a mayor sigma:
+
+A. Mayor altura de la función de densidad.
+
+B. Más probable es encontrarse datos más dispersos que sigan tal distribución.
+
+C. La forma de la campana será más achatada.
+
+D. Las respuestas B y C son correctas. -> **Correcto**
+
+## Video 1: Fundamentos de probabilidad 
+
+- ¿Qué es un experimento en el contexto de la probabilidad?
+- Un proceso que genera resultados aleatorios.
+
+- ¿Qué se entiende por evento en probabilidad?
+-  Un subconjunto de los posibles resultados de un experimento.
+
+- ¿Qué valor puede tomar la probabilidad de un evento?
+- Un valor entre 0 y 1.
+
+- ¿Cuál es el principio básico de la probabilidad clásica?
+- La probabilidad de un evento se define como el número de resultados favorables dividido por el número total de resultados posibles.
+
+
+- ¿Qué es el espacio muestral en probabilidad?
+- El conjunto de todos los posibles resultados de un experimento.
+
+
+## Video 2: Principios básicos y Probabilidad condicional
+
+- ¿Cuál es el principio básico de la probabilidad total?
+- La suma de las probabilidades de todos los eventos mutuamente excluyentes es igual a 1. => A es correcta, ya que la probabilidad total se refiere a la suma de las probabilidades de todos los eventos mutuamente excluyentes, que debe ser igual a 1.
+
+- ¿Qué es la probabilidad condicional?
+- La probabilidad de que ocurra un evento dado que otro evento ya ha ocurrido. 
+
+- ¿Cómo se expresa matemáticamente la probabilidad condicional de A dado B?
+- P(A∣B) = P(A∩B)/P(B). => D es correcta, ya que la fórmula de la probabilidad condicional es P(A∣B) = P(A∩B)/P(B).
+
+
+- ¿Qué implica si dos eventos A y B son independientes?
+- P(A∣B) = P(A), es decir, la ocurrencia de B no afecta a la probabilidad de A. => B es correcta, ya que, si dos eventos son independientes, la ocurrencia de uno no afecta la probabilidad del otro.
+
+
+- ¿Cuál es la fórmula de la probabilidad conjunta de dos eventos independientes A y B?
+- P(A∪B) = P(A)×P(B). => C es correcta, ya que, para eventos independientes, la probabilidad conjunta P(A∩B) se calcula multiplicando las probabilidades de los eventos individuales.
+
+
+## Video 3: Fundamentos de la Distribución en el Muestreo
+
+- ¿Qué es una función de probabilidad?
+- Una función que asigna probabilidades a los posibles valores de una variable aleatoria discreta. 
+
+- ¿Qué es una función de probabilidad acumulada?
+- Una función que asigna la probabilidad de que una variable aleatoria tome un valor menor o igual a un valor dado.
+
+- ¿Cuál es la característica principal de una función de probabilidad para variables aleatorias discretas?
+- La suma de las probabilidades de todos los posibles valores es igual a 1.
+
+
+- ¿Qué indica la probabilidad acumulada en una función de distribución acumulativa?
+- La probabilidad de que una variable aleatoria sea menor o igual a un valor dado.
+
+
+- ¿Qué propiedad debe cumplir una función de probabilidad acumulada?
+- debe ser una función no decreciente.
+
+# Tema 6. Distribución en el muestreo
+
+1. Para poder hablar propiamente de distribución muestral de un determinado
+estadístico…
+A. Tendremos que recoger una muestra de una población cualquiera.
+B. Las observaciones que se recojan habrán de ser independientes.
+C. Las observaciones recogidas deben seguir la misma distribución que es la
+de la
+población de donde provienen.
+D. Las respuestas B y C son correctas.
+
+
+2. El arco circunflejo lo empleamos en estadística inferencial para…
+A. Designar un estadístico cualquiera que provenga de la muestra.
+B. Diferenciar el estadístico del parámetro poblacional.
+C. Indicar que es un estimador del parámetro.
+D. Las respuestas B y C son correctas.
+
+
+3. p>
+A. El estimador de la probabilidad.
+B. El estimador de la proporción muestral.
+C. El estimador de la proporción poblacional.
+D. Un parámetro de cierto tipo de variable aleatoria
+
+4. ¿Por qué hay tantas variables en la naturaleza que se distribuyen normalmente?
+A. Porque según el TCL la suma de muchos efectos aleatorios independientes
+se comporta normalmente.
+B. En realidad no hay tantas, es más la visión alterada del matemático que
+trata de que la realidad se parezca a las matemáticas y no a la inversa.
+C. En realidad es por las binomiales que son las que abundan más y como su
+suma es normal acaba apareciendo que hay más normales.
+D. Se debe a un misterio estadístico todavía por resolver.
+
+
+5. La desviación típica de la media muestral es:
+
+[Respuesta](../03_Analisis_Interpretacion_datos/info/info_005.png)
+
+
+6. Si multiplicamos por cuatro el tamaño de una muestra:
+
+Ox
+
+A. Se reduce a la mitad.
+B. Se duplica.
+C. Se multiplica por 4.
+D. Se mantiene igual pues no le afectan cambios de n
+
+
+7. El error estándar es…
+A. Un error típico que se comete cuando estimamos.
+B. La desviación típica de la media.
+C. Proporcional al ancho de la curva de la distribución muestral de la media.
+D. Las respuestas B y C son correctas.
+
+
+8. Señala la frase correcta.
+A. Todo estadístico es un estimador.
+B. Todo estimador es una variable aleatoria función de la muestra.
+C. Todo estimador es un parámetro de la muestra.
+D. Todo estadístico es un parámetro de la muestra.
+
+
+9. ¿Cuál es un estimador insesgado de la media poblacional?
+
+[Respuesta](../03_Analisis_Interpretacion_datos/info/info_006.png)
+
+
+10. ¿En qué se diferencian los dos tipos principales de estimación?
+A. Una estima con un solo valor mientras que la otra con varios.
+B. Un tipo de estimación da intervalos posibles para el parámetro mientras
+que la otra solo da un valor.
+C. Una es confidente y la otra puntual.
+D. Depende del parámetro a estimar tendremos que usar una u otra.
+
+## Videoclase 1. IFundamentos de la Distribución en el Muestreo
+
+- 
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+
+
+
+## Video 2: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+## Video 3: 
+
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+# Tema 7. Intervalos de confianza
+
+1. ¿Qué es un valor crítico en términos de inferencia?
+A. Un valor sumamente importante en los IC que depende de la muestra.
+B. Es el valor de una distribución que acumula cierta probabilidad.
+C. Se trata de un concepto fundamental cuando manejamos distribuciones
+normales.
+D. Las respuestas A y C son correctas.
+
+
+2. Empleamos intervalos de confianza entre otras razones porque…
+A. La estimación puntual se queda corta en el sentido de que no sabemos
+cuán bueno es una estimación puntual.
+B . Es una buena manera de aproximarnos al parámetro poblacional tanto
+como deseemos o podamos.
+C. Si no podemos realizar la estimación puntual que es más exacta nos
+conformamos con el IC.
+D. Las respuestas A y B son correctas.
+
+
+3. ¿Qué es o a qué es igual « »?
+A. Al estimador, que también puede ser anotado como .
+B. Al margen de error.
+C.
+D. Un parámetro de cierto tipo de variable aleatoria.
+
+4. Si hemos calculado el IC para y resulta: . ¿Cuánto vale
+«E»?
+A. 0,025
+B. 0,25
+C. 0,050
+D. No se puede calcular con esta información
+
+5. Al IC que marca con un 95% de confianza la estatura
+media de un equipo de la NBA lo interpretamos como…
+A. De cada 100 jugadores, 95 estarán contenidos en dicho intervalo.
+B. De cada 100 muestras de jugadores, 95 tendrán la media contenido en ese
+IC.
+C. Tenemos una confianza del 95% de que la media de los jugadores de un
+equipo de la NBA está contenida entre 188cm y 209cm.
+D. Las respuestas B y C son correctas.
+
+6. ¿Qué fórmula es la correcta para hallar el IC de una media poblacional conocida
+su varianza?
+
+[Respusta ](../03_Analisis_Interpretacion_datos/info/info_007.png)
+
+7. Cuando no es conocida, en el cálculo de los valores críticos para construir los
+IC empleamos:
+A. La T-Student.
+B. La Chi Cuadrada.
+C. La Normal Z.
+D. La Normal (0,1).
+
+
+8. La T-Student es…
+A. Una distribución similar a la Normal, de hecho se aproxima a ella a medida
+que aumenta el «n».
+B. Es diferente de la Normal y la Chi Cuadrada.
+C. Es simétrica.
+D. Las respuestas A y C son correctas.
+
+9. ¿Qué es una muestra piloto?
+A. Un tipo de encuestas muy empleadas en aviación (por temas de
+seguridad).
+B. Una muestra que se recoge antes de hacer un estudio para tantear las
+características de la población.
+C. Todo estudio estadístico bien hecho debe constar de una muestra
+preliminar llamada «piloto» para posteriormente recoger la muestra definitiva.
+D. Es una muestra enorme que no siempre es posible recogerla, pero es lo
+ideal.
+
+10. ¿En un IC que porcentaje de las veces éste no contendrá al parámetro?
+A. (1-a)% de las veces.
+B. (1-a)x100% de las veces.
+C. a x 100% de las veces.
+D. Depende de la suerte que hayamos tenido con la muestra concreta que
+cojamos
+
+
+## Video 1: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+
+
+
+## Video 2: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+## Video 3: 
+
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+# Tema 8. Contrastes de hipótesis
+
+1. ¿Para qué sirve un contraste de hipótesis?
+A. Para saber a ciencia cierta si una afirmación es verdadera.
+B. Para saber con rigor matemático si una afirmación es falsa.
+C. Para contrastar si una afirmación sobre una población parece cierta o no
+en base a los datos.
+D. Las respuestas A y B son correctas.
+
+
+2. Generalmente el orden que seguimos en un contraste de hipótesis es…
+A. Establecer primero la para que quede delimitada aproximadamente la
+.
+B. Plantearnos la hipótesis de rechazo para posteriormente fabricar su
+complementaria que es la hipótesis nula.
+C. Negar la hipótesis alternativa para que surja la hipótesis nula.
+D. Las respuestas B y C son correctas.
+
+
+3. ¿Cuántos diferentes planteamientos tenemos para la ?
+A. Solo tenemos una opción de , ya que está totalmente delimitada por la
+hipótesis nula.
+B. Generalmente consideramos tres clases, donde una viene asociada al
+contraste bilateral y las otras dos a los laterales izquierdo y derecho
+respectivamente.
+C. Cuatro, correspondiendo a los tres casos indicados en B) más un bilateral
+del tipo (que por cierto es un tanto atípico).
+D. Las respuestas B y C son correctas.
+
+4. ¿Con que tipo de frases interpretamos un contraste de hipótesis?
+A. «…tras realizar el contraste se demuestra la falsedad de la Ho…».
+B. «…se han encontrado evidencias claras de que es la Ho es verdadera…».
+C. «… se han encontrado evidencia estadísticas aplastantes en favor de…».
+D. «… no logramos encontrar evidencias estadísticamente significativas…»
+
+
+5. ¿Quién tiene que caer en la región crítica para que rechacemos la Ho?
+A. El estadístico de contraste que estemos empleando.
+B. El parámetro.
+C. El valor que se contrasta del parámetro (por ejemplo ).
+D. Las respuestas B y C son correctas.
+
+6. ¿Qué es 1-B?
+A. La probabilidad de que cometamos uno de los errores más graves que se
+pueden cometer.
+B. La potencia del contraste.
+C. El otro gran error en los contrastes de hipótesis junto con .
+D. Las respuestas B y C son correctas.
+
+7. La P(rechazar | siendo Ho verdadera) es equivalente a:
+
+[Respuesta](../03_Analisis_Interpretacion_datos/info/info_008.png)
+
+8. La regla del p valor para decidir un contraste de hipótesis es:
+
+[Respuesta](../03_Analisis_Interpretacion_datos/info/info_009.png)
+
+9. ¿Cómo decidimos un contraste de hipótesis a través de un IC?
+A. Si pertenece al IC construido para µ se acepta, de lo contrario
+rechazamos .
+B. Para empezar ha de ser bilateral y luego se procede como en .
+C. Si no pertenece al IC construido para µ se acepta, de lo contrario se
+rechaza .
+D. Para empezar ha de ser unilateral y luego se procede como en .
+
+
+10. Cuando en un contraste de hipótesis desconocemos la varianza de la población
+de la que provienen los datos empleamos
+A. La distribución T-Student como estadístico de contraste.
+B. La distribución normal si tenemos suficientes observaciones.
+C. La distribución Ji Cuadrada de Pearson.
+D. Si comparamos medias empleamos la Normal si son proporciones la TStuden
+
+## Video 1: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+
+
+
+## Video 2: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+## Video 3: 
+
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+# Tema 9. Regresión
+
+
+1. El modelo de regresión lineal se supone...
+A. Aleatorio, curvilíneo y apolíneo.
+B. Carente de errores en la medida de lo posible.
+C. No heterocedástico.
+D. Con una Tde student no muy elevada (de lo contrario se rechaza).
+
+
+2. ¿Qué es lo que se contrasta en un modelo de regresión lineal?
+A. Si hay constante.
+B. Si la pendiente es nula o no.
+C. Si el error es mínimo respecto a la recta.
+D. B y C son correctas.
+
+
+3. ¿Con que Test o pruebas podemos constrastar el modelo de 
+regresión?
+A. Con el y la T de Student.
+B. Con la T-de Student y la Normalidad de la variable.
+C. Con el ANOVA.
+D. A y C son correctas.
+
+
+4. R2 equivale a:
+A. SCM entre la SCR.
+B. La SCM entre la SCT.
+C. B y D son correctas.
+D. 1 menos la SCR/SCT
+
+5. Si el IC para B1 contiene al 0 esto querrá decir que: D B y C son correctas.
+A. La regresión no es significativa.
+B. La regresión es altamente significativa.
+C. Con una probabilidad del 95% la regresión no será significativa.
+D. B y C son correctas.
+
+6. ¿Qué es alfa en el modelo de regresión?
+A. El complementario de Beta.
+B. La potencia del contraste.
+C. La constante.
+D. A y C son correctas.
+
+7. En el ejemplo visto en el capítulo sobre las películas:
+A. Las puntuaciones de IMDB eran la variable dependiente.
+B. Las puntuaciones de Filmaffinity eran la variable predictora.
+C. Las películas eran las variables dependientes.
+D. A y B son correctas.
+
+
+8. Si al graficar los errores estos presentar una forma de embudo:
+A. Es buena señal para el modelo.
+B. Indicaría una falta de homocedasticidad.
+C. Indicaría una falta de heterocedasticidad.
+D. Ninguna de las anteriores
+
+
+9. Los errores del modelo conviene que sean casi todos elevados.
+A. Sean casi todos positivos.
+B. Sean casi todos elevados.
+C. Que se alternen lo mejor posible los positivos y los negativos sin grandes
+saltos ni patrones.
+D. Que presenten claros patrones.
+
+10. El modelo de regresión lineal consta de tres parámetros.
+A. Alfa, gamma y el error.
+B. Beta cero, beta uno y alfa.
+C. Alfa, beta y sigma.
+D. No es cierto, consta de dos
+
+## Video 1: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+
+
+
+## Video 2: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+## Video 3: 
+
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+# Tema 10. Análisis de componentes principales
+
+1. ¿Para qué sirve el análisis de componentes principales?
+A. Para obtener información de los datos.
+B. Para reducir la dimensión de los datos.
+C. Para aumentar la dimensión de los datos.
+D. Todo lo anterior es falso.
+
+2. Los vectores de componentes principales:
+A. Se obtienen agregando los valores de las variables del modelo.
+B. Se obtienen utilizando datos externos al modelo.
+C. Sirven para aumentar la dimensión de los datos.
+D. B y C son correctas.
+
+
+3. ¿Cuándo es una variable representativa del vector de componentes?
+A. Cuando el valor asociado es cercano a 1.
+B. Cuando el valor asociado es cercano a -1.
+C. Cuando el valor asociado es cercano a 0.
+D. A y B son ciertas.
+
+
+4. ¿Qué componentes son las que representan el ruido en una imagen?
+A. Las cercanas a PC1.
+B. las cercanas al último PC.
+C. Todas.
+D. Ninguna.
+
+5. Para detectar cambios en un modelo de datos…
+A. Necesitamos distintos modelos de datos hechos en distintos tiempos o bajo
+distintas circunstancias.
+B. Solo necesitamos un único modelo de datos.
+C. Es necesario conocer la media.
+D. Todo lo anterior es falso.
+
+
+6. ¿Qué sucede si reducimos el número de componentes principales a utilizar en
+nuestro modelo reducido?
+A. Perdemos precisión en los datos.
+B. Reducimos la dimensión.
+C. A y B son ciertas.
+D. A y B son falsas.
+
+
+7. ¿Cómo calculamos el modelo de datos reducido a partir del vector de
+componentes?:
+A. Multiplicando cada individuo por la suma de los valores del vector de
+componentes principales.
+B. Multiplicando cada valor de la variable de cada individuo por la derivada del
+vector de componentes.
+C. Generamos el valor agregado asociado a cada individuo multiplicando
+cada valor del vector de componentes por la variable asociada y sumando el
+resultado.
+D. Aplicando A y luego B.
+
+
+8. Si nos atenemos al número de variables a representar, ¿qué gráfica de
+dispersión es más fácil de entender e interpretar?:
+A. Una con 2 dimensiones.
+B. Una con 3 dimensiones.
+C. Una con 4 dimensiones.
+D. Ninguna de las anteriores.
+
+
+9. ¿Qué función de R hemos utilizado para poder calcular el vector de análisis de
+componentes?
+A. matrix.
+B. prcomp.
+C. plot.
+D. Ninguna de las anteriores.
+
+
+10. ¿Si tenemos un modelo de datos con 5 variables, ¿cuántos vectores de
+componente principal generará el algoritmo?
+A. 5.
+B. 6.
+C. 7.
+D. 2.
+
+
+## Video 1: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+
+
+
+## Video 2: 
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
+
+
+## Video 3: 
+
+
+-
+- 
+
+-
+- 
+
+-
+- 
+
+
+-
+-
+
+
+-
+-
