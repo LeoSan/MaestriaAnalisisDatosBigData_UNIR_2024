@@ -228,62 +228,87 @@ D. Ninguna de las anteriores es correcta
 1. ¿Cuántos cuartiles hay en una distribución de datos?
 A. Paradójicamente hay dos, puesto que son tres pero como la mediana es el
 segundo se quedan en dos.
+
 B. 4.
+
 C. 3. -> **Correcto**
+
 D. Depende si el conjunto de datos presenta frecuencias repetidas.
 
 
 2. ¿Qué cuantiles equivalen a la mediana?
 A. El quinto decil.
+
 B. El segundo percentil.
+
 C. El segundo cuartil.
+
 D. Las respuestas A y C son correctas. -> **Correcto**
 
 
 3. La mediana…
 A. Es el valor central pero solo si el conjunto de datos es par.
+
 B. Es el valor central pero solo si el conjunto de datos es impar.
+
 C. Es el valor central siempre. -> **Correcto**
+
 D. Depende si el conjunto de datos presenta frecuencias repetidas.
 
 
 4. La media…
 A. Se ve afectada drásticamente por los valores extremos.
+
 B. Es una medida con una representatividad mayor que la mediana.
+
 C. Es más útil que la mediana para las variables cualitativas.
+
 D. No es útil ni calculable para las variables cualitativas.
+
 E. Las respuestas A y D son correctas. -> **Correcto**
 
 5. La medida estadística que menos se ve afectada por los valores atípicos es:
 A. La desviación estadística.
+
 B. La mediana. -> **Correcto**
+
 C. La media aritmética.
+
 D. La media armónica.
 
 
 6. En la fórmula de la mediana para datos agrupados: ¿Qué representan las letras y
 símbolos?
 A. es el límite inferior del intervalo mediano. -> **Correcto**
-B. corresponde con la posición que debería ocupar la mediana dentro del
-conjunto de datos.
+
+B. corresponde con la posición que debería ocupar la mediana dentro del conjunto de datos.
+
 C. es la altura de cada intervalo.
+
 D. es el límite inferior del intervalo anterior al mediano.
+
 E. Las repuestas A y B son correctas.
 
 
 7. La varianza…:
 A. Es parecida a la desviación típica.
+
 B. Aporta la misma información sobre la dispersión que la desviación típica.
-C. junto con la desviación típica y la desviación estándar conforman las
-medidas de dispersión más conocidas.
+
+C. junto con la desviación típica y la desviación estándar conforman las medidas de dispersión más conocidas.
+
 D. Es el cuadrado de la desviación típica.
+
 E. Las repuestas B y D son correctas. -> **Correcto**
 
 
 8. El diagrama de cajas se construye con:
 A. Cuatro valores: La mediana, el cuartil 1, el cuartil 3 y la desviación típica.
+
 B. Cuatro valores: La mediana, el cuartil 1, el cuartil 3 y la varianza.
+
 C. Cinco valores: La mediana, el cuartil 1, el cuartil 3, el mínimo y el máximo.
+
 D. Los cinco valores de C. más los valores atípicos sin los cuales no se puede
 construir. -> **Correcto**
 
@@ -291,19 +316,26 @@ construir. -> **Correcto**
 9. Una medida estadística que nos permite comparar entre diferentes poblaciones
 es:
 A. El coeficiente de variación. -> **Correcto**
+
 B. La desviación estándar.
+
 C. La puntuación tipificada.
+
 D. Las respuestas A y C son correctas.
 
 10. En cuanto a la asimetría…
 A. Es positiva cuando la cola está a la derecha y la Moda es mayor que la
 media.
+
 B. Es negativa cuando la cola está a la izquierda y la Moda es mayor que la
 media.
+
 C. Es negativa cuando la cola está a la derecha y la Moda es menor que la
 media.
+
 D. Es positiva cuando la cola está a la derecha y la Moda es menor que la
 media.
+
 E. Las respuestas B y D son correctas. -> **Correcto**
 
 ## Videoclase 1. Medidas de Tendencia Central y Dispersión
@@ -604,13 +636,13 @@ D. La media y la desviación típica.  -> **Correcto**
 
 8. Si X∼N (5,2) entonces la variable tipificada Z la obtenemos como…
 
-[Respuesta](../03_Analisis_Interpretacion_datos/info/info_003.png)
+![Respuesta](../03_Analisis_Interpretacion_datos/info/info_003.png)
 
 **Respuesta C:* 
 
 9. Si tenemos un variable aleatoria que se distribuye como una :
 
-[Respuesta](../03_Analisis_Interpretacion_datos/info/info_004.png)
+![Respuesta](../03_Analisis_Interpretacion_datos/info/info_004.png)
 
 10. En una distribución normal a mayor sigma:
 
@@ -717,7 +749,7 @@ D. Se debe a un misterio estadístico todavía por resolver.
 
 5. La desviación típica de la media muestral es:
 
-[Respuesta](../03_Analisis_Interpretacion_datos/info/info_005.png)
+![Respuesta](../03_Analisis_Interpretacion_datos/info/info_005.png)
 
 
 6. Si multiplicamos por cuatro el tamaño de una muestra:
@@ -746,7 +778,7 @@ D. Todo estadístico es un parámetro de la muestra.
 
 9. ¿Cuál es un estimador insesgado de la media poblacional?
 
-[Respuesta](../03_Analisis_Interpretacion_datos/info/info_006.png)
+![Respuesta](../03_Analisis_Interpretacion_datos/info/info_006.png)
 
 
 10. ¿En qué se diferencian los dos tipos principales de estimación?
@@ -1236,43 +1268,63 @@ D. No es cierto, consta de dos
 
 1. ¿Para qué sirve el análisis de componentes principales?
 A. Para obtener información de los datos.
-B. Para reducir la dimensión de los datos.
+
+B. Para reducir la dimensión de los datos. -> **Correcto**
+
 C. Para aumentar la dimensión de los datos.
+
 D. Todo lo anterior es falso.
 
 2. Los vectores de componentes principales:
 A. Se obtienen agregando los valores de las variables del modelo.
+
 B. Se obtienen utilizando datos externos al modelo.
+
 C. Sirven para aumentar la dimensión de los datos.
+
 D. B y C son correctas.
+
+NOTA: El Análisis de Componentes Principales (PCA) es una técnica estadística que se utiliza principalmente para reducir la dimensionalidad de un conjunto de datos, es decir, disminuir el número de variables conservando la mayor cantidad de información posible.
 
 
 3. ¿Cuándo es una variable representativa del vector de componentes?
 A. Cuando el valor asociado es cercano a 1.
+
 B. Cuando el valor asociado es cercano a -1.
+
 C. Cuando el valor asociado es cercano a 0.
-D. A y B son ciertas.
+
+D. A y B son ciertas.  -> **Correcto**
 
 
 4. ¿Qué componentes son las que representan el ruido en una imagen?
 A. Las cercanas a PC1.
-B. las cercanas al último PC.
+
+B. las cercanas al último PC. -> **Correcto**
+
 C. Todas.
+
 D. Ninguna.
 
 5. Para detectar cambios en un modelo de datos…
 A. Necesitamos distintos modelos de datos hechos en distintos tiempos o bajo
-distintas circunstancias.
+distintas circunstancias. -> **Correcto**
+
 B. Solo necesitamos un único modelo de datos.
+
 C. Es necesario conocer la media.
+
 D. Todo lo anterior es falso.
 
 
 6. ¿Qué sucede si reducimos el número de componentes principales a utilizar en
 nuestro modelo reducido?
 A. Perdemos precisión en los datos.
+
 B. Reducimos la dimensión.
-C. A y B son ciertas.
+
+C. A y B son ciertas. -> **Correcto**
+
 D. A y B son falsas.
 
 
@@ -1280,27 +1332,35 @@ D. A y B son falsas.
 componentes?:
 A. Multiplicando cada individuo por la suma de los valores del vector de
 componentes principales.
+
 B. Multiplicando cada valor de la variable de cada individuo por la derivada del
 vector de componentes.
+
 C. Generamos el valor agregado asociado a cada individuo multiplicando
 cada valor del vector de componentes por la variable asociada y sumando el
-resultado.
+resultado.  -> **Correcto**
+
 D. Aplicando A y luego B.
 
 
-8. Si nos atenemos al número de variables a representar, ¿qué gráfica de
-dispersión es más fácil de entender e interpretar?:
-A. Una con 2 dimensiones.
+8. Si nos atenemos al número de variables a representar, ¿qué gráfica de dispersión es más fácil de entender e interpretar?:
+A. Una con 2 dimensiones. -> **Correcto**
+
 B. Una con 3 dimensiones.
+
 C. Una con 4 dimensiones.
+
 D. Ninguna de las anteriores.
 
 
 9. ¿Qué función de R hemos utilizado para poder calcular el vector de análisis de
 componentes?
 A. matrix.
-B. prcomp.
+
+B. prcomp. -> **Correcto**
+
 C. plot.
+
 D. Ninguna de las anteriores.
 
 
@@ -1308,7 +1368,7 @@ D. Ninguna de las anteriores.
 componente principal generará el algoritmo?
 A. 5.
 B. 6.
-C. 7.
+C. 7. -> **Correcto**
 D. 2.
 
 
