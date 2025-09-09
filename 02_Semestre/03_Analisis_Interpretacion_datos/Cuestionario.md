@@ -933,66 +933,62 @@ cojamos
 
 ## Video 1: 
 
--
-- 
+- ¿Qué es un intervalo de confianza?
+- Un rango de valores que tiene una alta probabilidad de contener el parámetro poblacional verdadero.
 
--
-- 
+- ¿Qué representa el nivel de confianza en un intervalo de confianza?
+- La probabilidad de que el intervalo contenga el parámetro poblacional. =>  ya que el nivel de confianza indica la probabilidad de que el intervalo de confianza contenga el verdadero valor del parámetro poblacional.
 
--
-- 
-
-
--
--
+- ¿Cómo se comporta el intervalo de confianza cuando el nivel de confianza aumenta?
+- El intervalo se vuelve más amplio.. => ya que al aumentar el nivel de confianza, el intervalo de confianza se vuelve más amplio para abarcar un rango mayor de posibles valores del parámetro.
 
 
--
--
+- ¿Qué fórmula se utiliza para calcular un intervalo de confianza para la media cuando la varianza es conocida?
+-   Media ± z * (desviación estándar / raíz de n). => ya que cuando la varianza es conocida, se utiliza la distribución normal y se emplea la desviación estándar para calcular el intervalo de confianza.
 
 
+- ¿Qué diferencia hay en el cálculo de un intervalo de confianza para la media cuando la varianza es desconocida?
+- Se utiliza la distribución t de Student en lugar de la distribución z => ya que cuando la varianza es desconocida, se utiliza la distribución t de Student en lugar de la distribución z para calcular el intervalo de confianza.
 
 
+## Video 2: Intervalos de Confianza para Proporciones y Varianza
 
-## Video 2: 
+- ¿Cómo se calcula un intervalo de confianza para una proporción?
+-  Proporción ± z * (raíz de [p(1-p) / n]). => ya que el intervalo de confianza para una proporción se calcula utilizando la fórmula Proporción ± z * (raíz de [p(1-p) / n]), donde p es la proporción muestral y n el tamaño de la muestra.
 
--
-- 
+- ¿Qué implica un intervalo de confianza estrecho para una proporción?
+- Mayor precisión en la estimación de la proporción poblacional. => ya que un intervalo de confianza más estrecho implica que la proporción estimada es más precisa y tiene menos variabilidad.
 
--
-- 
-
--
-- 
-
-
--
--
+- ¿Qué distribución se utiliza para calcular intervalos de confianza para la varianza de una población normal?
+- Distribución chi-cuadrado. =>  ya que la distribución chi-cuadrado se utiliza para calcular los intervalos de confianza para la varianza en una población normal.
 
 
--
--
+- ¿Cómo afecta el tamaño de la muestra al intervalo de confianza para una proporción?
+- Un tamaño de muestra mayor reduce la amplitud del intervalo. => ya que al aumentar el tamaño de la muestra, el intervalo de confianza se estrecha, lo que aumenta la precisión de la estimación de la proporción.
 
 
-## Video 3: 
+- ¿Qué sucede con el intervalo de confianza de la varianza si la muestra es pequeña?
+-  El intervalo será más amplio debido a la mayor incertidumbre. = >ya que para muestras pequeñas, el intervalo de confianza de la varianza tiende a ser más amplio, reflejando la mayor incertidumbre en la estimación.
 
 
--
-- 
+## Video 3: Tamaños de muestra
 
--
-- 
+- ¿Qué es necesario para calcular el tamaño de la muestra en un estudio?
+-  El nivel de confianza, la variabilidad de los datos y el margen de error deseado. =>  ya que para calcular el tamaño de la muestra es necesario conocer el nivel de confianza, la variabilidad en los datos y el margen de error que se desea alcanzar.
 
--
-- 
+- ¿Qué sucede con el tamaño de la muestra si se desea un intervalo de confianza más estrecho?
+- Se necesita un tamaño de muestra mayor. =>  ya que para obtener un intervalo de confianza más estrecho (mayor precisión), es necesario aumentar el tamaño de la muestra.
+
+- ¿Cómo se calcula el intervalo de confianza para la diferencia de medias de dos muestras independientes?
+-  Diferencia de medias ± z * (raíz de [s1^2/n1 + s2^2/n2]). => ya que el intervalo de confianza para la diferencia de medias se calcula utilizando la diferencia de las medias muestrales más un margen de error basado en la desviación estándar de ambas muestras.
+
+- ¿Cómo afecta la variabilidad de los datos al cálculo del tamaño de la muestra?
+-  Mayor variabilidad requiere un tamaño de muestra más grande. => ya que a mayor variabilidad en los datos, se requiere un tamaño de muestra mayor para obtener estimaciones precisas con intervalos de confianza estrechos.
+
+- ¿Qué se debe considerar al calcular el intervalo de confianza para la diferencia de proporciones?
+- Tanto las proporciones muestrales como los tamaños de las muestras. => ya que para calcular el intervalo de confianza para la diferencia de proporciones, se deben tener en cuenta tanto las proporciones muestrales como los tamaños de las muestras de cada grupo
 
 
--
--
-
-
--
--
 
 # Tema 8. Contrastes de hipótesis
 
@@ -1067,7 +1063,7 @@ B. La distribución normal si tenemos suficientes observaciones.
 C. La distribución Ji Cuadrada de Pearson.
 D. Si comparamos medias empleamos la Normal si son proporciones la TStuden
 
-## Video 1: 
+## Video 1:  Fundamentos de los Contrastes de Hipótesis
 
 -
 - 
