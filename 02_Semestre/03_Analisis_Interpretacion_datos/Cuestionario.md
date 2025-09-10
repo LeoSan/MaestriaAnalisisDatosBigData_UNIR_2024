@@ -1160,48 +1160,42 @@ D. Si comparamos medias empleamos la Normal si son proporciones la TStuden
 
 ## Video 1:  Fundamentos de los Contrastes de Hipótesis
 
--
-- 
+- ¿Qué es una hipótesis nula (?0) en un contraste de hipótesis?
+- Es una afirmación que se asume verdadera hasta que se demuestre lo contrario mediante un test estadístico. => ya que la hipótesis nula (?0) es la afirmación que se asume verdadera a menos que se encuentre suficiente evidencia para rechazarla.
 
--
-- 
+- ¿Qué es la hipótesis alternativa (?1) en un contraste de hipótesis?
+- Es una afirmación que se acepta si se rechaza la hipótesis nula. => ya que la hipótesis alternativa (?1) es la que se acepta si los datos proporcionan suficiente evidencia para rechazar la hipótesis nula.
 
--
-- 
+- ¿Qué es el nivel de significancia (α) en un contraste de hipótesis?
+- La probabilidad de cometer un error de tipo I. => ya que el nivel de significancia (?) es la probabilidad de cometer un error de tipo I, es decir, rechazar la hipótesis nula cuando es verdadera.
 
+- ¿Qué es un error de tipo I en un contraste de hipótesis?
+- Rechazar la hipótesis nula cuando en realidad es verdadera. => ya que un error de tipo I ocurre cuando se rechaza la hipótesis nula siendo esta verdadera.
 
--
--
-
-
--
--
+- ¿Qué es un error de tipo II en un contraste de hipótesis?
+- No rechazar la hipótesis nula cuando en realidad es falsa. => ya que un error de tipo II ocurre cuando no se rechaza la hipótesis nula cuando en realidad es fals
 
 
+## Video 2: Contrastes de Hipótesis para Medias, Proporciones y Varianzas.
+
+- ¿Qué estadístico se utiliza para realizar un contraste de hipótesis sobre la media de una población cuando se conoce la varianza?
+- D =<mal>
+
+- ¿Qué estadístico se utiliza para realizar un contraste de hipótesis sobre una proporción?
+- B =<mal>
+
+- ¿Qué estadístico se utiliza para contrastar la varianza de una población?
+- B =<mal>
 
 
+- ¿Cuándo se utiliza la distribución ? de Student en un contraste de hipótesis sobre la media?
+- Cuando la varianza es desconocida y el tamaño de la muestra es pequeño. => ya que la distribución ? de Student se utiliza cuando la varianza es desconocida y el tamaño de la muestra es pequeño.
 
-## Video 2: 
-
--
-- 
-
--
-- 
-
--
-- 
+- ¿Qué implica rechazar la hipótesis nula en un contraste sobre una proporción?
+- Que la proporción muestral es significativamente diferente de la proporción poblacional => ya que al rechazar la hipótesis nula en un contraste de proporciones, se concluye que la proporción muestral difiere significativamente de la proporción poblacional.
 
 
--
--
-
-
--
--
-
-
-## Video 3: 
+## Videoclase 3. Contrastes Paramétricos para Dos Muestras
 
 
 -
