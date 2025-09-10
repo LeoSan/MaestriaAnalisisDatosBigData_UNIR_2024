@@ -717,33 +717,65 @@ D. Las respuestas B y C son correctas. -> **Correcto**
 1. Para poder hablar propiamente de distribución muestral de un determinado
 estadístico…
 A. Tendremos que recoger una muestra de una población cualquiera.
+
 B. Las observaciones que se recojan habrán de ser independientes.
+
 C. Las observaciones recogidas deben seguir la misma distribución que es la
-de la
-población de donde provienen.
-D. Las respuestas B y C son correctas.
+de la población de donde provienen.
+
+D. **Las respuestas B y C son correctas** => **Correcto**
 
 
 2. El arco circunflejo lo empleamos en estadística inferencial para…
 A. Designar un estadístico cualquiera que provenga de la muestra.
-B. Diferenciar el estadístico del parámetro poblacional.
-C. Indicar que es un estimador del parámetro.
-D. Las respuestas B y C son correctas.
 
+B. Diferenciar el estadístico del parámetro poblacional.
+
+C. Indicar que es un estimador del parámetro.
+
+D. **Las respuestas B y C son correctas.** -> **Correcto**
+
+
+### Explicación 🤓
+En estadística inferencial, el arco circunflejo (^), también conocido como "sombrero", se coloca sobre el símbolo de un parámetro poblacional para indicar que no estamos hablando del valor real (y a menudo desconocido) de la población, sino de una estimación de ese valor.
+
+Esta estimación se calcula a partir de los datos de una muestra.
+
+Por lo tanto:
+
+Indica que es un estimador del parámetro (C): Esta es su función principal. Por ejemplo, p̂ (se lee "p sombrero") es el estimador de la proporción poblacional p.
+
+Diferencia el estadístico del parámetro poblacional (B): Como consecuencia directa de lo anterior, el uso del circunflejo nos permite distinguir claramente entre el valor estimado a partir de la muestra (el estadístico, ej. p̂) y el valor verdadero de la población (el parámetro, ej. p).
+--- 
 
 3. p>
 A. El estimador de la probabilidad.
+
 B. El estimador de la proporción muestral.
-C. El estimador de la proporción poblacional.
+
+C. **El estimador de la proporción poblacional.** -> **Correcto**
+
 D. Un parámetro de cierto tipo de variable aleatoria
 
+
+### Explicación 🤓
+En estadística, distinguimos entre los parámetros de una población y los estimadores de una muestra.
+
+Parámetro poblacional (p): Es el valor verdadero y generalmente desconocido de una proporción en toda la población. Por ejemplo, el porcentaje real de todos los votantes de un país que apoyan a un candidato.
+
+Estimador muestral (p̂): Es la proporción que se calcula a partir de una muestra de esa población. Por ejemplo, el porcentaje de votantes que apoyan al candidato en una encuesta de 1,000 personas.
+
+
 4. ¿Por qué hay tantas variables en la naturaleza que se distribuyen normalmente?
-A. Porque según el TCL la suma de muchos efectos aleatorios independientes
-se comporta normalmente.
+A. **Porque según el TCL la suma de muchos efectos aleatorios independientes
+se comporta normalmente.** -> **Correcto**
+
 B. En realidad no hay tantas, es más la visión alterada del matemático que
 trata de que la realidad se parezca a las matemáticas y no a la inversa.
+
 C. En realidad es por las binomiales que son las que abundan más y como su
 suma es normal acaba apareciendo que hay más normales.
+
 D. Se debe a un misterio estadístico todavía por resolver.
 
 
@@ -756,23 +788,63 @@ D. Se debe a un misterio estadístico todavía por resolver.
 
 Ox
 
-A. Se reduce a la mitad.
+A. **Se reduce a la mitad.**-> **Correcto**
 B. Se duplica.
 C. Se multiplica por 4.
 D. Se mantiene igual pues no le afectan cambios de n
 
+---
+NOTA: 
+
+Aunque la pregunta está incompleta, es un problema clásico de estadística que se refiere al **error estándar**. El error estándar mide la precisión de la media de una muestra como una estimación de la media de la población.
+
+---
+### Explicación 🤓
+
+La fórmula del error estándar (E) es:
+
+$$E = \frac{\sigma}{\sqrt{n}}$$
+
+Donde:
+* **σ** (sigma) es la desviación estándar de la población.
+* **n** es el tamaño de la muestra.
+
+Veamos qué sucede si multiplicamos el tamaño de la muestra **n** por 4:
+
+1.  **Tamaño original de la muestra:** `n`
+    * Error estándar original: $E_{original} = \frac{\sigma}{\sqrt{n}}$
+
+2.  **Nuevo tamaño de la muestra:** `4n`
+    * Nuevo error estándar: $E_{nuevo} = \frac{\sigma}{\sqrt{4n}}$
+
+Al simplificar la nueva fórmula, podemos separar la raíz cuadrada:
+
+$$E_{nuevo} = \frac{\sigma}{\sqrt{4} \times \sqrt{n}} = \frac{\sigma}{2\sqrt{n}} = \frac{1}{2} \times \left( \frac{\sigma}{\sqrt{n}} \right)$$
+
+Como puedes ver, el nuevo error estándar es exactamente la mitad del original.
+
+**En resumen:** Al cuadruplicar el tamaño de la muestra, el error estándar se reduce a la mitad. Esto significa que muestras más grandes tienden a producir estimaciones más precisas de la media de la población.
+
+
+
 
 7. El error estándar es…
 A. Un error típico que se comete cuando estimamos.
-B. La desviación típica de la media.
+
+B. **La desviación típica de la media**. -> **Correcto**
+
 C. Proporcional al ancho de la curva de la distribución muestral de la media.
+
 D. Las respuestas B y C son correctas.
 
 
 8. Señala la frase correcta.
 A. Todo estadístico es un estimador.
-B. Todo estimador es una variable aleatoria función de la muestra.
+
+B. **Todo estimador es una variable aleatoria función de la muestra**. -> **Correcto**
+
 C. Todo estimador es un parámetro de la muestra.
+
 D. Todo estadístico es un parámetro de la muestra.
 
 
@@ -783,114 +855,127 @@ D. Todo estadístico es un parámetro de la muestra.
 
 10. ¿En qué se diferencian los dos tipos principales de estimación?
 A. Una estima con un solo valor mientras que la otra con varios.
-B. Un tipo de estimación da intervalos posibles para el parámetro mientras
-que la otra solo da un valor.
+
+B. **Un tipo de estimación da intervalos posibles para el parámetro mientras que la otra solo da un valor.** -> **Correcto**
+
 C. Una es confidente y la otra puntual.
+
 D. Depende del parámetro a estimar tendremos que usar una u otra.
 
 ## Videoclase 1. IFundamentos de la Distribución en el Muestreo
 
-- 
-- 
+- ¿Qué es una muestra en estadística?
+- Un subconjunto de la población seleccionado para análisis.
 
--
-- 
+- ¿Qué es la proporción muestral?
+- La proporción de individuos en la muestra que tienen una característica específica. =>  porque la proporción muestral indica el porcentaje de individuos en la muestra que presentan una característica particular.
 
--
-- 
-
-
--
--
+- ¿Cómo se define la distribución muestral de una estadística?
+- Como la distribución de los valores de una estadística calculada en todas las posibles muestras de una población =>  ya que la distribución muestral se refiere a la distribución de una estadística (como la media o la proporción) calculada a partir de todas las posibles muestras extraídas de una población.
 
 
--
--
+- ¿Qué se entiende por error estándar en la distribución muestral?
+- La desviación estándar de la distribución de una estadística muestral. => ya que el error estándar mide la variabilidad de una estadística (como la media o la proporción) en diferentes muestras de una población.
 
 
+- ¿Qué sucede con el error estándar si el tamaño de la muestra aumenta?
+- Disminuye. => ya que al aumentar el tamaño de la muestra, el error estándar disminuye, indicando que la estadística muestral se aproxima más a la verdadera estadística poblacional.
 
 
+## Video 2: Teorema Central del Límite
 
-## Video 2: 
+- ¿Qué establece el Teorema Central del Límite (TCL)?
+- Que la distribución de la media muestral se aproxima a una distribución normal a medida que el tamaño de la muestra aumenta, independientemente de la distribución de la población. =>  ya que el Teorema Central del Límite establece que la media muestral sigue una distribución normal cuando el tamaño de la muestra es lo suficientemente grande, independientemente de la distribución de la población original.
 
--
-- 
+- ¿Cuál es una implicación clave del Teorema Central del Límite (TCL)?
+- Permite el uso de la distribución normal para realizar inferencias sobre la media de una población. => ya que una de las implicaciones clave del TCL es que permite utilizar la distribución normal para hacer inferencias sobre la media de una población, incluso si la población original no sigue una distribución normal.
 
--
-- 
-
--
-- 
-
-
--
--
+- ¿Cómo afecta el tamaño de la muestra al Teorema Central del Límite?
+- Un tamaño de muestra mayor asegura que la distribución de la media muestral sea más cercana a la normal. => ya que mientras mayor sea el tamaño de la muestra, más cercana será la distribución de la media muestral a una distribución normal.
 
 
--
--
+- ¿Para qué se utiliza el Teorema Central del Límite en la estadística inferencial?
+- Para aproximar la distribución de una media muestral a una distribución normal, facilitando la inferencia estadística => ya que el TCL se utiliza en la inferencia estadística para aproximar la distribución de la media muestral a una normal, lo que permite hacer inferencias sobre la población.
 
 
-## Video 3: 
+- ¿Qué tipo de distribuciones poblacionales puede manejar el Teorema Central del Límite?
+- Cualquier tipo de distribución poblacional, siempre que el tamaño de la muestra sea suficientemente grande => ya que el Teorema Central del Límite se aplica a cualquier tipo de distribución poblacional, siempre que el tamaño de la muestra sea lo suficientemente grande.
 
 
--
-- 
-
--
-- 
-
--
-- 
+## Videoclase 3. Estimación y Propiedades de los Estimadores
 
 
--
--
+- ¿Qué es la estimación puntual?
+- Es un solo valor estimado que se utiliza para aproximar un parámetro poblacional. => La estimación puntual es el proceso de calcular un único valor (un solo número) a partir de los datos de una muestra para que sirva como la "mejor suposición" o aproximación de un parámetro desconocido de toda la población.
+
+- ¿Qué es la estimación por intervalos?
+-  Un rango de valores dentro del cual es probable que se encuentre el parámetro poblacional. => es un rango de valores calculado a partir de los datos de una muestra, dentro del cual es probable que se encuentre el verdadero valor de un parámetro poblacional.
+
+- ¿Cuál es una propiedad deseable de un buen estimador?
+- Insesgadez  => Un buen estimador en estadística es aquel que nos da una aproximación precisa y confiable del verdadero valor de un parámetro en una población (como la media o la varianza). La insesgadez es una de las propiedades más importantes que buscamos.
 
 
--
--
+- ¿Qué mide la consistencia de un estimador?
+- => La consistencia de un estimador es una propiedad que describe su comportamiento a medida que el tamaño de la muestra se hace más grande. Un estimador es consistente si, al aumentar el tamaño de la muestra (n), el valor del estimador se acerca cada vez más al valor real del parámetro que se está tratando de estimar en la población.
+
+
+- ¿Qué es un estimador insesgado?
+- Un estimador cuyo valor esperado es igual al verdadero valor del parámetro poblacional. => Un estimador insesgado es aquel cuyo valor esperado (la media de todos los posibles valores que puede tomar el estimador) es exactamente ig
+
+
 
 # Tema 7. Intervalos de confianza
 
 1. ¿Qué es un valor crítico en términos de inferencia?
 A. Un valor sumamente importante en los IC que depende de la muestra.
+
 B. Es el valor de una distribución que acumula cierta probabilidad.
+
 C. Se trata de un concepto fundamental cuando manejamos distribuciones
 normales.
+
 D. Las respuestas A y C son correctas.
 
 
 2. Empleamos intervalos de confianza entre otras razones porque…
 A. La estimación puntual se queda corta en el sentido de que no sabemos
 cuán bueno es una estimación puntual.
+
 B . Es una buena manera de aproximarnos al parámetro poblacional tanto
 como deseemos o podamos.
+
 C. Si no podemos realizar la estimación puntual que es más exacta nos
 conformamos con el IC.
+
 D. Las respuestas A y B son correctas.
 
 
 3. ¿Qué es o a qué es igual « »?
 A. Al estimador, que también puede ser anotado como .
+
 B. Al margen de error.
-C.
+
 D. Un parámetro de cierto tipo de variable aleatoria.
 
 4. Si hemos calculado el IC para y resulta: . ¿Cuánto vale
 «E»?
 A. 0,025
+
 B. 0,25
+
 C. 0,050
+
 D. No se puede calcular con esta información
 
 5. Al IC que marca con un 95% de confianza la estatura
 media de un equipo de la NBA lo interpretamos como…
 A. De cada 100 jugadores, 95 estarán contenidos en dicho intervalo.
-B. De cada 100 muestras de jugadores, 95 tendrán la media contenido en ese
-IC.
+
+B. De cada 100 muestras de jugadores, 95 tendrán la media contenido en ese IC.
+
 C. Tenemos una confianza del 95% de que la media de los jugadores de un
 equipo de la NBA está contenida entre 188cm y 209cm.
+
 D. Las respuestas B y C son correctas.
 
 6. ¿Qué fórmula es la correcta para hallar el IC de una media poblacional conocida
@@ -901,37 +986,47 @@ su varianza?
 7. Cuando no es conocida, en el cálculo de los valores críticos para construir los
 IC empleamos:
 A. La T-Student.
+
 B. La Chi Cuadrada.
+
 C. La Normal Z.
+
 D. La Normal (0,1).
 
 
 8. La T-Student es…
-A. Una distribución similar a la Normal, de hecho se aproxima a ella a medida
-que aumenta el «n».
+A. Una distribución similar a la Normal, de hecho se aproxima a ella a medida que aumenta el «n».
+
 B. Es diferente de la Normal y la Chi Cuadrada.
+
 C. Es simétrica.
+
 D. Las respuestas A y C son correctas.
 
 9. ¿Qué es una muestra piloto?
 A. Un tipo de encuestas muy empleadas en aviación (por temas de
 seguridad).
+
 B. Una muestra que se recoge antes de hacer un estudio para tantear las
 características de la población.
+
 C. Todo estudio estadístico bien hecho debe constar de una muestra
 preliminar llamada «piloto» para posteriormente recoger la muestra definitiva.
-D. Es una muestra enorme que no siempre es posible recogerla, pero es lo
-ideal.
+
+D. Es una muestra enorme que no siempre es posible recogerla, pero es lo ideal.
 
 10. ¿En un IC que porcentaje de las veces éste no contendrá al parámetro?
 A. (1-a)% de las veces.
+
 B. (1-a)x100% de las veces.
+
 C. a x 100% de las veces.
+
 D. Depende de la suerte que hayamos tenido con la muestra concreta que
 cojamos
 
 
-## Video 1: 
+## Video 1: Fundamentos y Aplicaciones Básicas de los Intervalos de Confianza
 
 - ¿Qué es un intervalo de confianza?
 - Un rango de valores que tiene una alta probabilidad de contener el parámetro poblacional verdadero.
