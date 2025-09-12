@@ -1197,23 +1197,22 @@ D. Si comparamos medias empleamos la Normal si son proporciones la TStuden
 
 ## Videoclase 3. Contrastes Paramétricos para Dos Muestras
 
+- ¿Qué se evalúa en un contraste de hipótesis aplicado a los parámetros de regresión?
+- Si los coeficientes de los parámetros son significativamente diferentes de cero. => ya que en un contraste de hipótesis aplicado a los parámetros de regresión, se evalúa si los coeficientes son significativamente diferentes de cero para determinar la relevancia de las variables independiente
 
--
-- 
+- ¿Qué representa el valor ?1 en un modelo de regresión simple?
+- La pendiente de la relación entre la variable independiente y la dependiente. => a que ?1 representa la pendiente de la relación entre la variable independiente y la dependiente en un modelo de regresión simple.
 
--
-- 
-
--
-- 
-
-
--
--
+- ¿Qué hipótesis se contrasta típicamente para los parámetros de regresión?
+-  ?0:?1=0 contra ?1:?1≠0 => ya que la hipótesis nula más común en un contraste de parámetros de regresión es que el coeficiente de la variable independiente es igual a cero, lo que indicaría que no hay relación entre las variables
 
 
--
--
+- ¿Qué indica un valor p menor que el nivel de significancia (?) en un contraste de parámetros de regresión?
+- Que se rechaza la hipótesis nula y el parámetro es significativamente diferente de cero. => ya que un valor p menor que ? indica que se rechaza la hipótesis nula y el parámetro es significativamente diferente de cero.
+
+
+- ¿Cuál es la interpretación de un coeficiente de regresión que es estadísticamente significativo?
+-  Que la variable independiente tiene un efecto significativo sobre la variable dependiente. => ya que un coeficiente de regresión estadísticamente significativo indica que la variable independiente tiene un efecto significativo sobre la variable dependiente.
 
 
 # Tema 9. Regresión
@@ -1286,7 +1285,25 @@ B. Beta cero, beta uno y alfa.
 C. Alfa, beta y sigma.
 D. No es cierto, consta de dos
 
-## Video 1: 
+## Video 1: Análisis de Varianza (ANOVA) en Regresión
+
+- ¿Cuál es el propósito del ANOVA en el contexto de la regresión?
+- Evaluar si el modelo de regresión explica una cantidad significativa de la variabilidad total en la variable dependiente. => ya que el ANOVA en regresión se utiliza para evaluar si el modelo de regresión explica una cantidad significativa de la variabilidad en la variable dependient
+
+- ¿Qué mide el estadístico ? en un ANOVA de regresión?
+- La relación entre la variabilidad explicada por el modelo y la variabilidad residual.
+
+- ¿Qué sugiere un valor p bajo en el estadístico ? de un ANOVA de regresión?
+- Que el modelo de regresión explica una cantidad significativa de la variabilidad en la variable dependiente. => ya que un valor p bajo en el estadístico ? sugiere que el modelo de regresión explica una cantidad significativa de la variabilidad total.
+
+- ¿Cómo se calcula la suma de cuadrados en un ANOVA de regresión?
+- Sumando los cuadrados de las diferencias entre los valores observados y los valores ajustados por el modelo. => ya que la suma de cuadrados en un ANOVA de regresión se obtiene sumando los cuadrados de las diferencias entre los valores observados y los valores ajustados por el modelo.
+
+- ¿Qué indica un ?2 alto en un ANOVA de regresión?
+- Que una gran parte de la variabilidad en la variable dependiente es explicada por el modelo. => ya que un ?2 alto indica que el modelo de regresión explica una gran parte de la variabilidad de la variable dependiente.
+
+
+## Video 2: Análisis de Varianza (ANOVA) en Regresión
 
 -
 - 
@@ -1306,31 +1323,7 @@ D. No es cierto, consta de dos
 -
 
 
-
-
-
-## Video 2: 
-
--
-- 
-
--
-- 
-
--
-- 
-
-
--
--
-
-
--
--
-
-
-## Video 3: 
-
+## Video 3: Uso de R para Contrastes de Hipótesis en Regresión
 
 -
 - 
