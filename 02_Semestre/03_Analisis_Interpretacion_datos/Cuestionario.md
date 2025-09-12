@@ -1197,23 +1197,20 @@ D. Si comparamos medias empleamos la Normal si son proporciones la TStuden
 
 ## Videoclase 3. Contrastes Paramétricos para Dos Muestras
 
-- ¿Qué se evalúa en un contraste de hipótesis aplicado a los parámetros de regresión?
-- Si los coeficientes de los parámetros son significativamente diferentes de cero. => ya que en un contraste de hipótesis aplicado a los parámetros de regresión, se evalúa si los coeficientes son significativamente diferentes de cero para determinar la relevancia de las variables independiente
+- ¿Cuál es el objetivo de un contraste de hipótesis para dos muestras independientes?
+- Comparar las medias de dos poblaciones para ver si son significativamente diferentes. => ya que el objetivo de un contraste para dos muestras independientes es comparar las medias de dos poblaciones para ver si hay diferencias significativas.
 
-- ¿Qué representa el valor ?1 en un modelo de regresión simple?
-- La pendiente de la relación entre la variable independiente y la dependiente. => a que ?1 representa la pendiente de la relación entre la variable independiente y la dependiente en un modelo de regresión simple.
+- ¿Cuál es la principal característica de un contraste de hipótesis para muestras dependientes?
+- Las observaciones de una muestra están emparejadas o relacionadas con las observaciones de la otra muestra. =>  ya que en un contraste de hipótesis para muestras dependientes, las observaciones de una muestra están emparejadas o relacionadas con las de la otra muestra, como en estudios antes y después o en mediciones repetidas sobre los mismos individuos.
 
-- ¿Qué hipótesis se contrasta típicamente para los parámetros de regresión?
--  ?0:?1=0 contra ?1:?1≠0 => ya que la hipótesis nula más común en un contraste de parámetros de regresión es que el coeficiente de la variable independiente es igual a cero, lo que indicaría que no hay relación entre las variables
+- ¿Qué test se utiliza para comparar las medias de dos muestras cuando las varianzas son iguales?
+- ya que el test ? de Student se utiliza para comparar las medias de dos muestras independientes cuando se asume que las varianzas de las poblaciones son iguales.
 
+- ¿Qué test se utiliza para comparar las varianzas de dos muestras
+- EEROR 
 
-- ¿Qué indica un valor p menor que el nivel de significancia (?) en un contraste de parámetros de regresión?
-- Que se rechaza la hipótesis nula y el parámetro es significativamente diferente de cero. => ya que un valor p menor que ? indica que se rechaza la hipótesis nula y el parámetro es significativamente diferente de cero.
-
-
-- ¿Cuál es la interpretación de un coeficiente de regresión que es estadísticamente significativo?
--  Que la variable independiente tiene un efecto significativo sobre la variable dependiente. => ya que un coeficiente de regresión estadísticamente significativo indica que la variable independiente tiene un efecto significativo sobre la variable dependiente.
-
+- ¿Qué ocurre si las varianzas de dos poblaciones no son iguales en un contraste de medias?
+- ya que cuando las varianzas no son iguales, se utiliza una versión modificada del test ? de Student conocida como el test ? de Welch.
 
 # Tema 9. Regresión
 
@@ -1287,6 +1284,29 @@ D. No es cierto, consta de dos
 
 ## Video 1: Análisis de Varianza (ANOVA) en Regresión
 
+
+- ¿Qué se evalúa en un contraste de hipótesis aplicado a los parámetros de regresión?
+- Si los coeficientes de los parámetros son significativamente diferentes de cero. => ya que en un contraste de hipótesis aplicado a los parámetros de regresión, se evalúa si los coeficientes son significativamente diferentes de cero para determinar la relevancia de las variables independiente
+
+- ¿Qué representa el valor ?1 en un modelo de regresión simple?
+- La pendiente de la relación entre la variable independiente y la dependiente. => a que ?1 representa la pendiente de la relación entre la variable independiente y la dependiente en un modelo de regresión simple.
+
+- ¿Qué hipótesis se contrasta típicamente para los parámetros de regresión?
+-  ?0:?1=0 contra ?1:?1≠0 => ya que la hipótesis nula más común en un contraste de parámetros de regresión es que el coeficiente de la variable independiente es igual a cero, lo que indicaría que no hay relación entre las variables
+
+
+- ¿Qué indica un valor p menor que el nivel de significancia (?) en un contraste de parámetros de regresión?
+- Que se rechaza la hipótesis nula y el parámetro es significativamente diferente de cero. => ya que un valor p menor que ? indica que se rechaza la hipótesis nula y el parámetro es significativamente diferente de cero.
+
+
+- ¿Cuál es la interpretación de un coeficiente de regresión que es estadísticamente significativo?
+-  Que la variable independiente tiene un efecto significativo sobre la variable dependiente. => ya que un coeficiente de regresión estadísticamente significativo indica que la variable independiente tiene un efecto significativo sobre la variable dependiente.
+
+
+
+## Video 2: Análisis de Varianza (ANOVA) en Regresión
+
+
 - ¿Cuál es el propósito del ANOVA en el contexto de la regresión?
 - Evaluar si el modelo de regresión explica una cantidad significativa de la variabilidad total en la variable dependiente. => ya que el ANOVA en regresión se utiliza para evaluar si el modelo de regresión explica una cantidad significativa de la variabilidad en la variable dependient
 
@@ -1301,26 +1321,6 @@ D. No es cierto, consta de dos
 
 - ¿Qué indica un ?2 alto en un ANOVA de regresión?
 - Que una gran parte de la variabilidad en la variable dependiente es explicada por el modelo. => ya que un ?2 alto indica que el modelo de regresión explica una gran parte de la variabilidad de la variable dependiente.
-
-
-## Video 2: Análisis de Varianza (ANOVA) en Regresión
-
--
-- 
-
--
-- 
-
--
-- 
-
-
--
--
-
-
--
--
 
 
 ## Video 3: Uso de R para Contrastes de Hipótesis en Regresión
