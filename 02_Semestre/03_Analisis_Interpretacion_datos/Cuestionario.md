@@ -1325,22 +1325,20 @@ D. No es cierto, consta de dos
 
 ## Video 3: Uso de R para Contrastes de Hipótesis en Regresión
 
--
-- 
+- ¿Qué función en R se utiliza para ajustar un modelo de regresión lineal?
+- lm() => ya que la función lm() en R se utiliza para ajustar un modelo de regresión lineal.
 
--
-- 
+- ¿Cómo se obtiene el valor p de un coeficiente de regresión en R?
+- A través del comando summary() aplicado al objeto del modelo de regresión. => ya que el valor p de un coeficiente de regresión se obtiene aplicando la función summary() al objeto que contiene el modelo ajustado con lm().
 
--
-- 
+- ¿Cuál es el propósito de la función predict() en R en el contexto de un modelo de regresión?
+- Predecir valores de la variable dependiente utilizando un modelo de regresión ajustado. => ya que la función predict() en R se utiliza para predecir los valores de la variable dependiente basándose en un modelo de regresión previamente ajustado, ya sea para nuevas observaciones o para los datos utilizados en el ajuste del modelo.
 
+- ¿Qué información se obtiene con la función summary() aplicada a un modelo de regresión en R?
+- Los coeficientes de regresión, valores p, ?2 y otros parámetros estadísticos. => ya que la función summary() proporciona información detallada sobre el modelo de regresión, incluyendo los coeficientes, valores p y ?2.
 
--
--
-
-
--
--
+- ¿Qué resultado indica la significancia de un parámetro de regresión en R?
+- Un valor p menor que el nivel de significancia. =>   ya que un valor p menor que el nivel de significancia indica que el parámetro de regresión es significativo en el modelo.
 
 # Tema 10. Análisis de componentes principales
 
