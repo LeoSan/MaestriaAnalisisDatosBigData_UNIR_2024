@@ -867,11 +867,7 @@ D. Ninguna de las anteriores es correcta.
 1. ¿Cómo se puede definir cloud computing?
 A. Es la interconexión de una serie de ordenadores.
 B. Es el proceso de planificar y ejecutar una serie de tareas
-<<<<<<< HEAD
-C. Son una serie de servicios de computación ofrecidos a través de Internet. **correcto**
-=======
 C. Son una serie de servicios de computación ofrecidos a través de Internet. -> **Correcto**
->>>>>>> 59cc8c08aa3feb18b6bc4433ca56f87b23cff8be
 D. Ninguna de las respuestas anteriores son correctas.
 
 
@@ -1133,15 +1129,11 @@ D. Instancias EC2 con Kafka instalado
 - ¿Cuál de los siguientes servicios de AWS es específico para la extracción, transformación y carga (ETL) de datos? 
 - AWS Glue. => AWS Glue es un servicio serverless enfocado en tareas ETL (extract, transform, load), proporcionando un editor visual y un catálogo de datos para gestionar y transformar datos almacenados en diversas fuentes y formatos.
 
-<<<<<<< HEAD
-## 
-=======
 - ¿Cuál de los siguientes servicios de AWS es específico para la extracción, transformación y carga (ETL) de datos? 
 - Realizar transformaciones de datos casi en tiempo real.  => Kinesis Data Firehouse permite gestionar datos casi en tiempo real, con capacidades de transformación de datos y escalado automático, ideal para cargar flujos de datos en servicios como S3, Redshift y ElasticSearch
 
 - ¿Qué característica diferencia a Amazon Redshift de Amazon RDS? 
 - Redshift es un sistema OLAP mientras que RDS es OLTP. => Amazon Redshift es un sistema de data warehousing orientado a columna optimizado para consultas OLAP (OnLine Analytical Processing), mientras que Amazon RDS está orientado a OLTP (OnLine Transaction Processing), permitiendo consultas transaccionales.
->>>>>>> 59cc8c08aa3feb18b6bc4433ca56f87b23cff8be
 
 - ¿Cuál es el principal caso de uso de Amazon Athena? 
 - Consultas serverless a datos almacenados en S3. => Amazon Athena es un servicio serverless que permite realizar consultas interactivas a datos almacenados en S3 sin necesidad de cargarlos, soportando muchos formatos y facilitando el análisis interactivo de datos.
