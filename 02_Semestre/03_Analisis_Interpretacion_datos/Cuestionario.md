@@ -1448,50 +1448,45 @@ C. 7. -> **Correcto**
 D. 2.
 
 
-## Video 1: 
+## Video 1:  Motivación y Fundamentos del Análisis de Componentes Principales
 
--
-- 
+- ¿Cuál es el principal objetivo del Análisis de Componentes Principales (PCA)?
+- Reducir la dimensionalidad de un conjunto de datos mientras se preserva la mayor parte de su variabilidad. => ya que el PCA busca reducir la dimensionalidad de los datos conservando la mayor parte de su variabilidad.
 
--
-- 
+- ¿Qué son los componentes principales en PCA?
+- Nuevas variables que son combinaciones lineales de las variables originales y que explican la mayor parte de la variabilidad de los datos. => ya que los componentes principales son combinaciones lineales de las variables originales que maximizan la varianza explicada.
 
--
-- 
-
-
--
--
+- ¿Por qué es útil el PCA en conjuntos de datos con muchas variables?
+- Porque permite simplificar el análisis al reducir el número de variables a una cantidad manejable. => ya que el PCA simplifica los datos al reducir el número de variables, lo que facilita el análisis de grandes conjuntos de datos.
 
 
--
--
+- ¿Cuál es una de las principales ventajas del PCA?
+- Ayuda a reducir el problema de multicolinealidad entre las variables. => ya que el PCA reduce la multicolinealidad al crear componentes que son ortogonales entre sí.
+
+- ¿Qué criterio se utiliza para ordenar los componentes principales en PCA?
+-  Por la cantidad de varianza explicada, siendo el primer componente el que más varianza explica. => ya que los componentes principales se ordenan en función de la varianza que explican, siendo el primero el que explica la mayor cantidad de varianza.
+ile
+## Video 2: Aplicaciones del Análisis de Componentes Principales
+
+- ¿En qué tipo de problemas es común utilizar el PCA?
+-  En problemas donde hay muchas variables y se desea reducir la dimensionalidad del conjunto de datos. => ya que el PCA se utiliza principalmente en problemas con muchas variables para reducir la dimensionalidad y simplificar el análisis.
+
+- ¿Cómo puede el PCA ser útil en el análisis de imágenes?
+- Reduciéndola a componentes esenciales para minimizar la cantidad de datos mientras se preserva la información importante. =>  ya que el PCA permite reducir las dimensiones de una imagen mientras se retiene la mayor parte de la información esencial.
+
+- ¿Qué aplicación tiene el PCA en la biología genética?
+- Reduce la dimensionalidad de los datos genéticos al analizar miles de genes simultáneamente. => ya que en estudios genéticos el PCA se utiliza para reducir la dimensionalidad de grandes cantidades de datos, como los que provienen de análisis de genes.
 
 
+- ¿Cómo se puede aplicar el PCA en el análisis financiero?
+-  Identificar los factores principales que influyen en el rendimiento de varios activos financieros. => ya que en el análisis financiero el PCA se usa para identificar los principales factores que explican la variabilidad en los rendimientos de diferentes activos financieros.
 
 
-
-## Video 2: 
-
--
-- 
-
--
-- 
-
--
-- 
+- ¿Qué ventaja ofrece el PCA en el procesamiento de datos de sensores?
+- Facilita la detección de patrones clave reduciendo el ruido y la redundancia entre las señales. =>  ya que el PCA puede ayudar a reducir el ruido y la redundancia en los datos recolectados por sensores, permitiendo un análisis más eficiente.
 
 
--
--
-
-
--
--
-
-
-## Video 3: 
+## Video 3: Demostrar cómo aplicar el PCA en R con un ejemplo práctico
 
 
 -
