@@ -767,16 +767,17 @@ Estimador muestral (p̂): Es la proporción que se calcula a partir de una muest
 
 
 4. ¿Por qué hay tantas variables en la naturaleza que se distribuyen normalmente?
-A. **Porque según el TCL la suma de muchos efectos aleatorios independientes
+
+- A. **Porque según el TCL la suma de muchos efectos aleatorios independientes
 se comporta normalmente.** -> **Correcto**
 
-B. En realidad no hay tantas, es más la visión alterada del matemático que
+- B. En realidad no hay tantas, es más la visión alterada del matemático que
 trata de que la realidad se parezca a las matemáticas y no a la inversa.
 
-C. En realidad es por las binomiales que son las que abundan más y como su
+- C. En realidad es por las binomiales que son las que abundan más y como su
 suma es normal acaba apareciendo que hay más normales.
 
-D. Se debe a un misterio estadístico todavía por resolver.
+- D. Se debe a un misterio estadístico todavía por resolver.
 
 
 5. La desviación típica de la media muestral es:
@@ -788,10 +789,10 @@ D. Se debe a un misterio estadístico todavía por resolver.
 
 Ox
 
-A. **Se reduce a la mitad.**-> **Correcto**
-B. Se duplica.
-C. Se multiplica por 4.
-D. Se mantiene igual pues no le afectan cambios de n
+- A. **Se reduce a la mitad.**-> **Correcto**
+- B. Se duplica.
+- C. Se multiplica por 4.
+- D. Se mantiene igual pues no le afectan cambios de n
 
 ---
 NOTA: 
@@ -829,23 +830,19 @@ Como puedes ver, el nuevo error estándar es exactamente la mitad del original.
 
 
 7. El error estándar es…
-A. Un error típico que se comete cuando estimamos.
 
-B. **La desviación típica de la media**. -> **Correcto**
-
-C. Proporcional al ancho de la curva de la distribución muestral de la media.
-
-D. Las respuestas B y C son correctas.
+- A. Un error típico que se comete cuando estimamos.
+- B. **La desviación típica de la media**. -> **Correcto**
+- C. Proporcional al ancho de la curva de la distribución muestral de la media.
+- D. Las respuestas B y C son correctas.
 
 
 8. Señala la frase correcta.
-A. Todo estadístico es un estimador.
 
-B. **Todo estimador es una variable aleatoria función de la muestra**. -> **Correcto**
-
-C. Todo estimador es un parámetro de la muestra.
-
-D. Todo estadístico es un parámetro de la muestra.
+- A. Todo estadístico es un estimador.
+- B. **Todo estimador es una variable aleatoria función de la muestra**. -> **Correcto**
+- C. Todo estimador es un parámetro de la muestra.
+- D. Todo estadístico es un parámetro de la muestra.
 
 
 9. ¿Cuál es un estimador insesgado de la media poblacional?
@@ -854,13 +851,14 @@ D. Todo estadístico es un parámetro de la muestra.
 
 
 10. ¿En qué se diferencian los dos tipos principales de estimación?
-A. Una estima con un solo valor mientras que la otra con varios.
 
-B. **Un tipo de estimación da intervalos posibles para el parámetro mientras que la otra solo da un valor.** -> **Correcto**
+- A. Una estima con un solo valor mientras que la otra con varios.
 
-C. Una es confidente y la otra puntual.
+- B. **Un tipo de estimación da intervalos posibles para el parámetro mientras que la otra solo da un valor.** -> **Correcto**
 
-D. Depende del parámetro a estimar tendremos que usar una u otra.
+- C. Una es confidente y la otra puntual.
+
+- D. Depende del parámetro a estimar tendremos que usar una u otra.
 
 ## Videoclase 1. IFundamentos de la Distribución en el Muestreo
 
@@ -927,56 +925,46 @@ D. Depende del parámetro a estimar tendremos que usar una u otra.
 # Tema 7. Intervalos de confianza
 
 1. ¿Qué es un valor crítico en términos de inferencia?
-A. Un valor sumamente importante en los IC que depende de la muestra.
 
-B. Es el valor de una distribución que acumula cierta probabilidad.
-
-C. Se trata de un concepto fundamental cuando manejamos distribuciones
+- A. Un valor sumamente importante en los IC que depende de la muestra.
+- B. Es el valor de una distribución que acumula cierta probabilidad. -> **Correcto**
+- C. Se trata de un concepto fundamental cuando manejamos distribuciones
 normales.
-
-D. Las respuestas A y C son correctas.
+- D. Las respuestas A y C son correctas.
 
 
 2. Empleamos intervalos de confianza entre otras razones porque…
-A. La estimación puntual se queda corta en el sentido de que no sabemos
+
+- A. La estimación puntual se queda corta en el sentido de que no sabemos
 cuán bueno es una estimación puntual.
-
-B . Es una buena manera de aproximarnos al parámetro poblacional tanto
+- B . Es una buena manera de aproximarnos al parámetro poblacional tanto
 como deseemos o podamos.
-
-C. Si no podemos realizar la estimación puntual que es más exacta nos
+- C. Si no podemos realizar la estimación puntual que es más exacta nos
 conformamos con el IC.
-
-D. Las respuestas A y B son correctas.
+- D. Las respuestas A y B son correctas. -> **Correcto**
 
 
 3. ¿Qué es o a qué es igual « »?
-A. Al estimador, que también puede ser anotado como .
 
-B. Al margen de error.
+- A. Al estimador, que también puede ser anotado como .
+- B. Al margen de error. -> **Correcto**
+- D. Un parámetro de cierto tipo de variable aleatoria.
 
-D. Un parámetro de cierto tipo de variable aleatoria.
+4. Si hemos calculado el IC para y resulta: . ¿Cuánto vale «E»?
 
-4. Si hemos calculado el IC para y resulta: . ¿Cuánto vale
-«E»?
-A. 0,025
-
-B. 0,25
-
-C. 0,050
-
-D. No se puede calcular con esta información
+- A. 0,025 -> **Correcto**
+- B. 0,25
+- C. 0,050
+- D. No se puede calcular con esta información
 
 5. Al IC que marca con un 95% de confianza la estatura
 media de un equipo de la NBA lo interpretamos como…
-A. De cada 100 jugadores, 95 estarán contenidos en dicho intervalo.
 
-B. De cada 100 muestras de jugadores, 95 tendrán la media contenido en ese IC.
-
-C. Tenemos una confianza del 95% de que la media de los jugadores de un
+- A. De cada 100 jugadores, 95 estarán contenidos en dicho intervalo.
+- B. De cada 100 muestras de jugadores, 95 tendrán la media contenido en ese IC.
+- C. Tenemos una confianza del 95% de que la media de los jugadores de un
 equipo de la NBA está contenida entre 188cm y 209cm.
-
-D. Las respuestas B y C son correctas.
+- D. Las respuestas B y C son correctas. -> **Correcto**
 
 6. ¿Qué fórmula es la correcta para hallar el IC de una media poblacional conocida
 su varianza?
@@ -985,44 +973,43 @@ su varianza?
 
 7. Cuando no es conocida, en el cálculo de los valores críticos para construir los
 IC empleamos:
-A. La T-Student.
 
-B. La Chi Cuadrada.
-
-C. La Normal Z.
-
-D. La Normal (0,1).
+- A. La T-Student. -> **Correcto**
+- B. La Chi Cuadrada.
+- C. La Normal Z.
+- D. La Normal (0,1).
 
 
 8. La T-Student es…
-A. Una distribución similar a la Normal, de hecho se aproxima a ella a medida que aumenta el «n».
 
-B. Es diferente de la Normal y la Chi Cuadrada.
+- A. Una distribución similar a la Normal, de hecho se aproxima a ella a medida que aumenta el «n».
+- B. Es diferente de la Normal y la Chi Cuadrada.
+- C. Es simétrica.
+- D. Las respuestas A y C son correctas. -> **Correcto**
 
-C. Es simétrica.
-
-D. Las respuestas A y C son correctas.
 
 9. ¿Qué es una muestra piloto?
-A. Un tipo de encuestas muy empleadas en aviación (por temas de
+
+- A. Un tipo de encuestas muy empleadas en aviación (por temas de
 seguridad).
 
-B. Una muestra que se recoge antes de hacer un estudio para tantear las
-características de la población.
+- B. Una muestra que se recoge antes de hacer un estudio para tantear las
+características de la población. -> **Correcto**
 
-C. Todo estudio estadístico bien hecho debe constar de una muestra
+- C. Todo estudio estadístico bien hecho debe constar de una muestra
 preliminar llamada «piloto» para posteriormente recoger la muestra definitiva.
 
-D. Es una muestra enorme que no siempre es posible recogerla, pero es lo ideal.
+- D. Es una muestra enorme que no siempre es posible recogerla, pero es lo ideal.
 
 10. ¿En un IC que porcentaje de las veces éste no contendrá al parámetro?
-A. (1-a)% de las veces.
 
-B. (1-a)x100% de las veces.
+- A. (1-a)% de las veces.
 
-C. a x 100% de las veces.
+- B. (1-a)x100% de las veces.
 
-D. Depende de la suerte que hayamos tenido con la muestra concreta que
+- C. a x 100% de las veces. -> **Correcto**
+
+- D. Depende de la suerte que hayamos tenido con la muestra concreta que
 cojamos
 
 
@@ -1088,51 +1075,57 @@ cojamos
 # Tema 8. Contrastes de hipótesis
 
 1. ¿Para qué sirve un contraste de hipótesis?
-A. Para saber a ciencia cierta si una afirmación es verdadera.
-B. Para saber con rigor matemático si una afirmación es falsa.
-C. Para contrastar si una afirmación sobre una población parece cierta o no
-en base a los datos.
-D. Las respuestas A y B son correctas.
+
+- A. Para saber a ciencia cierta si una afirmación es verdadera.
+- B. Para saber con rigor matemático si una afirmación es falsa.
+- C. Para contrastar si una afirmación sobre una población parece cierta o no
+en base a los datos. -> **Correcto**
+- D. Las respuestas A y B son correctas.
 
 
 2. Generalmente el orden que seguimos en un contraste de hipótesis es…
-A. Establecer primero la para que quede delimitada aproximadamente la
-.
-B. Plantearnos la hipótesis de rechazo para posteriormente fabricar su
+
+- A. Establecer primero la para que quede delimitada aproximadamente la
+- B. Plantearnos la hipótesis de rechazo para posteriormente fabricar su
 complementaria que es la hipótesis nula.
-C. Negar la hipótesis alternativa para que surja la hipótesis nula.
-D. Las respuestas B y C son correctas.
+
+- C. Negar la hipótesis alternativa para que surja la hipótesis nula.
+- D. Las respuestas B y C son correctas. -> **Correcto**
 
 
 3. ¿Cuántos diferentes planteamientos tenemos para la ?
-A. Solo tenemos una opción de , ya que está totalmente delimitada por la
+
+- A. Solo tenemos una opción de , ya que está totalmente delimitada por la
 hipótesis nula.
-B. Generalmente consideramos tres clases, donde una viene asociada al
+- B. Generalmente consideramos tres clases, donde una viene asociada al
 contraste bilateral y las otras dos a los laterales izquierdo y derecho
-respectivamente.
-C. Cuatro, correspondiendo a los tres casos indicados en B) más un bilateral
+respectivamente. -> **Correcto**
+- C. Cuatro, correspondiendo a los tres casos indicados en B) más un bilateral
 del tipo (que por cierto es un tanto atípico).
-D. Las respuestas B y C son correctas.
+- D. Las respuestas B y C son correctas.
 
 4. ¿Con que tipo de frases interpretamos un contraste de hipótesis?
-A. «…tras realizar el contraste se demuestra la falsedad de la Ho…».
-B. «…se han encontrado evidencias claras de que es la Ho es verdadera…».
-C. «… se han encontrado evidencia estadísticas aplastantes en favor de…».
-D. «… no logramos encontrar evidencias estadísticamente significativas…»
+
+- A. «…tras realizar el contraste se demuestra la falsedad de la Ho…».
+- B. «…se han encontrado evidencias claras de que es la Ho es verdadera…».
+- C. «… se han encontrado evidencia estadísticas aplastantes en favor de…».
+- D. «… no logramos encontrar evidencias estadísticamente significativas…» -> **Correcto**
 
 
 5. ¿Quién tiene que caer en la región crítica para que rechacemos la Ho?
-A. El estadístico de contraste que estemos empleando.
-B. El parámetro.
-C. El valor que se contrasta del parámetro (por ejemplo ).
-D. Las respuestas B y C son correctas.
+
+- A. El estadístico de contraste que estemos empleando. -> **Correcto**
+- B. El parámetro.
+- C. El valor que se contrasta del parámetro (por ejemplo ).
+- D. Las respuestas B y C son correctas.
 
 6. ¿Qué es 1-B?
-A. La probabilidad de que cometamos uno de los errores más graves que se
+
+- A. La probabilidad de que cometamos uno de los errores más graves que se
 pueden cometer.
-B. La potencia del contraste.
-C. El otro gran error en los contrastes de hipótesis junto con .
-D. Las respuestas B y C son correctas.
+- B. La potencia del contraste. -> **Correcto**
+- C. El otro gran error en los contrastes de hipótesis junto con .
+- D. Las respuestas B y C son correctas.
 
 7. La P(rechazar | siendo Ho verdadera) es equivalente a:
 
@@ -1143,20 +1136,22 @@ D. Las respuestas B y C son correctas.
 [Respuesta](../03_Analisis_Interpretacion_datos/info/info_009.png)
 
 9. ¿Cómo decidimos un contraste de hipótesis a través de un IC?
-A. Si pertenece al IC construido para µ se acepta, de lo contrario
-rechazamos .
-B. Para empezar ha de ser bilateral y luego se procede como en .
-C. Si no pertenece al IC construido para µ se acepta, de lo contrario se
+
+- A. Si pertenece al IC construido para µ se acepta, de lo contrario
+rechazamos -> **Correcto**
+- B. Para empezar ha de ser bilateral y luego se procede como en .
+- C. Si no pertenece al IC construido para µ se acepta, de lo contrario se
 rechaza .
-D. Para empezar ha de ser unilateral y luego se procede como en .
+- D. Para empezar ha de ser unilateral y luego se procede como en .
 
 
 10. Cuando en un contraste de hipótesis desconocemos la varianza de la población
 de la que provienen los datos empleamos
-A. La distribución T-Student como estadístico de contraste.
-B. La distribución normal si tenemos suficientes observaciones.
-C. La distribución Ji Cuadrada de Pearson.
-D. Si comparamos medias empleamos la Normal si son proporciones la TStuden
+
+- A. La distribución T-Student como estadístico de contraste. -> **Correcto**
+- B. La distribución normal si tenemos suficientes observaciones.
+- C. La distribución Ji Cuadrada de Pearson.
+- D. Si comparamos medias empleamos la Normal si son proporciones la TStuden
 
 ## Video 1:  Fundamentos de los Contrastes de Hipótesis
 
@@ -1216,71 +1211,81 @@ D. Si comparamos medias empleamos la Normal si son proporciones la TStuden
 
 
 1. El modelo de regresión lineal se supone...
-A. Aleatorio, curvilíneo y apolíneo.
-B. Carente de errores en la medida de lo posible.
-C. No heterocedástico.
-D. Con una Tde student no muy elevada (de lo contrario se rechaza).
+
+- A. Aleatorio, curvilíneo y apolíneo.
+- B. Carente de errores en la medida de lo posible.
+- C. No heterocedástico. -> **Correcto**
+- D. Con una Tde student no muy elevada (de lo contrario se rechaza).
 
 
 2. ¿Qué es lo que se contrasta en un modelo de regresión lineal?
-A. Si hay constante.
-B. Si la pendiente es nula o no.
-C. Si el error es mínimo respecto a la recta.
-D. B y C son correctas.
+
+- A. Si hay constante.
+- B. Si la pendiente es nula o no. -> **Correcto**
+- C. Si el error es mínimo respecto a la recta.
+- D. B y C son correctas.
 
 
 3. ¿Con que Test o pruebas podemos constrastar el modelo de 
 regresión?
-A. Con el y la T de Student.
-B. Con la T-de Student y la Normalidad de la variable.
-C. Con el ANOVA.
-D. A y C son correctas.
+
+- A. Con el y la T de Student.
+- B. Con la T-de Student y la Normalidad de la variable.
+- C. Con el ANOVA.
+- D. A y C son correctas. -> **Correcto**
 
 
 4. R2 equivale a:
-A. SCM entre la SCR.
-B. La SCM entre la SCT.
-C. B y D son correctas.
-D. 1 menos la SCR/SCT
+
+- A. SCM entre la SCR.
+- B. La SCM entre la SCT.
+- C. B y D son correctas. -> **Correcto**
+- D. 1 menos la SCR/SCT
 
 5. Si el IC para B1 contiene al 0 esto querrá decir que: D B y C son correctas.
-A. La regresión no es significativa.
-B. La regresión es altamente significativa.
-C. Con una probabilidad del 95% la regresión no será significativa.
-D. B y C son correctas.
+
+- A. La regresión no es significativa. -> **Correcto**
+- B. La regresión es altamente significativa.
+- C. Con una probabilidad del 95% la regresión no será significativa.
+- D. B y C son correctas.
 
 6. ¿Qué es alfa en el modelo de regresión?
-A. El complementario de Beta.
-B. La potencia del contraste.
-C. La constante.
-D. A y C son correctas.
+
+- A. El complementario de Beta.
+- B. La potencia del contraste.
+- C. La constante. -> **Correcto**
+- D. A y C son correctas.
+
 
 7. En el ejemplo visto en el capítulo sobre las películas:
-A. Las puntuaciones de IMDB eran la variable dependiente.
-B. Las puntuaciones de Filmaffinity eran la variable predictora.
-C. Las películas eran las variables dependientes.
-D. A y B son correctas.
+
+- A. Las puntuaciones de IMDB eran la variable dependiente.
+- B. Las puntuaciones de Filmaffinity eran la variable predictora.
+- C. Las películas eran las variables dependientes.
+- D. A y B son correctas. -> **Correcto**
 
 
 8. Si al graficar los errores estos presentar una forma de embudo:
-A. Es buena señal para el modelo.
-B. Indicaría una falta de homocedasticidad.
-C. Indicaría una falta de heterocedasticidad.
-D. Ninguna de las anteriores
+
+- A. Es buena señal para el modelo.
+- B. Indicaría una falta de homocedasticidad. -> **Correcto**
+- C. Indicaría una falta de heterocedasticidad.
+- D. Ninguna de las anteriores
 
 
 9. Los errores del modelo conviene que sean casi todos elevados.
-A. Sean casi todos positivos.
-B. Sean casi todos elevados.
-C. Que se alternen lo mejor posible los positivos y los negativos sin grandes
-saltos ni patrones.
-D. Que presenten claros patrones.
+
+- A. Sean casi todos positivos.
+- B. Sean casi todos elevados. 
+- C. Que se alternen lo mejor posible los positivos y los negativos sin grandes saltos ni patrones. -> **Correcto**
+- D. Que presenten claros patrones.
 
 10. El modelo de regresión lineal consta de tres parámetros.
-A. Alfa, gamma y el error.
-B. Beta cero, beta uno y alfa.
-C. Alfa, beta y sigma.
-D. No es cierto, consta de dos
+
+- A. Alfa, gamma y el error. -> **Correcto**
+- B. Beta cero, beta uno y alfa.
+- C. Alfa, beta y sigma.
+- D. No es cierto, consta de dos
 
 ## Video 1: Análisis de Varianza (ANOVA) en Regresión
 
@@ -1488,20 +1493,20 @@ ile
 
 ## Video 3: Demostrar cómo aplicar el PCA en R con un ejemplo práctico
 
+- ¿Qué función en R se utiliza para realizar un Análisis de Componentes Principales (PCA)?
+- prcomp() =>  ya que la función prcomp() se utiliza en R para realizar un PCA.
 
--
-- 
-
--
-- 
-
--
-- 
+- ¿Qué tipo de datos se deben pasar a la función prcomp() para realizar un PCA en R?
+- Un conjunto de datos numéricos donde se desee reducir la dimensionalidad. => ya que el PCA se aplica a conjuntos de datos numéricos para reducir su dimensionalidad.
 
 
--
--
+- ¿Cuál es el propósito de un scree plot en el PCA?
+- Visualizar la cantidad de varianza explicada por cada componente principal y ayudar a decidir cuántos componentes mantener. =>  ya que el scree plot muestra la varianza explicada por cada componente principal y ayuda a identificar cuántos componentes principales son suficientes para capturar la mayor parte de la variabilidad en los datos.
 
 
--
--
+- ¿Qué salida importante proporciona la función summary() cuando se aplica a un objeto generado por prcomp()?
+- La proporción de la varianza explicada por cada componente principal. => a que la función summary() aplicada al objeto generado por prcomp() proporciona la proporción de la varianza explicada por cada componente principal.
+
+
+- ¿Cuál es un paso previo importante antes de realizar el PCA en un conjunto de datos en R?
+- Escalar los datos para que todas las variables tengan la misma unidad de medida.
