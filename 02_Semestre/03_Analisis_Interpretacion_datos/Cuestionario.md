@@ -607,7 +607,7 @@ un 6,7 o un 8 es:
 
 8. Si X∼N (5,2) entonces la variable tipificada Z la obtenemos como…
 
-![Respuesta](../03_Analisis_Interpretacion_datos/info/info_003.png)
+¡[Respuesta](../03_Analisis_Interpretacion_datos/info/info_003.png)
 
 **Respuesta C:* 
 
