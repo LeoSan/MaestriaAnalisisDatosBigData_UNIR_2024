@@ -1,69 +1,71 @@
 ## TEMA 1: Introducción a la estadística
 
 2. La estadística ha sido definida como:
-A. El arte de manejar con rigor los números.
-B. La ciencia que analiza la información y la convierte en números.
-C. La ciencia del aprendizaje a partir de los datos.
-D. La ciencia que produce, analiza y extrae conclusiones de los datos.
-E. Las respuestas C y D son correctas. -> **Correcto**
+
+- A. El arte de manejar con rigor los números.
+- B. La ciencia que analiza la información y la convierte en números.
+- C. La ciencia del aprendizaje a partir de los datos.
+- D. La ciencia que produce, analiza y extrae conclusiones de los datos.
+- E. Las respuestas C y D son correctas. -> **Correcto**
 
 3. Con la estadística manejamos:
-A. Información en forma de datos.
-B. Números contextualizados.
-C. Individuos de una población.
-D. Las respuestas A y B son correctas. -> **Correcto**
+
+- A. Información en forma de datos.
+- B. Números contextualizados.
+- C. Individuos de una población.
+- D. Las respuestas A y B son correctas. -> **Correcto**
 
 4. Hoy en día en España los censos…
-A. Los llevaba a cabo el INE todos los años para temas muy importantes
-como la Encuesta de Población Activa, El Censo de Población y Viviendas,
-etc…
-B. Ya no existen como tal. -> **Correcto**
-C. Solo existe uno, el Censo de Población y Vivienda, que se lleva a cabo
-cada diez años.
-D. Las respuestas A y B son correctas.
+
+- A. Los llevaba a cabo el INE todos los años para temas muy importantes como la Encuesta de Población Activa, El Censo de Población y Viviendas, etc…
+-  B. Ya no existen como tal. -> **Correcto**
+-  C. Solo existe uno, el Censo de Población y Vivienda, que se lleva a cabo cada diez años.
+-  D. Las respuestas A y B son correctas.
 
 5. Decimos que una muestra es representativa cuando:
-A. Ha sido obtenida mediante métodos aleatorios.
-B. Es de un tamaño cercano al de la población de la que proviene.
-C. Posee una diversidad muy parecida a la de la población. -> **Correcto**
-D. Las respuestas A y C son correctas.
+
+- A. Ha sido obtenida mediante métodos aleatorios.
+- B. Es de un tamaño cercano al de la población de la que proviene.
+- C. Posee una diversidad muy parecida a la de la población. -> **Correcto**
+- D. Las respuestas A y C son correctas.
 
 6. Decimos que los estudios experimentales:
-A. Son superiores a las observaciones, pues permiten manipular a los
-individuos con la libertad que eso presupone.
-B. Son junto con los observacionales los dos grandes tipos de estudios estadísticos. -> **Correcto**
-C. Son más cuestionados que los observacionales pues interfieren en exceso.
-D. Las respuestas B y C son correctas
+
+- A. Son superiores a las observaciones, pues permiten manipular a los individuos con la libertad que eso presupone.
+- B. Son junto con los observacionales los dos grandes tipos de estudios estadísticos. -> **Correcto**
+- C. Son más cuestionados que los observacionales pues interfieren en exceso.
+- D. Las respuestas B y C son correctas
 
 7. Un pictograma representa la información:
-A. En el área del dibujo. -> **Correcto**
-B. En la altura del dibujo.
-C. En la anchura del dibujo.
-D. Todo lo anterior es falso. -> **Correcto**
 
-8. Referente a la infraestructura requerida para llevar a cabo análisis de datos en
-Big Data:
-A. Es necesario poseer un clúster propio.
-B. No hace falta usar infraestructuras de computación potentes.
-C. La computación en la nube no es una opción.
-D. Todo lo anterior es falso. -> **Correcto**
+- A. En el área del dibujo. -> **Correcto**
+- B. En la altura del dibujo.
+- C. En la anchura del dibujo.
+- D. Todo lo anterior es falso. -> **Correcto**
+
+8. Referente a la infraestructura requerida para llevar a cabo análisis de datos en Big Data:
+- A. Es necesario poseer un clúster propio.
+- B. No hace falta usar infraestructuras de computación potentes.
+- C. La computación en la nube no es una opción.
+- D. Todo lo anterior es falso. -> **Correcto**
 
 9. La aplicación de la estadística en Big Data:
-A. No plantea ningún problema.
-B. Se produce falta de información.
-C. La información es, a veces, demasiado compleja.  -> **Correcto**
-D. Todo lo anterior es cierto.
+- A. No plantea ningún problema.
+- B. Se produce falta de información.
+- C. La información es, a veces, demasiado compleja.  -> **Correcto**
+- D. Todo lo anterior es cierto.
 
 10. La estadística:
-A. Es una disciplina clásica. -> **Correcto**
-B. Es una disciplina reciente.
-C. Engloba únicamente el apartado de extracción de información.
-D. A y C son ciertas.
+
+- A. Es una disciplina clásica. -> **Correcto**
+- B. Es una disciplina reciente.
+- C. Engloba únicamente el apartado de extracción de información.
+- D. A y C son ciertas.
 
 ## Videoclase 1. Fundamentos Básicos de la Estadística
 
 - ¿Cuál es el objetivo principal de la estadística descriptiva?
-    - Resumir y organizar datos.
+- Resumir y organizar datos.
 
 - ¿Qué se entiende por «población» en un estudio estadístico?
 - El conjunto completo de individuos o elementos de interés
@@ -114,64 +116,72 @@ D. A y C son ciertas.
 # TEMA 2: Estadística computacional
 
 1. R soporta datos de tipo numérico en sus bases de datos:
-A. Verdadero. -> **Correcto**
-B. Falso.
-C. Solo si se introducen como tipo .txt .
-D. Ninguna de las propuestas es correcta.
+
+- A. Verdadero. -> **Correcto**
+- B. Falso.
+- C. Solo si se introducen como tipo .txt .
+- D. Ninguna de las propuestas es correcta.
 
 2. R soporta datos de tipo categórico en sus bases de datos:
-A. Verdadero. -> **Correcto**
-B. Falso.
-C. Solo si van acompañados de algún valor numérico.
-D. Ninguna de las propuestas es correcta.
 
-3. Histogram() es la etiqueta para desarrollar una función que elabore histogramas
-en un algoritmo desarrollado con R:
-A. Incorrecto. -> **Correcto**
-B. Correcto.
-C. Falta colocar las etiquetas para completar el histograma.
-D. Ninguna de las propuestas es correcta.
+- A. Verdadero. -> **Correcto**
+- B. Falso.
+- C. Solo si van acompañados de algún valor numérico.
+- D. Ninguna de las propuestas es correcta.
+
+3. Histogram() es la etiqueta para desarrollar una función que elabore histogramas en un algoritmo desarrollado con R:
+
+- A. Incorrecto. -> **Correcto**
+- B. Correcto.
+- C. Falta colocar las etiquetas para completar el histograma.
+- D. Ninguna de las propuestas es correcta.
 
 4. En estos momentos, R es un software que ofrece soporte ilimitado a la solución de problemas estadísticos en el entorno Big Data.
-A. Sí, pero con limitaciones.
-B. Nos impone la necesidad de trabajar para evitar problemas de asignación de memoria.
-C. Posibilita el uso de funciones de código abierto para optimizar los recursos de memoria.
-D. Todas las respuestas anteriores son correctas. -> **Correcto**
+
+- A. Sí, pero con limitaciones.
+- B. Nos impone la necesidad de trabajar para evitar problemas de asignación de memoria.
+- C. Posibilita el uso de funciones de código abierto para optimizar los recursos de memoria.
+- D. Todas las respuestas anteriores son correctas. -> **Correcto**
 
 5. ¿Por qué puede ser relevante la irrupción del código R en temas de ciberseguridad?
-A. Facilita el tratamiento de muchos datos.
-B. Prima la lógica de los programas y la capacidad creativa del desarrollador a los mecanismos de control internos.
-C. Posibilidad de paralelización de procesos al tener las estructuras modularizadas.
-D. Todas las propuestas anteriores son correctas. -> **Correcto**
+
+- A. Facilita el tratamiento de muchos datos.
+- B. Prima la lógica de los programas y la capacidad creativa del desarrollador a los mecanismos de control internos.
+- C. Posibilidad de paralelización de procesos al tener las estructuras modularizadas.
+- D. Todas las propuestas anteriores son correctas. -> **Correcto**
 
 6. Uno de los objetivos básicos de la programación es la capacidad de desarrollar código que sea reutilizable:
-A. Verdadero, pero no aplicable al contexto estadístico donde cada código debe limitarse a un problema específico.
-B. Verdadero, extensible al área de la estadística donde se pretenden crear códigos generalistas que puedan ser utilizados sobre distintos escenarios. -> **Correcto**
-C. Falso, siempre se debe empezar el código de cero al implementar un problema.
-D. Ninguna de las anteriores.
+
+- A. Verdadero, pero no aplicable al contexto estadístico donde cada código debe limitarse a un problema específico.
+- B. Verdadero, extensible al área de la estadística donde se pretenden crear códigos generalistas que puedan ser utilizados sobre distintos escenarios. -> **Correcto**
+- C. Falso, siempre se debe empezar el código de cero al implementar un problema.
+- D. Ninguna de las anteriores.
 
 7. Sobre el uso de la programación por módulos en R:
-A. Facilita la reutilización de código.
-B. Permite detectar errores (bugs) en un proceso de validación de código.
-C. Hace el código más expresivo.
-D. Todas las anteriores son correctas. -> **Correcto**
+
+- A. Facilita la reutilización de código.
+- B. Permite detectar errores (bugs) en un proceso de validación de código.
+- C. Hace el código más expresivo.
+- D. Todas las anteriores son correctas. -> **Correcto**
 
 8. R no permite compartir librerías con otros lenguajes:
-A. Verdadero, asociado a la seguridad propia del lenguaje.
-B. Verdadero, en la línea de garantizar un uso matemáticamente correcto de los datos.
-C. Falso, las librerías se pueden compartir con otros lenguajes de programación. -> **Correcto**
-D. Ninguna de las anteriores.
+
+- A. Verdadero, asociado a la seguridad propia del lenguaje.
+- B. Verdadero, en la línea de garantizar un uso matemáticamente correcto de los datos.
+- C. Falso, las librerías se pueden compartir con otros lenguajes de programación. -> **Correcto**
+- D. Ninguna de las anteriores.
 
 9. ¿Puede R trabajar con varios tipos de ficheros de datos?
-A. Sí, siempre que sean almacenables como .txt .
-B. Sí, puede trabajar con varios tipos de ficheros, ejemplo .txt, .csv . -> **Correcto**
+
+- A. Sí, siempre que sean almacenables como .txt .
+- B. Sí, puede trabajar con varios tipos de ficheros, ejemplo .txt, .csv . -> **Correcto**
 
 10. ¿Puede un solo código R tratar simultáneamente variables categóricas y numéricas?
-A. Sí, es algo estándar. -> **Correcto**
-B. No, una u otra, nunca simultáneamente. Puede dar errores en el proceso
-de compilación.
-C. No, deben transformase a uno u otro tipo y elegir un tipo para cada código.
-D. Ninguna de las anteriores es correcta
+
+- A. Sí, es algo estándar. -> **Correcto**
+- B. No, una u otra, nunca simultáneamente. Puede dar errores en el proceso de compilación.
+- C. No, deben transformase a uno u otro tipo y elegir un tipo para cada código.
+- D. Ninguna de las anteriores es correcta
 
 ## Videoclase 1. Introducción a la Estadística Computacional
 - ¿Qué se entiende por estadística computacional?
@@ -226,117 +236,87 @@ D. Ninguna de las anteriores es correcta
 # Tema 3. Medidas que resumen la información
 
 1. ¿Cuántos cuartiles hay en una distribución de datos?
-A. Paradójicamente hay dos, puesto que son tres pero como la mediana es el
-segundo se quedan en dos.
 
-B. 4.
+- A. Paradójicamente hay dos, puesto que son tres pero como la mediana es el segundo se quedan en dos.
 
-C. 3. -> **Correcto**
+- B. 4.
 
-D. Depende si el conjunto de datos presenta frecuencias repetidas.
+-  C. 3. -> **Correcto**
+
+- D. Depende si el conjunto de datos presenta frecuencias repetidas.
 
 
 2. ¿Qué cuantiles equivalen a la mediana?
-A. El quinto decil.
 
-B. El segundo percentil.
-
-C. El segundo cuartil.
-
-D. Las respuestas A y C son correctas. -> **Correcto**
+- A. El quinto decil.
+- B. El segundo percentil.
+- C. El segundo cuartil.
+- D. Las respuestas A y C son correctas. -> **Correcto**
 
 
 3. La mediana…
-A. Es el valor central pero solo si el conjunto de datos es par.
 
-B. Es el valor central pero solo si el conjunto de datos es impar.
-
-C. Es el valor central siempre. -> **Correcto**
-
-D. Depende si el conjunto de datos presenta frecuencias repetidas.
+- A. Es el valor central pero solo si el conjunto de datos es par.
+- B. Es el valor central pero solo si el conjunto de datos es impar.
+- C. Es el valor central siempre. -> **Correcto**
+- D. Depende si el conjunto de datos presenta frecuencias repetidas.
 
 
 4. La media…
-A. Se ve afectada drásticamente por los valores extremos.
-
-B. Es una medida con una representatividad mayor que la mediana.
-
-C. Es más útil que la mediana para las variables cualitativas.
-
-D. No es útil ni calculable para las variables cualitativas.
-
-E. Las respuestas A y D son correctas. -> **Correcto**
+- A. Se ve afectada drásticamente por los valores extremos.
+- B. Es una medida con una representatividad mayor que la mediana.
+- C. Es más útil que la mediana para las variables cualitativas.
+- D. No es útil ni calculable para las variables cualitativas.
+- E. Las respuestas A y D son correctas. -> **Correcto**
 
 5. La medida estadística que menos se ve afectada por los valores atípicos es:
-A. La desviación estadística.
 
-B. La mediana. -> **Correcto**
-
-C. La media aritmética.
-
-D. La media armónica.
+- A. La desviación estadística.
+- B. La mediana. -> **Correcto**
+- C. La media aritmética.
+- D. La media armónica.
 
 
-6. En la fórmula de la mediana para datos agrupados: ¿Qué representan las letras y
-símbolos?
-A. es el límite inferior del intervalo mediano. -> **Correcto**
+6. En la fórmula de la mediana para datos agrupados: ¿Qué representan las letras y símbolos?
 
-B. corresponde con la posición que debería ocupar la mediana dentro del conjunto de datos.
-
-C. es la altura de cada intervalo.
-
-D. es el límite inferior del intervalo anterior al mediano.
-
-E. Las repuestas A y B son correctas.
+- A. es el límite inferior del intervalo mediano. -> **Correcto**
+- B. corresponde con la posición que debería ocupar la mediana dentro del conjunto de datos.
+- C. es la altura de cada intervalo.
+- D. es el límite inferior del intervalo anterior al mediano.
+- E. Las repuestas A y B son correctas.
 
 
 7. La varianza…:
-A. Es parecida a la desviación típica.
 
-B. Aporta la misma información sobre la dispersión que la desviación típica.
-
-C. junto con la desviación típica y la desviación estándar conforman las medidas de dispersión más conocidas.
-
-D. Es el cuadrado de la desviación típica.
-
-E. Las repuestas B y D son correctas. -> **Correcto**
+- A. Es parecida a la desviación típica.
+- B. Aporta la misma información sobre la dispersión que la desviación típica.
+- C. junto con la desviación típica y la desviación estándar conforman las medidas de dispersión más conocidas.
+- D. Es el cuadrado de la desviación típica.
+- E. Las repuestas B y D son correctas. -> **Correcto**
 
 
 8. El diagrama de cajas se construye con:
-A. Cuatro valores: La mediana, el cuartil 1, el cuartil 3 y la desviación típica.
 
-B. Cuatro valores: La mediana, el cuartil 1, el cuartil 3 y la varianza.
-
-C. Cinco valores: La mediana, el cuartil 1, el cuartil 3, el mínimo y el máximo.
-
-D. Los cinco valores de C. más los valores atípicos sin los cuales no se puede
-construir. -> **Correcto**
+- A. Cuatro valores: La mediana, el cuartil 1, el cuartil 3 y la desviación típica.
+- B. Cuatro valores: La mediana, el cuartil 1, el cuartil 3 y la varianza.
+- C. Cinco valores: La mediana, el cuartil 1, el cuartil 3, el mínimo y el máximo.
+- D. Los cinco valores de C. más los valores atípicos sin los cuales no se puede construir. -> **Correcto**
 
 
 9. Una medida estadística que nos permite comparar entre diferentes poblaciones
-es:
-A. El coeficiente de variación. -> **Correcto**
 
-B. La desviación estándar.
-
-C. La puntuación tipificada.
-
-D. Las respuestas A y C son correctas.
+- A. El coeficiente de variación. -> **Correcto**
+- B. La desviación estándar.
+- C. La puntuación tipificada.
+- D. Las respuestas A y C son correctas.
 
 10. En cuanto a la asimetría…
-A. Es positiva cuando la cola está a la derecha y la Moda es mayor que la
-media.
 
-B. Es negativa cuando la cola está a la izquierda y la Moda es mayor que la
-media.
-
-C. Es negativa cuando la cola está a la derecha y la Moda es menor que la
-media.
-
-D. Es positiva cuando la cola está a la derecha y la Moda es menor que la
-media.
-
-E. Las respuestas B y D son correctas. -> **Correcto**
+- A. Es positiva cuando la cola está a la derecha y la Moda es mayor que la media.
+- B. Es negativa cuando la cola está a la izquierda y la Moda es mayor que la media.
+- C. Es negativa cuando la cola está a la derecha y la Moda es menor que la media.
+- D. Es positiva cuando la cola está a la derecha y la Moda es menor que la media.
+- E. Las respuestas B y D son correctas. -> **Correcto**
 
 ## Videoclase 1. Medidas de Tendencia Central y Dispersión
 - ¿Cuál de las siguientes es una medida de tendencia central?
@@ -390,114 +370,106 @@ E. Las respuestas B y D son correctas. -> **Correcto**
 # Tema 4. Regresión y correlación
 
 1. Las frecuencias marginales son:
-A. Aquellas que se marginan dejándose fuera de los cálculos.
 
-B. Aquellas que alcanzan valores atípicos.
+- A. Aquellas que se marginan dejándose fuera de los cálculos.
 
-C. Aquellas que hacen referencia a una sola variable marginando a la otra. -> **Correcto**
+- B. Aquellas que alcanzan valores atípicos.
 
-D. Aquellas con las que se construye un diagrama de frecuencias
-bidimensional.
+- C. Aquellas que hacen referencia a una sola variable marginando a la otra. -> **Correcto**
+
+- D. Aquellas con las que se construye un diagrama de frecuencias bidimensional.
 
 
 2. La covarianza del mismo modo que la varianza…
-A. No puede tomar valores negativos.
+-  A. No puede tomar valores negativos.
 
-B. Su magnitud no nos dice mucho sobre si covarían entre sí mucho o poco las dos variables. -> **Correcto**
+- B. Su magnitud no nos dice mucho sobre si covarían entre sí mucho o poco las dos variables. -> **Correcto**
 
-C. Mide la dispersión entre variables.
+- C. Mide la dispersión entre variables.
 
-D. A y B son correctas.
+- D. A y B son correctas.
 
 
 3. Un diagrama de dispersión nos permite ver:
-A. Los patrones que se «esconden» en los datos.
 
-B. Si se da algún tipo de relación lineal entre las variables
-
-C. Si existe alguna observación atípica en los datos.
-
-D. Las tres anteriores son correctas. -> **Correcto**
+- A. Los patrones que se «esconden» en los datos.
+- B. Si se da algún tipo de relación lineal entre las variables
+- C. Si existe alguna observación atípica en los datos.
+- D. Las tres anteriores son correctas. -> **Correcto**
 
 
 4. La causalidad entre variables…
-A. Se da siempre que tengamos algún tipo de asociación entre ellas.
 
-B. No tiene por qué deducirse de la asociación que exista entre ellas. -> **Correcto**
+- A. Se da siempre que tengamos algún tipo de asociación entre ellas.
 
-C. Es equivalente a la asociación que pueda haber entre ellas.
+- B. No tiene por qué deducirse de la asociación que exista entre ellas. -> **Correcto**
 
-D. A y C son correctas.
+- C. Es equivalente a la asociación que pueda haber entre ellas.
+
+- D. A y C son correctas.
 
 5. Cuando existe un asociación aproximadamente lineal entre variables que hemos
 modelado con una regresión lineal…
-A. Una de las variables es la dependiente y la otra la independiente
 
-B. Una de las variables es la explicativa y la otra la predictora.
+- A. Una de las variables es la dependiente y la otra la independiente
 
-C. La variable respuesta puede ser dependiente o independiente
+- B. Una de las variables es la explicativa y la otra la predictora.
 
-D. Una de las variables es la variable explicativa y la otra la variable respuesta
+- C. La variable respuesta puede ser dependiente o independiente
 
-E. A y D son correctas. -> **Correcto**
+- D. Una de las variables es la variable explicativa y la otra la variable respuesta
+
+- E. A y D son correctas. -> **Correcto**
 
 
 6. Si el coeficiente de correlación es nulo:
 
-A. Puede estar existiendo otro tipo de relación entre las variables. -> **Correcto**
-
-B. No existe causalidad entre ellas.
-
-C. La asociación entre ellas es inexistente.
-
-D. B y c son correctas.
+- A. Puede estar existiendo otro tipo de relación entre las variables. -> **Correcto**
+- B. No existe causalidad entre ellas.
+- C. La asociación entre ellas es inexistente.
+- D. B y c son correctas.
 
 7. El Método de los Mínimos Cuadrados sirve para…
 
-A. Buscar la mejor asociación entre las variables.
+- A. Buscar la mejor asociación entre las variables.
 
-B. Maximizar el ajuste entre los datos.
+- B. Maximizar el ajuste entre los datos.
 
-C. Hallar la ecuación de la recta que minimiza las desviaciones respecto a las
-observaciones -> **Correcto**
+- C. Hallar la ecuación de la recta que minimiza las desviaciones respecto a las observaciones -> **Correcto**
 
-D. Complicar el análisis estadístico, pues ya está en desuso con la aparición
-de los ordenadores.
+- D. Complicar el análisis estadístico, pues ya está en desuso con la aparición de los ordenadores.
 
 
 8. El coeficiente de determinación…
 
-A. Es igual al cuadrado del coeficiente de correlación lineal.
+- A. Es igual al cuadrado del coeficiente de correlación lineal.
 
-B. Es igual a la raíz del coeficiente de correlación lineal.
+- B. Es igual a la raíz del coeficiente de correlación lineal.
 
-C. Refleja el porcentaje de varianza explicado por las predicciones de la recta
-respecto al del total de observaciones.
+- C. Refleja el porcentaje de varianza explicado por las predicciones de la recta respecto al del total de observaciones.
 
-D. A y C son correctas -> **Correcto**
+- D. A y C son correctas -> **Correcto**
 
 9. Los modelos lineales se emplean más en estadística porque…
 
-A. En la vida real son más comunes los modelos donde encajan
-adecuadamente.
+- A. En la vida real son más comunes los modelos donde encajan adecuadamente.
 
-B. Suponen una aproximación matemática sencilla a relaciones entre variables que pueden ser un tanto más complejas. -> **Correcto**
+- B. Suponen una aproximación matemática sencilla a relaciones entre variables que pueden ser un tanto más complejas. -> **Correcto**
 
-C. Otros modelos como el logístico no acaban de resultar manejables y se
-dan en casos raros.
+- C. Otros modelos como el logístico no acaban de resultar manejables y se dan en casos raros.
 
-D. A y C son correctas.
+- D. A y C son correctas.
 
 
 10. Un scatterplot es:
 
-A. Un diagrama de residuos
+- A. Un diagrama de residuos
 
-B. Un gráfico que muestra la relación entre dos variables cuantitativas. -> **Correcto**
+- B. Un gráfico que muestra la relación entre dos variables cuantitativas. -> **Correcto**
 
-C. Una herramienta muy útil del Excel.
+- C. Una herramienta muy útil del Excel.
 
-D. A y C son correctas
+- D. A y C son correctas
 
 
 
@@ -557,81 +529,80 @@ D. A y C son correctas
 1. Si los tres primeros lanzamientos de una moneda han resultado cara, la
 probabilidad de que obtengamos cara en el cuarto lanzamiento es:
 
-A. 1/16
+- A. 1/16
 
-B. 1/4
+- B. 1/4
 
-C. 1/2 -> **Correcto**
+- C. 1/2 -> **Correcto**
 
-D. Otro valor entre cero y uno.
+- D. Otro valor entre cero y uno.
 
 
 2. Dos eventos se dice que son independientes cuando:
 
-A. Siempre que ocurra A no tiene por qué ocurrir B.
+- A. Siempre que ocurra A no tiene por qué ocurrir B.
 
-B. La probabilidad de su intersección es nula.
+- B. La probabilidad de su intersección es nula.
 
-C. El hecho de que ocurra uno no afecta a la probabilidad de que ocurra el otro. -> **Correcto**
+- C. El hecho de que ocurra uno no afecta a la probabilidad de que ocurra el otro. -> **Correcto**
 
-D. Las respuestas B y C son correctas.
+- D. Las respuestas B y C son correctas.
 
 
 3. F(xi) es
 
-A. La función de redistribución.
+- A. La función de redistribución.
 
-B. 1 - P(X > xi )
+- B. 1 - P(X > xi )
 
-C. P(X > xi )
+- C. P(X > xi )
 
-D. Las respuestas A y B son correctas. -> **Correcto**
+- D. Las respuestas A y B son correctas. -> **Correcto**
 
 
 4. Si tiramos dos dados y sumamos sus puntuaciones. La probabilidad de obtener
 un 6,7 o un 8 es:
 
-A. La mitad.
+- A. La mitad.
 
-B. Más de la mitad.
+- B. Más de la mitad.
 
-C. 0,44. -> **Correcto**
+- C. 0,44. -> **Correcto**
 
-D. F(8) – F(6)
+- D. F(8) – F(6)
 
 
 5. La V(X+Y) es igual a:
-A. V(X)+V(Y)+2ρσXσy
 
-B. V(X)+V(Y)
+- A. V(X)+V(Y)+2ρσXσy
 
-C. V(X)+V(Y)+2Cov(X,Y)
+- B. V(X)+V(Y)
 
-D. Las respuestas A y C son correctas. -> **Correcto**
+- C. V(X)+V(Y)+2Cov(X,Y)
+
+- D. Las respuestas A y C son correctas. -> **Correcto**
 
 
 6. En una distribución binomial el parámetro «q» es:
 
-A. 1-P(éxito)
+- A. 1-P(éxito)
 
-B. La probabilidad del fracaso.
+- B. La probabilidad del fracaso.
 
-C. 1/p
+- C. 1/p
 
-D. Las respuestas A y B son correctas. -> **Correcto**
+- D. Las respuestas A y B son correctas. -> **Correcto**
 
 
 7. La distribución normal está caracteriza por dos parámetros que son:
 
-A. u y ρ
+- A. u y ρ
 
-B. σ
-2
- y ρ
+- B. σ2 y ρ
 
-C. μ y p
+- C. μ y p
 
-D. La media y la desviación típica.  -> **Correcto**
+- D. La media y la desviación típica.  -> **Correcto**
 
 
 8. Si X∼N (5,2) entonces la variable tipificada Z la obtenemos como…
@@ -646,13 +617,13 @@ D. La media y la desviación típica.  -> **Correcto**
 
 10. En una distribución normal a mayor sigma:
 
-A. Mayor altura de la función de densidad.
+- A. Mayor altura de la función de densidad.
 
-B. Más probable es encontrarse datos más dispersos que sigan tal distribución.
+- B. Más probable es encontrarse datos más dispersos que sigan tal distribución.
 
-C. La forma de la campana será más achatada.
+- C. La forma de la campana será más achatada.
 
-D. Las respuestas B y C son correctas. -> **Correcto**
+- D. Las respuestas B y C son correctas. -> **Correcto**
 
 ## Video 1: Fundamentos de probabilidad 
 
@@ -716,24 +687,24 @@ D. Las respuestas B y C son correctas. -> **Correcto**
 
 1. Para poder hablar propiamente de distribución muestral de un determinado
 estadístico…
-A. Tendremos que recoger una muestra de una población cualquiera.
+- A. Tendremos que recoger una muestra de una población cualquiera.
 
-B. Las observaciones que se recojan habrán de ser independientes.
+- B. Las observaciones que se recojan habrán de ser independientes.
 
-C. Las observaciones recogidas deben seguir la misma distribución que es la
-de la población de donde provienen.
+- C. Las observaciones recogidas deben seguir la misma distribución que es la de la población de donde provienen.
 
-D. **Las respuestas B y C son correctas** => **Correcto**
+- D. **Las respuestas B y C son correctas** => **Correcto**
 
 
 2. El arco circunflejo lo empleamos en estadística inferencial para…
-A. Designar un estadístico cualquiera que provenga de la muestra.
 
-B. Diferenciar el estadístico del parámetro poblacional.
+- A. Designar un estadístico cualquiera que provenga de la muestra.
 
-C. Indicar que es un estimador del parámetro.
+- B. Diferenciar el estadístico del parámetro poblacional.
 
-D. **Las respuestas B y C son correctas.** -> **Correcto**
+- C. Indicar que es un estimador del parámetro.
+
+- D. **Las respuestas B y C son correctas.** -> **Correcto**
 
 
 ### Explicación 🤓
@@ -749,13 +720,14 @@ Diferencia el estadístico del parámetro poblacional (B): Como consecuencia dir
 --- 
 
 3. p>
-A. El estimador de la probabilidad.
 
-B. El estimador de la proporción muestral.
+- A. El estimador de la probabilidad.
 
-C. **El estimador de la proporción poblacional.** -> **Correcto**
+- B. El estimador de la proporción muestral.
 
-D. Un parámetro de cierto tipo de variable aleatoria
+- C. **El estimador de la proporción poblacional.** -> **Correcto**
+
+- D. Un parámetro de cierto tipo de variable aleatoria
 
 
 ### Explicación 🤓
@@ -826,16 +798,12 @@ Como puedes ver, el nuevo error estándar es exactamente la mitad del original.
 
 **En resumen:** Al cuadruplicar el tamaño de la muestra, el error estándar se reduce a la mitad. Esto significa que muestras más grandes tienden a producir estimaciones más precisas de la media de la población.
 
-
-
-
 7. El error estándar es…
 
 - A. Un error típico que se comete cuando estimamos.
 - B. **La desviación típica de la media**. -> **Correcto**
 - C. Proporcional al ancho de la curva de la distribución muestral de la media.
 - D. Las respuestas B y C son correctas.
-
 
 8. Señala la frase correcta.
 
@@ -890,7 +858,6 @@ Como puedes ver, el nuevo error estándar es exactamente la mitad del original.
 
 - ¿Cómo afecta el tamaño de la muestra al Teorema Central del Límite?
 - Un tamaño de muestra mayor asegura que la distribución de la media muestral sea más cercana a la normal. => ya que mientras mayor sea el tamaño de la muestra, más cercana será la distribución de la media muestral a una distribución normal.
-
 
 - ¿Para qué se utiliza el Teorema Central del Límite en la estadística inferencial?
 - Para aproximar la distribución de una media muestral a una distribución normal, facilitando la inferencia estadística => ya que el TCL se utiliza en la inferencia estadística para aproximar la distribución de la media muestral a una normal, lo que permite hacer inferencias sobre la población.
@@ -1052,7 +1019,6 @@ cojamos
 - ¿Qué sucede con el intervalo de confianza de la varianza si la muestra es pequeña?
 -  El intervalo será más amplio debido a la mayor incertidumbre. = >ya que para muestras pequeñas, el intervalo de confianza de la varianza tiende a ser más amplio, reflejando la mayor incertidumbre en la estimación.
 
-
 ## Video 3: Tamaños de muestra
 
 - ¿Qué es necesario para calcular el tamaño de la muestra en un estudio?
@@ -1078,16 +1044,14 @@ cojamos
 
 - A. Para saber a ciencia cierta si una afirmación es verdadera.
 - B. Para saber con rigor matemático si una afirmación es falsa.
-- C. Para contrastar si una afirmación sobre una población parece cierta o no
-en base a los datos. -> **Correcto**
+- C. Para contrastar si una afirmación sobre una población parece cierta o no en base a los datos. -> **Correcto**
 - D. Las respuestas A y B son correctas.
 
 
 2. Generalmente el orden que seguimos en un contraste de hipótesis es…
 
 - A. Establecer primero la para que quede delimitada aproximadamente la
-- B. Plantearnos la hipótesis de rechazo para posteriormente fabricar su
-complementaria que es la hipótesis nula.
+- B. Plantearnos la hipótesis de rechazo para posteriormente fabricar su complementaria que es la hipótesis nula.
 
 - C. Negar la hipótesis alternativa para que surja la hipótesis nula.
 - D. Las respuestas B y C son correctas. -> **Correcto**
@@ -1095,13 +1059,9 @@ complementaria que es la hipótesis nula.
 
 3. ¿Cuántos diferentes planteamientos tenemos para la ?
 
-- A. Solo tenemos una opción de , ya que está totalmente delimitada por la
-hipótesis nula.
-- B. Generalmente consideramos tres clases, donde una viene asociada al
-contraste bilateral y las otras dos a los laterales izquierdo y derecho
-respectivamente. -> **Correcto**
-- C. Cuatro, correspondiendo a los tres casos indicados en B) más un bilateral
-del tipo (que por cierto es un tanto atípico).
+- A. Solo tenemos una opción de , ya que está totalmente delimitada por la hipótesis nula.
+- B. Generalmente consideramos tres clases, donde una viene asociada al contraste bilateral y las otras dos a los laterales izquierdo y derecho respectivamente. -> **Correcto**
+- C. Cuatro, correspondiendo a los tres casos indicados en B) más un bilateral del tipo (que por cierto es un tanto atípico).
 - D. Las respuestas B y C son correctas.
 
 4. ¿Con que tipo de frases interpretamos un contraste de hipótesis?
@@ -1121,8 +1081,7 @@ del tipo (que por cierto es un tanto atípico).
 
 6. ¿Qué es 1-B?
 
-- A. La probabilidad de que cometamos uno de los errores más graves que se
-pueden cometer.
+- A. La probabilidad de que cometamos uno de los errores más graves que se pueden cometer.
 - B. La potencia del contraste. -> **Correcto**
 - C. El otro gran error en los contrastes de hipótesis junto con .
 - D. Las respuestas B y C son correctas.
@@ -1225,15 +1184,12 @@ de la que provienen los datos empleamos
 - C. Si el error es mínimo respecto a la recta.
 - D. B y C son correctas.
 
-
-3. ¿Con que Test o pruebas podemos constrastar el modelo de 
-regresión?
+3. ¿Con que Test o pruebas podemos constrastar el modelo de regresión?
 
 - A. Con el y la T de Student.
 - B. Con la T-de Student y la Normalidad de la variable.
 - C. Con el ANOVA.
 - D. A y C son correctas. -> **Correcto**
-
 
 4. R2 equivale a:
 
@@ -1256,7 +1212,6 @@ regresión?
 - C. La constante. -> **Correcto**
 - D. A y C son correctas.
 
-
 7. En el ejemplo visto en el capítulo sobre las películas:
 
 - A. Las puntuaciones de IMDB eran la variable dependiente.
@@ -1271,7 +1226,6 @@ regresión?
 - B. Indicaría una falta de homocedasticidad. -> **Correcto**
 - C. Indicaría una falta de heterocedasticidad.
 - D. Ninguna de las anteriores
-
 
 9. Los errores del modelo conviene que sean casi todos elevados.
 
@@ -1288,8 +1242,6 @@ regresión?
 - D. No es cierto, consta de dos
 
 ## Video 1: Análisis de Varianza (ANOVA) en Regresión
-
-
 - ¿Qué se evalúa en un contraste de hipótesis aplicado a los parámetros de regresión?
 - Si los coeficientes de los parámetros son significativamente diferentes de cero. => ya que en un contraste de hipótesis aplicado a los parámetros de regresión, se evalúa si los coeficientes son significativamente diferentes de cero para determinar la relevancia de las variables independiente
 
@@ -1307,10 +1259,7 @@ regresión?
 - ¿Cuál es la interpretación de un coeficiente de regresión que es estadísticamente significativo?
 -  Que la variable independiente tiene un efecto significativo sobre la variable dependiente. => ya que un coeficiente de regresión estadísticamente significativo indica que la variable independiente tiene un efecto significativo sobre la variable dependiente.
 
-
-
 ## Video 2: Análisis de Varianza (ANOVA) en Regresión
-
 
 - ¿Cuál es el propósito del ANOVA en el contexto de la regresión?
 - Evaluar si el modelo de regresión explica una cantidad significativa de la variabilidad total en la variable dependiente. => ya que el ANOVA en regresión se utiliza para evaluar si el modelo de regresión explica una cantidad significativa de la variabilidad en la variable dependient
@@ -1326,7 +1275,6 @@ regresión?
 
 - ¿Qué indica un ?2 alto en un ANOVA de regresión?
 - Que una gran parte de la variabilidad en la variable dependiente es explicada por el modelo. => ya que un ?2 alto indica que el modelo de regresión explica una gran parte de la variabilidad de la variable dependiente.
-
 
 ## Video 3: Uso de R para Contrastes de Hipótesis en Regresión
 
@@ -1348,109 +1296,84 @@ regresión?
 # Tema 10. Análisis de componentes principales
 
 1. ¿Para qué sirve el análisis de componentes principales?
-A. Para obtener información de los datos.
 
-B. Para reducir la dimensión de los datos. -> **Correcto**
-
-C. Para aumentar la dimensión de los datos.
-
-D. Todo lo anterior es falso.
+-  A. Para obtener información de los datos.
+- B. Para reducir la dimensión de los datos. -> **Correcto**
+- C. Para aumentar la dimensión de los datos.
+- D. Todo lo anterior es falso.
 
 2. Los vectores de componentes principales:
-A. Se obtienen agregando los valores de las variables del modelo.
 
-B. Se obtienen utilizando datos externos al modelo.
-
-C. Sirven para aumentar la dimensión de los datos.
-
-D. B y C son correctas.
+- A. Se obtienen agregando los valores de las variables del modelo.
+- B. Se obtienen utilizando datos externos al modelo.
+- C. Sirven para aumentar la dimensión de los datos.
+- D. B y C son correctas.
 
 NOTA: El Análisis de Componentes Principales (PCA) es una técnica estadística que se utiliza principalmente para reducir la dimensionalidad de un conjunto de datos, es decir, disminuir el número de variables conservando la mayor cantidad de información posible.
 
 
 3. ¿Cuándo es una variable representativa del vector de componentes?
-A. Cuando el valor asociado es cercano a 1.
 
-B. Cuando el valor asociado es cercano a -1.
-
-C. Cuando el valor asociado es cercano a 0.
-
-D. A y B son ciertas.  -> **Correcto**
+- A. Cuando el valor asociado es cercano a 1.
+- B. Cuando el valor asociado es cercano a -1.
+- C. Cuando el valor asociado es cercano a 0.
+- D. A y B son ciertas.  -> **Correcto**
 
 
 4. ¿Qué componentes son las que representan el ruido en una imagen?
-A. Las cercanas a PC1.
 
-B. las cercanas al último PC. -> **Correcto**
-
-C. Todas.
+- A. Las cercanas a PC1.
+- B. las cercanas al último PC. -> **Correcto**
+- C. Todas.
 
 D. Ninguna.
 
 5. Para detectar cambios en un modelo de datos…
-A. Necesitamos distintos modelos de datos hechos en distintos tiempos o bajo
-distintas circunstancias. -> **Correcto**
 
-B. Solo necesitamos un único modelo de datos.
-
-C. Es necesario conocer la media.
-
-D. Todo lo anterior es falso.
+- A. Necesitamos distintos modelos de datos hechos en distintos tiempos o bajo distintas circunstancias. -> **Correcto**
+- B. Solo necesitamos un único modelo de datos.
+- C. Es necesario conocer la media.
+- D. Todo lo anterior es falso.
 
 
-6. ¿Qué sucede si reducimos el número de componentes principales a utilizar en
-nuestro modelo reducido?
-A. Perdemos precisión en los datos.
+6. ¿Qué sucede si reducimos el número de componentes principales a utilizar en nuestro modelo reducido?
 
-B. Reducimos la dimensión.
-
-C. A y B son ciertas. -> **Correcto**
-
-D. A y B son falsas.
+- A. Perdemos precisión en los datos.
+- B. Reducimos la dimensión.
+- C. A y B son ciertas. -> **Correcto**
+- D. A y B son falsas.
 
 
 7. ¿Cómo calculamos el modelo de datos reducido a partir del vector de
 componentes?:
-A. Multiplicando cada individuo por la suma de los valores del vector de
-componentes principales.
-
-B. Multiplicando cada valor de la variable de cada individuo por la derivada del
-vector de componentes.
-
-C. Generamos el valor agregado asociado a cada individuo multiplicando
-cada valor del vector de componentes por la variable asociada y sumando el
-resultado.  -> **Correcto**
-
-D. Aplicando A y luego B.
+- A. Multiplicando cada individuo por la suma de los valores del vector de componentes principales.
+- B. Multiplicando cada valor de la variable de cada individuo por la derivada del vector de componentes.
+- C. Generamos el valor agregado asociado a cada individuo multiplicando cada valor del vector de componentes por la variable asociada y sumando el resultado.  -> **Correcto**
+- D. Aplicando A y luego B.
 
 
 8. Si nos atenemos al número de variables a representar, ¿qué gráfica de dispersión es más fácil de entender e interpretar?:
-A. Una con 2 dimensiones. -> **Correcto**
 
-B. Una con 3 dimensiones.
-
-C. Una con 4 dimensiones.
-
-D. Ninguna de las anteriores.
+- A. Una con 2 dimensiones. -> **Correcto**
+- B. Una con 3 dimensiones.
+- C. Una con 4 dimensiones.
+- D. Ninguna de las anteriores.
 
 
-9. ¿Qué función de R hemos utilizado para poder calcular el vector de análisis de
-componentes?
-A. matrix.
+9. ¿Qué función de R hemos utilizado para poder calcular el vector de análisis de componentes?
 
-B. prcomp. -> **Correcto**
-
-C. plot.
-
-D. Ninguna de las anteriores.
+- A. matrix.
+- B. prcomp. -> **Correcto**
+- C. plot.
+- D. Ninguna de las anteriores.
 
 
 10. ¿Si tenemos un modelo de datos con 5 variables, ¿cuántos vectores de
 componente principal generará el algoritmo?
-A. 5.
-B. 6.
-C. 7. -> **Correcto**
-D. 2.
+- A. 5.
+- B. 6.
+- C. 7. -> **Correcto**
+- D. 2.
 
 
 ## Video 1:  Motivación y Fundamentos del Análisis de Componentes Principales
@@ -1464,13 +1387,12 @@ D. 2.
 - ¿Por qué es útil el PCA en conjuntos de datos con muchas variables?
 - Porque permite simplificar el análisis al reducir el número de variables a una cantidad manejable. => ya que el PCA simplifica los datos al reducir el número de variables, lo que facilita el análisis de grandes conjuntos de datos.
 
-
 - ¿Cuál es una de las principales ventajas del PCA?
 - Ayuda a reducir el problema de multicolinealidad entre las variables. => ya que el PCA reduce la multicolinealidad al crear componentes que son ortogonales entre sí.
 
 - ¿Qué criterio se utiliza para ordenar los componentes principales en PCA?
 -  Por la cantidad de varianza explicada, siendo el primer componente el que más varianza explica. => ya que los componentes principales se ordenan en función de la varianza que explican, siendo el primero el que explica la mayor cantidad de varianza.
-ile
+  
 ## Video 2: Aplicaciones del Análisis de Componentes Principales
 
 - ¿En qué tipo de problemas es común utilizar el PCA?
@@ -1482,10 +1404,8 @@ ile
 - ¿Qué aplicación tiene el PCA en la biología genética?
 - Reduce la dimensionalidad de los datos genéticos al analizar miles de genes simultáneamente. => ya que en estudios genéticos el PCA se utiliza para reducir la dimensionalidad de grandes cantidades de datos, como los que provienen de análisis de genes.
 
-
 - ¿Cómo se puede aplicar el PCA en el análisis financiero?
 -  Identificar los factores principales que influyen en el rendimiento de varios activos financieros. => ya que en el análisis financiero el PCA se usa para identificar los principales factores que explican la variabilidad en los rendimientos de diferentes activos financieros.
-
 
 - ¿Qué ventaja ofrece el PCA en el procesamiento de datos de sensores?
 - Facilita la detección de patrones clave reduciendo el ruido y la redundancia entre las señales. =>  ya que el PCA puede ayudar a reducir el ruido y la redundancia en los datos recolectados por sensores, permitiendo un análisis más eficiente.
@@ -1499,14 +1419,10 @@ ile
 - ¿Qué tipo de datos se deben pasar a la función prcomp() para realizar un PCA en R?
 - Un conjunto de datos numéricos donde se desee reducir la dimensionalidad. => ya que el PCA se aplica a conjuntos de datos numéricos para reducir su dimensionalidad.
 
-
 - ¿Cuál es el propósito de un scree plot en el PCA?
 - Visualizar la cantidad de varianza explicada por cada componente principal y ayudar a decidir cuántos componentes mantener. =>  ya que el scree plot muestra la varianza explicada por cada componente principal y ayuda a identificar cuántos componentes principales son suficientes para capturar la mayor parte de la variabilidad en los datos.
 
-
 - ¿Qué salida importante proporciona la función summary() cuando se aplica a un objeto generado por prcomp()?
 - La proporción de la varianza explicada por cada componente principal. => a que la función summary() aplicada al objeto generado por prcomp() proporciona la proporción de la varianza explicada por cada componente principal.
-
-
 - ¿Cuál es un paso previo importante antes de realizar el PCA en un conjunto de datos en R?
 - Escalar los datos para que todas las variables tengan la misma unidad de medida.
