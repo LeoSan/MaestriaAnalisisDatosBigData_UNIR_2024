@@ -107,12 +107,12 @@ if (edad < 30){
     - facilita operaciones de filtrado ó promediar o sumar 
 
 ## Matrices
-- Concepto: Son extensiones de los vectores y son usadas para organizar datos en dos dimensiones Filas y Columnas 
-- son utiles para representar datos tabulares
+    - Concepto: Son extensiones de los vectores y son usadas para organizar datos en dos dimensiones Filas y Columnas 
+    - son utiles para representar datos tabulares
 
 ## Estrcutura de Control 
-- Permiten la manipulación de los datos
-- Permite generar bucles para poder alcanzar el valor almacenado en vectores o matrices.
-- Radica en la capacidad de automatizar procesos
-- condicionales :  (if, else, else if)
-- Bucles : (for, while)
+    - Permiten la manipulación de los datos
+    - Permite generar bucles para poder alcanzar el valor almacenado en vectores o matrices.
+    - Radica en la capacidad de automatizar procesos
+    - condicionales :  (if, else, else if)
+    - Bucles : (for, while)
