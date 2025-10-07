@@ -7,7 +7,7 @@ Instalar R y RStudio es como montar tu estación de trabajo de análisis de dato
 
 ### Paso 1: Instalar R (el Lenguaje y Entorno Base) Para MAC 
 
-1.  **Ve a la página oficial de R:** Abre tu navegador web y dirígete a:
+1.  **Ve a la página oficial de R:** Abre tu navegador web y dirígete a:.
     [https://www.r-project.org/](https://posit.co/download/rstudio-desktop/)
 
 2.  En el enlace nos permite descargar su IDE y el lenguaje 
@@ -19,9 +19,83 @@ Instalar R y RStudio es como montar tu estación de trabajo de análisis de dato
 
 ## Configuración del entorno en RStudio
 
+
+
+
 **Notas**
 - Es muy básica la configuracion podemos acceder en ella busando tools/ configuracion global 
 - Imagen de Ejemplo
 - [ejemplo](../info/info_001.png)
+- Creadores Ross y Robert
 
 # Modulo 2
+
+## Unidad 2.1: 
+- Se realiza la explicación de como generar operaciones basicas en este lenguaje:
+
+```R
+
+print("Hola mundo R")
+
+# Declaraciones 
+x<-10
+y<-5 
+
+
+# Operaciones 
+suma <-x+y
+resta <-x-y
+multi <-x*y
+divi <-x/y
+
+
+# Como mostrar en consola 
+print(suma)
+print(resta)
+print(multi)
+print(divi)
+
+# Cadenas String 
+
+texto1 <- "Hol R"
+print(texto1)
+
+nombre <- "Juan"
+saludo <- paste("Hola, ", nombre)
+edad <- 37
+print(saludo)
+
+frase <- paste("Esto", "es", "R", sep='-')
+print(frase)
+
+## Mayusculas y Minusculas 
+print(toupper(frase))
+print(tolower(frase))
+
+mensaje <- sprintf("Hola mi nombre es %s y tengo %d años", nombre, edad )
+print(mensaje)  
+  
+## Valores Booleanos 
+falso <-FALSE 
+verdad <-TRUE
+
+
+## Bloque codicional 
+
+if (edad < 30){
+  
+  print('Felicidades aun no llegas al tercer piso')
+  
+}else{
+  
+  print('Felicidades llegaste al terce piso ')
+}
+
+
+
+
+
+
+
+```
+
