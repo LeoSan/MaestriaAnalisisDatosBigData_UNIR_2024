@@ -91,11 +91,28 @@ if (edad < 30){
   print('Felicidades llegaste al terce piso ')
 }
 
-
-
-
-
-
-
 ```
 
+## Unidad 2.2: Estructura de Datos en R. 
+
+## Importancia de Estrcutura de datos 
+- Son cruciales en al gestion de grande volumes de datos
+- Permiten organizar y acceder a la información de manera eficiencte
+- Ejemplo de Uso: Calcular Promedios, varianzas o realizar simulaciones
+
+ ## Tipos: 
+ ## Vectores: 
+    - Concepto: son secuencias de elementos  que comparten el mismo tipo de datos. 
+    - Podemos almacenar y operar  multiples datos de manera simultanea. 
+    - facilita operaciones de filtrado ó promediar o sumar 
+
+## Matrices
+- Concepto: Son extensiones de los vectores y son usadas para organizar datos en dos dimensiones Filas y Columnas 
+- son utiles para representar datos tabulares
+
+## Estrcutura de Control 
+- Permiten la manipulación de los datos
+- Permite generar bucles para poder alcanzar el valor almacenado en vectores o matrices.
+- Radica en la capacidad de automatizar procesos
+- condicionales :  (if, else, else if)
+- Bucles : (for, while)
