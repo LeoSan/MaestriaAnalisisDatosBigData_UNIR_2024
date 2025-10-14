@@ -116,3 +116,125 @@ if (edad < 30){
     - Radica en la capacidad de automatizar procesos
     - condicionales :  (if, else, else if)
     - Bucles : (for, while)
+
+
+
+## 2.3  VECTORES Y MATRICES EN R 
+
+´´´R
+
+
+# Vector 
+# Notas 
+# Los vectores son de un mismo tipo
+vector_1 <-c(1,2,3,4,5)
+vector 
+
+
+vector_2 <-c("hola", "soy", "Vector", "Caracteres")
+vector_2
+
+## Valores secuencial 
+
+a<- 1:10
+a 
+
+
+## Valores repetidos 
+b<-rep(5, times=10)
+b
+
+
+## Valor metodo rep con c de concatenar 
+c <-rep(c(1,2), times=4)
+c 
+
+## Metodo each 
+
+d<-rep(c(1,2), each = 3)
+d
+
+e<-rep(c(1,2), times = 2, each = 3)
+e
+
+## Controlar la salida con el elemento length.out = 8
+f<-rep(1:3, length.out = 8)
+f
+
+
+## acceder por posiciones 
+g<-c("a", "b", "c")
+g[0:2]
+
+
+## Metodo de Secuencia seq(from, to, by, length.out)
+
+seq(1,10,2)
+
+
+
+## acceder por posiciones 
+h<-c("a", "b", "c", "d", "f")
+h[seq(1,4, by=2)]
+
+## Graficos integrados 
+x<-seq(0,2*pi, length.out =100)
+y<-sin(x)
+
+#plot(x,y,type="1")
+
+
+## Puedes usar logica dentro de los corchetes del vector
+v<-c(10,20,30,40,50,60,70)
+v[v>25]
+v[v %% 20==0 ]
+
+v[2]<-99
+v
+
+## mean la media aritmetica, sd => desviacion standart
+mean(v)
+sd(v)
+sort(v)
+summary(v)
+
+
+## Como usar Matrix se usa la palabra matrix(data, nrow, ncol, byrow=FALSE)
+
+m<-matrix(1:6, nrow=2, ncol=3)
+m
+
+n<-matrix(1:8, nrow=2, ncol=3, byrow=FALSE)
+n
+
+## Como accedemos 
+
+n[1,3] = 99
+n
+
+## Validr dimenciones usamos el metodo dim()
+dim(n)
+ncol(n)
+nrow(n)
+
+## Tambien podemos ejecutar operaciones entre matrices 
+m +n
+m -n
+m *n
+
+´´´
+
+## EJERCICIO 
+
+Estructuraría una matriz donde cada fila representaría un mes, y cada columna representaría una ciudad. Los valores dentro de la matriz serían los precios de las viviendas para ese mes y ciudad específica. Por ejemplo:
+precios <- matrix(c(250000, 255000, 260000, 258000, 320000, 325000, 328000, 330000, 450000, 452000, 455000, 458000), nrow = 4, byrow = FALSE)
+Le daré nombre a las filas y columnas:
+colnames(precios) <- c("Barcelona", "Puerto la Cruz", "Lecheria")
+rownames(precios) <- c("Ene-25", "Feb-25", "Mar-25", "Abr-25")
+Para calcular la variación mensual, se necesitan funciones que permitan realizar operaciones entre las filas de la matriz, que lo haría en R así:
+# Calcular la variación porcentual mensual
+variacion_mensual <- (precios[2:nrow(precios), ] - precios[1:(nrow(precios)-1), ]) / precios[1:(nrow(precios)-1), ] * 100
+# Añadir nombres de filas para la matriz de resultados
+rownames(variacion_mensual) <- rownames(precios)[2:nrow(precios)]
+# Imprimir la matriz de variaciones
+print(variacion_mensual)
