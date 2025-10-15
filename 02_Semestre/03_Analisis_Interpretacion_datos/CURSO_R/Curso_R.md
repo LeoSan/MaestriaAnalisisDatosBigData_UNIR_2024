@@ -18,10 +18,6 @@ Instalar R y RStudio es como montar tu estación de trabajo de análisis de dato
     - Ejeuctamos IDE [RStudio-2025.05.1-513.dmg] Este se instala arrastrando el dmg a la carpeta de de aplicaciones en pocas palabras es el IDE para R te permite codificar y escribir RMarkDown 
 
 ## Configuración del entorno en RStudio
-
-
-
-
 **Notas**
 - Es muy básica la configuracion podemos acceder en ella busando tools/ configuracion global 
 - Imagen de Ejemplo
@@ -30,7 +26,7 @@ Instalar R y RStudio es como montar tu estación de trabajo de análisis de dato
 
 # Modulo 2
 
-## Unidad 2.1: 
+# Unidad 2.1: 
 - Se realiza la explicación de como generar operaciones basicas en este lenguaje:
 
 ```R
@@ -93,7 +89,7 @@ if (edad < 30){
 
 ```
 
-## Unidad 2.2: Estructura de Datos en R. 
+# Unidad 2.2: Estructura de Datos en R. 
 
 ## Importancia de Estrcutura de datos 
 - Son cruciales en al gestion de grande volumes de datos
@@ -119,13 +115,12 @@ if (edad < 30){
 
 
 
-## 2.3  VECTORES Y MATRICES EN R 
+## VECTORES Y MATRICES EN R 
 
 ´´´R
 
 
-# Vector 
-# Notas 
+
 # Los vectores son de un mismo tipo
 vector_1 <-c(1,2,3,4,5)
 vector 
@@ -238,3 +233,138 @@ variacion_mensual <- (precios[2:nrow(precios), ] - precios[1:(nrow(precios)-1), 
 rownames(variacion_mensual) <- rownames(precios)[2:nrow(precios)]
 # Imprimir la matriz de variaciones
 print(variacion_mensual)
+
+
+## Operadores aritméticos, lógicos y relacionales
+
+
+```R
+# Asignamos valores a dos variables
+a <- 10
+b <- 3
+
+# Suma (+)
+suma <- a + b
+print(paste("Suma:", suma))  # Salida: 13
+
+# Resta (-)
+resta <- a - b
+print(paste("Resta:", resta)) # Salida: 7
+
+# Multiplicación (*)
+multiplicacion <- a * b
+print(paste("Multiplicación:", multiplicacion)) # Salida: 30
+
+# División (/)
+division <- a / b
+print(paste("División:", division)) # Salida: 3.333...
+
+# Exponenciación (^)
+potencia <- a ^ 2
+print(paste("Potencia:", potencia)) # Salida: 100
+
+# Módulo (%%) - Devuelve el resto de una división
+modulo <- a %% b
+print(paste("Módulo:", modulo)) # Salida: 1
+
+
+## Operadores Relacionales
+
+x <- 5
+y <- 12
+
+# Mayor que (>)
+print(paste("¿x es mayor que y?:", x > y)) # Salida: FALSE
+
+# Menor que (<)
+print(paste("¿x es menor que y?:", x < y)) # Salida: TRUE
+
+# Igual a (==) - ¡Ojo! Se usan dos signos de igual.
+print(paste("¿x es igual a y?:", x == y)) # Salida: FALSE
+
+# No es igual a (!=)
+print(paste("¿x no es igual a y?:", x != y)) # Salida: TRUE
+
+# Mayor o igual que (>=)
+print(paste("¿y es mayor o igual que x?:", y >= x)) # Salida: TRUE
+
+# Menor o igual que (<=)
+print(paste("¿x es menor o igual que 5?:", x <= 5)) # Salida: TRUE
+
+## Operaciones Logicas
+
+p <- TRUE
+q <- FALSE
+
+# AND (& o &&) - Devuelve TRUE solo si ambas condiciones son verdaderas.
+print(paste("p Y q es:", p & q))   # Salida: FALSE
+print(paste("p Y TRUE es:", p & TRUE)) # Salida: TRUE
+
+# OR (| o ||) - Devuelve TRUE si al menos una de las condiciones es verdadera.
+print(paste("p O q es:", p | q)) # Salida: TRUE
+print(paste("FALSE O q es:", FALSE | q)) # Salida: FALSE
+
+# NOT (!) - Invierte el valor lógico.
+print(paste("NO p es:", !p)) # Salida: FALSE
+print(paste("NO q es:", !q)) # Salida: TRUE
+```
+
+## La Estructura if, else if, else
+Esta es la forma más clásica de tomar decisiones. Evalúa una condición y, si es verdadera, ejecuta un bloque de código. Puedes anidar varias condiciones para manejar múltiples escenarios.
+
+Piensa en ello como dar instrucciones basadas en el clima: Si llueve, llevas paraguas. Si no, pero si está nublado, llevas una chaqueta. Si no, llevas gafas de sol.
+
+```R
+# Ejemplo: Calificar el desempeño de un estudiante
+nota <- 85
+
+if (nota >= 90) {
+  print("Excelente, ¡tienes una A! 🏆")
+} else if (nota >= 80) {
+  print("Muy bien, tienes una B. 👍")
+} else if (nota >= 70) {
+  print("Aprobado, tienes una C.")
+} else {
+  print("Necesitas estudiar más, no aprobaste. 📚")
+}
+
+# Salida en este caso: "Muy bien, tienes una B. 👍"
+```
+
+La Función ifelse()
+Esta es una versión compacta y muy útil del if-else, especialmente para trabajar con vectores (listas de datos). Aplica una condición a cada elemento de un vector y devuelve un resultado diferente dependiendo de si la condición es TRUE o FALSE.
+
+```R
+# Ejemplo: Clasificar números como pares o impares en un vector
+numeros <- c(1, 4, 7, 10, 12, 15)
+
+# Usamos el operador módulo (%%) para ver si el resto de la división por 2 es 0
+resultado <- ifelse(numeros %% 2 == 0, "Par", "Impar")
+
+print(resultado)
+
+# Salida: "Impar" "Par" "Impar" "Par" "Par" "Impar"
+```
+
+La Estructura switch()
+Es ideal cuando tienes una variable que puede tomar varios valores específicos y quieres ejecutar una acción diferente para cada uno. Es más limpio y legible que usar muchos else if.
+
+```R
+# Ejemplo: Asignar una actividad según el día de la semana
+dia <- "Martes"
+
+actividad <- switch(dia,
+  "Lunes"   = "Empezar la semana con energía.",
+  "Martes"  = "Reunión de equipo a las 10 AM.",
+  "Miércoles" = "Día de análisis de datos.",
+  "Jueves"  = "Planificar el fin de semana.",
+  "Viernes" = "¡Día de pizza! 🍕",
+  "Sábado"  = "Descansar o hacer ejercicio.",
+  "Domingo" = "Prepararse para la nueva semana.",
+  "Día no válido." # Valor por defecto si no coincide ninguno
+)
+
+print(actividad)
+
+# Salida: "Reunión de equipo a las 10 AM."
+```
