@@ -28,7 +28,7 @@ sns.set_palette("husl")
 def main():
     # PASO 0: IMPORTACIÓN DEL DATASET
     print("\n🎯 Paso 0: ----------------- Importamos el DataSet de Esperanza de Vida:------------------ 🎯")
-    
+
     try:
         url_descarga_directa = 'https://drive.google.com/uc?export=download&id=1EFa-JqAtrXtL1BrYP_mfxFVgAsADd_jn'
         df = pd.read_csv(url_descarga_directa, sep=',')
@@ -41,13 +41,13 @@ def main():
 
     # PASO 1: PREPROCESAMIENTO DE DATOS (PARA EDA Y MODELADO)
     print("\n🎯 Paso 1: ------------ Preprocesamiento Inicial de Datos ------------------------ 🎯")
-    df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('-', '_').str.replace('.', '', regex=False).str.lower()    
+    df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('-', '_').str.replace('.', '', regex=False).str.lower()
 
     numerical_cols_for_eda = [
-        'life_expectancy', 'adult_mortality', 'infant_deaths', 'alcohol', 
-        'percentage_expenditure', 'hepatitis_b', 'measles', 'bmi', 
-        'under_five_deaths', 'polio', 'total_expenditure', 'diphtheria', 
-        'hiv/aids', 'gdp', 'population', 'thinness__1_19_years', 
+        'life_expectancy', 'adult_mortality', 'infant_deaths', 'alcohol',
+        'percentage_expenditure', 'hepatitis_b', 'measles', 'bmi',
+        'under_five_deaths', 'polio', 'total_expenditure', 'diphtheria',
+        'hiv/aids', 'gdp', 'population', 'thinness__1_19_years',
         'thinness_5_9_years', 'income_composition_of_resources', 'schooling', 'year'
     ]
     categorical_cols_for_eda = ['country', 'status']
@@ -70,7 +70,7 @@ def main():
     print("\n📋 Depurando: Primeras 5 filas del dataset después de limpieza y imputación:")
     print(df.head())
     print("\n📋 Depurando: INFORMACIÓN DETALLADA DESPUÉS DE LIMPIEZA Y IMPUTACIÓN:")
-    print(df.info())    
+    print(df.info())
     print("\n📋 Depurando: Nombres de columnas después de la limpieza y imputación:")
     print(df.columns.tolist())
     print("\n📋 Depurando: Forma del DataFrame después de la limpieza y imputación:", df.shape)
@@ -92,7 +92,7 @@ def main():
 
     # 2. Caracterización Gráfica (mantener en tu archivo)
     print("\n--- 2.1: Histogramas para variables clave (se mostrarán ventanas de gráficos) ---")
-    plt.figure(figsize=(15, 10)) 
+    plt.figure(figsize=(15, 10))
     plt.subplot(2, 2, 1)
     sns.histplot(df['life_expectancy'], kde=True)
     plt.title('Distribución de la Esperanza de Vida')
@@ -151,7 +151,7 @@ def main():
 
     print("\n--- 2.4: Mapa de Calor de Correlación (se mostrará ventana de gráfico) ---")
     plt.figure(figsize=(12, 10))
-    cols_for_heatmap = ['life_expectancy', 'adult_mortality', 'infant_deaths', 'gdp', 'schooling', 
+    cols_for_heatmap = ['life_expectancy', 'adult_mortality', 'infant_deaths', 'gdp', 'schooling',
                         'hiv/aids', 'income_composition_of_resources', 'bmi', 'alcohol']
     sns.heatmap(df[cols_for_heatmap].corr(), annot=True, cmap='coolwarm', fmt=".2f", linewidths=.5)
     plt.title('Mapa de Calor de Correlación de Características Seleccionadas')
@@ -178,7 +178,7 @@ def main():
     # 3.3 Ajustar el ColumnTransformer para el modelado (incluirá escalado para NN)
     categorical_features_model = ['country', 'status']
     numerical_features_model = [col for col in X.columns if col not in categorical_features_model]
-    
+
     # Para Redes Neuronales, ES ALTAMENTE RECOMENDABLE escalar las características numéricas.
     # Usaremos StandardScaler.
     preprocessor_model = ColumnTransformer(
@@ -187,13 +187,13 @@ def main():
             ('num', StandardScaler(), numerical_features_model) # APLICAMOS StandardScaler aquí
         ],
         remainder='drop',
-        sparse_threshold=0 
+        sparse_threshold=0
     )
 
     print("\n📋 Depurando: ColumnTransformer para modelado configurado (con StandardScaler para numéricas).")
 
     X_train_processed = preprocessor_model.fit_transform(X_train)
-    X_test_processed = preprocessor_model.transform(X_test) 
+    X_test_processed = preprocessor_model.transform(X_test)
 
     one_hot_feature_names_model = preprocessor_model.named_transformers_['cat'].get_feature_names_out(categorical_features_model)
     all_feature_names_model = list(one_hot_feature_names_model) + numerical_features_model
@@ -216,8 +216,8 @@ def main():
 
     # 3.5 Probar el Modelo y Evaluar (Random Forest)
     print("\n--- 3.5: Evaluando el Modelo Random Forest ---")
-    y_pred_train_rf = rf_model.predict(X_train_final) 
-    y_pred_test_rf = rf_model.predict(X_test_final)   
+    y_pred_train_rf = rf_model.predict(X_train_final)
+    y_pred_test_rf = rf_model.predict(X_test_final)
 
     mae_test_rf = mean_absolute_error(y_test, y_pred_test_rf)
     mse_test_rf = mean_squared_error(y_test, y_pred_test_rf)
@@ -239,27 +239,27 @@ def main():
 
     # 4.1 Definir la Arquitectura de la Red Neuronal
     print("\n--- 4.1: Definiendo la Arquitectura de la Red Neuronal ---")
-    
+
     # El número de neuronas en la capa de entrada es el número de características después del preprocesamiento
-    input_shape = (X_train_final.shape[1],) 
+    input_shape = (X_train_final.shape[1],)
 
     model_nn = Sequential([
         # Capa de Entrada: Define la forma de los datos de entrada
         # No tiene neuronas per se, pero establece el 'input_shape'
-        keras.Input(shape=input_shape), 
-        
+        keras.Input(shape=input_shape),
+
         # Primera Capa Intermedia (oculta)
         # 64 neuronas, función de activación ReLU para introducir no-linealidad
         layers.Dense(64, activation='relu', name='hidden_layer_1'),
-        
+
         # Segunda Capa Intermedia (oculta)
         # 32 neuronas, función de activación ReLU
         layers.Dense(32, activation='relu', name='hidden_layer_2'),
-        
+
         # Capa de Salida
         # 1 neurona para la regresión (una sola salida numérica)
         # Función de activación 'linear' (o ninguna) para obtener valores reales continuos
-        layers.Dense(1, activation='linear', name='output_layer') 
+        layers.Dense(1, activation='linear', name='output_layer')
     ])
 
     print("✅ Arquitectura de la Red Neuronal definida.")
@@ -290,7 +290,7 @@ def main():
     print("\n--- 4.4: Evaluando el Modelo de Red Neuronal en el Conjunto de Prueba ---")
     # .evaluate() devuelve la pérdida y las métricas configuradas durante la compilación
     loss_nn, mae_nn = model_nn.evaluate(X_test_final, y_test, verbose=0)
-    
+
     # Para calcular el R2 Score, necesitamos las predicciones
     y_pred_nn = model_nn.predict(X_test_final).flatten() # .flatten() convierte el array 2D de salida (n_samples, 1) a 1D
 
@@ -330,6 +330,6 @@ def main():
 
     print("\n🎯 Fin del Modelo de Red Neuronal para Regresión 🎯")
     # --- FIN: PASO 4 ---
-    
+
 if __name__ == "__main__":
     main()
