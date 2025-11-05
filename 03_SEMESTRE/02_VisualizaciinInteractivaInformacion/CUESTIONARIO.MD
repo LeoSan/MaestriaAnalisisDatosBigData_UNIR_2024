@@ -63,6 +63,8 @@
 - C. Tras ser mostrado de una manera visual y atractiva.
 - D. Ninguna de las tres.
 
+--- 
+
 ## VIDEO 1 : 
 
 - La infografía y la visualización de datos tienen como objetivo principal:
@@ -80,6 +82,7 @@
 - ¿Puede una infografía o visualización ayudarnos a descubrir patrones entre los datos?:
 -  Sin duda. => Una de las características principales de ambas representaciones es descubrir patrones y relaciones entre los datos que a simple vista o analizando los datos por separado no somos capaces de captar. De ahí el objetivo de la infografía.
 
+--- 
 ## Videoclase 2. La importancia de la Visualización.
 
 - Es importante la rapidez a la hora de obtener la información de una visualización:
@@ -97,6 +100,7 @@
 - ¿En el proceso de investigación debemos guardar solo datos o también imágenes?:
 - Cualquier tipo de documento o dato relevante. => Debemos guardar cualquier tipo de dato que pueda servirnos para transmitir aquella información relevante para el mensaje que queremos transmitir.
 
+--- 
 ## Videoclase 3. Etapas de la Visualización.
 
 - ¿Cuáles son las fases para crear una buena visualización?:
@@ -116,8 +120,7 @@
 - ¿Es importante el último paso de la elaboración de la visualización donde haremos la recepción y el conocimiento?:
 - Sí lo es, pues debemos comprobar que nuestra visualización es correcta y la información es legible de un simple vistazo.
 
-
-
+--- 
 ## Tema 2. Historia de la visualización de datos
 
 
