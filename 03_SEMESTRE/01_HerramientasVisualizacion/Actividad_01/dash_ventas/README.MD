@@ -1,30 +1,28 @@
+# Estructura del proyecto
 
-# Estructura del proyecto 
-
-1. **Explicación Diagrama**
-    
-    /mi-dashboard
+```
+/mi-dashboard
+│
+├── node_modules/         <-- (Carpeta creada por npm install)
+│
+├── package.json          <-- (¡Muy importante! Revisa el Paso 2)
+├── package-lock.json
+│
+├── server.js             <-- (Tu servidor Express)
+│
+└── /public               <-- (La carpeta que servirá Express)
     │
-    ├── node_modules/         <-- (Carpeta creada por npm install)
+    ├── index.html
     │
-    ├── package.json          <-- (¡Muy importante! Revisa el Paso 2)
-    ├── package-lock.json
+    ├── app.js            <-- (Este será nuestro "orquestador" principal)
     │
-    ├── server.js             <-- (Tu servidor Express)
-    │
-    └── /public               <-- (La carpeta que servirá Express)    
-        │
-        ├── index.html
-        │
-        ├── app.js       <-- (Este será nuestro "orquestador" principal)
-        │
-        ├── /js          
-        │    ├── google-chart.js
-        │    └── d3-chart.js
-        └── /css          
-            ├── global.css      <-- Archivo de limpieza css 
-            └── dash_venta.css  <-- Archivo genera los estilos del dashboard       
-
+    ├── /js
+    │    ├── google-chart.js
+    │    └── d3-chart.js
+    └── /css
+         ├── global.css      <-- Archivo de limpieza css
+         └── dash_venta.css  <-- Archivo genera los estilos del dashboard
+```
 
 # Pasos para iniciar un proyecto en Node.js
 
@@ -55,19 +53,19 @@
      ```
 
 4. **Crear el archivo principal**:
-   - Crea un archivo principal, como `index.js`, y escribe el código inicial del servidor o aplicación.
+   - Crea un archivo principal, como `server.js`, y escribe el código inicial del servidor o aplicación.
 
 5. **Ejecutar el proyecto**:
    - Ejecuta el archivo principal con Node.js:
      ```bash
-     node index.js
+     npm run dev 
      ```
 
 6. **Configurar un archivo `.gitignore`**:
    - Asegúrate de incluir un archivo `.gitignore` para excluir archivos y carpetas innecesarias como `node_modules/`.
 
 
-7. **Instalar herramientas adicionales (opcional)**:
+7. **Instalar herramientas adicionales**:
    - Instala nodemon para reiniciar automáticamente el servidor durante el desarrollo:
      ```bash
      npm install --save-dev nodemon
@@ -98,4 +96,4 @@
     - Desarrollo Bak - Codificación  
         - Descripción: 
         - Paradigma: 
-        - Patron de Diseño: 
+        - Patron de Diseño:
