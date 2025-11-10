@@ -1,68 +1,46 @@
 import express from "express";
+import path from "path";
+import fs from "fs/promises";
+import dotenv from "dotenv";
+
+// Cargo las variables de entorno del archivo .env
+dotenv.config(); 
+
+// __dirname no está disponible directamente con ES Modules, lo creamos
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = 3000;
+// Obtener el nombre del archivo del .env, con un fallback por si no se define
+const salesDataFilename = process.env.SALES_DATA_FILENAME || 'ventas.json';
 
-// Tu JSON de datos. (En el futuro esto vendría de una DB)
-const data = [
-  {
-    producto: "Smartphone A",
-    mes: "Enero",
-    ventas: 120,
-    ingresos: 24000,
-    precio: 200,
-  },
-  {
-    producto: "Smartphone B",
-    mes: "Enero",
-    ventas: 85,
-    ingresos: 17000,
-    precio: 200,
-  },
-  {
-    producto: "Tablet X",
-    mes: "Enero",
-    ventas: 60,
-    ingresos: 18000,
-    precio: 300,
-  },
-  {
-    producto: "Smartphone A",
-    mes: "Febrero",
-    ventas: 150,
-    ingresos: 30000,
-    precio: 200,
-  },
-  {
-    producto: "Smartphone B",
-    mes: "Febrero",
-    ventas: 90,
-    ingresos: 18000,
-    precio: 200,
-  },
-  {
-    producto: "Tablet X",
-    mes: "Febrero",
-    ventas: 70,
-    ingresos: 21000,
-    precio: 300,
-  },
-];
+// 1. Servir los archivos estáticos (HTML, CSS, JS, imágenes, ¡y el JSON!) de la carpeta 'public'
+app.use(express.static(path.join(__dirname, "public")));
 
-// --- TAREAS DEL SERVIDOR ---
+// 2. Genero la API para leer el JSON desde el archivo
+app.get("/api/data", async (req, res) => {
+    console.log("Petición recibida en /api/data");
+    const filePath = path.join(__dirname, "public", "datos", salesDataFilename);
+    console.log(`Intentando leer datos de: ${filePath}`);
 
-// 1. Servir los archivos estáticos (HTML, CSS, JS) de la carpeta 'public'
-// Esto es lo que permite que index.html se cargue.
-app.use(express.static("public"));
+    try {
+        // Leo el archivo de forma asíncrona
+        const data = await fs.readFile(filePath, "utf8");
 
-// 2. Crear la API para simular la "fuente externa"
-// Esto es lo que 'data-service.js' va a llamar.
-app.get("/api/data", (req, res) => {
-  console.log("Petición recibida en /api/data");
-  res.json(data);
+        // Convierto el contenido JSON y enviarlo como respuesta
+        res.json(JSON.parse(data));
+        console.log("Datos de ventas.json servidos exitosamente.");
+    } catch (error) {
+        console.error("Error al leer ventas.json:", error);
+        res.status(500).json({
+            error: "No se pudieron obtener los datos de ventas. ❌",
+        });
+    }
 });
 
 // 3. Iniciar el servidor
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
