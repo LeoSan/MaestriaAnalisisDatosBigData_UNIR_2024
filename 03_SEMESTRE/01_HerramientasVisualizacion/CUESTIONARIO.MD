@@ -143,3 +143,31 @@ document.getElementById(‘demo’).innerHTML = ‘Hola, Mundo!’;
 
 -
 -
+
+## Tema 2. Historia de la visualización de datos
+
+
+
+## Tema 03. 
+
+
+## Tema 04. 
+
+
+## Tema 05. 
+
+
+## Tema 06. 
+
+
+## Tema 07. 
+
+
+## Tema 08. 
+
+
+
+## Tema 09. 
+
+
+## Tema 10. 

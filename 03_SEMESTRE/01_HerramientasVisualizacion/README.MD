@@ -121,3 +121,33 @@ visible. Es decir, cuando haces clic en cualquier etiqueta HTML, se marca en col
 verde tanto el principio como el fin del párrafo, siempre que esté bien cerrado. Si no
 es así, el resto de etiquetas posteriores las marca en rojo. Esta facilidad ayuda a no
 cometer errores debido a etiquetas que queden abiertas.
+
+
+## Tema 2. Historia de la visualización de datos
+
+
+
+## Tema 03. 
+
+
+## Tema 04. 
+
+
+## Tema 05. 
+
+
+## Tema 06. 
+
+
+## Tema 07. 
+
+
+## Tema 08. 
+
+
+
+## Tema 09. 
+
+
+## Tema 10. 
+
