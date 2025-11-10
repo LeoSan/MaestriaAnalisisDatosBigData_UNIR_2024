@@ -1,8 +1,0 @@
-#!/Users/leonard/Documents/MaestriaAnalisisDatosBigData_UNIR_2024/02_Semestre/01_Tecnicas_InteligenciaArtificial/ACTIVIDAD/Actividad_01/Avance_1.0/venv/bin/python
-# -*- coding: utf-8 -*-
-import re
-import sys
-from numpy._configtool import main
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(main())
