@@ -1,0 +1,348 @@
+// Actividad 1 - Leonard Jose Cuenca Roa
+
+// Explora las colecciones 
+
+// Identifica todas las distintas categorías (categories) de la colección books
+
+db.getCollection('books').aggregate([
+    { $unwind: '$categories' },
+    { $group: {_id: null, categories: { $addToSet: '$categories' }}},
+    { $project: { _id: 0, categories: 1 } }
+]);
+
+// Identifica los distintos estados (status) de la colección books
+
+//Opción Uno
+    db.books.distinct("status");
+
+//Opción Dos
+    db.getCollection('books').distinct("status");
+
+//Opción Tres
+    db.getCollection('books').aggregate(
+        [{ $group: { _id: '$status' } }]
+    );
+
+
+
+db.getCollection('books').find({longDescription: {$gte: "A", $lt: "B"}}, {title: 1, longDescription: 1});
+
+db.getCollection('books').find({
+    status: "PUBLISH",
+    authors: { $size: 2 }
+}, {
+    title: 1,
+    longDescription: 1,
+    status: 1,
+    authors: 1
+});
+
+
+// Anclaje toArray(); 
+db.getCollection('books').find({
+    status: "PUBLISH",
+    authors: { $size: 2 }
+}, {
+    title: 1,
+    longDescription: 1,
+    status: 1,
+    authors: 1
+}).toArray(); 
+
+
+db.getCollection('books').find({
+    status: "PUBLISH",
+    authors: { $size: 2 }
+}, {
+    title: 1,
+    longDescription: 1,
+    status: 1,
+    authors: 1
+}).toArray().forEach(function(valor, indice, array){print("Titulo: " + valor.title + "Autho 1: " + valor.authors[0] + " Author 2: " + valor.authors[1] + " Registro No. " + indice);});
+
+//Consulta la colección 1 
+
+// ¿Cuál es el tamaño de la colección (en bytes)? 
+
+//Total de 517474 bytes
+db.getCollection('books').dataSize();
+
+// ¿Cuántos libros tiene la colección?
+
+//Total de 431 libros
+db.getCollection('books').count();
+
+
+// ¿Cuántos libros tienen 200 o más páginas?
+
+//Total 264 libros con mayor o igual a 200 páginas
+db.getCollection('books').find({pageCount:{$gte:200}}).count();
+
+// ¿Cuántos libros tienen entre 300 y 600 páginas? [300, 600]
+
+//Total 215 libros
+db.getCollection('books').find({pageCount:{$gte:300, $lte:600}}).count();
+
+
+// ¿Cuántos libros tienen 0 páginas y cuántos no?
+
+// Libro 0 Páginas total de 166
+db.getCollection('books').find({pageCount:0}).count();
+
+// Libros Diferente a 0 Páginas total 265
+db.getCollection('books').find({pageCount:{$ne:0}}).count();
+
+//Consulta usando agregación 
+db.getCollection('books').aggregate(
+  [
+    {
+      $group: {
+        _id: {
+          hasPages: {
+            $cond: [
+              { $eq: ['$pageCount', 0] },
+              'Libros 0 páginas',
+              'Libros con páginas'
+            ]
+          }
+        },
+        count: { $sum: 1 }
+      }
+    }
+  ]
+);
+
+
+// ¿Cuántos libros han sido publicados y cuántos no?
+
+// Libros SI publicados total de 363
+
+db.getCollection('books').find({status:'PUBLISH'}).count();
+
+
+// Libros SI publicados total de 68
+db.getCollection('books').find({status:{$ne:'PUBLISH'}}).count();
+
+
+//Consulta usando agregación 
+db.getCollection('books').aggregate(
+  [
+    {
+      $group: {
+        _id: {
+          hasPublish: {
+            $cond: [
+              { $eq: ['$status', 'PUBLISH'] },
+              'Total Libros SI Publicados',
+              'Total Libros NO Publicados'
+            ]
+          }
+        },
+        count: { $sum: 1 }
+      }
+    }
+  ]
+);
+
+
+// Consulta la colección 2 
+
+// ¿Cuál es el tamaño de la colección (en bytes)?
+
+// total 72236994 Bytes
+db.getCollection('companies').dataSize(); 
+
+// ¿Cuántas compañías tiene la colección?
+// total de registros en companies 18801
+db.getCollection('companies').count();
+
+
+// ¿Cuántas compañías se fundaron en los años 1996, 1997, 2001 y 2005 respectivamente? 
+
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: {
+        founded_year: {
+          $in: [1996, 1997, 2001, 2005]
+        }
+      }
+    },
+    {
+      $group: {
+        _id: '$founded_year',
+        count: { $sum:1 }
+      }			
+    }
+    , { $sort: { _id: 1 } }
+  ]);
+
+// Lista las compañías que se dedican a «web» o «mobile» y recupera: nombre, descripción, número de empleados, e-mail, año, mes y día de su fundación. 
+
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: {
+        category_code: {
+          $in: ['web', 'mobile']
+        }
+      }
+    }, 
+    {
+      $project: {
+        _id: 0,
+        name: 1,
+        description: 1,
+        number_of_employees: 1,
+        email_address: 1,
+        founded_year: 1,
+        founded_month: 1,
+        founded_day: 1
+      }
+    }
+    , { $sort: { name: 1 } }
+  ]);
+
+// Lista las compañías que se dedican a videojuegos y muéstralas en orden descendente según el año en que fueron fundadas.
+
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: {
+        category_code: {
+          $in: ['games_video']
+        }
+      }
+    }, 
+    {
+      $project: {
+        _id: 0,
+        name: 1,
+        description: 1,
+        number_of_employees: 1,
+        email_address: 1,
+        founded_year: 1,
+        founded_month: 1,
+        founded_day: 1
+      }
+    }
+    , { $sort: { founded_year: -1 } }
+  ]);
+
+// ¿Cuántas compañías tienen 600 o más empleados?
+
+// Total de compañías con mas de 600 empleados 
+db.getCollection('companies').find({number_of_employees:{$gte:600}}).count();
+
+// Recupera el nombre, la URL, el usuario de Twitter y el número de empleados de las compañías fundadas entre los años 2001 y 2005 incluidos, que cuenten con 500 o más empleados y que se dediquen a los videojuegos o a la música. 
+
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: {
+        founded_year: { $gte: 2001, $lte: 2005 },
+        number_of_employees: { $gte: 500 },
+        category_code: {
+          $in: ['games_video', 'music']
+        }
+      }
+    },
+    {
+      $project: {
+        name: 1,
+        homepage_url: 1,
+        twitter_username: 1,
+        number_of_employees: 1
+      }
+    }
+   , { $sort: { name: 1 } }
+  ]
+);
+
+// ¿Alguna empresa se dedica a videojuegos y a la música a la vez?
+
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: {
+        founded_year: { $gte: 2001, $lte: 2005 },
+        number_of_employees: { $gte: 500 },
+        $and: [ { category_code: "Music" }, { category_code: "Game" }  ]	
+      }
+    },
+    {
+      $project: {
+        name: 1,
+        homepage_url: 1,
+        twitter_username: 1,
+        number_of_employees: 1
+      }
+    }
+   , { $sort: { name: 1 } }
+  ]
+);
+
+
+// Lista las empresas que cuentan con única y exclusivamente 2 oficinas en la ciudad de San Francisco.
+
+db.getCollection('companies').aggregate(
+  [
+    {
+      $match: { 'offices.city': 'San Francisco' }
+    },
+    { $match: { 'offices': { $size: 2 } } },
+    {
+      $project: {
+        name: 1,
+        offices: {
+          $filter: {
+            input: '$offices',
+            as: 'office',
+            cond: {
+              $eq: [
+                '$$office.city',
+                'San Francisco'
+              ]
+            }
+          }
+        }
+      }
+    },
+    { 
+      $match: { offices: { $size: 2 } } 
+    },
+    {
+      $project:{
+        _id:0,
+        name:1, 
+      }
+    }
+  ]
+);
+
+
+// Lista el nombre, el mes y día de adquisición de las empresas de videojuegos que hayan sido adquiridas en el año 2007 por un precio igual o superior a los 10 millones de dólares y que tengan oficinas en la ciudad de Culver City.
+
+db.getCollection('companies').aggregate([
+  {
+    $match:{
+            category_code:'games_video',         
+            'acquisition.price_amount': {
+              $gte: 10000000
+            },
+            'acquisition.acquired_year': 2007,
+            'offices.city': 'Culver City'
+          }
+  }
+  ,
+  {
+    $project:{
+            _id:0,
+            name:1, 
+            'acquisition.acquired_month': 1,
+            'acquisition.acquired_day': 1
+    }
+  } 
+  , 
+    {$sort:{name:1}} 
+]);

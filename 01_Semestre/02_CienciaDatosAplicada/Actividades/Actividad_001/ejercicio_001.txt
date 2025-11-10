@@ -1,0 +1,141 @@
+Ejemplo 0001 
+
+Ejemplos de datos para una investigación sobre enfermedades relacionadas con la contaminación urbana
+Escenario: Investigamos la relación entre los niveles de contaminación del aire en una ciudad y la incidencia de enfermedades respiratorias en sus habitantes.
+
+Datos estructurados
+Registros médicos:
+Identificador del paciente
+Fecha de nacimiento
+Género
+Dirección
+Historial de enfermedades
+Resultados de pruebas médicas (por ejemplo, niveles de oxígeno en sangre)
+Medicamentos prescritos
+Datos de contaminación:
+Estación de monitoreo
+Fecha y hora de la medición
+Niveles de partículas PM2.5 y PM10
+Concentración de ozono
+Óxidos de nitrógeno
+Dióxido de azufre
+Datos demográficos:
+Población por edad y género
+Nivel socioeconómico
+Ocupación
+Hábitos de vida (tabaquismo, ejercicio)
+Datos semiestructurados
+Informes médicos:
+Notas clínicas escritas por los médicos
+Resultados de imágenes médicas (radiografías, tomografías)
+Datos de sensores:
+Datos de dispositivos portátiles que monitorean la frecuencia cardíaca, la saturación de oxígeno y otros indicadores de salud de los participantes en el estudio.
+Datos no estructurados
+Registros de redes sociales:
+Publicaciones en redes sociales relacionadas con la salud y la contaminación
+Comentarios y opiniones de los usuarios
+Imágenes satelitales:
+Imágenes de la ciudad que muestran la calidad del aire y la vegetación
+Grabaciones de entrevistas:
+Entrevistas a expertos en salud pública y a los participantes del estudio
+Cómo utilizar estos datos en la investigación
+Una vez que has recopilado estos datos, puedes utilizar diversas técnicas para analizarlos y encontrar patrones:
+
+Análisis estadístico: Para identificar correlaciones entre los datos estructurados (por ejemplo, entre los niveles de contaminación y la incidencia de enfermedades).
+Minería de texto: Para analizar los datos semiestructurados y no estructurados, como los informes médicos y las publicaciones en redes sociales, y extraer información relevante.
+Visualización de datos: Para crear gráficos y mapas que faciliten la comprensión de los resultados y la comunicación de los hallazgos.
+Aprendizaje automático: Para desarrollar modelos predictivos que permitan estimar el riesgo de desarrollar enfermedades respiratorias en función de los factores de exposición.
+Ejemplo de análisis:
+
+Podrías realizar un análisis estadístico para determinar si existe una correlación entre los niveles de PM2.5 y el número de hospitalizaciones por asma en un determinado período. Luego, podrías utilizar técnicas de visualización de datos para crear un mapa que muestre los barrios con mayor concentración de PM2.5 y los más altos índices de hospitalización.
+
+Ejemplo 0002 
+
+Ejercicio: Análisis de Datos sobre el Abandono de Animales en la Ciudad de México (2020-2024)
+Objetivo: Analizar la evolución del problema del abandono de animales en la Ciudad de México en los últimos años, identificando posibles causas y tendencias, y proponiendo recomendaciones para mitigar esta problemática.
+
+Datos a considerar:
+
+Para realizar este análisis, se requerirá recopilar datos de diversas fuentes, como:
+
+Gobiernos locales:
+Reportes de denuncias por abandono de animales.
+Estadísticas de animales ingresados a refugios.
+Programas y campañas implementadas para combatir el abandono.
+Organizaciones no gubernamentales:
+Datos sobre rescates y adopciones.
+Encuestas a dueños de mascotas.
+Estudios sobre el bienestar animal en la ciudad.
+Redes sociales:
+Publicaciones y comentarios relacionados con el abandono de animales.
+Datos de geolocalización de animales encontrados.
+Medios de comunicación:
+Noticias y artículos sobre el tema.
+Tipos de datos:
+
+
+
+Estructurados:
+Datos demográficos de los animales abandonados (especie, edad, raza, etc.).
+Ubicación geográfica de los abandonos.
+Fechas de ingreso a refugios.
+Resultados de campañas de esterilización.
+
+
+
+
+
+
+
+Semiestructurados:
+Informes de casos de abandono.
+Encuestas a ciudadanos sobre sus percepciones y actitudes hacia los animales.
+
+
+
+
+No estructurados:
+Publicaciones en redes sociales.
+Imágenes y videos de animales abandonados.
+Análisis a realizar:
+
+Evolución temporal:
+¿Cómo ha variado el número de casos de abandono año con año?
+¿Existen temporadas del año con mayor incidencia?
+¿Se han identificado eventos o factores que hayan influido en un aumento o disminución de los casos?
+Distribución geográfica:
+¿En qué zonas de la ciudad se concentran más los casos de abandono?
+¿Existe alguna relación entre la densidad poblacional y los índices de abandono?
+Características de los animales abandonados:
+¿Qué especies y razas son las más afectadas?
+¿Cuál es la edad promedio de los animales abandonados?
+¿Existen diferencias en las características de los animales abandonados según la zona de la ciudad?
+Factores asociados al abandono:
+¿Cuáles son las principales causas de abandono identificadas? (e.g., mudanzas, falta de recursos, enfermedades, etc.)
+¿Existe alguna relación entre el nivel socioeconómico de las zonas y los índices de abandono?
+Impacto de las políticas públicas:
+¿Han sido efectivas las campañas de concientización y esterilización?
+¿Qué otras medidas podrían implementarse para reducir el abandono?
+
+Visualización de los datos:
+
+Gráficas: Líneas de tiempo, barras, histogramas para mostrar la evolución de los casos de abandono y la distribución por diferentes variables.
+Mapas: Para visualizar la distribución geográfica de los casos de abandono y superponerlos con otros datos relevantes (e.g., densidad poblacional, zonas verdes).
+Redes sociales: Análisis de sentimientos de las publicaciones relacionadas con el abandono para identificar las principales preocupaciones de la ciudadanía.
+
+Recomendaciones:
+
+Fortalecer las campañas de concientización: Dirigidas a la población en general, pero especialmente a los jóvenes y a las familias con niños.
+Aumentar el número de refugios y centros de adopción: Y mejorar sus condiciones.
+Promover la esterilización: Ofreciendo programas gratuitos o a bajo costo.
+Regular la tenencia responsable de mascotas: Implementación de licencias y cursos de capacitación para los dueños.
+Incrementar las sanciones por abandono: Para disuadir a las personas de cometer este acto.
+Fomentar la colaboración entre instituciones públicas y organizaciones no gubernamentales.
+¿Te gustaría profundizar en alguna de estas secciones o explorar otras posibles líneas de análisis?
+
+Adicionalmente, podrías considerar:
+
+Comparar los datos de la Ciudad de México con otras ciudades del país o del mundo.
+Realizar un análisis de costo-beneficio de las diferentes políticas públicas implementadas.
+Identificar grupos de población especialmente vulnerables al abandono de mascotas.
+
