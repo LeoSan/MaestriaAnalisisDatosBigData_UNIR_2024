@@ -6,16 +6,16 @@
 - A. Entender los datos disponibles.
 - B. Ser capaz de representarlos gráficamente con las herramientas adecuadas.
 - C. Comprobar que los destinatarios entiendan el mismo mensaje que pretendes explicar.
-- D. Todas las anteriores.
+- D. Todas las anteriores. **CORRECTA**
 
 2. Los datos y sus relaciones no son siempre algo fácil de entender:
-- A. Correcto y por ello las herramientas de visualización nos pueden ayudar a tratar con información compleja.
+- A. Correcto y por ello las herramientas de visualización nos pueden ayudar a tratar con información compleja. **CORRECTA**
 - B. Correcto porque los datos siempre requieren simplificar su complejidad.
 - C. Incorrecto si estamos tratando con datos de carácter personal.
 - D. Incorrecto si estamos tratando con datos numéricos.
 
 3. Todas las herramientas de visualización requieren de conocimientos de programación:
-- A. Incorrecto.
+- A. Incorrecto. **CORRECTA**
 - B. Correcto. Tableau es un ejemplo de ello.
 - C. Correcto. Google Chart es un ejemplo de ello.
 - D. Correcto. D3.js y Carto son un ejemplo de ello.
@@ -24,46 +24,67 @@
 - A. Tableau.
 - B. Qlik.
 - C. Carto.
-- D. Todas las anteriores.
+- D. Todas las anteriores. **CORRECTA**
 
 5. ¿Cuáles de estas herramientas están orientadas a usuarios desarrolladores?
-- A. Google Chart.
+- A. Google Chart. **CORRECTA**
 - B. Carto.
 - C. Qlik.
-- D. Todas las anteriores.
+- D. Todas las anteriores. 
 
-
-6. En la actualidad las principales plataformas modernas de analítica e inteligencia
-de negocio…
+6. En la actualidad las principales plataformas modernas de analítica e inteligencia de negocio...
 - A. Se diferencian especialmente por sus capacidades en la visualización de datos.
-- B. Ya no se diferencian especialmente por sus capacidades en la visualización de datos.
+- B. Ya no se diferencian especialmente por sus capacidades en la visualización de datos. **CORRECTA**
 - C. Requieren de usuarios avanzados en programación 
 
-7. Enumera, según Gartner, 3 características de las herramientas modernas de
-visualización de datos la actualidad:
+7. Enumera, según Gartner, 3 características de las herramientas modernas de visualización de datos la actualidad:
 - A. Análisis avanzado, insights automatizados y catálogo automático.
 - B. Seguridad, cloud y conectividad a fuentes de datos.
 - C. Seguridad, soporte a la preparación de los datos y consulta mediante búsquedas en lenguaje natural.
-- D. Todas son correctas.
+- D. Todas son correctas. **CORRECTA**
+
+Seguridad: capacidades que permiten la seguridad de la plataforma, la
+administración de los usuarios, la auditoría del acceso a la plataforma y la
+autenticación.
+Capacidad de gestión: capacidades para rastrear el uso, gestionar cómo se
+comparte la información y por quién, realizar análisis de impacto y trabajar con
+aplicaciones de terceros.
+Cloud: la capacidad de apoyar la construcción, despliegue y gestión de análisis y
+aplicaciones analíticas en la nube.
+Conectividad de la fuente de datos: capacidades que permiten a los usuarios
+conectarse e ingerir datos, estructurados y no estructurados, contenidos en varios
+tipos de plataformas de almacenamiento.
+Preparación de datos: soporte para la combinación de datos de diferentes fuentes,
+por medio de arrastrar y soltar, y realizable por los usuarios de negocio, así como la
+propia creación de modelos analíticos.
+Complejidad del modelo: soporte para modelos de datos complejos, incluyendo la
+capacidad de manejar múltiples tablas e interoperar con otras plataformas analíticas.
+Catálogo: la capacidad de generar y agregar automáticamente un catálogo que
+permita la búsqueda de los objetos creados y utilizados por la plataforma.
+Insights automatizados: un atributo fundamental de la analítica aumentada es la
+capacidad de aplicar técnicas de machine learning e inteligencia artificial para
+generar automáticamente conocimientos para los usuarios finales (por ejemplo,
+identificando los atributos más importantes de un conjunto de datos).
+
+
 
 8. Una página web se construye con base en los siguientes niveles:
 - A. HTML y CSS.
 - B. HTML y editores de código.
 - C. Captura de datos y visualización.
-- D. Estructura, contenido, apariencia y comportamiento
-
+- D. Estructura, contenido, apariencia y comportamiento **CORRECTA**
 
 9. Se dice que HTML es un lenguaje de marcas porque:
 - A. Permite las llamadas a APIS o servicios externos de terceros.
-- B. Señaliza todas las líneas de código haciéndolas más legibles.
+- B. Señaliza todas las líneas de código haciéndolas más legibles. 
 - C. Es compatible con otros lenguajes como JavaScript.
-- D. Codifica con base en etiquetas.
+- D. Codifica con base en etiquetas. **CORRECTA**
 
 10. Brackets es un editor de código:
 - A. Compatible con HTML, CSS y JavaScript
 - B. Que incorpora un servidor web local.
 - C. Que permite ver en tiempo real las modificaciones que realicemos en el código fuente.
-- D. Todas son correctas.
+- D. Todas son correctas. **CORRECTA**
 
 --- 
 ## Videoclase 1. Generalidades
@@ -123,26 +144,7 @@ document.getElementById(‘demo’).innerHTML = ‘Hola, Mundo!’;
 - Utiliza una interfaz sencilla con ayudas en la escritura y organización del proyecto.
 
 
---- 
 
-
-
-
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
 
 ## Tema 2. Historia de la visualización de datos
 
@@ -258,3 +260,26 @@ D. No
 
 
 ## Tema 10. 
+
+
+
+--- 
+
+
+
+
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
