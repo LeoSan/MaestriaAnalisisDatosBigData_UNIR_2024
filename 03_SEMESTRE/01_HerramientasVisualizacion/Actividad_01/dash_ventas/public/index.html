@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Principal</title>
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/dash_venta.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-left">
+                
+                <div class="logo-container">
+                    <span>
+                        <img src="/images/logo.png" alt="Logo de la Empresa" class="logo-image">
+                    </span>
+                </div>
+
+                <i class="fas fa-chart-line header-icon"></i> 
+                <h1>Métricas</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#contact">Contactos</a></li>
+                    <li><a href="#about">Quiénes Somos</a></li>
+                    <li><a href="#data">Data</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="controls">
+            <button id="updateButton">Actualizar</button>
+        </div>
+
+        <div class="chart-container-wrapper">
+            <div class="chart-box">
+                <h2>Gráfico Google Chart</h2>
+                <div id="gchart_div"></div>
+            </div>
+
+            <div class="chart-box">
+                <h2>Gráfico D3.js</h2>
+                <div id="d3_chart_div"></div>
+            </div>
+        </div>
+    </main>
+
+    <section class="clock-section">
+        <div class="clock-display">
+            <div id="date-display" class="date-text"></div>
+            <div id="time-display" class="time-text"></div>
+            <div id="amount-display" class="amount-text"></div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="currentYear"></span> Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module">
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

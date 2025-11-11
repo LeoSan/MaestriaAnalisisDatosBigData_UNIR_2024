@@ -1,0 +1,182 @@
+/* Usamos :root para definir tus colores como variables CSS (buena práctica) */
+:root {
+    --color-primario: #4db4f5;  /* Azul */
+    --color-texto-principal: #34675C; /* Verde Oscuro */
+    --color-acento: #B3C100;     /* Verde Lima */
+    --color-fondo: #F0F0F0;     /* Un gris muy claro */
+    --color-borde: #B7B8B6;     /* Gris Medio */
+    --color-header-bg: #34675C; /* Misma que texto principal, buen contraste */
+    --color-footer-bg: #2b5148; /* Un poco más oscuro que el header */
+    --color-secundario: #34675C;
+    --color-resaltado: #4cb5f5;
+    --color-texto-secundario: #666;
+    --color-fondo-claro: #f4f4f4;
+    --color-fondo-oscuro: #2c3e50;
+    --color-sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Reseteo básico y configuración global de fuentes */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: #333;
+    line-height: 1.5;
+    display: flex; /* Para que el footer se quede abajo */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    min-height: 100vh; /* Altura mínima de la ventana del navegador */
+}
+
+/* HEADER GLOBAL */
+.main-header {
+    background-color: var(--color-header-bg); /* Verde Oscuro */
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Icono/Título a la izquierda, Navegación a la derecha */
+    align-items: center; /* Centrar verticalmente */
+    flex-wrap: wrap; /* Para responsividad */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el icono y el título */
+}
+
+.header-icon {
+    font-size: 2.5rem; /* Tamaño del icono */
+    color: var(--color-acento); /* Color verde lima para el icono */
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* NAVEGACIÓN */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espacio entre los botones de navegación */
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: var(--color-primario); /* Azul al pasar el mouse */
+}
+
+/* Contenido principal para que ocupe espacio y empuje el footer */
+main {
+    flex-grow: 1; /* Esto hace que 'main' ocupe todo el espacio disponible */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.controls {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Estilo del botón de actualización - SE MANTIENE IGUAL */
+#updateButton {
+    background-color: var(--color-primario); /* Azul */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#updateButton:hover {
+    background-color: #3a9bd9; /* Un azul un poco más oscuro al pasar el mouse */
+}
+
+/* Contenedor flexible para los gráficos - SE MANTIENE IGUAL */
+.chart-container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Estilo para cada caja de gráfico - SE MANTIENE IGUAL */
+.chart-box {
+    flex: 1;
+    min-width: 400px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.chart-box h2 {
+    color: var(--color-texto-principal);
+    border-bottom: 2px solid var(--color-borde);
+    padding-bottom: 8px;
+    margin-top: 0; /* Asegura que no haya margen superior extra */
+}
+
+
+#gchart_div,
+#d3_chart_div {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-borde);
+    font-style: italic;
+}
+
+
+/* FOOTER GLOBAL */
+.main-footer {
+    margin-top: 4rem; /* Espacio antes del footer */
+    background-color: var(--color-footer-bg); /* Un tono más oscuro */
+    color: var(--color-borde); /* Color gris medio para el texto */
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive para Header */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-left {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
