@@ -146,9 +146,96 @@ document.getElementById(‘demo’).innerHTML = ‘Hola, Mundo!’;
 
 ## Tema 2. Historia de la visualización de datos
 
+1. necesita ser instanciada con un new para crear un objeto:
+A. Sí.
+B. No, solo cuando le asignas valores directamente.
+C. No, solo cuando trabajas la primera vez con la gráfica.
+D. No.
 
+
+2. ¿Qué función tiene ?
+A. Carga el propio cargador de librerías.
+B. Importa la librería jQuery.
+C. Carga los diferentes paquetes de la librería.
+D. Carga la última versión de Google Charts.
+
+3. La primera variable que recibe la función de JQuery es:
+A. La URL a la que se dirige la petición.
+B. El evento que ha generado la visualización.
+C. El nombre de función destino donde se pasan los valores.
+D. El array de datos a visualizar.
+
+4. añade una columna a nuestra tabla de datos:
+A. Sí, tantas veces como aparezca esta línea de código.
+B. Sí, aunque no admite valores iguales.
+C. No, porque la tabla ya viene con las columnas definidas.
+D. No.
+
+5. Existen librerías en JQuery que nos facilitan la transformación de archivos CSV a
+datos comprensibles por la librería de Google Charts:
+A. Sí.
+B. No, porque jQuery no incorpora dichas funciones.
+C. No, porque CSV no es un formato compatible con Google Chart.
+D. Sí, aunque depende de que las versiones sean compatibles.
+
+6. nos dibujará bar charts verticales:
+A. Sí, admite tanto barras verticales como horizontales.
+B. Sí, hace lo mismo que colum chart.
+C. Sí, tanto barras independientes como apiladas.
+D. No.
+
+7. ¿Qué hace el código cuando contiene ?
+A. Comprueba si el evento generado por otra visualización tiene el formato
+correcto.
+B. Comprueba si ha habido algún error con la petición http.
+C. Comprueba si ha habido algún problema en la generación de la
+visualización.
+D. Comprueba si los datos del archivo son coherentes
+
+8. se utiliza para escuchar eventos que generan las visualizaciones:
+A. Sí.
+B. No, solo aplica los eventos del ratón.
+C. No, se encarga de los eventos del sistema operativo.
+D. No
+
+9. Todas las visualizaciones de Google Chart generan los mismos tipos de eventos:
+A. Sí, porque todas funcionan de la misma forma.
+B. Sí, porque de esta forma el código es escalable.
+C. Sí, porque ello permite cambiar la gráfica sin tener que cambiar los
+eventos.
+D. No.
+
+
+10. ¿Incluiremos el paquete para visualizar un mapa?
+A. Sí, para mostrar un país, un continente o una región.
+B. Sí, para mostrar incluso direcciones de calles.
+C. No, porque no existe dicha librería.
+D. No
+
+
+--- 
+## Videoclase 1. Funcionalidades principales
+
+- ¿Cuál es la principal función de google.charts.load() en el código de Google Charts?
+- Cargar la librería de Google Charts y sus paquetes específicos. => a función google.charts.load() es crucial porque carga la librería de Google Charts junto con los paquetes específicos necesarios, como ‘corechart’ o ‘geochart’. Sin esta línea, las funciones de la librería no estarían disponibles.
+
+- ¿Cuál es el propósito de la estructura google.visualization.DataTable()?
+- Proveer una estructura de datos estándar para almacenar las entradas del gráfico. => La estructura DataTable se utiliza para organizar y almacenar datos en un formato compatible con Google Charts, lo que permite que el gráfico pueda leerlos y representarlos visualmente.
+
+- ¿Qué sucede si la función drawChart() se ejecuta antes de que la librería esté completamente cargada?
+- Se lanza un error porque los paquetes no están disponibles aún. =>  La ejecución prematura de drawChart() genera un error porque los paquetes de la librería aún no están disponibles. Por eso es importante usar google.charts.setOnLoadCallback(drawChart).
+
+- ¿Cómo se personalizan los colores de un gráfico circular en Google Charts?
+- Especificando una lista de colores en la opción colors. => La opción colors permite asignar colores específicos a cada sección del gráfico, lo que es útil para mejorar la estética y la claridad de la visualización.
+ 
+- ¿Cuál es la diferencia principal entre un gráfico tipo GeoChart y un PieChart?
+- GeoChart utiliza ubicaciones geográficas para visualizar datos mientras que PieChart representa proporciones. => GeoChart está diseñado para mostrar datos en un mapa basado en ubicaciones geográficas (como países o regiones), mientras que PieChart representa datos en forma de proporciones o secciones circulares.
+
+
+--- 
 
 ## Tema 03. 
+
 
 
 ## Tema 04. 
