@@ -6,7 +6,7 @@ import { metodoValidaData } from "./util.js";
  */
 export function procesarDatosGraficosBarras(data) {
     // 1. Valido que tenemos datos para procesar
-    metodoValidaData(data, "gchart_div");
+    metodoValidaData(data, "msj-data-chart");
 
     // 2. Preparar los datos en el formato que Google Charts requiere para columnas agrupadas
     const productos = [...new Set(data.map((item) => item.producto))]; // Obtener productos únicos

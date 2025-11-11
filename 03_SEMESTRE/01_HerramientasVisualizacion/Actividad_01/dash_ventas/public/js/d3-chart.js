@@ -8,7 +8,7 @@ import { metodoValidaData } from "./util.js";
  */
 export function dibujarGraficaD3Borbujas(data, DivArea) {
     // 1. Valido que tenemos datos para procesar
-    metodoValidaData(data, DivArea);
+    metodoValidaData(data, "msj-data-d3");
     // 2. Limpiar el contenedor antes de dibujar un nuevo gráfico
     const chartDiv = d3.select("#" + DivArea);
     chartDiv.selectAll("*").remove();

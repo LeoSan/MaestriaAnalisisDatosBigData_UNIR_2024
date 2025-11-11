@@ -1,4 +1,4 @@
-import { metodoValidaData, dibujaRelog } from "./js/util.js";  
+import { metodoValidaData, dibujaRelog, sumaTotalIngresos } from "./js/util.js";  
 import { fetchData } from "./js/data-service.js";
 import {
   procesarDatosGraficosBarras,
@@ -6,10 +6,7 @@ import {
 } from "./js/google-chart.js";
 
 import { dibujarGraficaD3Borbujas } from "./js/d3-chart.js";
-
-import  {eventoBtnActualizarGrafica} from "./js/even-board.js";
-
-
+import { eventoBtnActualizarGrafica } from "./js/even-board.js";
 
 /**
  * Módulo Principal.
@@ -18,6 +15,7 @@ import  {eventoBtnActualizarGrafica} from "./js/even-board.js";
 async function main() {
     // 1. Obtener los datos usando el servicio.
     const data = await fetchData(); // La variable 'data' ahora contiene el JSON
+    const totalIngresos = sumaTotalIngresos(data);
 
     //Valida Data
     metodoValidaData(data, "gchart_div");
@@ -29,14 +27,12 @@ async function main() {
 
     // 3. Configuro el evento para el botón de actualizar gráficos
     eventoBtnActualizarGrafica(
-        fetchData,
-        procesarDatosGraficosBarras,
-        dibujarGraficosBarrasProductos
+        fetchData
     );
 
     // 4. Dibuja el reloj con los datos obtenidos
-    dibujaRelog(data);
-    setInterval(dibujaRelog, 1000);
+    dibujaRelog(totalIngresos);
+    setInterval(() => dibujaRelog(totalIngresos), 1000);
 }
 
 // 4. Ejecutar la función 'main' cuando el DOM esté completamente cargado
