@@ -123,7 +123,218 @@ es así, el resto de etiquetas posteriores las marca en rojo. Esta facilidad ayu
 cometer errores debido a etiquetas que queden abiertas.
 
 
-## Tema 2. Historia de la visualización de datos
+## Tema 2. Google Chart. Introducción y principales visualizaciones
+
+## 2.1. Introducción y objetivos
+
+Google Chart Library es la librería de visualizaciones utilizada por Google
+Spreadsheets. 
+
+Google utiliza esta funcionalidad en la hoja de cálculo que han
+implementado y esto nos permite infinitas posibilidades donde estas librerías son una
+pequeña funcionalidad.
+
+Piensa en real-time analytics, potentes algoritmos procesando los datos en el backend, visualizaciones de la actividad en Twitter con los contenidos de los tweets ensí..., un gran abanico de posibilidades donde, como expertos en analytics, pondréis el límite a las aplicaciones de la empresa con la que colabores. 
+
+Al fin y al cabo, las visualizaciones son la representación alternativa de la información
+
+
+## 2.2. Ejemplos de varias visualizaciones
+
+> Pie chart
+-  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+
+**ENLACES**
+- https://developers.google.com/chart/interactive/docs/quick_start?hl=es-419
+- https://developers.google.com/chart/interactive/docs/gallery
+
+```HTML
+<html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['Pepperoni', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--Div that will hold the pie chart-->
+    <div id="chart_div"></div>
+  </body>
+</html>
+```
+
+**¿Cómo cargamos la librería de Google Chart a nuestro HTML?**
+```HTML
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+google.charts.load('current', {packages: ['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+...
+</script>
+```
+
+La primera línea de este ejemplo se ocupa de cargar el propio «cargador» o de la
+librería. Esta sentencia solo debe ejecutarse una vez, independientemente de
+cuántas gráficas vayamos a pintar. 
+
+**¿Qué es lo que hace nuestra función drawChart?**
+
+Primero hemos de crear nuestros datos.
+
+>  es una estructura de datos con la que trabaja JavaScript, no muy diferente a lo que podría ser un array de arrays en Java o C
+
+**Después se definen las opciones del gráfico como título y dimensiones:**
+
+
+> Horizontal bar chart
+- var chart = new google.visualization.BarChart(document.getElementById('Sarah_chart_div'));
+
+
+> Column bar chart
+var chart = new
+google.visualization.ColumnChart(document.getElementById
+('Sarah_chart_div'));
+
+> Geo chart
+
+var chart = new google.visualization.GeoChart
+(document.getElementById('regions_div'));
+chart.draw(data, options);
+
+## 2.3. Conectando con Google Spreadsheets y archivos CSV
+
+Los datos de las visualizaciones no tienen por qué estar incrustados en el código
+fuente de nuestro fichero .html. Si fuera así, cada vez que quisiéramos mostrar
+información, deberíamos abrirlo y modificarlo, lo cual no es ni práctico ni realista.
+Para ello las visualizaciones recurren a leer los datos de fuentes de datos externas.
+
+
+**Google Spreadsheets**
+Si queremos evitar modificar el código JavaScript cada vez que modificamos los
+datos, podemos conectar los gráficos a hojas de cálculo existentes. El proceso se
+explica en el siguiente enlace.
+
+
+Ejemplo: código completo de Google Spreadsheets
+
+```html
+<html>
+<head>
+<script type="text/javascript"
+src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load("current", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+var query = new google.visualization.Query(
+'https://docs.google.com/spreadsheet/ccc?
+key=0Atw2BTU52lOCdEZpUlVIdmxGOWZBR2tuLXhYN2dQTWc&usp
+=drive_web#gid=0');
+query.send(handleQueryResponse);
+}
+function handleQueryResponse(response) {
+if (response.isError()) {
+alert('Error in query: ' + response.getMessage() + ' ' +
+response.getDetailedMessage());
+return;
+}
+var data = response.getDataTable();
+var chart = new google.visualization.
+ColumnChart(document.getElementById('columnchart'));
+chart.draw(data, { legend: { position: 'none' } });
+}
+</script>
+<title>Data from a Spreadsheet</title>
+</head>
+<body>
+<span id='columnchart'></span>
+</body>
+</html>
+```
+
+Los archivos CSV normalmente se utilizan para importar o exportar
+información de bases de datos.
+En este ejercicio también utilizaremos jQuery, una librería de código abierto de
+JavaScript, para el tratamiento del fichero CSV. El código adaptado sería el
+siguiente:
+
+
+Ejemplo: código adaptado de CSV
+```
+<html>
+<head>
+<title>Google Chart Example</title>
+<script type="text/javascript"
+src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/
+jquery.min.js">
+</script>
+<script src="jquery.csv-0.71.js"></script>
+<script type="text/javascript"
+src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load("current", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+// grab the CSV
+$.get("https://docs.google.com/spreadsheet/pub?
+key=0AhNdznUnSazTdElCVTRTYzF6Zm9DSmlUQkx1NE5DY1E&output
+=csv",
+function(csvString) {
+// Transformar CSV a array utilizando jQuery
+var arrayData = $.csv.toArrays(csvString, {onParseValue:
+$.csv.hooks.castToScalar});
+// Convertir array a DataTable
+var data =
+new google.visualization.arrayToDataTable(arrayData);
+// Generar gráfica desde el DataTable
+var chart = new
+
+
+
+```
+## 2.4. Gestionar eventos
+
+Google Charts genera eventos que se pueden tratar y gestionar. Estos eventos se
+suelen disparar por acciones de usuario, como por ejemplo cuando se hace clic en
+una gráfica. Se puede registrar un método JavaScript que sea llamado cuando
+ocurran dichos eventos e incluso acceder a la información asociada a los mismos.
+Cada gráfica y cada interacción definen sus propios eventos y la información
+asociada. En la documentación de Google Chart explican con detalle los posibles
+eventos:
 
 
 
