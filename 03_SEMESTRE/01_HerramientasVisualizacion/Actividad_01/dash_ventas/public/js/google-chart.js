@@ -46,11 +46,13 @@ export function dibujarGraficosBarrasProductos(chartDataArray, DivArea) {
     // 3. Cargar la librería de Google Charts y dibujar el gráfico.
     google.charts.load("current", { packages: ["corechart"] });
 
+    //Vamos a dibujar el gráfico una vez que la librería esté cargada
     google.charts.setOnLoadCallback(() => {
         const chartData = google.visualization.arrayToDataTable(chartDataArray);
 
         const options = {
             title: "Ventas Mensuales por Producto", // Nuevo título más descriptivo
+            is3D:true,
             hAxis: {
                 // Eje Horizontal (Meses)
                 title: "Mes",
