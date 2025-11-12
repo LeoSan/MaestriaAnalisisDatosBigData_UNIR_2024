@@ -13,6 +13,25 @@
     --color-fondo-claro: #f4f4f4;
     --color-fondo-oscuro: #2c3e50;
     --color-sombra: rgba(0, 0, 0, 0.1);
+    --color-sombra: rgba(0, 0, 0, 0.05);
+
+    --icon-bg-total: rgba(147, 126, 237, 0.1);
+    --icon-color-total: #937EED;
+
+    --icon-bg-aprobados: rgba(52, 211, 153, 0.1);
+    --icon-color-aprobados: #34D399;
+
+    --icon-bg-no-aprobados: rgba(252, 165, 165, 0.1);
+    --icon-color-no-aprobados: #FCA5A5;
+
+    --icon-bg-tasa: rgba(192, 132, 252, 0.1);
+    --icon-color-tasa: #C084FC;
+
+    --icon-bg-tasa: rgba(192, 132, 252, 0.1);
+    --icon-color-tasa: #C084FC;
+
+    --icon-bg-asp: rgba(79, 175, 245, 0.1);
+    --icon-color-asp: #4FAFF5;
 }
 
 /* Reseteo básico y configuración global de fuentes */

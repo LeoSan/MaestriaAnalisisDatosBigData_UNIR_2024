@@ -41,4 +41,26 @@
     "ingresos": 21000,
     "precio": 300
   }
+  ,
+  {
+    "producto": "Smartphone A",
+    "mes": "Marzo",
+    "ventas": 180,
+    "ingresos": 36000,
+    "precio": 200
+  },
+  {
+    "producto": "Smartphone B",
+    "mes": "Marzo",
+    "ventas": 120,
+    "ingresos": 24000,
+    "precio": 200
+  },
+  {
+    "producto": "Tablet X",
+    "mes": "Marzo",
+    "ventas": 110,
+    "ingresos": 33000,
+    "precio": 300
+  }
 ]

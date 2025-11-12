@@ -43,6 +43,7 @@
 - C. Seguridad, soporte a la preparación de los datos y consulta mediante búsquedas en lenguaje natural.
 - D. Todas son correctas. **CORRECTA**
 
+```
 Seguridad: capacidades que permiten la seguridad de la plataforma, la
 administración de los usuarios, la auditoría del acceso a la plataforma y la
 autenticación.
@@ -65,7 +66,7 @@ Insights automatizados: un atributo fundamental de la analítica aumentada es la
 capacidad de aplicar técnicas de machine learning e inteligencia artificial para
 generar automáticamente conocimientos para los usuarios finales (por ejemplo,
 identificando los atributos más importantes de un conjunto de datos).
-
+```
 
 
 8. Una página web se construye con base en los siguientes niveles:
@@ -148,24 +149,38 @@ document.getElementById(‘demo’).innerHTML = ‘Hola, Mundo!’;
 
 ## Tema 2. Historia de la visualización de datos
 
-1. necesita ser instanciada con un new para crear un objeto:
-A. Sí.
+1. Necesita ser instanciada con un new para crear un objeto:
+A. Sí. **CORRECTA**
 B. No, solo cuando le asignas valores directamente.
 C. No, solo cuando trabajas la primera vez con la gráfica.
 D. No.
 
 
-2. ¿Qué función tiene ?
-A. Carga el propio cargador de librerías.
+2. ¿Qué función tiene?
+A. Carga el propio cargador de librerías. **CORRECTA**
 B. Importa la librería jQuery.
 C. Carga los diferentes paquetes de la librería.
 D. Carga la última versión de Google Charts.
 
 3. La primera variable que recibe la función de JQuery es:
-A. La URL a la que se dirige la petición.
+A. La URL a la que se dirige la petición.  **CORRECTA**
 B. El evento que ha generado la visualización.
 C. El nombre de función destino donde se pasan los valores.
 D. El array de datos a visualizar.
+
+````javascript 
+$.get("https://docs.google.com/spreadsheet/pub?
+key=0AhNdznUnSazTdElCVTRT
+YzF6Zm9DSmlUQkx1NE5DY1E&output=csv", function(csvString) {
+// transform the CSV string into a 2-dimensional array
+var arrayData = $.csv.toArrays(csvString, {onParseValue:
+$.csv.hooks.castToScalar});
+...
+});
+
+# En cierta manera, cuando vemos el símbolo $ es equivalente al de JavaScript
+# estándar. Quiere decir que vamos a hacer algo con el documento HTML.
+````
 
 4. añade una columna a nuestra tabla de datos:
 A. Sí, tantas veces como aparezca esta línea de código.
@@ -173,29 +188,26 @@ B. Sí, aunque no admite valores iguales.
 C. No, porque la tabla ya viene con las columnas definidas.
 D. No.
 
-5. Existen librerías en JQuery que nos facilitan la transformación de archivos CSV a
-datos comprensibles por la librería de Google Charts:
+5. Existen librerías en JQuery que nos facilitan la transformación de archivos CSV a datos comprensibles por la librería de Google Charts:
 A. Sí.
 B. No, porque jQuery no incorpora dichas funciones.
 C. No, porque CSV no es un formato compatible con Google Chart.
-D. Sí, aunque depende de que las versiones sean compatibles.
+D. Sí, aunque depende de que las versiones sean compatibles.  **CORRECTA**
 
 6. nos dibujará bar charts verticales:
-A. Sí, admite tanto barras verticales como horizontales.
+A. Sí, admite tanto barras verticales como horizontales. **CORRECTA**
 B. Sí, hace lo mismo que colum chart.
 C. Sí, tanto barras independientes como apiladas.
 D. No.
 
 7. ¿Qué hace el código cuando contiene ?
-A. Comprueba si el evento generado por otra visualización tiene el formato
-correcto.
+A. Comprueba si el evento generado por otra visualización tiene el formato correcto.
 B. Comprueba si ha habido algún error con la petición http.
-C. Comprueba si ha habido algún problema en la generación de la
-visualización.
+C. Comprueba si ha habido algún problema en la generación de la visualización.
 D. Comprueba si los datos del archivo son coherentes
 
 8. se utiliza para escuchar eventos que generan las visualizaciones:
-A. Sí.
+A. Sí. **CORRECTA**
 B. No, solo aplica los eventos del ratón.
 C. No, se encarga de los eventos del sistema operativo.
 D. No
@@ -205,11 +217,11 @@ A. Sí, porque todas funcionan de la misma forma.
 B. Sí, porque de esta forma el código es escalable.
 C. Sí, porque ello permite cambiar la gráfica sin tener que cambiar los
 eventos.
-D. No.
+D. No. **CORRECTA**
 
 
 10. ¿Incluiremos el paquete para visualizar un mapa?
-A. Sí, para mostrar un país, un continente o una región.
+A. Sí, para mostrar un país, un continente o una región. **CORRECTA**
 B. Sí, para mostrar incluso direcciones de calles.
 C. No, porque no existe dicha librería.
 D. No
@@ -236,8 +248,55 @@ D. No
 
 --- 
 
-## Tema 03. 
 
+
+## Tema 3. D3.js. Introducción y funcionalidades
+
+1. ¿Qué significa el concepto chaining en D3?
+A. Las funciones se pueden concatenar una detrás de otra separándolas con
+un punto.
+B. Las funciones dependen unas de otras, y solo puedes llamarlas de una
+manera seguida.
+C. Las funciones permiten crear elementos HTML.
+D. Ninguna de las anteriores.
+2. Si ejecutamos la sentencia :
+A. Seleccionamos el elemento p con identificador target en el HTML y
+añadimos el texto indicado entre comillas.
+B. Seleccionamos el elemento p con identificador target en el HTML y
+reemplazamos el texto existente con el indicado entre comillas.
+C. Seleccionamos el elemento target con identificador p.
+D. Ninguna de las anteriores.
+3. Si ejecutamos la sentencia
+A. Seleccionamos el elemento del HTML, añadimos un elemento p y
+le asignamos el texto entre comillas.
+B. Seleccionamos el elemento del HTML, con identificador y le
+asignamos el texto entre comillas.
+C. No tiene una sintaxis correcta y no funciona.
+D. Ninguna de las anteriores.
+
+4. Con D3, ¿podemos modificar las clases CSS de los elementos HTML?
+A. Sí.
+B. No, porque figuran un fichero independiente.
+C. No, porque D3 solo me permite trabajar con los datos.
+D. No, porque solo puedo modificar el código HTML
+5. Con D3, ¿podemos modificar el estilo de un elemento HTML como, por ejemplo,
+el tamaño de la fuente, con una sentencia tipo ?
+A. Sí.
+B. No, porque las características de los objetos residen en las hojas de estilo.
+C. No, porque no existe una forma de modificar solo un identificador de estilo.
+D. No, porque los elementos de las hojas de estilo no son accesibles por D3.
+6. ¿Qué hace la siguiente sentencia: ?
+A. Devuelve todos los elementos div del HTML con el atributo clase que
+contenga .
+B. Asigna a todos los elementos div del HTML la clase .
+C. Asigna a un elemento div del HTML la clase .
+D. Ninguna de las anteriores.
+7. D3 permite trabajar tanto con los datos a visualizar como con elementos HTML:
+A. No, solo con datos.
+B. No, solo con elementos HTML.
+C. No, porque los elementos u objetos HTML deben codificarse antes de su
+visualización por el navegador.
+D. Sí. Es una de sus principales ventajas como herramienta de visualización
 
 
 ## Tema 04. 

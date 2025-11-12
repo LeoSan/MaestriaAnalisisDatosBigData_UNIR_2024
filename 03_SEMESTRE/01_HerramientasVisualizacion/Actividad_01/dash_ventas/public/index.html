@@ -46,7 +46,62 @@
     <main>
         <div class="controls">
             <button id="updateButton">Actualizar</button>
+            <span id="countdown-timer" style="font-style: italic; color: #555;"></span>
         </div>
+
+        <div class="info-card-container">
+
+            <div class="info-card total">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-boxes-stacked card-icon"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-label">Unidades Vendidas</p>
+                    <p id="total-unidades" class="card-value">0</p>
+                </div>
+            </div>
+
+            <div class="info-card ingresos">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-dollar-sign card-icon"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-label">Total Ingresos</p>
+                    <p id="total-ingresos" class="card-value">$0</p>
+                </div>
+            </div>
+
+            <div class="info-card asp">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-calculator card-icon"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-label">ASP</p>
+                    <p id="asp-value" class="card-value">$0</p>
+                </div>
+            </div>            
+
+            <div class="info-card maximo">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-arrow-trend-up card-icon"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-label">Precio Máximo</p>
+                    <p id="precio-maximo" class="card-value">$0</p>
+                </div>
+            </div>
+
+            <div class="info-card minimo">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-arrow-trend-down card-icon"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-label">Precio Mínimo</p>
+                    <p id="precio-minimo" class="card-value">$0</p>
+                </div>
+            </div>
+
+        </div>        
 
         <div class="chart-container-wrapper">
             <div class="chart-box">
@@ -67,10 +122,6 @@
         <div class="clock-display">
             <div id="date-display"   class="date-text"></div>
             <div id="time-display"   class="time-text"></div>
-            <div class="cont-ingresos">
-                <div id="amount-display" class="amount-text"></div>
-                <div id="label-display"  class="label-text"> Total Ingresos</div>
-            </div>
         </div>
     </section>
 

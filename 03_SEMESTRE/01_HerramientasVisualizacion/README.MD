@@ -338,7 +338,17 @@ eventos:
 
 
 
-## Tema 03. 
+## Tema 03. Tema 3. D3.js. Introducción y funcionalidades
+
+## 3.1. Introducción y objetivos
+
+## 3.2. Definición e instalación
+
+## 3.3. Elementos básicos de D3.js. Generando elementos HTML
+
+## 3.4. Trabajando con datos reales y elementos en el HTML
+
+## 3.5. Ventajas de D3.js
 
 
 ## Tema 04. 

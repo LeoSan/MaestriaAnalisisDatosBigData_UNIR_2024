@@ -9,6 +9,10 @@ export function metodoValidaData(data, DivArea) {
     document.getElementById(DivArea).innerHTML =
         '<p style="text-align: center; color: #B7B8B6;">No hay datos disponibles. ❌</p>';
     return;
+  }else{
+    document.getElementById(DivArea).innerHTML =
+        '';
+
   }
 }
 
@@ -17,7 +21,7 @@ export function metodoValidaData(data, DivArea) {
  * Módulo Util.
  * Descripción: permite generar la funcionalidad de un reloj.
  */
-export async function dibujaRelog(TotalIngresos) {
+export async function dibujaRelog(TotalIngresos, isValida=true) {
     const now = new Date();
     const optionsDate = { day: "numeric", month: "long", year: "numeric" };
     const dateString = now.toLocaleDateString("es-ES", optionsDate); // 'es-ES' para "de noviembre"
@@ -35,7 +39,7 @@ export async function dibujaRelog(TotalIngresos) {
 
     const dateDisplay = document.getElementById("date-display");
     const timeDisplay = document.getElementById("time-display");
-    const amountDisplay = document.getElementById("amount-display");
+
 
     if (dateDisplay) {
         dateDisplay.innerHTML = "";
@@ -52,16 +56,6 @@ export async function dibujaRelog(TotalIngresos) {
         timeDisplay.appendChild(clockIcon);
         timeDisplay.append(` ${timeString}`);
     }
-
-    // ICONO PARA EL MONTO (Dinero)
-    if (amountDisplay) {
-        amountDisplay.innerHTML = "";
-        const moneyIcon = document.createElement("i");
-        moneyIcon.classList.add("fas", "fa-dollar-sign");
-
-        amountDisplay.appendChild(moneyIcon);
-        amountDisplay.append(` ${TotalIngresos.toLocaleString()} `);
-    }
 }
 
 export function sumaTotalIngresos(data) {
@@ -71,4 +65,60 @@ export function sumaTotalIngresos(data) {
         0
     );
     return totalIngresos;
+}
+export function sumaTotalUnidades(data) {
+    // Formato de fecha: 10 de noviembre, 18:28:05
+    const totalIngresos = data.reduce(
+        (acc, item) => acc + Number(item.ventas || 0),
+        0
+    );
+    return totalIngresos;
+}
+export function extraeMaximoUnidades(data) {
+    const precios = data.map((item) => item.precio);
+    const precioMax = Math.max(...precios);
+    return precioMax;
+}
+export function extraeMinimoUnidades(data) {
+    const precios = data.map((item) => item.precio);
+    const precioMin = Math.min(...precios);
+    return precioMin;
+}
+
+
+export function pintarflasCard(valor_unitario, tipo) {
+    let valor = 0;
+    let nomSelector = tipo;
+    switch (tipo) {
+        case "total-ingresos":
+            valor = valor_unitario.toLocaleString("es-ES");
+            break;
+        case "total-unidades":
+            valor = valor_unitario;
+            break;
+        case "precio-maximo":
+            valor = valor_unitario.toLocaleString("es-ES", {
+                style: "currency",
+                currency: "USD",
+                minimumFractionDigits: 0,
+            });
+            break;
+        case "precio-minimo":
+            valor = valor_unitario.toLocaleString("es-ES", {
+                style: "currency",
+                currency: "USD",
+                minimumFractionDigits: 0,
+            });
+            break;
+        case "asp-value":
+            valor = valor_unitario.toLocaleString("es-ES", {
+                style: "currency",
+                currency: "USD",
+                minimumFractionDigits: 2,
+            });
+            break;
+    }
+    const divCard = document.getElementById(nomSelector);
+    divCard.setHTMLUnsafe(` ${valor} `);
+
 }
