@@ -248,3 +248,13 @@ D3.js tiene una curva de aprendizaje, pero una vez que "hace clic", es increíbl
 ---
 
 ¡Esta primera fase te dará una comprensión muy sólida de cómo D3.js interactúa con el DOM y cómo vincula tus datos a elementos visuales\! Tómate tu tiempo con cada ejercicio y no dudes en preguntar si te encuentras con alguna dificultad.
+
+## Otra Actividad es Spreadsheets
+> Generar graficas con Spreadsheets realizar 5 practicas con 5 tipos graficos 
+
+## Otra Actividad es CSV
+> Generar graficas con CSV PUBLICOS realizar 5 practicas con 5 tipos graficos 
+
+
+## Otra Actividad es GooglwShart (Sort, Select)
+> Generar graficas con CSV PUBLICOS realizar 5 practicas con 5 tipos graficos y una tabla 

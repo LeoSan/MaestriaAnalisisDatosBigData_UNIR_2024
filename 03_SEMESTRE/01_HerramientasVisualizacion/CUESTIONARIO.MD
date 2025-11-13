@@ -247,6 +247,42 @@ D. No
 
 
 --- 
+## Videoclase 2. Integración de Google Chart con Spreadsheets y CSV
+
+- ¿Qué paso es necesario para usar una hoja de Google Spreadsheet como fuente de datos en una visualización?
+- Asignar permisos de lectura públicos o para cualquier persona con el enlace. => Para conectar una visualización con Google Spreadsheets, es necesario asegurarse de que la hoja tenga permisos de lectura adecuados. Esto permite que el archivo sea accesible desde el código, sin necesidad de modificar constantemente el JavaScript.
+
+- ¿Qué sucede si se utiliza una URL incorrecta de Google Spreadsheet en el código?
+- Aparece un error reportado por la función handleQueryResponse. => La función handleQueryResponse gestiona los errores y si la URL es incorrecta, reporta el problema mediante un mensaje de error que indica la causa específica. Esto ayuda a depurar el código.
+
+- ¿Qué método de jQuery se utiliza para obtener el contenido de un archivo CSV?
+- $.get() => El método $.get() realiza una solicitud HTTP para obtener el contenido del archivo CSV desde una URL. Es un formato común para manejar datos externos con jQuery.
+
+- ¿Qué parámetros son necesarios al llamar a la función google.visualization.Query?
+- headers y gid => Al usar google.visualization.Query, los parámetros headers (para indicar cuántas filas son cabecera) y gid (para identificar la hoja de trabajo específica) son esenciales para una configuración precisa del gráfico.
+
+- ¿Cuál es el propósito de la función $.csv.toArrays al trabajar con un archivo CSV?
+- Transformar el contenido del archivo CSV en un array bidimensional. => La función $.csv.toArrays convierte el contenido del archivo CSV en un array bidimensional que puede ser interpretado fácilmente por bibliotecas como Google Charts. Esto facilita la manipulación de los datos para visualizaciones.
+
+--- 
+
+## Videoclase 3. Manejo de fuentes de datos y eventos en Google Chart
+- ¿Qué función de Google Charts se utiliza para escuchar y gestionar eventos generados por las visualizaciones?
+- google.visualization.events.addListener => La función google.visualization.events.addListener permite registrar un evento en una visualización, ejecutando una función cuando dicho evento ocurre. Por ejemplo, en el código de muestra se utiliza para detectar cuando un usuario ordena una tabla.
+
+- ¿Qué ocurre cuando el evento sort de una tabla es detectado por el listener en el ejemplo de código?
+- Se ordenan los datos en el objeto data y se actualiza el gráfico de barras. => En el ejemplo proporcionado, cuando el evento sort es detectado, se ejecuta el método data.sort para reordenar los datos. Posteriormente, se llama al método chart.draw para actualizar el gráfico de barras con el nuevo orden.
+
+- ¿Cuál es el propósito del método google.visualization.DataView en el ejemplo de código?
+- Filtrar y seleccionar las columnas que se mostrarán en las visualizaciones. => 
+
+- ¿Qué efecto tiene aplicar el método formatter.format(data, 1) al objeto de datos?
+- Aplica un prefijo de formato a la columna especificada, como $. => l método formatter.format aplica un formato específico a una columna del objeto DataTable. En este caso, añade el prefijo $ a los valores de la columna de salarios (columna 1).
+
+- ¿Qué función es responsable de actualizar el gráfico de barras cuando se ordenan los datos de la tabla?
+- chart.draw. => La función chart.draw(view) es la encargada de redibujar el gráfico de barras después de que los datos de la tabla se hayan ordenado. Esto ocurre dentro del listener que detecta el evento sort. El gráfico se actualiza con la nueva visualización de los datos ordenados.
+
+
 
 
 
@@ -297,6 +333,10 @@ B. No, solo con elementos HTML.
 C. No, porque los elementos u objetos HTML deben codificarse antes de su
 visualización por el navegador.
 D. Sí. Es una de sus principales ventajas como herramienta de visualización
+
+---
+## Videoclase 1. Introducción a D3.js
+
 
 
 ## Tema 04. 
