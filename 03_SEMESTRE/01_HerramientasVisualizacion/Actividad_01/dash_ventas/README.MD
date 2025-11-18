@@ -3,25 +3,26 @@
 ```
 /mi-dashboard
 │
-├── node_modules/         <-- (Carpeta creada por npm install)
+├── node_modules/         <-- Paquetes Funcionales para el ambiente Node.js 
 │
-├── package.json          <-- (¡Muy importante! Revisa el Paso 2)
+├── package.json          <-- Lista de Paquetes para la actividad
 ├── package-lock.json
 │
-├── server.js             <-- (Tu servidor Express)
+├── server.js             <-- Servidor Express (Backend)
 │
-└── /public               <-- (La carpeta que servirá Express)
+└── /public               <-- Repositorio Principal (Presentación)
     │
-    ├── index.html
+    ├── index.html        <-- Plantilla html que permite la visualización
     │
-    ├── app.js            <-- (Este será nuestro "orquestador" principal)
+    ├── app.js            <-- Script Interactivo (Orquestador CLiente)
     │
     ├── /js
-    │    ├── google-chart.js
-    │    └── d3-chart.js
+    │    ├── google-chart.js <-- Lógica para graficar google Chart (Grafico 1)
+    │    └── d3-chart.js     <-- Lógica para graficar la funcionalidad de grafica deburbuja (Grafico 2)
+    │    └── util.js         <-- Lógica modular y flexible permitiendo tener calculos, validaciones, llamados APi, para mantener la modularidad y flexibilidad. (Utilidades)
     └── /css
-         ├── global.css      <-- Archivo de limpieza css
-         └── dash_venta.css  <-- Archivo genera los estilos del dashboard
+         ├── global.css      <-- Archivo de limpieza csss
+         └── dash_venta.css  <-- Archivo para generar el estilo deseado visual para la actividad
 ```
 
 # Pasos para iniciar un proyecto en Node.js
@@ -93,7 +94,7 @@
             - #34675C
             - #B3C100
 
-    - Desarrollo Bak - Codificación  
-        - Descripción: 
+    - Desarrollo Back - Codificación  
+        - Descripción:   
         - Paradigma: 
         - Patron de Diseño:
