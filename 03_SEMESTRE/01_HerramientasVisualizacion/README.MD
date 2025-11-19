@@ -342,33 +342,214 @@ eventos:
 
 ## 3.1. Introducción y objetivos
 
+![alt text](image.png)
+
+Lo importante es que acabemos este curso siendo capaces de diseñar e implementar
+nuestras propias visualizaciones, ya sea desde cero o modificando una existente. En
+concreto este tema introducirá los conceptos básicos de D3.js. para ir
+profundizando en temas posteriores
+
+> ENLACE
+- https://github.com/d3/d3
+- https://www.tutorialsteacher.com/d3js/what-is-d3js
+- https://www.tutorialsteacher.com/d3js
+- https://github.com/NickQiZhu/d3-cookbook
+- https://github.com/NickQiZhu/d3-cookbook/tree/master/src => practicas 
+
+**Tipos de graficas que existen**
+
+![alt text](image-1.png)
+
+<Puedes aprender cosas nuevas en cualquier momento de tu vida si estás dispuesto a ser un principiante. Si realmente aprendes a que te guste ser un principiante, el mundo entero se abre ante ti>
+
+
+
 ## 3.2. Definición e instalación
+
+> D3.js (Data-Driven Documents) es una librería JavaScript que utiliza datos digitales para impulsar la creación y control de gráficas dinámicas e interactivas en los navegadores.
+
+**Data driven documents**
+Este concepto es bastante importante si lo que estamos pensando es en reutilizar
+visualizaciones existentes. Hasta ahora, debíamos adaptar nuestra estructura de
+datos a las visualizaciones, mientras que aquí hay algo más de libertad.
+Podemos adaptar nuestros datos o bien podemos cambiar la forma en la que D3 está
+leyendo los datos y es lo que se denomina documentos orientados a datos. D3 se
+creó con la intención de tener control absoluto sobre la visualización.
+
+
+**Scalable Vector Graphics (SVG).**
+No importa dónde mostremos nuestra visualización: pantallas y formatos grandes
+como un monitor o soportes más pequeños como los de un móvil. Nuestra
+visualización se puede adaptar a diferentes resoluciones.
+
+**Compatible con estándares**
+Es compatible con estándares como JavaScript, HTML5 y Cascading Style
+Sheets (CSS3), por lo que funciona en diferentes exploradores y diferentes
+dispositivos
+
+**Caracteristicas**
+- Loading: carga información en la memoria de tu explorador.
+- Binding: añade información a elementos existentes en tu HTML, vinculando los datos y los objetos HTML.
+- Transforming: es capaz de leer datos y dar una respuesta visual basada en los datos. Para ello puede transformar el código HTML.
+- Transitioning: basándose en la entrada del usuario, puede reaccionar y dar una respuesta diferente
+
+**Instalación Dos formas** 
+
+1. Incluir la librería D3 desde nuestro ordenador: descargamos la última versión
+disponible en d3js.org a través del fichero d3.zip. Lo descomprimimos y extraemos la
+librería, ubicándola en el directorio local que queramos para poder llamarla desde
+nuestro código en JavaScript.
+
+2. Incluir la librería D3 desde CDN (Content Delivery Network): enlazamos a la última
+versión de la librería con el siguiente código:  (<script src="https://d3js.org/d3.v5.min.js"></script>)
+
+
 
 ## 3.3. Elementos básicos de D3.js. Generando elementos HTML
 
+La sintaxis de D3 sigue el concepto de encadenamiento o chaining. Se trata de
+concatenar varias funciones una seguida de otra, también es habitual utilizarla en
+Java
+
+
+```JavaScript
+<html>
+<head>
+<script language="javascript" type="text/javascript"
+src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript">
+function draw(){
+  d3.select("body").append("p").text("Párrafo nuevo");
+
+  /*
+   Misma forma mismo resultado  
+  var body = d3.select("body");
+  var p = body.append("p");
+  p.text("Párrafo nuevo");
+
+  */
+}
+</script>
+</head>
+<body onload="draw()">
+</body>
+</html>
+
+
+``` 
 ## 3.4. Trabajando con datos reales y elementos en el HTML
+
+
+**Modificar elementos HTML y atributos**
+```JavaScript
+function draw(){
+  d3.select("p#target").text("Contenido: ");
+  // Establece atributo "descr" con el valor "primer descriptor" en el elemento p
+  d3.select("p").attr("descr", "primer_descriptor");
+  // Obtiene el atributo "descr" en el elemento p
+  d3.select("p#target").text(d3.select("p").text()+d3.select("p").attr("descr"));
+}
+``` 
+
+**Uso de estilos**
+```JavaScript
+d3.select("p#target").style("font-size", function(){return"40px";});
+```
+
+**Modificar varios elementos HTML al mismo tiempo**
+
+```JavaScript
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<script language="javascript" type="text/javascript"
+src="http://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript">
+function draw(){
+  d3.selectAll("div").attr("class", "red box");
+}
+</script>
+</head>
+<body onload="draw()">
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
+```
+
+**Si queremos iterar**
+> La función itera sobre los diferentes elementos, siendo d el elemento en sí, es decir, el elemento div referenciado dentro de la función como . Y lo que hacemos es añadir un elemento con el número de la iteración
+
+```JavaScript
+d3.selectAll("div").attr("class", "red box")
+  .each(function (d, i) {
+      //d -> Div 
+      //i -> indice 
+      d3.select(this).append("h1").text(i);
+  });
+
+```
+
+**Subelementos**
+
+
+```JavaScript
+
+<section id="section1">
+<div>
+<p>blue box</p>
+</div>
+</section>
+<section id="section2">
+<div>
+<p>red box</p>
+</div>
+</section>
+
+d3.select("#section1 > div").attr("class", "caja azul");
+
+// ó 
+
+d3.select("#section2").select("div").attr("class", "caja roja");
+
+```
 
 ## 3.5. Ventajas de D3.js
 
 
-## Tema 04. 
+- D3.js es una biblioteca de JavaScript. Por lo tanto, puede ser usada con cualquier marco JS de su elección como Angular.js, React.js, etc…
+- D3 se centra en los datos, por lo que es la herramienta más apropiada y especializada para la visualización de datos.
+- D3 es de código abierto, te permite trabajar con el código fuente y añadir tus propias características.
+- Funciona con estándares web, por lo que no se necesita ninguna otra tecnología o plugin que no sea un navegador para hacer uso de D3.
+- D3 trabaja con estándares web como HTML, CSS y SVG, no se requiere ninguna nueva herramienta de aprendizaje o depuración para trabajar en D3.
+- D3 proporciona un control completo sobre su visualización para personalizarla de la manera que se desee. Esto le da una ventaja sobre otras herramientas populares como Tableau o QlikView para usos específicos.
+- Dado que D3 es ligero y funciona directamente con los estándares web, es extremadamente rápido y funciona bien con grandes conjuntos de datos.
+
+# Tema 4. D3.js. Datos, SVG y gráficas
 
 
-## Tema 05. 
+## 4.1. Introducción y objetivos
+## 4.2. Trabajar con diferentes estructuras de datos JSON y CSV
+##  4.3. Generar y dibujar con SVG
+## 4.4. Bar Chart y Scatter Plot desde cero
 
 
-## Tema 06. 
+# Tema 05. 
 
 
-## Tema 07. 
+# Tema 06. 
 
 
-## Tema 08. 
+# Tema 07. 
+
+
+# Tema 08. 
 
 
 
-## Tema 09. 
+# Tema 09. 
 
 
-## Tema 10. 
+# Tema 10. 
 

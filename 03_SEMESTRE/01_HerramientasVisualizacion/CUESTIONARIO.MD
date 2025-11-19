@@ -1,6 +1,6 @@
 # Herramientas de Visualización
 
-## Tema 1. Introducción a las herramientas de visualización
+# Tema 1. Introducción a las herramientas de visualización
 
 1. Para explicar una historia basada en datos debemos:
 - A. Entender los datos disponibles.
@@ -145,28 +145,26 @@ document.getElementById(‘demo’).innerHTML = ‘Hola, Mundo!’;
 - Utiliza una interfaz sencilla con ayudas en la escritura y organización del proyecto.
 
 
-
-
-## Tema 2. Historia de la visualización de datos
+# Tema 2. Historia de la visualización de datos
 
 1. Necesita ser instanciada con un new para crear un objeto:
-A. Sí. **CORRECTA**
-B. No, solo cuando le asignas valores directamente.
-C. No, solo cuando trabajas la primera vez con la gráfica.
-D. No.
+- A. Sí. **CORRECTA**
+- B. No, solo cuando le asignas valores directamente.
+- C. No, solo cuando trabajas la primera vez con la gráfica.
+- D. No.
 
 
 2. ¿Qué función tiene?
-A. Carga el propio cargador de librerías. **CORRECTA**
-B. Importa la librería jQuery.
-C. Carga los diferentes paquetes de la librería.
-D. Carga la última versión de Google Charts.
+- A. Carga el propio cargador de librerías. **CORRECTA**
+- B. Importa la librería jQuery.
+- C. Carga los diferentes paquetes de la librería.
+- D. Carga la última versión de Google Charts.
 
 3. La primera variable que recibe la función de JQuery es:
-A. La URL a la que se dirige la petición.  **CORRECTA**
-B. El evento que ha generado la visualización.
-C. El nombre de función destino donde se pasan los valores.
-D. El array de datos a visualizar.
+- A. La URL a la que se dirige la petición.  **CORRECTA**
+- B. El evento que ha generado la visualización.
+- C. El nombre de función destino donde se pasan los valores.
+- D. El array de datos a visualizar.
 
 ````javascript 
 $.get("https://docs.google.com/spreadsheet/pub?
@@ -178,54 +176,52 @@ $.csv.hooks.castToScalar});
 ...
 });
 
-# En cierta manera, cuando vemos el símbolo $ es equivalente al de JavaScript
-# estándar. Quiere decir que vamos a hacer algo con el documento HTML.
+//En cierta manera, cuando vemos el símbolo $ es equivalente al de JavaScript
+// estándar. Quiere decir que vamos a hacer algo con el documento HTML.
 ````
 
 4. añade una columna a nuestra tabla de datos:
-A. Sí, tantas veces como aparezca esta línea de código.
-B. Sí, aunque no admite valores iguales.
-C. No, porque la tabla ya viene con las columnas definidas.
-D. No.
+- A. Sí, tantas veces como aparezca esta línea de código.
+- B. Sí, aunque no admite valores iguales.
+- C. No, porque la tabla ya viene con las columnas definidas.
+- D. No.
 
 5. Existen librerías en JQuery que nos facilitan la transformación de archivos CSV a datos comprensibles por la librería de Google Charts:
-A. Sí.
-B. No, porque jQuery no incorpora dichas funciones.
-C. No, porque CSV no es un formato compatible con Google Chart.
-D. Sí, aunque depende de que las versiones sean compatibles.  **CORRECTA**
+- A. Sí.
+- B. No, porque jQuery no incorpora dichas funciones.
+- C. No, porque CSV no es un formato compatible con Google Chart.
+- D. Sí, aunque depende de que las versiones sean compatibles.  **CORRECTA**
 
 6. nos dibujará bar charts verticales:
-A. Sí, admite tanto barras verticales como horizontales. **CORRECTA**
-B. Sí, hace lo mismo que colum chart.
-C. Sí, tanto barras independientes como apiladas.
-D. No.
+- A. Sí, admite tanto barras verticales como horizontales. **CORRECTA**
+- B. Sí, hace lo mismo que colum chart.
+- C. Sí, tanto barras independientes como apiladas.
+- D. No.
 
 7. ¿Qué hace el código cuando contiene ?
-A. Comprueba si el evento generado por otra visualización tiene el formato correcto.
-B. Comprueba si ha habido algún error con la petición http.
-C. Comprueba si ha habido algún problema en la generación de la visualización.
-D. Comprueba si los datos del archivo son coherentes
+- A. Comprueba si el evento generado por otra visualización tiene el formato correcto.
+- B. Comprueba si ha habido algún error con la petición http.
+- C. Comprueba si ha habido algún problema en la generación de la visualización.
+- D. Comprueba si los datos del archivo son coherentes
 
 8. se utiliza para escuchar eventos que generan las visualizaciones:
-A. Sí. **CORRECTA**
-B. No, solo aplica los eventos del ratón.
-C. No, se encarga de los eventos del sistema operativo.
-D. No
+- A. Sí. **CORRECTA**
+- B. No, solo aplica los eventos del ratón.
+- C. No, se encarga de los eventos del sistema operativo.
+- D. No
 
 9. Todas las visualizaciones de Google Chart generan los mismos tipos de eventos:
-A. Sí, porque todas funcionan de la misma forma.
-B. Sí, porque de esta forma el código es escalable.
-C. Sí, porque ello permite cambiar la gráfica sin tener que cambiar los
-eventos.
-D. No. **CORRECTA**
+- A. Sí, porque todas funcionan de la misma forma.
+- B. Sí, porque de esta forma el código es escalable.
+- C. Sí, porque ello permite cambiar la gráfica sin tener que cambiar los eventos.
+- D. No. **CORRECTA**
 
 
 10. ¿Incluiremos el paquete para visualizar un mapa?
-A. Sí, para mostrar un país, un continente o una región. **CORRECTA**
-B. Sí, para mostrar incluso direcciones de calles.
-C. No, porque no existe dicha librería.
-D. No
-
+- A. Sí, para mostrar un país, un continente o una región. **CORRECTA**
+- B. Sí, para mostrar incluso direcciones de calles.
+- C. No, porque no existe dicha librería.
+- D. No
 
 --- 
 ## Videoclase 1. Funcionalidades principales
@@ -283,90 +279,514 @@ D. No
 - chart.draw. => La función chart.draw(view) es la encargada de redibujar el gráfico de barras después de que los datos de la tabla se hayan ordenado. Esto ocurre dentro del listener que detecta el evento sort. El gráfico se actualiza con la nueva visualización de los datos ordenados.
 
 
-
-
-
-## Tema 3. D3.js. Introducción y funcionalidades
+# Tema 3. D3.js. Introducción y funcionalidades
 
 1. ¿Qué significa el concepto chaining en D3?
-A. Las funciones se pueden concatenar una detrás de otra separándolas con
-un punto.
-B. Las funciones dependen unas de otras, y solo puedes llamarlas de una
-manera seguida.
-C. Las funciones permiten crear elementos HTML.
-D. Ninguna de las anteriores.
+- A. Las funciones se pueden concatenar una detrás de otra separándolas con un punto.  **CORRECTA**
+- B. Las funciones dependen unas de otras, y solo puedes llamarlas de una manera seguida.
+- C. Las funciones permiten crear elementos HTML.
+- D. Ninguna de las anteriores.
+
 2. Si ejecutamos la sentencia :
-A. Seleccionamos el elemento p con identificador target en el HTML y
-añadimos el texto indicado entre comillas.
-B. Seleccionamos el elemento p con identificador target en el HTML y
-reemplazamos el texto existente con el indicado entre comillas.
-C. Seleccionamos el elemento target con identificador p.
-D. Ninguna de las anteriores.
+- A. Seleccionamos el elemento p con identificador target en el HTML y añadimos el texto indicado entre comillas.
+- B. Seleccionamos el elemento p con identificador target en el HTML y reemplazamos el texto existente con el indicado entre comillas.
+- C. Seleccionamos el elemento target con identificador p.
+- D. Ninguna de las anteriores.
+
 3. Si ejecutamos la sentencia
-A. Seleccionamos el elemento del HTML, añadimos un elemento p y
-le asignamos el texto entre comillas.
-B. Seleccionamos el elemento del HTML, con identificador y le
-asignamos el texto entre comillas.
-C. No tiene una sintaxis correcta y no funciona.
-D. Ninguna de las anteriores.
+- A. Seleccionamos el elemento del HTML, añadimos un elemento p y le asignamos el texto entre comillas.
+- B. Seleccionamos el elemento del HTML, con identificador y le asignamos el texto entre comillas.
+- C. No tiene una sintaxis correcta y no funciona.
+- D. Ninguna de las anteriores.
 
 4. Con D3, ¿podemos modificar las clases CSS de los elementos HTML?
-A. Sí.
-B. No, porque figuran un fichero independiente.
-C. No, porque D3 solo me permite trabajar con los datos.
-D. No, porque solo puedo modificar el código HTML
-5. Con D3, ¿podemos modificar el estilo de un elemento HTML como, por ejemplo,
-el tamaño de la fuente, con una sentencia tipo ?
-A. Sí.
-B. No, porque las características de los objetos residen en las hojas de estilo.
-C. No, porque no existe una forma de modificar solo un identificador de estilo.
-D. No, porque los elementos de las hojas de estilo no son accesibles por D3.
-6. ¿Qué hace la siguiente sentencia: ?
-A. Devuelve todos los elementos div del HTML con el atributo clase que
-contenga .
-B. Asigna a todos los elementos div del HTML la clase .
-C. Asigna a un elemento div del HTML la clase .
-D. Ninguna de las anteriores.
-7. D3 permite trabajar tanto con los datos a visualizar como con elementos HTML:
-A. No, solo con datos.
-B. No, solo con elementos HTML.
-C. No, porque los elementos u objetos HTML deben codificarse antes de su
-visualización por el navegador.
-D. Sí. Es una de sus principales ventajas como herramienta de visualización
+- A. Sí.**CORRECTA**
+- B. No, porque figuran un fichero independiente.
+- C. No, porque D3 solo me permite trabajar con los datos.
+- D. No, porque solo puedo modificar el código HTML
 
+5. Con D3, ¿podemos modificar el estilo de un elemento HTML como, por ejemplo, el tamaño de la fuente, con una sentencia tipo ?
+- A. Sí.**CORRECTA**
+- B. No, porque las características de los objetos residen en las hojas de estilo.
+- C. No, porque no existe una forma de modificar solo un identificador de estilo.
+- D. No, porque los elementos de las hojas de estilo no son accesibles por D3.
+
+6. ¿Qué hace la siguiente sentencia: ?
+- A. Devuelve todos los elementos div del HTML con el atributo clase que contenga .
+- B. Asigna a todos los elementos div del HTML la clase .
+- C. Asigna a un elemento div del HTML la clase .
+- D. Ninguna de las anteriores.
+
+7. D3 permite trabajar tanto con los datos a visualizar como con elementos HTML:
+- A. No, solo con datos.
+- B. No, solo con elementos HTML.
+- C. No, porque los elementos u objetos HTML deben codificarse antes de su visualización por el navegador.
+- D. Sí. Es una de sus principales ventajas como herramienta de visualización **CORRECTA**
+
+8. ¿Qué hace la siguiente sentencia: ?
+- A. Itera por todos los elementos y les añade un elemento con el texto , donde es el contador de la iteración.
+- B. Itera por todos los elementos y les añade un elemento con el texto , donde es el texto que el elemento HTML contiene.
+- C. Itera por todos los elementos y les añade un elemento con el texto , donde es una constante fija previamente definida.
+- D. Ninguna de las anteriores
+
+
+9. Identifica si obtenemos el mismo resultado con la sentencia que con el siguiente código:
+
+![alt text](image-2.png)
+
+- A. Sí.
+- B. No, porque la primera sentencia no es correcta.
+- C. No, porque aunque la primera sentencia es correcta, el código siguiente no lo es.
+- D. No, porque tanto la línea de código individual como el grupo de código son incorrectos.
+
+10. ¿Qué hace la sentencia d ?
+- A. Le asigna vacío al elemento con identificador .
+- B. Devuelve el contenido del elemento con identificador .
+- C. Devuelve el contenido del elemento , siendo este de formato texto.
+- D. Le asigna un texto al elemento .
 ---
 ## Videoclase 1. Introducción a D3.js
 
+- ¿Cuál de las siguientes afirmaciones sobre D3.js es incorrecta?
+-  D3.js se limita a crear gráficos estáticos y no soporta interactividad. => 
+
+- ¿Cuál de los siguientes conceptos es central en D3.js y se refiere a la vinculación de datos a elementos del DOM?
+- Binding. => El binding es el proceso fundamental en D3.js que conecta los datos a elementos visuales en el DOM, permitiendo que la visualización se actualice automáticamente cuando cambian los datos
+
+- ¿Cuál de las siguientes opciones no es una ventaja de utilizar D3.js para crear visualizaciones de datos?
+- Facilidad de uso para principiantes. => Si bien D3.js es una herramienta muy poderosa, su curva de aprendizaje puede ser más pronunciada que otras bibliotecas, lo que la hace menos amigable para principiantes.
+
+- ¿Cuál de las siguientes afirmaciones sobre SVG es falsa en el contexto de D3.js?
+- SVG es la única opción para renderizar gráficos en D3.js. => Aunque SVG es el formato más común utilizado por D3.js, también es posible utilizar Canvas para renderizar gráficos.
+
+- ¿Cuál de las siguientes opciones describe mejor el concepto de data-driven documents en D3.js?
+- La vinculación de datos a elementos del DOM para generar visualizaciones dinámicas. => La definición más precisa de data-driven documents es la vinculación de datos a elementos del DOM, lo que permite que la visualización se actualice dinámicamente en respuesta a cambios en los datos.
+
+## Videoclase 2. Manipulación y mejores prácticas en D3.js y HTML
+
+- ¿Cuál de las siguientes no es una ventaja de utilizar D3.js para la visualización de datos?
+- Facilidad de uso para principiantes sin conocimientos de programación. => Si bien D3.js es una herramienta poderosa, requiere un sólido conocimiento de iiJavaScript y programación en general para aprovechar al máximo sus capacidades. La curva de aprendizaje puede ser relativamente empinada para aquellos sin experiencia previa en programación.
+
+- ¿Cuál es el concepto clave que permite enlazar datos a elementos HTML en D3.js y crear visualizaciones dinámicas?
+- Binding. => El binding es el concepto central en D3.js que permite vincular datos a elementos HTML, creando una conexión entre los datos y la visualización. Esto es lo que hace que las visualizaciones sean dinámicas y responsivas a los cambios en los datos.
+
+- ¿Qué función de D3.js se utiliza para añadir un nuevo elemento HTML a un elemento existente?
+- append(). => La función append() en D3.js se utiliza específicamente para añadir nuevos elementos a un elemento existente en el DOM.
+
+- ¿Cuál de las siguientes afirmaciones sobre D3.js es incorrecta?
+- D3.js requiere de plugins adicionales para funcionar en diferentes navegadores. => D3.js utiliza estándares web como HTML, CSS y SVG, por lo que funciona de forma nativa en la mayoría de los navegadores modernos sin necesidad de plugins adicionales.
+
+- ¿Cuál es la principal razón por la que el siguiente código crea un nuevo párrafo con el texto «Párrafo nuevo» dentro del elemento <body>? 
+<d3.select(“body”).append(“p”).text(“Párrafo nuevo”);>
+- La función select() selecciona el elemento body y la función append() añade un párrafo. => Este es el flujo correcto del código. Primero se selecciona el elemento body del documento HTML, luego se utiliza append() para agregar un nuevo elemento p (párrafo) como hijo del elemento body y, finalmente, se establece el texto del párrafo utilizando text().
 
 
-## Tema 04. 
+
+## Videoclase 3. Integración de HTML con D3.js para visualizaciones dinámicas
+
+- ¿Cuál de las siguientes funciones de D3.js se utiliza principalmente para seleccionar múltiples elementos HTML?
+- d3.selectAll().
+
+- ¿Qué hace la función each() en D3.js?
+- Itera sobre cada elemento de una selección y ejecuta una función.
+
+- ¿Cuál es la función de d3.style() en el siguiente código: d3.select(“p#target”).style(“font-size”, “40px”);?
+- Establece el tamaño de la fuente.
+
+- ¿Cuál de las siguientes opciones es la forma correcta de seleccionar un elemento div dentro de un elemento section con ID “section1”?
+- d3.select(“#section1 > div”).
+
+- ¿Qué hace el siguiente código?
+```
+d3.selectAll("div")
+
+  .attr("class", "red box")
+
+  .each(function(d, i) {
+
+    d3.select(this).append("h1").text(i);
+
+  });
+```
+- Selecciona todos los elementos div, les asigna la clase red box y añade un encabezado h1 con el índice de cada elemento.
 
 
-## Tema 05. 
 
-
-## Tema 06. 
-
-
-## Tema 07. 
-
-
-## Tema 08. 
+# Tema 4. D3.js. Datos, SVG y gráficas
 
 
 
-## Tema 09. 
 
 
-## Tema 10. 
+## Videoclase 1. 
 
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+
+# Tema 05. 
 
 
 --- 
 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+# Tema 06. 
+
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+# Tema 07. 
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+# Tema 08. 
+
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+# Tema 09. 
+
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+# Tema 10. 
 
 
 
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
 
 -
 -
