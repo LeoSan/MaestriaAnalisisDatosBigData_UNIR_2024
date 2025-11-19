@@ -1,11 +1,3 @@
-¡Me alegro mucho que la explicación te haya sido útil y que te interese profundizar en D3.js\! Es una librería fantástica y dominarla abre un mundo de posibilidades en la visualización de datos.
-
-Dado que ya tienes una base sólida en HTML, CSS (para SVG) y JavaScript, estás en una excelente posición para aprender D3.js. Muchos se pierden porque les falta una de esas bases.
-
-Para comprender D3.js de manera incremental, te sugiero un enfoque basado en los "pilares" de la librería, y luego cómo aplicarlos.
-
------
-
 ### 🗺️ Hoja de Ruta para Aprender D3.js (Novato a Intermedio)
 
 Aquí te presento una secuencia de temas y conceptos clave para ir leyendo y practicando:

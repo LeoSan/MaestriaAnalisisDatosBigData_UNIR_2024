@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<style type="text/css">
+    .cont-ligero {
+        background-color: #A52A2A;
+        border-radius: 10px;
+        border: 1px solid black;
+        width: 500px;
+        height: 500px;
+    }
+
+    .rectangulo {
+        width: 100px;
+        height: 80px;
+        fill: steelblue;
+    }
+
+    .circulo {
+        fill: lightcoral;
+    }
+</style>
+
+<body>
+    1. **Crea un Lienzo SVG Básico:**
+    <ul>
+        <li>* En tu `index.html`, crea un `<div>` vacío con un `id="svg-container"`.</li>
+        <li>* Usando D3.js, selecciona este `div` y apéndele un elemento con un `width` de `400` y `height` de
+            `300`. Dale un `background-color` ligero con CSS para que puedas verlo.</li>
+        <li>* **Pista:** `d3.select("#svg-container").append("svg").attr("width", 400).attr("height",
+            300).style("background-color", "#f0f0f0");`</li>
+    </ul>
+
+    2. **Dibuja un Rectángulo y un Círculo:**
+
+    <ol>
+        <li> * Dentro del `svg` que creaste, apéndele un `rect`:
+            * `x="50"`, `y="50"`, `width="100"`, `height="80"`.
+            * `fill="steelblue"`.
+        </li>
+        <li> * Luego, apéndele un `circle`:
+            * `cx="250"`, `cy="100"`, `r="40"`.
+            * `fill="lightcoral"`.
+        </li>
+        <li>* **Pista:** Encadena `.append()` después de tu selección `svg`.</li>
+    </ol>
+
+    3. **Añade Texto a un SVG:**
+    <ol>
+        <li> * Apéndele un elemento `<text>` al SVG</li>
+        <li> * Posiciónalo en `x="200"`, `y="250"`.</li>
+        <li>* Dale un `text-anchor="middle"` con `.style()`.</li>
+        <li>* Establece su contenido a "Mi Primera Gráfica SVG" con `.text()`.</li>
+        <li>* **Pista:** `.style()` y `.text()` son métodos de selección.</li>
+    </ol>
+
+
+    <div id="svg-container">
+
+    </div>
+
+    <script type="text/javascript">
+        //Funciones 
+        const animarCirculo = (circulo) => {
+            circulo.transition().duration(1000).attr("cy", 150).transition().duration(1000).attr("cy", 100).on("end", function () {
+                animarCirculo(circulo);
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        //Genero un svg con un div con id="svg-container"
+        let svg = d3.select("#svg-container").append("svg").attr("width", 500).attr("class", "cont-ligero");
+
+        //Dibujo un rectangulo 
+        let rectangulo = svg.append("rect").attr("x", 50).attr("y", 50).attr("class", "rectangulo");
+
+        // Dibujo circulo 
+        let circulo = svg.append("circle").attr("cx", 250).attr("cy", 100).attr("r", 40).attr("class", "circulo");
+
+        //Añade Titulo 
+        svg.append("text").attr("x", 200).attr("y", 250).style("text-anchor", "middle").style("fill", "white").text("Mi Primera Gráfica SVG");
+
+        //animacion 
+        animarCirculo(circulo);
+
+        // AGREGA ESTO AL FINAL PARA VER UNA GUÍA
+        // Eje X
+        /*svg.append("g")
+            .attr("transform", "translate(0,480)") // Lo ponemos casi al final abajo
+            .call(d3.axisBottom(d3.scaleLinear().domain([0, 500]).range([0, 500])));
+
+        // Eje Y
+        svg.append("g")
+            .attr("transform", "translate(10,0)") // Lo ponemos un poco a la derecha
+            .call(d3.axisRight(d3.scaleLinear().domain([0, 500]).range([0, 400])));        
+        */
+    </script>
+</body>
+
+</html>
