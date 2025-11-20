@@ -121,11 +121,124 @@
 - Sí lo es, pues debemos comprobar que nuestra visualización es correcta y la información es legible de un simple vistazo.
 
 --- 
-## Tema 2. Historia de la visualización de datos
+# Tema 2. Historia de la visualización de datos
+
+1. La proyección cartográfica más conocida y usada en la actualidad es:
+- A. La proyección de Robinson.
+- B. La proyección de Peters.
+- C. La proyección de Mercator.
+- D. A, B y C se utilizan con la misma frecuencia.
+
+2. Leonardo da Vinci es considerado padre de la visualización de la información por:
+- A. Sus inventos muy adelantados a su tiempo.
+- B. Sus ilustraciones, dibujos y esquemas y su afán de ampliar el saber.
+- C. Sus pinturas y su experimentación con nuevas técnicas.
+- D. Ninguna de las tres.
+
+3. La creación de los principales gráficos económicos (de línea, de barras y tartas) se le atribuye a:
+- A. Joseph Priestley.
+- B. Charles Minard.
+- C. John Snow.
+- D. William Playfair.
+
+4. Gracias a su mapa del cólera de 1854, John Snow consiguió:
+A. Ubicar todos los pozos de agua en la ciudad de Londres.
+B. Frenar el brote de la enfermedad.
+C. Relacionar el agua contaminada con las víctimas.
+D. B y C son correctas
+
+5. La integración del departamento artístico en la redacción se debe a:
+- A. Nigel Holmes.
+- B. Alejandro Malofiej.
+- C. Peter Sullivan.
+- D. Otto Neurath.
+
+6. El Instituto Isotype perseguía crear un lenguaje universal mediante:
+- A. La creación de símbolos gráficos.
+- B. La creación de un nuevo lenguaje escrito.
+- C. El uso de la fotografía.
+- D. Ninguna de las tres.
+
+7. El nacimiento del USA Today trajo consigo:
+- A. La publicación de una página diaria dedicada al tiempo.
+- B. La publicación de mapas en un diario.
+- C. La creación de snapshots.
+- D. A y C son correctas.
+
+8. ¿Qué acontecimiento tuvo como consecuencia un fuerte desarrollo de la infografía en España?
+- A. La segunda Guerra del Golfo.
+- B. La Guerra fría.
+- C. Los atentados del 11-S.
+- D. La primera Guerra del Golfo
+
+
+9. Los nuevos modos de trabajar con los datos son producto de:
+- A. La sencillez de las herramientas existentes.
+- B. El rápido desarrollo de la tecnología.
+- C. Los avances en las leyes de transparencia de los gobiernos.
+- D. B y C son correctas.
+
+10. Hoy el profesional de la visualización:
+- A. Puede plasmar los datos con herramientas ya creadas previamente.
+- B. Puede plasmar los datos conforme a unas órdenes previamente definidas por él mismo.
+- C. Puede plasmar los datos siempre y cuando tenga un programador en su equipo.
+- D. A y B son correctas
+
+--- 
+## Videoclase 1. 
+
+- ¿En qué medida ha tenido la ciencia influencia en los avances de la visualización?:
+- Ha sido fundamental gracias al trabajo de Leonardo Da Vinci, entre otros.
+
+- La proyección cartográfica más conocida y usada en la actualidad es:
+- La proyección de Mercator. => Se podría decir que la cartografía de Mercator fue un auténtico descubrimiento. Tanto es así, que se sigue utilizando en la actualidad. Es un tipo de proyección cilíndrica tangente al ecuador. Como tal, deforma las distancias entre los meridianos (en la tierra son como «gajos» de polo a polo) en líneas paralelas, aumentando su ancho real cada vez más a medida que se acerca a los continentes.
+
+- ¿Se podría afirmar que Copérnico incluyó la perspectiva en su Obra Sobre las revoluciones de las esferas celestes dándole un carácter totalmente innovador?:
+- Sin duda, se puede afirmar por la composición de la obra. 
+
+- ¿Por qué es tan importante la Enciclopedia francesa en la historia de la Ilustración?:
+- Por innovar en el uso de gráficos para mostrar la información. Una innovación que llega hasta hoy.
+
+- ¿Cuál de estas opciones se ajusta a los tres tipos de gráficos existentes?:
+- Gráficos de barras, línea y tartas.
+
+## Videoclase 2. Introducción a la Infografía periodística 
+
+- ¿En qué periódico se publicó la primera infografía periodística?:
+- En The Times en 1806.  => Uno de los objetivos que buscamos con las infografías es precisamente ese, la rapidez en la lectura de la información que se nos está mostrando. 
+
+- ¿Qué significó el Isotype para la visualización?
+- Fue fundamental para desarrollar gráficos en los medios de comunicación. => Tal y como hemos visto en tema, este método supuso una revolución para mostrar poca información de una manera gráfica y clara para entender la misma de un simple vistazo. Lo más importante es que debía ser un lenguaje universal entendible por cualquier usuario. 
+
+- ¿Qué  medio fue el primero en utilizar los snapshots y supuso una verdadera revolución en la prensa?
+- El USA Today. => Una de las revoluciones de esta forma de comunicar era poder mostrar distintos tipos de datos, usando además el color para enfatizar el mensaje. 
+
+- ¿En qué mejora la comunicación periodística el uso de los snapshots?:
+-  El uso de color, la publicación diaria en un lugar destacado de la cabecera, el uso de un gráfico simple y con varios tipos de datos, mostraba al lector un resumen de la información del día más importante.  => Es muy habitual, como hemos visto en el tema, la relación que tuvieron los lectores con la información resumida desde ese momento fue crucial. Dicha forma de poder ver toda la información en un solo vistazo fue una revolución en ese y muchísimos medios que sigue usando hoy todos los días. 
+
+- ¿Qué supuso el acontecimiento de la Guerra del Golfo en la evolución de las visualizaciones?:
+- La cobertura de la Guerra del Golfo fue un hito en la historia del periodismo. => Como hemos visto, fue un antes y un después, puesto que el objetivo era mostrar mucha información, de distinto tipo y, además, de una forma totalmente visual para dar cuenta de la situación sobre el terreno. Para ello, se utilizaron tanto infografías en dos dimensiones como gráficas o estadísticas. 
+
+## Videoclase 3. Del grafico impreso a la visualización en tiempo real.
+
+- Los nuevos modos de trabajar con los datos son producto de:
+- El rápido desarrollo de la tecnología. Y  Los avances en las leyes de transparencia de los gobiernos. => El avance de las herramientas tecnológicas ha permitido una mayor capacidad de almacenamiento y gestión de los datos, así como un mejor manejo y una visualización muy intuitiva. Esto ha permitido a los periodistas poder realizar con mayor número de datos unas excelentes visualizaciones. 
+
+- ¿Son las redes sociales un medio adecuado para mostrar información periodística a través de visualizaciones?:
+- Sin duda, sí. Son imprescindibles hoy día. => Por la inmediatez de las noticias hoy día, además de la influencia de la imagen, las noticias cada vez son más visuales y deben ser en tiempo real. Por tanto, cada vez se usan más gráficos y visualizaciones para contar una noticia dado la versatilidad que tiene poder compartir por una red social una imagen que un texto medio-largo. 
+
+- ¿Cuál es uno de los mejores logros que ha conseguido la prensa online en todo el mundo?:
+-  La infografía interactiva. Debemos poder contrastar unos datos con otros antes de la propia selección => Uno de los hitos y nuevos paradigmas de la prensa online o digital es que el lector pasa de ser mejor lector/espectador a participante. Por tanto, no solo puede responder a una encuesta que se muestre en una gráfica en tiempo real junto con el resultado de cientos de miles de lectores, sino que también puede interactuar con una determinada visualización para modificar su visualización en función de una serie de criterios.  
+
+- En las redacciones de los grandes medios, ¿qué tipo de especialista se ha creado para para dar respuesta a las necesidades que estamos analizando?:
+- Para poder aclarar conceptos y tener una idea inicial del modelo. => El boceto nos ayuda a realizar el proyecto final y debe tener las partes más importantes del mismo, también nos ayuda a tener alguna nota añadida sobre posibles aportaciones. Nunca será la versión final, pues esta requiere que tenga todo el diseño para la visualización final. 
+
+- ¿Ha cambiado la prensa digital la forma que se tenía de leer el periódico? ¿Ha afectado la forma de leer la información la era digital? 
+- Sin duda, sí.  => Dada la inmediatez comentada y, sobre todo, el aumento a la exposición de información que recibimos en nuestras sociedades, las noticias saltan a primera página casi en tiempo real y son catalogadas como urgentes. Así mismo, y dada tal saturación, necesitamos recibir la información de forma precisa, rápida y fácil de entender. Este es, en definitiva, el papel que cumplen las visualizaciones, muchas de ellas interactivas, en la era digital. 
 
 
 
-## Tema 03. 
+## Tema 3. Trabajar con datos 
 
 
 ## Tema 04. 

@@ -1,11 +1,8 @@
 # Visualización Interactiva de la Información
 
-## Tema 01. Introducción a la visualización de datos
+# Tema 01. Introducción a la visualización de datos
 
 ![alt text](image.png)
-
-
-
 
 ## 1.3. Concepto de infografía y visualización de datos
 
@@ -101,14 +98,45 @@ El último estadio del proceso de visualización es la percepción y el conocimi
 una vez ha sido publicada en un medio. En el momento en que la retina del ojo humano ve una imagen, el cerebro percibe parte de lo observado e inicia el proceso
 cognitivo a través del cual asimila y procesa los datos. 
 
-## Tema 2. Historia de la visualización de datos
+# Tema 2. Historia de la visualización de datos
+
+## 2.2. Orígenes de la infografía y la visualización de datos
+
+Hablar de los orígenes de la infografía y la visualización es hablar de los primeros
+mapas. La historia de esta disciplina en sus comienzos está totalmente ligada a la
+historia de la cartografía
+
+> Un poco de cartografía
+Los primeros ejemplos cartográficos datan de hace más de cinco mil años. Uno de
+ellos es el mapa de Nippur, la antigua ciudad de Sumeria. Está realizado sobre una
+tablilla de arcilla y muestra los principales lugares de la urbe. Todavía se conserva
 
 
+![alt text](image-4.png)
 
-## Tema 03. 
+![alt text](image-5.png)
 
 
-## Tema 04. 
+## 2.3. Introducción a la infografía periodística
+
+## 2.4. Del gráfico impreso a la visualización en tiempo real. La era digital
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+
+# Tema 3. Trabajar con datos 
+
+
+## 3.2. Fundamentos de los datos
+## 3.3. Recolección de datos
+## 3.4. Preparación y limpieza de datos
+## 3.5. Transformación de datos
+## 3.6. Visualización de datos
+
+## Tema 4. 
 
 
 ## Tema 05. 
