@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard KARAXTIENDA - Google Charts</title>
+
+  <!-- Cargar Google Charts -->
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script>
+    // 1. Indicar qué paquetes vamos a usar
+    google.charts.load('current', {
+      packages: ['corechart', 'table']
+    });
+
+    // 2. Cuando termine de cargar, ejecutar la función principal
+    google.charts.setOnLoadCallback(drawDashboard);
+
+    function drawDashboard() {
+      // =============================
+      // A) DATOS DE SUCURSALES
+      // =============================
+      var dataSucursales = new google.visualization.DataTable();
+      dataSucursales.addColumn('string', 'Sucursal');
+      dataSucursales.addColumn('number', 'Ventas');
+      dataSucursales.addColumn('boolean', 'Meta cumplida');
+      dataSucursales.addRows([
+        // Sucursal, Ventas, MetaCumplida
+        ['Centro', 200000, true],
+        ['Norte', 150000, false],
+        ['Sur', 180000, true]
+      ]);
+
+      // Vista para la tabla (muestra todas las columnas)
+      var viewTabla = new google.visualization.DataView(dataSucursales);
+      viewTabla.setColumns([0, 1, 2]);
+
+      // Vista para el gráfico (solo sucursal y ventas)
+      var viewChart = new google.visualization.DataView(dataSucursales);
+      viewChart.setColumns([0, 1]);
+
+      // Opciones del gráfico de columnas
+      var optionsChartSucursales = {
+        title: 'Ventas por sucursal (KARAXTIENDA)',
+        legend: { position: 'none' },
+        width: 600,
+        height: 300
+      };
+
+      // Dibujar la tabla
+      var table = new google.visualization.Table(
+        document.getElementById('tabla_sucursales')
+      );
+      table.draw(viewTabla, {
+        showRowNumber: true,
+        width: '100%'
+      });
+
+      // Dibujar el gráfico de columnas
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_sucursales')
+      );
+      chart.draw(viewChart, optionsChartSucursales);
+
+      // =============================
+      // B) EVENTO: AL ORDENAR LA TABLA, REDIBUJAR EL GRÁFICO
+      // =============================
+      google.visualization.events.addListener(table, 'sort', function (event) {
+        // Ordenar los datos según la columna seleccionada
+        dataSucursales.sort([
+          {
+            column: event.column,
+            desc: !event.ascending
+          }
+        ]);
+
+        // Redibujar tabla y gráfico con el nuevo orden
+        table.draw(viewTabla, {
+          showRowNumber: true,
+          width: '100%'
+        });
+        chart.draw(viewChart, optionsChartSucursales);
+      });
+
+      // =============================
+      // C) GRÁFICO DE PASTEL - Categorías
+      // =============================
+      var dataCategorias = google.visualization.arrayToDataTable([
+        ['Categoría', 'Ventas'],
+        ['Damas', 80000],
+        ['Caballeros', 50000],
+        ['Infantil', 30000],
+        ['Accesorios', 20000]
+      ]);
+
+      var optionsPie = {
+        title: 'Mix de ventas por categoría',
+        width: 400,
+        height: 300
+      };
+
+      var pieChart = new google.visualization.PieChart(
+        document.getElementById('pie_categorias')
+      );
+      pieChart.draw(dataCategorias, optionsPie);
+    }
+  </script>
+
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="49VLA-CFTHA-CGTWE-8Y5XU-3FEH6",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"49VLA-CFTHA-CGTWE-8Y5XU-3FEH6";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="xo7ls6yxgz7mm2i6tz4q-f-cfcec1243-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"39","ak.cp":"1726165","ak.ai":parseInt("1113999",10),"ak.ol":"0","ak.cr":6,"ak.ipv":4,"ak.proto":"h2","ak.rid":"14d1b290","ak.r":48205,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"187.190.185.0","ak.cport":4469,"ak.gh":"23.192.188.170","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1763614329","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==y+tpIx7zy9mjSZ/xSkZnEoQVteguPNWg9Ot84eEUuNVUp7YbaWOnvCz38sZCMafVW4UpfePKY97nfY3primw0ybRoXVPM7xqWdoEu0YG4Tm3eHRpe2jjoeKgv0qFofl3ExJWQW39xcNkOZ05JsOkEem9O3yCxLgGjNeUocehSJG48n2vUagiVSOYVFW/NKlSnIdERqu6GFHbk6BOOzvY0Z+TMiyxBkMtmD1j6BeEFX50EBjFOOgYy46bYaSZIOpkbXZXWUNoyJI0Ltto4dgfr68cXFugPo2VNpGxAhs200FUWJWgSrfXYiPpN18jaKw54nKpsiP2jgwX0OPhN1eDvpVvV8ZFgYcxgA7sabNd99qhV44chTAxPyf+8Spj844draEnsiE1CHyO4LPNkPlwrBPdrdbSJ3kmmV8/j+wBwmc=","ak.pv":"44","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body>
+  <h1>Dashboard KARAXTIENDA (PyME) con Google Charts</h1>
+
+  <h2>1. Mix de ventas por categoría</h2>
+  <div id="pie_categorias" style="width: 400px; height: 300px;"></div>
+
+  <h2>2. Ventas por sucursal + tabla con evento de ordenamiento</h2>
+  <div id="chart_sucursales" style="width: 600px; height: 300px;"></div>
+  <div id="tabla_sucursales" style="width: 600px;"></div>
+</body>
+</html>
