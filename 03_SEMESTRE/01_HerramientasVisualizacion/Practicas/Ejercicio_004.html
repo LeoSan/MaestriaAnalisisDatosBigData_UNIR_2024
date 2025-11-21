@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard KARAXTIENDA - Google Charts</title>
+    <!-- Paso 1: Cargar Google Charts -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+        // Paso 2. Indicar qué paquetes vamos a usar
+        google.charts.load('current', { 'packages': ['corechart', 'table', 'geochart'] });
+
+        // Paso 3. Definir el callback
+        google.charts.setOnLoadCallback(drawDashboard);
+
+        // Paso  4. Crear la función drawChart
+        //https://docs.google.com/spreadsheets/d/1J3VeknCTJ9By3qECUHb9SfbBPoF_vmLXiv1oh6zQQHs/edit?usp=sharing
+        var SHEET_ID = '1J3VeknCTJ9By3qECUHb9SfbBPoF_vmLXiv1oh6zQQHs';   // <-- CAMBIA ESTO
+
+        // Paso 5. URLs para cada pestaña
+        // Hoja "Categorias"
+        var URL_CATEGORIAS = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=Categorias&headers=1';
+
+        // Hoja "Sucursales"
+        var URL_SUCURSALES = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=Sucursales&headers=1';
+
+        // Hoja "Mapa"
+        var URL_MAPA = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=Mapa&headers=1';
+
+        // Paso 6. FUNCIÓN PRINCIPAL DEL DASHBOARD
+        // =========================================
+        function drawDashboard() {
+            drawCategorias();   // Pie chart
+            drawSucursales();   // Tabla + column chart
+            drawGeoChart();     // Geo chart
+        }
+
+        // =========================================
+        // 1) PIE CHART - CATEGORÍAS
+        // =========================================
+        function drawCategorias() {
+            // Usamos ChartWrapper (más simple)
+            var wrapper = new google.visualization.ChartWrapper({
+                chartType: 'PieChart',
+                containerId: 'pie_categorias',
+                dataSourceUrl: URL_CATEGORIAS,
+                // A: Categoría (texto), B: Ventas (número)
+                query: 'select D,B',
+                options: {
+                    title: 'Mix de ventas por categoría (desde Google Sheets)',
+                    width: 450,
+                    height: 300
+                }
+            });
+
+            wrapper.draw();
+        }
+
+        // =========================================
+        // 2) TABLA + COLUMN CHART - SUCURSALES
+        // =========================================
+        function drawSucursales() {
+            // Aquí usamos Query porque necesitamos manejar eventos
+            var query = new google.visualization.Query(URL_SUCURSALES);
+
+            // A: Sucursal (string), B: Ventas (number), C: MetaCumplida (boolean)
+            query.setQuery('select A,B,C');
+
+            query.send(function (response) {
+                if (response.isError()) {
+                    alert(
+                        'Error en hoja Sucursales: ' +
+                        response.getMessage() + ' - ' +
+                        response.getDetailedMessage()
+                    );
+                    console.error(response);
+                    return;
+                }
+
+                var dataSucursales = response.getDataTable();
+                console.log('Filas sucursales:', dataSucursales.getNumberOfRows());
+
+                // --- NUEVO: Agregar columna de estilo para colores diferentes ---
+                dataSucursales.addColumn({ type: 'string', role: 'style' });
+
+                var listaColores = ['#FF5733', '#33FF57', '#3357FF', '#FF33F6', '#F3FF33'];
+
+                for (var i = 0; i < dataSucursales.getNumberOfRows(); i++) {
+                    // Usamos el operador % para repetir colores si hay muchas sucursales
+                    var color = listaColores[i % listaColores.length];
+                    dataSucursales.setValue(i, 3, 'color: ' + color);
+                }
+                // ----------------------------------------------------------------
+
+                // Vista para tabla (todas las columnas originales: 0,1,2)
+                var viewTabla = new google.visualization.DataView(dataSucursales);
+                viewTabla.setColumns([0, 1, 2]);
+
+                // Vista para gráfico (Sucursal, Ventas, Estilo)
+                var viewChart = new google.visualization.DataView(dataSucursales);
+                viewChart.setColumns([0, 1, 3]); // <--- Incluimos la columna 3 (Estilo)
+
+                // Opciones del column chart
+                var optionsChartSuc = {
+                    title: 'Ventas por sucursal (KARAXTIENDA)',
+                    legend: { position: 'none' },
+                    width: 600,
+                    height: 300
+                };
+
+                // Dibujar tabla
+                var table = new google.visualization.Table(
+                    document.getElementById('tabla_sucursales')
+                );
+                table.draw(viewTabla, {
+                    showRowNumber: true,
+                    width: '100%'
+                });
+
+                // Dibujar gráfico de columnas
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById('chart_sucursales')
+                );
+                chart.draw(viewChart, optionsChartSuc);
+
+                // Evento: cuando ordenas la tabla, se reordena el gráfico
+                google.visualization.events.addListener(table, 'sort', function (event) {
+                    dataSucursales.sort([
+                        { column: event.column, desc: !event.ascending }
+                    ]);
+
+                    table.draw(viewTabla, {
+                        showRowNumber: true,
+                        width: '100%'
+                    });
+                    chart.draw(viewChart, optionsChartSuc);
+                });
+            });
+        }
+
+        // =========================================
+        // 3) GEO CHART - MAPA
+        // =========================================
+        function drawGeoChart() {
+            var wrapper = new google.visualization.ChartWrapper({
+                chartType: 'GeoChart',
+                containerId: 'geo_chart',
+                dataSourceUrl: URL_MAPA,
+                query: 'select D,B',
+                options: {
+                    title: 'Ventas por País',
+                    width: 600,
+                    height: 400
+                }
+            });
+            wrapper.draw();
+        }
+
+
+    </script>
+
+</head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .dashboard-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .chart-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 450px;
+        /* Grow, shrink, basis */
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s;
+    }
+
+    .chart-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Make charts responsive within their container */
+    .chart-div {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 300px;
+    }
+</style>
+
+<body>
+    <h1>Dashboard KARAXTIENDA (PyME) - Datos desde Google Sheets</h1>
+
+    <div class="dashboard-container">
+        <!-- Card 1: Categorias -->
+        <div class="chart-card">
+            <h2>Mix de ventas por categoría</h2>
+            <div id="pie_categorias" style="width: 100%; height: 300px;"></div>
+        </div>
+
+        <!-- Card 2: Ventas Sucursal -->
+        <div class="chart-card">
+            <h2>Ventas por sucursal</h2>
+            <div id="chart_sucursales" style="width: 100%; height: 300px;"></div>
+        </div>
+
+        <!-- Card 4: Mapa -->
+        <div class="chart-card">
+            <h2>Mapa de Ventas</h2>
+            <div id="geo_chart" style="width: 100%; height: 400px;"></div>
+        </div>
+
+        <!-- Card 3: Tabla -->
+        <div class="chart-card">
+            <h2>Tabla de Datos</h2>
+            <div id="tabla_sucursales" style="width: 100%;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
