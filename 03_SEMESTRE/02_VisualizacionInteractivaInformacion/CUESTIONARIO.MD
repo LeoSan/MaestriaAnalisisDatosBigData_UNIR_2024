@@ -126,12 +126,12 @@
 1. La proyección cartográfica más conocida y usada en la actualidad es:
 - A. La proyección de Robinson.
 - B. La proyección de Peters.
-- C. La proyección de Mercator.
+- C. La proyección de Mercator. **CORRECTA**
 - D. A, B y C se utilizan con la misma frecuencia.
 
 2. Leonardo da Vinci es considerado padre de la visualización de la información por:
 - A. Sus inventos muy adelantados a su tiempo.
-- B. Sus ilustraciones, dibujos y esquemas y su afán de ampliar el saber.
+- B. Sus ilustraciones, dibujos y esquemas y su afán de ampliar el saber.  **CORRECTA**
 - C. Sus pinturas y su experimentación con nuevas técnicas.
 - D. Ninguna de las tres.
 
@@ -139,22 +139,22 @@
 - A. Joseph Priestley.
 - B. Charles Minard.
 - C. John Snow.
-- D. William Playfair.
+- D. William Playfair.  **CORRECTA**
 
 4. Gracias a su mapa del cólera de 1854, John Snow consiguió:
-A. Ubicar todos los pozos de agua en la ciudad de Londres.
-B. Frenar el brote de la enfermedad.
-C. Relacionar el agua contaminada con las víctimas.
-D. B y C son correctas
+- A. Ubicar todos los pozos de agua en la ciudad de Londres.
+- B. Frenar el brote de la enfermedad.
+- C. Relacionar el agua contaminada con las víctimas.
+- D. B y C son correctas **CORRECTA**
 
 5. La integración del departamento artístico en la redacción se debe a:
 - A. Nigel Holmes.
 - B. Alejandro Malofiej.
-- C. Peter Sullivan.
+- C. Peter Sullivan. **CORRECTA**
 - D. Otto Neurath.
 
 6. El Instituto Isotype perseguía crear un lenguaje universal mediante:
-- A. La creación de símbolos gráficos.
+- A. La creación de símbolos gráficos. **CORRECTA**
 - B. La creación de un nuevo lenguaje escrito.
 - C. El uso de la fotografía.
 - D. Ninguna de las tres.
@@ -163,26 +163,26 @@ D. B y C son correctas
 - A. La publicación de una página diaria dedicada al tiempo.
 - B. La publicación de mapas en un diario.
 - C. La creación de snapshots.
-- D. A y C son correctas.
+- D. A y C son correctas. **CORRECTA**
 
 8. ¿Qué acontecimiento tuvo como consecuencia un fuerte desarrollo de la infografía en España?
 - A. La segunda Guerra del Golfo.
 - B. La Guerra fría.
 - C. Los atentados del 11-S.
-- D. La primera Guerra del Golfo
+- D. La primera Guerra del Golfo **CORRECTA**
 
 
 9. Los nuevos modos de trabajar con los datos son producto de:
 - A. La sencillez de las herramientas existentes.
 - B. El rápido desarrollo de la tecnología.
 - C. Los avances en las leyes de transparencia de los gobiernos.
-- D. B y C son correctas.
+- D. B y C son correctas. **CORRECTA**
 
 10. Hoy el profesional de la visualización:
 - A. Puede plasmar los datos con herramientas ya creadas previamente.
 - B. Puede plasmar los datos conforme a unas órdenes previamente definidas por él mismo.
 - C. Puede plasmar los datos siempre y cuando tenga un programador en su equipo.
-- D. A y B son correctas
+- D. A y B son correctas **CORRECTA**
 
 --- 
 ## Videoclase 1. 
@@ -236,28 +236,506 @@ D. B y C son correctas
 - ¿Ha cambiado la prensa digital la forma que se tenía de leer el periódico? ¿Ha afectado la forma de leer la información la era digital? 
 - Sin duda, sí.  => Dada la inmediatez comentada y, sobre todo, el aumento a la exposición de información que recibimos en nuestras sociedades, las noticias saltan a primera página casi en tiempo real y son catalogadas como urgentes. Así mismo, y dada tal saturación, necesitamos recibir la información de forma precisa, rápida y fácil de entender. Este es, en definitiva, el papel que cumplen las visualizaciones, muchas de ellas interactivas, en la era digital. 
 
-
-
 ## Tema 3. Trabajar con datos 
 
 
-## Tema 04. 
+1. La información:
+- A. Es el verdadero poder en sí misma y en términos absolutos.
+- B. Permite extraer de ella, mediante distintas técnicas, conocimiento, que es realmente lo valioso.
+- C. Solo tiene sentido si se puede representar en 3D.
+- D. Todas las anteriores son correctas.
+
+2. Para comunicar adecuadamente de forma gráfica nuestra visión sobre un conjunto de datos, estos se han de mostrar siguiendo:
+- A. Criterios estratégicos.
+- B. Criterios económicos.
+- C. Criterios psicosociales.
+- D. Todas las anteriores son correctas.
+
+3. Entre las variables categóricas distinguimos entre
+- A. Variables nominales y discretas.
+- B. Variables ordinales y nominales.
+- C. Variables cuantitativas y nominales.
+- D. Variables discretas y continuas.
+
+4. Las medidas de tendencia central:
+- A. Poco nos dicen sobre la distribución de los valores resumidos.
+- B. Deben ser utilizadas siempre que podamos.
+- C. Deben evitar ser utilizadas siempre.
+- D. Ninguna de las anteriores es correcta.
+
+5. Son motivos erróneos para la creación de una encuesta:
+- A. Que realmente no nos importen los resultados, sino solo mostrar que tenemos datos y números.
+- B. Utilizar mal los datos recolectados.
+- C. Que preocupe más cómo se recibirán los hallazgos que tener resultados fiables.
+- D. Todas las anteriores son correctas.
+
+6. Son herramientas de recolección de datos
+- A. Medición directa, grupo focal y observación.
+- B. Medición directa, heurísticas isobáricas y Examen de análisis previos.
+- C. Grupo focal, examen de análisis previos y fabricación de factoides.
+- D. Todas las anteriores son correctas.
+
+7. Indica cuál de las siguientes afirmaciones es correcta:
+- A. La limpieza de datos se ha de realizar antes de la preparación de los mismos.
+- B. La verificación de rangos de datos es parte de la preparación de datos.
+- C. La uniformización de unidades de medida es parte de la preparación de datos.
+- D. Todas las anteriores son correctas.
+
+8. El cuarteto de Anscombe:
+- A. Son cuatro profesionales de la visualización muy conocidos.
+- B. Visibiliza la información que ganamos al resumir distribuciones.
+- C. Evidencia la importancia de graficar un conjunto de datos para comprenderlos.
+- D. Todas las anteriores son incorrectas.
+
+9. Una distribución normal de los datos:
+- A. Es aquella que tiene forma de campana, con datos en torno a un valor central.
+- B. Es aquella que tiene sesgo, con un elevado número observaciones a la derecha o a la izquierda.
+- C. Es la que normalmente se tiene en los datos, con independencia de su naturaleza.
+- D. Todas las anteriores son correctas.
+
+10. Para la visualización de datos:
+- A. Se ha de determinar claramente el mensaje a comunicar.
+- B. Se debe entender a la audiencia destino.
+- C. En ocasiones se utiliza la narrativa.
+- D. Todas las anteriores son correctas.
+
+## Videoclase 1. Fundamentos de los datos.
+
+- ¿Qué frase representa mejor el poder del conocimiento en la era de la información?
+- El conocimiento es poder, la información no.
+
+- ¿Cuál de las siguientes opciones no se menciona como un tipo de variable en el texto?
+- Cualitativas. => Efectivamente, las cualidades que nos interesan para el análisis de los datos deben ser siempre cuantitativas, como es lógico. Recordemos que las variables, y por el valor cualitativo es aquel «proceso que permite analizar las características y problemas del fenómeno a evaluar desde la perspectiva de los actores involucrados».
+
+- ¿Qué elemento visual se desaconseja utilizar en la visualización de datos, según el texto?
+- Gráfico de tarta en 3D =>  Efectivamente, para visualización de datos según el texto no podría ser claramente analizable con un gráfico de tarta en 3D, por ejemplo, con un gráfico de barras o en línea.
+
+- ¿Qué tipo de variables representan categorías?
+- Categóricas. => Es muy importante para analizar una visualización y que la percepción sea correcta, que tengamos una clara división en categorías. Claramente definidas unas de otras por formas, colores o porcentajes.
+
+- ¿Qué tipo de variables representan cantidades o mediciones numéricas y son importantes en nuestras visualizaciones?
+- Cuantitativas. => Al igual que las variables o datos cuantitativos no son adecuados para nuestras visualizaciones, los datos o variables cuantitativos, al representar datos números y cantidades de valor, son fundamentales para estas.
+
+##  Videoclase 2. Preparación y limpieza de datos. 
+
+- ¿Cuál es el primer paso en el proceso de visualización de datos?
+- La recolección de datos. => Efectivamente, una de las fases para una buena visualización es realizar una correcta recolección de los datos, de una o de diversas fuentes fiables y contrastadas y que aporte información relevante para el objetivo que queremos conseguir con nuestro proyecto. 
+
+- ¿Qué tipo de origen de datos se mencionan en las Fuentes más utilizadas?
+- Todas las anteriores. => Las fuentes de datos pueden ser múltiples, no solo de sistemas estatales de estadística, catastros, datos publicitarios, etc., también fuentes de datos avanzadas como sistemas de grandes volúmenes de datos como el Big Data o sistemas IoT que recogen grandes cantidades de datos de dispositivos conectados.
+
+- Según lo analizado, ¿qué afirmación sobre las tareas preliminares de preparación de datos es correcta?
+- Suelen requerir una parte de labor manual, lo que las hace tediosas. => La limpieza de datos es una de las tareas previas más importantes que debemos hacer para detectar registros en blanco o datos duplicados en una base de datos que vayamos a utilizar. Existen herramientas que automatizan dichos procesos, pero debemos siempre hacer una revisión manual.
+
+- ¿Cuál de las siguientes no es una tarea de preparación de datos mencionada en las fuentes?
+- Realizar análisis estadísticos complejos. =>  No es necesario hacer un análisis complejo de los datos a la hora prepararlos, solo deben ser coherentes, verdaderos y estar ordenados. Los análisis estadísticos los haremos más adelante.
+
+- ¿Cuál es el objetivo principal de la preparación y limpieza de datos?
+- Garantizar que los datos sean precisos, consistentes y utilizables para el análisis. => Como hemos visto, si los datos no son válidos, nuestra visualización tampoco lo será, y lo que es más grave, nos pueden acusar de falsedad si nuestros datos no están bien contrastados. Cuando nos referimos a consistentes estamos haciendo alusión a que deben ser veraces y de una fuente fiable.
+
+## Videoclase 3. Visualización de los datos. ►
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
 
 
-## Tema 05. 
-
-
-## Tema 06. 
-
-
-## Tema 07. 
-
-
-## Tema 08. 
+# Tema 4. Psicología aplicada al diseño de visualizaciones
 
 
 
-## Tema 09. 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
 
 
-## Tema 10. 
+
+# Tema 05. 
+
+
+--- 
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+# Tema 06. 
+
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+# Tema 07. 
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+
+# Tema 08. 
+
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+# Tema 09. 
+
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+# Tema 10. 
+
+
+
+--- 
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+## Videoclase 1. 
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
+
+-
+-
