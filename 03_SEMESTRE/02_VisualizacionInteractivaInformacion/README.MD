@@ -325,18 +325,79 @@ La etapa final donde los datos se presentan visualmente:
 
 # Tema 4. Psicología aplicada al diseño de visualizaciones
 
+> Introduce el proceso de percepción visual humana, siendo fundamental para lograr una comunicación gráfica natural y efectiva dirigida al público. 
+
 ![alt text](Tema_4_MC.png)
+
 ## 4.1. ¿Cómo estudiar este tema?
 
+
 ## 4.2. Visión humana. Del ojo al cerebro
+> Comprender el proceso de percepción visual es crucial en la comunicación visual, ya que el modo en que el ojo ve,  está íntimamente relacionado con la forma en que representamos gráficamente la información. 
+
+
+1. Mecanismo del Ojo: El ojo funciona de manera similar a una cámara. La luz, que es la sustancia mediante la cual el hombre da forma e imagina lo que reconoce, atraviesa la córnea, pasa por el iris (que ajusta la pupila para la cantidad adecuada de luz), y el cristalino, proyectándose finalmente sobre la retina.
+
+2. Procesamiento: En la retina, células nerviosas (conos y bastones) absorben la luz y la convierten en impulsos nerviosos que viajan al cerebro, donde las imágenes son percibidas. La fóvea es la parte de la retina responsable de proporcionar la nitidez y el color en la visión.
+
+3. Naturaleza de la Visión: La visión no es un proceso regular; nuestros ojos se fijan y retienen la información en un punto durante un breve tiempo, repitiendo esta acción constantemente. Nuestra visión es la suma de la información obtenida tras múltiples fijaciones, aunque solo vemos con precisión una pequeña parte de lo que nos rodea
 
 ## 4.3. Percepción visual y cognición
 
+> Para visualizar información adecuadamente, es esencial comprender nuestras limitaciones y capacidades de percepción visual y cognición
+
+**Tipos de Memoria**
+
+1. Memoria Icónica: Es el almacén donde las señales nerviosas se recogen muy brevemente. Este procesamiento es inconsciente y automático (fase "preatentiva") y ocurre en décimas de segundo. En esta fase se detectan atributos como el color y la localización de los objetos.
+
+2. Memoria a Corto Plazo (Memoria de Trabajo): Aquí, el cerebro selecciona partes específicas de la información que considera útiles (fase "atentiva"). Tiene una capacidad limitada, por lo que la nueva información puede desplazar o eliminar lo que ya está almacenado.
+
+3. Memoria a Largo Plazo: Se accede a ella por procesos de repetición y aprendizaje, con una capacidad de almacenamiento casi ilimitada. Es la que nos permite reconocer y detectar patrones con significado.
+
+**Etapas del Proceso de Percepción y Conocimiento**
+
+> El cerebro lleva a cabo el proceso de percepción y conocimiento en tres etapas:
+
+1. Procesamiento Inicial (Memoria Icónica): Se extraen velozmente las características básicas (color, movimiento, orientación), almacenándose muy brevemente.
+
+2. Percepción de Patrones: Se organiza y clasifica lo visualizado en áreas con las mismas características (color, textura).
+
+3. Reconocimiento: Se da contenido a la información seleccionada. En la memoria a corto plazo, la información visual se relaciona con los conocimientos de la memoria a largo plazo. Si coinciden, se identifica lo que se está viendo.
+
+**Procesamiento Preatentivo**
+
+El procesamiento preatentivo se produce de manera inconsciente y es crucial para el diseño de visualizaciones eficaces. Los atributos preatentivos ayudan a llamar la atención del lector y a sortear las limitaciones de la memoria a corto plazo. Estos atributos, como el color (utilizado en la Figura 3 para destacar el número 8), pueden ser usados para agrupar y resaltar objetos con claridad.
+
+Otros atributos preatentivos incluyen la forma, la orientación, el tamaño, la longitud, y el ancho. Sin embargo, la eficacia de estos atributos tiene límites, ya que el uso de varios a la vez puede provocar el efecto contrario, dificultando la detección de patrones.
+
+
+
 ## 4.4. Psicología de la Gestalt. Principios gestaltistas
 
-## 4.5. Aplicación a la comunicación gráfica de información
-cuantitativa
+**Psicología de la Gestalt: Principios de Percepción**
 
+La escuela de la Gestalt, fundada por psicólogos alemanes a principios del siglo XX, descubrió que organizamos lo que vemos para darle sentido. Aplicar las leyes gestaltistas a la visualización asegura que sean fácilmente comprensibles.
+
+Los principios más influyentes para el diseño de visualizaciones son:
+
+1. Principio de Proximidad: Los objetos cercanos se perciben como si fueran un grupo, de manera inmediata.
+2. Principio de Similitud: Existe una tendencia a agrupar objetos que comparten las mismas características, como forma, tamaño o color.
+3. Principio del Cercado (Closure): Los objetos encerrados dentro de un borde o límite se perciben como un grupo.
+4. Principio de Continuidad: Se percibe un objeto como parte de un todo, agrupando elementos que denotan continuidad incluso si están interrumpidos.
+5. Principio de Conexión: Este principio, propuesto por Rock y Palmer en 1994, establece que los objetos conectados se perciben como miembros de un mismo grupo. La ley de la conexión es muy potente, ya que se impone sobre otras leyes como el color, la forma o la proximidad, y conectar objetos gráficos mediante líneas es un modo muy efectivo de expresar una relación entre ellos.
+
+
+## 4.5. Aplicación a la comunicación gráfica de información cuantitativa
+
+Los principios gestaltistas son una herramienta esencial para facilitar el procesamiento de la información al lector y evitar problemas de comprensión: 
+
+• El Principio de Proximidad puede usarse en gráficos de barras para configurar grupos por la cercanía entre ellas (ejemplo: agrupar barras por año).
+• El Principio de Similitud es útil en mapas, donde las comunidades del mismo color forman un conjunto, o los iconos similares forman un grupo.
+• El Principio del Cercado permite destacar grupos de datos, por ejemplo, usando una trama o borde alrededor de un conjunto de barras para asociarlas a una categoría específica (ejemplo: un año).
+• El Principio de Continuidad se aplica en diagramas para mostrar relaciones, ya que es más fácil percibir las conexiones si estas son suaves y sin interrupciones.
+• El Principio de Conexión es evidente en gráficas de línea, donde los puntos señalados se convierten en una evolución al estar unidos, prevaleciendo la conexión sobre otros atributos como el color y la forma.
+
+En resumen, dado que el cerebro humano es un gran buscador de patrones, presentar la información mediante estructuras que sigan las normas "preatentivas" y los principios de la Gestalt facilita el proceso cognitivo y asegura el éxito de la visualización.
 
 ## Tema 05. 
 

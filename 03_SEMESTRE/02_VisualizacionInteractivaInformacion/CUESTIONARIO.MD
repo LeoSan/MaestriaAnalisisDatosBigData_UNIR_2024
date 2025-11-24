@@ -238,27 +238,26 @@
 
 ## Tema 3. Trabajar con datos 
 
-
 1. La información:
 - A. Es el verdadero poder en sí misma y en términos absolutos.
-- B. Permite extraer de ella, mediante distintas técnicas, conocimiento, que es realmente lo valioso.
+- B. Permite extraer de ella, mediante distintas técnicas, conocimiento, que es realmente lo valioso. **CORRECTA**
 - C. Solo tiene sentido si se puede representar en 3D.
 - D. Todas las anteriores son correctas.
 
 2. Para comunicar adecuadamente de forma gráfica nuestra visión sobre un conjunto de datos, estos se han de mostrar siguiendo:
-- A. Criterios estratégicos.
+- A. Criterios estratégicos. **CORRECTA** 
 - B. Criterios económicos.
 - C. Criterios psicosociales.
-- D. Todas las anteriores son correctas.
+- D. Todas las anteriores son correctas. 
 
 3. Entre las variables categóricas distinguimos entre
 - A. Variables nominales y discretas.
-- B. Variables ordinales y nominales.
+- B. Variables ordinales y nominales. **CORRECTA** 
 - C. Variables cuantitativas y nominales.
 - D. Variables discretas y continuas.
 
 4. Las medidas de tendencia central:
-- A. Poco nos dicen sobre la distribución de los valores resumidos.
+- A. Poco nos dicen sobre la distribución de los valores resumidos. **CORRECTA** 
 - B. Deben ser utilizadas siempre que podamos.
 - C. Deben evitar ser utilizadas siempre.
 - D. Ninguna de las anteriores es correcta.
@@ -267,10 +266,10 @@
 - A. Que realmente no nos importen los resultados, sino solo mostrar que tenemos datos y números.
 - B. Utilizar mal los datos recolectados.
 - C. Que preocupe más cómo se recibirán los hallazgos que tener resultados fiables.
-- D. Todas las anteriores son correctas.
+- D. Todas las anteriores son correctas. **CORRECTA** 
 
 6. Son herramientas de recolección de datos
-- A. Medición directa, grupo focal y observación.
+- A. Medición directa, grupo focal y observación. **CORRECTA** 
 - B. Medición directa, heurísticas isobáricas y Examen de análisis previos.
 - C. Grupo focal, examen de análisis previos y fabricación de factoides.
 - D. Todas las anteriores son correctas.
@@ -279,16 +278,20 @@
 - A. La limpieza de datos se ha de realizar antes de la preparación de los mismos.
 - B. La verificación de rangos de datos es parte de la preparación de datos.
 - C. La uniformización de unidades de medida es parte de la preparación de datos.
-- D. Todas las anteriores son correctas.
+- D. Todas las anteriores son correctas. **CORRECTA** 
 
 8. El cuarteto de Anscombe:
 - A. Son cuatro profesionales de la visualización muy conocidos.
 - B. Visibiliza la información que ganamos al resumir distribuciones.
-- C. Evidencia la importancia de graficar un conjunto de datos para comprenderlos.
+- C. Evidencia la importancia de graficar un conjunto de datos para comprenderlos. **CORRECTA** 
 - D. Todas las anteriores son incorrectas.
 
+```
+El Cuarteto de Anscombe es un conjunto famoso en estadística, creado en 1973 por el estadístico Francis Anscombe. Consiste en cuatro conjuntos de datos ($I, II, III,$ y $IV$) que poseen propiedades estadísticas casi idénticas, pero distribuciones muy diferentes.
+```
+
 9. Una distribución normal de los datos:
-- A. Es aquella que tiene forma de campana, con datos en torno a un valor central.
+- A. Es aquella que tiene forma de campana, con datos en torno a un valor central. **CORRECTA** 
 - B. Es aquella que tiene sesgo, con un elevado número observaciones a la derecha o a la izquierda.
 - C. Es la que normalmente se tiene en los datos, con independencia de su naturaleza.
 - D. Todas las anteriores son correctas.
@@ -297,7 +300,7 @@
 - A. Se ha de determinar claramente el mensaje a comunicar.
 - B. Se debe entender a la audiencia destino.
 - C. En ocasiones se utiliza la narrativa.
-- D. Todas las anteriores son correctas.
+- D. Todas las anteriores son correctas.  **CORRECTA** 
 
 ## Videoclase 1. Fundamentos de los datos.
 
@@ -333,6 +336,7 @@
 - ¿Cuál es el objetivo principal de la preparación y limpieza de datos?
 - Garantizar que los datos sean precisos, consistentes y utilizables para el análisis. => Como hemos visto, si los datos no son válidos, nuestra visualización tampoco lo será, y lo que es más grave, nos pueden acusar de falsedad si nuestros datos no están bien contrastados. Cuando nos referimos a consistentes estamos haciendo alusión a que deben ser veraces y de una fuente fiable.
 
+
 ## Videoclase 3. Visualización de los datos. ►
 
 - ¿Cuál es uno de los principios fundamentales de la visualización de datos?
@@ -352,7 +356,6 @@
 - Sin duda, sí.
 
 
-
 ## Tema 04. 
 
 
@@ -360,24 +363,24 @@
 
 
 
-## Videoclase 1. 
+## Videoclase 1. La visión humana y la Cognición
 
--
--
+- ¿Cuál de las siguientes afirmaciones es falsa sobre la memoria icónica?
+- Es un almacén de memoria a corto plazo. => La memoria icónica no es un almacén de memoria a corto plazo, sino un almacén sensorial que registra información visual durante un período muy breve (décimas de segundo) antes de que se transfiera a la memoria a corto plazo [Procesa la información visual de forma inconsciente y automática, Opera en décimas de segundo, Detecta atributos como el color y la localización de los objetos]
 
--
--
+- ¿En qué etapa del proceso de percepción y conocimiento el cerebro organiza y clasifica la información visual en áreas con características similares?
+- Percepción de patrones. => Bien 
 
--
--
+- ¿Cuál de las siguientes afirmaciones describe mejor la memoria a largo plazo?
+- Se accede a ella a través de procesos de repetición y aprendizaje. => procesos de repetición y aprendizaje, y por su capacidad de almacenamiento casi ilimitada 
 
--
--
+- ¿En qué fase del procesamiento perceptivo se pueden utilizar atributos «preatentivos» para agrupar y resaltar objetos?
+- [Fase «preatentiva». - Yo digo que es esta] =>  [Memoria a largo plazo- Esta me la marca como correcta] => La teoría vista menciona que los atributos «preatentivos» juegan un papel importante en el diseño visual y que se detectan en la fase «preatentiva». Estos atributos pueden ser utilizados para agrupar y resaltar objetos con claridad.
 
--
--
+- ¿Cuál de estas opciones se ajusta a los tres tipos de gráficos existentes?
+- Gráficos de Barras, línea y tartas. => Los tipos más importantes son los descritos, puesto que con ellos se puede mostrar cualquier tipo de información a nivel estadístico. Es decir, dichos tipos de gráficos facilitan la comprensión de los datos contenidos en dichas ilustraciones.
 
-## Videoclase 1. 
+## Videoclase 2. La percepción visual. 
 
 -
 -
