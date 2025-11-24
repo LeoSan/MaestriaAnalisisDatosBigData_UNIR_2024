@@ -335,20 +335,25 @@
 
 ## Videoclase 3. Visualización de los datos. ►
 
--
--
+- ¿Cuál es uno de los principios fundamentales de la visualización de datos?
+- Definir claramente el mensaje que se quiere comunicar.
 
--
--
 
--
--
+- ¿Qué es la distribución normal en estadística?
+- Una distribución de datos en forma de campana con datos dispersos en torno a un valor central.
 
--
--
+- ¿Cuál es uno de los mejores logros que ha conseguido la prensa online en todo el mundo? 
+- La infografía interactiva. Debemos poder contrastar unos datos con otros antes de la propia selección.
 
--
--
+- En las redacciones de los grandes medios, ¿qué tipo de especialista se ha creado para para dar respuesta a las necesidades que estamos analizando?
+- Para poder aclarar conceptos y tener una idea inicial del modelo.
+
+- ¿Ha cambiado la prensa digital la forma que se tenía de leer el periódico? ¿Ha afectado la forma de leer la información la era digital?
+- Sin duda, sí.
+
+
+
+## Tema 04. 
 
 
 # Tema 4. Psicología aplicada al diseño de visualizaciones
