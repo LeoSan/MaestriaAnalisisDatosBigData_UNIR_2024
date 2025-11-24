@@ -361,6 +361,57 @@ El Cuarteto de Anscombe es un conjunto famoso en estadística, creado en 1973 po
 
 # Tema 4. Psicología aplicada al diseño de visualizaciones
 
+1. El sentido de la visión no sería posible sin la presencia de:
+A. El sol.
+B. Un escenario diurno.
+C. Una fuente de luz.
+D. Un objeto luminoso.
+
+2. Nuestra visión es:
+A. Fruto de un proceso regular.
+B. La suma de la información obtenida tras múltiples fijaciones.
+C. El resultado de la fijación en un punto durante un amplio espacio de
+tiempo.
+D. Ninguna es correcta.
+
+3. Los atributos «preatentivos» son detectados:
+A. En la memoria icónica.
+B. En la memoria a corto plazo.
+C. En la memoria a largo plazo.
+D. En la memoria de trabajo.
+
+4. El procesamiento «preatentivo» se produce:
+A. De manera inconsciente.
+B. De manera consciente.
+C. Consciente o inconscientemente.
+D. Ninguna es correcta.
+
+5. En la última etapa del proceso de percepción:
+A. Se extraen las características básicas de la visualización.
+B. Se activa la percepción de patrones.
+C. Es la encargada de dar contenido a la información seleccionada y
+organizada anteriormente.
+D. A, B y C son correctas.
+
+6. Principios que rigen nuestro comportamiento visual son:
+A. Principio de proximidad.
+B. Principio de continuidad.
+C. Principio de conexión.
+D. A, B y C son correctas.
+
+7. El principio de similitud afirma que:
+A. Tendemos a agrupar objetos con el mismo color.
+B. Tendemos a agrupar objetos con la misma forma.
+C. Tendemos a agrupar objetos con las mismas características.
+D. Tendemos a agrupar objetos con el mismo tamaño.
+
+8. Cuando nos encontramos con objetos que parecen tener una frontera a su
+alrededor prima:
+A. El principio de proximidad.
+B. El principio del cercado.
+C. El principio de conexión.
+D. A y B son correctas.
+
 
 
 ## Videoclase 1. La visión humana y la Cognición
@@ -382,42 +433,56 @@ El Cuarteto de Anscombe es un conjunto famoso en estadística, creado en 1973 po
 
 ## Videoclase 2. La percepción visual. 
 
--
--
+- ¿Qué escuela de psicología exploró cómo organizamos lo que vemos para darle sentido?
+- Gestalt. => A principios del siglo XX, un grupo de psicólogos alemanes fundaron la escuela de la Gestalt y descubrieron que las personas organizamos lo que vemos de una forma determinada para darle sentido. Es muy importante para la Gestalt el análisis de conjunto para darle un sentido al objeto analizado. Es decir, el enfoque gestáltico es siempre un enfoque holístico.
 
--
--
+- ¿Cuál de los siguientes no es un principio de la Gestalt aplicado a la visualización?
+- Claridad. => Los principios de la Gestalt que se mencionan en las fuentes son: Proximidad, Similitud, Cercado, Continuidad y Conexión. La Claridad no se menciona como un principio de la Gestalt.
 
--
--
+- ¿Qué principio de la Gestalt describe la tendencia a percibir objetos cercanos como un grupo?
+- Proximidad. => El principio de Proximidad establece que percibimos los objetos cercanos entre sí como si fueran un grupo. Lo hacemos de forma inmediata e intuitiva. Este es uno de los principios básicos de la Gestalt y demuestra también la justificación de un sistema holístico.
 
--
--
+- Si se quiere que una visualización sea fácilmente comprensible, ¿qué se debe aplicar?
+- Las leyes de la Gestalt. => si aplicamos las leyes de la Gestalt a la visualización, nuestra audiencia podrá comprender fácilmente la información. Esto se debe a que estas leyes explican nuestros patrones de percepción “preatentivos”.
 
--
--
+- ¿Qué principio de la Gestalt explica por qué agrupamos elementos que sugieren continuidad, incluso si están interrumpidos?
+- Continuidad => El principio de Continuidad nos lleva a percibir un objeto como parte de un todo. Por lo tanto, agrupamos los elementos que dan la sensación de continuidad, aunque haya interrupciones entre ellos.
 
 ## Videoclase 1. 
 
--
--
+- ¿Cuál de las siguientes leyes Gestalt describe la tendencia a percibir elementos cercanos entre sí como un grupo?
+- Ley de la proximidad. =>  La ley de la proximidad establece que los elementos cercanos entre sí tienden a ser percibidos como un grupo. El Ejemplo 1 sobre la Proximidad en el texto ilustra cómo percibimos dos conjuntos de tres barras debido a la cercanía entre ellas.
 
--
--
+- ¿Qué ley Gestalt se ilustra en un diagrama donde los puntos conectados por una línea se perciben como una evolución?
+- Ley de la conexión => La ley de la conexión, como se describe en el Ejemplo 4 del texto, demuestra que los elementos conectados visualmente, como los puntos unidos por una línea, se perciben como una unidad o una evolución
 
--
--
+- ¿Cuál de los siguientes ejemplos no es una aplicación de la ley de la similitud?
+- Organizar elementos en una lista numerada. => La ley de la similitud se basa en la agrupación por características visuales compartidas. Mientras que las opciones a, b y d usan color, fuente y símbolos para agrupar elementos similares, una lista numerada organiza por orden, no por similitud visual
 
--
--
+- ¿Qué principio Gestalt ayuda a comprender la información en un diagrama donde se muestran las relaciones entre diferentes elementos?
+- Ley de la continuidad. => El principio de continuidad, como se menciona en el Ejemplo 3 de la presentación, se aplica a diagramas que muestran relaciones entre elementos. La continuidad visual facilita la comprensión de la conexión entre los datos.
 
--
--
+- Según el texto, ¿qué se utiliza para indicar visualmente que «algo ocurre» en ciertas áreas de un mapa?
+- El color de las comunidades. =>  El texto, en el Ejemplo 2 sobre la Similitud, indica que el color se utiliza para agrupar comunidades en un mapa, permitiendo al lector entender que algo ocurre en esas áreas.
 
 
+# Tema 5. El diseño aplicado a la visualización de datos
 
-# Tema 05. 
+## 5.1. ¿Cómo estudiar este tema?
 
+## 5.2. Tipografía. Eficacia y legibilidad
+
+## 5.3. Color
+
+## 5.4. Dimensiones y resolución: milímetros y píxeles
+
+## 5.5. Composición gráfica. Uso adecuado del espacio
+
+## 5.6. Principales formatos de imagen
+
+## 5.7. Importancia de lo icónico
+
+## 5.8. De lo estético a lo funcional en la infografía
 
 --- 
 

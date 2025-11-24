@@ -374,6 +374,8 @@ Otros atributos preatentivos incluyen la forma, la orientación, el tamaño, la 
 
 ## 4.4. Psicología de la Gestalt. Principios gestaltistas
 
+![alt text](image-10.png)
+
 **Psicología de la Gestalt: Principios de Percepción**
 
 La escuela de la Gestalt, fundada por psicólogos alemanes a principios del siglo XX, descubrió que organizamos lo que vemos para darle sentido. Aplicar las leyes gestaltistas a la visualización asegura que sean fácilmente comprensibles.
@@ -381,9 +383,13 @@ La escuela de la Gestalt, fundada por psicólogos alemanes a principios del sigl
 Los principios más influyentes para el diseño de visualizaciones son:
 
 1. Principio de Proximidad: Los objetos cercanos se perciben como si fueran un grupo, de manera inmediata.
+
 2. Principio de Similitud: Existe una tendencia a agrupar objetos que comparten las mismas características, como forma, tamaño o color.
+
 3. Principio del Cercado (Closure): Los objetos encerrados dentro de un borde o límite se perciben como un grupo.
+
 4. Principio de Continuidad: Se percibe un objeto como parte de un todo, agrupando elementos que denotan continuidad incluso si están interrumpidos.
+
 5. Principio de Conexión: Este principio, propuesto por Rock y Palmer en 1994, establece que los objetos conectados se perciben como miembros de un mismo grupo. La ley de la conexión es muy potente, ya que se impone sobre otras leyes como el color, la forma o la proximidad, y conectar objetos gráficos mediante líneas es un modo muy efectivo de expresar una relación entre ellos.
 
 
@@ -399,7 +405,7 @@ Los principios gestaltistas son una herramienta esencial para facilitar el proce
 
 En resumen, dado que el cerebro humano es un gran buscador de patrones, presentar la información mediante estructuras que sigan las normas "preatentivas" y los principios de la Gestalt facilita el proceso cognitivo y asegura el éxito de la visualización.
 
-## Tema 05. 
+# Tema 5. El diseño aplicado a la visualización de datos
 
 ![alt text](Tema_5_MC.png)
 
