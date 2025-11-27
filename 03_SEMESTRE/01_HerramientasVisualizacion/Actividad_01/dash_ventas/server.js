@@ -4,7 +4,7 @@ import fs from "fs/promises";
 import dotenv from "dotenv";
 
 // Cargo las variables de entorno del archivo .env
-dotenv.config(); 
+dotenv.config();
 
 // __dirname no está disponible directamente con ES Modules, lo creamos
 import { fileURLToPath } from "url";
