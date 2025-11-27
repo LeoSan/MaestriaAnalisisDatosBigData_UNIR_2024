@@ -2,7 +2,11 @@
 
 # Tema 01. Introducción a la visualización de datos
 
-![alt text](Tema_1_MC.png)
+**Mapa Copnceptual**
+<div align="center">
+  <img src="Tema_1_MC.png" alt="Global Certificate" width="100%" />
+</div>
+
 
 ![alt text](image.png)
 
@@ -103,8 +107,10 @@ cognitivo a través del cual asimila y procesa los datos.
 
 # Tema 2. Historia de la visualización de datos
 
-
-![alt text](Tema_2_MC.png)
+**Mapa Copnceptual**
+<div align="center">
+  <img src="Tema_2_MC.png" alt="Global Certificate" width="100%" />
+</div>
 
 ## 2.2. Orígenes de la infografía y la visualización de datos
 
@@ -175,7 +181,10 @@ Typographic Picture Education).
 
 # Tema 3. Trabajar con datos 
 
-![alt text](Tema_3_MC.png)
+**Mapa Copnceptual**
+<div align="center">
+  <img src="Tema_3_MC.png" alt="Global Certificate" width="100%" />
+</div>
 
 > Una buena encuesta recolecta datos fiables y verificables que nos permitirán realizar afirmaciones concretas
 
@@ -327,10 +336,10 @@ La etapa final donde los datos se presentan visualmente:
 
 > Introduce el proceso de percepción visual humana, siendo fundamental para lograr una comunicación gráfica natural y efectiva dirigida al público. 
 
-![alt text](Tema_4_MC.png)
-
-## 4.1. ¿Cómo estudiar este tema?
-
+**Mapa Copnceptual**
+<div align="center">
+  <img src="Tema_4_MC.png" alt="Global Certificate" width="100%" />
+</div>
 
 ## 4.2. Visión humana. Del ojo al cerebro
 > Comprender el proceso de percepción visual es crucial en la comunicación visual, ya que el modo en que el ojo ve,  está íntimamente relacionado con la forma en que representamos gráficamente la información. 
@@ -370,8 +379,6 @@ El procesamiento preatentivo se produce de manera inconsciente y es crucial para
 
 Otros atributos preatentivos incluyen la forma, la orientación, el tamaño, la longitud, y el ancho. Sin embargo, la eficacia de estos atributos tiene límites, ya que el uso de varios a la vez puede provocar el efecto contrario, dificultando la detección de patrones.
 
-
-
 ## 4.4. Psicología de la Gestalt. Principios gestaltistas
 
 ![alt text](image-10.png)
@@ -392,7 +399,6 @@ Los principios más influyentes para el diseño de visualizaciones son:
 
 5. Principio de Conexión: Este principio, propuesto por Rock y Palmer en 1994, establece que los objetos conectados se perciben como miembros de un mismo grupo. La ley de la conexión es muy potente, ya que se impone sobre otras leyes como el color, la forma o la proximidad, y conectar objetos gráficos mediante líneas es un modo muy efectivo de expresar una relación entre ellos.
 
-
 ## 4.5. Aplicación a la comunicación gráfica de información cuantitativa
 
 Los principios gestaltistas son una herramienta esencial para facilitar el procesamiento de la información al lector y evitar problemas de comprensión: 
@@ -407,22 +413,215 @@ En resumen, dado que el cerebro humano es un gran buscador de patrones, presenta
 
 # Tema 5. El diseño aplicado a la visualización de datos
 
-![alt text](Tema_5_MC.png)
+**Mapa Copnceptual**
+<div align="center">
+  <img src="Tema_5_MC.png" alt="Global Certificate" width="100%" />
+</div>
+
+>  El diseño aplicado a la visualización de datos, sentando las bases de los aspectos cruciales del diseño que intervienen en la creación de una infografía.
+
+## 5.2. Tipografía. Eficacia y legibilidad
+
+1. Tipografía: Eficacia y Legibilidad
+- La elección de fuentes tipográficas está íntimamente ligada a la claridad del mensaje y es determinante en la forma en que el cerebro percibe la información.
+- La selección de la tipografía adecuada debe cumplir con dos premisas: la eficacia y la legibilidad, por lo que se deben elegir tipografías simples y evitar las muy recargadas.
+
+**Las familias tipográficas se dividen en dos tipos principales:**
+
+- Serif o romanas: Muestran remates en sus extremos, los cuales guían la lectura del ojo. Son idóneas para textos largos e impresos.
+- Sans serif o de palo seco: No presentan remates, resultando más limpios. Son las más adecuadas para la lectura en pantallas o para la redacción de titulares en prensa.
+
+Para infografías impresas, es preferible escoger fuentes sans serif para mayor claridad, dado que el cuerpo de letra utilizado suele ser pequeño (entre 8,5 y 9,5 puntos). Para soportes digitales, se seleccionan tipografías de palo seco debido a la baja resolución en pantalla, con un cuerpo mínimo de 13 píxeles para asegurar la legibilidad
+
+## 5.3. Color
+El color es una herramienta esencial que funciona como un excelente instrumento de categorización, y su buen uso puede lograr que uno o varios elementos destaquen taxativamente sobre el resto.
+
+Existen dos modelos de color principales basados en la salida final de la visualización:
+
+- CMYK: Modelo sustractivo (color pigmento) utilizado para visualizaciones impresas en cuatricromía. De la mezcla de cian, magenta y amarillo se obtiene el negro.
+- RGB: Modelo aditivo usado para visualizaciones de salida digital. De la suma de luz roja, verde y azul se obtiene la luz blanca.
+
+El color es un atributo visual "preatentivo" que impacta inmediatamente en el lector. Se utiliza para destacar elementos, jerarquizar objetos y expresar valor, como diferentes tonos de un mismo color que indican mayor o menor valor. Sin embargo, un exceso o mala selección de colores puede dificultar la percepción y la correcta función de la visualización.
+
+**Ejemplo**
+
+![alt text](image-11.png)
+
+## 5.4. Dimensiones y resolución: milímetros y píxeles
+
+- La dimensión hace referencia al área que ocupará la representación. 
+- La unidad de medida varía según el soporte:
+    - Visualización impresa: La unidad habitual es el milímetro, y la resolución ideal de la imagen es de aproximadamente 300 ppp (píxeles por pulgada).
+    - Visualización digital: La unidad de medida por excelencia es el píxel. Una resolución de 72 ppp es suficiente, lo que evita que se suban elementos muy pesados que dificulten la carga de la información.
+    - La resolución es la cantidad de detalle que ofrece la imagen, siendo el número de píxeles existentes por unidad de superficie
+
+## 5.5. Composición gráfica. Uso adecuado del espacio
+
+La organización de la infografía debe guardar un equilibrio y primar la simetría. Los elementos deben encajar respetando los márgenes y manteniendo una relación adecuada entre las zonas "manchadas" y los espacios en blanco. El peso que tenga cada elemento en la composición debe estar estrechamente ligado a su relevancia.
+
+![alt text](image-12.png)
+
+## 5.6. Principales formatos de imagen
+
+Los formatos de imagen se distinguen entre impresos y digitales:
+- **Impresos:**
+    - TIFF: Ideal para imágenes de elevada resolución, aunque genera archivos pesados.
+    - JPEG/JPG: Ofrece visualización aceptable con compresión.
+    - EPS: Formato ideal para guardar imágenes vectoriales.
+
+- **Digitales:**
+    - JPEG/JPG: El formato más usado para introducir imágenes en la web.
+    - PNG: Permite fondos transparentes y es un buen sustituto de JPG.
+    - SVG (Scalable Vector Graphic): El formato ideal en la visualización de gráficos interactivos. Su principal ventaja es que las imágenes vectoriales se pueden escalar ilimitadamente sin pérdida de calidad.
+
+## 5.7. Importancia de lo icónico
+
+> Un icono es un signo gráfico que mantiene una relación de semejanza con el objeto representado y son reproducciones simplificadas de objetos o conceptos. El uso de recursos icónicos ayuda a simplificar datos complejos y hacerlos fácilmente comprensibles. La repetición de un icono es un método sencillo para mostrar datos cuantitativos visualmente.
+
+![alt text](image-13.png)
+
+## 5.8. De lo estético a lo funcional en la infografía
+
+En toda visualización, la funcionalidad es el valor primario. Aunque los elementos de diseño tienen una función estética, esta debe entenderse como un valor secundario que complementa y refuerza a la funcionalidad. Es fundamental que las formas gráficas seleccionadas se correspondan con el objetivo final de la visualización. Si se olvida la finalidad última (funcionalidad), se habrá cometido un error.
+
+**Ejemplo Funcional**
+> Mal Diseño 
+![alt text](image-14.png)
 
 
-## Tema 06. 
+**Ejemplo Funcional**
+> Buen Diseño 
+![alt text](image-15.png)
+
+# Tema 6. Definición y tipologías de gráficos
+
+**Mapa Copnceptual**
+<div align="center">
+  <img src="image-16.png" alt="Global Certificate" width="100%" />
+</div>
+
+## 6.2. Gráficos no figurativos
+- Los gráficos no figurativos son una representación visual de información. Su modo de visualizar los datos es abstracto y no guarda parecido real con lo que se representa, pero son reconocidos por una amplia mayoría de personas.
+
+- Son una forma fácil y sencilla de descubrir y reflejar patrones y tendencias, así como las relaciones que se pueden establecer entre conjuntos de valores cuantitativos.
+
+**Gráficos Estadísticos Básicos**
+
+Los gráficos no figurativos por excelencia son los gráficos estadísticos. William Playfair (1759-1823) es el creador de los tipos de gráficos más utilizados para mostrar información cuantitativa: los gráficos de barras, los gráficos de línea y las tartas.
+
+> **Gráficos de barras**: Son representaciones de datos mediante rectángulos paralelos, donde la extensión (longitud) de la barra es igual al valor reflejado. Se utilizan para realizar comparaciones entre valores, mostrar la evolución en el tiempo (histograma), reflejar rankings, visualizar desviaciones, representar subdivisiones de un valor entero o ver las relaciones entre dos conjuntos de valores. La escala cuantitativa debe acortarse de manera que comience, normalmente, por el valor 0.
 
 
-## Tema 07. 
+**Cuando Usarlas**
+
+- Realizar comparaciones entre valores.
+- Mostrar cómo un valor ha ido evolucionando en el tiempo (histograma).
+- Reflejar un ranking de valores de mayor a menor o viceversa.
+- Visualizar la desviación entre dos conjuntos de valores.
+- Representar las subdivisiones de un valor entero.
+- Ver las relaciones entre dos conjuntos de valores
+
+**Ejemplo** 
+<div align="center">
+  <img src="image-17.png" alt="Global Certificate" width="33%" />
+</div>
 
 
-## Tema 08. 
+> **Gráficos de línea:** Son representaciones de datos mediante puntos conectados por una línea. Son los más adecuados para mostrar la evolución de un valor cuantitativo a lo largo de una línea temporal. Sus funciones principales son mostrar la evolución de un valor en el tiempo, visualizar la desviación o representar subdivisiones de un valor entero.
+
+**Cuando Usarlas**
+- Mostrar cómo un valor ha ido evolucionando en el tiempo.
+- Visualizar la desviación entre dos conjuntos de valores.
+- Representar las subdivisiones de un valor entero.
 
 
+**Ejemplo** 
+<div align="center">
+  <img src="image-18.png" alt="Global Certificate" width="33%" />
+</div>
 
-## Tema 09. 
+> **Tartas:** Gráficos circulares donde las particiones corresponden a cada parte de un valor total que equivale al 100%. Su función es representar las subdivisiones de un valor entero. Se recomienda, en ocasiones, utilizar un gráfico de barras en su lugar si hay más de cuatro o cinco particiones para una lectura más directa y una mejor comparación.
+
+**Cuando Usarlas**
+- Representar las subdivisiones de un valor entero
+- Visualizar la desviación entre dos conjuntos de valores.
+- Representar las subdivisiones de un valor entero.
+
+**Ejemplo** 
+<div align="center">
+  <img src="image-19.png" alt="Global Certificate" width="33%" />
+</div>
+
+**Cuando se manejan conjuntos de datos con relaciones temporales o espaciales, se utilizan:**
+
+- **Líneas de tiempo:** Representan datos a lo largo de un eje cronológico para identificar la conexión de un dato con un punto temporal y revelar posibles tendencias y patrones.
+
+**Ejemplo** 
+<div align="center">
+  <img src="image-20.png" alt="Global Certificate" width="33%" />
+</div>
+
+- Mapas de flujo: Representan el movimiento y la conexión existente entre puntos. La relación se establece mediante una línea cuyo ancho es proporcional al valor a representar.
+
+**Ejemplo** 
+<div align="center">
+  <img src="image-21.png" alt="Global Certificate" width="33%" />
+</div>
+
+- **Mapas de coropletas:** Modo de representar datos estadísticos acotando áreas (regiones), codificándolas con diferentes colores, gradaciones de un mismo color, formas o texturas. Deben ir acompañados de una clave que especifique la codificación seleccionada
+
+**Ejemplo** 
+<div align="center">
+  <img src="image-22.png" alt="Global Certificate" width="33%" />
+</div>
 
 
-## Tema 10. 
+## 6.3. Gráficos figurativos
+
+Los gráficos figurativos muestran la información mediante recursos que guardan parecido real con lo que representan. Estos recursos pueden ser mapas, fotografías o ilustraciones.
+Son muy cercanos para el lector y permiten comprender de una manera sencilla fenómenos complejos.
+Cartografía
+
+Los mapas son recursos imprescindibles en muchos casos, ya que un mapa geográfico constituye a menudo la escena central de una visualización. Para su elaboración, es importante manejar conceptos como:
+
+- Proyección cartográfica: Representación de la esfera terrestre sobre una superficie plana. La Proyección de Mercator es la más utilizada.
+
+- Escala: Línea recta dividida en partes iguales que sirve de medida para dibujar proporcionadamente las distancias y dimensiones en un mapa o plano.
+
+- Clave o leyenda: Pequeña explicación que especifica a qué corresponde cada código utilizado en la representación.
+
+Grandes Despliegues Infográficos
+Se caracterizan por ocupar una extensión mayor y tener un lugar destacado en los periódicos, tanto impresos como digitales. Son trabajos que abordan acontecimientos de fuerte repercusión internacional (como Juegos Olímpicos o elecciones) o información de actualidad inmediata (breaking news), que requieren que los periodistas visuales trabajen contrarreloj. A menudo son fruto del trabajo en equipo.
+
+## 6.4. Anatomía de un gráfico: elementos
+
+Todos los gráficos comparten elementos básicos, cuya estructura general se puede extrapolar a cualquier visualización (cabecera, cuerpo y pie). Los componentes esenciales de un gráfico estadístico son:
+
+
+| Elemento | Función principal |
+| :--- | :--- |
+| **Título** | Encabezado directo que llama la atención e introduce el tema. |
+| **Subtítulo** | Incluye detalles importantes de contexto, como el periodo de referencia de los datos y la unidad de medida (porcentaje, euros, etc.). |
+| **Clave o Leyenda** | Explica el modo en que se ha codificado el gráfico. |
+| **Eje Y** | Eje cuantitativo; indica la frecuencia con la que se produce cada valor. |
+| **Eje X** | Eje categórico; expresa los valores de la variable. |
+| **Línea de referencia** | Aporta información contextual para ayudar a la comparación de datos. |
+| **Fuente** | Origen de los datos mostrados, que se incluye en el pie. |
+
+**Ejemplo**
+<div align="center">
+     <img src="image-23.png" alt="Global Certificate" width="33%" />
+</div>
+
+# Tema 07. 
+
+
+# Tema 08. 
+
+
+# Tema 09. 
+
+
+# Tema 10. 
 
 

@@ -1,6 +1,5 @@
 # Tema 01. Introducción a la visualización de datos
 
-
 1. La infografía y la visualización de datos tienen como objetivo principal:
 - A. Presentar la información de una manera muy atractiva.
 - B. Informar y ampliar el conocimiento. **CORRECTA**
@@ -121,7 +120,8 @@
 - Sí lo es, pues debemos comprobar que nuestra visualización es correcta y la información es legible de un simple vistazo.
 
 --- 
-# Tema 2. Historia de la visualización de datos
+
+# Tema 02. Historia de la visualización de datos
 
 1. La proyección cartográfica más conocida y usada en la actualidad es:
 - A. La proyección de Robinson.
@@ -236,7 +236,9 @@
 - ¿Ha cambiado la prensa digital la forma que se tenía de leer el periódico? ¿Ha afectado la forma de leer la información la era digital? 
 - Sin duda, sí.  => Dada la inmediatez comentada y, sobre todo, el aumento a la exposición de información que recibimos en nuestras sociedades, las noticias saltan a primera página casi en tiempo real y son catalogadas como urgentes. Así mismo, y dada tal saturación, necesitamos recibir la información de forma precisa, rápida y fácil de entender. Este es, en definitiva, el papel que cumplen las visualizaciones, muchas de ellas interactivas, en la era digital. 
 
-## Tema 3. Trabajar con datos 
+--- 
+
+# Tema 03. Trabajar con datos 
 
 1. La información:
 - A. Es el verdadero poder en sí misma y en términos absolutos.
@@ -356,63 +358,67 @@ El Cuarteto de Anscombe es un conjunto famoso en estadística, creado en 1973 po
 - Sin duda, sí.
 
 
-## Tema 04. 
-
-
-# Tema 4. Psicología aplicada al diseño de visualizaciones
+# Tema 04. Psicología aplicada al diseño de visualizaciones
 
 1. El sentido de la visión no sería posible sin la presencia de:
-A. El sol.
-B. Un escenario diurno.
-C. Una fuente de luz.
-D. Un objeto luminoso.
+- A. El sol.
+- B. Un escenario diurno.
+- C. Una fuente de luz. **CORRECTA** 
+- D. Un objeto luminoso.
 
 2. Nuestra visión es:
-A. Fruto de un proceso regular.
-B. La suma de la información obtenida tras múltiples fijaciones.
-C. El resultado de la fijación en un punto durante un amplio espacio de
-tiempo.
-D. Ninguna es correcta.
+- A. Fruto de un proceso regular.
+- B. La suma de la información obtenida tras múltiples fijaciones. **CORRECTA** 
+- C. El resultado de la fijación en un punto durante un amplio espacio de tiempo.
+- D. Ninguna es correcta.
 
 3. Los atributos «preatentivos» son detectados:
-A. En la memoria icónica.
-B. En la memoria a corto plazo.
-C. En la memoria a largo plazo.
-D. En la memoria de trabajo.
+- A. En la memoria icónica.   **CORRECTA** 
+- B. En la memoria a corto plazo.
+- C. En la memoria a largo plazo.
+- D. En la memoria de trabajo.
 
 4. El procesamiento «preatentivo» se produce:
-A. De manera inconsciente.
-B. De manera consciente.
-C. Consciente o inconscientemente.
-D. Ninguna es correcta.
+- A. De manera inconsciente. **CORRECTA** 
+- B. De manera consciente.
+- C. Consciente o inconscientemente.
+- D. Ninguna es correcta.
 
 5. En la última etapa del proceso de percepción:
-A. Se extraen las características básicas de la visualización.
-B. Se activa la percepción de patrones.
-C. Es la encargada de dar contenido a la información seleccionada y
-organizada anteriormente.
-D. A, B y C son correctas.
+- A. Se extraen las características básicas de la visualización. 
+- B. Se activa la percepción de patrones.
+- C. Es la encargada de dar contenido a la información seleccionada y organizada anteriormente. **CORRECTA** 
+- D. A, B y C son correctas.
 
 6. Principios que rigen nuestro comportamiento visual son:
-A. Principio de proximidad.
-B. Principio de continuidad.
-C. Principio de conexión.
-D. A, B y C son correctas.
+- A. Principio de proximidad.
+- B. Principio de continuidad.
+- C. Principio de conexión.
+- D. A, B y C son correctas. **CORRECTA** 
 
 7. El principio de similitud afirma que:
-A. Tendemos a agrupar objetos con el mismo color.
-B. Tendemos a agrupar objetos con la misma forma.
-C. Tendemos a agrupar objetos con las mismas características.
-D. Tendemos a agrupar objetos con el mismo tamaño.
+- A. Tendemos a agrupar objetos con el mismo color.
+- B. Tendemos a agrupar objetos con la misma forma.
+- C. Tendemos a agrupar objetos con las mismas características. **CORRECTA** 
+- D. Tendemos a agrupar objetos con el mismo tamaño.
 
-8. Cuando nos encontramos con objetos que parecen tener una frontera a su
-alrededor prima:
-A. El principio de proximidad.
-B. El principio del cercado.
-C. El principio de conexión.
-D. A y B son correctas.
+8. Cuando nos encontramos con objetos que parecen tener una frontera a su alrededor prima:
+- A. El principio de proximidad.
+- B. El principio del cercado. **CORRECTA** 
+- C. El principio de conexión.
+- D. A y B son correctas.
 
+9. ¿Cuál de las siguientes leyes se impone sobra las otras?
+- A. Principio de conexión. **CORRECTA**
+- B. Principio de similitud.
+- C. Principio de proximidad.
+- D. Todas se encuentran al mismo nivel.
 
+10. La aplicación de principios «gestaltistas» en la comunicación gráfica:
+- A. Facilita el procesamiento de la información.
+- B. No es un recurso con carácter universal.
+- C. Evita problemas de comprensión de la información.
+- D. A y C son correctas  **CORRECTA**
 
 ## Videoclase 1. La visión humana y la Cognición
 
@@ -466,138 +472,245 @@ D. A y B son correctas.
 - El color de las comunidades. =>  El texto, en el Ejemplo 2 sobre la Similitud, indica que el color se utiliza para agrupar comunidades en un mapa, permitiendo al lector entender que algo ocurre en esas áreas.
 
 
-# Tema 5. El diseño aplicado a la visualización de datos
+# Tema 05. El diseño aplicado a la visualización de datos
 
-## 5.1. ¿Cómo estudiar este tema?
+1. La elección de las fuentes tipográficas guarda una estrecha relación con:
+- A. La claridad del mensaje. 
+- B. El modo en que nuestro cerebro percibe la información.
+- C. El uso del color.
+- D. A y B son correctas. **CORRECTA** 
 
-## 5.2. Tipografía. Eficacia y legibilidad
+2. Las principales familias tipográficas son:
+- A. Fuentes serif y romanas.
+- B. Fuentes sans serif y de palo seco.
+- C. Fuentes serif y sans serif . **CORRECTA** 
+- D. Ninguna es correcta.
 
-## 5.3. Color
+3. Con qué modelo de color obtenemos la luz blanca:
+- A. HSB o HSV con el brillo al 0%.
+- B. CMYK al superponer el cian, el magenta y el amarillo por síntesis sustractiva.
+- C. RGB al sumar el rojo, el verde y el azul mediante síntesis aditiva. **CORRECTA** 
+- D. Escala de grises con un porcentaje de cobertura de la tinta negra del 100%.
 
-## 5.4. Dimensiones y resolución: milímetros y píxeles
+4. El color puede ser utilizado para:
+- A. Destacar un elemento.
+- B. Jerarquizar varios objetos.
+- C. Expresar valor.
+- D. Todas son correcta. **CORRECTA** 
 
-## 5.5. Composición gráfica. Uso adecuado del espacio
+5. La unidad de medida habitual en las visualizaciones digitales es:
+- A. El píxel. **CORRECTA** 
+- B. El centímetro.
+- C. El milímetro.
+- D. La pulgada.
 
-## 5.6. Principales formatos de imagen
+6. La resolución es:
+- A. El menor detalle que se puede obtener de una imagen.
+- B. El número de píxeles existentes por unidad de superficie.
+- C. La cantidad de detalle que ofrece la imagen.
+- D. B y C son correctas. **CORRECTA** 
 
-## 5.7. Importancia de lo icónico
+7. El peso que tendrá cada elemento en una visualización está fundamentalmente ligado a:
+- A. Su orden natural.
+- B. Su lectura posterior.
+- C. Su relevancia. Su estética. **CORRECTA** 
 
-## 5.8. De lo estético a lo funcional en la infografía
+8. El formato ideal en la visualización de gráficos interactivos es:
+- A. SVG. **CORRECTA** 
+- B. JPG.
+- C. PNG.
+- D. TIFF
 
---- 
+9. La utilización de iconos:
+- A. Es un recurso habitual y de uso extendido en la visualización de información.
+- B. Ayuda a simplificar datos complejos.
+- C. Permite mostrar visualmente datos cuantitativos.
+- D. Todas son correctas. **CORRECTA** 
 
-## Videoclase 1. 
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
-
-## Videoclase 1. 
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
-
-## Videoclase 1. 
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
-
-# Tema 06. 
+10. En una visualización:[DUDA]
+- A. Ha de primar lo estético.
+- B. Ha de primar lo funcional. **CORRECTA** 
+- C. Lo estético y funcional priman por igual.
+- D. Lo funcional complementa y refuerza a lo estético
 
 
---- 
-## Videoclase 1. 
+## Videoclase 1. Importancia de la tipografía y color.
 
--
--
+- ¿Cuál es la función principal de la tipografía en la transmisión de un mensaje?
+- Asegurar la claridad del mensaje. => la elección de fuentes está estrechamente ligada a la claridad del mensaje». La tipografía, más allá de la estética, busca ante todo facilitar la comprensión del mensaje
 
--
--
+- ¿Qué tipo de fuente es más adecuada para textos largos impresos?
+- Serif o romana =>  son ideales para textos largos impresos porque los remates en sus extremos guían al ojo en la lectura. Esto es muy importante de cara a conseguir la atención cognitiva en la visualizació.
 
--
--
+- ¿Cuál de las siguientes afirmaciones sobre las fuentes Sans Serif es correcta?
+- Son más limpias visualmente por la ausencia de remates. => Las fuentes Sans Serif o de palo seco se caracterizan por la ausencia de remates en sus terminaciones, lo que las hace más limpias visualmente, especialmente en la lectura en pantalla. Es por ello por lo que se tienen tan en cuenta para nuestros trabajos de visualización.
 
--
--
+- ¿Qué modelo de color es el adecuado para visualizaciones impresas en cuatricromía?
+- CMYK. => El modelo CMYK (Cian, Magenta, Amarillo y Negro) se usa para impresión en cuatricromía, donde cada componente define el porcentaje de tinta necesario para la impresión de los colores.
 
--
--
+- ¿Cuál de las siguientes no es una ventaja del color en las visualizaciones?
+- Aumentar el tamaño del texto. => En el tema se menciona que el color puede destacar elementos y jerarquizar objetos. Si bien el color puede influir en la estética, no tiene un efecto directo en el tamaño del texto.
 
-## Videoclase 1. 
+## Videoclase 2. Dimensiones y composición gráfica.
 
--
--
+- ¿Cuál es el primer paso en el proceso de preparación de datos?
+- Recolección de datos. = > El primer paso en la preparación de datos es la recolección. Antes de poder limpiar, analizar o visualizar los datos, es necesario obtenerlos de alguna fuente. Y, además, debemos tener muy presente que la fuente debe ser fiable al 100%. De dicha calidad del dato depende la credibilidad de nuestra visualización.
 
--
--
+- ¿Cuáles son ejemplos de fuentes de datos para la preparación de datos?
+- Encuestas, Big Data y sistemas de IoT => Los datos se pueden obtener de diversas fuentes, incluyendo encuestas tradicionales, grandes conjuntos de datos (Big Data) y sistemas de Internet de las Cosas (IoT). También de bases de datos oficiales como el catastro o los servicios públicos de tránsito de personas, tráfico, etc.
 
--
--
+- ¿Por qué es importante la preparación de datos?
+- Todas las anteriores. => La preparación de datos es crucial para garantizar la calidad de los datos, lo que a su vez facilita el análisis y permite la creación de visualizaciones precisas y significativas. La presencia de sesgos en la recolección puede afectar la calidad de los datos.
 
--
--
+```html
+a. Para crear visualizaciones atractivas.
+B.Para asegurar la calidad de los datos.
+C.Para facilitar el análisis de datos
+```
 
--
--
+- ¿Qué tarea no forma parte de la preparación de datos?
+- Crear gráficos y tablas. => La creación de gráficos y tablas pertenece a la fase de visualización de datos, que ocurre después de la preparación y limpieza de los datos.
 
-## Videoclase 1. 
+- ¿Qué se puede utilizar para agilizar las tareas de preparación de datos?
+- Herramientas informáticas. => Si bien la preparación de datos a menudo implica trabajo manual, existen herramientas informáticas que pueden ayudar a automatizar y acelerar muchas de las tareas, especialmente cuando se trata de grandes conjuntos de datos. Sin embargo, el texto menciona que casi siempre se requiere algo de trabajo manual.
 
--
--
+## Videoclase 3. Limpieza y preparación de datos
 
--
--
+- ¿Cuál es la unidad de medida más común para diseños impresos?
+- Milímetro.
 
--
--
+- ¿Qué es un píxel?
+- La unidad mínima de información en una imagen digital.
 
--
--
+- ¿Qué significa la resolución de una imagen?
+- La cantidad de detalle que ofrece la imagen, medida en píxeles por pulgada (ppp).
 
--
--
+- ¿Cuál de los siguientes formatos de imagen es el más adecuado para impresión de alta calidad?
+- TIFF. => El formato TIFF (Tagged Image File Format) es ideal para almacenar imágenes de alta resolución destinadas a la impresión, aunque produce archivos de gran tamaño.
+
+- ¿Qué formato de imagen se utiliza comúnmente para la web debido a su equilibrio entre calidad y tamaño de archivo?
+- JPEG/JPG. => El formato JPEG (Joint Photographic Experts Group) es el más común para imágenes en la web, ya que ofrece una buena calidad visual con un tamaño de archivo relativamente pequeño.
+
+# Tema 06. Definición y tipologías de gráficos
+
+1. Cuando los datos son representados de manera abstracta y sin parecido real con lo que se representa, hablamos de:
+- A. Gráficos bonitos.
+- B. Gráficos no figurativos. **CORRECTA** 
+- C. Gráficos figurativos.
+- D. A y B son correctas.
+
+2. El gráfico estadístico más adecuado para realizar comparaciones entre valores es:
+- A. El gráfico de barras. **CORRECTA** 
+- B. El gráfico de línea.
+- C. El gráfico de tarta.
+- D. Cualquiera de los tres.
+
+3. Si lo que queremos mostrar es cómo ha evolucionado un valor a lo largo del tiempo, utilizaremos mejor:
+- A. Un gráfico de barras.
+- B. Un gráfico de línea. **CORRECTA** 
+- C. Un gráfico de tarta.
+- D. Cualquiera de los tres.
+
+4. Para representar el movimiento y la conexión entre dos ubicaciones, realizaremos un mapa:
+- A. Geográfico.
+- B. Mapa de coropletas.
+- C. Mapa de flujo. **CORRECTA** 
+- D. A y C son correctas
+
+5. ¿Qué tipo de gráficos son más cercanos al lector y captan rápidamente su atención?
+- A. Los mapas.
+- B. Los gráficos estadísticos.
+- C. Los gráficos no figurativos. 
+- D. Los gráficos figurativos. **CORRECTA** 
+
+6. Los mapas geográficos son un tipo de representación idónea para abordar:
+- A. Temas económicos.
+- B. Temas geopolíticos.
+- C. Conflictos bélicos.
+- D. B y C son correctas. **CORRECTA** 
+
+7. Para averiguar sobre un plano las medidas reales de lo dibujado utilizamos:
+- A. La escala. **CORRECTA** 
+- B. La proyección.
+- C. La clave o leyenda.
+- D. El compás.
+
+8. En los grandes despliegues infográficos:
+- A. Se abordan acontecimientos de gran interés.
+- B. Suelen trabajar varias personas.
+- C. Se caracterizan por ocupar una extensión mayor y tener un lugar destacado en los periódicos.
+- D. Todas son correctas  **CORRECTA** 
+
+9. Para saber a qué corresponde cada código utilizado en la representación utilizamos:
+- A. El título.
+- B. El subtítulo.
+- C. La clave o leyenda. **CORRECTA** 
+- D. La escala.
+
+10. La unidad de medida en que está expresado el gráfico, la incluiremos normalmente en:
+- A. El título. 
+- B. El subtítulo.
+- C. La clave o leyenda.
+- D. La escala 
+
+
+## Videoclase 1. Gráficos no figurativos 
+
+- ¿Qué caracteriza a los gráficos no figurativos?
+- Muestran la información mediante un sistema abstracto y generalizado. => Los gráficos no figurativos, a diferencia de los figurativos, no utilizan imágenes que se asemejen a la realidad. En cambio, emplean sistemas abstractos como barras, líneas o tartas para representar los datos.
+
+- En la proyección cartográfica, ¿cuál es la función principal de los gráficos no figurativos?
+- Revelar patrones y tendencias en un conjunto de datos. => Los gráficos no figurativos son una herramienta para visualizar datos de manera abstracta y simplificada. Su objetivo principal es ayudar a identificar patrones y tendencias dentro de la información.
+
+- ¿Qué tipo de gráfico es más adecuado para mostrar la evolución de un valor a lo largo del tiempo?
+- Gráfico de líneas. => Los gráficos de líneas son ideales para representar la evolución de un valor cuantitativo a lo largo de un periodo temporal. La línea continua permite visualizar claramente los cambios y tendencias.
+
+- ¿Cuál es la principal característica de un mapa de coropletas?
+- Codificar áreas geográficas con colores o texturas para representar datos estadísticos. => Los mapas de coropletas utilizan diferentes colores, tonalidades o texturas para representar datos estadísticos asociados a áreas geográficas específicas.
+
+- ¿Qué tipo de gráfico se utiliza para representar las subdivisiones de un valor entero?
+- Gráfico de tarta. => El gráfico de tarta es la mejor opción para visualizar las subdivisiones de un valor entero. Cada porción de la tarta representa una parte proporcional del tota
+
+## Videoclase 2. Gráficos figurativos 
+
+- ¿Qué tipo de recursos visuales utilizan los gráficos figurativos para representar la información?
+- Elementos visuales que guardan parecido con la realidad, como mapas e ilustraciones. => Los gráficos figurativos se caracterizan por emplear recursos visuales que tienen una relación directa con la realidad que representan. Esto facilita la comprensión por parte del público, ya que pueden reconocer fácilmente el objeto o proceso que se está explicando.
+
+- ¿Qué significó el El Isotype? ¿Cuál es una de las ventajas principales de los gráficos figurativos?
+- Su capacidad para hacer comprensibles fenómenos complejos de forma sencilla. => Los gráficos figurativos son una herramienta muy efectiva para simplificar la comprensión de temas complejos. Al utilizar imágenes familiares, permiten al público conectar rápidamente con la información y entenderla de manera más intuitiva
+
+- ¿Qué tipo de gráfico figurativo se utiliza para representar espacios físicos a escala sobre una superficie plana?
+- Mapa. => Los mapas son representaciones a escala de espacios físicos que se dibujan sobre una superficie plana. Son un recurso muy antiguo que se ha utilizado durante milenios para visualizar y comprender el mundo que nos rodea
+
+- ¿Qué es una proyección cartográfica?
+- La representación de la superficie esférica de la Tierra sobre un plano. => Debido a que la Tierra es una esfera, es necesario utilizar una proyección cartográfica para poder representarla en un mapa plano. Existen diferentes tipos de proyecciones, cada una con sus propias ventajas e inconvenientes
+
+- ¿Qué elemento de un mapa se utiliza para explicar el significado de los símbolos y códigos utilizados en la representación?
+- Leyenda. => La leyenda o clave de un mapa es fundamental para que el lector pueda interpretar correctamente la información que se está representando. En ella se especifica a qué corresponde cada símbolo, color o textura utilizado en el mapa
+
+## Videoclase 3. Anatomía de un gráfico. Elementos 
+
+- ¿Qué elemento de un gráfico debe ser conciso, directo y captar la atención del público?
+- El título. => El título de un gráfico, al igual que el de una noticia, debe ser llamativo y presentar el tema de manera clara y concisa para captar la atención del lector.
+
+- ¿Para qué se utiliza el subtítulo en un gráfico?
+- Para proporcionar detalles contextuales que no se incluyen en el título. => El subtítulo complementa al título del gráfico, aportando información adicional relevante para comprender el contexto de los datos presentados, como el periodo de referencia.
+
+- ¿Qué elemento de un gráfico explica cómo se ha codificado la información?
+- La clave o leyenda = > La clave o leyenda es esencial en un gráfico, ya que proporciona al lector la información necesaria para comprender el significado de los colores, símbolos o texturas utilizados para representar los datos
+
+- ¿Qué eje de un gráfico se utiliza para representar las categorías o valores de la variable?
+- El eje X. => El eje X, también llamado eje categórico, se utiliza para mostrar los distintos valores o categorías de la variable que se está representando en el gráfico
+
+- ¿Qué debe indicarse siempre en la leyenda de un gráfico?
+-  La fuente de los datos. => Es fundamental indicar la fuente de los datos en la leyenda de cualquier gráfico, tanto si se trata de datos de elaboración propia como si provienen de fuentes externas.
 
 # Tema 07. 
 
 --- 
 ## Videoclase 1. 
 
--
+- 
 -
 
 -
