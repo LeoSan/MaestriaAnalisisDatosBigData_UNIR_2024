@@ -527,7 +527,7 @@ El Cuarteto de Anscombe es un conjunto famoso en estadística, creado en 1973 po
 - C. Permite mostrar visualmente datos cuantitativos.
 - D. Todas son correctas. **CORRECTA** 
 
-10. En una visualización:[DUDA]
+10. En una visualización:
 - A. Ha de primar lo estético.
 - B. Ha de primar lo funcional. **CORRECTA** 
 - C. Lo estético y funcional priman por igual.
@@ -649,7 +649,7 @@ C.Para facilitar el análisis de datos
 
 10. La unidad de medida en que está expresado el gráfico, la incluiremos normalmente en:
 - A. El título. 
-- B. El subtítulo.
+- B. El subtítulo. **CORRECTA**
 - C. La clave o leyenda.
 - D. La escala 
 
@@ -705,62 +705,123 @@ C.Para facilitar el análisis de datos
 - ¿Qué debe indicarse siempre en la leyenda de un gráfico?
 -  La fuente de los datos. => Es fundamental indicar la fuente de los datos en la leyenda de cualquier gráfico, tanto si se trata de datos de elaboración propia como si provienen de fuentes externas.
 
-# Tema 07. 
+# Tema 07. Codificación gráfica de datos
 
---- 
-## Videoclase 1. 
+1. La posición es un atributo gráfico...
+- A. Que debemos evitar al visualizar datos.
+- B. Muy recomendable por su alta expresividad. **CORRECTA** 
+- C. Muy recomendable por su baja expresividad.
+- D. Útil solo para codificar variables secundarias
 
-- 
--
+2. La longitud es un atributo gráfico que podemos utilizar para...
+- A. Codificar variables cuantitativas. **CORRECTA** 
+- B. Codificar variables categóricas.
+- C. Codificar variables nominales.
+- D. Codificar únicamente variables discretas.
 
--
--
+3. El área...
+- A. Es un atributo gráfico bidimensional. 
+- B. Es un atributo gráfico poco expresivo.
+- C. Permite codificar variables cuantitativas.
+- D. Todas las anteriores son correctas. **CORRECTA** 
 
--
--
+4. La mejor forma de visualizar variación en el tiempo es mediante:
+- A. Gráfica de líneas.  
+- B. Múltiples minigráficas.
+- C. Uso de animación.
+- D. A y B son correctas. **CORRECTA**
 
--
--
+5. Para visualizar relaciones parte–todo:
+- A. La mejor opción es siempre una gráfica de tarta. 
+- B. Se pueden utilizar gráficas de barra y, en algunos casos, gráficas de tarta. **CORRECTA**
+- C. La mejor solución es una gráfica de dispersión.
+- D. Como norma general se utilizarán pictografías.
 
--
--
+6. En un gráfico de dispersión:
+- A. Un eje codifica una variable categórica y otro eje una variable cuantitativa. 
+- B. Ambos ejes codifican variables categóricas.
+- C. Ambos ejes codifican variables cuantitativas. **CORRECTA** 
+- D. Todas las anteriores son correctas.
 
-## Videoclase 1. 
+7. En la tarea de codificación gráfica, la tipología de las variables a representar: 
+- A. No tiene ninguna relevancia.  
+- B. Es independiente de los atributos gráficos que vayamos a emplear.
+- C. Tiene importancia en la elección de los atributos gráficos a emplear. **CORRECTA**
+- D. Ninguna de las anteriores es correcta.
 
--
--
+8. Como atributos gráficos, las formas y el color:
+- A. Pueden utilizarse para cualquier tipo de variable.
+- B. Pueden utilizarse únicamente para variables categóricas.
+- C. Pueden utilizarse para variables categóricas, y en el caso del color, también para variables cuantitativas. **CORRECTA**
+- D. No deberían utilizarse nunca
 
--
--
+9. Las gráficas de línea:
+- A. Deben utilizarse únicamente para visualizar tendencia o evolución. 
+- B. Son la única forma posible de visualizar variación en el tiempo.
+- C. Pueden utilizarse con variables ordinales. **CORRECTA**
+- D. Ninguna de las anteriores es correcta.
 
--
--
-
--
--
-
--
--
-
-## Videoclase 1. 
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
+10. Al utilizar el color para codificar variables categóricas:
+- A. La variable no debería presentar demasiados valores o categorías diferentes. 
+- B. Los colores elegidos deben ser claramente diferenciables entre sí.
+- C. No es posible utilizar el color en el caso de variables categóricas.
+- D. A y B son correctas **CORRECTA**
 
 
-# Tema 08. 
+## Videoclase 1. Fundamentos de la codificación gráfica 
+
+- ¿Cuál de las siguientes opciones no es un atributo gráfico básico utilizado en la codificación gráfica de datos?
+-  Volumen => En el tema se menciona “longitud, posición, color, área, etc.” como ejemplos de atributos gráficos básicos. Pero nunca el volumen.
+
+- ¿Qué tipo de datos se representan mediante la codificación gráfica?
+- Datos abstractos => El texto define claramente la codificación gráfica de datos como la “representación de datos abstractos” para este tipo de método de codificación
+
+- ¿Cuál es el objetivo principal de la codificación gráfica?
+- Traducir datos a lenguaje visual. => Toda codificación gráfica es un ejercicio de traducción de los datos a lenguaje visual.
+
+- ¿Cuál es el principal riesgo al elegir un tipo de gráfico para representar datos?
+- Que el gráfico no sea adecuado para la naturaleza de los datos o los objetivos de los usuarios => El tema menciona que el principal riesgo es “intentando encajonar un conjunto de datos en un tipo de gráfico que realmente no sea adecuado para la naturaleza específica de nuestro conjunto de datos o para los objetivos de los usuarios”. Efectivamente volvemos a empatizar en este punto, pues elegir un gráfico adecuado es conseguir que el mensaje que queremos trasmitir llegue perfectamente
+
+- ¿Qué dos tipos de visualización se suelen distinguir al hablar de visualización?
+- Visualización científica y visualización de información =>  Al hablar de visualización, se suele distinguir entre visualización científica y visualización de información
+
+## Videoclase 2. Atributos Gráficos 
+
+- ¿Cuál de los siguientes no es un atributo gráfico?
+- Resumen
+
+- ¿Cuál es la función principal de un gráfico de barras?
+- Realizar comparaciones entre valores
+
+- ¿Qué tipo de gráfico es el más adecuado para mostrar la evolución de un valor cuantitativo a lo largo de una línea temporal?
+- Gráfico de línea
+
+- ¿Cuál es la principal función de una línea de tiempo?
+- Identificar la conexión de un dato con un punto temporal 
+
+- ¿Qué tipo de mapa se utiliza para representar datos estadísticos acotando áreas?
+- Mapa de coropletas
+
+## Videoclase 3. Tareas de Analítica  Visual 
+
+- ¿Cuál de los siguientes elementos no es una parte fundamental de la composición de un gráfico?
+- Resumen narrativo => Los elementos esenciales de un gráfico incluyen el título, que introduce el tema; el subtítulo, que proporciona contexto adicional; la clave o leyenda, que explica la codificación del gráfico; los ejes X e Y, que representan las variables; la línea de referencia, que ayuda a contextualizar los datos; y la fuente, que indica el origen de los datos. Un resumen narrativo no se menciona como un componente 
+
+- ¿Cuál es la función principal del subtítulo en un gráfico?
+- Proporcionar contexto adicional, como el período de referencia de los datos => La fuente indica que el subtítulo debe incluir detalles importantes que no se mencionan en el título, pero que son cruciales para comprender el contexto del gráfico. Esto incluye especificar el período de tiempo al que se refieren los datos y la unidad de medida utilizada.
+
+- ¿Qué elemento del gráfico indica el origen de los datos mostrados?
+- Fuente => Según el temario, la fuente de los datos siempre debe incluirse en el pie del gráfico. Esto permite a los lectores verificar la información o profundizar en los datos si lo desean.
+
+- ¿Qué debe figurar en la leyenda si el gráfico ha sido creado por el propio autor?
+- Elaboración propia
+
+- ¿Cuál es la función del eje X en un gráfico?
+- Expresar los valores de la variable. => En el tema actual se define el eje X como el eje categórico, lo que significa que representa las diferentes categorías o valores de la variable que se está analizando.
+
+
+
+# Tema 8. Visualización estática
 
 
 --- 

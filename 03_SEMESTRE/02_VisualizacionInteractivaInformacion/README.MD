@@ -613,11 +613,194 @@ Todos los gráficos comparten elementos básicos, cuya estructura general se pue
      <img src="image-23.png" alt="Global Certificate" width="33%" />
 </div>
 
-# Tema 07. 
+# Tema 7. Codificación gráfica de datos
 
 
-# Tema 08. 
+**Mapa Copnceptual**
+<div align="center">
+  <img src="image-26.png" alt="Global Certificate" width="100%" />
+</div>
 
+## 7.2. Fundamentos de la codificación gráfica
+
+
+
+La codificación gráfica de datos se refiere específicamente a la representación de datos abstractos mediante atributos gráficos básicos como la longitud, la posición, el color o el área.
+
+Esta codificación es fundamentalmente un ejercicio de traducción de los datos a lenguaje visual y constituye la tarea más crítica en el proceso general de visualización.
+
+
+<div align="center">
+  <img src="image-27.png" alt="Global Certificate" width="45%" />
+</div>
+
+
+Para una codificación gráfica eficaz, es crucial:
+
+1. Identificar qué atributos gráficos son más adecuados según la tipología de cada variable.
+2. Identificar qué configuraciones gráficas serán más eficaces según la tarea de analítica visual que se busque facilitar al usuario.
+
+## 7.3. Atributos gráficos
+
+<div align="center">
+  <img src="image-28.png" alt="Global Certificate" width="45%" />
+</div>
+
+La elección del atributo gráfico se basa en dos criterios esenciales: 
+
+- La tipología de la variable: Existen variables categóricas
+(nominales y ordinales) y variables cuantitativas (discretas y continuas). Algunos
+atributos gráficos se pueden utilizar para unos tipos de variables, y otros atributos
+para otros tipos de variables.
+
+- La expresividad del atributo gráfico: los posibles atributos gráficos presentan
+diferentes niveles de expresividad, es decir, permiten al usuario decodificar los
+valores representados y realizar comparaciones visuales de forma más o menos
+precisa y eficiente. 
+
+**Tipos de Atributos**
+- **Color**: El color es un poderoso recurso gráfico que permite destacar visualmente elementos aprovechando su gran capacidad preatentiva, pero también permite expresar y codificar variables y sus valores
+  - Puede utilizarse para codificar variables categóricas a través de su matiz o tono
+  - Al utilizarlo con variables categóricas debemos asegurarnos de que los diferentes colores escogidos son clara e inequívocamente diferenciables. 
+  - Las variables cuantitativas también pueden codificarse mediante la variación de la saturación y brillo de un color. 
+  - cualidades preatentivas
+  - Gráficos de Pastel 
+
+- **Posición**:  La posición es un atributo gráfico con una alta expresividad,  por tanto muy recomendable. 
+  - Podemos estimar visualmente distancias y relaciones entre posiciones en un mismo plano (horizontal o vertical) de forma muy precisa y eficiente. 
+  - Podemos usarlas para variables categoricas o cuantitativas. 
+  - Gráficos de dispersión 
+
+- **Longitud**: Es un atributo gráfico muy expresivo, siempre y cuando estemos comparando segmentos en un mismo plano (horizontal o vertical) y estén alineados. 
+  - Esta mas relacionado con graficos tipo barras ya que por su longitud expresa visualmente la magnitud de un valor.
+  - Podemos usarlas para variables cuantitativas. 
+  - Gráficos de barras 
+
+- **Área** :el área no es un atributo gráfico unidimensional, sino bidimensional, lo que reduce su expresividad, ya que resulta mucho más sencillo y preciso estimar visualmente diferencias o relaciones de proporción entre dos longitudes o posiciones que entre dos áreas 
+  - **NO** es un atributo gráfico que debamos utilizar por defecto 
+  - El área puede utilizarse para codificar variables cuantitativas y ordinales, pero no variables nominales
+  - Gráficos de burbuja 
+  - Gráficos de dispersión 
+  - Gráficos de puntos  
+  - Gráficos de sectores (Mapas)
+
+- **Conexión**: En visualización de datos la conexión es un atributo gráfico que se suele utilizar para representar estructuras de red, pero también para codificar variables ordinales
+  - Trata con las leyes de la Gestalt (principios de la psicología visual) (Poximidad, Similitud, Cercano, Conexión, Continuidad)
+  - Nuestra atención visual tiende a seguir instintivamente la dirección espacial que forman estas conexiones.
+  - Un malentendido muy extendido es creer que las gráficas de línea solo se pueden utilizar con variables temporales tambien aplica con nominales.
+  - Gráficos de red 
+  - Gráficos de línea
+
+- **Grosor**: está muy relacionado con el de conexión, ya que se refiere al grosor de dichas conexiones como medio para codificar una variable cuantitativa adicional. 
+  - Atributo gráfico muy poco expresivo
+  - Es una forma útil para enriquecer con información cuantitativa adicional
+  - Un Ejemplo de grafo en el que las conexiones varían de grosor en base a los valores de una variable cuantitativa asociada
+  - Gráficos de red
+  
+- **Formas**: Otro atributo gráfico con el que podemos codificar variables nominales son las formas, que pueden ser básicas o complejas. 
+  - La variable nominal no debería tener demasiados valores o categorías diferentes. 
+  - Se recomienda que no sean más de diez.
+  - En términos generales, el color, por sus cualidades preatentivas, resulta más recomendable que el uso de formas básicas
+  - No obstante, forma y color pueden utilizarse conjuntamente en una misma representación gráfica para codificar variables diferentes. 
+  - Gráficos de Formas (área)
+
+- **Unidades**: para representar variables cuantitativas es la repetición de unidades o elementos gráficos. Cada elemento puede equivaler a una unidad de la variable cuantitativa codificada, o a un número determinado de ellas, que se indicará en la leyenda correspondiente. 
+  - Utilizar formas complejas figurativas como elementos gráficos da lugar a lo que se conoce como gráfica de pictogramas o pictografía. 
+  - Lo correcto es representar la variable cuantitativa mediante la repetición de las forma. 
+  - Gráficos con pictogramas
+  
+## 7.4. Tareas de analítica visual 
+
+> La idoneidad de una solución gráfica de visualización no solo estará determinada por la expresividad y adecuación de los atributos gráficos utilizados para codificar cada una de las variables, **sino también por el propósito de esta representación**: 
+
+**Se Formula algunas interrogantes para determinar su propósito**: 
+- ¿Qué tareas de analítica visual pretende facilitar?
+- ¿Qué tipo de relaciones entre las variables representadas permite analizar?
+- ¿Cuál es la perspectiva visual que ofrece de los datos?
+- ¿Encaja esta perspectiva con los objetivos y necesidades de sus usuarios?
+
+
+**TAREAS**
+
+- **Variación en el tiempo**: 
+  - Son tareas para analizar los cambios o variaciones de una o más variables a lo largo del tiempo.
+  - Permite identificar tendencias, ciclos, patrones y excepciones. 
+  - Se puede usar animaciones para esos casos que requieran mostrar la evolución de datos a lo largo del tiempo. 
+  - Si no se decea usar animaciones, podemos usar small multiples ó minigraficos multiples.   
+  - **Solución**: graficas lineales, gráficos de formas. 
+  
+
+**Ejemplo**
+<div align="center">
+  <img src="image-30.png" alt="Global Certificate" width="20%" />
+</div>
+
+
+- **Comparaciones simples**
+  - La tarea más básica que puede soportar una representación gráfica es la comparación simple entre pares de valores. 
+  - Uso de gráficos altamente expresivos.   
+  - **Solución**: graficas barras.
+**Ejemplo**
+<div align="center">
+  <img src="image-31.png" alt="Global Certificate" width="20%" />
+</div>
+
+
+- **Relaciones de ranking**
+  - Una tarea muy relacionada con las comparaciones simples es la de poder identificar eficientemente posiciones de ranking entre valores. 
+  - La solución en estos casos es tan sencilla como presentar los diferentes valores, o su representación gráfica de forma ordenada.   
+  - **Solución**: graficas barraS
+**Ejemplo**
+<div align="center">
+  <img src="image-31.png" alt="Global Certificate" width="20%" />
+</div>
+
+
+- **Relaciones parte–todo**
+  - ¿Qué proporción del total representa un valor concreto? Esta es una pregunta a laque suele ofrecerse respuesta gráfica en forma de gráfica de tarta. 
+  - La solución en estos casos es tan sencilla como presentar los diferentes valores, o su representación gráfica de forma ordenada. 
+  - Se disminuye la eficacian si existe mas de 2 categorias en la gréfica de pastel.
+  - Cuando existen muchas muchas categorias, como alternativa podemos usar barras solo hay que pasar el valor original a porcentuales 
+  - **Solución**: gráficos de pastel. Caso Excepcional Barras 
+**Ejemplo**
+<div align="center">
+  <img src="image-32.png" alt="Global Certificate" width="20%" />
+</div>
+
+
+- **Relación entre variables cuantitativas**
+  - Este tipo de relación se denomina correlación, cuyos componentes son la fuerza (fuerte o débil), el sentido (positiva o negativa) y la forma (lineal o curva). 
+  - **Solución**: gráfico de dispersión
+**Ejemplo**
+<div align="center">
+  <img src="image-34.png" alt="Global Certificate" width="20%" />
+</div>
+
+
+- **Relación entre variables categóricas**
+  - Resolver esta tarea de analítica visual implica visualizar cómo dos (o más) variables categóricas se relacionan entre sí a partir de su relación compartida con una o más variables cuantitativas 
+  - **Solución**: minigráficas
+**Ejemplo**
+<div align="center">
+  <img src="image-35.png" alt="Global Certificate" width="40%" />
+</div>
+
+
+
+**Analogía para Solidificar la Comprensión**
+
+Piense en la codificación gráfica de datos como si fuera una caja de herramientas de un artesano, donde cada herramienta (atributo gráfico) tiene un propósito específico y una eficacia probada:
+• La Posición y la Longitud son como el calibrador o la regla de precisión: son las herramientas más fiables para medir y comparar valores con exactitud.
+• El Área es como usar una regla de plástico flexible: puede funcionar, pero la medición será menos precisa y se deforma fácilmente con valores irregulares.
+• El Color es como la pintura de advertencia: es excelente para llamar la atención inmediata (preatentiva) y para separar grupos (categorías), pero es terrible para medir cantidades exactas (cuánto más brillante es 25 que 20).
+• La Conexión es como un hilo conductor: une elementos para contar una historia secuencial (ordinal) o estructural (red), imponiéndose sobre las diferencias individuales.
+
+
+# Tema 8. Visualización estática
+
+## 8.2. Concepto
+## 8.3. Formatos de salida
+## 8.4. Principales herramientas. Adobe Illustrator
 
 # Tema 09. 
 
