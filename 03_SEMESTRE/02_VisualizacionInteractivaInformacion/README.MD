@@ -799,14 +799,96 @@ Piense en la codificación gráfica de datos como si fuera una caja de herramien
 
 ## 8.2. Concepto
 
+> La visualización estática se utiliza para representar información que normalmente no va a experimentar cambios y que no requiere de interacción por parte del lector.
+
+- Soportes: Se pueden realizar para soportes impresos y digitales, ya que el resultado final es un archivo de imagen.
+
+- Naturaleza: A diferencia de las dinámicas, una vez publicadas, las representaciones estáticas no experimentan variación en su diseño y estructura.
+
+- Ventaja cognitiva: Un gráfico estático a menudo puede ofrecer la información de manera más clara que un recurso interactivo o dinámico. Además, las representaciones estáticas obligan a imaginar mentalmente la secuencia, lo que conduce a un aprendizaje más profundo.
+
 
 ## 8.3. Formatos de salida
+
+> El formato de salida es un archivo de imagen, y la elección varía según el soporte final:
+
+- Medios Impresos
+  - EPS, PDF (vectoriales) o TIFF (mapa de bits).
+  - Se requiere una alta calidad de imagen para la impresión.
+
+- Medios Digitales
+  - JPG, PNG (mapa de bits) o SVG (vectorial).
+  - No suelen requerir resoluciones tan altas
 
 
 ## 8.4. Principales herramientas. Adobe Illustrator
 
-# Tema 09. 
+Existen diversas herramientas para la creación de visualizaciones estáticas:
 
+1. Herramientas Manuales (Vectoriales): La herramienta más utilizada es Adobe Illustrator, un editor de gráficos vectoriales. Otras opciones son CorelDRAW o el software libre Inkscape, que utiliza el formato estándar SVG.
+
+2. Herramientas Automáticas: Permiten generar visualizaciones a partir de plantillas prediseñadas, como Infogram, Easelly, Piktochart y Creately.
+La principal diferencia entre usar herramientas manuales (como Illustrator) y automáticas reside en que las manuales permiten un control absoluto sobre los elementos que componen la visualización
+
+
+Los gráficos vectoriales son clave en el trabajo estático, ya que están definidos matemáticamente por vectores (líneas y curvas).
+
+- Ventaja principal: La característica más importante de los gráficos vectoriales es que permiten redimensionarlos sin que pierdan calidad.
+- Composición: Un objeto vectorial se compone de estructuras geométricas básicas como líneas, curvas, círculos y polígonos. Los gráficos estadísticos, por ejemplo, no son más que figuras geométricas básicas (círculos, rectángulos, líneas).
+
+- Galería de Gráficas en Illustrator: El panel Herramientas de Illustrator ofrece una galería de gráficas, incluyendo: gráficas de columnas y de barras (simples y apiladas), lineales, de áreas, de dispersión, de tarta y de radar.
+
+- Edición: Es posible introducir datos copiándolos y pegándolos en el editor, asegurándose de no incluir puntos o comas en las cifras a menos que sean decimales.
+
+- Personalización: Se pueden modificar elementos como el color de relleno y trazo, la tipografía de la escala, o añadir un título. Sin embargo, si se desagrupa el conjunto del gráfico, ya no se podrán editar los datos ni seleccionar otro tipo de gráfico.
+
+- Recursos visuales: Illustrator es útil para trabajar con mapas vectoriales, permitiendo delimitar y colorear áreas específicas. También facilita el calco de imágenes para obtener siluetas de recursos icónicos, lo cual ayuda a explicar conceptos.
+
+# Tema 9. Visualización dinámica e interactividad (I)
+
+## 9.2. Concepto
+
+La visualización dinámica representa información que experimentará cambios (por ejemplo, un mapa meteorológico que se actualiza en tiempo real). Este tipo de representaciones puede ofrecer al lector la posibilidad de profundizar en los datos mediante opciones de interacción.
+
+La interactividad en la visualización permite el intercambio de información entre la máquina y el lector, lo que requiere un cierto grado de participación de este último.
+Ventajas de la Visualización Dinámica
+
+La visualización dinámica ofrece ventajas sobre la estática porque proporciona un espacio de trabajo ampliable. Un gráfico interactivo puede estar compuesto por varias pantallas dentro de la principal o incluir enlaces a otras páginas para ampliar información específica.
+
+Ejemplos de visualizaciones dinámicas e interactivas incluyen la plataforma Google Maps (que ofrece imágenes obtenidas por satélite que varían si se utiliza la herramienta de "zoom").
+
+**Herramientas de Creación**
+ - Lenguajes de Programación: Los profesionales con conocimientos avanzados en programación o integrados en equipos con desarrolladores suelen basar sus trabajos en HTML, CSS y JavaScript.
+ - Programas de Animación/Desarrollo sin Código:
+    - Adobe Edge Animate y Tumult Hype permiten crear animaciones e infografías interactivas en HTML5 sin necesidad de saber programar.
+    - Adobe Flash Professional fue el programa de animación gráfica por excelencia durante años, permitiendo dar interactividad a objetos vectoriales mediante el lenguaje de programación ActionScript
+
+## 9.3. Formatos de salida
+
+Las visualizaciones dinámicas se publican normalmente en la web en forma de un archivo HTML (para proyectos de producción propia), que a su vez llamará a otros archivos que le proporcionarán el estilo (CSS) y la funcionalidad (JavaScript).
+Cuando se utiliza una herramienta predefinida, las opciones de salida suelen ser:
+1. Un enlace a un documento HTML dentro de la propia aplicación.
+2. Un elemento HTML denominado iframe (un fragmento de código HTML) que se inserta en el código de la página para mostrar el contenido generado por la aplicación.
+3. Herramientas para Explorar Conjuntos de Datos Públicos
+
+El aumento de datos disponibles ha impulsado el desarrollo de potentes herramientas para la exploración de conjuntos de datos abiertos (open data).
+Gapminder
+
+La fundación Gapminder, creada en 2005 por Hans Rosling (junto con Ola Rosling y Anna Rosling Rönnlund), ideó el programa Trendalyzer (adquirido por Google en 2007).
+- Propósito: Promover el desarrollo global sostenible y cumplir con los Objetivos de Desarrollo del Milenio de la ONU mediante el uso y la comprensión de series estadísticas y datos de desarrollo social, económico y medioambiental.
+- Datos: Gapminder es capaz de desplegar alrededor de 200 indicadores constantemente actualizados, permitiendo la recogida de datos desde 1800 en algunos casos.
+- Funcionalidad: Permite relacionar indicadores (como la esperanza de vida con la renta per cápita) y dibujar la evolución de indicadores en el tiempo a través de una animación. 
+
+El programa permite elegir escalas lineales o logarítmicas para ver mejor las tendencias y patrones.
+Google Public Data Explorer
+Esta aplicación fue presentada por Google Labs en marzo de 2010 como respuesta a la alta demanda de herramientas que visualizaran datos públicos de forma sencilla.
+- Función: Permite explorar grandes conjuntos de datos de interés público y establecer comparativas entre ellos mediante gráficos que se actualizan automáticamente.
+- Visualización: Permite crear gráficos de burbujas donde se pueden correlacionar dos indicadores (usando los ejes X e Y) y añadir una tercera variable para determinar el tamaño de las burbujas (por ejemplo, la población). Al igual que Gapminder, permite ver la evolución de los indicadores a lo largo del tiempo.
+
+
+Ambas herramientas son potentes para la exploración de grandes conjuntos de datos procedentes de reconocidas fuentes públicas y su integración en un sitio web es muy sencilla
+
+## 9.4. Herramientas para explorar conjuntos de datos públicos
 
 # Tema 10. 
 

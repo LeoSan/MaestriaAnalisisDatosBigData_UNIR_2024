@@ -823,60 +823,122 @@ C.Para facilitar el análisis de datos
 
 # Tema 8. Visualización estática
 
+1. La visualización estática:
+- A. Representa normalmente información variable y que no requiere de interacción por parte del lector.
+- B. Representa normalmente información variable y que requiere de interacción por parte del lector.
+- C. Representa normalmente información invariable y que no requiere de interacción por parte del lector. => **CORRECTO**
+- D. Representa normalmente información invariable y que requiere de interacción por parte del lector.
+
+2. Las visualizaciones estáticas se realizan para:
+- A. Soportes impresos.
+- B. Soportes digitales.
+- C. Soportes impresos y digitales. => **CORRECTO**
+- D. Ninguna es correcta.
+
+3. Una de las ventajas que tiene la visualización estática de una secuencia sobre
+una dinámica es:
+- A. Un mayor atractivo para el lector.
+- B. Un aprendizaje más profundo al tener que imaginar mentalmente el proceso. => **CORRECTO**
+- C. Una mayor facilidad de lectura.
+- D. No presentan diferencias
+
+4. Una visualización estática publicada en un medio impreso normalmente tendrá como formato de salida:
+- A. Una imagen en EPS, PDF o TIFF. => **CORRECTO**
+- B. Una imagen en EPS, PNG o JPG.
+- C. Una imagen en SVG, PNG o JPG.
+- D. Ninguna es correcta.
+
+5. Por otro lado, una visualización estática publicada en un medio digital normalmente tendrá como formato de salida:
+- A. Una imagen en EPS, PDF o TIFF.
+- B. Una imagen en EPS, PNG o JPG. => **CORRECTO**
+- C. Una imagen en SVG, PNG o JPG.
+- D. Ninguna es correcta.
+
+6. Para representar información visualmente y de manera estática podemos utilizar:
+- A. Inkscape.
+- B. Illustrator.
+- C. CorelDRAW.
+- D. Cualquiera de las tres. => **CORRECTO**
+
+7. La ventaja más importante de trabajar con gráficos vectoriales es que:
+- A. Son ficheros de poco tamaño en Kb.
+- B. Es posible editarlos con cualquier aplicación software.
+- C. Permiten redimensionarlos sin que pierdan calidad. => **CORRECTO**
+- D. Ninguna es correcta
+
+8. Los objetos vectoriales se componen de:
+- A. Líneas y curvas.
+- B. Círculos y polígonos.
+- C. Estructuras geométricas básicas. => **CORRECTO**
+- D. Ninguna es correcta.
+
+9. ¿Dónde encontramos la galería de gráficas en Illustrator?
+- A. En el Panel de Herramientas. => **CORRECTO**
+- B. En el Panel de Control.
+- C. En el Panel Transformar.
+- D. En el Panel Trazo.
+
+10. ¿Cuál es la principal ventaja que ofrecen las herramientas manuales respecto de las automáticas a la hora de crear una visualización estática?
+- A. El poder aplicar un estilo propio.
+- B. El control absoluto sobre los elementos que la componen. => **CORRECTO**
+- C. La gran variedad de opciones que ofrece.
+- D. Ninguna de las tres
 
 --- 
-## Videoclase 1. 
+## Videoclase 1. Conceptos básicos de la visualizaición estatica 
 
--
--
+- ¿Qué caracteriza a la visualización estática?
+- Presenta información que no suele cambiar. => La visualización estática se define por mostrar información fija, que no está sujeta a cambios dinámicos. Un ejemplo claro son los manuales de instrucciones, como los de IKEA, donde las imágenes permanecen iguales, permitiendo al usuario seguir las instrucciones a su propio ritmo.
 
--
--
+- ¿Cuál de estos no es un ejemplo de visualización estática?
+- Un vídeo explicativo sobre el funcionamiento de un software. => Los vídeos implican movimiento y cambio en la información que se presenta, lo cual no se corresponde con la naturaleza estática de la visualización que se discute. Las demás opciones son ejemplos de información fija que se presenta visualmente.
 
--
--
+- ¿Qué tienen en común los formatos de salida para medios impresos?
+- Alta calidad de imagen para una impresión óptima. => Los medios impresos requieren imágenes de alta calidad para asegurar una buena definición al imprimir. Formatos como EPS o PDF, generados por programas como Adobe Illustrator, son ideales para este fin.
 
--
--
+- ¿Cuál de los siguientes formatos no es adecuado para medios digitales?
+- EPS => EPS se asocia a la impresión de alta calidad para soporte papel y no es tan adecuado para medios digitales
 
--
--
+- ¿Por qué los medios digitales no suelen requerir resoluciones tan altas como los impresos?
+- Las pantallas tienen una densidad de píxeles limitada. => La resolución de una pantalla determina cuántos píxeles puede mostrar en un área determinada. Esta limitación hace que las imágenes de muy alta resolución no se aprecien en su totalidad en un medio digital.
 
-## Videoclase 1. 
+## Videoclase 2. Formatos de salida  
 
--
--
+- ¿Cuál de los siguientes programas no es una herramienta de diseño para la creación de infografías?
+- CorelDraw =>  Infogram, Easelly y Piktochart son herramientas específicamente diseñadas para la creación de infografías. Permiten generar visualizaciones estáticas de manera automática, ofrecen plantillas prediseñadas, y facilitan la inclusión de diferentes tipos de gráficos y mapas. CorelDraw, por otro lado, es un software de diseño gráfico vectorial más general, utilizado para crear ilustraciones, logotipos y otros tipos de diseños, no se especializa en infografías.
 
--
--
+- ¿Cuál de las siguientes características no es propia de los gráficos vectoriales?
+- Se componen de píxeles individuales => Los gráficos vectoriales se definen mediante fórmulas matemáticas que describen la posición y los atributos de líneas y curvas. Esta característica les permite ser redimensionados sin perder calidad, a diferencia de las imágenes de mapa de bits que se componen de píxeles y pierden definición al agrandarlas. Los gráficos vectoriales siempre se basan en estructuras geométricas básicas como líneas, curvas, círculos y polígonos
 
--
--
+- ¿Cuál de los siguientes programas es un software de código abierto?
+- Inkscape => Inkscape se define como un software libre y de código abierto. Esto significa que su código fuente está disponible para que cualquiera pueda modificarlo y distribuirlo. CorelDraw, Infogram y Piktochart son programas comerciales con licencias propietarias. 
 
--
--
+- ¿Qué herramienta se describe como la más «inmediata» para diseñar infografías rápidamente?
+- Easelly => Easelly se caracteriza por su facilidad de uso para el diseño rápido de infografías. Ofrece plantillas predefinidas y permite seleccionar objetos, formas y fondos para crear infografías de forma rápida y sencilla.
 
--
--
+- ¿Qué formato de archivo es el estándar abierto del W3C utilizado por Inkscape?
+- SVG => Inkscape utiliza SVG (Scalable Vector Graphic) como su formato nativo. SVG es un estándar abierto del W3C para gráficos vectoriales. Inkscape también puede importar y exportar otros formatos de archivo como AI, EPS, PDF y PNG.
 
-## Videoclase 1. 
+## Videoclase 3. Principales herramientas. Adobe Illustrator 
 
--
--
+- ¿Qué herramienta se utiliza en el «Caso 1: noche electoral» para aplicar estilo a los estados en el mapa vectorial de EE. UU.?
+- Herramienta Cuentagotas =>  Esta herramienta permite copiar el estilo de un objeto y aplicarlo a otro.
 
--
--
+- ¿Cuál es el tema principal del «Caso 2: Guerra Civil Española»?
+- Mostrar la evolución del conflicto bélico => 
 
--
--
+- ¿Qué herramienta se utiliza para delimitar las áreas controladas por el bando nacional en el «Caso 2: Guerra Civil Española»?
+- Herramienta Pluma =>  La herramienta Pluma se usa en programas de diseño para crear trazados vectoriales precisos.
 
--
--
+- ¿Qué tipo de mapa se utiliza en el «Caso 1: noche electoral»?
+- Mapa vectorial => 
 
--
--
+- ¿Cuál es el título principal del documento propuesto?
+- Casos prácticos. Visualizaciones estáticas
 
-# Tema 09. 
+
+
+# Tema 9. Visualización dinámica e interactividad (I)
 
 
 --- 
