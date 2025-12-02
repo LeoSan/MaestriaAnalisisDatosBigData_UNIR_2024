@@ -786,7 +786,6 @@ precisa y eficiente.
 </div>
 
 
-
 **Analogía para Solidificar la Comprensión**
 
 Piense en la codificación gráfica de datos como si fuera una caja de herramientas de un artesano, donde cada herramienta (atributo gráfico) tiene un propósito específico y una eficacia probada:
@@ -799,7 +798,11 @@ Piense en la codificación gráfica de datos como si fuera una caja de herramien
 # Tema 8. Visualización estática
 
 ## 8.2. Concepto
+
+
 ## 8.3. Formatos de salida
+
+
 ## 8.4. Principales herramientas. Adobe Illustrator
 
 # Tema 09. 
