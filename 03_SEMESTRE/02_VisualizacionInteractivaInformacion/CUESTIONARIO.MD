@@ -941,63 +941,187 @@ una dinámica es:
 # Tema 9. Visualización dinámica e interactividad (I)
 
 
---- 
-## Videoclase 1. 
+1. La visualización dinámica:
+- A. Representa normalmente información variable y que no requiere de interacción por parte del lector.
+- B. Representa normalmente información variable y que puede requerir interacción por parte del lector. => **CORRECTO**
+- C. Representa normalmente información invariable y que no requiere de interacción por parte del lector.
+- D. Representa normalmente información invariable y que puede requerir interacción por parte del lector.
 
--
--
+2. Las visualizaciones dinámicas se realizan para:
+- A. Soportes impresos.
+- B. Soportes digitales.=> **CORRECTO**
+- C. Soportes impresos y digitales.
+- D. Ninguna es correcta.
 
--
--
+3. Una de las ventajas que tiene la visualización dinámica sobre la estática es que ofrece:
+- A. Un espacio de trabajo ampliable.
+- B. Un mayor atractivo para el lector. => **CORRECTO**
+- C. Una mayor facilidad de lectura.
+- D. No presentan diferencias.
 
--
--
-
--
--
-
--
--
-
-## Videoclase 1. 
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
-
-## Videoclase 1. 
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
-
-# Tema 10. 
+4. Podemos realizar trabajos interactivos principalmente con:
+- A. Adobe Edge Animate.
+- B. Tumult Hype.
+- C. Microsoft Paint.
+- D. A y B son correctas => **CORRECTO**
 
 
+5. Una visualización dinámica publicada en un medio digital normalmente tendrá como formato de salida:
+- A. JPG.
+- B. EPS.
+- C. HTML+JavaScript. => **CORRECTO**
+- D. Ninguna es correcta.
 
---- 
+
+6. Si realizamos nuestra visualización dinámica a través de una herramienta predefinida:
+- A. Obtendremos un enlace a un documento HTML dentro de la propia aplicación. => **CORRECTO**
+- B. Obtendremos un iframe que insertaremos en el propio código de nuestra página. => **CORRECTO**
+- C. Obtendremos una imagen que integraremos en nuestra página.
+- D. A y B son correctas. => **CORRECTO**
+
+
+7. Hans Rosling es el creador de:
+- A. Gapminder. => **CORRECTO**
+- B. World Wide Web.
+- C. Google Public Data Explorer.
+- D. A y C son correctas.
+
+8. Gapminder y Google Public Data Explorer son:
+- A. Herramientas de visualización estática de datos.
+- B. Herramientas para transformar cualquier tipo de datos en atractivas visualizaciones.
+- C. Herramientas para explorar conjuntos de datos públicos. => **CORRECTO**
+- D. Todas son correcta
+
+
+9. Promover el desarrollo global sostenible es el objetivo principal de:
+- A. Google Fusion Tables.
+- B. Gapminder. => **CORRECTO**
+- C. Datawrapper.
+- D. Google Public Data Explorer.
+
+10. Google Public Data Explorer nació:
+- A. Con el objetivo de hacer de Google una empresa realmente rentable.
+- B. Como respuesta a la fuerte demanda de herramientas que visualizaran
+datos públicos. => **CORRECTO**
+- C. Como solución general para visualizar datos cualitativos.
+- D. Todas son correctas
+
+
+## Videoclase 1. Conceptos Básicos de visualización 
+
+- ¿Qué tipo de información representan las visualizaciones dinámicas?
+- Información que experimenta cambios. => El tema define las visualizaciones dinámicas como aquellas que «representan información que va a experimentar cambios». Esto significa que la información mostrada no es fija, sino que puede actualizarse o modificarse con el tiempo.
+
+- ¿Cuál es un elemento clave de las visualizaciones dinámicas?
+- La interactividad que permite al lector profundizar en los datos. => En el tema se destaca la importancia de la interactividad en las visualizaciones dinámicas. Esta interactividad permite al usuario interactuar con la información, explorarla en detalle y obtener una comprensión más profunda de los datos.
+
+- ¿Qué herramienta se menciona como ejemplo de visualización dinámica?
+- Google Maps => El documento proporciona Google Maps como un ejemplo de visualización dinámica. Google Maps permite al usuario interactuar con el mapa, hacer zoom, desplazarse y obtener información adicional sobre ubicaciones específicas.
+
+- ¿Cuáles son algunos de los formatos digitales comunes para la creación de visualizaciones dinámicas?
+- HTML, CSS y JavaScript => La teoría vista en este tema menciona que los profesionales con conocimientos de programación suelen utilizar HTML, CSS y JavaScript para crear visualizaciones dinámicas. Estos lenguajes de programación web permiten crear interfaces interactivas y experiencias de usuario dinámicas.
+
+- ¿Cómo se publican en la web los trabajos de visualización dinámica creados con HTML, CSS y JavaScript?
+- Como archivos HTML. => En el tema se indica que los trabajos de visualización dinámica creados con HTML, CSS y JavaScript se publican en la web como archivos HTML. Este archivo HTML, a su vez, llama a otros archivos que proporcionan el estilo (CSS) y la funcionalidad (JavaScript) necesarios para la visualización.
+
+## Videoclase 2 :  Formatos de salida de visualización dinámica 
+
+- ¿Qué tipo de datos utiliza Gapminder para crear visualizaciones?
+- Conjuntos de datos abiertos u open data.  => En el tema se explica que Gapminder trabaja con «conjuntos de datos abiertos u open data» para generar sus visualizaciones. Esto significa que utiliza información públicamente disponible para crear gráficos interactivos y mostrar tendencias globales.
+
+- ¿Cuál es una de las características principales de la herramienta Gapminder?
+- La creación de visualizaciones interactivas a partir de datos estadísticos. => La fuente destaca que Gapminder es una herramienta que “crea interesantes visualizaciones a partir de conjuntos de datos abiertos”. Su función principal es transformar datos estadísticos en gráficos interactivos que facilitan la comprensión de la información.
+
+- ¿Cuántos indicadores puede mostrar Gapminder aproximadamente?
+- 200 indicadores. => En el tema se indica que Gapminder es capaz de “desplegar alrededor de 200 indicadores constantemente actualizados”. Esto demuestra la amplia gama de información que la herramienta puede procesar y presentar visualmente.
+
+- ¿En qué página web se pueden encontrar los indicadores actualizados de Gapminder?
+- https://www.gapminder.org/data/ => 
+
+- ¿Qué tipo de relación se analiza en el ejemplo de Gapminder Word?
+- La relación entre la esperanza de vida y la renta per cápita de los países. => En el tema se menciona un «Ejemplo Gapminder Word» donde se observa «cómo se relaciona la esperanza de vida con la renta per cápita de los países del mundo en 2012». Este ejemplo ilustra cómo Gapminder puede utilizarse para analizar la correlación entre diferentes variables socioeconómicas.
+
+## Videoclase 3. Herramientas de explotación de conjuntos de datos públicos 
+
+- ¿Qué tipo de conjuntos de datos permite explorar Google Data Explorer?
+- Grandes conjuntos de datos de interés público. => Las fuentes explican que Google Data Explorer permite explorar «grandes conjuntos de datos de interés público». Esto significa que la herramienta se enfoca en brindar acceso a información pública relevante para una amplia audiencia.
+
+- ¿Quién gestiona las bases de datos que se utilizan en Google Data Explorer?
+- Google directamente. => En el tema se indica explícitamente que las bases de datos que utiliza Google Data Explorer son gestionadas «directamente» por Google. Esto garantiza un control y una actualización constante de la información disponible en la herramienta.
+
+- ¿En qué se diferencia Google Data Explorer de Gapminder en cuanto a la capacidad de datos externos?
+- Google Data Explorer tiene menor capacidad para datos externos que Gapminder => La teoría especifica y establece que Google Data Explorer “no tiene tanta capacidad de datos externos como Gapminder”. Esto implica que, si bien ambas herramientas trabajan con datos públicos, Gapminder ofrece mayor flexibilidad para integrar información proveniente de diversas fuentes
+
+- ¿Qué permite hacer Google Data Explorer con los indicadores seleccionados?
+- Establecer comparativas entre diferentes indicadores a través de gráficos. => En el temario se destaca que Google Data Explorer permite “establecer comparativas entre unos y otros a través de gráficos”. Esta funcionalidad facilita el análisis de la relación entre diferentes variables y la identificación de patrones o tendencias.
+
+- ¿Qué sucede con los gráficos en Google Data Explorer cuando se pone en relación un indicador con otro?
+- Los gráficos se actualizan automáticamente. => La teoría menciona que los gráficos en Google Data Explorer «se actualizarán automáticamente» al seleccionar y relacionar diferentes indicadores. Esta característica dinámica permite visualizar la información de forma interactiva y observar cómo las variables se afectan mutuamente.
+
+
+# Tema 10. Visualización dinámica e interactividad (II) 
+
+1. La proliferación de herramientas de exploración y visualización de datos es fruto principalmente de:
+- A. Una nueva tendencia a enseñar los datos de manera atractiva.
+- B. Un aumento considerable del volumen de datos disponibles en la última década. => **Correcta**
+- C. El interés de algunas entidades en hacer públicos sus datos.
+- D. Ninguna es correcta.
+
+2. ¿Qué herramienta se utiliza para construir cronologías interactivas?:
+- A. Datawrapper.
+- B. Timeline JS. => **Correcta**
+- C. Google Charts.
+- D. Google Fusion Tables.
+
+3. Una herramienta de Google para la visualización de datos dirigida principalmente a desarrolladores web es:
+- A. Google Charts. => **Correcta**
+- B. Google Fusion Tables.
+- C. Google Maps.
+- D. Google Drive.
+
+4. Son de código abierto:
+- A. D3.js.
+- B. RAW.
+- C. Timeline JS.
+- D. Todas son correctas => **Correcta**
+
+5. ¿Qué librería da como resultado avanzadas visualizaciones a partir de conjuntos de datos complejos?:
+- A. Google Fusion Tables.
+- B. Google Maps.
+- C. D3.js.
+- D. Todas son correctas. => **Correcta**
+
+6. Si nuestro objetivo es contar una historia a través de la geolocalización de eventos, haremos uso de:
+- A. D3.js.
+- B. Timeline JS.
+- C. Google Maps. => **Correcta**
+- D. StoryMap JS.
+
+7. ¿Qué herramienta tiene como objetivo la evaluación del progreso del mundo en el cumplimiento de los objetivos del milenio?:
+- A. DevInfo.
+- B. RAW.
+- C. StoryMap JS.
+- D. R.
+
+8. ¿Cómo podemos realizar visualizaciones basadas en D3.js sin necesidad de tener conocimientos de programación?:
+- A. A través de Google Fusion Tables.
+- B. A través de DevInfo.
+- C. A través de RAW.
+- D. Ninguna es correctas 
+
+9. De los siguientes, ¿cuál es un entorno y lenguaje de programación especializado en estadística?:
+- A. Datawrapper.
+- B. Tableau Public.
+- C. R. => **Correcta**
+- D. D3.js.
+
+10. De las siguientes herramientas, ¿cuál no permite la creación de mapas interactivos?:
+- A. Google Fusion Tables.
+- B. Timeline JS. 
+- C. CartoDB.
+- D. Google Maps
+
+
 ## Videoclase 1. 
 
 -

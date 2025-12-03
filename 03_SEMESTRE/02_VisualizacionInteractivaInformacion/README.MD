@@ -8,9 +8,6 @@
 </div>
 
 
-![alt text](image.png)
-
-
 ## 1.3. Concepto de infografía y visualización de datos
 
 
@@ -20,7 +17,9 @@ A priori, una infografía sería una manera de representar información a
 través de la combinación de gráficos (ilustraciones, diagramas, mapas y
 otros recursos) y texto
 
-- ![alt text](image-1.png)
+<div align="center">
+  <img src="image-1.png" alt="Global Certificate" width="50%" />
+</div>
 
 **una visualización de datos**
 
@@ -62,7 +61,10 @@ Uno de los grandes beneficios de la visualización es la cantidad de informació
 que puede ser interpretada en décimas de segundo. 
 
 
-![alt text](image-2.png)
+<div align="center">
+  <img src="image-2.png" alt="Global Certificate" width="50%" />
+</div>
+
 
 > Investigación
 
@@ -90,7 +92,11 @@ Normalmente el boceto contiene la estructura primaria y algunos apuntes básicos
 cualquier momento modificables, de lo que será el proyecto visual. En él ubicamos
 las partes esenciales que compondrán el trabajo final
 
-![alt text](image-3.png)
+
+<div align="center">
+  <img src="image-3.png" alt="Global Certificate" width="50%" />
+</div>
+
 
 > Elaboración
 
@@ -124,9 +130,14 @@ ellos es el mapa de Nippur, la antigua ciudad de Sumeria. Está realizado sobre 
 tablilla de arcilla y muestra los principales lugares de la urbe. Todavía se conserva
 
 
-![alt text](image-4.png)
+<div align="center">
+  <img src="image-4.png" alt="Global Certificate" width="50%" />
+</div>
 
-![alt text](image-5.png)
+<div align="center">
+  <img src="image-5.png" alt="Global Certificate" width="50%" />
+</div>
+
 
 
 Leonardo d Vinci (1452-1519) es considerado el primer infografista de la historia
@@ -170,13 +181,15 @@ Typographic Picture Education).
 
 > La primera década del siglo xxi nos ha dejado magníficos trabajos en el campo de la infografía y la visualización. La creación de la versión digital de las principales cabeceras mundiales trajo consigo el nacimiento de la infografía interactiva, cuyo máximo exponente es The New York Times 
 
-
-![alt text](image-6.png)
-
-![alt text](image-7.png)
-
-![alt text](image-8.png)
-
+<div align="center">
+  <img src="image-6.png" alt="Global Certificate" width="50%" />
+</div>
+<div align="center">
+  <img src="image-7.png" alt="Global Certificate" width="50%" />
+</div>
+<div align="center">
+  <img src="image-8.png" alt="Global Certificate" width="50%" />
+</div>
 
 
 # Tema 3. Trabajar con datos 
@@ -196,7 +209,11 @@ Typographic Picture Education).
 • Tipos de Variables: Es imprescindible analizar e identificar los tipos de variables que componen un conjunto de datos, ya que su tipología determina cuál será la expresión gráfica más eficaz. 
 
 
-![Tipos de Variables](image-9.png)
+<div align="center">
+  <img src="image-9.png" alt="Global Certificate" width="50%" />
+</div>
+
+
 
 ## 3.3. Recolección de datos
 
@@ -381,7 +398,10 @@ Otros atributos preatentivos incluyen la forma, la orientación, el tamaño, la 
 
 ## 4.4. Psicología de la Gestalt. Principios gestaltistas
 
-![alt text](image-10.png)
+<div align="center">
+  <img src="image-10.png" alt="Global Certificate" width="50%" />
+</div>
+
 
 **Psicología de la Gestalt: Principios de Percepción**
 
@@ -403,11 +423,11 @@ Los principios más influyentes para el diseño de visualizaciones son:
 
 Los principios gestaltistas son una herramienta esencial para facilitar el procesamiento de la información al lector y evitar problemas de comprensión: 
 
-• El Principio de Proximidad puede usarse en gráficos de barras para configurar grupos por la cercanía entre ellas (ejemplo: agrupar barras por año).
-• El Principio de Similitud es útil en mapas, donde las comunidades del mismo color forman un conjunto, o los iconos similares forman un grupo.
-• El Principio del Cercado permite destacar grupos de datos, por ejemplo, usando una trama o borde alrededor de un conjunto de barras para asociarlas a una categoría específica (ejemplo: un año).
-• El Principio de Continuidad se aplica en diagramas para mostrar relaciones, ya que es más fácil percibir las conexiones si estas son suaves y sin interrupciones.
-• El Principio de Conexión es evidente en gráficas de línea, donde los puntos señalados se convierten en una evolución al estar unidos, prevaleciendo la conexión sobre otros atributos como el color y la forma.
+- El Principio de Proximidad puede usarse en gráficos de barras para configurar grupos por la cercanía entre ellas (ejemplo: agrupar barras por año).
+- El Principio de Similitud es útil en mapas, donde las comunidades del mismo color forman un conjunto, o los iconos similares forman un grupo.
+- El Principio del Cercado permite destacar grupos de datos, por ejemplo, usando una trama o borde alrededor de un conjunto de barras para asociarlas a una categoría específica (ejemplo: un año).
+- El Principio de Continuidad se aplica en diagramas para mostrar relaciones, ya que es más fácil percibir las conexiones si estas son suaves y sin interrupciones.
+- El Principio de Conexión es evidente en gráficas de línea, donde los puntos señalados se convierten en una evolución al estar unidos, prevaleciendo la conexión sobre otros atributos como el color y la forma.
 
 En resumen, dado que el cerebro humano es un gran buscador de patrones, presentar la información mediante estructuras que sigan las normas "preatentivas" y los principios de la Gestalt facilita el proceso cognitivo y asegura el éxito de la visualización.
 
@@ -444,8 +464,10 @@ Existen dos modelos de color principales basados en la salida final de la visual
 El color es un atributo visual "preatentivo" que impacta inmediatamente en el lector. Se utiliza para destacar elementos, jerarquizar objetos y expresar valor, como diferentes tonos de un mismo color que indican mayor o menor valor. Sin embargo, un exceso o mala selección de colores puede dificultar la percepción y la correcta función de la visualización.
 
 **Ejemplo**
+<div align="center">
+  <img src="image-11.png" alt="Global Certificate" width="50%" />
+</div>
 
-![alt text](image-11.png)
 
 ## 5.4. Dimensiones y resolución: milímetros y píxeles
 
@@ -459,7 +481,11 @@ El color es un atributo visual "preatentivo" que impacta inmediatamente en el le
 
 La organización de la infografía debe guardar un equilibrio y primar la simetría. Los elementos deben encajar respetando los márgenes y manteniendo una relación adecuada entre las zonas "manchadas" y los espacios en blanco. El peso que tenga cada elemento en la composición debe estar estrechamente ligado a su relevancia.
 
-![alt text](image-12.png)
+
+<div align="center">
+  <img src="image-12.png" alt="Global Certificate" width="50%" />
+</div>
+
 
 ## 5.6. Principales formatos de imagen
 
@@ -478,7 +504,10 @@ Los formatos de imagen se distinguen entre impresos y digitales:
 
 > Un icono es un signo gráfico que mantiene una relación de semejanza con el objeto representado y son reproducciones simplificadas de objetos o conceptos. El uso de recursos icónicos ayuda a simplificar datos complejos y hacerlos fácilmente comprensibles. La repetición de un icono es un método sencillo para mostrar datos cuantitativos visualmente.
 
-![alt text](image-13.png)
+
+<div align="center">
+  <img src="image-13.png" alt="Global Certificate" width="50%" />
+</div>
 
 ## 5.8. De lo estético a lo funcional en la infografía
 
@@ -486,12 +515,20 @@ En toda visualización, la funcionalidad es el valor primario. Aunque los elemen
 
 **Ejemplo Funcional**
 > Mal Diseño 
-![alt text](image-14.png)
+
+<div align="center">
+  <img src="image-14.png" alt="Global Certificate" width="50%" />
+</div>
 
 
 **Ejemplo Funcional**
 > Buen Diseño 
-![alt text](image-15.png)
+
+
+<div align="center">
+  <img src="image-15.png" alt="Global Certificate" width="50%" />
+</div>
+
 
 # Tema 6. Definición y tipologías de gráficos
 
@@ -719,7 +756,6 @@ precisa y eficiente.
 - ¿Cuál es la perspectiva visual que ofrece de los datos?
 - ¿Encaja esta perspectiva con los objetivos y necesidades de sus usuarios?
 
-
 **TAREAS**
 
 - **Variación en el tiempo**: 
@@ -797,6 +833,11 @@ Piense en la codificación gráfica de datos como si fuera una caja de herramien
 
 # Tema 8. Visualización estática
 
+**Mapa Copnceptual**
+<div align="center">
+  <img src="image-36.png" alt="Global Certificate" width="100%" />
+</div>
+
 ## 8.2. Concepto
 
 > La visualización estática se utiliza para representar información que normalmente no va a experimentar cambios y que no requiere de interacción por parte del lector.
@@ -846,6 +887,11 @@ Los gráficos vectoriales son clave en el trabajo estático, ya que están defin
 
 # Tema 9. Visualización dinámica e interactividad (I)
 
+**Mapa Copnceptual**
+<div align="center">
+  <img src="image-37.png" alt="Global Certificate" width="100%" />
+</div>
+
 ## 9.2. Concepto
 
 La visualización dinámica representa información que experimentará cambios (por ejemplo, un mapa meteorológico que se actualiza en tiempo real). Este tipo de representaciones puede ofrecer al lector la posibilidad de profundizar en los datos mediante opciones de interacción.
@@ -866,30 +912,94 @@ Ejemplos de visualizaciones dinámicas e interactivas incluyen la plataforma Goo
 ## 9.3. Formatos de salida
 
 Las visualizaciones dinámicas se publican normalmente en la web en forma de un archivo HTML (para proyectos de producción propia), que a su vez llamará a otros archivos que le proporcionarán el estilo (CSS) y la funcionalidad (JavaScript).
-Cuando se utiliza una herramienta predefinida, las opciones de salida suelen ser:
+
+**Cuando se utiliza una herramienta predefinida, las opciones de salida suelen ser:**
 1. Un enlace a un documento HTML dentro de la propia aplicación.
 2. Un elemento HTML denominado iframe (un fragmento de código HTML) que se inserta en el código de la página para mostrar el contenido generado por la aplicación.
 3. Herramientas para Explorar Conjuntos de Datos Públicos
 
 El aumento de datos disponibles ha impulsado el desarrollo de potentes herramientas para la exploración de conjuntos de datos abiertos (open data).
-Gapminder
 
-La fundación Gapminder, creada en 2005 por Hans Rosling (junto con Ola Rosling y Anna Rosling Rönnlund), ideó el programa Trendalyzer (adquirido por Google en 2007).
+## 9.4. Herramientas para explorar conjuntos de datos públicos
+
+**Gapminder**
+- La fundación Gapminder fue creada en Estocolmo por el médico y estadista Hans Rosling junto con Ola Rosling y Anna Rosling Rönnlund en 2005.
 - Propósito: Promover el desarrollo global sostenible y cumplir con los Objetivos de Desarrollo del Milenio de la ONU mediante el uso y la comprensión de series estadísticas y datos de desarrollo social, económico y medioambiental.
 - Datos: Gapminder es capaz de desplegar alrededor de 200 indicadores constantemente actualizados, permitiendo la recogida de datos desde 1800 en algunos casos.
 - Funcionalidad: Permite relacionar indicadores (como la esperanza de vida con la renta per cápita) y dibujar la evolución de indicadores en el tiempo a través de una animación. 
+- El programa permite elegir escalas lineales o logarítmicas para ver mejor las tendencias y patrones.
 
-El programa permite elegir escalas lineales o logarítmicas para ver mejor las tendencias y patrones.
-Google Public Data Explorer
+**Google Public Data Explorer**
+
 Esta aplicación fue presentada por Google Labs en marzo de 2010 como respuesta a la alta demanda de herramientas que visualizaran datos públicos de forma sencilla.
+
 - Función: Permite explorar grandes conjuntos de datos de interés público y establecer comparativas entre ellos mediante gráficos que se actualizan automáticamente.
 - Visualización: Permite crear gráficos de burbujas donde se pueden correlacionar dos indicadores (usando los ejes X e Y) y añadir una tercera variable para determinar el tamaño de las burbujas (por ejemplo, la población). Al igual que Gapminder, permite ver la evolución de los indicadores a lo largo del tiempo.
 
 
 Ambas herramientas son potentes para la exploración de grandes conjuntos de datos procedentes de reconocidas fuentes públicas y su integración en un sitio web es muy sencilla
 
-## 9.4. Herramientas para explorar conjuntos de datos públicos
+**Enlaces**
+- https://datacommons.org
+- https://static.gapminder.org/GapminderMedia/wp-uploads/Gapminder-World-2012.pdf
+- https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen/transcript?language=en
+- https://datacommons.org
+- https://trends.google.com/trends/?geo=MX&hl=es-419
 
-# Tema 10. 
+
+# Tema 10. Visualización dinámica e interactividad (II) 
 
 
+Los objetivos de esta unidad son comprender la visualización dinámica e interactiva y sus posibilidades, aprender a manejar los formatos de salida para la publicación web, y conocer y saber utilizar herramientas clave tanto de código abierto como comerciales, incluyendo DataWrapper, TimelineJS, Google Charts, Google Maps y Google Fusion Tables.
+
+La proliferación de herramientas estándar para la visualización es un resultado del aumento considerable del volumen de datos disponibles en la última década, lo que ha hecho que mostrar los datos de manera adecuada y comprensible sea una labor accesible para los periodistas.
+A continuación, se presenta un resumen de las herramientas clave abordadas en el Tema 10:
+
+**Herramientas Estándar y de Código Abierto**
+
+1. Datawrapper
+    - Es un programa de código abierto para la creación de visualizaciones de manera gratuita, aunque ofrece opciones adicionales mediante planes de pago.
+    - Es muy popular en el mundo periodístico, ya que fue creado por Journalism ++ y ABZV.
+    - Permite generar gráficos (como gráficos de barras) fácilmente a partir de datos subidos en una hoja de cálculo o documento CSV. Ofrece opciones para personalizar los gráficos, como usar colores diferentes para valores negativos.
+2. TimelineJS
+    - Es una herramienta de código abierto desarrollada por Knight Lab y Zach Wise.
+    - Se utiliza para construir líneas de tiempo interactivas a partir de una hoja de cálculo de Google.
+    - Una de sus ventajas es que las cronologías creadas son responsive (adaptan su diseño al dispositivo) y pueden enriquecerse con material multimedia de fuentes como Twitter, Google Maps o YouTube.
+3. Google Charts
+    - Es una API de Google basada en JavaScript dirigida principalmente a desarrolladores web.
+    - Permite introducir gráficos dinámicos en una web, desde gráficos de línea sencillos hasta complejos mapas de árbol.
+    - Para crear un gráfico, es necesario cargar tres librerías (Google JSAPI API, Google Visualization y la galería específica del gráfico) y dar formato a los datos según el tipo de gráfico seleccionado.
+4. Google Maps
+    - Es la aplicación de Google que permite visualizar mapas e integrarlos en proyectos.
+    - Permite a los usuarios crear mapas personalizados (Mis mapas) con marcadores y líneas, y ofrece diversas opciones de mapa base (clásico, satélite, relieve).
+    - Los mapas creados pueden insertarse en sitios web mediante un iframe.
+5. Google Fusion Tables
+    - Es una herramienta experimental, abierta y gratuita de Google para la gestión y visualización de datos.
+    - Permite combinar datos propios con datos de fuentes públicas y ofrece un abanico variado de visualizaciones interactivas, incluyendo gráficos de barras, de línea, tartas, líneas de tiempo y mapas interactivos.
+    - Una vez importados los datos y seleccionada la visualización (como un gráfico de barras), se puede personalizar y obtener un código iframe para incrustar en la web.
+6. Librería Javascript D3 (Data Driven Documents)
+    - D3.JS es una librería JavaScript de código abierto capaz de cargar datos en una web y generar visualizaciones a partir de ellos.
+    - Se apoya en estándares web como HTML5, SVG y CSS.
+    - Permite conseguir avanzadas visualizaciones a partir de conjuntos de datos complejos, y su desarrollo está ligado a la figura de Mike Bostock.
+    - RAW es una herramienta de código abierto que facilita la creación de visualizaciones con D3.js sin requerir conocimientos de programación.
+7. Otras Herramientas de Software Libre:
+    - StoryMap JS: Utilizada para narrar historias resaltando la ubicación de una serie de eventos.
+    - DevInfo: Potente herramienta para la visualización de datos sobre desarrollo humano a partir de estadísticas oficiales de la ONU.
+    - R: Un programa complejo, pero potente, especializado en estadística computacional y gráficos.
+
+
+**Herramientas de Software Propietario**
+Existen opciones de software propietario que, aunque pueden ser de pago, a menudo ofrecen versiones gratuitas con funcionalidades útiles.
+
+1. Tableau Public:
+    ◦ Es una aplicación avanzada e intuitiva para la creación y publicación de gráficos interactivos, mapas y tablas.
+    ◦ Está dirigida a periodistas y permite crear tableros que contienen múltiples representaciones gráficas de datos dentro de la misma visualización.
+
+2. CartoDB:
+    ◦ Es una aplicación en la nube que permite almacenar y visualizar datos en la web mediante mapas interactivos.
+    ◦ Opera bajo la modalidad freemium y es utilizada por entidades importantes como la ONU, NASA, The Guardian y The Wall Street Journal.
+
+Formato de Salida:
+Para los proyectos de producción propia, las visualizaciones dinámicas se publican normalmente en la web como un archivo HTML que llama a otros archivos para el estilo (CSS) y la funcionalidad (JavaScript). Cuando se usan herramientas predefinidas, el resultado se incrusta mediante un elemento HTML denominado iframe.
+
+La disponibilidad de estas herramientas subraya que la visualización de datos, que consiste en transformar datos en conocimiento semántico, está cada vez más al alcance de cualquier profesional. 
