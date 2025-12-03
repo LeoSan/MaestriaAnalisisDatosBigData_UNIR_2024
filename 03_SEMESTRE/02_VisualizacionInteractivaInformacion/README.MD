@@ -204,9 +204,11 @@ Typographic Picture Education).
 
 ## 3.2. Fundamentos de los datos
 
-• **Información vs. Conocimiento**: Es crucial entender que "el conocimiento es poder, la información no". El volumen abrumador de información disponible (especialmente desde la popularización de Internet) hace que el desafío principal no sea capturar o almacenar datos, sino analizarlos para extraer el conocimiento necesario y representarlo de forma adecuada y comprensible.
-• Objetivo Estratégico: Para comunicar una visión gráfica adecuada, los datos deben mostrarse atendiendo a criterios estratégicos, facilitando la comprensión y la toma de decisiones informadas.
-• Tipos de Variables: Es imprescindible analizar e identificar los tipos de variables que componen un conjunto de datos, ya que su tipología determina cuál será la expresión gráfica más eficaz. 
+- **Información vs. Conocimiento**: Es crucial entender que "el conocimiento es poder, la información no". El volumen abrumador de información disponible (especialmente desde la popularización de Internet) hace que el desafío principal no sea capturar o almacenar datos, sino analizarlos para extraer el conocimiento necesario y representarlo de forma adecuada y comprensible.
+
+- Objetivo Estratégico: Para comunicar una visión gráfica adecuada, los datos deben mostrarse atendiendo a criterios estratégicos, facilitando la comprensión y la toma de decisiones informadas.
+
+- Tipos de Variables: Es imprescindible analizar e identificar los tipos de variables que componen un conjunto de datos, ya que su tipología determina cuál será la expresión gráfica más eficaz. 
 
 
 <div align="center">
@@ -217,34 +219,34 @@ Typographic Picture Education).
 
 ## 3.3. Recolección de datos
 
-• Técnicas de Recolección: Pueden ir desde el correcto diseño de encuestas hasta el uso de sistemas de Big Data y dispositivos de Internet de las Cosas (IoT).
+- Técnicas de Recolección: Pueden ir desde el correcto diseño de encuestas hasta el uso de sistemas de Big Data y dispositivos de Internet de las Cosas (IoT).
 
-• Cuestionarios: El punto de partida es siempre identificar el propósito. Una buena encuesta recolecta datos fiables y verificables que permiten realizar afirmaciones concretas.
+- Cuestionarios: El punto de partida es siempre identificar el propósito. Una buena encuesta recolecta datos fiables y verificables que permiten realizar afirmaciones concretas.
 
-• Usos de una Encuesta: Describir algo, describir cómo se relacionan las cosas, explicar una relación o influenciar sobre algo.
+- Usos de una Encuesta: Describir algo, describir cómo se relacionan las cosas, explicar una relación o influenciar sobre algo.
 
-• Preguntas Útiles: ¿Qué deseamos lograr? ¿Qué queremos saber exactamente? ¿Por qué es importante? ¿Hay otra información útil? ¿Es el cuestionario el método adecuado?.
+- Preguntas Útiles: ¿Qué deseamos lograr? ¿Qué queremos saber exactamente? ¿Por qué es importante? ¿Hay otra información útil? ¿Es el cuestionario el método adecuado?.
 
-• Motivos Erróneos para Encuestar: Mostrar que tenemos datos sin que importen los resultados, utilizar mal los datos, preocuparse más por la recepción de los hallazgos que por su fiabilidad, o haber predeterminado los resultados.
+- Motivos Erróneos para Encuestar: Mostrar que tenemos datos sin que importen los resultados, utilizar mal los datos, preocuparse más por la recepción de los hallazgos que por su fiabilidad, o haber predeterminado los resultados.
 
-• Métodos Complementarios: Alternativas o complementos a las encuestas incluyen la medición directa, el grupo focal, la observación y el examen de análisis previos.
+- Métodos Complementarios: Alternativas o complementos a las encuestas incluyen la medición directa, el grupo focal, la observación y el examen de análisis previos.
 
-• Fuentes de Datos Externas: Se puede trabajar con conjuntos de datos de terceros, que pueden ser:
-    ◦ Públicas: Accesibles gracias al movimiento de contenidos abiertos (liberación de datos en pro de la transparencia).
-    ◦ Privadas: Acceso especial por estatus o datos comprados con licencia de uso
+- Fuentes de Datos Externas: Se puede trabajar con conjuntos de datos de terceros, que pueden ser:
+    - Públicas: Accesibles gracias al movimiento de contenidos abiertos (liberación de datos en pro de la transparencia).
+    - Privadas: Acceso especial por estatus o datos comprados con licencia de uso
 
 ## 3.4. Preparación y limpieza de datos
-• Preparación de Datos: Implica la organización y uniformización para hacer los datos manipulables:
+- Preparación de Datos: Implica la organización y uniformización para hacer los datos manipulables:
     - Separar campos útiles (ej. dividir direcciones postales).
     - Identificar datos incompletos y vacíos.
     - Uniformizar y realizar conversión de unidades de medida (ej. centímetros y pulgadas)
  
-• Limpieza de Datos: Se enfoca en corregir errores e inconsistencias:
-    ◦ Identificar datos erróneos o carentes de sentido (ej. un número en un campo de nombre).
-    ◦ Eliminar duplicados.
-    ◦ Verificar rangos (ej. una temperatura ambiente de 224 ºC en la Tierra).
-    ◦ Verificar ortografía y errores tipográficos.
-    ◦ Examinar la sintaxis (ej. formato de correos electrónicos)
+- Limpieza de Datos: Se enfoca en corregir errores e inconsistencias:
+    - Identificar datos erróneos o carentes de sentido (ej. un número en un campo de nombre).
+    - Eliminar duplicados.
+    - Verificar rangos (ej. una temperatura ambiente de 224 ºC en la Tierra).
+    - Verificar ortografía y errores tipográficos.
+    - Examinar la sintaxis (ej. formato de correos electrónicos)
 
 ## 3.5. Transformación de datos
 
@@ -784,7 +786,9 @@ precisa y eficiente.
 
 - **Relaciones de ranking**
   - Una tarea muy relacionada con las comparaciones simples es la de poder identificar eficientemente posiciones de ranking entre valores. 
+
   - La solución en estos casos es tan sencilla como presentar los diferentes valores, o su representación gráfica de forma ordenada.   
+
   - **Solución**: graficas barraS
 **Ejemplo**
 <div align="center">
