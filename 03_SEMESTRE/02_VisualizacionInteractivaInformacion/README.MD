@@ -953,6 +953,11 @@ Ambas herramientas son potentes para la exploración de grandes conjuntos de dat
 
 # Tema 10. Visualización dinámica e interactividad (II) 
 
+**Mapa Copnceptual**
+<div align="center">
+  <img src="image-38.png" alt="Global Certificate" width="100%" />
+</div>
+
 
 Los objetivos de esta unidad son comprender la visualización dinámica e interactiva y sus posibilidades, aprender a manejar los formatos de salida para la publicación web, y conocer y saber utilizar herramientas clave tanto de código abierto como comerciales, incluyendo DataWrapper, TimelineJS, Google Charts, Google Maps y Google Fusion Tables.
 
@@ -1022,7 +1027,10 @@ Formato de Salida:
 - La disponibilidad de estas herramientas subraya que la visualización de datos, que consiste en transformar datos en conocimiento semántico, está cada vez más al alcance de cualquier profesional. 
 
 # Tema 11. Representación gráfica. La relación
-
+**Mapa Copnceptual**
+<div align="center">
+  <img src="image-39.png" alt="Global Certificate" width="100%" />
+</div>
 
 Toda visualización debe presentar la información de manera clara, limpia, precisa, eficiente y accesible. El diseñador es responsable de que se cumpla el objetivo principal: ayudar a comprender una información e invitar al análisis y la reflexión sobre la misma.
 
@@ -1030,11 +1038,11 @@ El fracaso en el proceso de visualización, que resulta en falta de eficacia, a 
 
 La Primacía de la Funcionalidad sobre la Estética
 
-Un fuerte componente ético radica en seleccionar la forma más adecuada de mostrar los datos para que el lector perciba correctamente la información.
-  - La funcionalidad es el valor primario en toda visualización.
-  - La estética debe entenderse como un valor secundario que complementa y refuerza a la funcionalidad.
-  - Es un error basarse en gustos o modas para elegir una forma gráfica, ya que la eficacia en el trabajo visual debe primar.
-  - Las formas gráficas seleccionadas deben corresponderse con el objetivo final de la visualización.
+1. Un fuerte componente ético radica en seleccionar la forma más adecuada de mostrar los datos para que el lector perciba correctamente la información.
+  - La **funcionalidad** es el valor primario en toda visualización.
+  - La **estética** debe entenderse como un valor secundario que complementa y refuerza a la funcionalidad.
+  - Es un error basarse en **gustos o modas** para elegir una forma gráfica, ya que la eficacia en el trabajo visual debe primar.
+  - Las formas gráficas seleccionadas deben corresponderse con el **objetivo final** de la visualización.
 
 2. Lo que el Periodista Visual debe Evitar (Ejemplos de Falta de Ética)
 El profesional debe ser respetuoso con los datos y evitar formas gráficas que sean inútiles o que manipulen la información, ya que no sirven para comunicar eficazmente.

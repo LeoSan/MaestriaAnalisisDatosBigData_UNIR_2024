@@ -1164,16 +1164,113 @@ datos públicos. => **CORRECTO**
 
 # Tema 11. Visualización dinámica e interactividad (I)
 
+1. La falta de ética del profesional de visualización da como resultado:
+- A. Visualizaciones de enorme utilidad.
+- B. Visualizaciones poco eficaces. => **Correctas**
+- C. Visualizaciones poco atractivas.
+- D. Ninguna es correcta.
+
+2. El profesional de visualización a través de sus proyectos es responsable de:
+- A. Crear visualizaciones bonitas.
+- B. Invitar al análisis y reflexión sobre una información. 
+- C. Ayudar a la comprensión de una información.
+- D. B y C son correctas. => **Correctas**
+
+3. Es posible encontrar visualizaciones poco éticas sobre...
+- A. Los datos de la OJD.
+- B. Los datos del paro.
+- C. Los datos de resultados electorales.
+- D. Todas son correctas. => **Correctas**
+
+4. La eficacia en el trabajo visual debe primar sobre:
+- A. La exactitud de los datos.
+- B. La veracidad de las fuentes. => **Correctas**
+- C. Los gustos y modas.
+- D. Ninguna es correcta
+
+5. Podemos considerar buenas prácticas:
+- A. Utilizar siempre datos precisos y verificables.
+- B. Elección de la representación gráfica más adecuada.
+- C. Mostrar toda la información relevante posible.
+- D. Todas son correctas. => **Correctas**
+
+6. ¿Cuál es el valor primario en una visualización?
+- A. La funcionalidad. => **Correctas**
+- B. La estética.
+- C. Ambas priman por igual.
+- D. Ninguna de la dos.
+
+7. Como norma general las escalas:
+- A. Deben truncarse.
+- B. Deben comenzar en 0. => **Correctas**
+- C. Deben evitarse.
+- D. A y B son correctas.
+
+8. La elección de la representación gráfica:
+- A. Vendrá condicionada principalmente por su valor estético.
+- B. Estará al servicio de nuestro objetivo. => **Correctas**
+- C. Se basará en su impacto visual.
+- D. Ninguna es correcta
+
+9. Una visualización debe ser:
+- A. Compleja.
+- B. Simple. => **Correctas**
+- C. Bonita.
+- D. Ninguna es correcta.
+
+10. En una visualización es importante:
+- A. Mostrar toda la información relevante posible. => **Correctas**
+- B. Incluir dibujos bonitos.
+- C. Truncar siempre las escalas.
+- D. A y C son correcta
+
 ## Videoclase 1. La ética en la visualización de datos
 
-- 
-- 
+-  ¿Cuál es el objetivo principal que toda visualización de datos debe cumplir según los estándares éticos?
+- Presentar la información de manera clara, precisa y accesible.
 
-- 
-- 
+- ¿Por qué es importante la ética en la visualización de datos, considerando la percepción del cerebro humano?
+- El cerebro puede ser engañado por visualizaciones manipuladoras, creando una falsa comprensión de la información.
 
--
-- 
+- ¿Qué tipo de gráfico se menciona en las fuentes como un ejemplo frecuente de una elección visual que puede ser ineficaz para la representación de datos?
+- Gráficos de tarta.
 
-- 
-- 
+- ¿Qué debe primar en la visualización de datos desde un punto de vista ético?
+- La eficacia y la veracidad de los datos.
+
+- ¿Cuál de las siguientes afirmaciones no es un ejemplo de falta de ética en la visualización de datos?
+- Elegir un tipo de gráfico que represente los datos de forma clara y precisa.
+
+## Videoclase 2. Buenas prácticas en el uso de los datos para la visualización
+
+- ¿Qué elemento fundamental debe acompañar siempre a los datos utilizados en una visualización, según las fuentes?
+- La cita completa de la fuente de donde se obtuvieron los datos.  => La teoría enfatiza la importancia de la veracidad en la visualización de datos. Para garantizar la transparencia y la credibilidad, es crucial: «Citar siempre la fuente de los mismos». Además, se especifica que la cita debe ser completa, incluyendo detalles como el año de publicación, editorial, archivo o base de datos, en lugar de solo mencionar el nombre del medio. Esto permite a los usuarios verificar la información y comprender su contexto original.
+
+- ¿Cuál es la principal razón ética para elegir cuidadosamente la representación gráfica de los datos?
+- Para que la gráfica refleje fielmente la información y no induzca a error al usuario. => La teoría advierte sobre la importancia de «Elegir bien la gráfica». El objetivo principal debe ser la claridad y la precisión en la representación de la información, no el simple impacto visual. La elección de la gráfica debe estar “al servicio de nuestro objetivo”, es decir, comunicar los datos de manera veraz y evitar cualquier tipo de manipulación que pueda llevar a una interpretación errónea por parte del usuario.
+
+- ¿Qué práctica se desaconseja en relación con la escala de un gráfico, a menos que exista una justificación sólida?
+- Manipular la escala sin una razón válida. => La teoría aborda la importancia de la honestidad en la representación de datos, específicamente en relación con la escala de los gráficos. Se establece como regla general “Comenzar la escala en 0” para evitar distorsiones en la percepción de las diferencias entre los datos. Manipular la escala sin una justificación clara puede inducir al usuario a conclusiones erróneas, lo cual es una práctica éticamente cuestionable en la visualización de datos.
+
+- ¿Cuál es el error principal que se comete al citar solo el nombre del medio como fuente de datos?
+- Todas las anteriores. => La teoría critica la práctica de citar solo el nombre del medio como fuente de datos, considerándola incorrecta. Al omitir detalles como el año de publicación, la editorial o la base de datos, se dificulta la verificación de la información por parte del usuario. Esto no solo afecta la transparencia, sino que también puede llevar a malentendidos si la información ha sido sacada de contexto o modificada con el tiempo.
+
+- ¿Por qué es crucial considerar el contexto de los datos al analizar una visualización?
+-  El contexto puede influir en la interpretación de los datos y revelar información adicional. => La teoría destaca la importancia de «ofrecer el contexto de los datos» para un análisis adecuado. Los datos no existen en un vacío, y su significado puede variar según el contexto en que se presenten. Comprender el contexto, como el período de tiempo, la ubicación geográfica u otros factores relevantes, permite una interpretación más completa y evita conclusiones sesgadas o incompletas.
+
+## Videoclase 3. Ejemplos de visualizaciones inadecuadas
+
+- ¿Qué crítica se hace al mapa del metro de Londres diseñado en 1933 por Harry Beck?
+- No refleja con precisión la ubicación real de las estaciones. => El texto indica que Harry Beck «obvió la ubicación física real de cada estación de metro» para crear un mapa más esquemático y funcional. Si bien esto contribuyó al éxito del mapa como herramienta de navegación, también implica una representación distorsionada de las distancias y la geografía real del sistema de metro.
+
+- ¿Qué aspecto positivo se destaca del mapa del metro de Londres, a pesar de la crítica mencionada en la pregunta anterior?
+- Su facilidad de uso y comprensión para los usuarios. => A pesar de no ser geográficamente preciso, el mapa de Beck se convirtió en un «éxito de diseño y funcionalidad». Su diseño simplificado, basado en diagramas de circuitos eléctricos, priorizó la claridad y la facilidad de uso para los pasajeros del metro. Esto demuestra que, en algunos casos, la funcionalidad puede primar sobre la representación totalmente fiel de la realidad.
+
+- ¿Qué práctica poco ética se atribuye a algunas cadenas de televisión en relación con la visualización de datos?
+- Priorizar la estética sobre la veracidad de la información. => El texto denuncia que algunas cadenas de televisión manipulan los datos para crear «representaciones erróneas». Esta manipulación puede estar motivada por «intereses concretos», lo que implica una falta de ética al distorsionar la información para fines particulares.
+
+- ¿Qué problema se identifica en la infografía sobre el desempleo mencionada en las fuentes?
+- No indica claramente si los porcentajes son cifras comparables entre sÍ => La teoría critica la infografía por ser «difícil de leer y comprender». Señala que el lector debe deducir que los porcentajes no son comparables entre sí, lo que genera confusión. Esta falta de claridad en la presentación de los datos dificulta la comprensión de la información y puede llevar a interpretaciones erróneas.
+
+- ¿Qué tipo de gráfico se sugiere como alternativa más adecuada para comparar el desempleo por sexo en la infografía?
+- Gráfico de barras apiladas. => En el tema se sugiere que un «gráfico de barras apiladas» sería más efectivo para comparar el desempleo masculino y femenino. Este tipo de gráfico permite visualizar las proporciones de cada categoría dentro de un total, facilitando la comparación y la comprensión de las diferencias entre los grupos.
