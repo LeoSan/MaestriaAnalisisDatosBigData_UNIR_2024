@@ -117,12 +117,12 @@ D3.js tiene una curva de aprendizaje, pero una vez que "hace clic", es increíbl
 
 **Ejercicios de Práctica (¡Todo lo puedes hacer directamente en un `index.html` con un `<script>` al final o un `app.js` vacío\!):**
 
-1.  **Crea un Lienzo SVG Básico:**
+1.  **Crea un Lienzo SVG Básico:** ✅
     * En tu `index.html`, crea un `<div>` vacío con un `id="svg-container"`.
     * Usando D3.js, selecciona este `div` y apéndele un elemento `<svg>` con un `width` de `400` y `height` de `300`. Dale un `background-color` ligero con CSS para que puedas verlo.
     * **Pista:** `d3.select("#svg-container").append("svg").attr("width", 400).attr("height", 300).style("background-color", "#f0f0f0");`
 
-2.  **Dibuja un Rectángulo y un Círculo:**
+2.  **Dibuja un Rectángulo y un Círculo:** ✅
     * Dentro del `<svg>` que creaste, apéndele un `<rect>`:
         * `x="50"`, `y="50"`, `width="100"`, `height="80"`.
         * `fill="steelblue"`.
@@ -131,23 +131,29 @@ D3.js tiene una curva de aprendizaje, pero una vez que "hace clic", es increíbl
         * `fill="lightcoral"`.
     * **Pista:** Encadena `.append()` después de tu selección `svg`.
 
-3.  **Añade Texto a un SVG:**
+3.  **Añade Texto a un SVG:** ✅
     * Apéndele un elemento `<text>` al SVG.
     * Posiciónalo en `x="200"`, `y="250"`.
     * Dale un `text-anchor="middle"` con `.style()`.
     * Establece su contenido a "Mi Primera Gráfica SVG" con `.text()`.
     * **Pista:** `.style()` y `.text()` son métodos de selección.
-
-4.  **Crea un Grupo (`<g>`) y Mueve Elementos:**
+ 
+4.  **Crea un Grupo (`<g>`) y Mueve Elementos:** ✅
     * Crea un elemento `<g>` dentro del SVG.
     * Apéndele dos nuevos `<rect>` a este `<g>` (uno al lado del otro, por ejemplo `x=0, y=0` y `x=60, y=0`).
     * Usa el atributo `transform="translate(x,y)"` en el `<g>` para mover *ambos* rectángulos a la vez (ej. `translate(150, 150)`).
     * **Pista:** Los atributos de `transform` son cadenas de texto.
 
-5.  **Estiliza con Clases y CSS:**
+5.  **Estiliza con Clases y CSS:**  ✅
     * En tu `style.css`, define una clase CSS `.mi-forma` con un `fill: purple;` y `stroke: black; stroke-width: 2px;`.
     * Modifica el `rect` y `circle` del ejercicio 2 para que usen esta clase usando `.attr("class", "mi-forma")` en lugar de `fill` directo.
     * **Pista:** D3 puede añadir clases tan fácilmente como otros atributos.
+
+**Resultado de la practica**
+- Ejercicio_001.html
+- Ejercicio_002.html
+- Ejercicio_003.html
+- Ejercicio_004.html
 
 ---
 
@@ -160,23 +166,23 @@ D3.js tiene una curva de aprendizaje, pero una vez que "hace clic", es increíbl
 
 **Ejercicios de Práctica:**
 
-1.  **Selecciona y Modifica un Elemento Existente:**
+1.  **Selecciona y Modifica un Elemento Existente:** ✅
     * En tu `index.html`, crea un `<p id="my-paragraph">Hola mundo</p>`.
     * Usando `d3.select()`, selecciona este párrafo.
     * Cambia su texto a "¡D3.js es genial!" usando `.text()`.
     * Cambia su color a `blue` usando `.style("color", "blue")`.
 
-2.  **Selecciona y Modifica Múltiples Elementos:**
+2.  **Selecciona y Modifica Múltiples Elementos:** ✅
     * En tu `index.html`, crea tres `<li>` dentro de un `<ul>`: `Item 1`, `Item 2`, `Item 3`.
     * Usando `d3.selectAll()`, selecciona todos los `<li>`.
     * Cambia su `background-color` a `lightgreen` y su `font-weight` a `bold`.
 
-3.  **Añade y Elimina Elementos Dinámicamente:**
+3.  **Añade y Elimina Elementos Dinámicamente:** ✅
     * Usando `d3.select("body").append("button").text("Añadir Párrafo").on("click", ...)` crea un botón.
     * Cuando se haga clic en el botón, usa D3 para añadir un nuevo `<p>` con texto "Párrafo añadido" al final del `body`.
     * Añade otro botón "Eliminar último Párrafo" que, al hacer clic, use `d3.select("p:last-of-type").remove()` para eliminar el último párrafo.
 
-4.  **Usa `data()` sin `.join()` (Introducción al Binding):**
+4.  **Usa `data()` sin `.join()` (Introducción al Binding):** ✅
     * Crea un array `const numbers = [10, 20, 30];`.
     * Selecciona un `div` vacío y luego `selectAll("p")` (que no existe).
     * Usa `.data(numbers)` y `.enter().append("p")` para crear un párrafo para cada número.
@@ -188,6 +194,9 @@ D3.js tiene una curva de aprendizaje, pero una vez que "hace clic", es increíbl
     * Usa `rect.attr("x")` para obtener su posición 'x'.
     * Imprime el valor en la consola.
     * **Pista:** Cuando `.attr()` se llama con un solo argumento (el nombre del atributo), devuelve el valor actual.
+
+**Resultado de la practica**
+- Ejercicio_005.html
 
 ---
 

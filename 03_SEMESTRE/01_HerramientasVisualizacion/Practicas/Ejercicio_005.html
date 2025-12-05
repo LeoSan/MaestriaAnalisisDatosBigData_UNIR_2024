@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<style type="text/css">
+    .cont-ligero {
+        background-color: #A52A2A;
+        border-radius: 10px;
+        border: 1px solid black;
+        width: 500px;
+        height: 500px;
+    }
+
+    .rectangulo {
+        width: 100px;
+        height: 80px;
+        fill: steelblue;
+    }
+
+    .circulo {
+        fill: lightcoral;
+    }
+
+    .cont_numero {
+        width: auto;
+        height: 400px;
+        background-color: lightblue;
+        border-radius: 10px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .numero {
+        width: 100px;
+        height: 100px;
+        background-color: blanchedalmond;
+        border-radius: 10px;
+        margin: 10px;
+        font-size: 40px;
+        align-content: center;
+        color: #A52A2A;
+        font-weight: bold;
+    }
+
+    .numero:hover {
+        background-color: #A52A2A;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <h3>1. **Selecciona y Modifica un Elemento Existente:**</h3>
+    <p id="my-paragraph">Hola mundo</p>
+
+    <hr>
+    <h3>2.**Selecciona y Modifica Múltiples Elementos:**</h3>
+
+    <ul class="lista-titulos">
+        <li>Luna</li>
+        <li>Planeta</li>
+        <li>Galaxia</li>
+        <li>Cúmulo</li>
+        <li>Universo</li>
+    </ul>
+
+
+    <hr>
+    <h3>4. **Usa `data()` sin `.join()` (Introducción al Binding):**</h3>
+    <div id="numbers" class="cont_numero"></div>
+
+    ---
+
+
+</body>
+
+<script type="text/javascript">
+    //1.  **Selecciona y Modifica un Elemento Existente:**
+    let cont_ligero = d3.select("#my-paragraph").text("se practica el ajuste").style("color", "blue");
+
+    //2.**Selecciona y Modifica Múltiples Elementos:**
+    // Seleccionamos todos los <li> que estén dentro de la clase .lista-titulos
+    let cont_multiple = d3.selectAll(".lista-titulos li")
+        .style("background-color", "lightgreen")
+        .style("font-weight", "bold");
+
+    // --- OPCIÓN CON BUCLE (IMPERATIVA) ---
+    // Aunque D3 ya hace el bucle internamente, así se haría manualmente con .each():
+    let misDatos = ["Luna", "Planeta", "Galaxia", "Cúmulo", "Universo"];
+    d3.selectAll(".lista-titulos li").data(misDatos).each(function (d, i) {
+        // 'this' es el elemento HTML actual en el bucle
+        let cont_multiple = d3.select(this)
+        // console.log("valor de THIS:", this)
+        switch (d) {
+            case "Luna":
+                cont_multiple.style("background-color", "red").style("font-size", "20px").style("font-weight", "normal").text((t, j) => "🌝" + this.innerText);
+                break;
+            case "Planeta":
+                cont_multiple.style("background-color", "yellow").style("font-size", "30px").style("font-weight", "normal").text((t, j) => "🌍" + this.innerText);
+                break;
+            case "Galaxia":
+                cont_multiple.style("background-color", "blue").style("font-size", "40px").style("font-weight", "normal").text((t, j) => " 🌌" + this.innerText);
+                break;
+            case "Cúmulo":
+                cont_multiple.style("background-color", "green").style("font-size", "50px").style("font-weight", "normal").text((t, j) => " 🧿" + this.innerText);
+                break;
+            case "Universo":
+                cont_multiple.style("background-color", "purple").style("font-size", "60px").style("font-weight", "normal").text((t, j) => " 🌀" + this.innerText);
+                break;
+            default:
+                break;
+        }
+    });
+
+    // ---------------------------------------------------------
+    // 3. Añade y Elimina Elementos Dinámicamente
+    // ---------------------------------------------------------
+
+    // Agregamos un separador y título visualmente para que se vea ordenado
+    d3.select("body").append("hr");
+    d3.select("body").append("h3").text("3. Añade y Elimina Elementos Dinámicamente:");
+
+    // Botón para AÑADIR
+    d3.select("body")
+        .append("button")
+        .text("Añadir Párrafo ➕")
+        .on("click", function () {
+            d3.select("body")
+                .append("p")
+                .text("Nuevo párrafo añadido dinámicamente ✨")
+                .style("color", "green");
+        });
+
+    // Espacio entre botones
+    d3.select("body").append("span").text(" ");
+
+    // Botón para ELIMINAR
+    d3.select("body")
+        .append("button")
+        .text("Eliminar último Párrafo ❌")
+        .on("click", function () {
+            // Selecciona solo el ÚLTIMO párrafo de tipo <p> y lo elimina
+            d3.select("p:last-of-type").remove();
+        });
+
+    // ---------------------------------------------------------
+    //     
+    // 4.  **Usa `data()` sin `.join()` (Introducción al Binding):**
+    // ---------------------------------------------------------
+
+    const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+    d3.select("#numbers").selectAll("p").data(numbers).enter().append("p").attr("class", "numero").text((d) => d);
+
+</script>
+
+</html>
