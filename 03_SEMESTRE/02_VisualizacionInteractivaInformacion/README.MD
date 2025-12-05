@@ -965,45 +965,96 @@ A continuación, se presenta un resumen de las herramientas clave abordadas en e
     - Es un programa de código abierto para la creación de visualizaciones de manera gratuita, aunque ofrece opciones adicionales mediante planes de pago.
     - Es muy popular en el mundo periodístico, ya que fue creado por Journalism ++ y ABZV.
     - Permite generar gráficos (como gráficos de barras) fácilmente a partir de datos subidos en una hoja de cálculo o documento CSV. Ofrece opciones para personalizar los gráficos, como usar colores diferentes para valores negativos.
+    - https://www.datawrapper.de 
+
 2. TimelineJS
     - Es una herramienta de código abierto desarrollada por Knight Lab y Zach Wise.
     - Se utiliza para construir líneas de tiempo interactivas a partir de una hoja de cálculo de Google.
     - Una de sus ventajas es que las cronologías creadas son responsive (adaptan su diseño al dispositivo) y pueden enriquecerse con material multimedia de fuentes como Twitter, Google Maps o YouTube.
+   - https://timeline.knightlab.com
+
 3. Google Charts
     - Es una API de Google basada en JavaScript dirigida principalmente a desarrolladores web.
     - Permite introducir gráficos dinámicos en una web, desde gráficos de línea sencillos hasta complejos mapas de árbol.
     - Para crear un gráfico, es necesario cargar tres librerías (Google JSAPI API, Google Visualization y la galería específica del gráfico) y dar formato a los datos según el tipo de gráfico seleccionado.
+    - https://developers.google.com/chart/interactive/docs/quick_start?hl=es
+
 4. Google Maps
     - Es la aplicación de Google que permite visualizar mapas e integrarlos en proyectos.
     - Permite a los usuarios crear mapas personalizados (Mis mapas) con marcadores y líneas, y ofrece diversas opciones de mapa base (clásico, satélite, relieve).
     - Los mapas creados pueden insertarse en sitios web mediante un iframe.
+    - https://maps.google.com 
+
 5. Google Fusion Tables
     - Es una herramienta experimental, abierta y gratuita de Google para la gestión y visualización de datos.
     - Permite combinar datos propios con datos de fuentes públicas y ofrece un abanico variado de visualizaciones interactivas, incluyendo gráficos de barras, de línea, tartas, líneas de tiempo y mapas interactivos.
     - Una vez importados los datos y seleccionada la visualización (como un gráfico de barras), se puede personalizar y obtener un código iframe para incrustar en la web.
+    - https://www.google.com/fusiontables
+
 6. Librería Javascript D3 (Data Driven Documents)
     - D3.JS es una librería JavaScript de código abierto capaz de cargar datos en una web y generar visualizaciones a partir de ellos.
     - Se apoya en estándares web como HTML5, SVG y CSS.
     - Permite conseguir avanzadas visualizaciones a partir de conjuntos de datos complejos, y su desarrollo está ligado a la figura de Mike Bostock.
     - RAW es una herramienta de código abierto que facilita la creación de visualizaciones con D3.js sin requerir conocimientos de programación.
+    - https://d3js.org
+
 7. Otras Herramientas de Software Libre:
     - StoryMap JS: Utilizada para narrar historias resaltando la ubicación de una serie de eventos.
     - DevInfo: Potente herramienta para la visualización de datos sobre desarrollo humano a partir de estadísticas oficiales de la ONU.
     - R: Un programa complejo, pero potente, especializado en estadística computacional y gráficos.
+    - https://www.r-project.org
 
 
 **Herramientas de Software Propietario**
 Existen opciones de software propietario que, aunque pueden ser de pago, a menudo ofrecen versiones gratuitas con funcionalidades útiles.
 
 1. Tableau Public:
-    ◦ Es una aplicación avanzada e intuitiva para la creación y publicación de gráficos interactivos, mapas y tablas.
-    ◦ Está dirigida a periodistas y permite crear tableros que contienen múltiples representaciones gráficas de datos dentro de la misma visualización.
+    - Es una aplicación avanzada e intuitiva para la creación y publicación de gráficos interactivos, mapas y tablas.
+    - Está dirigida a periodistas y permite crear tableros que contienen múltiples representaciones gráficas de datos dentro de la misma visualización.
 
 2. CartoDB:
-    ◦ Es una aplicación en la nube que permite almacenar y visualizar datos en la web mediante mapas interactivos.
-    ◦ Opera bajo la modalidad freemium y es utilizada por entidades importantes como la ONU, NASA, The Guardian y The Wall Street Journal.
+    - Es una aplicación en la nube que permite almacenar y visualizar datos en la web mediante mapas interactivos.
+    - Opera bajo la modalidad freemium y es utilizada por entidades importantes como la ONU, NASA, The Guardian y The Wall Street Journal.
 
 Formato de Salida:
-Para los proyectos de producción propia, las visualizaciones dinámicas se publican normalmente en la web como un archivo HTML que llama a otros archivos para el estilo (CSS) y la funcionalidad (JavaScript). Cuando se usan herramientas predefinidas, el resultado se incrusta mediante un elemento HTML denominado iframe.
+- Para los proyectos de producción propia, las visualizaciones dinámicas se publican normalmente en la web como un archivo HTML que llama a otros archivos para el estilo (CSS) y la funcionalidad (JavaScript). 
+- Cuando se usan herramientas predefinidas, el resultado se incrusta mediante un elemento HTML denominado iframe.
+- La disponibilidad de estas herramientas subraya que la visualización de datos, que consiste en transformar datos en conocimiento semántico, está cada vez más al alcance de cualquier profesional. 
 
-La disponibilidad de estas herramientas subraya que la visualización de datos, que consiste en transformar datos en conocimiento semántico, está cada vez más al alcance de cualquier profesional. 
+# Tema 11. Representación gráfica. La relación
+
+
+Toda visualización debe presentar la información de manera clara, limpia, precisa, eficiente y accesible. El diseñador es responsable de que se cumpla el objetivo principal: ayudar a comprender una información e invitar al análisis y la reflexión sobre la misma.
+
+El fracaso en el proceso de visualización, que resulta en falta de eficacia, a menudo está relacionado con la falta de ética.
+
+La Primacía de la Funcionalidad sobre la Estética
+
+Un fuerte componente ético radica en seleccionar la forma más adecuada de mostrar los datos para que el lector perciba correctamente la información.
+  - La funcionalidad es el valor primario en toda visualización.
+  - La estética debe entenderse como un valor secundario que complementa y refuerza a la funcionalidad.
+  - Es un error basarse en gustos o modas para elegir una forma gráfica, ya que la eficacia en el trabajo visual debe primar.
+  - Las formas gráficas seleccionadas deben corresponderse con el objetivo final de la visualización.
+
+2. Lo que el Periodista Visual debe Evitar (Ejemplos de Falta de Ética)
+El profesional debe ser respetuoso con los datos y evitar formas gráficas que sean inútiles o que manipulen la información, ya que no sirven para comunicar eficazmente.
+
+1. Manipulación y Uso Erróneo de Datos: Es crucial utilizar datos precisos y verificables y trabajarlos con eficiencia para conseguir historias veraces. La falta de veracidad puede deberse a datos incorrectos o a un uso erróneo de los mismos.
+    - Un ejemplo común de manipulación es el uso de cifras de la OJD (Oficina de Justificación de la Difusión), donde la representación visual de las distancias entre valores en el gráfico no se corresponde con la diferencia cuantitativa real, lo que resulta en una visualización manipulada.
+
+2. Representaciones Gráficas Ineficaces: Algunas formas gráficas son poco éticas porque dificultan la comprensión.
+    - Los gráficos de tarta (tartas) a menudo no son la mejor opción, especialmente cuando hay más de cuatro o cinco particiones, siendo un simple gráfico de barras más eficiente para la comparación.
+    - La utilización de círculos o áreas para expresar un valor puede ser muy ilustrativa, pero es ineficaz, ya que es muy difícil para el ojo humano calcular con precisión la relación de las áreas.
+    - Errores de Escala (Trucaje): Las cadenas de televisión, por ejemplo, son dadas a la manipulación de datos. Esto incluye truncar la escala de un gráfico, lo que puede dar lugar a un descenso o aumento percibido más acusado del real. Un profesional debe evitar trucar la escala y, como regla general, comenzar la escala en 0.
+    - Prioridad Estética Excesiva: Si se sacrifica la ubicación geográfica real de elementos (como estaciones de metro) por una visualización más estética pero menos legible, puede ser imposible para el usuario realizar la tarea para la que fue creado (ej. determinar el trayecto más corto).
+
+3. Buenas Prácticas Clave
+
+Para una visualización eficaz de la información, se recomienda seguir las siguientes pautas:
+- Datos y Fuentes: Utilizar datos precisos y verificables y citar siempre la fuente de los mismos.
+- Representación: Elegir la representación gráfica más adecuada al objetivo, sin basarse en su valor estético o impacto visual.
+- Escalas: No trucar la escala; como regla general, comenzar la escala en 0.
+- Contexto: Mostrar toda la información relevante posible para contextualizar los datos.
+- Simplicidad: Prescindir de cualquier elemento gráfico que no cumpla función alguna; la visualización debe ser simple.
+- Texto: No descuidar las explicaciones textuales, ya que el texto también es información y ayuda a contextualizar y comprender el gráfico.
+

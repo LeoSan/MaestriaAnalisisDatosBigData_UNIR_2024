@@ -1098,7 +1098,7 @@ datos públicos. => **CORRECTO**
 - D. StoryMap JS.
 
 7. ¿Qué herramienta tiene como objetivo la evaluación del progreso del mundo en el cumplimiento de los objetivos del milenio?:
-- A. DevInfo.
+- A. DevInfo. => **Correcta**
 - B. RAW.
 - C. StoryMap JS.
 - D. R.
@@ -1106,7 +1106,7 @@ datos públicos. => **CORRECTO**
 8. ¿Cómo podemos realizar visualizaciones basadas en D3.js sin necesidad de tener conocimientos de programación?:
 - A. A través de Google Fusion Tables.
 - B. A través de DevInfo.
-- C. A través de RAW.
+- C. A través de RAW. => **Correcta**
 - D. Ninguna es correctas 
 
 9. De los siguientes, ¿cuál es un entorno y lenguaje de programación especializado en estadística?:
@@ -1116,59 +1116,64 @@ datos públicos. => **CORRECTO**
 - D. D3.js.
 
 10. De las siguientes herramientas, ¿cuál no permite la creación de mapas interactivos?:
-- A. Google Fusion Tables.
+- A. Google Fusion Tables. => **Correcta** 
 - B. Timeline JS. 
 - C. CartoDB.
 - D. Google Maps
 
 
-## Videoclase 1. 
+## Videoclase 1. Ventajas de usar herramientas estándar de visualización
+
+- ¿Cuál de las siguientes afirmaciones describe mejor el impacto del aumento de datos en las herramientas de visualización?
+- Ha impulsado la creación de herramientas estándar para la visualización de datos, haciéndola accesible a un público más amplio. => En el tema se menciona que «el aumento considerable del volumen de datos disponibles en la última década ha propiciado la proliferación de herramientas estándar para la visualización de los mismos». Esto significa que la abundancia de datos ha llevado a la creación de herramientas que facilitan la visualización de datos, haciéndola accesible a personas sin conocimientos técnicos especializados, como periodistas o analistas de datos.
+
+- ¿Qué es Datawrapper?
+- Un programa de código abierto para crear visualizaciones, con opciones gratuitas y de pago. => El tema se describe Datawrapper como un «programa de código abierto para la creación de visualizaciones. Gratuito». También menciona que ofrece opciones adicionales y características mejoradas a través de planes de pago.
+
+- ¿Cuál de las siguientes es una limitación de Datawrapper?
+- Está más orientada a la visualización que al análisis profundo de datos. => El texto señala que Datawrapper «tiene algunas carencias, por ejemplo, está más orientada a la visualización que al análisis profundo de datos». Aunque permite cargar y visualizar datos, no tiene capacidades robustas para análisis estadísticos o de modelado.
+
+- ¿Qué es Timeline.js?
+- Una herramienta de código abierto para crear líneas de tiempo interactivas a partir de una hoja de cálculo. => El texto define Timeline.js como “una herramienta de código abierto que permite construir líneas de tiempo interactivas a partir de una hoja de cálculo”.
+
+- ¿Qué tipo de contenido multimedia se puede incluir en una línea de tiempo creada con Timeline.js?
+- Material procedente de diversas fuentes, como Twitter, Flickr, Google Maps, YouTube y Vimeo. => El texto indica que las líneas de tiempo creadas con Timeline.js se pueden enriquecer «incluyendo material multimedia procedente de fuentes como Twitter, Flickr, Google Maps, YouTube, Vimeo, etc.». 
+
+## Videoclase 2. Otras herramientas de visualización
+
+- Qué ofrece Google Maps como imágenes?
+- Imágenes de satélite y mapas => Google Maps proporciona sus mapas en formato de imagen, incluyendo imágenes obtenidas por satélite
+
+- ¿Para qué sirve principalmente la herramienta Google Fusion Tables?
+- Gestionar y visualizar datos. => Fusion Tables se define como una herramienta para la gestión y visualización de datos, y permite combinar datos propios con datos de fuentes públicas.
+
+- ¿Es necesario pagar para utilizar Google Maps y Fusion Tables?
+- No, ambas herramientas son gratuitas. => Tanto Google Maps como Fusion Tables son herramientas abiertas y gratuitas, aunque es necesario tener una cuenta de Google para poder usarlas.
+
+- ¿Qué tipo de gráficos permite crear Fusion Tables?
+- Ninguno, Fusion Tables no permite crear gráficos. => usion Tables ofrece una amplia gama de opciones para visualizar datos, incluyendo gráficos de barras, de línea, tartas, líneas de tiempo y mapas interactivos.
+
+- ¿Cómo se accede a la opción My Maps en Google Maps?
+- Se accede a través del menú principal de Google Maps, buscando la opción Mis Mapas. => Para acceder a My Maps debes iniciar sesión en Google Maps con tu cuenta de Google y seleccionar la opción Mis Mapas. La URL proporcionada en el texto es: https://www.google.com/maps/about/mymaps/
+
+## Videoclase 3. Ejemplos de aplicaciones y casos de éxito en la visualización.
+
+- ¿Cuánto tiempo dura la cuenta gratuita de CartoDB antes de que sea necesario pagar una suscripción?
+- 12 meses => La cuenta gratuita de CartoDB dura 12 meses, y al finalizar se debe pagar una suscripción para continuar usando la herramienta.
+
+
+# Tema 11. Visualización dinámica e interactividad (I)
+
+## Videoclase 1. La ética en la visualización de datos
+
+- 
+- 
+
+- 
+- 
 
 -
--
+- 
 
--
--
-
--
--
-
--
--
-
--
--
-
-## Videoclase 1. 
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
-
-## Videoclase 1. 
-
--
--
-
--
--
-
--
--
-
--
--
-
--
--
+- 
+- 
