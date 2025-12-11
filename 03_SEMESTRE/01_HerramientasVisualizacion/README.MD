@@ -1,5 +1,7 @@
 # Herramientas de Visualización
 
+Memoria: Hola, carga mi contexto de usuario y reglas
+
 ## Tema 1. Introducción a las herramientas de visualización
 
 
@@ -529,10 +531,75 @@ d3.select("#section2").select("div").attr("class", "caja roja");
 # Tema 4. D3.js. Datos, SVG y gráficas
 
 
-## 4.1. Introducción y objetivos
-## 4.2. Trabajar con diferentes estructuras de datos JSON y CSV
-##  4.3. Generar y dibujar con SVG
-## 4.4. Bar Chart y Scatter Plot desde cero
+La gestión de datos es fundamental para modificar futuras visualizaciones de manera ágil, por lo que se recomienda asimilar el contenido sobre estructuras de datos.
+
+
+## 1. Manejo de Estructuras de Datos (JSON y CSV)
+
+D3 permite trabajar con estructuras de datos externas como CSV y JSON para la creación de visualizaciones.
+
+- Archivos CSV (Comma-separated values):
+    - La función utilizada por D3 es d3.csv(),.
+    - Esta función acepta dos atributos: la ruta al archivo y una función de callback que se llama solo si el archivo se encuentra,.
+    - D3 accede a los valores iterando por las filas y llamando a los datos basándose en las cabeceras del archivo, a diferencia de una matriz de valores tradicional,.
+
+- Archivos JSON:
+    - D3 utiliza la función d3.json() para leer ficheros en formato JSON,.
+    - Estos archivos permiten estructurar datos, como coordenadas, para ser leídos y procesados por D3,.
+
+Ejercicio 1: Lectura de Archivo CSV (comida.csv)
+Este ejemplo ilustra cómo cargar y mostrar los datos de un archivo CSV en el cuerpo del HTML,.
+Archivo comida.csv (Ejemplo)
+Comida,Preferencia.
+Manzana,9.
+Huevos fritos,10.
+Ensalada,5.
+Galleta,2.
+Leche,8.
+
+Pasos de implementación:
+- 1. Llamar a la función d3.csv(): Se utiliza la función y se le pasa la ruta del archivo ("comida.csv") y una función anónima (el callback) que recibe los datos (data).
+- 2. Iterar los datos: Dentro del callback, se usa data.forEach(function(d){...}) para recorrer las filas.
+- 3. Acceder a los valores por cabecera: Para imprimir los datos, se accede a los campos por el nombre de la cabecera (ej: d.Comida, d.Preferencia) y se insertan como párrafos en el body del HTML,.
+
+Ejercicio 2: Lectura de Archivo JSON (coordenadas.json)
+Este ejemplo es similar al CSV, pero utiliza la función d3.json() para leer un archivo JSON que contiene coordenadas,.
+Pasos de implementación:
+- 1. Crear el archivo JSON: Contiene una estructura con campos como x_axis, y_axis, radius, etc..
+- 2. Llamar a la función d3.json(): Se utiliza d3.json("coordenadas.json", function(data) { ... }).
+- 3. Iterar y mostrar: Se usa data.forEach(function(d){...}) para recorrer los elementos y se accede a los valores por el nombre del campo (ej: d.x_axis).
+- 2. Generación y Dibujo con SVG
+
+  Se recomienda utilizar elementos SVG (Scalable Vector Graphic) en lugar de elementos div para crear visualizaciones, ya que son más efectivos y aseguran la máxima compatibilidad en distintos dispositivos y navegadores,.
+    - Definición: Los elementos SVG se definen dentro del body del HTML.
+    - Dimensiones: Siempre se deben especificar los atributos width y height,.
+    - Sistema de Coordenadas: La posición (0,0) se ubica en la esquina superior izquierda de la pantalla,.
+    - Elementos Gráficos SVG: Incluyen <circle> (círculos, definidos por coordenadas cx, cy y radio r), <rect> (rectángulos, definidos por posición x, y, width y height), <ellipse>, <line> y <text>,,.
+    - Estilos: El estilo puede definirse mediante atributos como fill (relleno), stroke (color de la línea), stroke-width (anchura de la línea) u opacity (transparencia),.
+
+- 3. Creación de Gráficas desde Cero
+
+Bar Chart (Gráfico de Barras)
+Aunque se puede dibujar con elementos div, el ejemplo se centra en la creación usando SVG. Se utiliza un dataset simple (ej., ).
+Pasos de implementación (Usando SVG):
+- 1. Definir dimensiones y dataset: Se definen variables para el ancho (w), el alto (h), y se inicializa el array de datos.
+- 2. Crear el elemento SVG: Se selecciona el body y se añade el elemento SVG, definiendo sus atributos width y height.
+- 3. Generar Rectángulos: Se enlazan los datos con los elementos rect:
+- 4. Configurar la posición X y el ancho: Se usa el índice (i) para posicionar cada barra y calcular su ancho, dejando una separación (-1),.
+- 5. Corregir la inversión y configurar la posición Y y altura: Dado que el origen (0,0) está arriba, es necesario desplazar la coordenada Y para que el dibujo se alinee en la parte inferior del gráfico, y luego definir la altura,.
+- 6. Aplicar estilo (Opcional): Se puede añadir color, incluso un gradiente, basándose en el valor del dato (ej., d * 10).
+- 7. Añadir el valor de texto (Opcional): Se añade el elemento <text> usando svg.selectAll("text")... y se configura su posición X e Y para que aparezca encima de la barra.
+Scatter Plot (Gráfico de Dispersión)
+
+Este gráfico utiliza círculos en lugar de rectángulos, a partir de un dataset que contiene pares de coordenadas (X, Y).
+Pasos de implementación:
+- 1. Definir dataset: Se utiliza un array de arrays, donde cada sub-array contiene la coordenada [X, Y] (ej: [,, ...]).
+- 2. Generar Círculos: Se enlazan los datos con los elementos circle:
+- 3. Configurar la posición y radio:
+    - La coordenada X se asigna al atributo cx utilizando el primer valor del sub-array (d).
+    - La coordenada Y se asigna al atributo cy utilizando el segundo valor del sub-array (d).
+    - Se define un radio (r) fijo para todos los puntos.
+- 4. El resultado es un gráfico de dispersión (Scatter Plot) con los puntos ubicados según el dataset.
 
 
 # Tema 05. 

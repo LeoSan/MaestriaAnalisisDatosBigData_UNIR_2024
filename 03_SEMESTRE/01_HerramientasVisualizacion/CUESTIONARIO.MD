@@ -414,8 +414,97 @@ d3.selectAll("div")
 
 # Tema 4. D3.js. Datos, SVG y gráficas
 
+1. ¿Podemos utilizar clases CSS en SVG?
+- A. Sí. => **CORRECTO**
+- B. No, no son compatibles con HTML.
+- C. No, no son necesarias.
+- D. No, porque D3 no incorpora clases CSS.
+
+2. Si queremos dibujar una elipse, ¿debemos utilizar el SVG elemento de e indicar que el radio es variante?
+- A. Sí.
+- B. No, requiere el elemento y cuatro parámetros: cx, cy, rx, ry. => **CORRECTO**
+- C. No, requiere el elemento y dos parámetros: cx, cy.
+- D. No, requiere el elemento y tres parámetros: cx, cy, r.
+
+3. Para dibujar una línea debemos definir los puntos de partida y de fin, y qué tipo de línea queremos que les una:
+- A. Sí. => **CORRECTO**
+- B. No.
+- C. No porque depende de si queremos líneas continuas o a trazos.
+- D. No existen líneas en D3.
+
+4. Si ponemos el valor de la altura en negativo cuando vamos a dibujar un rectángulo, ¿el rectángulo se dibujará hacia arriba?
+
+- A. Sí, porque valores positivos apuntan hacia abajo y negativos hacia arriba.
+- B. No. => **CORRECTO**
+- C. Sí, porque las coordenadas empiezan en 0,0.
+- D. Sí, porque las coordenadas tienen su origen en el margen superior izquierda
 
 
+5. Cuando dibujamos con SVG, ¿qué diferencia hay entre cx y x?
+- A. cx indica el centro del círculo y x indica el comienzo a dibujar, por ejemplo, en un rectángulo la esquina superior izquierda. => **CORRECTO**
+- B. cx indica el comienzo a dibujar, por ejemplo, en un rectángulo la esquina superior izquierda, y x indica el centro del círculo.
+- C. Ninguna.
+- D. No existen el parámetro x
+
+6. ¿Qué función hemos de utilizar para cargar un archivo CSV?
+- d3.csv("nombre_archivo.csv", function(data) { ... })
+
+7. ¿Qué función hemos de utilizar para cargar un archivo JSON?
+- d3.json("nombre_archivo.json", function(data) { ... })
+
+8. ¿Qué es lo que hace este código?
+var dataset = [];
+for (var i = 0; i < 50; i++) {
+var newNumber = Math.random() * 30;
+dataset.push(newNumber);
+}
+- A. Nos genera un array de 50 números del 0 al 30.
+- B. Nos genera un array de 30 números del 0 al 50.
+- C. Dibuja 50 números al azar. => **CORRECTO**
+- D. Dibuja 30 números del 0 al 50
+
+
+9. ¿Qué nos dibujará el siguiente código?
+var dataset = [ 5, 10, 15, 20, 25 ];
+svg.selectAll("rect")
+.data(dataset)
+.enter()
+.append("rect")
+.attr("x", function(d, i) {
+return i * (w / dataset.length);
+})
+.attr("y", function(d) {
+return h - d;
+})
+.attr("width", w / dataset.length - 1)
+.attr("height", function(d) {
+return d;
+});
+- A. Cinco barras con color gradiente azul con el texto encima de las barras.
+- B. Diez barras con color gradiente azul con el texto encima de las barras.
+- C. Cinco barras con la dirección invertida.
+- D. Ninguna de las anteriores
+
+10. ¿Qué nos dibujará el siguiente código?
+var dataset = [
+[5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
+[410, 12], [475, 44], [25, 67], [85, 21], [220, 88]
+]
+svg.selectAll("circle")
+.data(dataset)
+.enter()
+.append("circle")
+.attr("cx", function(d) {
+return d[0];
+})
+.attr("cy", function(d) {
+return d[1];
+})
+.attr("r", 5);
+- A. Diez círculos con radio 5 en posición random en nuestro SVG. => **CORRECTO**
+- B. Nueve círculos con radio 5 en posición definida por el dataset.
+- C. Una gráfica Scatter Plot con diez barras definidas por el dataset.
+- D. Ninguna de las anteriores
 
 
 ## Videoclase 1. 
