@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 007 - Gráficos de Barras con D3.js</title>
+    <!-- Using D3.js v7 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Google Fonts for premium look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-1: #38bdf8;
+            --accent-2: #818cf8;
+            --gradient-1: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+            --gradient-2: linear-gradient(135deg, #f472b6 0%, #db2777 100%);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            background: linear-gradient(to right, #60a5fa, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .chart-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .chart-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .chart-header {
+            margin-bottom: 2rem;
+        }
+
+        .chart-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 0.5rem 0;
+        }
+
+        .chart-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* D3 Chart Specific Styles */
+        .bar {
+            transition: all 0.3s ease;
+            rx: 6;
+            /* Rounded corners for bars */
+        }
+
+        .bar:hover {
+            filter: brightness(1.2);
+            cursor: pointer;
+        }
+
+        .axis-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            fill: var(--text-secondary);
+        }
+
+        .axis-domain,
+        .axis-line {
+            stroke: var(--text-secondary);
+            opacity: 0.3;
+        }
+
+        .grid-line {
+            stroke: var(--text-secondary);
+            stroke-opacity: 0.1;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(15, 23, 42, 0.9);
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 8px;
+            pointer-events: none;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Práctica D3.js - Gráficos de Barras</h1>
+            <p style="text-align: center; color: var(--text-secondary);">Visualización de datos avanzados 2025</p>
+        </header>
+
+        <!-- Primer Ejemplo: Lenguajes de Programación -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <h2 class="chart-title">Lenguajes de Programación Más Usados (2025)</h2>
+                <p class="chart-desc">Proyección de popularidad basada en tendencias de desarrollo actuales.</p>
+            </div>
+            <div id="chart1"></div>
+        </div>
+
+        <!-- Segundo Ejemplo: Modelos de IA -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <h2 class="chart-title">Modelos de Inteligencia Artificial Predominantes</h2>
+                <p class="chart-desc">Distribución de uso por tipo de arquitectura en la industria.</p>
+            </div>
+            <div id="chart2"></div>
+        </div>
+
+        <!-- Tercer Ejemplo: Lenguajes (Vertical) -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <h2 class="chart-title">Lenguajes de Programación (Versión Vertical)</h2>
+                <p class="chart-desc">Mismos datos que el gráfico 1, pero representados en columnas verticales.</p>
+            </div>
+            <div id="chart3"></div>
+        </div>
+    </div>
+
+    <!-- Tooltip Container -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <script>
+        // Configuración general
+        const margin = { top: 20, right: 30, bottom: 40, left: 120 }; // Margen izquierdo más ancho para etiquetas largas
+        const width = 800 - margin.left - margin.right;
+        const height = 400 - margin.top - margin.bottom;
+
+        // Función reutilizable para dibujar tooltips
+        const tooltip = d3.select("#tooltip");
+        const showTooltip = (event, content) => {
+            tooltip.transition().duration(200).style("opacity", 1);
+            tooltip.html(content)
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        };
+        const moveTooltip = (event) => {
+            tooltip.style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        };
+        const hideTooltip = () => {
+            tooltip.transition().duration(200).style("opacity", 0);
+        };
+
+        // ---------------------------------------------------------
+        // EJEMPLO 1: Lenguajes de Programación (Gráfico Vertical)
+        // ---------------------------------------------------------
+        const dataLangs = [
+            { lang: "Python", value: 95 },
+            { lang: "JavaScript", value: 88 },
+            { lang: "Rust", value: 72 },
+            { lang: "TypeScript", value: 80 },
+            { lang: "Go", value: 65 },
+            { lang: "Mojo", value: 45 },
+            { lang: "Java", value: 60 }
+        ].sort((a, b) => b.value - a.value); // Ordenar de mayor a menor
+
+        const svg1 = d3.select("#chart1")
+            .append("svg")
+            .attr("width", "100%")
+            .attr("height", height + margin.top + margin.bottom)
+            .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Ejes X e Y
+        const x1 = d3.scaleLinear()
+            .domain([0, 100])
+            .range([0, width]);
+
+        const y1 = d3.scaleBand()
+            // 1. ESCALAS (d3.scale...): "El cerebro matemático"
+            // Traducen datos reales a píxeles.
+            // domain: Qué entra (nombres de lenguajes)
+            // range: Qué sale (píxeles de 0 a height)
+            .domain(dataLangs.map(d => d.lang))
+            .range([0, height])
+            .padding(0.3);
+
+        // Dibujar Ejes
+        svg1.append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(x1).ticks(5))
+            .attr("class", "axis-text")
+            .selectAll("path").attr("class", "axis-domain");
+
+        svg1.append("g")
+            .call(d3.axisLeft(y1))
+            .attr("class", "axis-text")
+            .selectAll("path").attr("class", "axis-domain");
+
+        // Agregar Barras con degradado
+        // 5. DEFINICIONES (defs):
+        // En SVG, cosas complejas como gradientes se "definen" primero invisiblemente
+        // y luego se "referencian" por ID (url(#grad1)).
+        const defs = svg1.append("defs");
+        const gradient1 = defs.append("linearGradient")
+            .attr("id", "grad1")
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "100%")
+            .attr("y2", "0%");
+        gradient1.append("stop").attr("offset", "0%").style("stop-color", "#38bdf8");
+        gradient1.append("stop").attr("offset", "100%").style("stop-color", "#2563eb");
+
+        // 2. DATA JOIN (selectAll + data + enter): "El Corazón de D3"
+        // selectAll(".bar"): Selecciona cosas que NO existen aún (placeholder).
+        // data(dataLangs): Carga los datos.
+        // enter(): Compara datos vs elementos. "Tengo 7 datos, 0 barras -> Faltan 7".
+        svg1.selectAll(".bar")
+            .data(dataLangs)
+            .enter()
+            .append("rect")
+            .attr("class", "bar")
+            .attr("y", d => y1(d.lang))
+            .attr("height", y1.bandwidth())
+            .attr("x", 0)
+            .attr("width", 0) // Animación inicial: ancho 0
+            .style("fill", "url(#grad1)")
+
+            // 4. INTERACTIVIDAD (.on):
+            // event: info del ratón. d: el dato de esta barra específica.
+            .on("mouseover", (event, d) => showTooltip(event, `<strong>${d.lang}</strong>: ${d.value}% de uso`))
+            .on("mousemove", moveTooltip)
+            .on("mouseleave", hideTooltip)
+
+            // 3. TRANSICIONES (transition): "La Animación"
+            // Todo lo que pongas después de .transition() se animará desde el estado actual
+            // hasta el estado final que definas.
+            .attr("width", 0) // Estado INICIAL (invisible)
+            .transition()
+            .duration(1000)
+            .attr("width", d => x1(d.value)); // Estado FINAL (calculado por la escala)
+
+        // Etiquetas de valor dentro de las barras (opcional, si hay espacio)
+        svg1.selectAll(".label")
+            .data(dataLangs)
+            .enter()
+            .append("text")
+            .attr("fill", "white")
+            .attr("x", d => x1(d.value) - 10)
+            .attr("y", d => y1(d.lang) + y1.bandwidth() / 2)
+            .attr("dy", ".35em")
+            .attr("text-anchor", "end")
+            .style("font-size", "12px")
+            .style("font-weight", "bold")
+            .text(d => d.value + "%")
+            .style("opacity", 0)
+            .transition()
+            .delay(500)
+            .duration(500)
+            .style("opacity", 1);
+
+
+
+
+
+
+
+
+
+        // ---------------------------------------------------------
+        // EJEMPLO 2: Tipos de Modelos de IA (Gráfico Vertical de Columnas)
+        // ---------------------------------------------------------
+        const dataAI = [
+            { model: "LLMs (Texto)", count: 1200 },
+            { model: "Difusión (Imagen)", count: 850 },
+            { model: "Multimodal", count: 600 },
+            { model: "SLMs (Pequeños)", count: 400 },
+            { model: "Audio/Voz", count: 300 }
+        ];
+
+        const svg2 = d3.select("#chart2")
+            .append("svg")
+            .attr("width", "100%")
+            .attr("height", height + margin.top + margin.bottom)
+            .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Escalas - Invertimos para gráfico de columnas
+        const x2 = d3.scaleBand()
+            .domain(dataAI.map(d => d.model))
+            .range([0, width])
+            .padding(0.4);
+
+        const y2 = d3.scaleLinear()
+            .domain([0, 1300])
+            .range([height, 0]);
+
+        // Ejes
+        svg2.append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(x2))
+            .attr("class", "axis-text")
+            .selectAll("path").remove(); // Quitar línea fea del eje x
+
+        svg2.append("g")
+            .call(d3.axisLeft(y2).ticks(5))
+            .attr("class", "axis-text")
+            .selectAll("path").remove(); // Quitar línea del eje y, dejar solo ticks si se quiere, o grid
+
+        // Grid lines opcionales
+        svg2.append("g")
+            .attr("class", "grid-line")
+            .call(d3.axisLeft(y2)
+                .tickSize(-width)
+                .tickFormat("")
+            )
+            .selectAll("path").remove();
+
+        // Estilo del segundo gráfico (Rosa/Magenta)
+        const gradient2 = defs.append("linearGradient")
+            .attr("id", "grad2")
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "0%") // Vertical gradient
+            .attr("y2", "100%");
+        gradient2.append("stop").attr("offset", "0%").style("stop-color", "#f472b6");
+        gradient2.append("stop").attr("offset", "100%").style("stop-color", "#db2777");
+
+        svg2.selectAll(".bar-model")
+            .data(dataAI)
+            .enter()
+            .append("rect")
+            .attr("class", "bar")
+            .attr("x", d => x2(d.model))
+            .attr("width", x2.bandwidth())
+            .attr("y", height) // Empieza abajo
+            .attr("height", 0) // Altura 0
+            .style("fill", "url(#grad2)")
+            .on("mouseover", (event, d) => showTooltip(event, `<strong>${d.model}</strong><br/>Uso estimado: ${d.count}`))
+            .on("mousemove", moveTooltip)
+            .on("mouseleave", hideTooltip)
+            .transition()
+            .duration(1200)
+            .delay((d, i) => i * 100) // Efecto cascada
+            .attr("y", d => y2(d.count))
+            .attr("height", d => height - y2(d.count));
+
+        // ---------------------------------------------------------
+        // EJEMPLO 3: Lenguajes de Programación (Gráfico Vertical/Columnas)
+        // ---------------------------------------------------------
+        // Usamos los mismos datos: dataLangs
+
+        const svg3 = d3.select("#chart3")
+            .append("svg")
+            .attr("width", "100%")
+            .attr("height", height + margin.top + margin.bottom)
+            .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Escalas (Invertidas respecto al Gráfico 1)
+        const x3 = d3.scaleBand()
+            .domain(dataLangs.map(d => d.lang)) // Nombres en eje X
+            .range([0, width])
+            .padding(0.4);
+
+        const y3 = d3.scaleLinear()
+            .domain([0, 100]) // Porcentaje en eje Y
+            .range([height, 0]);
+
+        // Ejes
+        svg3.append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(x3))
+            .attr("class", "axis-text")
+            .selectAll("path").remove();
+
+        svg3.append("g")
+            .call(d3.axisLeft(y3))
+            .attr("class", "axis-text")
+            .selectAll("path").remove();
+
+        // Grid lines horizontal
+        svg3.append("g")
+            .attr("class", "grid-line")
+            .call(d3.axisLeft(y3)
+                .tickSize(-width)
+                .tickFormat("")
+            )
+            .selectAll("path").remove();
+
+        // Creamos un nuevo gradiente verde para distinguir
+        const gradient3 = defs.append("linearGradient")
+            .attr("id", "grad3")
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "0%")
+            .attr("y2", "100%");
+        gradient3.append("stop").attr("offset", "0%").style("stop-color", "#4ade80"); // Green-400
+        gradient3.append("stop").attr("offset", "100%").style("stop-color", "#16a34a"); // Green-600
+
+        // Data Join y Animación
+        svg3.selectAll(".bar-vert")
+            .data(dataLangs)
+            .enter()
+            .append("rect")
+            .attr("class", "bar")
+            .attr("x", d => x3(d.lang))
+            .attr("width", x3.bandwidth())
+            .attr("y", height)
+            .attr("height", 0)
+            .style("fill", "url(#grad3)")
+            .on("mouseover", (event, d) => showTooltip(event, `<strong>${d.lang}</strong><br/>${d.value}% de uso`))
+            .on("mousemove", moveTooltip)
+            .on("mouseleave", hideTooltip)
+            .transition()
+            .duration(1200)
+            .delay((d, i) => i * 100)
+            .attr("y", d => y3(d.value))
+            .attr("height", d => height - y3(d.value));
+
+    </script>
+</body>
+
+</html>
