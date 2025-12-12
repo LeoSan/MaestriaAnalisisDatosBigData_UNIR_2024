@@ -602,6 +602,10 @@ Pasos de implementación:
 - 4. El resultado es un gráfico de dispersión (Scatter Plot) con los puntos ubicados según el dataset.
 
 
+<div align="left">
+  <img src="image-3.png" alt="Global Certificate" width="50%" />
+</div>
+
 # Tema 05. 
 
 

@@ -483,7 +483,7 @@ return d;
 - A. Cinco barras con color gradiente azul con el texto encima de las barras.
 - B. Diez barras con color gradiente azul con el texto encima de las barras.
 - C. Cinco barras con la dirección invertida.
-- D. Ninguna de las anteriores
+- D. Ninguna de las anteriores => **CORRECTO**
 
 10. ¿Qué nos dibujará el siguiente código?
 var dataset = [
@@ -507,56 +507,56 @@ return d[1];
 - D. Ninguna de las anteriores
 
 
-## Videoclase 1. 
+## Videoclase 1. Manejo de estructuras de datos en D3.js 
 
--
--
+- ¿Cuál de las siguientes afirmaciones sobre SVG es incorrecta en el contexto de D3.js?
+- Los elementos SVG son estáticos y no pueden ser manipulados con JavaScript.
 
--
--
+- Considerando el código CSV proporcionado, ¿qué función cumple la línea d3.select(“body”).append(“p”).text(d.Comida + ” ” + d.Preferencia);?
+-  Crea un elemento HTML para cada fila del CSV y muestra el nombre de la comida y su preferencia.
 
--
--
+- ¿Cuál es la principal diferencia entre trabajar con datos en formato CSV y JSON en D3.js?
+- La estructura de los datos es diferente, CSV utiliza comas para separar valores y JSON utiliza llaves y corchetes.
 
--
--
+- ¿Cuál de las siguientes funciones de D3.js se utiliza típicamente para crear un gráfico de barras?
+- d3.rect().
 
--
--
+- Imagina que quieres crear un gráfico de dispersión donde cada punto represente una ciudad y su temperatura promedio. ¿Qué propiedades de los objetos JSON serían más relevantes para esta visualización?
+- Latitude, longitude y temperature.
 
-## Videoclase 1. 
+## Videoclase 2. Creación de gráficos vectoriales escalables
 
--
--
+- ¿Cuál de las siguientes afirmaciones sobre SVG es correcta?
+- SVG es un formato vectorial que permite crear gráficos escalables y altamente personalizables. => SVG es un formato vectorial, lo que significa que los gráficos pueden ser escalados sin pérdida de calidad. Además, ofrece una gran flexibilidad para crear gráficos interactivos y personalizados.
 
--
--
+- ¿Qué representan las coordenadas cx y cy en un elemento <circle> de SVG?
+- Las coordenadas del centro del círculo. => Cx y cy especifican las coordenadas X e Y del centro del círculo, respectivamente.
 
--
--
+- ¿Cuál es la principal ventaja de utilizar SVG sobre otros formatos de imagen para crear gráficos web?
+- Todas las anteriores.
 
--
--
+- ¿Cómo se puede lograr un efecto de superposición entre diferentes elementos SVG?
+- Cambiando el orden en que se declaran los elementos.
 
--
--
+- ¿Cuál es la función de la propiedad stroke-width en un elemento SVG?
+- Define el ancho del borde del elemento => Stroke-width especifica el ancho de la línea que rodea el elemento, es decir, el grosor del borde.
 
-## Videoclase 1. 
+## Videoclase 3. Construcción de gráficas interactivas con D3.js
 
--
--
+- ¿Qué propiedad en CSS asegura que las barras en un gráfico de barras creado con div se alineen horizontalmente?
+- display: inline-block
 
--
--
+- ¿Cuál es el propósito principal de la función .style(“height”, function(d) { return d + “px”; }) en un gráfico de barras creado con D3.js?
+- Ajustar dinámicamente la altura de las barras según los datos.
 
--
--
+- Al crear un gráfico de barras con SVG, ¿qué cambio en el atributo y asegura que las barras se dibujen desde el fondo hacia arriba?
+- y: h - d.
 
--
--
+- ¿Qué propiedad define la posición horizontal de cada barra en un gráfico de barras utilizando SVG?
+- .attr(“x”, function(d, i) { return i * (w / dataset.length); }).
 
--
--
+- En un Scatter Plot, ¿qué atributo determina el radio de los círculos que representan los puntos?
+- r.
 
 
 
