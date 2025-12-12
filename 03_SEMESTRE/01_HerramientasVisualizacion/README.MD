@@ -606,10 +606,126 @@ Pasos de implementación:
   <img src="image-3.png" alt="Global Certificate" width="50%" />
 </div>
 
-# Tema 05. 
+# Tema 5. D3.js. Escalando y dibujando ejes de un gráfico
 
 
-# Tema 06. 
+<div align="center">
+  <img src="image-4.png" alt="Global Certificate" width="60%" />
+</div>
+
+> Las escalas son funciones que relacionan un dominio de entrada con
+un rango de salida» (Coch, 2013)
+
+
+## 5.2. Escala no ordinal o logarítmica
+
+Conceptos Clave: Escalas (Scaling)
+Las escalas son definidas como funciones que establecen una relación entre un dominio de entrada y un rango de salida. Para aplicar estas escalas eficazmente, se manejan dos conceptos fundamentales:
+
+1. Dominio de Entrada (Input Domain): Se refiere a los valores que se tienen como entrada, es decir, la fuente o los datos crudos. Estos valores de entrada no pueden ser limitados.
+
+2. Rango de Salida (Output Range): Se refiere a los límites definidos por el usuario para la presentación visual (por ejemplo, las dimensiones en píxeles). Este rango se elige en función del diseño deseado para la visualización.
+
+El proceso de escalar es comparable a la normalización, que busca distribuir los datos entre los valores de 0 a 1 para que puedan operar en la misma escala.
+
+**Tipos de escalas:**
+- Escalas lineales: transforman datos numéricos de manera proporcional. Son ideales para valores continuos.
+
+- Escalas logarítmicas: utilizadas cuando los datos abarcan varios órdenes de magnitud, como en aplicaciones científicas.
+
+- Escalas ordinales: para datos categóricos, asignan valores discretos a categorías específicas.
+
+
+**Tipos de Escalas en D3.js**
+
+> El tema se concentra principalmente en dos tipos de escalas:
+
+
+
+1. Escalas Lineales
+Son consideradas las escalas más comunes y las más sencillas de comprender .
+    - Creación: Se utilizan mediante la función d3.scale.linear() .
+    - Definición del Dominio: Es posible emplear funciones de ayuda como d3.max() para calcular automáticamente el valor máximo del conjunto de datos (dataset), evitando así tener que definirlo manualmente.
+
+> Aspectos Cruciales y Ejemplos de Implementación:
+    - Orientación del Eje Y (Inversión): En el formato SVG, el punto de origen (0,0) se ubica en la esquina superior izquierda . Para evitar una inversión visual donde los valores más altos de la variable "y" se muestren en la parte inferior del gráfico, la función de escala del eje Y debe ajustarse invirtiendo el rango . Esto se logra con el formato .range([h, 0]) (donde h representa la altura), asegurando la correcta representación visual .
+    - Márgenes: Para evitar que los elementos ubicados en el límite de la visualización se vean cortados, se pueden ajustar los márgenes (marginx, marginy) dentro del rango de salida , .
+
+2. Escalas Ordinales
+
+A diferencia de las escalas lineales, que utilizan una distribución continua, las escalas ordinales distribuyen los datos basados en categorías: 
+
+  - Uso: Se emplean para valores discretos, como categorías de cuestionarios o notas académicas. 
+  - Funciones de Apoyo: Estas escalas soportan funciones como rangeRoundBands(), la cual divide la escala en bandas discretas según la longitud del dominio, lo que simplifica los cálculos matemáticos para la creación de gráficos de barras. 
+
+## 5.3. Ejes
+Para dibujar los ejes utilizando D3.js, es necesario pasar la escala previamente definida al objeto eje .
+- Mecanismo de Creación: Esto se realiza usando, por ejemplo, d3.svg.axis().scale(xScale) .
+- Orientación: La posición del eje se define mediante la función .orient("bottom") .
+- Dibujo Final: El eje se dibuja finalmente utilizando la función .call(xAxis) dentro de un elemento contenedor .
+
+**¿Cómo funcionan los ejes en D3.js?**
+
+D3.js proporciona una API sencilla para crear y personalizar ejes. Básicamente, se sigue este proceso:
+
+- Crear una escala: se define una escala que mapeará los datos a las coordenadas del gráfico.
+- Crear un eje: se crea un objeto de eje, especificando su orientación (superior, inferior, izquierda o derecha) y la escala asociada.
+- Añadir el eje al SVG: se agrega el eje al elemento SVG, definiendo su posición y otros atributos visuales.
+
+
+**¿Por qué son importantes las escalas?**
+
+- Normalización: 	ajustan los datos a un rango específico para una mejor comparación visual.
+- Precisión: 	garantizan que las relaciones entre los datos se representen de manera fiel.
+- Comunicación	facilitan la interpretación de los datos por parte de la audiencia.
+
+
+**¿Por qué las escalas ordinales son ideales para gráficos de barras?**
+
+- Categorías discretas: los gráficos de barras suelen representar datos categóricos, donde cada categoría es independiente y no tiene un orden numérico inherente. Las escalas ordinales son perfectas para mapear estas categorías a posiciones específicas en el eje.
+
+- Espaciado uniforme: las funciones como rangeRoundBands en D3.js aseguran que cada categoría tenga un espacio asignado de manera uniforme, evitando superposiciones y mejorando la legibilidad del gráfico.
+
+- Orden personalizado: puedes definir el orden de las categorías en el eje de acuerdo con tus necesidades, lo que te permite resaltar patrones o tendencias específicas en los datos.
+
+
+
+<div align="center">
+  <img src="image-5.png" alt="Global Certificate" width="80%" />
+</div>
+
+
+# Tema 06. Force Layout, transiciones, movimiento e interacción
+
+## 6.2. Force Layout
+## 6.3. Actualización de gráficos con base en eventos
+## 6.4. Transiciones y movimiento
+## 6.5. Añadiendo interacción a los gráficos
+## 6.6. Exportando el resultado a PDF, Bitmaps y SVG
+
+
+El Tema 6 de la Maestría se titula "Force Layout, transiciones, movimiento e interacción", y su enfoque principal es dotar de movimiento e interacción a las visualizaciones de D3, además de dominar los principios básicos comunes a todas sus gráficas,,,,.
+Los aspectos clave que se abordan en este tema son:
+1. Force Layout
+Se introduce la visualización Force-Directed Graph o Force Layout, que está orientada a representar las relaciones entre entidades mediante un grafo,. Este tipo de gráfica es especialmente útil en el ámbito de las redes sociales para reflejar las conexiones entre diferentes usuarios,.
+• Algoritmo y Componentes: El algoritmo principal se define mediante d3.layout.force(),. Se utiliza para definir tanto los nodos (puntos) como los enlaces (líneas de conexión),,.
+• Ajuste y Adaptación: El algoritmo se ajusta mediante atributos como charge y linkDistance,. La función force.on("tick", function() { ... }) se encarga de adaptar los valores del dataset a los requerimientos del algoritmo,.
+• Interacción Típica: Es común en este tipo de gráficos permitir al usuario arrastrar los nodos por la pantalla con un simple clic,.
+2. Actualización de Gráficos con Base en Eventos e Interacción
+Todas las visualizaciones en D3 tienen eventos que pueden ser gestionados fácilmente con unas pocas líneas de código, una vez que se entienden los conceptos básicos,,. El movimiento es fundamental en las visualizaciones, ya que reflejan ideas y sugieren caminos,.
+• Generación de Eventos: Cualquier elemento en D3.js puede generar eventos, por ejemplo, usando la función .on("click", function(){...}) para crear una interacción al hacer clic,.
+• Actualización Dinámica: Es posible actualizar una gráfica en tiempo real (por ejemplo, con un nuevo dataset) al ocurrir un evento,. Esto implica actualizar los valores de la gráfica y adaptar sus dimensiones y texto al nuevo dataset,,.
+• Interacción con Elementos: Se pueden definir interacciones específicas como mostrar el valor de una barra al hacer clic en ella usando alert(d),, o hacer que las barras cambien de color al pasar el ratón por encima (mouseover) y recuperen su color original al salir (mouseout),,.
+3. Transiciones y Movimiento
+Las transiciones son el movimiento que da dinamismo y vida a los objetos del gráfico,.
+• Implementación: Se implementan con la simple línea de código transition(),,.
+• Control de Duración: Se puede controlar la duración de la animación usando duration(milisegundos),, haciendo que, por ejemplo, una animación dure tres segundos.
+• Comportamiento de la Animación: El comportamiento de la animación, como su aceleración o desaceleración, se puede regular con la función ease() (ejemplo: ease("linear")),,.
+• Retraso: Es posible retrasar el inicio de la animación con la función delay(),.
+4. Exportación de Visualizaciones
+Aunque esta sección no está directamente relacionada con D3.js, el tema aborda la utilidad de exportar el gráfico a diferentes formatos,.
+• Formatos Básicos (Baja Calidad): La captura de pantalla (Print Screen o Command ⌘ + Shift + 3 en MAC) genera archivos Bitmap o PNG de baja calidad, y también se puede imprimir a PDF seleccionando el formato en las opciones de impresión,.
+• Formato Vectorial (Alta Calidad): La opción más interesante es exportar a SVG,. Esto se logra inspeccionando el elemento en el navegador, copiando el código fuente ubicado entre las etiquetas <svg> ... </svg>,, y guardándolo en un archivo con extensión .svg,. Este formato vectorial permite modificar la imagen y escalarla sin pérdida de calidad en programas como Photoshop,.
 
 
 # Tema 07. 

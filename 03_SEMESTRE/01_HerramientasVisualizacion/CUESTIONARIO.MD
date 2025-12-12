@@ -91,58 +91,58 @@ identificando los atributos más importantes de un conjunto de datos).
 ## Videoclase 1. Generalidades
 
 - ¿Cuál de las siguientes opciones es un objetivo principal de las herramientas de visualización de datos?
-- Simplificar la complejidad de los datos y destacar información relevante. => Las herramientas de visualización buscan simplificar datos complejos, resaltando la información más relevante y permitiendo identificar patrones que no serían evidentes de otra manera.
+ - Simplificar la complejidad de los datos y destacar información relevante. => Las herramientas de visualización buscan simplificar datos complejos, resaltando la información más relevante y permitiendo identificar patrones que no serían evidentes de otra manera.
 
 
 - Entre las herramientas de visualización para usuarios no desarrolladores, ¿cuál permite integrar datos tabulares con mapas de forma sencilla?
-- Carto. => Carto es ideal para trabajar con datos tabulares y convertirlos en mapas interactivos, ofreciendo una experiencia intuitiva para usuarios no desarrolladores.
+  - Carto. => Carto es ideal para trabajar con datos tabulares y convertirlos en mapas interactivos, ofreciendo una experiencia intuitiva para usuarios no desarrolladores.
 
 - ¿Qué característica distingue a las herramientas de visualización para usuarios desarrolladores?
-- Altas capacidades de personalización de gráficos. => Las herramientas para desarrolladores permiten un control detallado y una personalización avanzada de las visualizaciones, aunque requieren conocimientos en programación
+  - Altas capacidades de personalización de gráficos. => Las herramientas para desarrolladores permiten un control detallado y una personalización avanzada de las visualizaciones, aunque requieren conocimientos en programación
 
 - ¿Cuál es una característica clave de la analítica aumentada en herramientas ABI según Gartner?
-- Generación automática de insights utilizando inteligencia artificial. => La analítica aumentada utiliza inteligencia artificial para identificar patrones automáticamente, lo que facilita el descubrimiento de insights sin intervención manual.
+  - Generación automática de insights utilizando inteligencia artificial. => La analítica aumentada utiliza inteligencia artificial para identificar patrones automáticamente, lo que facilita el descubrimiento de insights sin intervención manual.
 
 - ¿Cuál de las siguientes librerías utiliza HTML, CSS y JavaScript para crear gráficos avanzados con datos complejos?
-- D3.js. => D3.js es una poderosa librería que utiliza HTML, CSS y JavaScript para crear visualizaciones avanzadas y personalizables, especialmente útiles para gráficos vectoriales en formato SVG.
+  - D3.js. => D3.js es una poderosa librería que utiliza HTML, CSS y JavaScript para crear visualizaciones avanzadas y personalizables, especialmente útiles para gráficos vectoriales en formato SVG.
 
 --- 
 ## Videoclase 2. Herramientas y librerías para la visualización de datos
 
 - Cuál de las siguientes opciones describe correctamente la estructura de un documento HTML básico?
-- <body> contiene el contenido visible, y <head> contiene los metadatos y enlaces externos.
+  - <body> contiene el contenido visible, y <head> contiene los metadatos y enlaces externos.
 
 - ¿Cuál de las siguientes opciones utiliza correctamente un selector de clase en CSS?
-- .highlight { background-color: yellow; } => Falto el punto .
+  - .highlight { background-color: yellow; } => Falto el punto .
 
 - ¿Qué hace el siguiente código JavaScript? 
 document.getElementById(‘demo’).innerHTML = ‘Hola, Mundo!’;
-- Reemplaza el contenido HTML del elemento con id demo por el texto «Hola, Mundo!».
+  - Reemplaza el contenido HTML del elemento con id demo por el texto «Hola, Mundo!».
 
 - ¿Cuál de los siguientes es un ejemplo de selector de ID en CSS?
-- #menu { font-size: 14px; }
+  - #menu { font-size: 14px; }
 
 - ¿Cómo se conecta un archivo CSS externo a un documento HTML?
-- <link rel="stylesheet" type="text/css" href="styles.css">
+  - <link rel="stylesheet" type="text/css" href="styles.css">
 
 --- 
 
 ## Videoclase 3. Brackets: editor especializado para desarrollo web frontend
 
 - ¿Cuál es una característica clave que distingue a Brackets de otros editores de código?
-- La vista previa en vivo que refleja los cambios en tiempo real. => La vista previa en vivo es una de las características más destacadas de Brackets. Permite a los desarrolladores ver cambios en HTML, CSS y JavaScript en tiempo real, lo que mejora la eficiencia en el desarrollo front-end.
+  - La vista previa en vivo que refleja los cambios en tiempo real. => La vista previa en vivo es una de las características más destacadas de Brackets. Permite a los desarrolladores ver cambios en HTML, CSS y JavaScript en tiempo real, lo que mejora la eficiencia en el desarrollo front-end.
 
 - ¿Qué sucede en Brackets si una etiqueta HTML no está bien cerrada?
-- Se marca en rojo junto con las etiquetas posteriores afectadas.
+  - Se marca en rojo junto con las etiquetas posteriores afectadas.
 
 - ¿Cómo se puede editar un estilo CSS asociado a una etiqueta HTML en Brackets sin abrir el archivo CSS correspondiente?
-- Presionando «Ctrl» + «E» sobre la etiqueta para desplegar el estilo asociado.
+  - Presionando «Ctrl» + «E» sobre la etiqueta para desplegar el estilo asociado.
 
 - ¿Qué lenguaje de programación no está orientado al uso principal de Brackets?
-- Python.
+  - Python.
 
 - ¿Cuál es una ventaja de la interfaz de Brackets según la descripción?
-- Utiliza una interfaz sencilla con ayudas en la escritura y organización del proyecto.
+  - Utiliza una interfaz sencilla con ayudas en la escritura y organización del proyecto.
 
 
 # Tema 2. Historia de la visualización de datos
@@ -227,56 +227,56 @@ $.csv.hooks.castToScalar});
 ## Videoclase 1. Funcionalidades principales
 
 - ¿Cuál es la principal función de google.charts.load() en el código de Google Charts?
-- Cargar la librería de Google Charts y sus paquetes específicos. => a función google.charts.load() es crucial porque carga la librería de Google Charts junto con los paquetes específicos necesarios, como ‘corechart’ o ‘geochart’. Sin esta línea, las funciones de la librería no estarían disponibles.
+  - Cargar la librería de Google Charts y sus paquetes específicos. => a función google.charts.load() es crucial porque carga la librería de Google Charts junto con los paquetes específicos necesarios, como ‘corechart’ o ‘geochart’. Sin esta línea, las funciones de la librería no estarían disponibles.
 
 - ¿Cuál es el propósito de la estructura google.visualization.DataTable()?
-- Proveer una estructura de datos estándar para almacenar las entradas del gráfico. => La estructura DataTable se utiliza para organizar y almacenar datos en un formato compatible con Google Charts, lo que permite que el gráfico pueda leerlos y representarlos visualmente.
+  - Proveer una estructura de datos estándar para almacenar las entradas del gráfico. => La estructura DataTable se utiliza para organizar y almacenar datos en un formato compatible con Google Charts, lo que permite que el gráfico pueda leerlos y representarlos visualmente.
 
 - ¿Qué sucede si la función drawChart() se ejecuta antes de que la librería esté completamente cargada?
-- Se lanza un error porque los paquetes no están disponibles aún. =>  La ejecución prematura de drawChart() genera un error porque los paquetes de la librería aún no están disponibles. Por eso es importante usar google.charts.setOnLoadCallback(drawChart).
+  - Se lanza un error porque los paquetes no están disponibles aún. =>  La ejecución prematura de drawChart() genera un error porque los paquetes de la librería aún no están disponibles. Por eso es importante usar google.charts.setOnLoadCallback(drawChart).
 
 - ¿Cómo se personalizan los colores de un gráfico circular en Google Charts?
-- Especificando una lista de colores en la opción colors. => La opción colors permite asignar colores específicos a cada sección del gráfico, lo que es útil para mejorar la estética y la claridad de la visualización.
+  - Especificando una lista de colores en la opción colors. => La opción colors permite asignar colores específicos a cada sección del gráfico, lo que es útil para mejorar la estética y la claridad de la visualización.
  
 - ¿Cuál es la diferencia principal entre un gráfico tipo GeoChart y un PieChart?
-- GeoChart utiliza ubicaciones geográficas para visualizar datos mientras que PieChart representa proporciones. => GeoChart está diseñado para mostrar datos en un mapa basado en ubicaciones geográficas (como países o regiones), mientras que PieChart representa datos en forma de proporciones o secciones circulares.
+  - GeoChart utiliza ubicaciones geográficas para visualizar datos mientras que PieChart representa proporciones. => GeoChart está diseñado para mostrar datos en un mapa basado en ubicaciones geográficas (como países o regiones), mientras que PieChart representa datos en forma de proporciones o secciones circulares.
 
 
 --- 
 ## Videoclase 2. Integración de Google Chart con Spreadsheets y CSV
 
 - ¿Qué paso es necesario para usar una hoja de Google Spreadsheet como fuente de datos en una visualización?
-- Asignar permisos de lectura públicos o para cualquier persona con el enlace. => Para conectar una visualización con Google Spreadsheets, es necesario asegurarse de que la hoja tenga permisos de lectura adecuados. Esto permite que el archivo sea accesible desde el código, sin necesidad de modificar constantemente el JavaScript.
+  - Asignar permisos de lectura públicos o para cualquier persona con el enlace. => Para conectar una visualización con Google Spreadsheets, es necesario asegurarse de que la hoja tenga permisos de lectura adecuados. Esto permite que el archivo sea accesible desde el código, sin necesidad de modificar constantemente el JavaScript.
 
 - ¿Qué sucede si se utiliza una URL incorrecta de Google Spreadsheet en el código?
-- Aparece un error reportado por la función handleQueryResponse. => La función handleQueryResponse gestiona los errores y si la URL es incorrecta, reporta el problema mediante un mensaje de error que indica la causa específica. Esto ayuda a depurar el código.
+  - Aparece un error reportado por la función handleQueryResponse. => La función handleQueryResponse gestiona los errores y si la URL es incorrecta, reporta el problema mediante un mensaje de error que indica la causa específica. Esto ayuda a depurar el código.
 
 - ¿Qué método de jQuery se utiliza para obtener el contenido de un archivo CSV?
-- $.get() => El método $.get() realiza una solicitud HTTP para obtener el contenido del archivo CSV desde una URL. Es un formato común para manejar datos externos con jQuery.
+  - $.get() => El método $.get() realiza una solicitud HTTP para obtener el contenido del archivo CSV desde una URL. Es un formato común para manejar datos externos con jQuery.
 
 - ¿Qué parámetros son necesarios al llamar a la función google.visualization.Query?
-- headers y gid => Al usar google.visualization.Query, los parámetros headers (para indicar cuántas filas son cabecera) y gid (para identificar la hoja de trabajo específica) son esenciales para una configuración precisa del gráfico.
+  - headers y gid => Al usar google.visualization.Query, los parámetros headers (para indicar cuántas filas son cabecera) y gid (para identificar la hoja de trabajo específica) son esenciales para una configuración precisa del gráfico.
 
 - ¿Cuál es el propósito de la función $.csv.toArrays al trabajar con un archivo CSV?
-- Transformar el contenido del archivo CSV en un array bidimensional. => La función $.csv.toArrays convierte el contenido del archivo CSV en un array bidimensional que puede ser interpretado fácilmente por bibliotecas como Google Charts. Esto facilita la manipulación de los datos para visualizaciones.
+  - Transformar el contenido del archivo CSV en un array bidimensional. => La función $.csv.toArrays convierte el contenido del archivo CSV en un array bidimensional que puede ser interpretado fácilmente por bibliotecas como Google Charts. Esto facilita la manipulación de los datos para visualizaciones.
 
 --- 
 
 ## Videoclase 3. Manejo de fuentes de datos y eventos en Google Chart
 - ¿Qué función de Google Charts se utiliza para escuchar y gestionar eventos generados por las visualizaciones?
-- google.visualization.events.addListener => La función google.visualization.events.addListener permite registrar un evento en una visualización, ejecutando una función cuando dicho evento ocurre. Por ejemplo, en el código de muestra se utiliza para detectar cuando un usuario ordena una tabla.
+  - google.visualization.events.addListener => La función google.visualization.events.addListener permite registrar un evento en una visualización, ejecutando una función cuando dicho evento ocurre. Por ejemplo, en el código de muestra se utiliza para detectar cuando un usuario ordena una tabla.
 
 - ¿Qué ocurre cuando el evento sort de una tabla es detectado por el listener en el ejemplo de código?
-- Se ordenan los datos en el objeto data y se actualiza el gráfico de barras. => En el ejemplo proporcionado, cuando el evento sort es detectado, se ejecuta el método data.sort para reordenar los datos. Posteriormente, se llama al método chart.draw para actualizar el gráfico de barras con el nuevo orden.
+  - Se ordenan los datos en el objeto data y se actualiza el gráfico de barras. => En el ejemplo proporcionado, cuando el evento sort es detectado, se ejecuta el método data.sort para reordenar los datos. Posteriormente, se llama al método chart.draw para actualizar el gráfico de barras con el nuevo orden.
 
 - ¿Cuál es el propósito del método google.visualization.DataView en el ejemplo de código?
-- Filtrar y seleccionar las columnas que se mostrarán en las visualizaciones. => 
+  - Filtrar y seleccionar las columnas que se mostrarán en las visualizaciones. => 
 
 - ¿Qué efecto tiene aplicar el método formatter.format(data, 1) al objeto de datos?
-- Aplica un prefijo de formato a la columna especificada, como $. => l método formatter.format aplica un formato específico a una columna del objeto DataTable. En este caso, añade el prefijo $ a los valores de la columna de salarios (columna 1).
+  - Aplica un prefijo de formato a la columna especificada, como $. => l método formatter.format aplica un formato específico a una columna del objeto DataTable. En este caso, añade el prefijo $ a los valores de la columna de salarios (columna 1).
 
 - ¿Qué función es responsable de actualizar el gráfico de barras cuando se ordenan los datos de la tabla?
-- chart.draw. => La función chart.draw(view) es la encargada de redibujar el gráfico de barras después de que los datos de la tabla se hayan ordenado. Esto ocurre dentro del listener que detecta el evento sort. El gráfico se actualiza con la nueva visualización de los datos ordenados.
+  - chart.draw. => La función chart.draw(view) es la encargada de redibujar el gráfico de barras después de que los datos de la tabla se hayan ordenado. Esto ocurre dentro del listener que detecta el evento sort. El gráfico se actualiza con la nueva visualización de los datos ordenados.
 
 
 # Tema 3. D3.js. Introducción y funcionalidades
@@ -348,53 +348,53 @@ $.csv.hooks.castToScalar});
 ## Videoclase 1. Introducción a D3.js
 
 - ¿Cuál de las siguientes afirmaciones sobre D3.js es incorrecta?
--  D3.js se limita a crear gráficos estáticos y no soporta interactividad. => 
+  -  D3.js se limita a crear gráficos estáticos y no soporta interactividad. => 
 
 - ¿Cuál de los siguientes conceptos es central en D3.js y se refiere a la vinculación de datos a elementos del DOM?
-- Binding. => El binding es el proceso fundamental en D3.js que conecta los datos a elementos visuales en el DOM, permitiendo que la visualización se actualice automáticamente cuando cambian los datos
+  - Binding. => El binding es el proceso fundamental en D3.js que conecta los datos a elementos visuales en el DOM, permitiendo que la visualización se actualice automáticamente cuando cambian los datos
 
 - ¿Cuál de las siguientes opciones no es una ventaja de utilizar D3.js para crear visualizaciones de datos?
-- Facilidad de uso para principiantes. => Si bien D3.js es una herramienta muy poderosa, su curva de aprendizaje puede ser más pronunciada que otras bibliotecas, lo que la hace menos amigable para principiantes.
+  - Facilidad de uso para principiantes. => Si bien D3.js es una herramienta muy poderosa, su curva de aprendizaje puede ser más pronunciada que otras bibliotecas, lo que la hace menos amigable para principiantes.
 
 - ¿Cuál de las siguientes afirmaciones sobre SVG es falsa en el contexto de D3.js?
-- SVG es la única opción para renderizar gráficos en D3.js. => Aunque SVG es el formato más común utilizado por D3.js, también es posible utilizar Canvas para renderizar gráficos.
+  - SVG es la única opción para renderizar gráficos en D3.js. => Aunque SVG es el formato más común utilizado por D3.js, también es posible utilizar Canvas para renderizar gráficos.
 
 - ¿Cuál de las siguientes opciones describe mejor el concepto de data-driven documents en D3.js?
-- La vinculación de datos a elementos del DOM para generar visualizaciones dinámicas. => La definición más precisa de data-driven documents es la vinculación de datos a elementos del DOM, lo que permite que la visualización se actualice dinámicamente en respuesta a cambios en los datos.
+  - La vinculación de datos a elementos del DOM para generar visualizaciones dinámicas. => La definición más precisa de data-driven documents es la vinculación de datos a elementos del DOM, lo que permite que la visualización se actualice dinámicamente en respuesta a cambios en los datos.
 
 ## Videoclase 2. Manipulación y mejores prácticas en D3.js y HTML
 
 - ¿Cuál de las siguientes no es una ventaja de utilizar D3.js para la visualización de datos?
-- Facilidad de uso para principiantes sin conocimientos de programación. => Si bien D3.js es una herramienta poderosa, requiere un sólido conocimiento de iiJavaScript y programación en general para aprovechar al máximo sus capacidades. La curva de aprendizaje puede ser relativamente empinada para aquellos sin experiencia previa en programación.
+  - Facilidad de uso para principiantes sin conocimientos de programación. => Si bien D3.js es una herramienta poderosa, requiere un sólido conocimiento de iiJavaScript y programación en general para aprovechar al máximo sus capacidades. La curva de aprendizaje puede ser relativamente empinada para aquellos sin experiencia previa en programación.
 
 - ¿Cuál es el concepto clave que permite enlazar datos a elementos HTML en D3.js y crear visualizaciones dinámicas?
-- Binding. => El binding es el concepto central en D3.js que permite vincular datos a elementos HTML, creando una conexión entre los datos y la visualización. Esto es lo que hace que las visualizaciones sean dinámicas y responsivas a los cambios en los datos.
+  - Binding. => El binding es el concepto central en D3.js que permite vincular datos a elementos HTML, creando una conexión entre los datos y la visualización. Esto es lo que hace que las visualizaciones sean dinámicas y responsivas a los cambios en los datos.
 
 - ¿Qué función de D3.js se utiliza para añadir un nuevo elemento HTML a un elemento existente?
-- append(). => La función append() en D3.js se utiliza específicamente para añadir nuevos elementos a un elemento existente en el DOM.
+  - append(). => La función append() en D3.js se utiliza específicamente para añadir nuevos elementos a un elemento existente en el DOM.
 
 - ¿Cuál de las siguientes afirmaciones sobre D3.js es incorrecta?
-- D3.js requiere de plugins adicionales para funcionar en diferentes navegadores. => D3.js utiliza estándares web como HTML, CSS y SVG, por lo que funciona de forma nativa en la mayoría de los navegadores modernos sin necesidad de plugins adicionales.
+  - D3.js requiere de plugins adicionales para funcionar en diferentes navegadores. => D3.js utiliza estándares web como HTML, CSS y SVG, por lo que funciona de forma nativa en la mayoría de los navegadores modernos sin necesidad de plugins adicionales.
 
 - ¿Cuál es la principal razón por la que el siguiente código crea un nuevo párrafo con el texto «Párrafo nuevo» dentro del elemento <body>? 
 <d3.select(“body”).append(“p”).text(“Párrafo nuevo”);>
-- La función select() selecciona el elemento body y la función append() añade un párrafo. => Este es el flujo correcto del código. Primero se selecciona el elemento body del documento HTML, luego se utiliza append() para agregar un nuevo elemento p (párrafo) como hijo del elemento body y, finalmente, se establece el texto del párrafo utilizando text().
+  - La función select() selecciona el elemento body y la función append() añade un párrafo. => Este es el flujo correcto del código. Primero se selecciona el elemento body del documento HTML, luego se utiliza append() para agregar un nuevo elemento p (párrafo) como hijo del elemento body y, finalmente, se establece el texto del párrafo utilizando text().
 
 
 
 ## Videoclase 3. Integración de HTML con D3.js para visualizaciones dinámicas
 
 - ¿Cuál de las siguientes funciones de D3.js se utiliza principalmente para seleccionar múltiples elementos HTML?
-- d3.selectAll().
+  - d3.selectAll().
 
 - ¿Qué hace la función each() en D3.js?
-- Itera sobre cada elemento de una selección y ejecuta una función.
+  - Itera sobre cada elemento de una selección y ejecuta una función.
 
 - ¿Cuál es la función de d3.style() en el siguiente código: d3.select(“p#target”).style(“font-size”, “40px”);?
-- Establece el tamaño de la fuente.
+  - Establece el tamaño de la fuente.
 
 - ¿Cuál de las siguientes opciones es la forma correcta de seleccionar un elemento div dentro de un elemento section con ID “section1”?
-- d3.select(“#section1 > div”).
+  - d3.select(“#section1 > div”).
 
 - ¿Qué hace el siguiente código?
 ```
@@ -408,7 +408,7 @@ d3.selectAll("div")
 
   });
 ```
-- Selecciona todos los elementos div, les asigna la clase red box y añade un encabezado h1 con el índice de cada elemento.
+  - Selecciona todos los elementos div, les asigna la clase red box y añade un encabezado h1 con el índice de cada elemento.
 
 
 
@@ -510,113 +510,313 @@ return d[1];
 ## Videoclase 1. Manejo de estructuras de datos en D3.js 
 
 - ¿Cuál de las siguientes afirmaciones sobre SVG es incorrecta en el contexto de D3.js?
-- Los elementos SVG son estáticos y no pueden ser manipulados con JavaScript.
+  - Los elementos SVG son estáticos y no pueden ser manipulados con JavaScript.
 
 - Considerando el código CSV proporcionado, ¿qué función cumple la línea d3.select(“body”).append(“p”).text(d.Comida + ” ” + d.Preferencia);?
--  Crea un elemento HTML para cada fila del CSV y muestra el nombre de la comida y su preferencia.
+  -  Crea un elemento HTML para cada fila del CSV y muestra el nombre de la comida y su preferencia.
 
 - ¿Cuál es la principal diferencia entre trabajar con datos en formato CSV y JSON en D3.js?
-- La estructura de los datos es diferente, CSV utiliza comas para separar valores y JSON utiliza llaves y corchetes.
+  - La estructura de los datos es diferente, CSV utiliza comas para separar valores y JSON utiliza llaves y corchetes.
 
 - ¿Cuál de las siguientes funciones de D3.js se utiliza típicamente para crear un gráfico de barras?
-- d3.rect().
+  - d3.rect().
 
 - Imagina que quieres crear un gráfico de dispersión donde cada punto represente una ciudad y su temperatura promedio. ¿Qué propiedades de los objetos JSON serían más relevantes para esta visualización?
-- Latitude, longitude y temperature.
+  - Latitude, longitude y temperature.
 
 ## Videoclase 2. Creación de gráficos vectoriales escalables
 
 - ¿Cuál de las siguientes afirmaciones sobre SVG es correcta?
-- SVG es un formato vectorial que permite crear gráficos escalables y altamente personalizables. => SVG es un formato vectorial, lo que significa que los gráficos pueden ser escalados sin pérdida de calidad. Además, ofrece una gran flexibilidad para crear gráficos interactivos y personalizados.
+  - SVG es un formato vectorial que permite crear gráficos escalables y altamente personalizables. => SVG es un formato vectorial, lo que significa que los gráficos pueden ser escalados sin pérdida de calidad. Además, ofrece una gran flexibilidad para crear gráficos interactivos y personalizados.
 
 - ¿Qué representan las coordenadas cx y cy en un elemento <circle> de SVG?
-- Las coordenadas del centro del círculo. => Cx y cy especifican las coordenadas X e Y del centro del círculo, respectivamente.
+  - Las coordenadas del centro del círculo. => Cx y cy especifican las coordenadas X e Y del centro del círculo, respectivamente.
 
 - ¿Cuál es la principal ventaja de utilizar SVG sobre otros formatos de imagen para crear gráficos web?
-- Todas las anteriores.
+  - Todas las anteriores.
 
 - ¿Cómo se puede lograr un efecto de superposición entre diferentes elementos SVG?
-- Cambiando el orden en que se declaran los elementos.
+  - Cambiando el orden en que se declaran los elementos.
 
 - ¿Cuál es la función de la propiedad stroke-width en un elemento SVG?
-- Define el ancho del borde del elemento => Stroke-width especifica el ancho de la línea que rodea el elemento, es decir, el grosor del borde.
+  - Define el ancho del borde del elemento => Stroke-width especifica el ancho de la línea que rodea el elemento, es decir, el grosor del borde.
 
 ## Videoclase 3. Construcción de gráficas interactivas con D3.js
 
 - ¿Qué propiedad en CSS asegura que las barras en un gráfico de barras creado con div se alineen horizontalmente?
-- display: inline-block
+  - display: inline-block
 
 - ¿Cuál es el propósito principal de la función .style(“height”, function(d) { return d + “px”; }) en un gráfico de barras creado con D3.js?
-- Ajustar dinámicamente la altura de las barras según los datos.
+  - Ajustar dinámicamente la altura de las barras según los datos.
 
 - Al crear un gráfico de barras con SVG, ¿qué cambio en el atributo y asegura que las barras se dibujen desde el fondo hacia arriba?
-- y: h - d.
+  - y: h - d.
 
 - ¿Qué propiedad define la posición horizontal de cada barra en un gráfico de barras utilizando SVG?
-- .attr(“x”, function(d, i) { return i * (w / dataset.length); }).
+  - .attr(“x”, function(d, i) { return i * (w / dataset.length); }).
 
 - En un Scatter Plot, ¿qué atributo determina el radio de los círculos que representan los puntos?
-- r.
+  - r.
+
+# Tema 5. D3.js. Escalando y dibujando ejes de un gráfico
+
+
+1. ¿Qué es el input domain?
+  - A. Es el rango de valores que nos da nuestra fuente de datos. => **Correcto**
+  - B. Es el dominio de datos que utilizamos para definir el título de una gráfica.
+  - C. Es el rango de valores que definimos para nuestra escala.
+  - D. Ninguna de las anteriores.
+
+2. ¿Qué es el output range?
+  - A. Es la leyenda de nuestra gráfica.
+  - B. Es la escala que utilizaremos en nuestra gráfica.
+  - C. Es el rango de valores que nos da nuestra fuente de datos.
+  - D. Ninguna de las anteriores => **Correcto**
+
+3. ¿Cuál es el resultado al ejecutar estas sentencias? var scale = d3.scale.linear(); scale(20)
+  - A. 20. => **Correcto** Con Dudas 
+  - B. 2.
+  - C. 0,2.
+  - D. 0,02
+
+4. ¿Cuál es el resultado al ejecutar este código? var scale = d3.scale.linear()
+.domain([100, 500])
+.range([10, 350]);
+scale (100);
+
+  - A. 100.
+  - B. 10 => **Correcto**
+  - C. 500
+  - D. 350
+
+
+5. ¿Cuál es el resultado al ejecutar este código?
+var dataset = [
+[5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
+[410, 12], [475, 44], [25, 67], [85, 21], [220, 88]
+];
+d3.max(dataset, function(d) {
+return d[0]; //References first value in each sub-array
+});
+  - A. 480. => **Correcto**
+  - B. 495.
+  - C. 95.
+  - D. 12
+
+
+6. ¿Cuál es el resultado al ejecutar este código?
+  var dataset = [
+  [5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
+  [410, 12], [475, 44], [25, 67], [85, 21], [220, 88]
+  ];
+  d3.max(dataset, function(d) {
+  return d[1]; //References first value in each sub-array
+  });
+  - A. 480.
+  - B. 495.
+  - C. 95. => **Correcto**
+  - D. 12.
+
+7. ¿Qué es lo que hace "left" en el siguiente código?
+var yAxis = d3.svg.axis()
+.scale(yScale)
+.orient("left")
+.ticks(5);
+
+  - A. Orienta el eje a la izquierda del eje Y.
+  - B. Orienta los números del eje a la izquierda de la escala. => **Correcto**
+  - C. Orienta el eje a la izquierda del gráfico.
+  - D. Orienta los números del eje a la izquierda
+
+8. ¿Qué es lo que hace este código?
+  var xAxis = d3.svg.axis()
+  .scale(xScale)
+  .orient("bottom")
+  .ticks(5); //Set rough # of ticks
+  - A. Crea cinco divisiones en el eje X. => **Correcto**
+  - B. Crea seis divisiones en el eje X porque empiezan a contar desde 0.
+  - C. Crea cinco divisiones aplicándolos a la escala.
+  - D. Ninguna de las anteriores.
+
+
+9. ¿Qué es lo que hace este código?
+svg.append("g")
+.attr("class", "axis")
+.call(xAxis);
+
+  - A. Asignar el atributo axis al elemento class.
+  - B. Asignar el atributo axis al elemento xAxis.
+  - C. Asignar el atributo class al elemento axis.
+  - D. Asignar el atributo class al elemento g => **Correcto**
+
+10. ¿Qué nos dibujará el siguiente código?
+var yAxis = d3.svg.axis()
+.scale(yScale)
+.orient("left")
+.ticks(5);
+svg.append("g")
+.attr("class", "axis")
+.attr("transform", "translate(" + padding + ",0)")
+.call(yAxis);
+  
+  - A. Un gráfica tipo scatter plot.
+  - B. Los ejes X e Y de la gráfica.
+  - C. Un gráfica con el eje Y.
+  - D. El eje Y con las etiquetas orientadas a la izquierda => **Correcto** 
+
+## ◄ Videoclase 1. Uso de escalas numéricas en D3.js
+
+- ¿Qué describe mejor la funcionalidad de las escalas en D3.js?
+  - Una forma de conectar un dominio de entrada con un rango de salida.
+
+- En el siguiente código de D3.js, ¿qué representa el argumento de la función d3.max()? d3.max(dataset, function(d) { return d[1]; });
+  - El valor máximo del segundo elemento en cada sub-array del dataset.
+
+- ¿Por qué el rango del eje Y se define de la forma range([h, 0]) en lugar de [0, h]?
+  - Para invertir el orden de los valores y alinear con las coordenadas del SVG.
+
+- ¿Qué resultado se espera al ejecutar el siguiente código en D3.js?
+
+```JAVASCRIPT
+var scale = d3.scale.linear()
+
+              .domain([100, 500])
+
+              .range([10, 350]);
+
+scale(300);
+``` 
+- 180 
 
 
 
-# Tema 05. 
+- ¿Cuál es la principal ventaja de usar d3.min() y d3.max() para definir el dominio de una escala?
+  - Permite calcular automáticamente los valores mínimos y máximos del dominio basado en los datos.
+
+## Videoclase 2. Creación y personalización de ejes en D3.js
+
+- ¿Cómo se puede mover el eje X al borde inferior del gráfico?
+```JAVASCRIPT
+var padding = 30;
+
+var xAxis = d3.svg.axis()
+
+              .scale(xScale)
+
+              .orient("bottom");
+
+ 
+
+svg.append("g")
+
+   .attr("class", "axis")
+
+   .call(xAxis);
+```
+  - Añadiendo .attr(“transform”, “translate(0,” + (h - padding) + “)”). => ajusta la posición del grupo () que contiene el eje, moviéndolo hacia abajo mediante la transformación en el eje Y.
 
 
---- 
 
-## Videoclase 1. 
+- ¿Qué propiedad del eje se debe ajustar para limitar el número de divisiones visibles?
+```JAVASCRIPT
+var xAxis = d3.svg.axis()
 
--
--
+              .scale(xScale)
 
--
--
+              .orient("bottom")
+```
+  - .ticks(5). => La propiedad .ticks[n] define el número aproximado de divisiones visibles en el eje, en este caso 5.
 
--
--
 
--
--
 
--
--
+- ¿Cómo se pueden aplicar estilos personalizados al eje utilizando CSS?
+```JAVASCRIPT
+svg.append("g")
 
-## Videoclase 1. 
+   .attr("class", "axis") // Clase que será utilizada en el CSS
 
--
--
+   .call(xAxis);
+```
+  - Definiendo la clase CSS .axis con propiedades específicas para SVG, como stroke
 
--
--
+- ¿Qué función mueve el eje Y hacia el borde izquierdo del gráfico?
+```JAVASCRIPT
+var padding = 30;
 
--
--
+var yAxis = d3.svg.axis()
 
--
--
+              .scale(yScale)
 
--
--
+              .orient("left");
 
-## Videoclase 1. 
+ 
 
--
--
+svg.append("g")
 
--
--
+   .attr("class", "axis")
 
--
--
+   .call(yAxis);
+  
+  .attr(“transform”, “translate(” + padding + “,0)”). => La transformación .attr(“transform”, “translate(” + padding + “,0)”) 
+```
+  - mueve el grupo que contiene el eje Y hacia la derecha por un valor definido por padding, posicionándolo correctamente.
 
--
--
+- ¿Cuál sería el resultado de aplicar el siguiente CSS al eje? 
+```CSS
+.axis path,
 
--
--
+.axis line {
 
-# Tema 06. 
+  fill: none;
+
+  stroke: black;
+
+  stroke-width: 2;
+
+  shape-rendering: crispEdges;
+
+}
+
+ 
+
+.axis text {
+
+  font-family: sans-serif;
+
+  font-size: 11px;
+
+}
+
+ 
+
+JavaScript:
+
+svg.append("g")
+
+   .attr("class", "axis")
+
+   .call(xAxis);
+```
+  - Las líneas del eje serán negras, de 2 píxeles de grosor y el texto será sans-serif de 11px.
+
+## ◄ Videoclase 3. Implementación de escalas ordinales en D3.js
+
+- ¿Cuál es la principal diferencia entre una escala lineal y una escala ordinal en D3? 
+  - Las escalas ordinales dividen los datos en bandas discretas, mientras que las lineales utilizan valores continuos.
+
+- ¿Qué hace el parámetro 0.05 en .rangeRoundBands([0, w], 0.05)?
+  - Establece el espacio entre las bandas para una separación visual clara.
+
+- Dado el siguiente código: .attr(“width”, xScale.rangeBand()), ¿qué propósito tiene el uso de xScale.rangeBand()?
+  - Define el ancho constante de las barras basado en el rango de la escala ordinal.
+
+- Si eliminas el parámetro 0.05 de .rangeRoundBands([0, w], 0.05), ¿qué ocurre?
+  - Las barras ocuparán el rango total sin espacio entre ellas.
+
+- ¿Qué logra el siguiente código al trabajar con una escala ordinal? .domain(d3.range(dataset.length))
+  - Genera un dominio discreto con índices numéricos para cada elemento del dataset.
+
+# Tema 06. Force Layout, transiciones, movimiento e interacción
 
 
 --- 
