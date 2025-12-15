@@ -1,0 +1,37 @@
+✅ Datos cargados. Filas: 647
+Sample Countries: ['Alemania' 'Austria' 'Bulgaria' 'Bélgica' 'Chipre']
+Sample Data: {'Country Name': {1206: 'Alemania', 1236: 'Alemania'}, 'Country Code': {1206: 'DEU', 1236: 'DEU'}, 'Year': {1206: 2000, 1236: 2001}, 'Gini': {1206: 28.9, 1236: 29.9}}
+✅ Datos cargados. Filas: 647
+Sample Countries: ['Alemania' 'Austria' 'Bulgaria' 'Bélgica' 'Chipre']
+Sample Data: {'Country Name': {1206: 'Alemania', 1236: 'Alemania'}, 'Country Code': {1206: 'DEU', 1236: 'DEU'}, 'Year': {1206: 2000, 1236: 2001}, 'Gini': {1206: 28.9, 1236: 29.9}}
+📊 Chart Correct - Filtered size: 139
+Focus Countries: ['España', 'Alemania', 'Francia', 'Polonia', 'Suecia', 'Rumania']
+Found Countries: ['Alemania' 'España' 'Francia' 'Polonia' 'Rumania' 'Suecia']
+✅ Datos cargados. Filas: 647
+Sample Countries: ['Alemania' 'Austria' 'Bulgaria' 'Bélgica' 'Chipre']
+Sample Data: {'Country Name': {1206: 'Alemania', 1236: 'Alemania'}, 'Country Code': {1206: 'DEU', 1236: 'DEU'}, 'Year': {1206: 2000, 1236: 2001}, 'Gini': {1206: 28.9, 1236: 29.9}}
+📊 Chart Correct - Filtered size: 139
+Dtypes: Country Name     object
+Country Code     object
+Year              int64
+Gini            float64
+dtype: object
+First Row: [{'Country Name': 'Alemania', 'Country Code': 'DEU', 'Year': 2000, 'Gini': 28.9}]
+📈 Figure Generated. Traces: 6
+Trace 0 x-len: 21 y-len: 21
+Trace 0 x-sample: [2000 2001 2002 2003 2004]
+JSON Snippet: {"data":[{"hovertemplate":"Pa\u00eds=Alemania\u003cbr\u003eA\u00f1o=%{x}\u003cbr\u003e\u00cdndice Gini (0-100)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Alemania","line":{"color":"r
+✅ Datos cargados. Filas: 647
+Sample Countries: ['Alemania' 'Austria' 'Bulgaria' 'Bélgica' 'Chipre']
+Sample Data: {'Country Name': {1206: 'Alemania', 1236: 'Alemania'}, 'Country Code': {1206: 'DEU', 1236: 'DEU'}, 'Year': {1206: 2000, 1236: 2001}, 'Gini': {1206: 28.9, 1236: 29.9}}
+📊 Chart Correct - Filtered size: 139
+Dtypes: Country Name     object
+Country Code     object
+Year              int64
+Gini            float64
+dtype: object
+First Row: [{'Country Name': 'Alemania', 'Country Code': 'DEU', 'Year': 2000, 'Gini': 28.9}]
+📈 Figure Generated. Traces: 6
+Trace 0 x-len: 21 y-len: 21
+Trace 0 x-sample: [2000 2001 2002 2003 2004]
+JSON Snippet: {"data":[{"hovertemplate":"Pa\u00eds=Alemania\u003cbr\u003eA\u00f1o=%{x}\u003cbr\u003e\u00cdndice Gini (0-100)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Alemania","line":{"color":"r
