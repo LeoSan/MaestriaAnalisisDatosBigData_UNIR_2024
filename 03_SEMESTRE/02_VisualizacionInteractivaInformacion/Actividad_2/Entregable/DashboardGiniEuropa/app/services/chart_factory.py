@@ -26,6 +26,12 @@ class ChartFactory:
         """
         Genera la visualización CORRECTA iterando explícitamente.
         Equivalente a tu lógica JS: data = [{x: x1, y: y1}, {x: x2, y: y2}...]
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
         """
         fig = go.Figure()
 
@@ -63,6 +69,12 @@ class ChartFactory:
         """
         Genera la visualización MANIPULADA.
         Misma lógica de iteración, pero forzando estilos confusos.
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
         """
         fig = go.Figure()
 
@@ -102,13 +114,17 @@ class ChartFactory:
 
         return pio.to_json(fig)
 
-# --- PARTE 2.1: SIMILITUD VS DIVERGENCIA ---
-
     def create_divergence_chart_correct(self, df):
         """
         Ejercicio 1 (Bien): Resaltar similitudes y diferencias[cite: 25].
         Estrategia: Usamos 'Gris' para el contexto y colores fuertes SOLO para los
         países que queremos comparar (ej. Países Nórdicos vs Sur).
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
         """
         fig = go.Figure()
 
@@ -118,7 +134,8 @@ class ChartFactory:
             country_data = df[df['Country Name'] == country]
             if not country_data.empty:
                 fig.add_trace(go.Scatter(
-                    x=country_data['Year'], y=country_data['Gini'],
+                    x=country_data['Year'].tolist(), 
+                    y=country_data['Gini'].tolist(),
                     mode='lines',
                     name=country,
                     line=dict(width=1, color='#d1d5db'), # Gris claro
@@ -129,7 +146,8 @@ class ChartFactory:
         suecia = df[df['Country Name'] == 'Suecia']
         if not suecia.empty:
             fig.add_trace(go.Scatter(
-                x=suecia['Year'], y=suecia['Gini'],
+                x=suecia['Year'].tolist(), 
+                y=suecia['Gini'].tolist(),
                 mode='lines+markers', name='Suecia (Estable)',
                 line=dict(width=3, color='#10B981') # Verde
             ))
@@ -138,7 +156,8 @@ class ChartFactory:
         espana = df[df['Country Name'] == 'España']
         if not espana.empty:
             fig.add_trace(go.Scatter(
-                x=espana['Year'], y=espana['Gini'],
+                x=espana['Year'].tolist(), 
+                y=espana['Gini'].tolist(),
                 mode='lines+markers', name='España (Divergente)',
                 line=dict(width=3, color='#EF4444') # Rojo
             ))
@@ -155,6 +174,12 @@ class ChartFactory:
         """
         Ejercicio 1 (Mal): 'Spaghetti Chart'[cite: 26].
         Superponer demasiadas líneas con colores similares, haciendo imposible leer.
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
         """
         fig = go.Figure()
         # Tomamos TODOS los países disponibles en el dataframe (son como 30)
@@ -163,7 +188,8 @@ class ChartFactory:
         for country in all_countries:
             country_data = df[df['Country Name'] == country]
             fig.add_trace(go.Scatter(
-                x=country_data['Year'], y=country_data['Gini'],
+                x=country_data['Year'].tolist(), 
+                y=country_data['Gini'].tolist(),
                 mode='lines',
                 name=country,
                 # Sin grosor destacado, todos compiten por atención
@@ -177,12 +203,16 @@ class ChartFactory:
         )
         return pio.to_json(fig)
 
-    # --- PARTE 2.2: CONTEXTO (SCATTER PLOT) ---
-
     def create_context_chart_correct(self, df):
         """
         Ejercicio 2 (Bien): Relacionar Gini con Riqueza (PIB)[cite: 29].
         Nota: Como el CSV no tiene PIB, usamos datos aproximados de 2021 para el ejercicio.
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
         """
         # Datos estáticos de PIB per cápita (2021 aprox en USD) para el contexto
         gdp_data = {
@@ -204,12 +234,12 @@ class ChartFactory:
 
         # Scatter Plot: Eje X = Riqueza (PIB), Eje Y = Desigualdad (Gini)
         fig.add_trace(go.Scatter(
-            x=df_context['GDP'],
-            y=df_context['Gini'],
+            x=df_context['GDP'].tolist(),
+            y=df_context['Gini'].tolist(),
             mode='markers+text',
-            text=df_context['Country Name'],
+            text=df_context['Country Name'].tolist(),
             textposition="top center",
-            marker=dict(size=12, color=df_context['Gini'], colorscale='Viridis', showscale=True)
+            marker=dict(size=12, color=df_context['Gini'].tolist(), colorscale='Viridis', showscale=True)
         ))
 
         fig.update_layout(
@@ -224,6 +254,12 @@ class ChartFactory:
         """
         Ejercicio 2 (Mal): Mostrar solo Ranking sin contexto[cite: 30].
         Ignora que un país pobre y uno rico pueden tener el mismo Gini.
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
         """
         # Filtramos 2021 y ordenamos
         df_2021 = df[df['Year'] == 2021].sort_values(by='Gini')
@@ -232,8 +268,8 @@ class ChartFactory:
 
         fig = go.Figure()
         fig.add_trace(go.Bar(
-            x=df_top['Country Name'],
-            y=df_top['Gini'],
+            x=df_top['Country Name'].tolist(),
+            y=df_top['Gini'].tolist(),
             marker_color='grey'
         ))
 
