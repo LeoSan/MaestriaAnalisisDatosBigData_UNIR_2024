@@ -1,6 +1,5 @@
 def main():
-    print("Hello from dashboardginieuropa!")
-
+    print("Iniciando DashBoard!")
 
 if __name__ == "__main__":
     main()

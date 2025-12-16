@@ -6,7 +6,6 @@ main_bp = Blueprint('main', __name__)
 
 @main_bp.route('/')
 def dashboard():
-    # 1. Cargar Datos
     loader = DataLoader()
     df = loader.load_data()
     
@@ -28,16 +27,20 @@ def dashboard():
     
     if not df.empty:
         factory = ChartFactory()
-        
         # PARTE 1
         charts['evolution_correct'] = factory.create_evolution_chart_correct(df)
         charts['evolution_manipulated'] = factory.create_evolution_chart_manipulated(df)
-        
-        # PARTE 2 (NUEVO)
+        # PARTE 2 
         charts['divergence_correct'] = factory.create_divergence_chart_correct(df)
         charts['divergence_bad'] = factory.create_divergence_chart_bad(df)
         charts['context_correct'] = factory.create_context_chart_correct(df)
         charts['context_bad'] = factory.create_context_chart_bad(df)
+        # PARTE 3 
+        charts['policy_correct'] = factory.create_policy_chart_correct(df)
+        charts['policy_bad'] = factory.create_policy_chart_bad(df)
+        # PARTE 4 
+        charts['crisis_correct'] = factory.create_crisis_chart_correct(df)
+        charts['crisis_bad'] = factory.create_crisis_chart_bad(df)
 
         status_msg = "Análisis Parte 1 y 2 Generado ✅"
     else:

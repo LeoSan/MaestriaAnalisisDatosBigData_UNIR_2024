@@ -279,3 +279,218 @@ class ChartFactory:
             template='plotly_white'
         )
         return pio.to_json(fig)        
+
+    # --- PARTE 3.1: POLÍTICAS PÚBLICAS (PROYECCIÓN) ---
+    def create_policy_chart_correct(self, df):
+        """
+        Ejercicio 3 (Correcto): Proyección Ética.
+        Muestra la historia completa para dar contexto y diferencia claramente
+        lo real de lo hipotético usando líneas punteadas.
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
+        """
+        fig = go.Figure()
+
+        # 1. DATOS REALES (Historia)
+        # Filtramos España y aseguramos orden por año
+        esp_real = df[df['Country Name'] == 'España'].sort_values(by='Year')
+        
+        if esp_real.empty:
+            return pio.to_json(fig) # Retorno vacío seguro
+
+        # Agregamos la traza histórica (Línea sólida azul)
+        fig.add_trace(go.Scatter(
+            x=esp_real['Year'].tolist(), 
+            y=esp_real['Gini'].tolist(),
+            mode='lines+markers', 
+            name='Histórico Real',
+            line=dict(color='#3B82F6', width=3) # Azul estándar
+        ))
+
+        # 2. DATOS HIPOTÉTICOS (La Proyección de tu Política)
+        # Tomamos el último dato real como punto de partida para que empalme bien
+        last_year = int(esp_real['Year'].max())
+        last_val = float(esp_real['Gini'].iloc[-1])
+
+        # Creamos los arrays manuales de la proyección (2022-2026)
+        # Simulamos una bajada optimista por la "política pública"
+        proj_x = [last_year, last_year + 1, last_year + 2, last_year + 3, last_year + 4]
+        proj_y = [last_val,   last_val - 0.5, last_val - 1.1, last_val - 1.5, last_val - 1.8]
+
+        # Agregamos la traza proyectada (Línea punteada verde)
+        fig.add_trace(go.Scatter(
+            x=proj_x, 
+            y=proj_y,
+            mode='lines+markers', 
+            name='Proyección (Reforma Fiscal)',
+            line=dict(color='#10B981', width=3, dash='dot') # <--- CLAVE: dash='dot' indica estimación
+        ))
+
+        # 3. LAYOUT ÉTICO
+        fig.update_layout(
+            title='Proyección de Impacto: Reforma Fiscal (Contexto Completo)',
+            xaxis_title='Año', 
+            yaxis_title='Índice Gini',
+            template='plotly_white',
+            hovermode="x unified",
+            # Escala Y amplia (0-45 o similar) para mostrar la magnitud real del cambio
+            yaxis=dict(range=[25, 40]) 
+        )
+        return pio.to_json(fig)
+
+    def create_policy_chart_bad(self, df):
+        """
+        Ejercicio 3 (Manipulado): Exageración de Efectos.
+        Ocultamos la historia y truncamos el eje para que una bajada pequeña parezca gigante.
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
+        """
+        fig = go.Figure()
+
+        # Usamos SOLO los datos de la proyección (ignorando la historia previa)
+        # Hardcodeamos los mismos datos de la proyección anterior
+        # Suponemos que el último real fue aprox 33.0
+        proj_x = [2022, 2023, 2024, 2025, 2026]
+        proj_y = [33.0, 32.5, 31.9, 31.5, 31.2]
+
+        # Traza manipulada visualmente
+        fig.add_trace(go.Scatter(
+            x=proj_x, 
+            y=proj_y,
+            mode='lines+markers', 
+            name='Impacto Política',
+            line=dict(color='#EF4444', width=5), # Línea muy gruesa y roja
+            fill='tozeroy' # Relleno bajo la curva para dar sensación de volumen/masa
+        ))
+
+        # CÁLCULO DE LA MANIPULACIÓN
+        min_val = min(proj_y)
+        max_val = max(proj_y)
+
+        # LAYOUT MANIPULADO
+        fig.update_layout(
+            title='¡REDUCCIÓN DRÁSTICA DE LA DESIGUALDAD!',
+            xaxis_title='Año Proyectado', 
+            yaxis_title='Gini',
+            template='plotly_white',
+            # TRUCO SUCIO: Eje Y cortado milimétricamente al rango de datos
+            # De 33.0 a 31.2, el rango es solo 1.8 puntos, pero ocupará todo el alto del div
+            yaxis=dict(range=[min_val - 0.1, max_val + 0.1]) 
+        )
+        return pio.to_json(fig)     
+
+    # --- EJERCICIO 4: ANÁLISIS DE CRISIS (COVID-19) ---
+    def create_crisis_chart_correct(self, df):
+        """
+        Ejercicio 4 (Correcto): Análisis con Contexto Histórico.
+        Mostramos la década completa (2010-2022) para evaluar si el repunte
+        del COVID-19 fue realmente una anomalía grave o una fluctuación estándar.
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
+        """
+        # Seleccionamos un país con datos claros (Alemania)
+        target_country = 'Alemania'
+        
+        # Filtramos la última década completa
+        df_context = df[
+            (df['Country Name'] == target_country) & 
+            (df['Year'] >= 2010)
+        ].sort_values(by='Year')
+
+        if df_context.empty:
+            return pio.to_json(go.Figure())
+
+        fig = go.Figure()
+
+        # Línea de tendencia histórica
+        fig.add_trace(go.Scatter(
+            x=df_context['Year'].tolist(), 
+            y=df_context['Gini'].tolist(),
+            mode='lines+markers', 
+            name=target_country,
+            line=dict(color='#6366F1', width=3) # Color Índigo profesional
+        ))
+
+        # ANOTACIÓN CLAVE: Marcamos el inicio de la crisis
+        # Esto cumple con "relacionar tendencias con la crisis"
+        fig.add_annotation(
+            x=2020, 
+            y=df_context[df_context['Year'] == 2020]['Gini'].values[0],
+            text="Crisis COVID-19",
+            showarrow=True,
+            arrowhead=2,
+            arrowsize=1,
+            arrowwidth=2,
+            arrowcolor="#EF4444"
+        )
+
+        fig.update_layout(
+            title=f'Impacto Real del COVID-19: {target_country} (2010-2022)',
+            xaxis_title='Año', 
+            yaxis_title='Índice Gini',
+            template='plotly_white',
+            hovermode="x unified",
+            # Escala honesta que permite ver las fluctuaciones previas
+            yaxis=dict(range=[28, 34]) 
+        )
+        return pio.to_json(fig)
+
+    def create_crisis_chart_bad(self, df):
+        """
+        Ejercicio 4 (Manipulado): 'Cherry Picking' (Falta de Contexto).
+        Aislamos solo el año previo y el año de la crisis.
+        Al borrar la historia, cualquier subida parece un desastre sin precedentes.
+
+        Args:
+            df (pd.DataFrame): Dataframe con columnas 'Country Name', 'Year', 'Gini'.
+
+        Returns:
+            str: JSON string de la figura Plotly.
+        """
+        target_country = 'Alemania'
+        
+        # TRAMPA: Seleccionamos SOLO 2 años
+        df_cherry = df[
+            (df['Country Name'] == target_country) & 
+            (df['Year'].isin([2019, 2020]))
+        ].sort_values(by='Year')
+
+        fig = go.Figure()
+
+        # Usamos BARRAS para que la diferencia de altura se sienta más "pesada"
+        fig.add_trace(go.Bar(
+            x=df_cherry['Year'].tolist(), 
+            y=df_cherry['Gini'].tolist(),
+            name=target_country,
+            # Color gris para 2019, Rojo Alarma para 2020
+            marker_color=['#9CA3AF', '#EF4444'],
+            text=df_cherry['Gini'], # Mostramos el valor para que vean que subió
+            textposition='auto'
+        ))
+
+        fig.update_layout(
+            title='¡IMPACTO DEVASTADOR DEL COVID-19!',
+            xaxis=dict(
+                tickmode='array', 
+                tickvals=[2019, 2020],
+                title='Año (Sin contexto previo)'
+            ),
+            yaxis_title='Gini',
+            template='plotly_white',
+            # MANIPULACIÓN: Truncamos el eje Y para exagerar la diferencia visual
+            # De 31.8 a 32.4 hay solo 0.6 puntos, pero aquí parecerá el doble.
+            yaxis=dict(range=[31.0, 33.0]) 
+        )
+        return pio.to_json(fig)           

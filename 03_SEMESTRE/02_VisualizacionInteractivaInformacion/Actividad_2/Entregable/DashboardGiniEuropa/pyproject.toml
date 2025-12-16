@@ -1,7 +1,7 @@
 [project]
 name = "dashboardginieuropa"
 version = "0.1.0"
-description = "Add your description here"
+description = "Dashboard de visualización interactiva de datos de desigualdad en Europa"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

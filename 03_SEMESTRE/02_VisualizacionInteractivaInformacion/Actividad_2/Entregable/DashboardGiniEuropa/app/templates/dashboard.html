@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-<script src="{{ url_for('static', filename='js/utils.js') }}"></script>
-
 <div class="space-y-8">
     <div
         class="bg-white p-6 rounded-lg shadow-md border-l-4 {% if stats %}border-green-500{% else %}border-red-500{% endif %}">
@@ -119,26 +116,73 @@
             <div id="chart-context-bad" class="w-full h-80"></div>
         </div>
     </div>
+
+    <hr class="border-t-2 border-gray-200 my-10">
+
+    <div class="bg-white p-6 rounded-lg shadow border-l-4 border-purple-500 mb-8">
+        <h1 class="text-2xl font-bold text-gray-800">Parte 3: Uso del Gini para la propuesta de soluciones</h1>
+        <p class="text-gray-600 mt-2">
+            Análisis para políticas públicas.
+        </p>
+    </div>
+
+    <h3 class="text-xl font-bold text-gray-700 mb-4">3.1 Reforma Fiscal en España</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+            <h2 class="text-lg font-bold text-green-700 mb-2 border-b pb-2">✅ Proyección Ética</h2>
+            <p class="text-xs text-gray-500 mb-2">Se proyecta que la reforma fiscal en España disminuirá el Gini en
+                2025.</p>
+            <div id="chart-div-correct-polity-espania" class="w-full h-80"></div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-lg border-2 border-red-100">
+            <h2 class="text-lg font-bold text-red-700 mb-2 border-b pb-2">❌ Exageración de
+                Efectos</h2>
+            <p class="text-xs text-gray-500 mb-2">Se proyecta que la reforma fiscal en España disminuirá el Gini en
+                2025.</p>
+            <div id="chart-div-correct-polity-espania-bad" class="w-full h-80"></div>
+        </div>
+    </div>
+
+    <h3 class="text-xl font-bold text-gray-700 mb-4">3.2 Crisis económica en Alemania COVID-19</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+            <h2 class="text-lg font-bold text-green-700 mb-2 border-b pb-2">✅ Proyección Ética</h2>
+            <p class="text-xs text-gray-500 mb-2">Se proyecta que la crisis económica en Alemania disminuirá el Gini en
+                2025.</p>
+            <div id="chart-div-correct-crisis-alemania" class="w-full h-80"></div>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-lg border-2 border-red-100">
+            <h2 class="text-lg font-bold text-red-700 mb-2 border-b pb-2">❌ Exageración de
+                Efectos</h2>
+            <p class="text-xs text-gray-500 mb-2">Se proyecta que la crisis económica en Alemania disminuirá el Gini en
+                2025.</p>
+            <div id="chart-div-correct-crisis-alemania-bad" class="w-full h-80"></div>
+        </div>
+    </div>
+
+
 </div>
 
 <script type="text/javascript">
 
-    // 1. Recibimos los strings JSON crudos desde Flask (usando el filtro safe)
-    const rawJsonCorrect = {{ charts.evolution_correct | safe }};
-    const rawJsonManipulated = {{ charts.evolution_manipulated | safe }};
+    //GRÁFICAS PARTE 1
+    renderChart('chart-correct', {{ charts.evolution_correct | safe }});
+    renderChart('chart-manipulated', {{ charts.evolution_manipulated | safe }});
 
-    // 2. Ejecutamos el renderizado
-    renderChart('chart-correct', rawJsonCorrect);
-    renderChart('chart-manipulated', rawJsonManipulated);
-
-    // NUEVAS GRÁFICAS PARTE 2
-
+    //GRÁFICAS PARTE 2
     renderChart('chart-div-correct', {{ charts.divergence_correct | safe }});
     renderChart('chart-div-bad', {{ charts.divergence_bad | safe }});
 
-
     renderChart('chart-context-correct', {{ charts.context_correct | safe }});
     renderChart('chart-context-bad', {{ charts.context_bad | safe }});
+
+    //GRÁFICAS PARTE 3
+    renderChart('chart-div-correct-polity-espania', {{ charts.policy_correct | safe }});
+    renderChart('chart-div-correct-polity-espania-bad', {{ charts.policy_bad | safe }});
+
+    //GRÁFICAS PARTE 4
+    renderChart('chart-div-correct-crisis-alemania', {{ charts.crisis_correct | safe }});
+    renderChart('chart-div-correct-crisis-alemania-bad', {{ charts.crisis_bad | safe }});
 
 </script>
 {% endblock %}
