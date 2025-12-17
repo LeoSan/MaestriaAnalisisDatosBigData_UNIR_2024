@@ -164,25 +164,25 @@
 </div>
 
 <script type="text/javascript">
+    // {% if charts %}
+    // //GRÁFICAS PARTE 1
+    // renderChart('chart-correct', {{ charts.evolution_correct | safe }});
+    // renderChart('chart-manipulated', {{ charts.evolution_manipulated | safe }});
 
-    //GRÁFICAS PARTE 1
-    renderChart('chart-correct', {{ charts.evolution_correct | safe }});
-    renderChart('chart-manipulated', {{ charts.evolution_manipulated | safe }});
+    // //GRÁFICAS PARTE 2
+    // renderChart('chart-div-correct', {{ charts.divergence_correct | safe }});
+    // renderChart('chart-div-bad', {{ charts.divergence_bad | safe }});
 
-    //GRÁFICAS PARTE 2
-    renderChart('chart-div-correct', {{ charts.divergence_correct | safe }});
-    renderChart('chart-div-bad', {{ charts.divergence_bad | safe }});
+    // renderChart('chart-context-correct', {{ charts.context_correct | safe }});
+    // renderChart('chart-context-bad', {{ charts.context_bad | safe }});
 
-    renderChart('chart-context-correct', {{ charts.context_correct | safe }});
-    renderChart('chart-context-bad', {{ charts.context_bad | safe }});
+    // //GRÁFICAS PARTE 3
+    // renderChart('chart-div-correct-polity-espania', {{ charts.policy_correct | safe }});
+    // renderChart('chart-div-correct-polity-espania-bad', {{ charts.policy_bad | safe }});
 
-    //GRÁFICAS PARTE 3
-    renderChart('chart-div-correct-polity-espania', {{ charts.policy_correct | safe }});
-    renderChart('chart-div-correct-polity-espania-bad', {{ charts.policy_bad | safe }});
-
-    //GRÁFICAS PARTE 4
-    renderChart('chart-div-correct-crisis-alemania', {{ charts.crisis_correct | safe }});
-    renderChart('chart-div-correct-crisis-alemania-bad', {{ charts.crisis_bad | safe }});
-
+    // //GRÁFICAS PARTE 4
+    // renderChart('chart-div-correct-crisis-alemania', {{ charts.crisis_correct | safe }});
+    // renderChart('chart-div-correct-crisis-alemania-bad', {{ charts.crisis_bad | safe }});
+    // {% endif %}
 </script>
 {% endblock %}
