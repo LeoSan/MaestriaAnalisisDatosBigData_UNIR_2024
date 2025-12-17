@@ -1,56 +1,71 @@
-# SEMINARIO de Innovación en Análisis y Visualización de Datos (MEXAVM) - Noviembre 2025 3Q
+# 📊 Seminario de Innovación en Análisis y Visualización de Datos (MEXAVM)
+> **Noviembre 2025 - 3Q**
 
-**PUNTOS**
-- SI ES UNA ESPECIE DE TESIS 
-- SOLO QUE LA ENTREGA ES UN VIDEO Y EL PDF 
-- CONSTA DE 6 FASES 
-- ES UN FLUJO DE TRABAJO QUE SE DEBE REALIZAR EN FASES 
-- HAY CINCO ENTREGAS FINALES 
-- TODO SE VA ACUMULANDO POR FASES 
-- EL PDF DEBE TEBER MAS DE 50 Y 120 PAGINAS 
-- SE DEBE REALIZAR CADA ENTREGA EN UNA FECHA DETERMINADA 
-- VIDEO MENOS DE 15 MINUTOS 
+---
 
-**PREGUNTAS**
-- ¿CUANDO ES EL TIEMPO DE ENTREGA DE CADA FASE? 
-- Respuesta: ![alt text](image-6.png)
+## 🎯 Objetivo General
+Este documento sirve como guía maestra para el desarrollo del proyecto final del seminario. El requerimiento principal es desarrollar un proyecto integral (similar a una tesis) que demuestre la aplicación práctica de los conocimientos adquiridos en la maestría.
 
+## 📋 Requisitos Críticos
+> [!IMPORTANT]
+> **Formato de Entrega:**
+> *   📄 **Documento PDF:** Extensión obligatoria entre **50 y 120 páginas**.
+> *   🎥 **Video:** Duración máxima de **15 minutos**.
+> *   💻 **Prototipo Funcional:** Herramienta o dashboard operativo.
+> *   🔄 **Metodología:** Flujo de trabajo acumulativo en **6 Fases**. El trabajo se evalúa como un todo.
 
-## FASE 0 
-- LEER LAS REGLAS 
-- VALIDAR LAS REGLAS 
+---
 
-## FASE 1 : 05 ENERO 2026 
-- CREAR EL EQUIPO DE TRABAJO 
-- ELEGIR EL TEMA A DESARROLAR 
-    - (TIENE QUE SER UN TEMA SE PUEDA APLICAR LO APRENDIDO EN LA MAESTRIA) 
-    - HAY LIBERTAD PARA ESCOGER 
-    - SE RECOMIENDA USAR DATOS DE LA EMPRESA PARA GENERAR UNA HERRAMIENTA QUE APOYE EN EL TRABAJO
-    - SE NECESITA QUE RESUELVA UN PROBLEMA REAL 
+## 📅 Roadmap del Proyecto (Cronograma)
 
-## FASE 2 : 16 ENERO 2026 
-- CREAR Y REALIZAR EL TRABAJO
-- ![alt text](image-2.png)
+### 🏁 Fase 0: Preparación
+- [ ] **Leer las reglas:** Comprender a fondo los lineamientos.
+- [ ] **Validar reglas:** Confirmar entendimiento de los entregables.
 
-## FASE 3 :  29 MARZO 2026 
-- Elaboración final de última entrega 
-- se evalua como un todo todas las entregas 
-- ![alt text](image-3.png)
+### 👥 Fase 1: Definición del Proyecto
+**📅 Fecha límite: 05 Enero 2026**
+- [ ] **Conformar equipo:** Crear el equipo de trabajo.
+- [ ] **Selección del Tema:**
+    - Debe solucionar un **problema real**.
+    - *Recomendación:* Usar datos corporativos reales para crear una herramienta de valor.
+    - Libertad de elección, siempre que aplique lo aprendido en la maestría.
 
-## FASE 4 : 23 MARZO 2026 
-- Desarrollo del prototipo funcional 
-- la entrega es realizar una presentación video mostrando los resultados y los conocimientos adquiridos 
-- lo bueno no debe ser presencial es grabar presentación + video + pdf + proyecto funcional 
+### 🛠️ Fase 2: Ejecución Inicial
+**📅 Fecha límite: 16 Enero 2026**
+- [ ] Inicio de la creación y desarrollo del trabajo.
+![Referencia Fase 2](image-2.png)
 
-## FASE 5 : 13 ABRIL 2026 
-- trabajo final 
-- presentación final 
-- video 
-- prototipo 
+### 🧩 Fase 4: Prototipado Funcional
+**📅 Fecha límite: 23 Marzo 2026**
+*Nota: Enfocada en la demostración técnica.*
+- [ ] **Desarrollo del prototipo funcional**.
+- [ ] **Modalidad:** No presencial (Grabación).
+- [ ] **Entregables:** Presentación + Video + PDF + Proyecto Funcional.
 
+### 📝 Fase 3: Consolidación
+**📅 Fecha límite: 29 Marzo 2026**
+- [ ] Elaboración del documento de entrega final.
+- [ ] Integración de feedback de fases previas.
+![Referencia Fase 3](image-3.png)
 
-**ESQUEMA**
-- ![alt text](image-4.png)
+### 🏆 Fase 5: Entrega Final y Defensa
+**📅 Fecha límite: 13 Abril 2026**
+- [ ] **Trabajo Final Completo**.
+- [ ] Presentación Final.
+- [ ] Video de defensa.
+- [ ] Prototipo finalizado.
 
-**importante**
-- ![alt text](image-5.png)
+---
+
+## ❓ Ayuda y Recursos
+
+### 📅 Calendario Oficial de Entregas
+**¿Cuándo es el tiempo de entrega de cada fase?**
+![Calendario de Entregas](image-6.png)
+
+### 📌 Esquema de Trabajo
+![Esquema General](image-4.png)
+
+> [!WARNING]
+> **Puntos Importantes a Considerar:**
+> ![Nota Importante](image-5.png)
