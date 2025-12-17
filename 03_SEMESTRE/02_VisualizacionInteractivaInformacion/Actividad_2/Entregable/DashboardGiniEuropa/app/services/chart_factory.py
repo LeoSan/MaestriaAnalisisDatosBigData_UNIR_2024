@@ -476,7 +476,7 @@ class ChartFactory:
             name=target_country,
             # Color gris para 2019, Rojo Alarma para 2020
             marker_color=['#9CA3AF', '#EF4444'],
-            text=df_cherry['Gini'], # Mostramos el valor para que vean que subió
+            text=df_cherry['Gini'].tolist(), # Mostramos el valor para que vean que subió
             textposition='auto'
         ))
 
