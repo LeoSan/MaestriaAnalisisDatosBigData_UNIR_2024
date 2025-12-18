@@ -818,58 +818,278 @@ svg.append("g")
 
 # Tema 06. Force Layout, transiciones, movimiento e interacción
 
+1. ¿Cuánto tardará la transición en este código?
+```javascript
+svg.selectAll("text")
+.data(dataset)
+.text(function(d) {
+return d;
+})
+.attr("x", function(d, i) {
+return xScale(i) + xScale.rangeBand() / 2;
+})
+.attr("y", function(d) {
+return h - yScale(d) + 14;
+});
+```
+A. 1 seg.
+B. 2 seg.
+C. Depende del número de barras del gráfico.
+D. No hay transición => **CORRECTO**
 
+
+2. ¿Cuánto tardará la transición en este código?
+```javascript
+svg.selectAll("text")
+.data(dataset)
+.text(function(d) {
+return d;
+})
+.transition()
+.delay(1000)
+.attr("x", function(d, i) {
+return xScale(i) + xScale.rangeBand() / 2;
+})
+.attr("y", function(d) {
+return h - yScale(d) + 14;
+});
+```
+A. 1 seg. => **CORRECTO**
+B. 2 seg.
+C. Depende del número de barras del gráfico.
+D. El tiempo por defecto transición
+
+
+3. ¿Es la sintaxis correcta?
+
+```javascript
+on("mouseover", function(d) {
+d3.select(this)
+.style("fill", "red");
+})
+```
+A. Sí. => **CORRECTO**
+B. No, porque falta la selección del objeto.
+C. No, porque el evento mouseover no existe.
+D. No, porque la llamada a la función es incorrecta
+
+
+4. ¿Es la sintaxis correcta?
+```javascript
+on("outmouse", function(d) {
+d3.select(this)
+.style("fill", "red");
+})
+```
+  - A. Sí. 
+  - B. No, porque falta la selección del objeto.
+  - C. No, porque el evento outmouse no existe. => **CORRECTO**
+  - D. No, porque la llamada a la función es incorrecta
+
+
+5. ¿Podemos escuchar eventos en los elementos p de D3?
+  - A. Sí. => **CORRECTO**
+  - B. No, porque hacen falta objetos que puedan aceptar un clic de ratón sobre ellos.
+  - C. No, porque los eventos aplican solo a los datos.
+  - D. No, porque p no es un elemento de D3
+
+
+6. ¿Podemos escuchar/generar eventos en los elementos de D3?
+  - A. Sí. => **CORRECTO**
+  - B. No, porque hacen falta objetos que puedan aceptar un clic de ratón sobre ellos.
+  - C. No, porque los eventos aplican solo a los datos.
+  - D. No, porque rect no es un elemento de D3
+
+
+7. ¿Qué conseguimos cuando utilizamos en la transición la función ?
+  - A. Que la transición sea constante. => **CORRECTO**
+  - B. Que la transición dure lo mínimo posible.
+  - C. Que la transición de los objetos sea vertical.
+  - D. Que la transición de los objetos sea horizontal.
+
+8. Si queremos exportar nuestra visualización a un archivo svg, tenemos que:
+  - A. Exportar nuestro gráfico con la función D3.exportSVG.
+  - B. Copiar el código HTML generado y copiarlo en un archivo svg. => **CORRECTO**
+  - C. No existe la posibilidad. Se pueden crear y visualizar gráficos SVG pero no exportarlos.
+  - D. Ninguna de las anteriores.
+
+9. Utilizando captura de pantalla para exportar nuestra visualización a otro formato:
+  - A. Generamos un archivo Bitmaps. => **CORRECTO**
+  - B. Generamos un archivo SVG.
+  - C. Generamos un archivo PDF.
+  - D. No es posible capturar la pantalla.
+
+10. ¿Cuál es el comportamiento al aplicar la función ?
+  - A. Los nodos se pueden arrastrar y, cuando sueltas el nodo, este se queda en esa misma posición.
+  - B. Los nodos se pueden arrastrar y, cuando sueltas el nodo, vuelven a su posición original.
+  - C. Los nodos se mueven de forma independiente por sí mismos en un ciclo continuo.
+  - D. Ninguna de las anteriores => **CORRECTO**
 --- 
-## Videoclase 1. 
+## Videoclase 1. Introducción a Force Layout
 
--
--
 
--
--
+- En el código de Force-Directed Graph proporcionado, ¿cuál es la función del siguiente fragmento?
+```javascript
+var force = d3.layout.force()
 
--
--
+    .charge(-120)
 
--
--
+    .linkDistance(30)
 
--
--
+    .size([width, height])
 
-## Videoclase 1. 
+    .nodes(data.nodes)
 
--
--
+    .links(data.links)
 
--
--
+    .start();
+```
+  - Establecer la distancia entre los nodos y la fuerza de repulsión.
 
--
--
 
--
--
+- ¿Qué realiza el siguiente fragmento de código en el contexto del Force-Directed Graph?
+```javascript
+force.on("tick", function() {
 
--
--
+    link.attr("x1", function(d) { return d.source.x; })
 
-## Videoclase 1. 
+        .attr("y1", function(d) { return d.source.y; })
 
--
--
+        .attr("x2", function(d) { return d.target.x; })
 
--
--
+        .attr("y2", function(d) { return d.target.y; });
 
--
--
+    node.attr("cx", function(d) { return d.x; })
 
--
--
+        .attr("cy", function(d) { return d.y; });
 
--
--
+});
+```
+
+  - Actualizar las posiciones de los nodos y enlaces en cada paso de la simulación. => Este fragmento se ejecuta en cada “tick” de la simulación, actualizando las posiciones de los nodos y enlaces, lo que permite que el grafo se mueva dinámicamente.
+
+
+- ¿Qué efecto tiene la siguiente línea de código en la visualización de D3?  
+```javascript
+node.call(force.drag);
+```
+  - Permite que los nodos sean arrastrados por el usuario. => La línea node.call(force.drag) permite que los nodos sean arrastrados por el usuario en la visualización. Esto habilita la interacción en tiempo real con los nodos.
+
+- ¿Qué tipo de datos se encuentran en el archivo stations_graph.json utilizado en el código?
+```javascript
+d3.json("stations_graph.json", function(json) {
+
+    visualizeLayout(json);
+
+});
+```
+  - Nodos y enlaces que representan paradas de metro y sus conexiones => El archivo stations_graph.json contiene información sobre los nodos (paradas de metro) y los enlaces (conexiones entre las paradas), lo que permite construir un grafo con las relaciones entre estas estaciones.
+
+
+- En el código del Force-Directed Graph, ¿qué efecto tiene la línea charge(-120)?
+```javascript
+var force = d3.layout.force()
+
+    .charge(-120)
+
+    .linkDistance(30)
+
+    .size([width, height])
+
+    .nodes(data.nodes)
+
+    .links(data.links)
+
+    .start();
+```
+  - Controlar la fuerza de repulsión entre los nodos. => El parámetro .charge(-120) establece la fuerza de repulsión entre los nodos. Un valor negativo indica que los nodos se repelen entre sí, lo que contribuye a la distribución equilibrada de los nodos en el grafo.
+
+## Videoclase 2. Actualización dinámica de gráficos en D3.js según eventos 
+
+- ¿Qué elemento en D3.js permite añadir interactividad a un gráfico, como un evento de clic?
+  - .on(“click”, function() {…}). => En D3.js, los eventos como un clic se gestionan mediante el método .on(). Específicamente, el código .on(“click”, function() {…}) es el que permite ejecutar una función cuando se hace clic en un elemento
+
+- ¿Qué función se usa en D3 para animar una transición, permitiendo que un cambio en las propiedades de un gráfico se realice de manera suave?
+  - .transition().  => La función .transition() en D3 permite animar los cambios en las propiedades de los elementos, aplicando un cambio gradual en lugar de inmediato. Esto se utiliza para hacer que el gráfico se mueva o cambie suavemente.
+
+- ¿Cómo puedes actualizar la altura de las barras en un gráfico de barras al actualizar el dataset en D3.js?
+  - Utilizando .attr(“height”, function(d) {…}). => Para actualizar la altura de las barras en D3.js, se utiliza el método .attr(“height”, function(d) {…}). Este método ajusta el atributo height de cada rectángulo (barra) en función de los datos. 
+
+- ¿Qué método en D3.js se utiliza para definir la duración de una transición en milisegundos?
+  - .duration() => El método .duration() se usa en D3.js para especificar la duración de una transición en milisegundos. Por ejemplo, .duration(3000) hace que la transición dure 3 segundos.
+
+- ¿Qué ocurre si se aplica una transición solo a los rectángulos (rect) de un gráfico, pero no a los textos (text) asociados en D3.js?
+  - Los rectángulos se moverán suavemente, pero el texto permanecerá fijo => Si no se aplica la transición al texto, los rectángulos se moverán suavemente mientras el texto se queda en su lugar. Esto puede causar una descoordinación visual en la animación si no se trata adecuadamente.
+
+## Videoclase 3. Transiciones y animaciones en D3.js
+
+-  ¿Qué sucede cuando se hace clic en una barra dentro del gráfico creado con D3.js utilizando el siguiente código?
+```javascript
+svg.selectAll("rect")
+
+  .data(dataset)
+
+  .on("click", function(d) {
+
+     alert(d);
+
+  })
+
+  .transition()
+
+   .ease("linear")
+
+ .attr("y", function(d) {
+
+     return h - yScale(d);
+
+  })
+
+  .attr("height", function(d) {
+
+     return yScale(d);
+
+  });
+```
+  - Se muestra el valor asociado a la barra en una ventana emergente.
+
+- ¿Qué ocurre cuando se pasa el ratón sobre una barra dentro del gráfico con el siguiente código?
+
+```javascript
+svg.selectAll("rect")
+
+  .data(dataset)
+
+  .on("mouseover", function(d) {
+
+    d3.select(this)
+
+      .style("fill", "red");
+
+  })
+
+  .on("mouseout", function(){
+
+    d3.select(this)
+
+      .style("fill", function(d) {
+
+         return "rgb(0, 0, " + (d * 10) + ")";
+
+      });
+
+  });
+```
+  - La barra cambia a color rojo cuando el ratón pasa por encima y vuelve a su color original al quitar el ratón.
+
+- ¿Cuál es la principal ventaja de exportar un gráfico como SVG en lugar de usar una captura de pantalla (Bitmap)?
+  - Los archivos SVG pueden modificarse y escalarse sin pérdida de calidad.
+
+- ¿Cómo se puede exportar un gráfico de D3.js a formato PDF desde el navegador?
+  - Utilizando el atajo de teclado “Ctrl + P” y eligiendo la opción de imprimir en formato PDF.
+
+- ¿Qué método se recomienda para exportar un gráfico en D3.js a un archivo SVG para edición posterior?
+  - Inspeccionando el elemento y copiando el contenido entre las etiquetas <svg>…</svg>.
 
 # Tema 07. 
 

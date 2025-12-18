@@ -697,35 +697,93 @@ D3.js proporciona una API sencilla para crear y personalizar ejes. Básicamente,
 
 # Tema 06. Force Layout, transiciones, movimiento e interacción
 
-## 6.2. Force Layout
-## 6.3. Actualización de gráficos con base en eventos
-## 6.4. Transiciones y movimiento
+
+
 ## 6.5. Añadiendo interacción a los gráficos
-## 6.6. Exportando el resultado a PDF, Bitmaps y SVG
+
 
 
 El Tema 6 de la Maestría se titula "Force Layout, transiciones, movimiento e interacción", y su enfoque principal es dotar de movimiento e interacción a las visualizaciones de D3, además de dominar los principios básicos comunes a todas sus gráficas,,,,.
 Los aspectos clave que se abordan en este tema son:
-1. Force Layout
-Se introduce la visualización Force-Directed Graph o Force Layout, que está orientada a representar las relaciones entre entidades mediante un grafo,. Este tipo de gráfica es especialmente útil en el ámbito de las redes sociales para reflejar las conexiones entre diferentes usuarios,.
-• Algoritmo y Componentes: El algoritmo principal se define mediante d3.layout.force(),. Se utiliza para definir tanto los nodos (puntos) como los enlaces (líneas de conexión),,.
-• Ajuste y Adaptación: El algoritmo se ajusta mediante atributos como charge y linkDistance,. La función force.on("tick", function() { ... }) se encarga de adaptar los valores del dataset a los requerimientos del algoritmo,.
-• Interacción Típica: Es común en este tipo de gráficos permitir al usuario arrastrar los nodos por la pantalla con un simple clic,.
-2. Actualización de Gráficos con Base en Eventos e Interacción
-Todas las visualizaciones en D3 tienen eventos que pueden ser gestionados fácilmente con unas pocas líneas de código, una vez que se entienden los conceptos básicos,,. El movimiento es fundamental en las visualizaciones, ya que reflejan ideas y sugieren caminos,.
-• Generación de Eventos: Cualquier elemento en D3.js puede generar eventos, por ejemplo, usando la función .on("click", function(){...}) para crear una interacción al hacer clic,.
-• Actualización Dinámica: Es posible actualizar una gráfica en tiempo real (por ejemplo, con un nuevo dataset) al ocurrir un evento,. Esto implica actualizar los valores de la gráfica y adaptar sus dimensiones y texto al nuevo dataset,,.
-• Interacción con Elementos: Se pueden definir interacciones específicas como mostrar el valor de una barra al hacer clic en ella usando alert(d),, o hacer que las barras cambien de color al pasar el ratón por encima (mouseover) y recuperen su color original al salir (mouseout),,.
-3. Transiciones y Movimiento
+
+## 6.2. Force Layout
+> Es un modelo visual que está orientado a representar las relaciones entre entidades mediante grafos.  
+> Este tipo de gráfica es especialmente útil en el ámbito de las redes sociales para reflejar las conexiones entre diferentes usuarios. 
+> Usa una simulación fisica para posicionar los elementos.  
+
+- Algoritmo y Componentes: 
+  - El algoritmo principal se define mediante d3.layout.force()
+  - Se utiliza para definir tanto los nodos (puntos) como los enlaces (líneas de conexión)
+
+- Ajuste y Adaptación: 
+  - El algoritmo se ajusta mediante atributos como charge y linkDistance
+  - La función force.on("tick", function() { ... }) se encarga de adaptar los valores del dataset a los requerimientos del algoritmo.
+
+- Interacción Típica: 
+  - Es común en este tipo de gráficos permitir al usuario arrastrar los nodos por la pantalla con un simple clic. 
+
+**Elementos claves**
+- ![elementos claves](image-6.png)
+
+- Posicionamiento
+- Relaciones 
+- Apariencia:
+
+**Aplicaciones Comunes**
+- Redes Sociales. 
+- Mapas conceptuales
+- Interacciones de grafos en datos complejos 
+
+**Estrcutrura html y pasos**
+- ![Estrcutrura html ](image-7.png)
+- ![alt text](image-8.png)
+- ![alt text](image-9.png)
+- ![alt text](image-10.png)
+- ![alt text](image-11.png)
+- ![alt text](image-12.png)
+- ![alt text](image-13.png)
+
+
+## 6.3. Actualización de gráficos con base en eventos
+> Todas las visualizaciones en D3 tienen eventos que pueden ser gestionados fácilmente con unas pocas líneas de código, una vez que se entienden los conceptos básicos,,. > El movimiento es fundamental en las visualizaciones, ya que reflejan ideas y sugieren caminos,.
+
+![alt text](image-14.png)
+
+- Generación de Eventos: Cualquier elemento en D3.js puede generar eventos, por ejemplo, usando la función .on("click", function(){...}) para crear una interacción al hacer clic,.
+- Actualización Dinámica: Es posible actualizar una gráfica en tiempo real (por ejemplo, con un nuevo dataset) al ocurrir un evento,. Esto implica actualizar los valores de la gráfica y adaptar sus dimensiones y texto al nuevo dataset,,.
+- Interacción con Elementos: Se pueden definir interacciones específicas como mostrar el valor de una barra al hacer clic en ella usando alert(d),, o hacer que las barras cambien de color al pasar el ratón por encima (mouseover) y recuperen su color original al salir (mouseout),,.
+
+**PASOS METODICO**
+- ![alt text](image-15.png)
+
+
+**PASOS TECNICOS**
+- PASO 1: ![PASO 1](image-16.png)
+- PASO 2: ![PASO 2](image-17.png)
+- PASO 3: ![PASO 3](image-18.png)
+- PASO 4: ![PASO 4](image-19.png)
+- PASO 5: ![PASO 5](image-20.png)
+- PASO 6: ![PASO 6](image-21.png)
+- PASO 7: ![PASO 7](image-22.png)
+
+## 6.4. Transiciones y movimiento
 Las transiciones son el movimiento que da dinamismo y vida a los objetos del gráfico,.
-• Implementación: Se implementan con la simple línea de código transition(),,.
-• Control de Duración: Se puede controlar la duración de la animación usando duration(milisegundos),, haciendo que, por ejemplo, una animación dure tres segundos.
-• Comportamiento de la Animación: El comportamiento de la animación, como su aceleración o desaceleración, se puede regular con la función ease() (ejemplo: ease("linear")),,.
-• Retraso: Es posible retrasar el inicio de la animación con la función delay(),.
-4. Exportación de Visualizaciones
+- Implementación: Se implementan con la simple línea de código transition(),,.
+- Control de Duración: Se puede controlar la duración de la animación usando duration(milisegundos),, haciendo que, por ejemplo, una animación dure tres segundos.
+- Comportamiento de la Animación: El comportamiento de la animación, como su aceleración o desaceleración, se puede regular con la función ease() (ejemplo: ease("linear")),,.
+- Retraso: Es posible retrasar el inicio de la animación con la función delay(),.
+
+**PASOS TECNICO**
+- ![alt text](image-23.png)
+- ![alt text](image-24.png)
+
+## 6.6. Exportando el resultado a PDF, Bitmaps y SVG
+
 Aunque esta sección no está directamente relacionada con D3.js, el tema aborda la utilidad de exportar el gráfico a diferentes formatos,.
-• Formatos Básicos (Baja Calidad): La captura de pantalla (Print Screen o Command ⌘ + Shift + 3 en MAC) genera archivos Bitmap o PNG de baja calidad, y también se puede imprimir a PDF seleccionando el formato en las opciones de impresión,.
-• Formato Vectorial (Alta Calidad): La opción más interesante es exportar a SVG,. Esto se logra inspeccionando el elemento en el navegador, copiando el código fuente ubicado entre las etiquetas <svg> ... </svg>,, y guardándolo en un archivo con extensión .svg,. Este formato vectorial permite modificar la imagen y escalarla sin pérdida de calidad en programas como Photoshop,.
+- Formatos Básicos (Baja Calidad): La captura de pantalla (Print Screen o Command ⌘ + Shift + 3 en MAC) genera archivos Bitmap o PNG de baja calidad, y también se puede imprimir a PDF seleccionando el formato en las opciones de impresión,.
+- Formato Vectorial (Alta Calidad): La opción más interesante es exportar a SVG,. Esto se logra inspeccionando el elemento en el navegador, copiando el código fuente ubicado entre las etiquetas <svg> ... </svg>,, y guardándolo en un archivo con extensión .svg,. Este formato vectorial permite modificar la imagen y escalarla sin pérdida de calidad en programas como Photoshop,.
+
+![alt text](image-25.png)
 
 
 # Tema 07. 
