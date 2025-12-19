@@ -785,8 +785,35 @@ Aunque esta sección no está directamente relacionada con D3.js, el tema aborda
 
 ![alt text](image-25.png)
 
+# Tema 07: Power BI
 
-# Tema 07. 
+## 7.2. Instalación e Interfaz de Power BI
+
+Power BI ofrece varias opciones, incluyendo Power BI Desktop, que es una herramienta de análisis personal gratuita e independiente utilizada para el desarrollo de casos de estudio en la asignatura
+
+
+## 7.3. Funciones de Power BI
+
+Un proyecto completo de análisis y visualización en Power BI sigue un flujo de trabajo estructurado en cinco apartados funcionales:
+
+- 1. Obtención de datos: Carga de información desde diversas fuentes, como archivos de texto, Excel, entornos relacionales (SQL Server) o servicios en línea (Facebook o Google Analytics).
+- 2. Preparación de datos: Limpieza y tratamiento estructurado de los datos utilizando el gestor integrado conocido como Query Manager. Esta herramienta facilita la eliminación de columnas, el cambio de formatos de campo y la sustitución de valores.
+- 3. Modelado de datos: Relacionar datos de diferentes fuentes y realizar cálculos complejos para descubrir información relevante.
+- 4. Visualización de datos: Proporcionar gráficos, tablas y representaciones para que los usuarios puedan analizar los datos y tomar decisiones.
+- 5. Reporte de datos: Creación de cuadros de mandos o dashboards para mejorar la comunicación de los informes
+
+## 7.4. Obtención, preparación y modelado de datos
+
+La creación de una visualización se logra arrastrando el campo deseado a la Vista Informe y seleccionando el tipo de visualización en el panel lateral derecho.
+
+Las visualizaciones son interactivas; al pinchar en un elemento de una gráfica (como un sector de un gráfico circular), las otras gráficas en el informe actualizan sus datos automáticamente para reflejar solo la información asociada a ese elemento.
+
+**Las visualizaciones avanzadas incluyen:**
+- Mapas: Permiten la distribución geográfica de los datos, siendo capaces de interpretar tanto coordenadas GIS como localidades en formato texto.
+- Segmentación de Datos (Slicers): Esta visualización es útil para segmentar los datos al activar una serie de filtros dinámicos basados en un campo determinado.
+Power BI, en su conjunto, transforma el análisis de datos de ubicación en decisiones de negocio, destacando por su facilidad de uso y sus amplias capacidades de integración.
+
+## 7.5. Visualización de dato
 
 
 # Tema 08. 
