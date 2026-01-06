@@ -1091,66 +1091,133 @@ svg.selectAll("rect")
 - ¿Qué método se recomienda para exportar un gráfico en D3.js a un archivo SVG para edición posterior?
   - Inspeccionando el elemento y copiando el contenido entre las etiquetas <svg>…</svg>.
 
-# Tema 07. 
+# Tema 07. Power BI
+
+1. Power BI es una herramienta que permite la visualización de datos:
+- A. Correcto. No incorpora capacidades para el tratamiento y transformación de los datos.
+- B. Incorrecto. Solo la versión Desktop permite la visualización de datos.
+- C. Incorrecto. Solo la versión SaaS permite la visualización de datos.
+- D. Correcto. Adicionalmente incorpora capacidades avanzadas para el tratamiento y transformación de los datos. => **Correcto**
+
+2. Power BI permite el intercambio rápido entre la visualización de datos y la visualización de gráficas:
+- A. Correcto. Desde el menú lateral izquierdo es posible intercambiar dichas vistas. => **Correcto**
+- B. Correcto. Pulsando F5.
+- C. Incorrecto. Una vez cargados los datos, ya solo nos movemos en su visualización.
+- D. Incorrecto. Existe la opción de carga de datos y visualización posterior en modo gráfica. La visualización de los datos no es necesaria en el 80 % de las
+ocasiones.
+
+3. ¿Dónde se ubican las opciones de Filtros, Visualizaciones y Campos?
+- A. En el menú lateral derecho. => **Correcto**
+- B. No existe el menú de Filtros.
+- C. No existe el menú de Visualizaciones.
+- D. No existe el menú de Campos
+
+4. ¿Qué fases ordenadas incorpora un proyecto de análisis y visualización de datos?
+- A. Preparación – Obtención - Modelado – Visualización – Reporte de datos.
+- B. Obtención – Modelado – Preparación – Modelado – Visualización – Reporte de datos.
+- C. Obtención – Preparación – Modelado – Visualización – Reporte de datos. => **Correcto**
+- D. Obtención – Visualización de datos.
+
+
+5. El gestor de datos integrado de Power BI:
+- A. Permite limpiar datos.
+- B. Permite tratar los datos.
+- C. Se denomina Query Manager.
+- D. Todas las respuestas son correctas. => **Correcto**
+
+
+6. Los filtros dinámicos de Power BI nos permiten seleccionar el rango deseado de datos, tanto desde el apartado Filtros como incorporando una visualización de Segmentación de Datos:
+- A. Correcto. => **Correcto**
+- B. Incorrecto. No existe la visualización Segmentación de Datos.
+- C. Incorrecto. La visualización Segmentación de Datos no tiene esa finalidad.
+- D. Incorrecto. El apartado Filtros sirve para escoger el tipo de gráfica deseada
+
+
+7. En el momento de cargar los datos es posible editarlos antes de proceder a su visualización:
+- A. Correcto. En este momento podemos utilizar la opción editar para hacer los cambios de formato que sean necesarios. => **Correcto**
+- B. Correcto. Sin embargo, si modificamos los datos debemos guardarlos y volver a cargarlos para que recoja todas las modificaciones.
+- C. Incorrecto. Power BI no incorpora dicha funcionalidad.
+- D. Incorrecto. Power BI permite la edición de datos pero no antes de analizarlos visualmente.
+
+
+8. Las visualizaciones tipo Mapa requiere la presencia de coordenadas en los datos:
+- A. Correcto. No existe otra manera de hacerlo.
+- B. No es necesario, porque el servicio de mapas de Power BI también es capaz de interpretar localidades en formato texto. => **Correcto**
+- C. No es necesario, porque basta con indicárselo en los Filtros.
+- D. Correcto. Las coordenadas GIS deben estar presentes en el dataset.
+
+
+9. La gráfica tipo Funnel solo se aplica si los datos de los diferentes niveles tienen un orden decreciente formando un embudo:
+- A. Incorrecto. El orden de los datos no es relevante y se pueden aplicar diferentes criterios para ordenarlos. => **Correcto**
+- B. Incorrecto. Tienen que estar ordenados de forma creciente para forma el embudo.
+- C. Correcto. Debes estar ordenados decrecientemente.
+- D. Correcto. El embudo solo muestra datos que representen variaciones entre ellos
+
+
+10. Los campos de los ejes y de los valores son definidos automáticamente por Power BI:
+- A. Correcto. Así nos facilita la experiencia como usuarios.
+- B. Incorrecto. Son definidos por el usuario. => **Correcto**
+- C. Correcto y no se pueden modificar.
+- D. Ninguna de las anteriores
 
 --- 
-## Videoclase 1. 
+## ◄ Videoclase 1. Conceptos básicos y configuración inicial
 
--
--
+- ¿Qué característica de Power BI lo hace destacar en el análisis de datos empresariales según el cuadrante mágico de Gartner?
+- Su capacidad para integrar múltiples fuentes de datos y generar visualizaciones interactivas.
 
--
--
+- ¿Cuál es la opción de Power BI que permite el análisis personal gratuito sin necesidad de conexión a la nube?
+- Power BI Desktop.
 
--
--
+- ¿Cuál es la función principal del menú lateral izquierdo en Power BI?
+- Acceder a diferentes vistas de los informes
 
--
--
+- ¿Qué se puede hacer en el menú lateral derecho de Power BI?
+- Aplicar filtros y seleccionar los campos para la visualización.
 
--
--
+- ¿Cuál es una de las principales ventajas que ofrece Power BI en cuanto a su interfaz y facilidad de uso?
+- Su interfaz es intuitiva y fácil de usar, incluso sin conocimientos técnicos avanzados.
 
-## Videoclase 1. 
+## ◄ Videoclase 2. Obtención, transformación y modelado de datos
 
--
--
+- ¿Cuál de las siguientes es una de las funciones principales de Power BI en el proceso de análisis de datos?
+- Modelar datos para crear una estructura que facilite su posterior visualización. => En Power BI, una de las funciones clave es modelar los datos. Esto implica relacionar datos de diferentes fuentes y ajustarlos para facilitar su visualización, lo que ayuda a obtener información relevante para la toma de decisiones
 
--
--
+- ¿Qué acción realiza el Query Manager de Power BI durante la preparación de los datos?
+- Realiza transformaciones y limpia los datos => El Query Manager es una herramienta integrada en Power BI que permite realizar transformaciones sobre los datos, como eliminar columnas, cambiar formatos de campos o reemplazar valores, lo cual es esencial para preparar los datos antes de analizarlos o visualizarlos.
 
--
--
+- ¿Qué herramienta de Power BI se utiliza para transformar y preparar los datos después de su importación?
+- Query Manager. => El Query Manager es la herramienta integrada en Power BI que permite realizar transformaciones y preparaciones de los datos, como eliminar columnas o cambiar el formato de los campos, antes de su visualización o análisis. Esta es la funcionalidad que se usa durante el proceso de preparación de datos en Power BI.
 
--
--
+- ¿Cuál es el propósito de la función “Obtener datos” en Power BI?
+- Cargar datos desde diferentes fuentes como archivos, bases de datos o servicios en línea. => La función obtener datos de Power BI permite cargar información desde diversas fuentes, como archivos de Excel; bases de datos, como SQL Server, o servicios en línea, como Google Analytics, lo que facilita el análisis de datos integrados desde múltiples orígenes.
 
--
--
+- ¿Qué opción se utiliza en Power BI para eliminar columnas o realizar otras transformaciones en los datos antes de cargarlos en el modelo?
+- Query Manager => El Query Manager en Power BI es la herramienta que permite realizar transformaciones avanzadas sobre los datos, como eliminar columnas, cambiar formatos o reemplazar valores. Es esencial para preparar los datos antes de proceder con su modelado y visualización.
 
-## Videoclase 1. 
+## ◄ Videoclase 3. Análisis y creación de visualizaciones
 
--
--
+- ¿En Power BI, al crear una visualización y no seleccionar un tipo específico, ¿qué tipo de visualización se aplica por defecto?
+- Tabla de datos. => Cuando no se selecciona un tipo específico de visualización en Power BI, por defecto se crea una tabla de datos. Esta visualización permite ver los datos en formato tabular sin ningún gráfico adicional.
 
--
--
+- ¿Cuál es la herramienta en Power BI que permite aplicar filtros a los datos basados en campos específicos?
+- La segmentación de datos =>  Power BI es una herramienta que permite activar filtros en campos específicos para segmentar y analizar subconjuntos de datos de manera eficiente.
 
--
--
+- ¿Qué tipo de gráfico sería más adecuado para visualizar la evolución de un valor a lo largo del tiempo en Power BI?
+- El gráfico de áreas =>  es ideal para mostrar cómo cambia un valor a lo largo del tiempo, permitiendo comparar la evolución de varias variables.
 
--
--
+- ¿Qué debes hacer si un valor erróneo aparece en una visualización de Power BI debido a datos incorrectos?
+- Excluir el valor erróneo haciendo clic sobre él y seleccionando «Excluir». => Si un valor erróneo aparece en una visualización, puedes excluirlo directamente desde el gráfico, lo que permite mantener la integridad de los datos mostrados sin modificar el dataset original.
 
--
--
+- ¿Por qué sería útil aplicar un filtro para eliminar datos incompletos o erróneos en un análisis de Power BI?
+- Para asegurar que el análisis se base sólo en datos completos y confiables. => Aplicar un filtro para eliminar datos incompletos o erróneos ayuda a garantizar la precisión de los resultados del análisis, asegurando que solo se utilicen datos completos y confiables.
 
 
 # Tema 08. 
 
 
 --- 
-## Videoclase 1. 
+## Videoclase 1. Introducción a Qlik Sense: funcionalidades y entorno
 
 -
 -
