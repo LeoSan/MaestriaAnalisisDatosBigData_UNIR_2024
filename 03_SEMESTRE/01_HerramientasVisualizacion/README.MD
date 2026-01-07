@@ -816,6 +816,9 @@ Power BI, en su conjunto, transforma el análisis de datos de ubicación en deci
 
 # Tema 8. Qlik Sense
 
+- "Qlik Sense" se centra en esta plataforma completa orientada al descubrimiento de la información que reside en los datos 
+- Qlik Sense no es solo una herramienta de visualización, sino que incorpora capacidades propias de entornos de Business Intelligence (BI), permitiendo recopilar, procesar y extraer valor de los datos.
+- Qlik, junto con Microsoft (PowerBI) y Tableau, se considera uno de los productos líderes de Business Intelligence según el "cuadrante mágico de Gartner".
 
 
 ## 8.4. Exploración de los datos, filtros y tablas pivotantes
@@ -825,44 +828,42 @@ Power BI, en su conjunto, transforma el análisis de datos de ubicación en deci
 
 ## 8.6. Mapas geográficos
 
-## 8.7. Historias
 
 ## 8.3. Apps
 
-- "Qlik Sense" se centra en esta plataforma completa orientada al descubrimiento de la información que reside en los datos 
-- Qlik Sense no es solo una herramienta de visualización, sino que incorpora capacidades propias de entornos de Business Intelligence (BI), permitiendo recopilar, procesar y extraer valor de los datos.
-- Qlik, junto con Microsoft (PowerBI) y Tableau, se considera uno de los productos líderes de Business Intelligence según el "cuadrante mágico de Gartner".
-
-
-
-El tema aborda los siguientes aspectos clave:
-
-
 1. Aplicaciones (Apps) en Qlik Sense
-Qlik Sense es un entorno visual que facilita la creación de gráficos mediante la función de "arrastrar y soltar" [5]. La base de trabajo es la App, la cual se crea y luego se utiliza para añadir datos [6, 7].
+Qlik Sense es un entorno visual que facilita la creación de gráficos mediante la función de "arrastrar y soltar". La base de trabajo es la App, la cual se crea y luego se utiliza para añadir datos.
 
-• Añadir Datos: Los datos se pueden cargar desde archivos locales o mediante múltiples conectores que Qlik proporciona para fuentes de datos externas [7]. El sistema permite ver el modelo de datos del fichero, mostrando las tablas y sus relaciones a través de campos clave [8, 9]. El sistema genera automáticamente el código script necesario para el tratamiento de datos detrás de la carga [10].
-• Dimensiones y Medidas: Para crear un gráfico, Qlik Sense requiere definir una dimensión y una medida [11].
-    ◦ Dimensión: Es la característica del dato (como fecha, ciudad, productos) que ayuda a determinar cómo se agruparán los datos de la medida [11].
-    ◦ Medida: Es un cálculo (como la suma del total de ventas o la media) que se utiliza para decidir qué parte de los datos se mostrará en la visualización [11].
+• Añadir Datos: Los datos se pueden cargar desde archivos locales o mediante múltiples conectores que Qlik proporciona para fuentes de datos externas. El sistema permite ver el modelo de datos del fichero, mostrando las tablas y sus relaciones a través de campos clave  El sistema genera automáticamente el código script necesario para el tratamiento de datos detrás de la carga.
+• Dimensiones y Medidas: Para crear un gráfico, Qlik Sense requiere definir una dimensión y una medida.
+    ◦ Dimensión: Es la característica del dato (como fecha, ciudad, productos) que ayuda a determinar cómo se agruparán los datos de la medida.
+    ◦ Medida: Es un cálculo (como la suma del total de ventas o la media) que se utiliza para decidir qué parte de los datos se mostrará en la visualización.
 
 2. Exploración de Datos, Filtros y Tablas Pivotantes
 La exploración de datos es crucial para verificar la coherencia de la información:
-• Filtros: Los filtros se pueden incluir en el gráfico, por ejemplo, mediante la opción Panel de filtrado, para seleccionar una dimensión específica (como un país) [12].
-• Exploración y Marcadores: El examen de los filtros y el uso de tablas pivotantes (que presentan dimensiones y medidas como filas y columnas) permiten identificar problemas en los datos, como valores vacíos o inconsistencias [13, 14]. Es posible almacenar el resultado de aplicar un conjunto de filtros utilizando la función de Marcadores para reutilizarlos rápidamente [15, 16].
+• Filtros: Los filtros se pueden incluir en el gráfico, por ejemplo, mediante la opción Panel de filtrado, para seleccionar una dimensión específica (como un país).
+• Exploración y Marcadores: El examen de los filtros y el uso de tablas pivotantes (que presentan dimensiones y medidas como filas y columnas) permiten identificar problemas en los datos, como valores vacíos o inconsistencias. Es posible almacenar el resultado de aplicar un conjunto de filtros utilizando la función de Marcadores para reutilizarlos rápidamente.
 
 3. Visualizaciones Avanzadas: Mapas, Etiquetas y Colores
 Qlik Sense proporciona recursos para mejorar la visualización:
-• Etiquetas y Orientación: La opción Etiqueta permite modificar el nombre de los ejes para un mejor entendimiento, reemplazando nombres de campos por defecto (ej. Sum(Persons) por Población) [16, 17]. La opción Opciones de estilo permite cambiar la orientación de un gráfico de barras a horizontal, por ejemplo [17].
-• Colores: Se puede deshabilitar la asignación de colores automática para elegir opciones como "Por dimensión" (color diferente para cada categoría, como país) o "Por medida" (un gradiente secuencial basado en el valor) [18, 19].
-• Mapas Geográficos: Para crear un Mapa Geográfico, se arrastra la opción Mapa a la zona de edición y se añade una Capa de área para representar zonas (como países) en lugar de puntos [20, 21]. La dimensión utilizada para identificar la zona puede ser un estándar internacional como el ISO 3166 [21]. También se pueden aplicar colores en función de una medida (ej. el número de habitantes), utilizando una función de agregación como Sum [22].
+• Etiquetas y Orientación: La opción Etiqueta permite modificar el nombre de los ejes para un mejor entendimiento, reemplazando nombres de campos por defecto (ej. Sum(Persons) por Población). La opción Opciones de estilo permite cambiar la orientación de un gráfico de barras a horizontal, por ejemplo.
+• Colores: Se puede deshabilitar la asignación de colores automática para elegir opciones como "Por dimensión" (color diferente para cada categoría, como país) o "Por medida" (un gradiente secuencial basado en el valor).
+• Mapas Geográficos: Para crear un Mapa Geográfico, se arrastra la opción Mapa a la zona de edición y se añade una Capa de área para representar zonas (como países) en lugar de puntos. La dimensión utilizada para identificar la zona puede ser un estándar internacional como el ISO 3166. También se pueden aplicar colores en función de una medida (ej. el número de habitantes), utilizando una función de agregación como Sum.
 
 
-4. Historias (Storytelling)
-La funcionalidad de Historias es una opción importante para contar una narrativa con los datos [23]. Una historia es el equivalente a un dashboard o cuadro de mando [23, 24]. Se construye en un lienzo en blanco (como diapositivas) donde se pueden insertar títulos, textos, formas, e imágenes de gráficos [25]. Las imágenes de las gráficas se capturan desde la hoja de trabajo y se almacenan en la Librería de capturas para ser incluidas en la historia [25, 26].
+## 8.7. Historias
+- La funcionalidad de Historias es una opción importante para contar una narrativa con los datos
+- Una historia es el equivalente a un dashboard o cuadro de mando.  
+- Se construye en un lienzo en blanco (como diapositivas) donde se pueden insertar títulos, textos, formas, e imágenes de gráficos. 
+- Las imágenes de las gráficas se capturan desde la hoja de trabajo y se almacenan en la Librería de capturas para ser incluidas en la historia.
 
 5. Tipos de Gráficos
-Aunque el énfasis está en dominar los conceptos básicos (apps, datos, filtros), Qlik Sense se caracteriza por una gran variedad de gráficos [27]. Ejemplos comunes incluyen diagramas de barras, gráficos de línea, tablas de datos (ideales para rankings), histogramas, gráficos circulares (tarta) y gráficos de dispersión [28-30].
+Aunque el énfasis está en dominar los conceptos básicos (apps, datos, filtros), Qlik Sense se caracteriza por una gran variedad de gráficos. 
+
+Ejemplos comunes incluyen diagramas de barras, gráficos de línea, tablas de datos (ideales para rankings), histogramas, gráficos circulares (tarta) y gráficos de dispersión. 
+
+
+![alt text](image-26.png)
 
 # Tema 09. 
 

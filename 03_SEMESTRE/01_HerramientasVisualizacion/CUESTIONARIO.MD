@@ -1213,60 +1213,123 @@ ocasiones.
 - Para asegurar que el análisis se base sólo en datos completos y confiables. => Aplicar un filtro para eliminar datos incompletos o erróneos ayuda a garantizar la precisión de los resultados del análisis, asegurando que solo se utilicen datos completos y confiables.
 
 
-# Tema 08. 
+# Tema 08. Qlik
+
+
+1. Qlik Sense es una plataforma:
+- A. Orientada a datos.
+- B. Orientada a la visualización.
+- C. Orientada al descubrimiento de la información.
+- D. Todas las respuestas son válidas. => **Correcto**
+
+
+2. Qlik integra directamente los datos:
+- A. En una visualización.
+- B. En la app. => **Correcto**
+- C. En una fuente de datos.
+- D. En un fichero de datos.
+
+3. Qlik Datamarket es:
+- A. Un repositorio de datos, con datasets tanto de uso libre como de pago. => **Correcto**
+- B. Un mercado disponible para los usuarios que desean adquirir gráficas predefinidas.
+- C. Un entorno abierto en el que los usuarios pueden compartir datasets.
+- D. Todas las respuestas son válidas.
+
+4. Una dimensión en Qlik es:
+- A. Un gráfico.
+- B. Un cálculo.
+- C. La característica del dato. => **Correcto**
+- D. Una tabla
+
+5. Una medida en Qlik es:
+- A. Un cálculo. => **Correcto**
+- B. Un gráfico.
+- C. La característica del dato. 
+- D. Una tabla.
+
+
+6. Cuando distribuimos los datos a lo largo del tiempo, estamos definiendo:
+- A. La dimensión de la gráfica. => **Correcto**
+- B. La medida de la gráfica.
+- C. Un filtro de selección.
+- D. Ninguna de las opciones es correcta.
+
+7. El gestor de datos nos permite:
+- A. Ver la estructura de las tablas y las relaciones existentes entre ellas. => **Correcto**
+- B. Modificar la estructura de las tablas en el dataset de origen
+- C. Trabajar con las tablas, pero sin modificar las relaciones.
+- D. Gestionar los datos de la cuenta en Qlik Sense.
+
+8. Las tablas pivotantes nos permiten:
+- A. Analizar datos por múltiples medidas.
+- B. Presentar dimensiones y medidas como filas y columnas de una tabla.
+- C. Analizar datos por múltiples dimensiones.
+- D. Todas las respuestas son válidas. => **Correcto**
+
+9. Las historias de Qlik es el equivalente a:
+- A. Un dashboard. => **Correcto**
+- B. Una gráfica.
+- C. Una captura de pantalla.
+- D. Todas las respuestas anteriores son correctas.
+
+10. Un marcador permite:
+- A. Recordar una dimensión que nos ha resultado útil.
+- B. Almacenar el resultado de aplicar un filtro. => **Correcto**
+- C. Aplicar una medida de forma rápida.
+- D. Ninguna de las anteriores
 
 
 --- 
 ## Videoclase 1. Introducción a Qlik Sense: funcionalidades y entorno
 
--
--
+- ¿Qué diferencia principal existe entre las versiones de Qlik Sense Business y Enterprise?
+- La versión Business tiene un número limitado de espacios y capacidades de integración con API => La versión Business está orientada a pequeñas y medianas empresas con limitaciones en integración con API, número de espacios y otras funcionalidades avanzadas que están disponibles solo en la versión Enterprise
 
--
--
+- ¿Cuál de las siguientes opciones es una acción inicial que se realiza al crear una nueva app en Qlik Sense?
+- Seleccionar un conjunto de datos a través de los conectores de Qlik. => Al crear una nueva app, lo primero que se hace es seleccionar los datos que se utilizarán para crear las visualizaciones, ya sea desde un archivo local o utilizando fuentes de datos externas a través de los conectores de Qlik.
 
--
--
+- ¿Qué funcionalidad permite a los usuarios de Qlik Sense crear filtros dinámicos en sus visualizaciones?
+- El panel de filtrado. => El Panel de filtrado permite a los usuarios arrastrar y aplicar filtros de dimensiones a sus gráficos de forma dinámica, facilitando la personalización de las visualizaciones.
 
--
--
+- ¿Qué es lo que define una dimensión en Qlik Sense al crear gráficos?
+- La forma de agrupar los datos en el gráfico => En Qlik Sense, una dimensión es la característica del dato que ayuda a determinar cómo agrupar los datos en una visualización, como país, año o producto.
 
--
--
+- En Qlik Sense, ¿qué sucede cuando se hace clic en la opción «Cargar datos» al agregar un nuevo dataset a una app?
+- Los datos se cargan y se presentan en un modelo de datos estructurado. => Al hacer clic en «Cargar datos», Qlik Sense organiza y presenta los datos cargados en un modelo de datos estructurado, mostrando las relaciones entre las tablas y cómo se pueden utilizar en las visualizaciones.
 
-## Videoclase 1. 
+## Videoclase 2. Exploración de los datos, filtros y tablas pivotantes
 
--
--
+- ¿Cuál es el propósito principal de utilizar filtros en una visualización de datos?
+- Ajustar los datos visualizados según ciertas dimensiones o criterios => Los filtros permiten ajustar los datos visibles en una visualización según dimensiones o criterios específicos, facilitando así el análisis enfocado.
 
--
--
+- ¿Cuál es la principal utilidad de una tabla pivotante en la exploración de datos?
+- Analizar datos desglosados por diferentes dimensiones y detectar inconsistencias. => Las tablas pivotantes permiten desglosar los datos por dimensiones y examinar más a fondo los resultados, ayudando a identificar posibles inconsistencias o valores erróneos.
 
--
--
+- ¿Qué función tienen los marcadores en la herramienta de visualización de datos?
+- Almacenar configuraciones de filtros para aplicarlos fácilmente más tarde. => Los marcadores permiten guardar configuraciones de filtros aplicados previamente, lo que facilita aplicar las mismas configuraciones de filtro en futuras sesiones.
 
--
--
+- Qué función tiene la opción de etiquetas en las visualizaciones de datos?
+- Cambiar el nombre de los campos en los ejes para hacerlos más comprensibles => La opción de etiquetas permite personalizar los nombres de los campos en los ejes, mejorando la comprensión de la visualización al usar términos más explicativos.
 
--
--
+- ¿Qué ocurre cuando se selecciona la opción «Por dimensión» al modificar los colores en una gráfica?
+- Se asigna un color único a cada categoría o dimensión. => La opción «Por dimensión» asigna un color único a cada categoría o dimensión, lo que facilita la diferenciación visual de los elementos en la gráfica.
 
-## Videoclase 1. 
+## Videoclase 3. Creación de mapas geográficos y gráficos en Qlik Sense
 
--
--
+- ¿Cuál es el propósito principal de utilizar mapas geográficos en las herramientas de visualización de datos?
+- Representar la información de manera visual con datos asociados a la longitud y latitud. => Los mapas geográficos permiten asociar datos con ubicaciones específicas, utilizando coordenadas geográficas, lo que facilita la visualización de patrones y distribuciones geográficas.
 
--
--
+- ¿Qué se debe hacer para cambiar el color de las áreas en un mapa geográfico?
+- Seleccionar el campo de la población y elegir la opción de colores. => Cambiar el color de las áreas en un mapa generalmente se hace seleccionando una medida específica (como la población) y asignando colores en función de esa medida.
 
--
--
+- ¿Qué tipo de dato es comúnmente utilizado para representar ubicaciones geográficas en un mapa?
+- Códigos internacionales de países => Los códigos internacionales de países (como los definidos en ISO 3166) son utilizados para representar países en un mapa geográfico, permitiendo la visualización de datos por ubicación.
 
--
--
+- ¿Qué función tienen las opciones de «Historias» en las herramientas de visualización de datos?
+- Crear presentaciones interactivas que combinen texto, imágenes y gráficos. => Las historias permiten organizar los datos visualizados en una presentación dinámica, donde se combinan gráficos, texto y otros elementos visuales, como en una diapositiva interactiva.
 
--
--
+- ¿Qué tipo de gráfico se utiliza para mostrar la relación entre dos variables, como la edad y el rendimiento en una actividad?
+- Gráfico de dispersión => El gráfico de dispersión es ideal para mostrar la relación entre dos variables numéricas, como la edad y el rendimiento, permitiendo observar correlaciones o patrones en los datos.
 
 # Tema 09. 
 
