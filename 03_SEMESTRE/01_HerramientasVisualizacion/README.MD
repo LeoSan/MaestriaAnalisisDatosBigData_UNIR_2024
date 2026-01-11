@@ -865,7 +865,49 @@ Ejemplos comunes incluyen diagramas de barras, gráficos de línea, tablas de da
 
 ![alt text](image-26.png)
 
-# Tema 09. 
+# Tema 09. Tableau. Introducción y funcionalidades
+
+
+## Enlace
+- tableau.com/es-es/ 
+
+## 9.2. Instalación e interfaz de Tableau
+
+Tableau no requiere conocimientos de programación y ofrece tres modalidades principales para adaptarse a distintas necesidades:
+
+- Tableau Desktop: Es la versión instalable en equipos de oficina. Permite trabajar de forma autónoma y mantener la información confidencial protegida por el firewall corporativo,.
+- Tableau Online: Una solución SaaS (Software as a Service) alojada completamente en la nube por Tableau. No requiere configuración de hardware y facilita el trabajo colaborativo desde cualquier lugar,.
+- Tableau Server: Ofrece control total a nivel corporativo. Puede desplegarse en infraestructuras propias (inhouse) o en nubes públicas como AWS, Azure o Google Cloud para aprovechar la escalabilidad,.
+
+## 9.3. Estantes Columnas y Filas. Tarjeta Marcas
+
+1. Tecnología y Versatilidad
+• Motor de datos: Tableau utiliza una tecnología avanzada en memoria que le permite procesar grandes cantidades de datos en segundos, incluso en computadoras con prestaciones estándar, eliminando la necesidad de un modelo de datos fijo previo.
+• Facilidad de uso: Una de sus mayores ventajas es que no requiere conocimientos de programación, ya que permite crear informes y narrativas complejas mediante la función de arrastrar y soltar (drag and drop).
+• Versiones de la plataforma: Se ofrece como Tableau Online (solución SaaS en la nube), Tableau Server (para control corporativo y escalabilidad) y Tableau Desktop, que es la versión instalable para el trabajo individual.
+
+2. Estructura de la Interfaz
+Para trabajar en Tableau, es fundamental distinguir entre los dos tipos de datos que organiza el sistema:
+• Dimensiones: Son los datos de naturaleza descriptiva (como nombres de productos, regiones o fechas).
+• Medidas: Son los datos de naturaleza numérica que pueden ser calculados o agregados (como ventas, beneficios o cantidades).
+
+3. Creación de Visualizaciones
+La construcción de un gráfico se basa en tres elementos principales:
+• Estantes de Columnas y Filas: Al arrastrar dimensiones o medidas a estos espacios, se definen las magnitudes que representarán los ejes de la gráfica.
+
+• Tarjeta Marcas: Es el bloque de opciones más potente y flexible para personalizar la visualización. Permite controlar:
+    ◦ Color: Para discriminar categorías visualmente.
+    ◦ Tamaño: Permite que los objetos sean proporcionales al valor del dato que representan.
+    ◦ Etiqueta: Para asignar texto a los objetos visuales.
+    ◦ Detalle: Para añadir niveles de información adicional sin modificar los ejes principales.
+    ◦ Descripción emergente (Tooltip): Texto que aparece al pasar el ratón, el cual es totalmente editable y personalizable para incluir campos específicos del dataset.
+    
+• Representación automática: Tableau tiene la capacidad de sugerir automáticamente el mejor tipo de gráfico para los datos seleccionados, aunque el usuario puede modificarlo manualmente en cualquier momento.
+
+
+Analogía: Tableau funciona como un lienzo inteligente para artistas de datos: no necesitas saber fabricar las pinturas o el pincel (programación), solo tienes que tomar los colores (dimensiones) y las texturas (medidas) y arrastrarlos al lienzo; el sistema entiende instantáneamente cómo mezclarlos para mostrar una obra de arte clara y profesional.
+
+
 
 
 # Tema 10. 

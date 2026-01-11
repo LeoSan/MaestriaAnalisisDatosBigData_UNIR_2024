@@ -1331,60 +1331,121 @@ ocasiones.
 - ¿Qué tipo de gráfico se utiliza para mostrar la relación entre dos variables, como la edad y el rendimiento en una actividad?
 - Gráfico de dispersión => El gráfico de dispersión es ideal para mostrar la relación entre dos variables numéricas, como la edad y el rendimiento, permitiendo observar correlaciones o patrones en los datos.
 
-# Tema 09. 
+# Tema 09. Tableau
+
+1. Tableau es una herramienta que permite la visualización de datos:
+- A. Correcto. Aunque no incorpora capacidades para el tratamiento y transformación de los datos.
+- B. Incorrecto. Solo la versión Desktop permite la visualización de datos.
+- C. Incorrecto. Solo la versión SaaS permite la visualización de datos.
+- D. Correcto. Adicionalmente incorpora capacidades avanzadas para el tratamiento y transformación de los datos. => **Correcto** 
+
+2. Tableau permite el intercambio rápido entre la visualización de datos y la visualización de gráficas:
+- A. Correcto. Desde el menú inferior izquierdo es posible intercambiar dichas vistas. => **Correcto** 
+- B. Correcto. Pulsando F5.
+- C. Incorrecto. Una vez cargados los datos, ya solo nos movemos en su visualización.
+- D. Incorrecto. Existe la opción de carga de datos y visualización posterior en
+modo gráfica. La visualización de los datos no es necesaria en el 80 % de las
+ocasiones.
+
+3. ¿Dónde se ubican las opciones de asignación de colores y tamaños de los objetos gráficos?
+- A. En el menú lateral izquierdo dentro del bloque de Marcas. => **Correcto** 
+- B. No existen dichos menús.
+- C. No existe el menú de asignación de tamaños.
+- D. No existe el menú de asignación de colores
+
+4. ¿Qué fases ordenadas incorpora un proyecto de análisis y visualización de datos?
+- A. Preparación – Obtención - Modelado – Visualización – Reporte de datos.
+- B. Obtención – Modelado – Preparación – Modelado – Visualización – Reporte de datos.
+- C. Obtención – Preparación – Modelado – Visualización – Reporte de datos. => **Correcto** 
+- D. Obtención – Visualización de datos.
+
+5. Los campos de los ejes y de los valores son definidos automáticamente por Tableau:
+- A. Correcto. Así nos facilita la experiencia como usuarios.
+- B. Incorrecto. Son definidos por el usuario.
+- C. Correcto y no se pueden modificar.
+- D. Ninguna de las anteriores.
+
+6. Las magnitudes principales que representan los ejes se definen:
+- A. En la opción Detalle de la tarjeta Marcas.
+- B. En los estantes de Filas y Columnas. => **Correcto** 
+- C. En la opción Ejes de la tarjeta Marcas.
+- D. Ninguna de las anteriores. Tableau selecciona las magnitudes oportunas en cada momento.
+
+7. El tipo de visualización se puede modificar:
+- A. En la tarjeta Páginas.
+- B. En la tarjeta Marcas. => **Correcto** 
+- C. En la opción Detalle de la tarjeta Marcas.
+- D. Ninguna de las anteriores. Tableau autoselecciona el tipo de gráfica y no es modificable
+
+8. En una gráfica de dispersión, el tamaño de los círculos de la gráfica será siempre proporcional al valor del dato que representa:
+- A. Correcto.
+- B. No necesariamente, salvo que depositemos en la opción Tamaño de la tarjeta Marcas el campo que queremos vincular al tamaño. => **Correcto** 
+- C. No es una opción existente en Tableau.
+- D. Incorrecto. No es posible modificar el tamaño de los elementos de una gráfica.
+
+9. La opción de Descripción emergente permite definir el contenido de un tooltip.
+- A. Incorrecto. Los tooltip son contenidos fijos no modificables.
+- B. Correcto. Desde dicha opción podemos editar su contenido.
+- C. Incorrecto. Los tooltip se pueden modificar pero haciendo clic en ellos.
+- D. Incorrecto. Los tooltip se modifican pero desde la opción de dashboard.
+
+10. La opción de Etiqueta permite definir el contenido de las etiquetas en los objetos de la visualización:
+- A. Incorrecto. Las etiquetas son contenidos fijos no modificables.
+- B. Correcto. Desde dicha opción podemos editar su contenido.
+- C. Incorrecto. Las etiquetas se pueden modificar pero haciendo clic en ellas.
+- D. Incorrecto. Las etiquetas se modifican pero desde la opción de dashboar
 
 
 --- 
-## Videoclase 1. 
+## Videoclase 1. Tableu: Introducción
 
--
--
+- ¿Cuál es una de las principales razones por las que Tableau ocupa un lugar destacado en el cuadrante mágico de Gartner?
+- Es altamente visual y ofrece análisis integral de datos. => Tableau se destaca por ser una herramienta de visualización de datos muy potente y visual, además de ofrecer capacidades avanzadas para análisis integral, lo que la posiciona como una solución líder en su categoría según Gartner.
 
--
--
+- ¿Qué es VizQL y por qué es importante en Tableau?
+- Es un lenguaje de consulta visual que permite transformar consultas en gráficos automáticamente
 
--
--
+- ¿Cuál fue la contribución principal del sistema Polaris, desarrollado en Stanford, al software Tableau?
+- Proporcionó una interfaz para explorar grandes bases de datos multidimensionales.
 
--
--
+- ¿Cuál de las siguientes afirmaciones es correcta sobre el uso de Tableau?
+- Tableau permite crear informes visualmente atractivos sin necesidad de programar.
 
--
--
+- ¿Qué hecho marcó un cambio significativo en la historia de Tableau en 2019?
+- La adquisición de Tableau por parte de Salesforce.
 
-## Videoclase 1. 
+## Videoclase 2. Tableu: Instalación en interfaz
 
--
--
+- ¿Cuál es una de las ventajas clave de Tableau Online en comparación con Tableau Server?
+- Es una solución SaaS completamente hospedada en la nube, sin necesidad de configuración ni costos de hardware.
 
--
--
+- ¿Qué función tiene el motor de datos de Tableau en el manejo de grandes volúmenes de información?
+- Permite análisis ad hoc rápido de datos masivos, incluso en equipos de prestaciones normales.
 
--
--
+- ¿Cuál es el propósito de los estantes de columnas y filas en la interfaz de Tableau?
+- Organizar los datos dimensionales y numéricos para crear visualizaciones.
 
--
--
+- ¿Qué función cumple el bloque de Filtros en la interfaz de Tableau?
+- Definir qué datos incluir o excluir en las visualizaciones.
 
--
--
+- ¿Cuál es una de las funcionalidades más destacadas del bloque de marcas en Tableau?
+- Ofrece opciones intuitivas para estructurar, dar forma y enriquecer los datos visuales con elementos como color y etiquetas.
 
-## Videoclase 1. 
+## Videoclase 3. Tableu: referencias de estantes y tarjetas
+- ¿Qué sucede al arrastrar un campo al estante de columnas y otro al estante de filas en Tableau?
+- Se crea un gráfico que muestra la relación entre los dos campos en el formato más adecuado. => Tableau utiliza los estantes de columnas y filas para organizar los datos y crear automáticamente un gráfico que represente la relación entre los campos. El tipo de gráfico se selecciona según el mejor formato para esos datos.
 
--
--
+- ¿Cuál es la función principal de la opción color en la tarjeta marcas de Tableau?
+- Diferenciar visualmente los datos según los valores de un campo. => La opción color en la tarjeta marcas permite distinguir los elementos de la visualización utilizando diferentes colores en función de los valores de los campos arrastrados, lo cual facilita la interpretación visual.
 
--
--
+- ¿Qué efecto tiene la opción de tamaño en la tarjeta marcas?
+- Modifica el tamaño de los objetos en función de los valores de un campo => La opción Tamaño permite modificar el tamaño de los elementos visuales, como barras o círculos, dependiendo de los valores asociados al campo seleccionado, destacando los datos más relevantes de manera proporcional..
 
--
--
+- ¿Para qué se utiliza la opción detalle en la tarjeta marcas de Tableau?
+- Para proporcionar información adicional sin alterar la estructura principal de la visualización. => La opción detalle permite incluir información adicional en la visualización sin modificar los estantes de columnas y filas, proporcionando niveles de detalle adicionales que enriquecen la representación gráfica.
 
--
--
-
--
--
+- ¿Qué se logra al editar la descripción emergente en Tableau?
+- Personalizar el texto que aparece al pasar el cursor sobre un gráfico. =>  La opción de descripción emergente permite personalizar los tooltips que aparecen cuando el usuario pasa el cursor sobre los elementos de la visualización. Esto ayuda a proporcionar información adicional o específica sobre los datos mostrados.
 
 # Tema 10. 
 
