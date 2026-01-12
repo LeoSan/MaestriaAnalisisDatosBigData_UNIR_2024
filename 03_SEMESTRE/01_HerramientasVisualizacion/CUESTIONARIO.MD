@@ -1449,7 +1449,68 @@ ocasiones.
 
 # Tema 10: Tableau. Introducción y funcionalidades
 
+1. Los filtros en Tableau solo permiten emplear los campos asociados a los ejes X e Y de la gráfica:
+- A. Correcto. Si no fuera así la visualización de los datos, se haría imposible.
+- B. Correcto. Solo la versión Desktop permite el uso de filtros.
+- C. Incorrecto. Solo la versión SaaS permite el uso de filtros.
+- D. Incorrecto. Un filtro permite incluir cualquier dato del dataset. => **Correcto**
 
+2. La definición de un filtro puede incluir todos o parte de los valores de un campo: 
+- A. Correcto. Los podemos seleccionar de una lista o incluir todos los valores. => **Correcto**
+- B. Correcto. Pulsando F5.
+- C. Incorrecto. Una vez cargados los datos, ya solo nos movemos en su visualización sin filtrarlos.
+- D. Incorrecto. Un filtro por definición contempla todos los valores posibles.
+
+3. La definición de un filtro puede incluir para un campo un valor máximo y mínimo:
+- A. Correcto. Las condiciones de filtro con base en umbrales o condiciones que debe cumplir el filtro. => **Correcto**
+- B. Incorrecto. No existe la opción de rangos.
+- C. Incorrecto. Una vez cargados los datos, ya solo nos movemos en su visualización sin filtrarlos.
+- D. Incorrecto. Un filtro por definición contempla todos los valores posible
+
+
+4. La activación de un filtro conlleva su activación automática:
+- A. Correcto. Tras su definición se activa automáticamente.
+- B. Correcto. No es necesario mostrarlo porque ya se activa en el último paso de su definición.
+- C. Incorrecto. Se puede definir un filtro, pero no activarlo. => **Correcto**
+- D. Incorrecto. Una vez cargados los datos, ya solo nos movemos en su visualización sin filtrarlos.
+
+5. La tarjeta Páginas nos permite recorrer la visualización y observar los cambios de la misma cuando cambiamos los valores de un campo manteniendo el resto fijos:
+- A. Correcto. Así nos permite cambiar las magnitudes de los ejes de forma dinámica.  => **Correcto**
+- B. Correcto. Así nos facilita el análisis de los datos, por ejemplo, en su evolución temporal. 
+- C. Correcto. Esta opción es incompatible con el uso de filtros.
+- D. Ninguna de las anteriores.
+
+6. Los controles del panel de visualización permiten:
+- A. Hojear las páginas automáticamente.
+- B. Pasar a una página concreta.
+- C. Hacer un recorrido visual de la evolución de los datos de una forma ordenada.
+- D. Todas las respuestas son correctas  => **Correcto**
+
+7. Un dashboard pueda estar compuesto por:
+- A. Hojas.
+- B. Hojas y dashboards.
+- C. Dashboards.
+- D. Todas las respuestas son correctas. => **Correcto**
+
+8. Un dashboard se caracteriza por:
+- A. Incorporar varias gráficas en un mismo espacio de visualización.
+- B. Incorporar indistintamente hojas y otros dashboards a su vez.
+- C. La capacidad de vincular los datos de las gráficas que contiene.
+- D. Todas las respuestas son correctas. => **Correcto**
+
+
+9. Una historia nos permite navegar de forma lineal:
+- A. Entre varias hojas.
+- B. Entre varios dashboards.
+- C. Arrastrando las hojas y dashboards a la parte superior de la Historia.
+- D. Todas las respuestas son correctas.  => **Correcto**
+
+
+10. Un dashboard nos permite navegar entre diferentes hojas no pertenecientes al cuadro de mando:
+- A. Incorrecto. No se puede salir del contenido del dashboard.
+- B. Correcto. Nos permite darle más dinamismo al propio dashboard.  => **Correcto**
+- C. Incorrecto. Solo podemos ir a una página web.
+- D. Incorrecto. Solo podemos movernos entre las hojas del dashboard
 
 --- 
 ## Videoclase 1. Tableau: filtros y páginas
@@ -1487,19 +1548,19 @@ ocasiones.
 - ¿Cómo se puede agregar dinamismo a un dashboard para profundizar en el análisis de datos?
 - Aplicando filtros globales a todas las gráficas en el dashboard.
 
-## Videoclase 1. 
+## Videoclase 3. Tableau: Historias
 
--
--
+- ¿Cuál es el propósito principal de una historia en Tableau?
+- Crear una narrativa lineal que integre hojas y dashboards. => El propósito de una historia es construir una narrativa lineal a partir de hojas y dashboards, lo que facilita el storytelling basado en datos.
 
--
--
+- ¿Cuál es el primer paso para crear una historia en Tableau?
+- Hacer clic en el icono de historia, ubicado en la parte inferior de la pantalla. => Para comenzar a construir una historia, es necesario hacer clic en el icono de historia, lo que habilita la interfaz para agregar hojas o dashboards de manera secuencial.
 
--
--
+- ¿Cómo se incluyen hojas o dashboards en una Historia en Tableau?
+- Arrastrando las hojas o dashboards a la parte superior de la Historia => La inclusión de hojas o dashboards en una Historia se realiza arrastrándolos a la parte superior, lo que permite crear una disposición secuencial de las visualizaciones..
 
--
--
+- ¿Qué función principal tienen los botones de navegación en una historia en Tableau?
+- Permitir moverse de forma lineal entre las hojas y dashboards. => Los botones de navegación en una historia permiten avanzar o retroceder entre las hojas y dashboards incluidos, facilitando una exploración lineal de los datos.
 
--
--
+- ¿Cuál es uno de los beneficios clave de utilizar Historias en Tableau?
+- Construir una narrativa que permita comunicar ideas claras basadas en datos => Las historias permiten comunicar ideas claras mediante una narrativa basada en datos, integrando visualizaciones y explicaciones en un formato lineal

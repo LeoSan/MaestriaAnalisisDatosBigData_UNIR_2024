@@ -937,6 +937,7 @@ La tarjeta **Páginas** ofrece una forma dinámica de dividir la visualización 
 
 
 ### 10.3. Dashboards (Paneles)
+
 Un **dashboard** es una composición integrada por **varias gráficas** que han sido creadas previamente en hojas de trabajo individuales. 
 
 *   **Composición y diseño:** Se construye arrastrando las diferentes hojas al área central de trabajo, permitiendo visualizar distintos indicadores en un solo espacio. 
@@ -952,6 +953,51 @@ La funcionalidad de **Historias** está diseñada para el *storytelling* de dato
 
 *   **Propósito:** Es el recurso ideal para presentar informes finales, ya que guía al espectador a través de una narrativa coherente donde cada paso de la historia aporta un nuevo nivel de comprensión,.
 
+
+![alt text](image-27.png)
+
+
 ***
 
 Analogía: Trabajar con estas funciones en Tableau es como dirigir una película documental: los Filtros son el zoom de la cámara que decide qué detalle captar; las Páginas son el paso de los fotogramas que muestran el movimiento del tiempo; el Dashboard es la sala de control con múltiples monitores vigilando todo a la vez; y la Historia es el montaje final que organiza todas las escenas para contarle al público una conclusión clara y convincente.
+
+
+# Tema 11. CARTO. Location Intelligence Software
+
+##### **CARTO: Inteligencia de Ubicación y Análisis Geoespacial**
+CARTO es una plataforma líder en **Inteligencia de Ubicación** que utiliza Sistemas de Información Geográfica (GIS) para procesar datos espaciales. Su flujo de trabajo destaca por la eficiencia en la transformación de datos crudos en **insights** estratégicos.
+
+##### **1. Inteligencia de Ubicación (LI)**
+Esta disciplina busca transformar datos de ubicación en **resultados comerciales** mediante visualización y análisis iterativo. Se nutre de fuentes modernas como Big Data, dispositivos móviles, redes sociales e **IoT**,. Sus aplicaciones principales incluyen:
+*   Descubrimiento de **correlaciones espaciales** complejas.
+*   Contextualización crítica para la **toma de decisiones**.
+*   Optimización de rutas de entrega y ubicación estratégica de negocios.
+
+##### **2. Instalación e Interfaz de CARTO**
+La plataforma ofrece dos modalidades con funcionalidad equivalente:
+1.  **On the cloud (Nube):** Servicio gestionado por CARTO que utiliza herramientas de **arrastrar y soltar** (*drag and drop*),.
+2.  **On-premises:** Despliegue en la infraestructura privada de la empresa.
+
+La interfaz principal separa la construcción de **Mapas interactivos** de la gestión y edición de los **Datos**.
+
+##### **3. Data & Maps**
+- CARTO procesa conjuntos de datos (como archivos CSV) almacenándolos en bases de datos **PostgreSQL**,.
+- Al cargar un dataset, el sistema genera automáticamente dos campos clave: `cartodb_id` (identificador único) y `the_geom` (geometría de los puntos),. La estética general se controla desde la opción **BaseMap**.
+
+##### **4. Layers & Widgets**
+*   **Layers (Capas):** Permiten **solapar múltiples fuentes** de información en un solo mapa para un análisis comparativo,.
+*   **Widgets:** Son herramientas interactivas (Categoría, Histograma, Fórmula y Series de tiempo) que funcionan como **filtros vinculados entre sí** para explorar la información dinámicamente,.
+
+##### **5. Estilos**
+La configuración de la apariencia (Style) se divide en:
+1.  **Agregación:** Formas de agrupar datos (por ejemplo, mediante hexágonos).
+2.  **Style:** Ajustes específicos de **color, tamaño y resolución** de los puntos y etiquetas.
+
+##### **6. Análisis**
+CARTO trasciende la simple visualización ofreciendo capacidades de **análisis avanzado**:
+*   Vinculación de datos entre diferentes capas y predicción de tendencias,.
+*   Creación de **áreas de influencia** y agrupaciones por proximidad.
+*   **Generación de itinerarios:** El análisis *Create Lines from Points* permite unir puntos secuencialmente para representar rutas y trayectos diferenciados por colores,,.
+
+**Analogía:**
+CARTO funciona como un **microscopio para el territorio**: no solo te permite ver dónde están las cosas (mapa), sino que te permite añadir "tintes" (estilos), ajustar el enfoque (capas) y realizar pruebas químicas (análisis) para descubrir patrones ocultos que ayudan a que un negocio sepa exactamente dónde debe moverse.
