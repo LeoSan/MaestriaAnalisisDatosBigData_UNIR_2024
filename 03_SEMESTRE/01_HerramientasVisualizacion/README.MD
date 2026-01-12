@@ -786,129 +786,172 @@ Aunque esta sección no está directamente relacionada con D3.js, el tema aborda
 
 # Tema 07: Power BI
 
-## 7.2. Instalación e Interfaz de Power BI
+### 7.1. Introducción y objetivos
+**Power BI** es la solución de Microsoft posicionada como un **producto líder de Business Intelligence** según el "cuadrante mágico de Gartner", compartiendo este estatus con Tableau y Qlik. 
+*   **Propósito:** Es una herramienta diseñada para ser **amigable e intuitiva**, permitiendo que cualquier persona (incluso sin conocimientos técnicos avanzados) pueda transformar millones de datos, realizar cálculos complejos e interactuar con visualizaciones.
+*   **Evolución:** Aunque fue lanzada en 2013 como un producto "seguidor", actualmente ha superado a la mayoría de sus competidores en funcionalidad y capacidad de integración.
 
-Power BI ofrece varias opciones, incluyendo Power BI Desktop, que es una herramienta de análisis personal gratuita e independiente utilizada para el desarrollo de casos de estudio en la asignatura
+### 7.2. Instalación e Interfaz de Power BI
+La plataforma ofrece flexibilidad en su implementación, incluyendo versiones **SaaS (nube)** y opciones locales.
+*   **Power BI Desktop:** Es la herramienta de análisis personal, **gratuita e independiente**, instalable en equipos locales para el desarrollo de casos de estudio.
+*   **Interfaz:** Muy similar a los productos de **Microsoft Office**, organizada de la siguiente manera:
+    *   **Barra superior:** Opciones de Archivo, Inicio, Insertar y Modelado.
+    *   **Menú lateral izquierdo:** Permite alternar entre la **visualización de gráficas** (Informe) y la **visualización de los datos**.
+    *   **Menú lateral derecho:** Contiene tres paneles clave: **Filtros, Visualizaciones y Campos** para seleccionar el tipo de gráfico y los datos a incluir.
+    *   **Parte inferior:** Opción de agregar solapas o pestañas, similar a una hoja de cálculo de Excel.
 
-## 7.3. Funciones de Power BI
+### 7.3. Funciones de Power BI (Estructura de un Proyecto)
+Un proyecto completo de análisis y visualización sigue un flujo de trabajo estructurado en cinco apartados funcionales:
+1.  **Obtención de datos:** Carga de información desde archivos de texto, Excel, bases de datos (SQL Server) o servicios en línea (Facebook, Google Analytics).
+2.  **Preparación de datos:** Limpieza y tratamiento estructurado utilizando el **Query Manager**.
+3.  **Modelado de datos:** Relación de datos de múltiples fuentes y ejecución de cálculos complejos.
+4.  **Visualización de datos:** Creación de gráficos y tablas interactivas para facilitar la toma de decisiones.
+5.  **Reporte de datos:** Generación de **dashboards** o cuadros de mando para mejorar la comunicación de los hallazgos.
 
-Un proyecto completo de análisis y visualización en Power BI sigue un flujo de trabajo estructurado en cinco apartados funcionales:
+### 7.4. Obtención, preparación y modelado de datos
+Esta fase es crítica para asegurar la veracidad de los informes:
+*   **Query Manager:** Es el gestor integrado que permite **editar los datos** antes de visualizarlos. Facilita la eliminación de columnas innecesarias, el cambio de formatos (ej. convertir un número a texto) y la sustitución de valores con errores.
+*   **Efectividad:** Tras realizar las transformaciones en el editor, se debe aplicar la opción "Cerrar y aplicar" para que los cambios se reflejen en la columna de **Campos** de la vista informe.
 
-- 1. Obtención de datos: Carga de información desde diversas fuentes, como archivos de texto, Excel, entornos relacionales (SQL Server) o servicios en línea (Facebook o Google Analytics).
-- 2. Preparación de datos: Limpieza y tratamiento estructurado de los datos utilizando el gestor integrado conocido como Query Manager. Esta herramienta facilita la eliminación de columnas, el cambio de formatos de campo y la sustitución de valores.
-- 3. Modelado de datos: Relacionar datos de diferentes fuentes y realizar cálculos complejos para descubrir información relevante.
-- 4. Visualización de datos: Proporcionar gráficos, tablas y representaciones para que los usuarios puedan analizar los datos y tomar decisiones.
-- 5. Reporte de datos: Creación de cuadros de mandos o dashboards para mejorar la comunicación de los informes
+### 7.5. Visualización de datos
+La creación de informes es el núcleo visual del proyecto:
+*   **Proceso:** Se logra **arrastrando el campo deseado** a la Vista Informe y seleccionando el tipo de gráfico en el panel lateral. Si no se elige un tipo, Power BI aplica por defecto una tabla de datos.
+*   **Interactividad:** Las gráficas están vinculadas; al seleccionar un elemento en una (como un sector de un gráfico circular), las demás se **actualizan automáticamente** para reflejar solo la información asociada a ese elemento.
+*   **Tipos comunes:** Incluye gráficos de líneas (para tendencias anuales), diagramas de área (evolución de costes), gráficos de embudo (*funnel*) y circulares (*pie charts*).
 
-## 7.4. Obtención, preparación y modelado de datos
+### 7.6. Visualizaciones avanzadas
+Power BI ofrece recursos especializados para profundizar en el análisis:
+*   **Mapas:** Permiten la distribución geográfica de la información. El sistema es capaz de interpretar tanto **coordenadas GIS** como **localidades en formato texto**. Cuentan con una opción de "Excluir" para eliminar puntos geográficos que tengan el mismo nombre en otras partes del mundo.
+*   **Segmentación de Datos (*Slicers*):** Es un tipo de visualización que activa **filtros dinámicos** basados en un campo específico, permitiendo al usuario filtrar todo el informe con un solo clic.
 
-La creación de una visualización se logra arrastrando el campo deseado a la Vista Informe y seleccionando el tipo de visualización en el panel lateral derecho.
+***
 
-Las visualizaciones son interactivas; al pinchar en un elemento de una gráfica (como un sector de un gráfico circular), las otras gráficas en el informe actualizan sus datos automáticamente para reflejar solo la información asociada a ese elemento.
+**Analogía:**
+Usar Power BI es como tener un **asistente de oficina de élite**: la **Obtención** es cuando el asistente reúne todos los papeles de diferentes departamentos; la **Preparación** es cuando limpia y organiza esos papeles en carpetas claras (**Query Manager**); el **Modelado** es cuando conecta la información de una carpeta con otra; la **Visualización** es cuando te presenta diapositivas coloridas y fáciles de entender; y la **Interactividad** es cuando, al señalar tú un dato en una diapositiva, el asistente cambia instantáneamente todas las demás hojas de la mesa para mostrarte solo lo relacionado con ese punto.
 
-**Las visualizaciones avanzadas incluyen:**
-- Mapas: Permiten la distribución geográfica de los datos, siendo capaces de interpretar tanto coordenadas GIS como localidades en formato texto.
-- Segmentación de Datos (Slicers): Esta visualización es útil para segmentar los datos al activar una serie de filtros dinámicos basados en un campo determinado.
-Power BI, en su conjunto, transforma el análisis de datos de ubicación en decisiones de negocio, destacando por su facilidad de uso y sus amplias capacidades de integración.
 
-## 7.5. Visualización de dato
 
 
 # Tema 8. Qlik Sense
 
-- "Qlik Sense" se centra en esta plataforma completa orientada al descubrimiento de la información que reside en los datos 
-- Qlik Sense no es solo una herramienta de visualización, sino que incorpora capacidades propias de entornos de Business Intelligence (BI), permitiendo recopilar, procesar y extraer valor de los datos.
-- Qlik, junto con Microsoft (PowerBI) y Tableau, se considera uno de los productos líderes de Business Intelligence según el "cuadrante mágico de Gartner".
+### 8.1. Introducción y objetivos
+**Qlik Sense** se define como una plataforma integral orientada al **descubrimiento de la información** oculta en los datos. A diferencia de otras herramientas, incorpora capacidades completas de **Business Intelligence (BI)**, permitiendo no solo visualizar, sino también recopilar y procesar datos para extraer valor real de ellos. Junto con Tableau y Power BI, Qlik se posiciona como uno de los productos **líderes** en el mercado según el cuadrante mágico de Gartner.
 
+### 8.2. Aplicaciones (Apps) en Qlik Sense
+El flujo de trabajo en esta herramienta se basa en un entorno visual intuitivo que utiliza la función de **"arrastrar y soltar"**.
+*   **La unidad App:** Todo el trabajo se organiza en torno a una **App**, que es el contenedor donde se añaden los datos y se crean las visualizaciones.
+*   **Carga de datos:** Permite importar información desde archivos locales o mediante **múltiples conectores** para fuentes externas. El sistema es capaz de generar automáticamente el **código *script*** necesario para el tratamiento de los datos tras la carga.
+*   **Modelo de datos:** Qlik permite visualizar las relaciones entre las tablas del archivo a través de **campos clave**.
+*   **Dimensiones y Medidas:** Son los dos elementos esenciales para crear cualquier gráfico:
+    *   **Dimensión:** Representa la característica descriptiva del dato (ciudad, producto, fecha) y determina cómo se agrupan los valores.
+    *   **Medida:** Es el cálculo numérico (suma, promedio) que define qué se mostrará en la visualización.
 
-## 8.4. Exploración de los datos, filtros y tablas pivotantes
+### 8.3. Exploración de Datos, Filtros y Tablas Pivotantes
+La exploración exhaustiva es clave para asegurar la coherencia de la información presentada.
+*   **Paneles de filtrado:** Se pueden incluir filtros específicos en los gráficos para segmentar los datos por dimensiones concretas, como por ejemplo un país determinado.
+*   **Tablas pivotantes:** Son herramientas fundamentales para identificar **inconsistencias o valores vacíos** en los datos, permitiendo cruzar dimensiones y medidas en filas y columnas.
+*   **Marcadores:** Esta función permite **almacenar el resultado** de una combinación específica de filtros para poder reutilizarlos o consultarlos rápidamente en el futuro.
 
+### 8.4. Visualizaciones Avanzadas: Mapas, Etiquetas y Colores
+Qlik Sense ofrece amplias opciones de personalización para mejorar la comprensión de los informes.
+*   **Etiquetas y estilo:** Es posible modificar los nombres de los campos por defecto por **etiquetas más claras** (ej. cambiar "Sum(Sales)" por "Ventas Totales") y alterar la orientación de los gráficos, como pasar barras de vertical a horizontal.
+*   **Gestión de colores:** El usuario puede desactivar el color automático para aplicar criterios **"Por dimensión"** (un color para cada categoría) o **"Por medida"** (gradientes secuenciales basados en el valor numérico).
+*   **Mapas Geográficos:** Se construyen añadiendo una **Capa de área** sobre un objeto mapa, utilizando estándares internacionales como el **ISO 3166** para identificar países o regiones.
 
-## 8.5. Etiquetas y colores
+### 8.5. Historias (*Storytelling*)
+La funcionalidad de **Historias** es el equivalente a un **dashboard** o cuadro de mando dentro de Qlik Sense.
+*   **Construcción:** Se utiliza un lienzo en blanco similar a diapositivas donde se pueden insertar textos, formas e imágenes.
+*   **Librería de capturas:** Para incluir gráficos en una historia, el usuario debe realizar "capturas" de sus hojas de trabajo, las cuales se almacenan en una librería específica para su uso narrativo.
 
-## 8.6. Mapas geográficos
+### 8.6. Tipos de Gráficos
+Aunque el sistema se basa en conceptos generales (apps y filtros), ofrece una **gran variedad de representaciones visuales**. Entre los más comunes se encuentran los diagramas de barras, gráficos de líneas, **tablas de datos** (ideales para crear *rankings*), histogramas, gráficos de tarta y diagramas de dispersión.
 
+***
 
-## 8.3. Apps
-
-1. Aplicaciones (Apps) en Qlik Sense
-Qlik Sense es un entorno visual que facilita la creación de gráficos mediante la función de "arrastrar y soltar". La base de trabajo es la App, la cual se crea y luego se utiliza para añadir datos.
-
-• Añadir Datos: Los datos se pueden cargar desde archivos locales o mediante múltiples conectores que Qlik proporciona para fuentes de datos externas. El sistema permite ver el modelo de datos del fichero, mostrando las tablas y sus relaciones a través de campos clave  El sistema genera automáticamente el código script necesario para el tratamiento de datos detrás de la carga.
-• Dimensiones y Medidas: Para crear un gráfico, Qlik Sense requiere definir una dimensión y una medida.
-    ◦ Dimensión: Es la característica del dato (como fecha, ciudad, productos) que ayuda a determinar cómo se agruparán los datos de la medida.
-    ◦ Medida: Es un cálculo (como la suma del total de ventas o la media) que se utiliza para decidir qué parte de los datos se mostrará en la visualización.
-
-2. Exploración de Datos, Filtros y Tablas Pivotantes
-La exploración de datos es crucial para verificar la coherencia de la información:
-• Filtros: Los filtros se pueden incluir en el gráfico, por ejemplo, mediante la opción Panel de filtrado, para seleccionar una dimensión específica (como un país).
-• Exploración y Marcadores: El examen de los filtros y el uso de tablas pivotantes (que presentan dimensiones y medidas como filas y columnas) permiten identificar problemas en los datos, como valores vacíos o inconsistencias. Es posible almacenar el resultado de aplicar un conjunto de filtros utilizando la función de Marcadores para reutilizarlos rápidamente.
-
-3. Visualizaciones Avanzadas: Mapas, Etiquetas y Colores
-Qlik Sense proporciona recursos para mejorar la visualización:
-• Etiquetas y Orientación: La opción Etiqueta permite modificar el nombre de los ejes para un mejor entendimiento, reemplazando nombres de campos por defecto (ej. Sum(Persons) por Población). La opción Opciones de estilo permite cambiar la orientación de un gráfico de barras a horizontal, por ejemplo.
-• Colores: Se puede deshabilitar la asignación de colores automática para elegir opciones como "Por dimensión" (color diferente para cada categoría, como país) o "Por medida" (un gradiente secuencial basado en el valor).
-• Mapas Geográficos: Para crear un Mapa Geográfico, se arrastra la opción Mapa a la zona de edición y se añade una Capa de área para representar zonas (como países) en lugar de puntos. La dimensión utilizada para identificar la zona puede ser un estándar internacional como el ISO 3166. También se pueden aplicar colores en función de una medida (ej. el número de habitantes), utilizando una función de agregación como Sum.
-
-
-## 8.7. Historias
-- La funcionalidad de Historias es una opción importante para contar una narrativa con los datos
-- Una historia es el equivalente a un dashboard o cuadro de mando.  
-- Se construye en un lienzo en blanco (como diapositivas) donde se pueden insertar títulos, textos, formas, e imágenes de gráficos. 
-- Las imágenes de las gráficas se capturan desde la hoja de trabajo y se almacenan en la Librería de capturas para ser incluidas en la historia.
-
-5. Tipos de Gráficos
-Aunque el énfasis está en dominar los conceptos básicos (apps, datos, filtros), Qlik Sense se caracteriza por una gran variedad de gráficos. 
-
-Ejemplos comunes incluyen diagramas de barras, gráficos de línea, tablas de datos (ideales para rankings), histogramas, gráficos circulares (tarta) y gráficos de dispersión. 
-
+**Analogía:**
+Usar Qlik Sense es como ser el **curador de una galería de arte inteligente**: la **App** es tu edificio, los datos son las obras que traes de distintos almacenes (conectores), y las **Dimensiones y Medidas** son los marcos y la iluminación que deciden cómo se verá cada cuadro. Los **Marcadores** son como dejar un separador en tu catálogo favorito para volver a la misma exposición exactamente como la dejaste.
 
 ![alt text](image-26.png)
 
 # Tema 09. Tableau. Introducción y funcionalidades
 
-
 ## Enlace
 - tableau.com/es-es/ 
 
-## 9.2. Instalación e interfaz de Tableau
+### 9.1. Introducción y objetivos
+Tableau se define como una herramienta de **visualización de datos extremadamente potente y visual**, que permite un análisis integral de la información. 
+*   **Liderazgo en el mercado:** Ocupa una posición destacada como líder en Business Intelligence según el cuadrante mágico de Gartner, compartiendo este estatus con Power BI y Qlik.
+*   **Origen tecnológico:** Fue fundada en la Universidad de Stanford, donde se desarrolló el lenguaje **VizQL (Visual Query Language)**, un sistema que traduce consultas de bases de datos en representaciones gráficas.
+*   **Filosofía de uso:** Su principal ventaja es que **no requiere conocimientos de programación**. Utiliza una interfaz de **arrastrar y soltar** (*drag and drop*) que permite a cualquier usuario crear informes e historias impactantes usando solo el ratón.
 
-Tableau no requiere conocimientos de programación y ofrece tres modalidades principales para adaptarse a distintas necesidades:
+### 9.2. Instalación e interfaz de Tableau
+La plataforma ofrece flexibilidad mediante distintas versiones adaptadas a las necesidades del usuario y la empresa:
+*   **Versiones disponibles:**
+    *   **Tableau Online:** Una solución **SaaS (nube)** que permite el trabajo colaborativo sin costes de infraestructura.
+    *   **Tableau Server:** Ofrece control total a las empresas, permitiendo implementaciones en nubes públicas (como AWS o Azure) o en instalaciones físicas (*in-house*).
+    *   **Tableau Desktop:** Es la versión **instalable en equipos locales**, ideal para trabajar con datos confidenciales tras un firewall; es la versión utilizada en la asignatura.
+*   **Motor de Datos:** Tableau destaca por su tecnología avanzada en memoria, que permite realizar análisis de **datos masivos en cuestión de segundos** aprovechando toda la jerarquía de memoria del equipo.
+*   **Conceptos de datos en la interfaz:**
+    *   **Dimensiones:** Campos que contienen datos descriptivos (nombres, fechas, categorías).
+    *   **Medidas:** Campos que contienen datos numéricos que pueden ser calculados o agregados.
+*   **Pestaña Fuente de datos:** Ubicada en la parte inferior izquierda, permite visualizar la estructura del dataset y realizar transformaciones como la **creación de campos calculados**.
 
-- Tableau Desktop: Es la versión instalable en equipos de oficina. Permite trabajar de forma autónoma y mantener la información confidencial protegida por el firewall corporativo,.
-- Tableau Online: Una solución SaaS (Software as a Service) alojada completamente en la nube por Tableau. No requiere configuración de hardware y facilita el trabajo colaborativo desde cualquier lugar,.
-- Tableau Server: Ofrece control total a nivel corporativo. Puede desplegarse en infraestructuras propias (inhouse) o en nubes públicas como AWS, Azure o Google Cloud para aprovechar la escalabilidad,.
+### 9.3. Estantes Columnas y Filas. Tarjeta Marcas
+Estos elementos constituyen el núcleo de la creación de visualizaciones en Tableau:
+*   **Estantes de Columnas y Filas:** Situados en la parte superior del panel, son los elementos más importantes para definir la estructura del gráfico. Al arrastrar campos a estos estantes, el analista define las **magnitudes principales que representarán los ejes** de la gráfica.
+*   **Tarjeta Marcas:** Es un bloque de opciones que permite **estructurar, visualizar y dar forma a los datos** de manera intuitiva. Aunque Tableau selecciona automáticamente el mejor gráfico, el usuario puede cambiar el tipo de visualización (barras, círculos, líneas) mediante un menú desplegable en esta tarjeta.
+*   **Funcionalidades de la Tarjeta Marcas:**
+    *   **Color:** Permite discriminar visualmente el contenido del gráfico basándose en uno o más campos.
+    *   **Tamaño:** Modifica la escala de los objetos. Si se arrastra una medida aquí, el tamaño de los elementos será **proporcional al valor del dato**.
+    *   **Etiqueta:** Asigna texto a los objetos visuales, permitiendo personalizar qué elementos se etiquetan (todos, solo máximos/mínimos, etc.).
+    *   **Detalle:** Añade niveles de información adicional a la vista sin modificar los ejes principales de filas y columnas.
+    *   **Descripción emergente (*Tooltip*):** Permite editar el mensaje que aparece al pasar el ratón sobre los datos. Es **totalmente personalizable** mediante un editor de texto que admite la inserción de cualquier campo del dataset.
 
-## 9.3. Estantes Columnas y Filas. Tarjeta Marcas
+---
 
-1. Tecnología y Versatilidad
-• Motor de datos: Tableau utiliza una tecnología avanzada en memoria que le permite procesar grandes cantidades de datos en segundos, incluso en computadoras con prestaciones estándar, eliminando la necesidad de un modelo de datos fijo previo.
-• Facilidad de uso: Una de sus mayores ventajas es que no requiere conocimientos de programación, ya que permite crear informes y narrativas complejas mediante la función de arrastrar y soltar (drag and drop).
-• Versiones de la plataforma: Se ofrece como Tableau Online (solución SaaS en la nube), Tableau Server (para control corporativo y escalabilidad) y Tableau Desktop, que es la versión instalable para el trabajo individual.
+**Analogía:**
+Usar Tableau es como **jugar con un set de construcción inteligente**: los estantes de **Filas y Columnas** son los cimientos y vigas que deciden qué tan alto o ancho será el edificio (los ejes), mientras que la **Tarjeta Marcas** es la caja de herramientas que te permite elegir si las ventanas serán redondas o cuadradas (tipo de gráfico), de qué color pintar las paredes (**Color**) y qué tan grandes serán los balcones (**Tamaño**) según los materiales que tengas en tu lista de inventario (datos).
 
-2. Estructura de la Interfaz
-Para trabajar en Tableau, es fundamental distinguir entre los dos tipos de datos que organiza el sistema:
-• Dimensiones: Son los datos de naturaleza descriptiva (como nombres de productos, regiones o fechas).
-• Medidas: Son los datos de naturaleza numérica que pueden ser calculados o agregados (como ventas, beneficios o cantidades).
+# Tema 10.  Tableau. Filtros, páginas, dashboards e historias
 
-3. Creación de Visualizaciones
-La construcción de un gráfico se basa en tres elementos principales:
-• Estantes de Columnas y Filas: Al arrastrar dimensiones o medidas a estos espacios, se definen las magnitudes que representarán los ejes de la gráfica.
+### 10.1. Filtros
+Los **Filtros** son herramientas fundamentales para profundizar en el análisis de datos, permitiendo encontrar información relevante cuando la visualización general resulta insuficiente debido a la complejidad o al gran volumen de información,. 
+*   **Activación y uso:** Para implementar un filtro, el analista debe arrastrar el campo deseado (por ejemplo, *Sub-Category*) hacia la **tarjeta Filtros** y seleccionar la opción **"Mostrar filtro"**, lo que hará que aparezca un panel de control en el lateral derecho de la pantalla,.
+*   **Flexibilidad de contenido:** Un filtro puede configurarse para incluir **todos los valores o solo una selección específica** de una lista, permitiendo al usuario enfocarse únicamente en las categorías que desea comparar,.
+*   **Condiciones avanzadas:** Tableau permite crear filtros basados en **umbrales, operaciones matemáticas o rangos** de valores máximos y mínimos, lo que otorga una gran versatilidad para segmentar los datos de manera precisa,.
 
-• Tarjeta Marcas: Es el bloque de opciones más potente y flexible para personalizar la visualización. Permite controlar:
-    ◦ Color: Para discriminar categorías visualmente.
-    ◦ Tamaño: Permite que los objetos sean proporcionales al valor del dato que representan.
-    ◦ Etiqueta: Para asignar texto a los objetos visuales.
-    ◦ Detalle: Para añadir niveles de información adicional sin modificar los ejes principales.
-    ◦ Descripción emergente (Tooltip): Texto que aparece al pasar el ratón, el cual es totalmente editable y personalizable para incluir campos específicos del dataset.
-    
-• Representación automática: Tableau tiene la capacidad de sugerir automáticamente el mejor tipo de gráfico para los datos seleccionados, aunque el usuario puede modificarlo manualmente en cualquier momento.
-
-
-Analogía: Tableau funciona como un lienzo inteligente para artistas de datos: no necesitas saber fabricar las pinturas o el pincel (programación), solo tienes que tomar los colores (dimensiones) y las texturas (medidas) y arrastrarlos al lienzo; el sistema entiende instantáneamente cómo mezclarlos para mostrar una obra de arte clara y profesional.
+**Tipos de filtros:**
+- A. Condiciones de Filtrados: se puede aplicar condiciones especificas utilizando expresiones o fórmulas.
+- B. Filtros de top/bottom:  Permite mostrar los mejores o peores resultados de un grupo. 
+- C. Filtros jerarquicos: Tableau permite aplicar filtros e niveles jerarquicos para segmentar los datos de manera precisa.
+- D. Filtros de campos calculados: se puede crear filtros basados en calculos personalizados. 
 
 
+ ### 10.2. Páginas
+La tarjeta **Páginas** ofrece una forma dinámica de dividir la visualización para observar cómo cambian los valores de un campo específico mientras el resto de los datos permanece fijo. 
+
+*   **Uso principal:** Se utiliza comúnmente para mostrar la **evolución temporal**; al arrastrar un campo de fecha (como *Order date*) a esta tarjeta, se generan múltiples vistas correspondientes a cada periodo (por ejemplo, los años 2013 a 2016). 
 
 
-# Tema 10. 
+*   **Panel de navegación:** Tableau incorpora un control que permite al usuario desplazarse manualmente por las "páginas" o activar una reproducción **secuencial y automática**, similar a un pase de diapositivas, para analizar tendencias visualmente. 
 
+
+### 10.3. Dashboards (Paneles)
+Un **dashboard** es una composición integrada por **varias gráficas** que han sido creadas previamente en hojas de trabajo individuales. 
+
+*   **Composición y diseño:** Se construye arrastrando las diferentes hojas al área central de trabajo, permitiendo visualizar distintos indicadores en un solo espacio. 
+
+*   **Vinculación de datos:** Su mayor potencia reside en la capacidad de **conectar los datos entre las gráficas**. Al activar el **icono del embudo** en una de las hojas, esta se convierte en un filtro para las demás, de modo que al seleccionar un elemento en una gráfica, todas las otras se actualizan instantáneamente para reflejar solo esa información. 
+
+*   **Acciones dinámicas:** A través del menú "Acciones", es posible configurar interacciones avanzadas, como definir que al hacer clic en un objeto se **salte automáticamente a otra hoja** fuera del dashboard para profundizar en el detalle de la información. 
+
+### 10.4. Historias (*Storytelling*)
+La funcionalidad de **Historias** está diseñada para el *storytelling* de datos, permitiendo una **navegación lineal** a través de una secuencia de hojas de trabajo o dashboards,.
+
+*   **Construcción narrativa:** Se crea arrastrando de forma ordenada las hojas y paneles a la parte superior de la Historia, construyendo así un relato lógico sobre los hallazgos del análisis. 
+
+*   **Propósito:** Es el recurso ideal para presentar informes finales, ya que guía al espectador a través de una narrativa coherente donde cada paso de la historia aporta un nuevo nivel de comprensión,.
+
+***
+
+Analogía: Trabajar con estas funciones en Tableau es como dirigir una película documental: los Filtros son el zoom de la cámara que decide qué detalle captar; las Páginas son el paso de los fotogramas que muestran el movimiento del tiempo; el Dashboard es la sala de control con múltiples monitores vigilando todo a la vez; y la Historia es el montaje final que organiza todas las escenas para contarle al público una conclusión clara y convincente.

@@ -1447,44 +1447,45 @@ ocasiones.
 - ¿Qué se logra al editar la descripción emergente en Tableau?
 - Personalizar el texto que aparece al pasar el cursor sobre un gráfico. =>  La opción de descripción emergente permite personalizar los tooltips que aparecen cuando el usuario pasa el cursor sobre los elementos de la visualización. Esto ayuda a proporcionar información adicional o específica sobre los datos mostrados.
 
-# Tema 10. 
+# Tema 10: Tableau. Introducción y funcionalidades
 
 
 
 --- 
-## Videoclase 1. 
+## Videoclase 1. Tableau: filtros y páginas
 
--
--
+-  ¿Cuál es la función principal de los filtros en Tableau durante el análisis de datos?
+- Restringir los datos visibles para enfocar el análisis en criterios específicos. => Los filtros en Tableau están diseñados para restringir los datos visibles y enfocar el análisis en criterios relevantes, facilitando una interpretación más clara y personalizada.
 
--
--
+- ¿Qué permite hacer Tableau para personalizar los filtros más allá de seleccionar valores específicos?
+- Crear condiciones basadas en rangos, umbrales o límites personalizados.=> Tableau ofrece opciones avanzadas de personalización en los filtros, como definir rangos, establecer condiciones basadas en umbrales o aplicar límites específicos, adaptándose a las necesidades del análisis.
 
--
--
+- ¿Cuál es el propósito principal de la tarjeta páginas en Tableau?
+- Dividir la visualización en unidades para observar cambios en un campo específico => La tarjeta páginas divide la visualización en unidades, lo que permite analizar cómo los valores de un campo afectan al resto de los datos en una visualización dinámica. 
 
--
--
+- ¿Cuál es una diferencia clave entre los filtros y las páginas en Tableau?
+- Los filtros eliminan datos de la visualización, mientras que las páginas dividen los datos para analizar un campo específico. => Los filtros se usan para restringir datos visibles según criterios específicos, mientras que las páginas dividen la visualización para explorar cómo un campo afecta al resto de los datos.
 
--
--
+- ¿Qué característica destaca en los filtros de Tableau respecto a su flexibilidad?
+- Admiten condiciones avanzadas, como rangos, operaciones matemáticas o límites =>  Los filtros de Tableau son muy flexibles, permitiendo aplicar condiciones avanzadas, como rangos, operaciones matemáticas y límites, lo que los hace altamente personalizables para análisis complejos.
 
-## Videoclase 1. 
+## Videoclase 2. Tableau: Dashboards
 
--
--
+- ¿Cuál es el propósito principal de un dashboard en Tableau?
+- Permitir vincular y analizar datos entre diferentes gráficas de forma eficiente => El propósito principal de un dashboard es combinar gráficas y vincular datos entre ellas, permitiendo analizar relaciones y patrones de manera más eficaz.
 
--
--
 
--
--
+- ¿Cómo se vinculan los datos de dos hojas en un dashboard en Tableau?
+- Activando la opción de filtro en la gráfica que se desea usar como referencia. => Para vincular datos entre hojas en un dashboard, es necesario activar la opción de filtro en la gráfica de referencia, lo que permite que las demás gráficas respondan a las selecciones realizadas.
 
--
--
+- ¿Cuál es el primer paso para crear un dashboard en Tableau?
+- Arrastrar hojas de trabajo a la zona de trabajo del dashboard.
 
--
--
+- ¿Qué permite hacer la opción «Añadir acción» en un dashboard de Tableau?
+- Vincular hojas externas al dashboard para un análisis dinámico. => La opción «Añadir acción» permite vincular hojas externas al dashboard o definir interacciones dinámicas, como navegar a otra hoja al hacer clic en una gráfica.
+
+- ¿Cómo se puede agregar dinamismo a un dashboard para profundizar en el análisis de datos?
+- Aplicando filtros globales a todas las gráficas en el dashboard.
 
 ## Videoclase 1. 
 
