@@ -506,25 +506,188 @@ Ahí aparecerá también el filtro de la acción del asesino, hacemos clic en la
 > CUANDO NO SE VEA UN FILTRO PODDEMOS BUSCAR LA OPCIÓN DEN AÑADIR A CONTEXTO Y PERMITE FILTRAR EN EL DASHBOARD  Y MOSTRAR CIERTOS ELEMENTOS 
 
 ![alt text](image-25.png)
-# Clase 16: 
+
+
+# Clase 16: Visualización de Burbuja y Tablas en Tableau
+
+
+Muertes por episodio
+Como nuestros episodios y temporadas son un valor continuo, tenemos que convertirlos a una dimensión:
+Clic derecho y seleccionamos convertir a dimensión
+Agregamos las temporadas como filas
+Agregamos nuestros capítulos como columnas
+Arrastramos el número de muertes a nuestra tabla
+Cambiamos nuestra medida a recuento distintivo
+
+**COLOCAR LIMITES**
+![alt text](image-26.png)
+
+**grafica de burbuja** 
+
+![alt text](image-27.png)
+
+# Clase 17: Visualización de Datos: Mapas de Calor y Árboles
+
+Asesinatos por locación: mapa en árbol
+Arrastramos la propiedad locación a las filas
+Arrastramos el número de muertes a la información de las filas
+Acomodamos la información de mayor a menor
+Cambiamos la medida a recuento distintivo
+En el apartado de “Mostrarme” seleccionamos “mapas en árbol”
+
+
+**GRAFICA DE ARBOL** 
+
+![alt text](image-28.png)
+
+**GRAFICA MAPA DE CALOR**
+
+![alt text](image-29.png)
+
+# Clase 18: Mejora de Dashboards en Tableau: Estética y Visualización
+
+Dashboard de análisis por personaje
+Ocultamos el título de la hoja de trabajo de asesinatos
+Organizamos las tarjetas una al lado de la otra:
+Asesinatos
+Casa
+Arma favorita
+Ajustamos el tamaño de nuestras tarjetas
+Cambiamos el tamaño y formato de nuestra tarjeta de asesinatos:
+Vamos a nuestra hoja de trabajo
+Clic derecho en la tarjeta -> Formatear
+En la sección Hoja -> Hoja de trabajo -> Menú desplegable, cambiamos el número de la fuente y aplicamos negritas
+Duplicamos la gráfica de burbujas “Top 5 armas usadas”, y cambiamos el nombre de la copia a “Top 5 armas usadas individual”
+Añadimos el DataViz de Top 5 armas usadas individual a nuestro dashboard de análisis por personaje
+Añadimos el contexto a nuestro Top 5 armas usadas individual
+Ahora duplicamos Asesinatos por locación, cambiamos su nombre a “Asesinatos por locación individual”
+Añadimos el DataViz de Asesinatos por locación individual a nuestro dashboard
+Ocultamos el título de Asesinatos por locación individual
+Agregamos el contexto de Asesinatos por locación individual
+Quitamos las etiquetas de las filas y columnas de la gráfica de barras
+
+**FORMATEAR**
+![alt text](image-30.png)
+
+![alt text](image-31.png)
+
+**PUBLICAR** 
+
+![alt text](image-32.png)
+
+![alt text](image-33.png)
+
+![alt text](image-34.png)
+
+
+**Ejemplo** 
+![alt text](image-35.png)
+
+
+# Clase 19: Creación de Storyboards en Tableau para Storytelling Efectivo
+
+
+Resumen
+El storytelling es utilizar la narración de historias para contar nuestros descubrimientos y asegurar que la audiencia comprenda el mensaje que nosotros queremos dar a conocer.
+
+Existen algunas visualizaciones de datos que nos ayudan más que otros al momento de entregar nuestro mensaje.
+
+Storyboard en Tableau
+Tableau nos permite crear storyboards, en el botón con un libro, a la derecha del botón para crear dashboard.
+
+En cada pestaña pueden agregarse elementos creados previamente, ya sea en las tablas o un dashboard (data visualization, dashboards).
+
+Antes de crear un storyboard debemos preguntarnos:
+
+¿Cuáles son los objetivos que queremos dar a conocer?
+Estructura de un storyboard
+Introducción
+Resúmenes de resultado (para personas con poco tiempo)
+Data visualizations (las necesarias, preferentemente 3 dashboards o dataviz)
+Conclusión
+Recomendaciones
 
 
 
-# Clase 17: 
+1. Intro
+2. Briefing
+3. Data Viz presentation
+4. Conclusions
+5. Recommendations
 
 
-# Clase 18: 
+![alt text](image-36.png)
+
+- https://help.tableau.com/current/pro/desktop/en-us/stories.htm
+
+
+# Clase 20: Estructura del Storytelling en Visualización de Datos
+
+Podemos crear un tablero de historia 
+- Paso 1: clic en la parte inferior historia te genera un tablero 
+![alt text](image-37.png)
+
+- Paso 2: clic en blanco y podemos crear casillas blancas y arrastrar una  grafica o un dashboard 
+
+![alt text](image-38.png)
+
+- Paso 3: se recomienda tener todo oprdenado cada elemento tarjetas, graficas, tablas  antes de generar la historia 
+
+![alt text](image-39.png)
+
+Contexto
+
+Utiliza este apartado para poder contar cómo es que elegiste iniciar el proyecto, con qué fin lo estás haciendo, que pensabas encontrar o cuáles eran las preguntas que querías contestar.
+
+El contexto es muy importante porque le explica a la audiencia la razón de nuestro trabajo y las intriga para poder saber más en las siguientes etapas de nuestra historia.
+
+Por lo general, debes aclarar aquí el qué, quién, cómo y para qué del trabajo.
+
+Ejemplo:
+
+Durante mi tiempo de business intelligence en la empresa de Walmart, tras la primera reunión del departamento de datos del año, decidimos analizar el comportamiento de usuarios para poder incrementar las ventas por temporada en nuestras sucursales. Recuerdo bien ese día porque precisamente al momento de salir del trabajo y encender el auto, en la radio anunciaban tener precaución por el acercamiento de un huracán. Evidentemente fui corriendo a la primera tienda que encontré para comprar los productos esenciales… ¡Y fue ahí, parado en el anaquel comprando agua y enlatados cuando me di cuenta de que nunca habíamos analizado el comportamiento de los clientes de Walmart ocasionado por desastres naturales!. La idea me iluminó la mente y me pareció muy interesante hacer una investigación a fondo sobre los productos más vendidos al momento que se pronostican desastres naturales…
+
+Si te das cuenta, en esta pequeña historia estoy dando todo el contexto que llevó al análisis de datos e inició el proyecto sobre los efectos de los desastres naturales en el comportamiento de compra en Walmart.
+
+Utiliza el contexto a tu favor, trata de conectar con la audiencia utilizando lenguaje común y situaciones que les pudieran ser familiares.
+
+Resumen
+
+Esta sección puedes utilizarla como segunda sección de la narración o al final junto con las conclusiones, yo la utilizo inmediatamente después del contexto para resumir al instante mis descubrimientos y generar intriga en la audiencia acerca de cómo llegué a esos resultados, generando que queden muy atentos a todo el proceso que conllevó el trabajo.
+
+Continuando con el ejemplo anterior, el apartado de resumen llevaría una narración así:
+
+Poptarts… El artículo más vendido en Walmart después de anunciarse los huracanes son las Poptarts sabor fresa… Quedé impresionado, fue un descubrimiento increíble.
+
+Puntos de interés
+
+Esta sección deberá constar de las dataviz que mejor representen tus descubrimientos, tu proceso y tus resultados.
+
+Aquí te recomiendo que utilices tanto dataviz individuales como dashboards, es muy importante que tu elección refleje de una manera adecuada la información para que puedas comunicar de la manera más efectiva tu mensaje.
+
+Yo utilizo 3 puntos de interés dentro de mis narraciones para tratar de mantener la presentación muy directa y orientada a los resultados. Te dejo este ejemplo:
+
+Primer punto de interés para definir los limitantes del KPI del proyecto utilizando un diagrama de cajas (boxplot).
+
+Segundo punto de interés a modo de implementación de KPI’s y un panorama general del proyecto utilizando un dashboard con varias visualizaciones de datos
+
+Y tercer punto de interés, una comparativa que me permita realzar el peor y el mejor resultado según el proyecto:
+
+¡Ojo! Cada uno de los puntos de interés debe tener una narración explicativa y cronológica con relación a tu historia para que mantenga su coherencia.
+
+Si te sirve, piensa en los puntos de interés como la ayuda visual que te permitirá recordar los puntos importantes a mencionar dentro de tu historia.
+
+Conclusiones
+
+Aquí simplemente reforzaremos el mensaje sobre los resultados finales de nuestro proyecto para dejar muy en claro y de manera contundente lo que pudimos encontrar o las respuestas que contestamos durante el ejercicio. Esta sección es importante porque nos permite darle un cierre a nuestra historia con un descubrimiento o mensaje final.
+
+Es aquí en donde podemos dar nuestro toque personal y demostrar nuestra opinión con lo encontrado. Te recomiendo muchísimo que incluyas siempre esta sección, ya que nos ofrece un escaparate para poder demostrar nuestras habilidades para el análisis de datos.
 
 
 
-# Clase 19: 
+# Clase 21:  Demostración Práctica de Storyboard en Análisis de Datos de Seguridad
+- https://help.tableau.com/current/pro/desktop/en-us/stories.htm
 
-
-# Clase 20: 
-
-
-
-# Clase 21: 
 
 
 
