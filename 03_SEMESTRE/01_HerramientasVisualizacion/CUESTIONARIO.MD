@@ -1564,3 +1564,122 @@ ocasiones.
 
 - ¿Cuál es uno de los beneficios clave de utilizar Historias en Tableau?
 - Construir una narrativa que permita comunicar ideas claras basadas en datos => Las historias permiten comunicar ideas claras mediante una narrativa basada en datos, integrando visualizaciones y explicaciones en un formato lineal
+
+
+# Tema 11: CARTO. Location Intelligence Software
+
+1. ¿Cuál fue el primer fabricante de móviles que incluyó GPS?
+A. LG.
+B. Apple. => **COORECTO**
+C. Samsung.
+D. Xiaomi.
+
+2. ¿En qué año salió a la venta el primer móvil con GPS?
+A. 2000.
+B. 2006.
+C. 2008. => **COORECTO**
+D. 2011.
+
+3. En la pestaña Data de CARTO, los usuarios pueden:
+A. Cargar, editar, ver o eliminar datos. => **COORECTO**
+B. Elegir entre conjuntos de datos proporcionados por la aplicación.
+C. Escoger el tipo de visualización de sus datos.
+D. Añadir widgets al mapa.
+
+4. Las relaciones y correlaciones espaciales entre los datos **no se pueden** descubrir en:
+A. Los mapas basados en datos.
+B. Las aplicaciones de ubicación creadas con LI.
+C. Las visualizaciones clásicas como diagramas de barras o tartas.
+D. Los mapas con geoposicionamiento => **COORECTO**
+
+
+5. Internet supuso un gran cambio en LI al hacer que:
+A. Todo el mundo pudiera consultar Google Maps.
+B. Se usaran aplicaciones de mensajería gratuitas.
+C. Los datos de ubicación estuvieran disponibles en la nube. => **COORECTO**
+D. Todas las anteriores.
+
+6. CARTO es una plataforma en línea:
+A. Verdadero. Dispone de la opción de uso en la nube. => **COORECTO**
+B. Verdadero. Es la única opción.
+C. Falso. No dispone de la opción en la nube.
+D: Falso. El rendimiento de los mapas es muy exigente para emplear una versión en la nube.
+
+7. La inteligencia de ubicación (LI) es una disciplina que pretende:
+A. Convertir los datos de ubicación en resultados comerciales. => **COORECTO**
+B. Mejorar la información de los mapas y GIS.
+C. Vender los datos geográficos a las empresas.
+D. Masificar el conocimiento de los mapas y GIS.
+
+8. CARTO no permite seleccionar ciertas partes específicas del conjunto de datos ni utilizar consultas SQL:
+A. Verdadero. El mapa refleja toda la información del dataset. 
+B. Falso. Se puede escoger la información del dataset a visualizar en el mapa. => **COORECTO**
+C. Verdadero. CARTO no admite SQL.
+D. Falso. Puede seleccionar información parcial del dataset pero no admite
+consultas SQL
+
+9. En la Vista de mapa, los datos se visualizan como puntos y cada punto representa una fila de datos:
+A. Falso. Cada punto representa un valor de cada columna.
+B. Verdadero. Cada punto representa una fila. => **COORECTO**
+C. Falso. Los datos no reflejan las filas del dataset.
+D. Falso. Los puntos no reflejan las filas del dataset.
+
+
+10. Las dimensiones son los datos descriptivos, mientras que las medidas son:
+A. Datos ordinales.
+B. Datos numéricos. => **COORECTO**
+C. Las dimensiones del contenedor gráfico.
+D. Las dimensiones de los datos descriptivos. Son equivalentes
+
+--- 
+
+## Videoclase 1. CARTO: software de inteligencia geoespacial
+
+- ¿Cuál es una de las principales ventajas de los sistemas GIS para las organizaciones?
+- Facilitar la visualización, análisis e interpretación de datos espaciales. => Los sistemas GIS permiten visualizar, analizar e interpretar datos espaciales para entender patrones y tendencias, lo que aporta un gran valor estratégico y económico a las organizaciones.
+
+- ¿Cuál de las siguientes afirmaciones sobre CARTO es correcta?
+- Es una plataforma que transforma datos de ubicación en decisiones estratégicas. => CARTO ayuda a empresas, como Google y la NASA, a convertir datos de ubicación en insights útiles para decisiones estratégicas, mejorando procesos como marketing y logística.
+
+- ¿Qué evento marcó el inicio del auge de la inteligencia de ubicación (LI)?
+- La incorporación de GPS en smartphones de Apple en 2008. => La integración del GPS en smartphones permitió la recolección masiva de datos de ubicación, impulsando la evolución de la inteligencia de ubicación (LI).
+
+- ¿Cuál de las siguientes tecnologías es clave para el análisis de datos de ubicación?
+- Computación en la nube. => La computación en la nube ha facilitado el acceso a grandes volúmenes de datos de ubicación, permitiendo a las empresas escalar y analizar información de forma eficiente.
+
+- ¿Qué beneficio proporciona la inteligencia de ubicación (LI) en el contexto del IoT?
+- Optimizar procesos como la recolección de basura en ciudades. => LI, en combinación con IoT, permite optimizar procesos al analizar datos generados por sensores, como los de contenedores de basura, mejorando la eficiencia y ahorrando costos.
+
+## Videoclase 2. Interfaz de CARTO 
+
+- CARTO ofrece dos opciones principales para su instalación, cada una adaptada a necesidades específicas de los usuarios. ¿Cuál de las siguientes es una descripción precisa de estas opciones?
+- On-premises: instalación en la infraestructura de la empresa, cumpliendo políticas de seguridad específicas. On the cloud: servicio online con backups automáticos y actualizaciones constantes => CARTO permite instalarse on-premises para mayor control y seguridad en servidores propios o usar el servicio online, que incluye administración gestionada y actualizaciones constantes.
+
+- Los usuarios de CARTO pueden cargar datos de manera eficiente a través de su interfaz. ¿Cuál es el método más sencillo para hacerlo?
+- Arrastrar y soltar archivos al apartado de datos en el dashboard. => CARTO simplifica la carga de datos mediante una funcionalidad de drag and drop, eliminando la necesidad de procesos técnicos complejos.
+
+- CARTO almacena los datos en un formato tabular que puede mapear ubicaciones. ¿Qué características clave deben incluirse en el dataset para su visualización en un mapa?
+- Una clave principal y una columna geométrica basada en latitud y longitud. => CARTO requiere una clave principal (cartodb_id) y una columna geométrica (the_geom) que contenga información de latitud y longitud para mapear datos en un mapa interactivo.
+
+- CARTO permite personalizar mapas para facilitar la visualización de datos. ¿Qué herramientas están disponibles para esta personalización?
+- Agregar capas, widgets y cambiar estilos como el fondo del mapa con BaseMap. => 
+
+- CARTO destaca en el análisis y visualización de datos de localización. ¿Qué funcionalidad lo diferencia principalmente de otras plataformas similares?
+- Manipular datos directamente en línea, incluyendo consultas SQL específicas. => Una ventaja clave de CARTO es la capacidad de manipular datasets directamente en línea, utilizando consultas SQL para seleccionar y analizar datos específicos de manera interactiva.
+
+
+## ◄ Videoclase 3. Cartografía interactiva: capas, widgets, estilos y análisis
+- ¿Cuál es la función principal del selector de capas en CARTO?
+- Facilita habilitar o deshabilitar la visualización de diferentes capas. => El selector de capas en CARTO permite analizar los datos de manera flexible activando o desactivando las capas disponibles, pero no modifica ni crea categorías o valores agregados.
+
+- ¿Cuál de los siguientes tipos de widgets permite mostrar datos de forma animada a lo largo del tiempo?
+- Series de tiempo. => Los widgets de series de tiempo permiten mostrar datos agregados animados en función de su variación temporal, mientras que los otros widgets se enfocan en categorías, datos numéricos o valores agregados.
+
+- ¿Qué opción del menú de estilos en las capas permite cambiar el tamaño de los puntos en el mapa?
+- Create Lines from Points. => La opción «Style» permite personalizar aspectos visuales de las capas, como el tamaño de los puntos, su color y la resolución, mientras que «Agregación» se utiliza para combinar datos.
+
+- ¿Qué tipo de análisis en CARTO permite conectar puntos en orden secuencial y diferenciarlos por color?
+- Create Lines from Points. => Este análisis une puntos en orden secuencial, asignando colores distintos según categorías específicas, como los nombres de los viajeros.
+
+- ¿Cómo se pueden distinguir mejor las diferentes rutas creadas en un análisis de tipo «Create Lines from Points»?
+- Configurando el campo Group By y seleccionando colores específicos en Stroke color. => La combinación de análisis y estilo permite diferenciar rutas utilizando el campo «Group By» para la agrupación de puntos y colores específicos en «Stroke color» para visualizarlas mejor.

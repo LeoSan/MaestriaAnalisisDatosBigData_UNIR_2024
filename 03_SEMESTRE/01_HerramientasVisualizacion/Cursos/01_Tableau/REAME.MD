@@ -322,17 +322,190 @@ También es buena práctica tener las mismas cantidades en los ejes de ambas gr�
 # Clase 12: 
 
 
-# Clase 13: 
+Crear parámetros
+Para crear parámetros, clic derecho en “Tablas” -> “Nuevo parámetro”.
+Agregamos un parámetro llamado “Tolerancia”, que será un tipo de dato flotante, y tendrá el valor de 1 (puedes cambiar el valor cuando quieras).
+
+Crear un campo calculado
+En este caso crearemos un campo calculado que será “KPI por descuento”.
+
+En donde haremos una condicional para saber cuáles ciudades superan un descuento.
+
+```SQL
+IF [Discount] > [Tolerancia]
+THEN TRUE
+END
+```
+
+Damos clic derecho en nuestro parámetro y después en mostrar parámetro, para poder editarlo cuando necesitemos
+Arrastramos nuestro campo calculado “KPI por descuento”* para que sean coloreados las ciudades que superen la tolerancia
+Si te das cuenta no ha cambiado nada, porque como estamos comparando descuentos que fueron dados con porcentajes, el valor de 1 sería igual al 100% de descuento.
+
+Así que hay que jugar con este valor, pongamos un 0.3 = 30% de descuento, ahora un 0.1 = 10%, podemos ver cómo es que los colores de nuestros datos cambian.
+
+En los KPIs es importante que los valores que no nos interesan se pinten de un color neutro, como el gris, y resaltar los valores que son pertinentes (con un color saturado, como el rojo)
+Creando filtros
+Un filtro nos ayuda a mostrar solamente la información que queremos, para crear un filtro podemos hacer lo siguiente:
+
+Arrastramos “Discount” al apartado de filtros
+Seleccionamos mínimo
+Agregamos la cantidad del mínimo (de preferencia la misma cantidad de nuestro parámetro para que hagan juego) y que haga oculte los datos grises
+Ahora con esto tendremos en el mapa solo las ciudades que tienen el 30% de tolerancia.
+
+**CAMBIAR UBICACIÓN**
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
+
+**Mostrar tolerancia**
+![alt text](image-15.png)
+
+![alt text](image-16.png)
+
+![alt text](image-17.png)
+
+
+# Clase 13:  Creación de Dashboards Interactivos en Tableau
+
+
+Resumen
+Ahora crearemos un tablero interactivo junto con algunas de nuestras hojas de trabajo, para crear una visualización que se complemente con varias gráficas o DataViz.
+
+Agregando nuestras DataViz
+Creamos un nuevo dashboard
+Ajustamos para que se adapte automáticamente al tamaño de la pantalla
+Arrastramos a nuestro dashboard las siguientes hojas de trabajo:
+Ventas por categoría
+Tabla de utilidades
+Comparativa entre ventas y utilidades
+Mapa de la ciudad
+Eliminamos la leyenda de nuestras gráficas, ya que nosotros sabemos lo que significa cada color
+Acomodamos las gráficas de una mejor manera, haciendo drag and drop
+Para cuadrar la tabla:
+Clic derecho en el espacio en blanco
+Hacemos clic en cuadrar
+Seleccionamos "cuadrar a vista completa"
+No es necesario tener los títulos de nuestras hojas de trabajo, haciendo clic derecho y seleccionando la opción “Ocultar título”, sin ocultar los títulos de las gráficas de líneas
+Podemos simplificar más eliminando las palabras repetidas de lo que se mide en nuestras gráficas de líneas
+Doble clic
+Borramos el título
+También sería interesante ver el nombre de nuestros clientes en el mapa, para eso:
+Vamos a la hoja de trabajo de nuestro mapa
+Arrastramos la propiedad “Customer Name” al recuadro “Detalle” dentro de la sección de marcas
+Utilizando objetos
+Los objetos nos permiten agregar cosas como:
+
+Espacios en blanco
+Texto
+Imágenes
+Páginas
+Etc.
+Para dejar nuestro dashboard más presentable, agregaremos un título:
+
+Agregamos un espacio en blanco arriba de todas nuestras DataViz
+Agregamos el texto que será nuestro título
+El título será “Análisis de ventas por categorías”
+Agregamos un tamaño más grande para la fuente y le agregamos el formato de negritas
+Podemos centrar el texto también y después borrar el espacio en blanco
+Acciones con disparables de selección
+Para hacer nuestro tablero interactivo podemos agregarle algunas acciones:
+
+Vamos a la parte de dashboard
+Seleccionamos acciones
+Añadir acción, y añadimos un filtro
+En hojas de origen dejamos seleccionada nomás “Sales by category”
+En la parte de ejecutar acción, marcamos “seleccionar”
+En hojas de destino dejamos seleccionadas todas, menos “Sales by category”
+En borrar la selección dejamos “Mostrar todos los valores”
+Damos aceptar, y a aceptar de nuevo
+
+**Ejemplos**
+
+**TAMAÑO AUTOMATICO**
+![alt text](image-24.png)
+
+**Cuadrar**
+![alt text](image-18.png)
+
+**Quitar titulos**
+![alt text](image-19.png)
+
+
+**CREAR FILTRO** 
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+![alt text](image-20.png)
 
 
 
-# Clase 14: 
+# Clase 14:  Análisis de Muertes en Game of Thrones con Tableau
+
+
+Preparando nuestros datos
+Para esto utilizaremos la base de datos de la semana 27 del 2019 del Makeover Monday, la descargamos e importamos en Tableau.
+
+Ya que en las primeras filas del archivo vienen algunos datos que no son necesarios, podemos:
+
+Editar el archivo con Excel, y eliminar esas filas
+Utilizar el intérprete de Tableau, que limpia la base de datos de información que no le es tan útil, la opción está en la pantalla “Fuente de datos”
+Gráfica de número de muertes por asesino
+Creamos una hoja de trabajo
+Arrastramos “Death No.” al centro de nuestra hoja de trabajo, esto hará la suma del número de muertes
+Ahora cambiamos la suma por un recuento distintivo, para ver el número de muertes distintas:
+Hacemos clic en la flechita de SUM(Death No.)
+Seleccionamos medida
+Y ahora clic en “Recuento (Distintos)”
+Ahora arrastramos el apartado de killer, para saber quién es el asesino
+Seleccionamos gráfica de barras
+Ordenamos de mayor a menor
+
+
+**EJEMPLO**
+![alt text](image-23.png)
 
 
 
-# Clase 15: 
+# Clase 15: Filtros Dinámicos y Contextuales en Dashboards Interactivos 
 
+Tarjeta de la casa del asesino
+Duplicamos la tarjeta de arma favorita
+Eliminamos el filtro y los valores
+Agregamos la casa del asesino a nuestra hoja de trabajo
+Agregamos un filtro para que nos muestre máximo 2, ya que los asesinos pueden tener 1 o más casas
+Cambiamos el nombre de nuestra DataViz a “Casa”
+Creación de nuestro dashboard
+Cambiamos el tamaño a automático
+Y arrastramos todas nuestras hojas de trabajo que creamos (tablas y tarjetas)
+Agregamos un título a nuestro dashboard
+Eliminamos los títulos de nuestras gráficas de barras y en la casa del asesino
+Agregar interactividad con nuestra gráfica como filtro
+Apartado de dashboard -> Acciones -> Filtro
+En hoja de origen dejamos seleccionada nuestra gráfica de barras
+Marcamos que se filtre al seleccionar
+En la sección de hojas de destino deseleccionamos nuestra gráfica de barras
+Y aceptamos
+Con esto parece funcionar bien nuestro filtro, pero si te das cuenta, con algunos personajes no muestra ni casa, ni arma favorita, esto es porque agregamos otro filtro en las tarjetas.
 
+Para solucionar esto, necesitamos agregar un contexto para el filtro.
+
+Contexto de filtro en las tarjetas
+Seleccionamos cualquier personaje, para que el filtro dinámico también aparezca en nuestra tarjeta
+Vamos a nuestra tarjeta
+Ahí aparecerá también el filtro de la acción del asesino, hacemos clic en la flechita, y clic en “Añadir a contexto”
+
+**CUANDO NO SE VEA**
+> CUANDO NO SE VEA UN FILTRO PODDEMOS BUSCAR LA OPCIÓN DEN AÑADIR A CONTEXTO Y PERMITE FILTRAR EN EL DASHBOARD  Y MOSTRAR CIERTOS ELEMENTOS 
+
+![alt text](image-25.png)
 # Clase 16: 
 
 
