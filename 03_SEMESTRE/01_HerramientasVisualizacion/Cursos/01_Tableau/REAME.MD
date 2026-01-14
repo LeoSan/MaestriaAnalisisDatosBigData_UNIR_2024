@@ -1,14 +1,14 @@
 | Detalle | Información |
 | :--- | :--- |
 | **Publicado el** | Publicado el 05 de Marzo de 2021 |
-| **Profesor** | Luis Martinez |
+| **Profesor** | Luis Jorge Novelo |
 | **Fecha de Inicio** | 12/01/2026 |
-| **Fecha de Fin** |  |
+| **Fecha de Fin** | 14 01 2026 |
 
 > Visualiza y cuenta historias de datos empresariales con Tableau. Aprende a crear gráficos, dashboards y narrativas impactantes para comunicar insights claros y tomar mejores decisiones. Transforma datos complejos en visualizaciones comprensibles y atractivas
 ---
 <div align="center">
-  <img src="image-1.png" alt="Global Certificate" width="70%" />
+  <img src="image-40.png" alt="Global Certificate" width="70%" />
 </div>
 
 
@@ -689,7 +689,67 @@ Es aquí en donde podemos dar nuestro toque personal y demostrar nuestra opinió
 - https://help.tableau.com/current/pro/desktop/en-us/stories.htm
 
 
+- Resumen
+Los datos muestran que Yucatán, Campeche, Tlaxcala y Coahuila, son los únicos estados con una tasa de homicidios más baja
+La geografía parece no estar relacionada con la tasa de homicidios
+Dato: Esta investigación no solo fue resaltar los estados con más homicidios, también se tomó en cuenta:
 
+Los diferentes tipos de crímenes:
+Homicidios
+Robos
+Daño a la propiedad
+Violencia familiar
+Lesiones
+Otros delitos de fuero común
+El número de habitantes basándonos en el total de crímenes ocurridos
+Tasa de homicidios
+Esta es la vista general de crímenes a lo largo de los años.
+
+Se tomó en cuenta el año 2016 para una comparación, ya que ese año no mostraba grandes fluctuaciones como en el resto de años.
+
+Se utilizó el diagrama de cajas para mostrar la comparación de violencia desde el 2015 en adelante.
+
+Storyboard con la vista general de la tasa de homicidios en México
+Homicidios por estado
+En esta parte podemos ver la violencia en cada estado de México.
+
+Mostrando en una gráfica de barras los estados con su nivel de crímenes, y representados por colores, en donde el verde es el más seguro y el rojo el más violento.
+
+También se muestra una gráfica de líneas, para mostrar la cantidad de crímenes a lo largo de los años.
+
+Un mapa, y otra gráfica de barras con los crímenes más cometidos.
+
+Storyboard con la vista de la tasa de homicidios por estado en México
+Es importante recalcar que en el 2019 en Colima ocurrieron más homicidios, de los que ocurrieron durante la guerra civil en Siria.
+
+Comparación
+Ahora se analiza una comparación entre el estado más seguro de México, con el más inseguro.
+
+En primer lugar, se tiene a Yucatán con el número más seguro.
+
+En último lugar, tenemos a Colima como el estado más inseguro.
+
+Storyboard con la vista de la comparación de homicidios entre Yucatán y Colima
+Conclusión
+Los lugares más seguros en México son:
+
+Yucatán
+Campeche
+Tlaxcala
+Coahuila
+Los lugares más violentos en México son:
+
+Colima
+Quintana Roo
+Baja California
+El crimen más común en México es el robo.
+
+Recomendaciones
+Se recomienda escoger, ya sea Yucatán, Campeche o Tlaxcala, ya que son lugares muy interesantes.
+
+También es recomendable analizar mejor Coahuila, ya que algunas ciudades con mayor cantidad de homicidios puede estar afectando el promedio de los incidentes.
+
+Adicionalmente, hacer un estudio económico, para poder tomar una decisión en riesgo y en rendimiento.
 
 # Clase 22: 
 

@@ -69,3 +69,7 @@ Este documento sirve como guía maestra para el desarrollo del proyecto final de
 > [!WARNING]
 > **Puntos Importantes a Considerar:**
 > ![Nota Importante](image-5.png)
+
+
+**NOTAS**
+- https://platzi.com/cursos/tableau/exposicion-de-storyboards/ Ejemplo valido para la tesis 
