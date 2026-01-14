@@ -751,13 +751,5 @@ También es recomendable analizar mejor Coahuila, ya que algunas ciudades con ma
 
 Adicionalmente, hacer un estudio económico, para poder tomar una decisión en riesgo y en rendimiento.
 
-# Clase 22: 
-
-
-
-# Clase 23: 
-
-
-# Clase 24: 
 
 
