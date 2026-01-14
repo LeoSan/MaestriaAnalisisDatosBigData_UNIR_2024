@@ -14,7 +14,7 @@
 
 | Curso | Certificado |
 | :--- | :---: |
-| Curso de Tableau: Visualización de Datos y Storytelling para Negocios | [Ver PDF]() |
+| Curso de Tableau: Visualización de Datos y Storytelling para Negocios | [Ver PDF](https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/blob/main/03_SEMESTRE/01_HerramientasVisualizacion/Cursos/01_Tableau/2026_Diploma-tableau_PLATZI.pdf) |
 
 --- 
 
