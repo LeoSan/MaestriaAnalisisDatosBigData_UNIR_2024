@@ -5,17 +5,17 @@
 | **Publicado el** | 21 Agosto 2025 |
 | **Profesor** | Idir Ouhab |
 | **Fecha de Inicio** | 12/01/2026 |
-| **Fecha de Fin** | (En curso) |
+| **Fecha de Fin** | 16/01/2026 |
 
 > Aprende a identificar, diseñar y ejecutar workflows en n8n Cloud usando un enfoque low-code, optimizando procesos y reduciendo tareas repetitivas en entornos profesionales.
 
 <div align="center">
-  <img src="image-1.png" alt="Global Certificate" width="70%" />
+  <img src="imagen-2.png" alt="Global Certificate" width="70%"  />
 </div>
 
 | Curso | Certificado |
 | :--- | :---: |
-| Curso de Automatizaciones con n8n | [Ver PDF](#) |
+| Curso de Automatizaciones con n8n | [Ver PDF](./diploma-n8n-lowcode.pdf) |
 
 ---
 
