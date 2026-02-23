@@ -1,0 +1,5 @@
+tensorflow
+numpy
+matplotlib
+pillow
+gradio==3.50.2
