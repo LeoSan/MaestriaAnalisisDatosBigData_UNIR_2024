@@ -1569,67 +1569,67 @@ ocasiones.
 # Tema 11: CARTO. Location Intelligence Software
 
 1. ¿Cuál fue el primer fabricante de móviles que incluyó GPS?
-A. LG.
-B. Apple. => **COORECTO**
-C. Samsung.
-D. Xiaomi.
+- A. LG.
+- B. Apple. => **COORECTO**
+- C. Samsung.
+- D. Xiaomi.
 
 2. ¿En qué año salió a la venta el primer móvil con GPS?
-A. 2000.
-B. 2006.
-C. 2008. => **COORECTO**
-D. 2011.
+- A. 2000.
+- B. 2006.
+- C. 2008. => **COORECTO**
+- D. 2011.
 
 3. En la pestaña Data de CARTO, los usuarios pueden:
-A. Cargar, editar, ver o eliminar datos. => **COORECTO**
-B. Elegir entre conjuntos de datos proporcionados por la aplicación.
-C. Escoger el tipo de visualización de sus datos.
-D. Añadir widgets al mapa.
+- A. Cargar, editar, ver o eliminar datos. => **COORECTO**
+- B. Elegir entre conjuntos de datos proporcionados por la aplicación.
+- C. Escoger el tipo de visualización de sus datos.
+- D. Añadir widgets al mapa.
 
 4. Las relaciones y correlaciones espaciales entre los datos **no se pueden** descubrir en:
-A. Los mapas basados en datos.
-B. Las aplicaciones de ubicación creadas con LI.
-C. Las visualizaciones clásicas como diagramas de barras o tartas.
-D. Los mapas con geoposicionamiento => **COORECTO**
+- A. Los mapas basados en datos.
+- B. Las aplicaciones de ubicación creadas con LI.
+- C. Las visualizaciones clásicas como diagramas de barras o tartas.
+- D. Los mapas con geoposicionamiento => **COORECTO**
 
 
 5. Internet supuso un gran cambio en LI al hacer que:
-A. Todo el mundo pudiera consultar Google Maps.
-B. Se usaran aplicaciones de mensajería gratuitas.
-C. Los datos de ubicación estuvieran disponibles en la nube. => **COORECTO**
-D. Todas las anteriores.
+- A. Todo el mundo pudiera consultar Google Maps.
+- B. Se usaran aplicaciones de mensajería gratuitas.
+- C. Los datos de ubicación estuvieran disponibles en la nube. => **COORECTO**
+- D. Todas las anteriores.
 
 6. CARTO es una plataforma en línea:
-A. Verdadero. Dispone de la opción de uso en la nube. => **COORECTO**
-B. Verdadero. Es la única opción.
-C. Falso. No dispone de la opción en la nube.
-D: Falso. El rendimiento de los mapas es muy exigente para emplear una versión en la nube.
+- A. Verdadero. Dispone de la opción de uso en la nube. => **COORECTO**
+- B. Verdadero. Es la única opción.
+- C. Falso. No dispone de la opción en la nube.
+- D. Falso. El rendimiento de los mapas es muy exigente para emplear una versión en la nube.
 
 7. La inteligencia de ubicación (LI) es una disciplina que pretende:
-A. Convertir los datos de ubicación en resultados comerciales. => **COORECTO**
-B. Mejorar la información de los mapas y GIS.
-C. Vender los datos geográficos a las empresas.
-D. Masificar el conocimiento de los mapas y GIS.
+- A. Convertir los datos de ubicación en resultados comerciales. => **COORECTO**
+- B. Mejorar la información de los mapas y GIS.
+- C. Vender los datos geográficos a las empresas.
+- D. Masificar el conocimiento de los mapas y GIS.
 
 8. CARTO no permite seleccionar ciertas partes específicas del conjunto de datos ni utilizar consultas SQL:
-A. Verdadero. El mapa refleja toda la información del dataset. 
-B. Falso. Se puede escoger la información del dataset a visualizar en el mapa. => **COORECTO**
-C. Verdadero. CARTO no admite SQL.
-D. Falso. Puede seleccionar información parcial del dataset pero no admite
+- A. Verdadero. El mapa refleja toda la información del dataset. 
+- B. Falso. Se puede escoger la información del dataset a visualizar en el mapa. => **COORECTO**
+- C. Verdadero. CARTO no admite SQL.
+- D. Falso. Puede seleccionar información parcial del dataset pero no admite
 consultas SQL
 
 9. En la Vista de mapa, los datos se visualizan como puntos y cada punto representa una fila de datos:
-A. Falso. Cada punto representa un valor de cada columna.
-B. Verdadero. Cada punto representa una fila. => **COORECTO**
-C. Falso. Los datos no reflejan las filas del dataset.
-D. Falso. Los puntos no reflejan las filas del dataset.
+- A. Falso. Cada punto representa un valor de cada columna.
+- B. Verdadero. Cada punto representa una fila. => **COORECTO**
+- C. Falso. Los datos no reflejan las filas del dataset.
+- D. Falso. Los puntos no reflejan las filas del dataset.
 
 
 10. Las dimensiones son los datos descriptivos, mientras que las medidas son:
-A. Datos ordinales.
-B. Datos numéricos. => **COORECTO**
-C. Las dimensiones del contenedor gráfico.
-D. Las dimensiones de los datos descriptivos. Son equivalentes
+- A. Datos ordinales.
+- B. Datos numéricos. => **COORECTO**
+- C. Las dimensiones del contenedor gráfico.
+- D. Las dimensiones de los datos descriptivos. Son equivalentes
 
 --- 
 
