@@ -1,0 +1,13 @@
+[project]
+name = "dashboard"
+version = "0.1.0"
+description = "Monitor de Vulnerabilidad Educativa y Abandono Escolar (2021-2024)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.0.0",
+    "pandas>=2.0.0",
+    "plotly>=5.18.0",
+    "numpy>=1.26.0",
+    "streamlit>=1.55.0",
+]

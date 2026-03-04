@@ -1,0 +1,50 @@
+﻿INEGI. Pobreza Multidimensional (PM) 2024,,,,,,,,
+,,,,,,,,
+"Coeficiente de Gini, según entidad federativa",,,,,,,IP cuadro 2,
+2024,,,,,,,,
+(indicadores de precisión),,,,,,,,Índice
+Entidad federativa,,,,Estimación,Error estándar,Intervalo de confianza al 95 %,,Coeficiente de variación
+,,,,,,Límite inferior,Límite superior,
+Estados Unidos Mexicanos,,,, 0.420, 0.004, 0.412, 0.429, 5.515
+Aguascalientes,,,, 0.375, 0.007, 0.360, 0.389, 1.996
+Baja California,,,, 0.345, 0.008, 0.330, 0.361, 2.532
+Baja California Sur,,,, 0.364, 0.008, 0.348, 0.380, 2.067
+Campeche,,,, 0.400, 0.008, 0.384, 0.417, 1.812
+Coahuila de Zaragoza,,,, 0.356, 0.007, 0.342, 0.370, 2.377
+Colima,,,, 0.381, 0.010, 0.361, 0.401, 2.663
+Chiapas,,,, 0.418, 0.011, 0.397, 0.439, 2.357
+Chihuahua,,,, 0.383, 0.009, 0.366, 0.401, 2.870
+Ciudad de México,,,, 0.455, 0.009, 0.437, 0.474, 1.876
+Durango,,,, 0.378, 0.008, 0.363, 0.393, 2.019
+Guanajuato,,,, 0.365, 0.009, 0.347, 0.383, 2.679
+Guerrero,,,, 0.439, 0.010, 0.419, 0.460, 2.248
+Hidalgo,,,, 0.379, 0.010, 0.358, 0.399, 2.427
+Jalisco,,,, 0.387, 0.017, 0.354, 0.421, 4.067
+México,,,, 0.377, 0.009, 0.359, 0.395, 2.745
+Michoacán de Ocampo,,,, 0.405, 0.028, 0.350, 0.461, 5.958
+Morelos,,,, 0.383, 0.009, 0.365, 0.401, 2.230
+Nayarit,,,, 0.382, 0.012, 0.358, 0.405, 2.556
+Nuevo León,,,, 0.446, 0.043, 0.361, 0.530, 10.888
+Oaxaca,,,, 0.426, 0.009, 0.409, 0.443, 1.992
+Puebla,,,, 0.402, 0.009, 0.384, 0.421, 2.057
+Querétaro,,,, 0.408, 0.013, 0.383, 0.433, 3.514
+Quintana Roo,,,, 0.384, 0.009, 0.366, 0.401, 2.041
+San Luis Potosí,,,, 0.417, 0.010, 0.398, 0.436, 2.189
+Sinaloa,,,, 0.360, 0.008, 0.344, 0.377, 2.486
+Sonora,,,, 0.376, 0.010, 0.356, 0.396, 2.510
+Tabasco,,,, 0.407, 0.010, 0.387, 0.427, 2.206
+Tamaulipas,,,, 0.362, 0.009, 0.344, 0.379, 2.140
+Tlaxcala,,,, 0.352, 0.008, 0.335, 0.368, 2.166
+Veracruz de Ignacio de la Llave,,,, 0.394, 0.011, 0.372, 0.416, 2.820
+Yucatán,,,, 0.404, 0.011, 0.382, 0.427, 2.809
+Zacatecas,,,, 0.399, 0.009, 0.382, 0.416, 2.070
+Nota 1: ,,,"Las estimaciones para 2024 están coloreadas de acuerdo con su nivel de precisión (alta, moderada y baja), tomando como referencia el Coeficiente de Variación (CV). Una precisión baja requiere un uso cauteloso de la estimación en el que se analicen las causas de la gran variabilidad y se consideren otros indicadores de precisión y confiabilidad, como el intervalo de confianza.",,,,,
+,,,"Nivel de precisión de las estimaciones, según el CV (porcentaje):",,,,,
+,,,"Alta: CV en el rango de [0,15) ",,,,,
+,,,"Moderada: CV en el rango de [15,30) ",,,,,
+,,,Baja: CV de 30 en adelante,,,,,
+Nota 2: ,,,Para las pruebas de hipótesis de 2016 a 2022 consultar en: https://www.coneval.org.mx/Medicion/MP/Documents/MMP_2022/AE_PH_2022.zip,,,,,
+Fuente: ,,,"INEGI. Pobreza multidimensional, 2024. Cálculos con base en la información de la ENIGH 2024, utilizando la metodología del CONEVAL. 
+CONEVAL. Medición de la pobreza, de 2016 a 2022. Recuperado el 1 de agosto de 2025, de https://www.coneval.org.mx/Medicion/MP/Paginas/AE_pobreza_2022.aspx",,,,,
+,,,,,,,,
+,,,,,,,,

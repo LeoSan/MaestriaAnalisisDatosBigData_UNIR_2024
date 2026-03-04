@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="space-y-6">
+    <!-- Header Section -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-white">Monitor de Vulnerabilidad Educativa y Abandono Escolar
+                (2021-2024)</h2>
+            <p class="text-slate-400 mt-1">Configuración de la Estructura Global y Filtros Dinámicos.</p>
+        </div>
+    </div>
+
+    <!-- BLOQUE VISTA (Paso 2): Panel Superior de Indicadores Clave de Riesgo (KPIs) -->
+    <!-- Grid para 4 tarjetas que se comunican con los valores pasados por Jinja2 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Tarjeta 1: Tasa Abandono Primaria -->
+        <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm">
+            <h3 class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Abandono Primaria</h3>
+            <p class="text-3xl font-bold text-white">{{ kpi_abandono }}%</p>
+        </div>
+
+        <!-- Tarjeta 2: Carencia Salud (Con Lógica de Semáforo Jinja2) -->
+        <!-- Si la variable kpi_salud supera 50, se asignan clases rojas (estado de alerta), sino aspecto estándar -->
+        <div
+            class="backdrop-blur border p-5 rounded-2xl shadow-sm transition-colors 
+                    {% if kpi_salud > 50 %} bg-red-900/40 border-red-500 {% else %} bg-slate-800/60 border-slate-700 {% endif %}">
+            <h3 class="text-xs font-semibold uppercase tracking-wider mb-2 
+                       {% if kpi_salud > 50 %} text-red-300 {% else %} text-slate-400 {% endif %}">
+                Carencia Salud
+            </h3>
+            <p class="text-3xl font-bold {% if kpi_salud > 50 %} text-red-400 {% else %} text-white {% endif %}">
+                {{ kpi_salud }}%
+            </p>
+            {% if kpi_salud > 50 %}
+            <p class="text-xs mt-2 text-red-400 font-medium">⚠️ ¡Alerta: Alto riesgo de abandono escolar!</p>
+            {% endif %}
+        </div>
+
+        <!-- Tarjeta 3: Razón Ingreso -->
+        <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm">
+            <h3 class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Razón Ingreso (Índice)</h3>
+            <p class="text-3xl font-bold text-white">{{ kpi_ingreso }}</p>
+        </div>
+
+        <!-- Tarjeta 4: Vivienda Piso Tierra -->
+        <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm">
+            <h3 class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Vivienda Piso Tierra</h3>
+            <p class="text-3xl font-bold text-white">{{ kpi_vivienda }}%</p>
+        </div>
+
+    </div>
+    <!-- FIN BLOQUE VISTA -->
+
+    <!-- BLOQUE VISTA (Paso 3): Mapas Coropléticos Interactivos -->
+    <!-- Contenedor con dos columnas (grid o Bootstrap equivalente) para mostrar lado a lado -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <!-- Contenedor Mapa 1: Tasa Abandono Primaria -->
+        <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm min-h-[400px]">
+            <h3 class="text-lg font-semibold text-white mb-2 flex items-center gap-2">
+                📉 Geografía del Abandono Escolar
+            </h3>
+            <p class="text-sm text-slate-400 mb-4">Muestra los estados con mayor y menor deserción prematura.</p>
+            <div id="mapa_abandono" class="w-full h-full min-h-[300px]"></div>
+        </div>
+
+        <!-- Contenedor Mapa 2: Carencia de Salud -->
+        <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm min-h-[400px]">
+            <h3 class="text-lg font-semibold text-white mb-2 flex items-center gap-2">
+                🏥 Geografía de Carencias en Salud
+            </h3>
+            <p class="text-sm text-slate-400 mb-4">Distribución del nulo acceso a servicios públicos de salud.</p>
+            <div id="mapa_salud" class="w-full h-full min-h-[300px]"></div>
+        </div>
+    </div>
+    <!-- FIN BLOQUE VISTA (Paso 3) -->
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <!-- Sidebar Filtros -->
+        <div class="lg:col-span-1">
+            <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm">
+                <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z">
+                        </path>
+                    </svg>
+                    Filtros Dinámicos
+                </h3>
+
+                <form method="GET" action="/" class="space-y-4">
+                    <!-- Filtro Año -->
+                    <div>
+                        <label for="anio" class="block text-sm font-medium text-slate-300 mb-1">📅 Selecciona el
+                            Año:</label>
+                        <select name="anio" id="anio" onchange="this.form.submit()"
+                            class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-lg focus:ring-brand focus:border-brand block p-2.5">
+                            {% for anio in anios %}
+                            <option value="{{ anio }}" {% if anio==anio_seleccionado %}selected{% endif %}>{{ anio }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Filtro Estado -->
+                    <div>
+                        <label for="estado" class="block text-sm font-medium text-slate-300 mb-1">📍 Selecciona el
+                            Estado:</label>
+                        <select name="estado" id="estado" onchange="this.form.submit()"
+                            class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-lg focus:ring-brand focus:border-brand block p-2.5">
+                            <option value="Nacional" {% if estado_seleccionado=='Nacional' %}selected{% endif %}>
+                                Nacional (Todos)</option>
+                            {% for estado in estados %}
+                            <option value="{{ estado }}" {% if estado==estado_seleccionado %}selected{% endif %}>{{
+                                estado }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Quick Metrics -->
+            <div class="mt-4 bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm">
+                <h3 class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Registros Encontrados
+                </h3>
+                <p class="text-3xl font-bold text-white">{{ total_registros }}</p>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="lg:col-span-3">
+            <div class="bg-slate-800/60 backdrop-blur rounded-2xl shadow-xl border border-slate-700 overflow-hidden">
+                <div class="p-4 md:p-6 border-b border-slate-700">
+                    <h3 class="text-lg font-semibold text-white">📊 Datos filtrados ({{ estado_seleccionado }} - {{
+                        anio_seleccionado }})</h3>
+                    <p class="text-sm text-slate-400 mt-1">Mostrando las primeras 5 filas para validación de los
+                        filtros.</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    {% if filas %}
+                    <table class="w-full text-sm text-left text-slate-300">
+                        <thead class="text-xs text-slate-400 uppercase bg-slate-900/50">
+                            <tr>
+                                {% for col in columnas %}
+                                <th scope="col" class="px-6 py-3 whitespace-nowrap">{{ col }}</th>
+                                {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for fila in filas %}
+                            <tr
+                                class="bg-slate-800/20 border-b border-slate-700/50 hover:bg-slate-700/30 transition-colors">
+                                {% for valor in fila %}
+                                <td class="px-6 py-4 whitespace-nowrap">{{ valor }}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% else %}
+                    <div class="p-8 text-center text-slate-500">
+                        No se encontraron datos para los filtros seleccionados o hubo un error al cargar el dataset.
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BLOQUE VISTA (Paso 4): Sección de Evolución Temporal (Convergencia / Divergencia) -->
+<!-- Contenedor único full-width usando Tailwind en vez de Bootstrap (card, col-md-12) -->
+<div class="mt-6 bg-slate-800/60 backdrop-blur rounded-2xl shadow-xl border border-slate-700 overflow-hidden p-5">
+    <h3 class="text-xl font-bold text-white mb-1 flex items-center gap-2">
+        📈 Evolución Temporal 2021-2024: Análisis de Convergencia / Divergencia
+    </h3>
+    <p class="text-sm text-slate-400 mb-4">
+        Compara la tendencia histórica de la Tasa de Abandono del estado seleccionado frente al Promedio Nacional.
+    </p>
+    <!-- Contenedor donde Plotly inyectará la gráfica de líneas -->
+    <div id="grafico_evolucion" class="w-full h-full min-h-[400px]"></div>
+</div>
+<!-- FIN BLOQUE VISTA (Paso 4) -->
+
+<!-- BLOQUE VISTA (Paso 5): Machine Learning (Diagnóstico Predictivo y Clustering) -->
+<!-- Contenedor grid 2 columnas para ambos gráficos base Tailwind CSS -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6 mb-8">
+    <!-- Columna 1: Random Forest Bar Chart -->
+    <div
+        class="bg-slate-800/60 backdrop-blur rounded-2xl shadow-xl border border-slate-700 overflow-hidden p-5 min-h-[400px]">
+        <h3 class="text-xl font-bold text-white mb-1 flex items-center gap-2">
+            🤖 Diagnóstico Predictivo: Factores de Riesgo
+        </h3>
+        <p class="text-sm text-slate-400 mb-4">Muestra la importancia de variables según modelo Random Forest.</p>
+        <div id="grafico_rf" class="w-full h-full min-h-[300px]"></div>
+    </div>
+
+    <!-- Columna 2: K-Means Scatter Plot -->
+    <div
+        class="bg-slate-800/60 backdrop-blur rounded-2xl shadow-xl border border-slate-700 overflow-hidden p-5 min-h-[400px]">
+        <h3 class="text-xl font-bold text-white mb-1 flex items-center gap-2">
+            🎯 Perfiles de Vulnerabilidad Estatal 2024 (K-Means)
+        </h3>
+        <p class="text-sm text-slate-400 mb-4">Agrupación no supervisada basada en carencias estructurales.</p>
+        <div id="grafico_kmeans" class="w-full h-full min-h-[300px]"></div>
+    </div>
+</div>
+<!-- FIN BLOQUE VISTA (Paso 5) -->
+
+</div>
+
+<!-- BLOQUE VISTA (Paso 3): Variables globales para los gráficos -->
+<script>
+    // Se insertan las variables JSON calculadas en el backend utilizando el filtro Jinja2 "safe"
+    // para pasarlas como objetos globales a nuestro archivo JS externo
+    window.mapaAbandonoData = {{ mapa_abandono_json | safe }};
+    window.mapaSaludData = {{ mapa_salud_json | safe }};
+    window.evolucionTemporalData = {{ evolucion_temporal_json | safe }};
+
+    // Variables JSON Globales para Machine Learning (Paso 5)
+    window.rfBarData = {{ rf_bar_json | safe }};
+    window.kmeansScatterData = {{ kmeans_scatter_json | safe }};
+</script>
+
+<!-- Importamos el repositorio general de scripts donde vivirá nuestra lógica extendible -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+{% endblock %}
