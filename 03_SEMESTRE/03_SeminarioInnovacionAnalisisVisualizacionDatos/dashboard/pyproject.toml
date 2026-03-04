@@ -1,7 +1,7 @@
 [project]
 name = "dashboard"
 version = "0.1.0"
-description = "Flask MVC Dashboard with Plotly and Tailwind"
+description = "Monitor de Vulnerabilidad Educativa y Abandono Escolar (2021-2024)"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
