@@ -49,11 +49,11 @@ uv add flask pandas plotly numpy
 *`uv` creará automáticamente un entorno virtual y descargará las librerías al instante.*
 
 ### 3. Iniciar el Servidor
-Una vez instaladas las dependencias, arranca la aplicación usando Streamlit a través de `uv`:
+Una vez instaladas las dependencias, arranca la aplicación de Flask usando `uv`:
 ```bash
 uv pip list
 uv pip freeze > requirements.txt
-uv run streamlit run run.py
+uv run python run.py
 ```
 
 ### 4. Ver el Dashboard
