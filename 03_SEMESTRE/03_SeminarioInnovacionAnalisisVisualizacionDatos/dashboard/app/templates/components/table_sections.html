@@ -1,0 +1,92 @@
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+    <!-- Sidebar Filtros -->
+    <div class="lg:col-span-1">
+        <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm">
+            <h3 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z">
+                    </path>
+                </svg>
+                Filtros Dinámicos
+            </h3>
+
+            <form method="GET" action="/" class="space-y-4">
+                <!-- Filtro Año -->
+                <div>
+                    <label for="anio" class="block text-sm font-medium text-slate-300 mb-1">📅 Selecciona el
+                        Año:</label>
+                    <select name="anio" id="anio" onchange="this.form.submit()"
+                        class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-lg focus:ring-brand focus:border-brand block p-2.5">
+                        {% for anio in anios %}
+                        <option value="{{ anio }}" {% if anio==anio_seleccionado %}selected{% endif %}>{{ anio }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Filtro Estado -->
+                <div>
+                    <label for="estado" class="block text-sm font-medium text-slate-300 mb-1">📍 Selecciona el
+                        Estado:</label>
+                    <select name="estado" id="estado" onchange="this.form.submit()"
+                        class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-lg focus:ring-brand focus:border-brand block p-2.5">
+                        <option value="Nacional" {% if estado_seleccionado=='Nacional' %}selected{% endif %}>
+                            Nacional (Todos)</option>
+                        {% for estado in estados %}
+                        <option value="{{ estado }}" {% if estado==estado_seleccionado %}selected{% endif %}>{{
+                            estado }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- Quick Metrics -->
+        <div class="mt-4 bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm">
+            <h3 class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Registros Encontrados
+            </h3>
+            <p class="text-3xl font-bold text-white">{{ total_registros }}</p>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="lg:col-span-3">
+        <div class="bg-slate-800/60 backdrop-blur rounded-2xl shadow-xl border border-slate-700 overflow-hidden">
+            <div class="p-4 md:p-6 border-b border-slate-700">
+                <h3 class="text-lg font-semibold text-white">📊 Datos filtrados ({{ estado_seleccionado }} - {{
+                    anio_seleccionado }})</h3>
+                <p class="text-sm text-slate-400 mt-1">Mostrando las primeras 5 filas para validación de los
+                    filtros.</p>
+            </div>
+
+            <div class="overflow-x-auto overflow-y-auto max-h-[400px]">
+                {% if filas %}
+                <table class="w-full text-sm text-left text-slate-300">
+                    <thead class="text-xs text-slate-400 uppercase bg-slate-900/50">
+                        <tr>
+                            {% for col in columnas %}
+                            <th scope="col" class="px-6 py-3 whitespace-nowrap">{{ col }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for fila in filas %}
+                        <tr
+                            class="bg-slate-800/20 border-b border-slate-700/50 hover:bg-slate-700/30 transition-colors">
+                            {% for valor in fila %}
+                            <td class="px-6 py-4 whitespace-nowrap">{{ valor }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% else %}
+                <div class="p-8 text-center text-slate-500">
+                    No se encontraron datos para los filtros seleccionados o hubo un error al cargar el dataset.
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
