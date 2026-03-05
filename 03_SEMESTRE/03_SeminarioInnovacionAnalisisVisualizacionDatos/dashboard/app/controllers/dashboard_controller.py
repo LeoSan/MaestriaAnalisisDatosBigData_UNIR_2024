@@ -59,6 +59,18 @@ class DashboardController:
             # 4. Filtrado Dinámico
             df_filtrado = df.copy()
             
+            estado_mapping = {
+                'AGUAS_CALIENTES': 'Aguascalientes', 'BAJA_CALIFORNIA': 'Baja California', 'BAJA_CALIFORNIA_SUR': 'Baja California Sur',
+                'CAMPECHE': 'Campeche', 'CHIAPAS': 'Chiapas', 'CHIHUAHUA': 'Chihuahua', 'CIUDAD_DE_MEXICO': 'Ciudad de México',
+                'COAHUILA': 'Coahuila', 'COLIMA': 'Colima', 'DURANGO': 'Durango', 'ESTADO_MEXICO': 'México', 'GUANAJUATO': 'Guanajuato',
+                'GUERRERO': 'Guerrero', 'HIDALGO': 'Hidalgo', 'JALISCO': 'Jalisco', 'MICHOCAN': 'Michoacán', 'MORELOS': 'Morelos',
+                'NAYARIT': 'Nayarit', 'NUEVO_LEON': 'Nuevo León', 'OAXACA': 'Oaxaca', 'PUEBLA': 'Puebla', 'QUERETARO': 'Querétaro',
+                'QUINTANA_ROO': 'Quintana Roo', 'SAN_LUIS_POTOSI': 'San Luis Potosí', 'SINALOA': 'Sinaloa', 'SONORA': 'Sonora',
+                'TABASCO': 'Tabasco', 'TAMAULIPAS': 'Tamaulipas', 'TLAXCALA': 'Tlaxcala', 'VERACRUZ': 'Veracruz', 'YUCATAN': 'Yucatán',
+                'ZACATECAS': 'Zacatecas'
+            }
+            df_filtrado['ESTADO_GEOJSON'] = df_filtrado['NOMBRE_ESTADO'].map(estado_mapping)
+
             if anio_seleccionado in anios_disponibles:
                 df_filtrado = df_filtrado[df_filtrado['PERIODO_ANIO'] == anio_seleccionado]
                 
@@ -76,7 +88,7 @@ class DashboardController:
             kpi_ingreso = round(df_filtrado['RAZON_INGRESO'].mean(), 2) if not df_filtrado['RAZON_INGRESO'].isna().all() else 0.0
             kpi_vivienda = round(df_filtrado['VIVIENDA_PISO_TIERRA'].mean(), 2) if not df_filtrado['VIVIENDA_PISO_TIERRA'].isna().all() else 0.0
             
-            df_vista = df_filtrado.head(5)
+            df_vista = df_filtrado
             columnas = df_vista.columns.tolist()
             df_filtrado_head = df_vista.values.tolist()
 
@@ -88,29 +100,29 @@ class DashboardController:
             fig_abandono = px.choropleth(
                 df_filtrado, 
                 geojson=geojson_url, 
-                locations='NOMBRE_ESTADO', 
+                locations='ESTADO_GEOJSON', 
                 featureidkey='properties.name',
                 color='TASA_ABANDONO_PRIMARIA',
                 color_continuous_scale="RdYlGn_r", # Invertimos para que verde sea bajo y rojo alto riesgo
                 title="Tasa de Abandono en Primaria (%)"
             )
             # Centrar y enfocar en las locaciones proporcionadas, quitar fondo
-            fig_abandono.update_geos(fitbounds="locations", visible=False)
-            fig_abandono.update_layout(margin={"r":0,"t":40,"l":0,"b":0}, paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", font=dict(color="white"))
+            fig_abandono.update_geos(fitbounds="locations", visible=False, bgcolor="rgba(0,0,0,0)", projection_type="mercator")
+            fig_abandono.update_layout(template="plotly_dark", margin={"r":0,"t":40,"l":0,"b":0}, paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", font=dict(color="white"))
             mapa_abandono_json = json.dumps(fig_abandono, cls=plotly.utils.PlotlyJSONEncoder)
 
             # Mapa 2: Carencia de Salud
             fig_salud = px.choropleth(
                 df_filtrado, 
                 geojson=geojson_url, 
-                locations='NOMBRE_ESTADO', 
+                locations='ESTADO_GEOJSON', 
                 featureidkey='properties.name',
                 color='CARENCIA_SALUD',
                 color_continuous_scale="RdYlGn_r", 
                 title="Carencia de Acceso a Servicios de Salud (%)"
             )
-            fig_salud.update_geos(fitbounds="locations", visible=False)
-            fig_salud.update_layout(margin={"r":0,"t":40,"l":0,"b":0}, paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", font=dict(color="white"))
+            fig_salud.update_geos(fitbounds="locations", visible=False, bgcolor="rgba(0,0,0,0)", projection_type="mercator")
+            fig_salud.update_layout(template="plotly_dark", margin={"r":0,"t":40,"l":0,"b":0}, paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", font=dict(color="white"))
             mapa_salud_json = json.dumps(fig_salud, cls=plotly.utils.PlotlyJSONEncoder)
 
             # --- BLOQUE CONTROLADOR (Paso 4): Evolución Temporal (Convergencia / Divergencia) ---

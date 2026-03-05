@@ -54,23 +54,25 @@
     <!-- FIN BLOQUE VISTA -->
 
     <!-- BLOQUE VISTA (Paso 3): Mapas Coropléticos Interactivos -->
-    <!-- Contenedor con dos columnas (grid o Bootstrap equivalente) para mostrar lado a lado -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+    <!-- Contenedor con una columna para mostrar uno debajo del otro -->
+    <div class="grid grid-cols-1 gap-6 mb-6">
+        <h3 class="text-lg font-semibold text-white mb-2 flex items-center gap-2">
+            📉 Geografía del Abandono Escolar
+        </h3>
+        <p class="text-sm text-slate-400 mb-4">Muestra los estados con mayor y menor deserción prematura.</p>
         <!-- Contenedor Mapa 1: Tasa Abandono Primaria -->
         <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm min-h-[400px]">
-            <h3 class="text-lg font-semibold text-white mb-2 flex items-center gap-2">
-                📉 Geografía del Abandono Escolar
-            </h3>
-            <p class="text-sm text-slate-400 mb-4">Muestra los estados con mayor y menor deserción prematura.</p>
+
             <div id="mapa_abandono" class="w-full h-full min-h-[300px]"></div>
         </div>
 
         <!-- Contenedor Mapa 2: Carencia de Salud -->
+        <h3 class="text-lg font-semibold text-white mb-2 flex items-center gap-2">
+            🏥 Geografía de Carencias en Salud
+        </h3>
+        <p class="text-sm text-slate-400 mb-4">Distribución del nulo acceso a servicios públicos de salud.</p>
         <div class="bg-slate-800/60 backdrop-blur border border-slate-700 p-5 rounded-2xl shadow-sm min-h-[400px]">
-            <h3 class="text-lg font-semibold text-white mb-2 flex items-center gap-2">
-                🏥 Geografía de Carencias en Salud
-            </h3>
-            <p class="text-sm text-slate-400 mb-4">Distribución del nulo acceso a servicios públicos de salud.</p>
+
             <div id="mapa_salud" class="w-full h-full min-h-[300px]"></div>
         </div>
     </div>
@@ -138,7 +140,7 @@
                         filtros.</p>
                 </div>
 
-                <div class="overflow-x-auto">
+                <div class="overflow-x-auto overflow-y-auto max-h-[400px]">
                     {% if filas %}
                     <table class="w-full text-sm text-left text-slate-300">
                         <thead class="text-xs text-slate-400 uppercase bg-slate-900/50">
