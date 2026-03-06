@@ -13,12 +13,24 @@ dashboard/
 └── app/
     ├── __init__.py        # Inicialización de la aplicación Flask
     ├── routes.py          # Controlador que maneja las rutas web
-    ├── services/          # Lógica de negocio y procesamiento de datos
-    │   ├── DataLoader.py  # Limpia y prepara los datos manejando el origen (CSV/Pandas)
-    │   └── ChartFactory.py# Genera las gráficas interactivas inteligentes con Plotly
-    └── templates/         # Archivos HTML con el diseño e integración de Tailwind CSS
-        ├── base.html
-        └── index.html
+    ├── controllers/       # Lógica central del negocio (MVC)
+    │   └── dashboard_controller.py
+    ├── services/          # Procesamiento de datos y analítica
+    │   └── DataLoader.py  # Limpia y prepara los datos desde CSV/Pandas
+    ├── static/            # Archivos estáticos de frontend
+    │   └── js/
+    │       └── main.js    # Lógica interactiva de UI (Dark mode, PDF, Plotly)
+    └── templates/         # Archivos HTML con Jinja2 e integración de Tailwind CSS
+        ├── base.html      # Plantilla principal (Navbar, Footer, Layout global)
+        ├── index.html     # Vista principal del Dashboard (Ensambla componentes)
+        ├── nosotros.html  # Vista institucional del equipo
+        ├── fuentes.html   # Vista de bibliografía y referencias
+        └── components/    # Módulos reutilizables del Dashboard
+            ├── evolution_section.html    # Gráfico de serie de tiempo
+            ├── kmens_random_section.html # Machine Learning (K-Means & Random Forest)
+            ├── kpi_section.html          # Tarjetas superiores de indicadores
+            ├── map_section.html          # Mapas coropléticos
+            └── table_sections.html       # Sidebar de filtros y tabla de datos
 ```
 
 ## 🛠 Tecnologías Utilizadas
