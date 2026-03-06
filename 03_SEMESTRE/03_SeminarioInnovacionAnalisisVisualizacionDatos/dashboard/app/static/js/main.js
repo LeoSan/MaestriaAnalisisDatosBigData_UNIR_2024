@@ -77,11 +77,63 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // =========================================================================
-    // ESPACIO PARA FUTUROS SCRIPTS / COMPONENTES
+    // INICIALIZACIÓN MODO OSCURO (THEME TOGGLE)
     // =========================================================================
 
-    // function nuevaFuncionalidad() {
-    //     ...
-    // }
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+    if (themeToggleBtn && darkIcon && lightIcon) {
+        // Cambia los iconos según el modo actual
+        function updateThemeIcons(isDark) {
+            if (isDark) {
+                lightIcon.classList.remove('hidden');
+                darkIcon.classList.add('hidden');
+            } else {
+                lightIcon.classList.add('hidden');
+                darkIcon.classList.remove('hidden');
+            }
+        }
+
+        // Actualizar gráficas de Plotly en tiempo real
+        function togglePlotlyTheme(isDark) {
+            const fontColor = isDark ? "white" : "#0f172a";
+            const template = isDark ? "plotly_dark" : "plotly_white";
+
+            const updateLayout = {
+                'font.color': fontColor,
+                'template': template,
+            };
+
+            // Identificadores fijos de las gráficas definidas en los html
+            const plotIds = ['mapa_abandono', 'mapa_salud', 'grafico_evolucion', 'grafico_rf', 'grafico_kmeans'];
+
+            plotIds.forEach(id => {
+                const el = document.getElementById(id);
+                // Revisar si el elemento fue inicializado por newPlot (tiene propiedad .data)
+                if (el && el.data) {
+                    Plotly.relayout(el, updateLayout);
+                }
+            });
+        }
+
+        // Inicializar estado usando Tailwind's dark class
+        const isCurrentlyDark = document.documentElement.classList.contains('dark');
+        updateThemeIcons(isCurrentlyDark);
+        // Actualizamos los gráficos instantáneamente al estado actual
+        togglePlotlyTheme(isCurrentlyDark);
+
+        // Evento de click para alternar el tema
+        themeToggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isNowDark = document.documentElement.classList.contains('dark');
+
+            localStorage.setItem('theme', isNowDark ? 'dark' : 'light');
+
+            updateThemeIcons(isNowDark);
+            togglePlotlyTheme(isNowDark);
+        });
+    }
 
 });

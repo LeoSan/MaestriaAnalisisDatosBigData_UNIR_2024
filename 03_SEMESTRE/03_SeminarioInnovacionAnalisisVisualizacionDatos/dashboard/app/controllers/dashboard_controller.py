@@ -191,7 +191,17 @@ class DashboardController:
                 color='Importancia',
                 color_continuous_scale="Reds"
             )
-            fig_rf.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", margin=dict(l=0, r=0, t=40, b=0))
+            fig_rf.update_layout(
+                template="plotly_dark", 
+                paper_bgcolor="rgba(0,0,0,0)", 
+                plot_bgcolor="rgba(0,0,0,0)", 
+                margin=dict(l=150, r=20, t=40, b=50),
+                coloraxis_showscale=False,
+                xaxis_title="Importancia",
+                yaxis_title="",
+                height=350,
+                bargap=0.3
+            )
             rf_bar_json = json.dumps(fig_rf, cls=plotly.utils.PlotlyJSONEncoder)
 
             # Gráfico 2: K-Means Clustering (Dinámico sobre 2024)
@@ -223,12 +233,27 @@ class DashboardController:
                     color='Perfil_Nombre',
                     hover_name='NOMBRE_ESTADO',
                     title="Agrupación de Estados por Perfil (K-Means 2024)",
-                    labels={'CARENCIA_SALUD': 'Carencia Salud (%)', 'TASA_ABANDONO_PRIMARIA': 'Abandono Primaria (%)'},
+                    labels={'CARENCIA_SALUD': '', 'TASA_ABANDONO_PRIMARIA': 'Abandono Primaria (%)'},
                     color_discrete_sequence=['#3b82f6', '#ef4444', '#f59e0b'], # Azul, Rojo, Amarillo tailwind
                     size_max=12
                 )
                 fig_kmeans.update_traces(marker=dict(size=10, line=dict(width=1, color='DarkSlateGrey')))
-                fig_kmeans.update_layout(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", margin=dict(l=0, r=0, t=40, b=0), legend_title_text='Perfil')
+                fig_kmeans.update_layout(
+                    template="plotly_dark", 
+                    paper_bgcolor="rgba(0,0,0,0)", 
+                    plot_bgcolor="rgba(0,0,0,0)", 
+                    margin=dict(l=60, r=20, t=40, b=80), 
+                    height=350,
+                    legend=dict(
+                        title='', 
+                        orientation="h", 
+                        yanchor="top", 
+                        y=-0.2, 
+                        xanchor="center", 
+                        x=0.5,
+                        font=dict(size=14)
+                    )
+                )
                 kmeans_scatter_json = json.dumps(fig_kmeans, cls=plotly.utils.PlotlyJSONEncoder)
 
 

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div
+    class="max-w-5xl mx-auto bg-white dark:bg-slate-800/60 backdrop-blur rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden p-8 md:p-12 transition-colors duration-300">
+    <div class="text-center mb-10">
+        <h1
+            class="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand to-teal-400 mb-4 antialiased">
+            Universidad Internacional de La Rioja
+        </h1>
+        <h2 class="text-xl md:text-2xl text-slate-700 dark:text-slate-200 font-semibold mb-2">
+            Escuela Superior de Ingeniería y Tecnología
+        </h2>
+        <h3 class="text-lg md:text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
+            Máster Universitario en Análisis y Visualización de Datos Masivos
+        </h3>
+    </div>
+
+    <div
+        class="bg-slate-50 dark:bg-slate-900/50 rounded-2xl p-6 md:p-8 mb-10 border border-slate-200 dark:border-slate-700 shadow-inner">
+        <h4 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-4 text-center leading-relaxed">
+            Diseño de un Monitor para medir Vulnerabilidad Social y Carencias como Determinantes del Abandono Escolar en
+            Educación Primaria: Análisis por Entidad Federativa en México (2021-2024)
+        </h4>
+        <div class="flex flex-col sm:flex-row justify-center items-center mt-6">
+            <span
+                class="px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full font-semibold border border-blue-200 dark:border-blue-800 shadow-sm">
+                📌 Tipo de trabajo: Seminario Práctico
+            </span>
+        </div>
+    </div>
+
+    <div class="mt-8">
+        <div class="flex items-center justify-center gap-3 mb-8">
+            <div class="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2 px-4">
+                👨‍💻 Equipo de Trabajo
+            </h3>
+            <div class="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
+        </div>
+
+        <p class="text-sm text-center text-slate-500 dark:text-slate-400 mb-8 uppercase tracking-widest font-bold">
+            Trabajo fin de estudio presentado por:</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+                class="flex items-center gap-5 p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:shadow-lg transition-all transform hover:-translate-y-1">
+                <div
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    PF</div>
+                <div>
+                    <h4 class="font-bold text-lg text-slate-900 dark:text-white">Paola Michelle Figueroa Benítez</h4>
+                </div>
+            </div>
+
+            <div
+                class="flex items-center gap-5 p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:shadow-lg transition-all transform hover:-translate-y-1">
+                <div
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    LP</div>
+                <div>
+                    <h4 class="font-bold text-lg text-slate-900 dark:text-white">Lowenski Paredes</h4>
+                </div>
+            </div>
+
+            <div
+                class="flex items-center gap-5 p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:shadow-lg transition-all transform hover:-translate-y-1">
+                <div
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-teal-500 to-emerald-500 flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    CR</div>
+                <div>
+                    <h4 class="font-bold text-lg text-slate-900 dark:text-white">Carlos Damián Rodríguez Uitzil</h4>
+                </div>
+            </div>
+
+            <div
+                class="flex items-center gap-5 p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:shadow-lg transition-all transform hover:-translate-y-1">
+                <div
+                    class="w-14 h-14 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    LC</div>
+                <div>
+                    <h4 class="font-bold text-lg text-slate-900 dark:text-white">Leonard Jose Cuenca Roa</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

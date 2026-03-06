@@ -20,11 +20,21 @@
             }
         }
     </script>
+    <script>
+        // Check local storage for theme preference immediately to prevent flash of incorrect theme
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
 
-<body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased">
+<body
+    class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 min-h-screen font-sans antialiased transition-colors duration-300">
     <!-- Navbar -->
-    <nav class="bg-slate-800/80 backdrop-blur-md border-b border-slate-700 p-4 sticky top-0 z-50 shadow-sm">
+    <nav
+        class="bg-white/90 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 p-4 sticky top-0 z-50 shadow-sm transition-colors duration-300">
         <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div
@@ -36,14 +46,37 @@
                         </path>
                     </svg>
                 </div>
-                <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-300">
-                    Monitor de Vulnerabilidad Educativa y Abandono Escolar en Primaria (2021-2024)
-                </h1>
+                <a href="{{ url_for('main.index') }}" class="hover:opacity-80 transition-opacity">
+                    <h1
+                        class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-300">
+                        Monitor de Vulnerabilidad Educativa y Abandono Escolar en Primaria (2021-2024)
+                    </h1>
+                </a>
             </div>
-            <div class="hidden sm:flex items-center space-x-4 text-sm font-medium text-slate-300">
-                <a href="#" class="hover:text-white transition-colors duration-200">Fuentes de Datos</a>
-                <a href="#" class="hover:text-white transition-colors duration-200">Descargar PDF</a>
-                <a href="#" class="hover:text-white transition-colors duration-200">Nosotros</a>
+            <div class="hidden sm:flex items-center space-x-4 text-sm font-medium text-slate-600 dark:text-slate-300">
+                <a href="#" class="hover:text-slate-900 dark:hover:text-white transition-colors duration-200">Fuentes de
+                    Datos</a>
+                <a href="#" class="hover:text-slate-900 dark:hover:text-white transition-colors duration-200">Descargar
+                    PDF</a>
+                <a href="{{ url_for('main.nosotros') }}"
+                    class="hover:text-brand dark:hover:text-brand transition-colors duration-200">Nosotros</a>
+                <!-- Botón de Tema Cambiar -->
+                <button id="theme-toggle"
+                    class="p-2 ml-4 rounded-lg bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors duration-200"
+                    aria-label="Toggle Dark Mode">
+                    <!-- Icono Sol (Modo Oscuro -> Claro) -->
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-yellow-500" fill="currentColor"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z">
+                        </path>
+                    </svg>
+                    <!-- Icono Luna (Modo Claro -> Oscuro) -->
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-slate-700 dark:text-slate-200"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -54,7 +87,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-12 py-6 text-center text-slate-500 text-sm border-t border-slate-800">
+    <footer
+        class="mt-12 py-6 text-center text-slate-500 dark:text-slate-400 text-sm border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
         &copy; 2026 Data Intelligence. Construido con Flask & Tailwind CSS.
     </footer>
 </body>
