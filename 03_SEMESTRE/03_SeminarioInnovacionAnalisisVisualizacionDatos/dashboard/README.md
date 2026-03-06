@@ -132,3 +132,18 @@ Para completar el panorama de toma de decisiones, se integró una capa de Inteli
 *   **Backend:** Se filtran los datos crudos exclusivamente para 2024. Las variables clave (`CARENCIA_SALUD`, `INSEG_ALIMENTARIA`, `TASA_ABANDONO_PRIMARIA`) pasan por una estandarización (`StandardScaler`) antes de alimentar al algoritmo de agrupamiento espectral **K-Means** (`n_clusters=3`).
 *   **Perfiles:** El modelo clasifica automáticamente a los Estados dentro de tres arquetipos ("Riesgo Moderado", "Riesgo Crítico", "Anomalía"). Se renderiza como un `px.scatter` donde cada cluster se mapea con una paleta de colores de Tailwind (`#3b82f6`, `#ef4444`, `#f59e0b`).
 *   **Frontend**: Ambos gráficos fueron maquetados usando CSS Grid de Tailwind (`grid-cols-1 lg:grid-cols-2`) de forma "responsive", listos en la sección inferior que cierra el cuerpo principal analítico del Dashboard.
+
+### Paso 6: UI/UX y Funcionalidades de Exportación
+Se realizaron mejoras significativas en la experiencia de usuario y presentación formal del proyecto.
+
+**Modo Oscuro / Claro (Dark Mode Toggle):**
+*   Implementación de un selector de temas en la barra de navegación que intercambia clases `dark` de Tailwind CSS a nivel raíz (`<html>`).
+*   **Persistencia:** La preferencia elegida por el usuario se guarda en el `localStorage` del navegador.
+*   **Adaptabilidad Plotly:** Los gráficos interactivos escuchan el evento de cambio y mutan sus colores de fuente y plantillas base (`plotly_dark` a `plotly_white`) dinámicamente usando `Plotly.relayout` sin necesidad de recargar la página.
+
+**Generación de Reportes PDF:**
+*   Se integró la librería `html2pdf.js` para permitir la exportación de todo el dashboard visible a un documento PDF tipo infografía. Mediante un botón en el menú, se captura el nodo DOM principal (`<main>`), se escala para mantener la resolución (`html2canvas`) y se emite un archivo prestablecido formato *Legal* apaisado (*landscape*).
+
+**Nuevas Vistas Informativas:**
+*   **Página "Nosotros":** Ruta `/nosotros` que renderiza una tarjeta de presentación institucional del equipo de trabajo, mostrando los nombres de los integrantes y los detalles oficiales del Máster Profesional de la Universidad Internacional de La Rioja (UNIR).
+*   **Página "Fuentes de Datos":** Ruta `/fuentes-de-datos` que engloba la bibliografía consultada en orden alfabético y proporciona un enlace directo al Dataset final analítico y estructurado alojado en la nube (Google Sheets), garantizando la reproducibilidad Open Source del monitor.
