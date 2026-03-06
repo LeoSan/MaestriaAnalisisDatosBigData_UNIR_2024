@@ -17,3 +17,10 @@ def nosotros():
     Ruta para la página de Nosotros.
     """
     return render_template('nosotros.html')
+
+@bp.route('/fuentes-de-datos')
+def fuentes():
+    """
+    Ruta para la página de Fuentes de Datos.
+    """
+    return render_template('fuentes.html')

@@ -8,6 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- BLOQUE VISTA (Paso 3): Librería Plotly JS -->
     <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <!-- Librería html2pdf para generación de PDF del dashboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -54,9 +58,11 @@
                 </a>
             </div>
             <div class="hidden sm:flex items-center space-x-4 text-sm font-medium text-slate-600 dark:text-slate-300">
-                <a href="#" class="hover:text-slate-900 dark:hover:text-white transition-colors duration-200">Fuentes de
+                <a href="{{ url_for('main.fuentes') }}"
+                    class="hover:text-slate-900 dark:hover:text-white transition-colors duration-200">Fuentes de
                     Datos</a>
-                <a href="#" class="hover:text-slate-900 dark:hover:text-white transition-colors duration-200">Descargar
+                <a href="#" id="download-pdf-btn"
+                    class="hover:text-slate-900 dark:hover:text-white transition-colors duration-200 cursor-pointer">Descargar
                     PDF</a>
                 <a href="{{ url_for('main.nosotros') }}"
                     class="hover:text-brand dark:hover:text-brand transition-colors duration-200">Nosotros</a>

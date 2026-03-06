@@ -136,4 +136,44 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // =========================================================================
+    // EXPORTACIÓN A PDF DEL DASHBOARD
+    // =========================================================================
+
+    const downloadPdfBtn = document.getElementById('download-pdf-btn');
+    if (downloadPdfBtn) {
+        downloadPdfBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Seleccionamos el contenedor que queremos capturar, en este caso el <main>
+            const element = document.querySelector('main');
+            if (!element) return;
+
+            // Opciones de configuración para html2pdf
+            const opt = {
+                margin: [0.5, 0.5, 0.5, 0.5], // top, left, bottom, right
+                filename: 'Dashboard_Vulnerabilidad_Educativa_2024.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true, logging: false },
+                jsPDF: { unit: 'in', format: 'legal', orientation: 'landscape' }
+            };
+
+            // Efecto visual de carga en el botón
+            const originalText = downloadPdfBtn.innerText;
+            downloadPdfBtn.innerText = "Generando PDF...";
+            downloadPdfBtn.classList.add("opacity-50", "pointer-events-none");
+
+            // Generamos el PDF
+            html2pdf().set(opt).from(element).save().then(() => {
+                downloadPdfBtn.innerText = originalText;
+                downloadPdfBtn.classList.remove("opacity-50", "pointer-events-none");
+            }).catch(err => {
+                console.error("Error al generar PDF:", err);
+                downloadPdfBtn.innerText = originalText;
+                downloadPdfBtn.classList.remove("opacity-50", "pointer-events-none");
+                alert("Hubo un error al generar el PDF.");
+            });
+        });
+    }
+
 });
