@@ -5,6 +5,7 @@
     <!-- Header Section -->
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
+<<<<<<< HEAD
             <h2 class="text-2xl md:text-3xl font-bold text-white">Monitor de Vulnerabilidad Educativa y Abandono Escolar
                 (2021-2024)</h2>
             <p class="text-slate-400 mt-1">Configuración de la Estructura Global y Filtros Dinámicos.</p>
@@ -104,4 +105,44 @@
         </div>
     </div>
 </div>
+=======
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white transition-colors duration-300">
+                DASHBOARD</h2>
+            <p class="text-slate-500 dark:text-slate-400 mt-1 transition-colors duration-300"> Insights sobre la
+                vulnerabilidad educativa y abandono escolar en México
+                en escuelas. primarias</p>
+        </div>
+    </div>
+
+    {% include 'components/kpi_section.html' %}
+
+    {% include 'components/table_sections.html' %}
+
+    {% include 'components/map_section.html' %}
+
+    {% include 'components/evolution_section.html' %}
+
+    {% include 'components/kmens_random_section.html' %}
+
+</div>
+
+
+
+<!-- BLOQUE VISTA (Paso 3): Variables globales para los gráficos -->
+<script>
+    // Se insertan las variables JSON calculadas en el backend utilizando el filtro Jinja2 "safe"
+    // para pasarlas como objetos globales a nuestro archivo JS externo
+    window.mapaAbandonoData = {{ mapa_abandono_json | safe }};
+    window.mapaSaludData = {{ mapa_salud_json | safe }};
+    window.evolucionTemporalData = {{ evolucion_temporal_json | safe }};
+
+    // Variables JSON Globales para Machine Learning (Paso 5)
+    window.rfBarData = {{ rf_bar_json | safe }};
+    window.kmeansScatterData = {{ kmeans_scatter_json | safe }};
+</script>
+
+<!-- Script para manejar Dark/Light mode y updates de Plotly -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+>>>>>>> dev
 {% endblock %}

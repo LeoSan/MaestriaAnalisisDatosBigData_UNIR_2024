@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div
+    class="max-w-5xl mx-auto bg-white dark:bg-slate-800/60 backdrop-blur rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden p-8 md:p-12 transition-colors duration-300">
+    <div class="mb-6">
+        <a href="{{ url_for('main.index') }}"
+            class="inline-flex items-center text-sm font-medium text-slate-500 hover:text-brand dark:text-slate-400 dark:hover:text-brand transition-colors">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
+                </path>
+            </svg>
+            Volver al Dashboard
+        </a>
+    </div>
+
+    <div class="text-center mb-10">
+        <h1
+            class="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand to-teal-400 mb-4 antialiased">
+            Fuentes de Datos y Bibliografía
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-300 font-medium">
+            Proyecto Open Source: Toda la información utilizada en este monitor proviene de fuentes oficiales y de
+            acceso público.
+        </p>
+    </div>
+
+    <!-- Final Dataset Section -->
+    <div
+        class="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-6 md:p-8 mb-10 border border-blue-200 dark:border-blue-800 shadow-inner transition-colors duration-300">
+        <h2 class="text-xl md:text-2xl font-bold text-blue-900 dark:text-blue-300 mb-4 flex items-center gap-2">
+            📊 Fuente Final de Datos (Dataset Consolidado)
+        </h2>
+        <p class="text-slate-700 dark:text-slate-300 mb-4 leading-relaxed">
+            El conjunto de datos final utilizado para renderizar este Dashboard es el resultado de la extracción,
+            limpieza e integración de múltiples fuentes gubernamentales. Este proceso se llevó a cabo para obtener un
+            panel consolidado a nivel entidad federativa, permitiendo nutrir los modelos de Machine Learning y las
+            visualizaciones.
+        </p>
+        <div class="mt-4">
+            <a href="https://docs.google.com/spreadsheets/d/1EOv36BTiFPxYcpW7B7EVENg5ZPV8gHE9/edit?gid=719044943#gid=719044943"
+                target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-brand hover:bg-blue-600 text-white rounded-xl font-semibold transition-colors shadow-md">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+                Ver Dataset Final (Google Sheets)
+            </a>
+        </div>
+    </div>
+
+    <!-- Bibliography Section -->
+    <div class="mt-8">
+        <div class="flex items-center justify-center gap-3 mb-8">
+            <div class="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2 px-4">
+                📚 Referencias Bibliográficas
+            </h3>
+            <div class="h-px bg-slate-200 dark:bg-slate-700 flex-1"></div>
+        </div>
+
+        <p class="text-sm text-center text-slate-500 dark:text-slate-400 mb-8 uppercase tracking-widest font-bold">
+            Ordenadas Alfabéticamente</p>
+
+        <div class="space-y-4">
+            <!-- Referencia 1 -->
+            <div
+                class="p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                <p class="text-slate-800 dark:text-slate-200 leading-relaxed">
+                    <span class="font-semibold">Consejo Nacional de Evaluación de la Política de Desarrollo Social.
+                        (2020).</span> Índice de Rezago Social 2020.
+                    <a href="https://www.coneval.org.mx/Medicion/IRS/Paginas/Indice_Rezago_Social_2020.aspx"
+                        target="_blank" rel="noopener noreferrer" class="text-brand hover:underline break-all">
+                        https://www.coneval.org.mx/Medicion/IRS/Paginas/Indice_Rezago_Social_2020.aspx
+                    </a>
+                </p>
+            </div>
+
+            <!-- Referencia 2 -->
+            <div
+                class="p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                <p class="text-slate-800 dark:text-slate-200 leading-relaxed">
+                    <span class="font-semibold">Cuenca Roa, L. (2026).</span> Análisis de Abandono Escolar y
+                    Vulnerabilidad Social mediante Machine Learning [Software]. Google Colab.
+                    <a href="https://colab.research.google.com/drive/1RONw2Q_3ZsC65tA5iKwsrG-xA75suAQm" target="_blank"
+                        rel="noopener noreferrer" class="text-brand hover:underline break-all">
+                        https://colab.research.google.com/drive/1RONw2Q_3ZsC65tA5iKwsrG-xA75suAQm
+                    </a>
+                </p>
+            </div>
+
+            <!-- Referencia 3 -->
+            <div
+                class="p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                <p class="text-slate-800 dark:text-slate-200 leading-relaxed">
+                    <span class="font-semibold">Secretaría de Educación Pública. (s. f.).</span> Datos Abiertos. Sistema
+                    de Información y Gestión Educativa (SIGED).
+                    <a href="https://www.siged.sep.gob.mx/SIGED/datos_abiertos.html" target="_blank"
+                        rel="noopener noreferrer" class="text-brand hover:underline break-all">
+                        https://www.siged.sep.gob.mx/SIGED/datos_abiertos.html
+                    </a>
+                </p>
+            </div>
+
+            <!-- Referencia 4 -->
+            <div
+                class="p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                <p class="text-slate-800 dark:text-slate-200 leading-relaxed">
+                    <span class="font-semibold">Secretaría de Educación Pública. (s. f.).</span> Principales Cifras del
+                    Sistema Educativo Nacional. Dirección General de Planeación, Programación y Estadística Educativa.
+                    <a href="https://www.planeacion.sep.gob.mx/principalescifras/" target="_blank"
+                        rel="noopener noreferrer" class="text-brand hover:underline break-all">
+                        https://www.planeacion.sep.gob.mx/principalescifras/
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
