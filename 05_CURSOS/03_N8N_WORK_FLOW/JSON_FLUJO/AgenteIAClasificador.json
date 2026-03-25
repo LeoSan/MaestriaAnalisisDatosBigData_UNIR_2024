@@ -1,0 +1,173 @@
+{
+  "name": "AgenteIAClasificador",
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "mensaje"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "fec876e9-40fd-45ba-9261-8241804af97b",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.mensaje }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "Clasifica el mensaje segun su tema: IT, Publicidad, Legal, Personal, Factuas, Recibos \n\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        224,
+        0
+      ],
+      "id": "2b6f9cdf-df85-44fc-8baa-8fdceb31ef17",
+      "name": "AI Agent",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "executeOnce": false,
+      "alwaysOutputData": false,
+      "notesInFlow": false
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        240,
+        224
+      ],
+      "id": "35683d80-e078-46ab-a299-c3fd77a38d78",
+      "name": "Google Gemini Chat Model",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000,
+      "executeOnce": false,
+      "alwaysOutputData": false,
+      "credentials": {
+        "googlePalmApi": {
+          "id": "KMVqeiBprzvPBVdI",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\t\"categoria\": \"it\",\n\t\"confianza\": \"alta\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        368,
+        224
+      ],
+      "id": "6bc56d69-2427-4bfc-945f-f56b8fc5a291",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "dd0b70dd-a5cf-49c3-841c-8e6fc5e45db8",
+              "name": "categoria",
+              "value": "={{ $json.output.categoria }}",
+              "type": "string"
+            },
+            {
+              "id": "6e448021-b634-4034-b183-e1b6e0cb4eb9",
+              "name": "confianza",
+              "value": "={{ $json.output.confianza }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        576,
+        0
+      ],
+      "id": "662ffe00-3ef7-444e-898d-84d663b4ca50",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "9397b592-e635-4f4c-b0a1-4a5434d8a982",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "9bc4a8d3138950845b63914c7a11ae9a8fca985211bd5af2ef702554a7a30b8d"
+  },
+  "id": "cc9Wjc0aXwUTJ0TK",
+  "tags": []
+}
