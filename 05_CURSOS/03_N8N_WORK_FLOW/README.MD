@@ -712,3 +712,217 @@ Resultado: subflujo modular que ahorra tiempo y ordena el diseño.
 }  
 
 ´´´
+
+## Clase 10: Cómo hostear una página web completa en n8n con un solo nodo
+
+Resumen
+**¿Sabías que puedes hostear una página completa en n8n usando un solo nodo? **
+
+Con el nodo webhook y un ajuste clave, el método GET sirve el HTML y el POST envía la petición. A continuación verás los pasos, las opciones que marcar y cómo probarlo para que funcione de punta a punta.
+
+**¿Cómo hostear una web en n8n con un solo nodo?**
+
+La idea central es simple: un único nodo webhook puede manejar varios métodos HTTP. Así, el GET devuelve la interfaz en HTML y el POST procesa el envío del formulario dentro del mismo flujo.
+
+Hasta ahora se usó el webhook con método POST.
+El cambio: activar varios métodos para que GET sirva el HTML y POST reciba la petición.
+El resultado: una web completa alojada en n8n, con formulario y lógica de servidor en el flujo.
+¿Qué cambiar en Settings para usar GET y POST?
+
+Abrir el nodo webhook y entrar a Settings.
+Activar la opción Allow multiple HTTP methods.
+Volver a Parámetros y seleccionar ambos: GET y POST.
+Salir y reconectar el POST como estaba antes.
+¿Cómo responder con HTML desde el flujo?
+
+Añadir un nodo de respuesta: Respond to Webhook.
+Elegir la opción de responder con texto.
+Pegar el HTML que servirá como interfaz del formulario.
+Recordar: antes, copiar la URL del webhook porque será el backend al que el formulario hará la petición.
+
+**¿Cómo generar el formulario con ChatGPT?**
+
+Preparar un prompt para crear un formulario en HTML.
+Incluir donde corresponda la URL del webhook como acción del formulario.
+Puedes añadir CSS y JavaScript para un diseño más completo.
+Copiar y pegar el código en la parte de GET del nodo de respuesta.
+¿Qué pasos seguir para pegar, guardar y ejecutar?
+
+Una vez tengas el HTML, solo resta integrarlo y probarlo en n8n. El flujo queda listo para servir interfaz y procesar envíos.
+
+Pegar el HTML en la sección de GET del nodo Respond to Webhook.
+Cerrar y guardar el flujo.
+Copiar la URL pública del webhook.
+Pulsar Execute workflow para ponerlo a escuchar.
+Abrir la URL en una pestaña del navegador: verás un formulario totalmente diferente, servido por el GET.
+
+**¿Cómo validar que la petición entra por la rama correcta?**
+
+Enviar el formulario para probar el POST (ejemplo usado: ivi@test.com).
+Comprobar en el editor que el flujo sigue la rama del GET al servir la página y la del POST al enviar la petición.
+Mensaje esperado: se envió correctamente y el flujo continuó como estaba previsto.
+
+**¿Qué habilidades y conceptos refuerzas con este flujo?**
+
+Este enfoque potencia tu dominio de n8n y de la web. Entiendes el rol de cada método y cómo integrarlo de forma práctica.
+
+Métodos HTTP: GET para servir interfaz, POST para procesar datos.
+Nodo webhook: flexibilidad para manejar múltiples métodos en un mismo endpoint.
+Configuración clave: Allow multiple HTTP methods en Settings.
+Respuesta con texto: uso de Respond to Webhook para enviar HTML al navegador.
+Integración frontend–backend: formulario en HTML que apunta con su acción a la URL del webhook como backend.
+Herramientas de apoyo: ChatGPT para generar estructura de formulario, con posibilidad de CSS y JavaScript.
+Pruebas end-to-end: ejecutar con Execute workflow, abrir la URL, verificar ramas GET y POST y confirmar el envío.
+
+![alt text](index.png)
+
+![alt text](flujoConIndex.png)
+
+NOTA: Como vemos en la imagen si podemos crear una pagina html como tambien lo indica la imagen no es necesario conectar el nodo llamado PaginaWeb para que funcione. 
+
+
+
+
+## Clase 11: Configuración de agente de soporte con Google Calendar e IA
+
+¿Cómo iniciar el flujo con MCP Server y MCP Client?
+
+Para empezar, se construye un subflujo que notifica a distintos departamentos y se enfoca en la rama de IT con prioridad alta. La lógica se apoya en nodos como trigger, switch y filter, permitiendo rutas paralelas y condiciones precisas.
+
+¿Qué datos de prueba usar con el trigger?
+
+Usa el trigger y pulsa en “Execute step”.
+Se genera un objeto JSON con campos vacíos: categoría, prioridad, usuario, mensaje, ejecución y fecha.
+Edita con el lápiz y rellena valores falsos para desarrollo.
+Escribe un mensaje de ejemplo: "No me funciona el mouse. ¿Qué debo de hacer?".
+Guarda para tener pin data y facilitar las pruebas.
+¿Cómo filtrar por IT y prioridad alta?
+
+En switch, enruta a la rama IT.
+Mueve el nodo filter para que se aplique solo a IT y no bloquee otras acciones.
+Arrastra el campo prioridad al filter y ejecuta cuando sea “alto”.
+Mantén acciones paralelas: por ejemplo, que Slack se envíe siempre, aunque no sea alta la prioridad.
+¿Cómo mantener Slack en paralelo?
+
+Desconecta el filter de la ruta principal si interfiere.
+Conecta la rama IT al filter como acción paralela.
+Así, Slack se envía siempre y el filtro solo controla la lógica crítica de IT.
+¿Cómo diseñar el AI Agent y su prompt?
+
+Se añade un AI Agent genérico con “Define Below” para controlar el comportamiento. El system message orquesta tareas encadenadas, y el user message pasa el contexto completo en texto.
+
+¿Qué poner en el system message y user message?
+
+System message con objetivos claros:
+Agendar un evento en el calendario para ayudar al usuario.
+Enviar un correo con la fecha del evento.
+Buscar solución con “Serve API” en Google, según el mensaje del usuario.
+Formatear la respuesta en HTML.
+Responder en español.
+User message con contexto completo usando Expressions y el objeto de entrada.
+Código recomendado para pasar todo el contexto del nodo anterior:
+
+
+{{ JSON.stringify($json) }}
+Ventajas:
+
+Evita arrastrar campo por campo.
+El agente lee todo el estado de entrada.
+¿Cómo conectar OpenAI y Google Calendar?
+
+Selecciona tu proveedor (OpenAI) y credenciales.
+Añade la herramienta Google Calendar con credenciales válidas.
+Escribe una descripción clara de la herramienta para el agente: “Agendar una reunión con el usuario a partir de la fecha de hoy en adelante y añade un título descriptivo al evento.”
+Consejos clave:
+
+Elige el calendario correcto.
+Deja que el agente rellene la fecha final si aplica.
+Desactiva “use default reminders” si no los necesitas.
+¿Qué campos configurar en el evento?
+
+Attendees: arrastra el email del usuario para invitarlo.
+Description: permite que el agente lo rellene.
+Summary: define que el agente cree un título corto y descriptivo (mejor da límites claros).
+Conference data: “Add conference” para generar enlace de Google Meet.
+Nota sobre lenguaje del prompt: “corto” y “descriptivo” son vagos para una IA. Mejor especifica límites, por ejemplo, 40 caracteres para el título y pautas para el contenido.
+
+¿Cómo depurar fechas y mejorar el resultado?
+
+Durante la prueba se detectó la creación de dos eventos y rangos de fechas excesivos. La causa: el agente no conocía la fecha actual y el prompt no indicaba duración ni cuándo agendar.
+
+¿Por qué se crearon dos eventos y con fechas erróneas?
+
+Falta de contexto temporal: el modelo no sabe “hoy”.
+Prompt ambiguo: sin duración ni ventanas claras.
+Resultado: eventos duplicados y rangos incoherentes.
+¿Cómo corregir con date and time tool y un prompt específico?
+
+Añade la herramienta date and time tool para que el agente consulte el día actual.
+Reescribe el prompt con criterios precisos. Ejemplo usado:
+“Agenda un evento en el calendario con el usuario para resolver su problema con una duración máxima de quince minutos lo antes posible.”
+
+Repite la prueba y valida en el calendario: título, descripción y horario correctos.
+¿Qué buenas prácticas aplicar para estabilidad?
+
+Define tareas del system message en pasos concretos.
+Pasa el contexto completo con JSON.stringify($json).
+Especifica duración, ventana temporal y límites de formato.
+Usa logs del flujo para inspección rápida.
+Acepta la no determinación del modelo: el mismo prompt puede variar.
+Ajusta y vuelve a probar con datos anclados y credenciales validadas.
+
+## Clase 12: Protocolo MCP para conectar herramientas con agentes de IA
+
+Resumen
+MCP se ha vuelto un término esencial en inteligencia artificial. Aquí entenderás, de forma clara y práctica, cómo este protocolo coordina clientes y servidores para unir recursos, datos y herramientas, potenciando agentes de IA en entornos como N8N, Cloud o Cursor. Todo explicado con lenguaje directo y enfocado en valor real.
+
+¿Qué es MCP y cómo funciona el protocolo?
+
+MCP es un protocolo donde el usuario interactúa con un cliente que puede correr en un dispositivo o en la nube. Ese cliente se comunica con servidores MCP, que actúan como intermediarios para acceder a servicios y fuentes que el cliente necesita.
+
+El cliente inicia la interacción con el usuario a través de un chat o interfaz.
+El servidor MCP conecta con recursos, herramientas y datos.
+Ambos coordinan para que agentes de IA ejecuten acciones con contexto.
+¿Qué hace el cliente MCP en N8N, Cloud o Cursor?
+
+El cliente puede ser un chat en N8N, Cloud o Cursor. Su rol es recibir instrucciones y enviar solicitudes a los servidores MCP. Puede ejecutarse localmente o en la nube, facilitando accesos flexibles según necesidad.
+
+¿Qué conectan los servidores MCP: APIs, datos y LangGraph?
+
+Los servidores MCP hacen de puente hacia distintos sistemas y componentes de IA. Conectan lo que el cliente y los agentes requieren para trabajar con contexto y acciones útiles.
+
+Recursos, archivos y datos: información operativa y documentación.
+Herramientas y APIs: funciones externas listas para invocar.
+Prompts predefinidos: plantillas de instrucciones reutilizables.
+Componentes de IA como LangGraph: piezas específicas para flujos de IA.
+Bases de datos y plataformas en la nube: fuentes persistentes y escalables.
+Otros agentes MCP: colaboración entre agentes para tareas encadenadas.
+¿Cómo se coordinan múltiples herramientas con agentes de IA?
+
+MCP permite conectar múltiples herramientas con agentes de IA para que interactúen e intercambien información entre ellas. Así, los agentes pueden tomar decisiones y ejecutar pasos con datos de varias fuentes, todo bajo un mismo flujo.
+
+Intercambio de información entre servicios.
+Ejecución coordinada de acciones.
+Acceso unificado a recursos y componentes de IA.
+¿Para qué sirve MCP con agentes de inteligencia artificial?
+
+Un caso práctico: en soporte técnico, un agente de IA, mediante MCP, puede organizar la agenda del equipo y apoyar en labores de soporte básico. Esto alinea disponibilidad, datos y tareas, reduciendo fricción en la operación diaria.
+
+Organización de agendas con base en solicitudes reales.
+Respuestas y asistencia de primer nivel automatizadas.
+Coordinación entre agentes y sistemas conectados.
+¿Qué herramientas y próximos pasos recomienda el instructor?
+
+N8N hostea de forma nativa tanto el cliente como el servidor, simplificando la puesta en marcha. A continuación, se presentará un caso de uso práctico. Quien desee profundizar puede seguir el curso de MCP de Platzi.
+
+Para asentar los conceptos que aparecen:
+
+MCP (protocolo): define cómo cliente y servidor se comunican.
+Cliente: interfaz que el usuario usa para interactuar con el sistema.
+Servidores MCP: intermediarios hacia APIs, datos y herramientas.
+Herramientas y APIs: capacidades externas que el agente invoca.
+Prompts predefinidos: instrucciones listas para reutilizar.
+LangGraph: componente específico para flujos de IA.
+Bases de datos y nube: orígenes de información y ejecución escalable.
+Agentes MCP: agentes que colaboran entre sí mediante el protocolo.
+N8N, Cloud, Cursor: entornos donde corre el cliente y se integra el servidor.
