@@ -926,3 +926,133 @@ LangGraph: componente específico para flujos de IA.
 Bases de datos y nube: orígenes de información y ejecución escalable.
 Agentes MCP: agentes que colaboran entre sí mediante el protocolo.
 N8N, Cloud, Cursor: entornos donde corre el cliente y se integra el servidor.
+
+
+
+**En Resumen (¿Por qué es esencial?)**
+MCP toma sistemas aislados y les da a los Agentes de IA la capacidad de ver, recordar y actuar sobre ecosistemas heterogéneos. En lugar de tener una IA encerrada en una caja chateando contigo, el MCP le abre "puertas" controladas y estandarizadas para que revise tus bases de datos de N8N, lea el código en Cursor, o consulte herramientas Cloud, convirtiéndose verdaderamente en un "agente" que puede hacer el trabajo por ti.
+
+
+![alt text](ClienteMCP.png)
+
+## Clase 13: Configuración de MCP server para centralizar herramientas en n8n
+
+Dar el salto a un MCP server en N8N ordena tu arquitectura, reduce mantenimiento y mejora la escalabilidad. En lugar de conectar el agente a cada herramienta, centralizas todo en un punto y varios agentes se benefician sin duplicar nada. El resultado: flujo limpio, ampliable y reutilizable.
+
+¿Por qué centralizar herramientas en un MCP server en N8N?
+
+Centralizar evita el “agente con cables por todas partes”. Con un solo servidor de herramientas, el agente solo se conecta al MCP server. Así, añadir, versionar o compartir herramientas resulta más simple.
+
+Mantenimiento más simple: un único lugar para actualizar herramientas.
+Escalabilidad real: varios agentes consumen las mismas herramientas.
+Reutilización: sin copiar nodos ni recrear integraciones.
+Observabilidad: seguimiento claro vía logs.
+¿Qué cambia frente a conectar un agente a cada herramienta?
+
+Antes: cada herramienta requería conexión directa del agente.
+Ahora: el agente usa solo el endpoint del MCP server.
+Beneficio: menor acoplamiento y menos puntos de fallo.
+¿Cómo configurar el MCP server trigger y mover calendario y daytime?
+
+El MCP server en N8N funciona como trigger, muy similar a un webhook. Tiene test URL y production URL, puedes personalizar el path y activar el flujo para exponerlo.
+
+Crea un nuevo workflow en personal.
+Añade el nodo: MCP server trigger.
+Ajusta el path (por ejemplo, “herramientas”).
+Activa el flujo y copia la production URL.
+Desde el flujo principal, copia los nodos de calendario y date time y pégalos en el nuevo trigger.
+Conecta los nodos y habilita que la IA autocomplemente la información de usuario cuando falte.
+Renombra el flujo a “MCP-server”.
+Renombra la herramienta de calendario a “crear_evento” (sin espacios) para que el cliente la identifique mejor.
+¿Cómo conectar el MCP client y probar las tools?
+
+Añade en el agente: tools → MCP client.
+En “endpoint”, pega la production URL del MCP server activo.
+En “tools to include”, verifica el dropdown: deben aparecer “crear_evento” y “daytime”. Déjalo en “all”.
+Autenticación opcional: por cabecera o convert authentication.
+Tipo de comunicación: antes SSE; ahora han migrado a HTTP streamable. Puedes usar ambos.
+Guarda, ejecuta y revisa logs para ver llamadas al MCP y a las herramientas.
+Verifica en el calendario que el evento se creó correctamente.
+¿Cómo añadir Search API y enviar un correo con Gmail?
+
+Se añade una búsqueda en Google con Search API usando la herramienta HTTP request tool y luego se envía un email con Gmail que resume el evento y sugiere soluciones.
+
+¿Cómo configurar SERP API con HTTP request tool?
+
+Inserta la herramienta: HTTP request tool (equivale al nodo HTTP, pero como herramienta).
+Conéctala a Search API de SERP API.
+Obtén el API token registrándote y copia el valor.
+Autenticación: tipo query con la clave “API_token”.
+Activa “send_queryparameters”.
+Parámetros clave: “q” (la IA formula la búsqueda según el mensaje del usuario) y “engine” = “Google”.
+Título de la herramienta: “SERP API”. Guarda los cambios.
+¿Cómo preparar el nodo de Gmail para enviar el resumen?
+
+Añade el nodo Gmail. Si hace falta, “create new credentials” y “sign in with Google”.
+
+Operación: enviar.
+
+Deja que la IA complete destinatario, asunto y mensaje.
+
+Renombra el nodo a “enviar_email”. Guarda y ordena el flujo.
+
+Flujo final: el MCP server recibe la petición. Primero crea el evento en calendario. Luego busca en Google posibles soluciones. Por último, envía un correo con ambas cosas.
+
+Resultado típico del email: fecha del evento, duración, enlace de Teams y una sección de soluciones con vídeos relacionados.
+
+Habilidades y conceptos que aplicarás:
+
+Configuración de MCP server trigger y MCP client con endpoint de producción.
+Diseño de workflow limpio: copiar, conectar y renombrar nodos y herramientas.
+Gestión de autenticación por query con API token en SERP API.
+Construcción de consultas con parámetros “q” y “engine”.
+Elección de transporte: HTTP streamable vs SSE.
+Observabilidad con logs y verificación en calendario y bandeja de entrada.
+
+## Clase 14: Creación de bot de Telegram con OpenAI para resumir audios
+
+Resumen
+Crea confianza y ahorra tiempo con un flujo en n8n que conecta Telegram y OpenAI para convertir notas de voz largas en resúmenes claros. Aquí verás, paso a paso, cómo configurar el bot, definir la lógica para audios y devolver una respuesta en audio con un mensaje de confirmación inmediato. Sin rodeos y con los conceptos clave explicados en contexto.
+
+¿Cómo se configura el bot de Telegram y las credenciales en n8n?
+
+Antes de automatizar, necesitas un bot funcional y el acceso a su API. El objetivo es recibir mensajes del grupo, identificar audios y responder en el mismo chat.
+
+Crea el bot en BotFather. Usa el comando para nuevo bot, asigna nombre público y un nombre de usuario que termine en «_bot». Obtén el token con la nota de Use this token to access the HTTP API.
+En n8n, inicia un workflow y agrega el trigger de Telegram: On Message. Crea las credentials pegando el access token. Renómbralas para ubicarlas rápido.
+En Telegram, crea un grupo y ajusta en BotFather la group privacy para permitir que el bot lea mensajes. Concede admin rights según necesidad para lectura en grupos y canales.
+Añade el bot al grupo. Acepta que vea los mensajes posteriores para que el trigger funcione.
+Prueba en n8n con execute workflow y envía “Hola” en el grupo. Puede haber un pequeño retraso inicial. Verifica que el trigger recibe el objeto del mensaje.
+Conceptos clave que usarás aquí: token, HTTP API, trigger, credentials, chat ID, message ID y la práctica de guardar y hacer pin de datos para depurar.
+
+¿Qué lógica permite gestionar audios y dar feedback inmediato?
+
+El flujo debe reconocer un mensaje de voz, dar confirmación al usuario y preparar el archivo para transcripción.
+
+Envía feedback con el nodo Telegram Send message. Mapea el chat ID desde el objeto del trigger. Escribe un texto breve, por ejemplo: «Dame un momento». Activa la opción reply_to_message_id y arrastra el message ID del audio.
+Controla el flujo con un condicional If: verifica que el objeto voice exista. Solo si hay voz, continúa.
+Obtén el archivo con Telegram get file. Mapea el file_id desde el trigger en la sección de voice. Activa la descarga para obtener el binario.
+Usa pin en nodos críticos para fijar ejemplos de entrada y facilitar pruebas sin reejecutar todo.
+Puntos a dominar: objeto voice (duración, extensión, archivo), file_id, mapeo de campos, respuesta encadenada con reply_to_message_id y pruebas con execute.
+
+¿Cómo transcribir, resumir y devolver el audio con OpenAI?
+
+Tras descargar el binario del mensaje de voz, llega el turno de la transcripción, el resumen y la síntesis de voz para responder en el mismo chat.
+
+¿Cómo transcribir el binario?
+
+Añade el nodo de OpenAI Transcribe recording. Selecciona las credenciales. Indica que la entrada es el campo binario data.
+¿Cómo crear el resumen con un agente?
+
+Inserta un AI Agent genérico. Cambia a define below para definir el mensaje del sistema y el prompt. Especifica que es un asistente que resume el audio en pocas frases y que devuelva lo esencial. Selecciona el modelo de OpenAI.
+¿Cómo generar y enviar la respuesta en audio?
+
+Agrega OpenAI generate audio. Conecta el output del agente al text input: ese será el texto que se leerá.
+Envía el resultado con Telegram send audio. Mapea el chat ID desde el trigger. Marca que usarás un binario y apunta al campo data. Activa reply_to_message_id con el message ID original para responder en hilo.
+Ejecuta y verifica que llega un audio de respuesta con el resumen. Finalmente, activa el workflow para pasar a producción.
+Habilidades fortalecidas en este proceso: integración con APIs de mensajería, configuración de credentials, diseño de flujo con trigger y condicionales, manipulación de binarios, transcripción automática, prompting para resúmenes, text-to-speech y envío de multimedia. También, buenas prácticas de prueba con pin y ejecución incremental.
+
+Notas prácticas:
+
+Si el bot no responde al principio, puede haber un pequeño delay tras su creación. Es normal.
+El patrón funciona con otros canales como WhatsApp. La lógica es la misma, aunque las credentials pueden requerir pasos extra.
