@@ -1,0 +1,254 @@
+{
+  "name": "ValidaNotificaEmpleo",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "simple": false,
+        "filters": {
+          "labelIds": [],
+          "q": "from:Adzuna \"vacante (s) para\""
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -336,
+        144
+      ],
+      "id": "0d1ddd70-e72a-4b24-b8ed-f1b38af1e449",
+      "name": "Gmail Trigger",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "wbh5106oSRXeomb2",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Analiza este correo de Adzuna y extrae las vacantes que contenga Python, PHP, JavaScript, React, :\n\n {{ $json.from.text }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=\"Eres un experto reclutador. Te voy a pasar un correo de la plataforma Adzuna con varias ofertas de empleo.\n\nTu perfil objetivo: \n- Python Developer Mid (enfocado en Python y desarrollo backend).\n- PHP Full Stack \n- Analista de Datos \n- Desarrollador PHP\n- Full Stack Pyhton \n\nTu tarea:\n\nLee el contenido del correo (está en HTML).\n\nIdentifica las vacantes que sean específicamente para Python Developer, Php Full Stack, React, JavaScript o similares.\n\nSi encuentras alguna que encaje con un perfil 'Mid', extrae: Nombre del puesto, Empresa, Ubicación y el Link de postulación.\n\nSi el correo no tiene nada útil hoy, responde: 'No se encontraron vacantes de Python interesantes en este correo'.\n\nContenido del correo:\n\nAnaliza estas vacantes: {{ $json.text }}\n\nNota:\nResponde estrictamente en formato JSON con las llaves\n\n{\n  \"puesto\": \"\",\n  \"empresa\": \"\",\n  \"link_vacante\": \"\",\n  \"fecha_deteccion\": \"\",\n  \"plataforma\": \"Adzuna\",\n  \"estado\": \"Pendiente\",\n  \"contacto\": false,\n  \"resumen_ia\": \"\"\n}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -112,
+        144
+      ],
+      "id": "42619b85-97cc-440d-9320-6ed573195198",
+      "name": "AI Agent",
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "chatId": "1674824514",
+        "text": "=📍 NUEVA VACANTE:{{ $json.puesto }}\n🏢 Empresa: {{ $json.empresa }}\n📅 Detectado: {{ $json.fecha_deteccion }}\n🌐 Plataforma: {{ $json.plataforma }}\n\n📝 Resumen IA: {{ $json.resumen_ia }}\n\n🚀 POSTULARSE AQUÍ:\n{{ $json.link_vacante }}\n\n--------------------------------------------------------",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        688,
+        48
+      ],
+      "id": "4e7b294a-c3b6-4a2b-a952-fc4bbfc5cc69",
+      "name": "telegram",
+      "webhookId": "67c52ee6-930e-405d-9876-8e0973b3798d",
+      "credentials": {
+        "telegramApi": {
+          "id": "K0EpDXu09pOZ2bn3",
+          "name": "Telegram account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -104,
+        368
+      ],
+      "id": "1549ece3-c524-45c2-a097-b1fc60fa44c0",
+      "name": "CerebroGeminis",
+      "notesInFlow": false,
+      "alwaysOutputData": false,
+      "executeOnce": false,
+      "retryOnFail": false,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "googlePalmApi": {
+          "id": "KMVqeiBprzvPBVdI",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n  \"puesto\": \"\",\n  \"empresa\": \"\",\n  \"link_vacante\": \"\",\n  \"fecha_deteccion\": \"\",\n  \"plataforma\": \"Adzuna\",\n  \"estado\": \"Pendiente\",\n  \"contacto\": false,\n  \"resumen_ia\": \"\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        24,
+        368
+      ],
+      "id": "34cdec87-3711-4cc9-98c5-5ac2454afd40",
+      "name": "Json Salida"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "try {\n  // Intentamos obtener los datos del output de la IA\n  const data = $json.output;\n\n  // Si 'data' no existe o está vacío, lanzamos un error manual para ir al catch\n  if (!data || Object.keys(data).length === 0) {\n    throw new Error(\"El output de la IA está vacío o no es un objeto\");\n  }\n\n  return {\n    puesto: data.puesto || \"Puesto no detectado\",\n    empresa: data.empresa || \"Empresa no detectada\",\n    link_vacante: data.link_vacante || \"#\",\n    fecha_deteccion: data.fecha_deteccion || new Date().toISOString().split('T')[0],\n    plataforma: data.plataforma || \"Adzuna\",\n    estado: data.estado || \"Pendiente\",\n    contacto: data.contacto || false,\n    resumen_ia: data.resumen_ia || \"Sin resumen disponible\"\n  };\n\n} catch (error) {\n  // Si algo sale mal, devolvemos un objeto de \"emergencia\" \n  // para que el flujo no se detenga y sepas que hubo un error\n  return {\n    puesto: \"⚠️ ERROR DE PROCESAMIENTO\",\n    empresa: \"Revisar logs de n8n\",\n    link_vacante: \"#\",\n    fecha_deteccion: new Date().toISOString().split('T')[0],\n    plataforma: \"Error\",\n    estado: \"Error\",\n    contacto: false,\n    resumen_ia: \"Hubo un problema parseando la respuesta de la IA: \" + error.message\n  };\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        144
+      ],
+      "id": "202caa49-73a1-4506-be9e-d0b04ea5d82f",
+      "name": "CodeJavaScript"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"puesto\": \" {{ $json.puesto }}\",\n  \"empresa\": \"{{ $json.empresa }}\",\n  \"link_vacante\": \"{{ $json.link_vacante }}\",\n  \"fecha_deteccion\": \"{{ $json.fecha_deteccion }}\",\n  \"plataforma\": \"Adzuna\",\n  \"estado\": \"Pendiente\",\n  \"contacto\": false,\n  \"resumen_ia\": \"{{ $json.resumen_ia }}\",\n  \"fecha_contacto\":0,\n  \"feedback\":\"\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        464,
+        144
+      ],
+      "id": "94530d38-6963-494c-b438-8859f2fbd0a6",
+      "name": "CamposDefinidos"
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "collection": "data",
+        "fields": "={\n    \"puesto\": {{ $json.puesto }}|| \"Puesto no detectado\",\n    \"empresa\":{{ $json.empresa }} || \"Empresa no detectada\",\n    \"link_vacante\":{{ $json.link_vacante }}  || \"#\",\n    \"fecha_deteccion\": {{ $json.fecha_deteccion }}|| new    Date().toISOString().split('T')[0],\n    \"plataforma\": {{ $json.plataforma }}|| \"Adzuna\",\n    \"estado\": {{ $json.estado }}|| \"Pendiente\",\n    \"contacto\": false,\n    \"resumen_ia\": {{ $json.resumen_ia }}|| \"Sin resumen disponible\"\n    \"feedback\":{{ $json.feedback }}\n  };",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.mongoDb",
+      "typeVersion": 1.2,
+      "position": [
+        688,
+        240
+      ],
+      "id": "2e68bc6a-eadf-428c-b7b8-fbf5b3985f93",
+      "name": "Insert documents",
+      "credentials": {
+        "mongoDb": {
+          "id": "wZ1qVXHPrcu1PtiO",
+          "name": "MongoDB account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Gmail Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "CodeJavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CerebroGeminis": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Json Salida": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CodeJavaScript": {
+      "main": [
+        [
+          {
+            "node": "CamposDefinidos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CamposDefinidos": {
+      "main": [
+        [
+          {
+            "node": "telegram",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Insert documents",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "a7020d62-f4ef-4d21-a9bf-3f184de462c2",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "9bc4a8d3138950845b63914c7a11ae9a8fca985211bd5af2ef702554a7a30b8d"
+  },
+  "id": "XBuzAwTMKm9PqPyI",
+  "tags": []
+}
