@@ -4,18 +4,18 @@
 | :--- | :--- |
 | **Publicado el** | 21 Agosto 2025 |
 | **Profesor** | Idir Ouhab |
-| **Fecha de Inicio** | 01/003/2026 |
-| **Fecha de Fin** |  |
+| **Fecha de Inicio** | 11/03/2026 |
+| **Fecha de Fin** | 28/03/2026 |
 
 > En este curso aprenderás a construir automatizaciones profesionales en n8n, dominando expresiones avanzadas, subworkflows, lógica de enrutamiento, conexiones con IA y casos prácticos de integración con herramientas externas
 
 <div align="center">
-  <img src="imagen-2.png" alt="Global Certificate" width="70%"  />
+  <img src="../03_N8N_WORK_FLOW/capturaCurso.png" alt="Global Certificate" width="70%"  />
 </div>
 
 | Curso | Certificado |
 | :--- | :---: |
-| Curso de Automatizaciones con n8n | [Ver PDF](./diploma-n8n-lowcode.pdf) |
+| Curso de Automatizaciones con n8n | [Ver PDF](../03_N8N_WORK_FLOW/2026_Diploma-n8n-profesional_platzi.pdf) |
 
 
 ---
