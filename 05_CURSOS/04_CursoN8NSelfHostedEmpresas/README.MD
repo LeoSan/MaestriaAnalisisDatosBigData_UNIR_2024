@@ -17,6 +17,7 @@
 | :--- | :---: |
 | Curso de n8n Self-Hosted para Empresas| [Ver PDF]() |
 
+- Document => https://docs.n8n.io/hosting/cli-commands/#change-the-active-status-of-a-workflow
 
 ---
 
@@ -192,7 +193,224 @@ docker run -d --name n8n \
 -v ~/n8n_data:/home/node/.n8n \
 n8nio/n8n
 
+
+
+Este comando hará lo siguiente:
+
+docker run -d: Ejecutará n8n en segundo plano (detached).
+--name n8n: Le asignará el nombre n8n al contenedor.
+-v ~/n8n_data:/home/node/.n8n: Creará la carpeta ~/n8n_data en tu Mac y guardará tus workflows y credenciales allí.
+n8nio/n8n: Usará la imagen oficial correcta.
+3. Comandos de Control
+
+Una vez que el comando anterior se ejecute con éxito (la primera vez puede tardar un poco mientras descarga la imagen), podrás acceder y controlar tu instancia de forma fiable:
+
+Tarea
+
+Comando
+
+Acceder a n8n
+
+Ve a http://localhost:5678 en tu navegador.
+
+Detener el contenedor
+
+docker stop n8n
+
+Iniciar el contenedor
+
+docker start n8n
+
+Ver logs (para ver si hay errores)
+
+docker logs n8n
+
+Eliminar todo (solo si quieres borrarlo)
+
+docker rm n8n
+
+Con esta configuración, tu instancia de n8n tendrá persistencia de datos y podrás controlarla con comandos simples de docker start y docker stop.
+
 ´´´
 
 
-## Clase 04: 
+## Clase 04: API REST de n8n para controlar workflows desde sistemas externos
+
+Resumen
+Controla n8n sin usar la interfaz ni abrir la terminal con su API REST. Podrás crear, leer, actualizar y eliminar workflows; activarlos o desactivarlos; y gestionar ejecuciones, usuarios y credenciales. Funciona en cloud y self-hosted, está activa por defecto y se integra con Postman y herramientas como Curve. Aquí verás cómo autenticarte con una API key, configurar la Base URL y probar endpoints como /users o el listado de workflows.
+
+
+Documentacion => https://docs.n8n.io/api/api-reference/#tag/user
+
+
+¿Qué puedes hacer con la API REST de n8n?
+
+La API permite operar tu instancia como un motor programático para integrarla con otros sistemas o scripts externos.
+
+Crear, leer, actualizar y eliminar workflows.
+Activar o desactivar workflows.
+Gestionar ejecuciones, usuarios y credenciales.
+Lanzar flujos desde fuera de n8n.
+Integrar con un bot o tu CI/CD.
+¿Cómo crear y usar una API key en n8n?
+
+Primero, genera una API key desde la interfaz para autenticar tus llamadas. Luego, úsala en un nodo o en un cliente HTTP.
+
+¿Dónde crear la API key?
+
+Inicio, tres puntos, Settings.
+Sección n8n API.
+Create an API key y nómbrala (por ejemplo, Platzi n8n).
+Define la duración: 7 días, 3 días, 30 días, 2 meses o que no expire (no recomendado).
+Revisa el scope y deja solo lo imprescindible.
+¿Cómo probar “Get Many Workflows” desde un nodo?
+
+Añade un trigger manual.
+Botón de más, busca n8n y elige la acción Get Many Workflows.
+Crea credenciales: pega tu API key en “API key”.
+En Base URL, usa la URL de tu instancia (ejemplo: localhost:5678) y añade /API-v1.
+Guarda y ejecuta: verás workflows como myworkflow-2 y myworkflow si todo está bien.
+¿Cómo probar endpoints en Postman y gestionar usuarios?
+
+Configura la URL, la autenticación y realiza llamadas GET y POST a /API/v1 para validar permisos y flujos de creación de usuarios.
+
+¿Cómo configurar la autenticación en Postman?
+
+URL base: localhost:5678 + /API/v1.
+En Headers > Type: API key.
+Nombre de cabecera según documentación: x-n8n-api-key.
+Valor: el token que generaste.
+¿Cómo obtener y crear usuarios con /users?
+
+Obtener usuarios: método GET a /users.
+Crear usuarios: método POST a /users con Body > raw > JSON.
+Formato: array de objetos con dos campos: email y role.
+Nota de licencia: con n8n Enterprise se admite global admin; con licencia gratuita usa member.
+Tras crear, verifica en la interfaz: Settings > users mostrará el correo (por ejemplo, user@ejemplo.com) en estado pending hasta que confirme por email.
+
+![alt text](imagen_001.png)
+
+## Clase 05: Creación de custom nodes en n8n con TypeScript para validar emails
+
+Resumen
+Impulsa tus automatizaciones en n8n con un custom node hecho a tu medida: aprende a construirlo en TypeScript para validar correos con una API externa, configurar sus propiedades, manejar credenciales y definir el enrutamiento por query string. Todo, paso a paso y sin atajos.
+
+**Pasos** 
+- https://github.com/n8n-io/n8n-nodes-starter
+
+¿Qué es un custom node en n8n y cuándo crearlo?
+
+Un custom node es la forma de extender n8n cuando los nodos existentes no alcanzan. Permite conectar con un servicio concreto, aplicar lógica específica o cubrir casos no contemplados. Se escribe en TypeScript y defines todo: qué datos espera, qué devuelve, cómo se comporta y cómo aparece en el editor.
+
+En este caso, se construye un nodo para verificar la validez de un correo usando la API de Emailable. Así, controlas entradas y salidas, asignas credenciales y determinas el formato de la petición.
+
+Se programa en TypeScript y se integra en el editor de n8n.
+Se configura con ícono propio en formato SVG.
+Usa credenciales para autenticar llamadas a la API externa.
+Envía el email como query string con QS.
+¿Cómo preparar el entorno y clonar n8n-nodes-starter?
+
+Primero, clona el repositorio base para nodos: n8n-nodes-starter. Desde el botón Code puedes elegir HTTPS o SSH y clonar con tu editor preferido, por ejemplo IntelliJ o Visual Studio Code usando la opción Get from VCS. Luego instala dependencias.
+
+Clonar el repositorio con HTTPS o SSH.
+Abrir el proyecto en IntelliJ y usar la terminal integrada.
+Verificar la herramienta de paquetes.
+Comandos clave:
+
+
+pnpm --version
+pnpm install
+Notas importantes:
+
+Las nuevas versiones de n8n usan pnpm: es como npm pero más rápido.
+La estructura principal del proyecto incluye las carpetas credentials y nodes. Ahí vivirán tus ficheros.
+Puedes eliminar ejemplos existentes para empezar desde cero.
+¿Cómo construir el nodo, las credenciales y el ícono en TypeScript?
+
+Dentro de la carpeta del proyecto, crea los archivos base:
+
+En nodes: verificar_email.node.ts y verificar_email.node.json.
+En credentials: el archivo de credenciales con sufijo Credentials en plural y en mayúscula.
+Copia tu icono, por ejemplo email.svg, en las carpetas credentials y nodes.
+¿Qué importar y cómo nombrar la clase?
+
+Desde la documentación oficial, importa la librería necesaria y crea la clase con el mismo nombre lógico del nodo. Asegúrate de coherencia entre nombres de archivo, clase y propiedades.
+
+
+import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow';
+
+export class VerificarEmail implements INodeType {
+  description: INodeTypeDescription = {
+    displayName: 'Verificar email',
+    name: 'verificarEmail', // primera letra en minúscula.
+    icon: 'file:email.svg',
+    group: ['transform'],
+    version: 1,
+    description: 'Verifica la validez de un correo electrónico usando emailable.com.',
+    inputs: [NodeConnectionType.Main],
+    outputs: [NodeConnectionType.Main],
+    // credentials y requestDefaults se añaden más abajo.
+    properties: [],
+  };
+}
+Claves de configuración:
+
+displayName y name coherentes con el fichero. La propiedad name empieza en minúscula.
+icon apunta a tu SVG: email.svg.
+group como transformación: 'transform'.
+inputs/outputs con NodeConnectionType.Main para una entrada y salida.
+¿Cómo declarar credenciales y la base de la API?
+
+Genera tu API key en Emailable y añade el nombre de credencial que coincida con el archivo de credenciales. Define la URL base de la API en la descripción del nodo.
+
+
+// dentro de description
+credentials: [
+  {
+    name: 'verificarEmailApi',
+    required: true,
+  },
+],
+
+requestDefaults: {
+  baseURL: '',
+},
+Puntos finos:
+
+El nombre de credencial debe coincidir con el fichero de credenciales.
+La URL base se pega desde el panel de Emailable.
+¿Cómo definir la propiedad de entrada y el routing por query string?
+
+El nodo recibe un único valor: la dirección de email. Se define como texto, con un placeholder útil y sin opciones.
+
+
+// dentro de properties
+{
+  displayName: 'Dirección de email',
+  name: 'email',
+  type: 'string',
+  placeholder: 'test@domain.com',
+  default: '',
+  routing: {
+    request: {
+      qs: {
+        email: '={{$value}}',
+      },
+    },
+  },
+},
+Detalles que marcan la diferencia:
+
+type: 'string' en lugar de options.
+placeholder para guiar el uso.
+default como cadena vacía.
+routing.request.qs envía el email como query string en la URL.
+Conceptos clave y habilidades aplicadas:
+
+Uso de pnpm para instalar dependencias de forma eficiente.
+Estructura de nodos en n8n: carpetas credentials y nodes.
+Nomenclatura estricta de archivos y clases en TypeScript para evitar errores.
+Importación de n8n-workflow y empleo de NodeConnectionType.Main.
+Creación y referencia de API key en Emailable.
+Definición de propiedades del nodo: displayName, name, icon, group, version, description.
+Enrutamiento declarativo con routing y envío del parámetro por QS.
