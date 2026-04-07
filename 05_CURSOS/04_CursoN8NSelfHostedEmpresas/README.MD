@@ -414,3 +414,12 @@ Importación de n8n-workflow y empleo de NodeConnectionType.Main.
 Creación y referencia de API key en Emailable.
 Definición de propiedades del nodo: displayName, name, icon, group, version, description.
 Enrutamiento declarativo con routing y envío del parámetro por QS.
+
+## Clase 06: Configuración de credenciales con API key para custom nodes en n8n
+
+Resumen
+Crear un custom node en n8n para verificar correos es más sencillo de lo que parece. Aquí verás cómo configurar las credenciales con una API key, ajustar el JSON de la interfaz y compilar con pnpm para probarlo en local. Se enfatiza el uso de expresiones, nombres que coincidan y pequeñas correcciones de tipado que evitan errores.
+
+No me gusto como explico el profesor: 
+
+realice mi propia receta gracias a Geminis -> [Mi Receta Crear Nodo Personalizado](Crear_Nodo_n8n.md)
