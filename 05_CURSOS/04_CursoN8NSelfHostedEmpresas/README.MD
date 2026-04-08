@@ -423,3 +423,78 @@ Crear un custom node en n8n para verificar correos es más sencillo de lo que pa
 No me gusto como explico el profesor: 
 
 realice mi propia receta gracias a Geminis -> [Mi Receta Crear Nodo Personalizado](Crear_Nodo_n8n.md)
+
+## Clase 07: Creación de nodos programáticos con execute en n8n
+
+**Resumen**
+Crear nodos personalizados en n8n puede ser rápido y claro si eliges bien el enfoque. Aquí verás cómo pasar del estilo declarativo al programático con JavaScript y la función execute, gestionar credenciales, construir la petición HTTP y preparar un output consistente. Ideal para quienes quieren control total sobre la lógica y el formato de datos.
+
+**¿Qué diferencia hay entre el estilo declarativo y el programático en n8n?**
+
+El enfoque declarativo es como completar un formulario: defines entradas, salidas y comportamiento sin código. Es perfecto para conectar con una API o transformaciones simples. En cambio, el enfoque programático te da control total: escribes JavaScript, manejas condicionales, errores y formatos particulares. En pocas palabras: si buscas rapidez y estructura, usa declarativo; si necesitas flexibilidad y lógica avanzada, toca picar código con execute.
+
+Declarativo: ideal para conexiones directas y transformación simple de datos.
+Programático: control total con execute, bucles, manejo de errores y formatos complejos.
+Consejo clave: elimina de la parte declarativa lo que ya resuelves en execute.
+
+Realice mi propia receta gracias a Geminis -> [Mi Receta Crear Nodo Personalizado](Receta_Nodo_Programatico.md)
+
+## Clase 08: Publicación de custom nodes de n8n en npmjs para compartir
+
+**Resumen**
+Publicar un custom node de n8n en npmjs te permite compartirlo con tu equipo y con la comunidad, con un flujo claro: preparar el repository, ajustar el package.json, autenticarte en npmjs y finalizar con la instalación como community node en n8n. Aquí verás los comandos clave, los requisitos mínimos y las decisiones importantes (SSH vs HTTPS, nombre del paquete, y verificación en n8n) explicadas paso a paso.
+
+**¿Cómo preparar el repositorio en GitHub o GitLab?**
+
+Para compartir el código, primero súbelo a un repository propio. Si partiste de una plantilla clonada, desvincúlalo del origen anterior.
+
+Crea un repositorio en GitHub o GitLab. Añade descripción, .gitignore y README.
+Si tu proyecto ya tiene referencias a otro remoto, borra la carpeta .git para romper el vínculo.
+Inicializa y versiona el proyecto con la rama principal en main.
+Comandos utilizados:
+
+```bash
+git init
+git add .
+git commit -m "initial commit"
+git branch -M main
+```
+
+Conecta el remoto que GitHub/GitLab te ofrece. Puedes usar SSH o HTTPS.
+Con HTTPS te pedirá usuario y contraseña.
+Con SSH usarás tu clave configurada.
+Verifica en el navegador que los cambios aparecen en el repository. Copia la URL: la necesitarás más tarde.
+Conceptos y habilidades practicadas: control de versiones con git init, commit con mensaje claro, gestión de rama principal con git branch -M main, y autenticación por SSH/HTTPS. Buenas prácticas: mensajes de commit descriptivos y revisión final antes de publicar.
+
+**¿Cómo publicar en npmjs con package.json correcto?**
+
+Publicar en npmjs exige un package.json completo y una sesión activa de login. Además, la comunidad de n8n requiere un nombre con prefijo específico.
+
+En package.json añade el objeto repository apuntando a tu repositorio.
+Asegura los campos requeridos: author, name y description.
+Ajusta el nombre del paquete para la comunidad: el nodo debe llevar el prefijo n10-nodes y, en el ejemplo, se usa n8n-node-verificar-email tras renombrar en Settings.
+Autenticación y publicación:
+
+```bash
+npm login
+npm run build
+npm publish
+```
+
+Durante npm login, sigue el enlace del terminal y completa la verificación (2FA si procede).
+Ejecuta npm run build para garantizar el build más reciente.
+Ejecuta npm publish. Si falla por campos faltantes, completa author, email y description en package.json y vuelve a publicar.
+Si el nombre ya existe, cámbialo (por ejemplo, añadiendo un guion) y repite la publicación.
+Conceptos y habilidades: configuración de package.json, autenticación en npmjs con login y 2FA, ciclo de build y publish, y resolución de conflictos por nombres duplicados.
+
+**¿Cómo instalar el community node en n8n y validarlo?**
+
+Una vez publicado, puedes instalarlo como community node en n8n para usarlo en remoto y compartirlo.
+
+En n8n, ve a community nodes e instala el paquete por su nombre.
+Disponible en self-hosted; en cloud solo bajo la versión Enterprise.
+Acepta el aviso de nodo no verificado por n8n.
+Verifica la instalación: en el canvas, agrega el nodo. Verás un icono que indica que es community node.
+Añádelo al workflow, conéctalo a un trigger y ejecuta una prueba (por ejemplo, con un correo de prueba).
+Observa la respuesta en la ejecución: si aparece, el nodo remoto funciona.
+
