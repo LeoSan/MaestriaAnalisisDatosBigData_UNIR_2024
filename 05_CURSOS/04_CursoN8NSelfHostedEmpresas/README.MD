@@ -498,3 +498,64 @@ Verifica la instalación: en el canvas, agrega el nodo. Verás un icono que indi
 Añádelo al workflow, conéctalo a un trigger y ejecuta una prueba (por ejemplo, con un correo de prueba).
 Observa la respuesta en la ejecución: si aparece, el nodo remoto funciona.
 
+## Clase 09: Tipos de arquitectura de n8n y cuándo usar cada una
+
+Resumen
+Elegir la arquitectura correcta de n8n impacta directamente en rendimiento, escalabilidad y operación. Desde una instancia única con SQLite hasta un clúster con NGINX o el servicio gestionado n8n.cloud, aquí encontrarás cuándo usar cada opción, sus ventajas y límites, y qué habilidades técnicas demanda cada etapa. Lo mejor: puedes empezar simple y escalar cuando haga falta.
+
+¿Qué opciones de arquitectura de n8n existen y cuándo usarlas?
+
+La evolución no es solo técnica: también responde al tamaño del equipo, el volumen de ejecuciones y necesidades operativas. Estas son las alternativas y su momento ideal.
+
+Instancia única con SQLite: pruebas, desarrollo local o proyectos personales. Rápida de desplegar y mínimo mantenimiento. No escala con mucha carga o varios usuarios.
+Instancia única con PostgreSQL externa: mejora de persistencia y manejo de concurrencia. Útil en entornos pequeños o primeras fases productivas. Más robusta que la básica, pero no distribuida.
+Arquitectura distribuida en queue mode: instancia principal para interfaz y triggers, uno o varios workers para ejecutar workflows, y Redis como cola de tareas. Escala añadiendo workers. Requiere más configuración y supervisión.
+Clúster con balanceador: varias instancias main detrás de NGINX, múltiples workers, tareas grandes dedicadas para el node code, base de datos y Redis centralizados. Orientado a empresas, plataformas SaaS o alta disponibilidad. Pide experiencia en DevOps y licencia enterprise para múltiples main.
+Servicio gestionado n8n.cloud: elasticidad sin gestionar servidores. Menos personalización y coste mensual, a cambio de cero operación.
+Guía rápida para decidir:
+
+Si empiezas: básica o con base de datos externa.
+Si ya tienes producción: queue mode distribuido.
+Si eres empresa o SaaS: clúster o híbrida.
+Si no quieres tocar servidores: n8n.cloud.
+¿Cómo escalar de básico a distribuido en n8n?
+
+El escalado ocurre por etapas: primero robustez de datos, luego separación de responsabilidades y, finalmente, alta disponibilidad. Cada paso añade capacidad y complejidad.
+
+¿Qué ofrece la instancia única con SQLite?
+
+Una sola instalación ejecuta interfaz, lógica de workflows y almacenamiento.
+Perfecta para pruebas, desarrollo local y proyectos personales.
+Ventajas: despliegue rápido y poco mantenimiento.
+Límite: no escala con alta carga ni múltiples usuarios.
+¿Por qué pasar a base de datos externa PostgreSQL?
+
+Separas el almacenamiento usando PostgreSQL.
+Beneficios: mejor persistencia y mejor concurrencia.
+Ideal para entornos pequeños o primeras fases productivas.
+Aún no es distribuida: no escala como una arquitectura con workers.
+¿Qué implica la arquitectura distribuida con workers y Redis?
+
+Una instancia principal gestiona la interfaz y los triggers.
+Uno o varios workers ejecutan los workflows.
+Redis orquesta la cola de tareas.
+Ventajas: escala horizontal añadiendo workers según la carga.
+Requisitos: más configuración y mayor supervisión operativa.
+¿Cuándo elegir clúster o n8n.cloud para alta disponibilidad?
+
+Cuando necesitas alta concurrencia, muchos usuarios simultáneos o resiliencia, el siguiente paso es distribuir el plano de control y ejecución, o delegar la infraestructura a un servicio gestionado.
+
+¿Qué ventajas da un clúster con balanceador NGINX?
+
+Varias instancias main detrás de un balanceador como NGINX.
+Múltiples workers y tareas grandes dedicadas para ejecutar el node code por separado.
+Base de datos central y Redis centralizado.
+Beneficios: alta disponibilidad, escalado horizontal y estrategias avanzadas de seguridad.
+Requisitos: experiencia en infraestructura y DevOps, y licencia enterprise para múltiples main.
+¿Qué aporta el servicio gestionado n8n.cloud?
+
+No gestionas servidores: n8n ya está desplegado como servicio.
+Ventajas: agilidad y elasticidad.
+Contras: menos personalización y coste mensual.
+Ideal si quieres enfocarte en los workflows y olvidarte de la operación.
+
