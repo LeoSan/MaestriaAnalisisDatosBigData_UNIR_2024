@@ -559,3 +559,50 @@ Ventajas: agilidad y elasticidad.
 Contras: menos personalización y coste mensual.
 Ideal si quieres enfocarte en los workflows y olvidarte de la operación.
 
+## Clase 10: Instalación de n8n con PostgreSQL usando Docker Compose
+
+Resumen
+Instala y configura n8n con un PostgreSQL externo usando Docker Compose de forma clara y segura. Aquí verás cómo definir variables de entorno, crear los services de docker-compose.yml, ajustar puertos y volúmenes para persistencia, y validar que los datos se guardan en la base de datos con la contraseña encriptada.
+
+¿Cómo preparar el entorno con Docker Compose?
+
+Empieza con un directorio (por ejemplo, n8n-docker-compose). Crea un archivo .env para centralizar credenciales y luego un docker-compose.yml con dos services: uno para postgres y otro para n8n. La idea es que n8n dependa de postgres y almacene todo en esa base de datos.
+
+¿Qué variables de entorno usar en .env?
+
+Define credenciales simples para la prueba y el nombre de la base de datos. Se usan luego con env_file y en environment.
+
+Usuario y contraseña para PostgreSQL.
+
+Nombre de la base de datos de n8n.
+
+DB_POSTGRES_USER=admin DB_POSTGRES_PASSWORD=admin POSTGRES_DB=n8n_db
+
+Claves y conceptos: - env_file: referencia al archivo .env para no exponer credenciales en el manifiesto. - environment: mapea variables a la imagen en tiempo de ejecución.
+
+¿Cómo definir los servicios postgres y n8n?
+
+Configura dos services en el docker-compose.yml.
+
+Postgres. - Imagen: postgres 16. - container_name: postgres. - restart: recomendado para que se reinicie si falla. - env_file: .env con las credenciales. - environment: POSTGRES_USER, POSTGRES_PASSWORD y POSTGRES_DB desde .env. - Puertos: mapeo host: 5432 → container: 5432. - Volumen: db_data para persistir datos.
+
+n8n. - Imagen: latest, o fija una versión concreta (por ejemplo, 1.106.1). - container_name: n8n. - restart: igual que postgres. - depends: espera a que postgres esté arriba antes de iniciar. - Variables de entorno clave: - timezone general y de la app: Europa/Berlín. - nodeenv: production. - Tipo de base de datos: Postgres DB. - Host: postgres. - Puerto: 5432. - Database, user y password: tomado de .env. - Puertos: expón 5678 para acceder a n8n. - Volumen: n8n_data para la configuración de n8n.
+
+Ideas esenciales. - Mapeo de puertos: primero el puerto del host, luego el del container (ej.: 5678:5678 en n8n y 5432:5432 en postgres). - Volúmenes: db_data y n8n_data aseguran persistencia de datos más allá del ciclo de vida del container.
+
+¿Cómo arrancar y acceder a n8n?
+
+Lanza los servicios y valida que todo arranca bien.
+
+
+docker compose up
+Verás logs de postgres y n8n ejecutándose.
+Copia la URL que muestre la consola. El puerto es 5678.
+Aparecerá la pantalla para crear un usuario inicial.
+¿Cómo verificar PostgreSQL y n8n están conectados?
+
+Abre tu interfaz gráfica de Postgres en el IDE. Conecta al puerto 5432 con usuario admin, contraseña admin y la base de datos n8n_db. En el esquema public verás tablas que n8n necesita. Al inicio la tabla de usuarios está vacía.
+
+Crea un usuario en n8n desde la pantalla inicial: correo, nombre, apellido y una contraseña segura.
+Vuelve a la base de datos y refresca la tabla de usuarios: ahora verás el registro creado y la contraseña encriptada 
+
