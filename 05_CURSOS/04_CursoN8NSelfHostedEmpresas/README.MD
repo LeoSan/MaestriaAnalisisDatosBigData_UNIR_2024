@@ -606,3 +606,59 @@ Abre tu interfaz gráfica de Postgres en el IDE. Conecta al puerto 5432 con usua
 Crea un usuario en n8n desde la pantalla inicial: correo, nombre, apellido y una contraseña segura.
 Vuelve a la base de datos y refresca la tabla de usuarios: ahora verás el registro creado y la contraseña encriptada 
 
+## clase 11:
+
+## clase 12: Instalación de n8n en Kubernetes con PostgreSQL y Redis
+
+aqui podeas ver un manual para instalar [n8n en Kubernetes con PostgreSQL y Redis](../04_CursoN8NSelfHostedEmpresas/04_Instalacion_n8n_Kubernetes_Postgres_Redis.md)
+
+## Clase 13: Configuración completa de n8n Enterprise para organizaciones
+
+Aquí puedes ver el manual detallado para: [Instalación de n8n Escalable (KubeMode) con K3D](../04_CursoN8NSelfHostedEmpresas/05_Instalacion_n8n_Kubernetes_KubeMode_K3D.md)
+
+### Recursos Adicionales de Vanguardia
+- [Guía: Model Context Protocol (MCP) - Integrando IA con tus herramientas](../04_CursoN8NSelfHostedEmpresas/06_Model_Context_Protocol_MCP_Guia.md)
+- [Guía: Técnicas Avanzadas de Prompting - Maximizando los LLMs](../04_CursoN8NSelfHostedEmpresas/07_Tecnicas_Prompting_Avanzadas.md)
+
+Resumen
+Domina n8n Enterprise para crear automatizaciones a gran escala con colaboración, seguridad y auditoría integradas. Aquí verás cómo verificar tu licencia, organizar proyectos con roles, depurar ejecuciones con datos reales, centralizar variables, versionar workflows, transmitir logs, monitorear workers, integrar LDAP/SSO y sincronizar con Git mediante environments.
+
+¿Qué ofrece n8n Enterprise para equipos y seguridad?
+
+n8n Enterprise está orientado a organizaciones que requieren flujos robustos y gobernables. Permite separar equipos y recursos, controlar accesos y observar la plataforma en detalle.
+
+Proyectos ilimitados: cada equipo con sus workflows, credenciales y ejecuciones, sin interferencias.
+Roles por instancia y por proyecto: miembro en la instancia; en cada proyecto: viewer, editor o admin según permisos.
+Autenticación corporativa: LDAP y SSO para ingreso sin usuario/contraseña locales.
+Auditoría con log streaming: envío de eventos vía webhook por HTTP (GET, POST o PUT). Útil con Datadog o Elasticsearch. Eventos de workflow, nodos y acciones auditables: crear/borrar usuarios, crear credenciales, instalar paquetes y borrar workflows.
+Observabilidad de ejecución: eventos de queue mode, colas y runner task que ejecutan el code node. Métricas de AI: memoria de mensajes, embeddings y errores del LLM.
+Panel de workers: visión de workers disponibles, cargas, memoria libre, versiones y trabajos en ejecución; puedes entrar al workflow desde un job.
+Environments con Git: sincronización automática de workflows entre instancias, copias de seguridad y separación test/producción.
+¿Cómo se configuran proyectos y se depuran ejecuciones con datos reales?
+
+Primero, valida la edición instalada: ve a los tres puntos > Settings > Usage & Plan. Si tienes licencia, verás you are on the Enterprise License Edition. Para activarla: Enter Activation Key y pega la clave.
+
+Crear proyectos: añade “mi proyecto 1”, “mi proyecto 2”… incluso cambia el ícono. Asigna workflows, credenciales y usuarios con rol específico.
+Flujo simple: Add First Step con webhook + nodo Set. Guarda, renombra (p. ej., “Workflow Simple”) y activa. Copia la URL de producción; al invocarla verás “Workflow was started” y una ejecución en “Ejecuciones”.
+Copy to Editor: desde “Ejecuciones”, lleva los datos exactos de la corrida al lienzo con “Copy to Editor”. Los nodos con pinned data aparecen en violeta; podrás ver cabeceras, parámetros y cuerpo tal como llegaron.
+Depuración de errores: si agregas Stop and Error (o un error trigger), usa “Debug in Editor” para reproducir el fallo con los mismos datos sin reabrir el webhook. Ahorra horas de pruebas y facilita el análisis de por qué falló.
+¿Cómo optimizar mantenimiento con variables, historial y administración?
+
+Para operar a gran escala hace falta reutilizar valores, recuperar versiones y administrar integración/observabilidad desde un solo lugar.
+
+¿Cómo reutilizar variables globales en todos los workflows?
+
+Variables: crea una con Add First Variable (ej.: “URL base” con el dominio corporativo).
+Sintaxis: en el nodo (ej. Edit Fields), cambia a modo expresión y usa doble llave {{ }} con la referencia que muestra la interfaz. Si el campo estaba en fixed, pulsa “=” para pasar a expresión.
+Ventajas: actualización centralizada para todos los workflows y proyectos. Ideal si la URL cambia o si trabajas con múltiples entornos.
+¿Cómo recuperar cambios con workflow history?
+
+Workflow History: el ícono abre una lista de cada modificación del workflow.
+Acciones: clonar como workflow nuevo, abrir esa versión en otra pestaña o descargarla. Útil si borraste un nodo por error y necesitas volver a una versión previa.
+¿Cómo sincronizar con environments y gestionar accesos?
+
+Environments + Git: configura la URL del repositorio (GitHub, GitLab, Bitbucket u otro compatible), añade la clave si aplica y copia las instrucciones. Podrás subir workflows desde una instancia y bajarlos en otra, mantener backups y separar test/producción para proteger flujos de negocio.
+Accesos: agrega usuarios por correo, asígnales rol a nivel de instancia (p. ej., miembro) y, dentro de cada proyecto, define viewer, editor o admin según necesidades.
+Además, desde el panel de administración puedes configurar log streaming y observar workers en queue mode. En la demo, un trigger cada segundo y un wait de 15 segundos muestran trabajos activos; al hacer clic en el job accedes directamente al workflow. Así validas rendimiento y estado del sistema en tiempo real.
+
+https://docs.n8n.io/source-control-environments/understand/environments/
