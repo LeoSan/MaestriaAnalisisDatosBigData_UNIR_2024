@@ -1,0 +1,13 @@
+{
+    "name": "proyecto-d3",
+    "version": "1.0.0",
+    "description": "Visualización con D3.js y Node",
+    "main": "index.html",
+    "type": "module",
+    "scripts": {
+        "start": "npx http-server . -p 8000"
+    },
+    "dependencies": {
+        "d3": "^7.0.0"
+    }
+}
