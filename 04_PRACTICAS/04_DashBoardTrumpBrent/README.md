@@ -82,8 +82,8 @@ python3 -m uv run src/main.py --limit 1000
 ## 📈 Roadmap y Próximos Pasos
 - [x] Correlación histórica Brent Oil vs Twitter (2017-2021).
 - [x] Motor de Scraping para Truth Social (2025-2026).
-- [ ] Implementación de Análisis de Sentimiento (NLP) en los mensajes extraídos.
-- [ ] Gráficos comparativos de volatilidad "Antes vs Después" de mensajes clave.
+- [x] Implementación de Análisis de Sentimiento (NLP) en los mensajes extraídos.
+- [x] Gráficos comparativos de volatilidad "Antes vs Después" de mensajes clave.
 
 ---
 *Este proyecto demuestra habilidades en Visualización de Datos, Web Scraping avanzado, Ingeniería de Software y Gestión de Proyectos de Ciencia de Datos.*
