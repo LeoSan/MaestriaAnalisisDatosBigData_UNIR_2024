@@ -7,6 +7,8 @@
     --glass-border: rgba(255, 255, 255, 0.1);
     --oil-line: #3b82f6;
     --oil-gradient: linear-gradient(180deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0) 100%);
+    --impact-up: #10b981;
+    --impact-down: #ef4444;
 }
 
 * {
@@ -23,8 +25,7 @@ body {
     min-height: 100vh;
 }
 
-h1,
-.value {
+h1, .value {
     font-family: 'Outfit', sans-serif;
 }
 
@@ -165,15 +166,8 @@ header .container {
 }
 
 @keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 0.5;
-    }
-
-    50% {
-        opacity: 1;
-    }
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
 }
 
 /* Detail Panel (Glassmorphism) */
@@ -186,9 +180,19 @@ header .container {
     border-radius: 16px;
     padding: 1.5rem;
     backdrop-filter: blur(20px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), left 0.4s ease, right 0.4s ease;
     z-index: 100;
+}
+
+.detail-panel.side-right {
+    right: 2rem;
+    left: auto;
+}
+
+.detail-panel.side-left {
+    left: 2rem;
+    right: auto;
 }
 
 .hidden {
@@ -215,11 +219,39 @@ header .container {
 }
 
 #detail-text {
-    font-size: 9px;
+    font-size: 0.9rem;
     line-height: 1.4;
     color: var(--text-color);
     margin-bottom: 1rem;
 }
+
+.detail-impact-row {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--glass-border);
+}
+
+.impact-label {
+    font-size: 0.7rem;
+    color: var(--secondary-text);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.impact-value {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.impact-up { color: var(--impact-up); }
+.impact-down { color: var(--impact-down); }
+.impact-neutral { color: var(--accent-color); }
 
 .detail-footer a {
     color: var(--secondary-text);
@@ -328,7 +360,7 @@ header .container {
 
 .grid-line {
     stroke: var(--glass-border);
-    stroke-dasharray: 2, 2;
+    stroke-dasharray: 2,2;
 }
 
 .oil-line-path {

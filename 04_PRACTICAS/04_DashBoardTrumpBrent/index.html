@@ -11,7 +11,6 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
-    <!-- D3.js desde CDN para facilidad de uso en el navegador -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
@@ -21,8 +20,9 @@
     <header>
         <div class="container">
             <div class="brand">
-                <h1>Cause and Effect Trump about Brent Oil</h1>
-                <p class="subtitle">Análisis de correlación entre ruido social y mercados energéticos (2017-2026)</p>
+                <h1>Can an interface capture the pulse of the global economy? 🛢️💻</h1>
+                <p class="subtitle">I developed this Correlation Dashboard that cross-references Donald Trump's posts
+                    with the price of Brent crude oil (2017-2026).</p>
             </div>
             <div class="stats">
                 <div class="stat-item">
@@ -30,8 +30,8 @@
                     <span class="value" id="tweet-count">...</span>
                 </div>
                 <div class="stat-item">
-                    <span class="label">Periodo</span>
-                    <span class="value">10 Años</span>
+                    <span class="label">Period</span>
+                    <span class="value">10 Year</span>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
 
     <div class="filter-section container">
         <div class="year-filters" id="year-filters">
-            <button class="filter-btn active" data-year="all">Todos</button>
+            <button class="filter-btn active" data-year="all">All</button>
             <button class="filter-btn" data-year="2017">2017</button>
             <button class="filter-btn" data-year="2018">2018</button>
             <button class="filter-btn" data-year="2019">2019</button>
@@ -56,33 +56,37 @@
     <main class="container main-layout">
         <section class="chart-wrapper">
             <div id="chart-container">
-                <div class="loader">Analizando correlaciones...</div>
+                <div class="loader">Analitys...</div>
             </div>
 
             <!-- Panel de detalles flotante -->
-            <div id="detail-panel" class="detail-panel hidden">
+            <div id="detail-panel" class="detail-panel side-right hidden">
                 <div class="detail-header">
                     <span class="date-tag" id="detail-date">2018-05-08</span>
                     <span class="price-tag">Brent: $<span id="detail-price">75.00</span></span>
                 </div>
+                <div class="detail-impact-row" id="detail-impact-container">
+                    <span class="impact-label">Impacto (Día Siguiente):</span>
+                    <span class="impact-value" id="detail-impact">0.00%</span>
+                </div>
                 <p id="detail-text">"The Iran Deal is defective at its core. If we do nothing, we know exactly what will
                     happen..."</p>
                 <div class="detail-footer">
-                    <a href="#" id="detail-url" target="_blank">Ver original ↗</a>
+                    <a href="#" id="detail-url" target="_blank">Original ↗ </a>
                 </div>
             </div>
         </section>
 
         <aside class="events-sidebar">
-            <h2 class="sidebar-title">Línea de Tiempo de Eventos</h2>
+            <h2 class="sidebar-title">Time Line</h2>
             <div id="events-list" class="events-list">
                 <!-- Se poblará dinámicamente -->
-                <p class="empty-msg">Cargando eventos...</p>
+                <p class="empty-msg"> Event donwloading...</p>
             </div>
         </aside>
     </main>
 
-    <script src="src/js/index.js"></script>
+    <script type="module" src="src/js/index.js"></script>
 </body>
 
 </html>

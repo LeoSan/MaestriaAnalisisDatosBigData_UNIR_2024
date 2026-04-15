@@ -50,8 +50,12 @@ def process_data():
             
             date = time_str.split(' ')[0] # YYYY-MM-DD
             
-            # Solo guardamos el primer tweet del día que coincida con palabras clave
-            if any(keyword in text for keyword in KEYWORDS):
+            # Lógica de filtrado:
+            # Para 2026 mostramos TODO. Para años anteriores, filtramos por relevancia (KEYWORDS).
+            is_2026 = date.startswith('2026')
+            is_relevant = any(keyword in text for keyword in KEYWORDS)
+            
+            if is_2026 or is_relevant:
                 if date not in tweet_map:
                     tweet_map[date] = {
                         'text': clean_row.get('Tweet Text'),

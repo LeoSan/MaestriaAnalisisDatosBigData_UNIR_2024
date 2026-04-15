@@ -11,6 +11,9 @@ async function initDashboard() {
         const response = await fetch('data/processed_data.json');
         fullData = await response.json();
 
+        // Cálculo de métricas financieras (Log Returns e Impacto)
+        calculateFinancialMetrics();
+
         setupFilters();
         updateDashboard();
     } catch (error) {
@@ -62,7 +65,10 @@ function renderSidebar(events) {
         return;
     }
 
-    events.forEach(event => {
+    // Ordenar de más reciente a más viejo
+    const sortedEvents = [...events].sort((a, b) => b.date - a.date);
+
+    sortedEvents.forEach(event => {
         const card = list.append('div').attr('class', 'event-card');
 
         const meta = card.append('div').attr('class', 'card-meta');
@@ -146,7 +152,7 @@ function renderChart(series) {
         .attr('class', 'oil-line-path')
         .attr('d', line);
 
-    // Marcadores de Eventos (Solo donde hay Tweets)
+    // Marcadores de Eventos (Puntos donde hay Tweets)
     svg.selectAll('.event-marker')
         .data(series.filter(d => d.tweet_url !== null))
         .enter()
@@ -154,7 +160,13 @@ function renderChart(series) {
         .attr('class', 'event-marker')
         .attr('cx', d => x(d.date))
         .attr('cy', d => y(d.price))
-        .attr('r', 5);
+        .attr('r', 5)
+        .attr('fill', d => {
+            if (d.impact === null) return 'var(--accent-color)';
+            if (d.impact >= 0.001) return 'var(--impact-up)';
+            if (d.impact <= -0.001) return 'var(--impact-down)';
+            return 'var(--accent-color)'; // Neutral
+        });
 
     // Superficie invisible para Hover (Captura todos los puntos para ver el "No hay coincidencia")
     const focus = svg.append('g')
@@ -174,35 +186,48 @@ function renderChart(series) {
         .on('mouseout', () => focus.style('display', 'none'))
         .on('mousemove', function (event) {
             const bisect = d3.bisector(d => d.date).left;
-            const x0 = x.invert(d3.pointer(event)[0]);
+            const pointer = d3.pointer(event);
+            const x0 = x.invert(pointer[0]);
             const i = bisect(series, x0, 1);
             const d0 = series[i - 1];
             const d1 = series[i];
             const d = x0 - d0.date > d1.date - x0 ? d1 : d0;
 
+            // Determinar lado para el tooltip para no tapar los datos
+            const isRightSide = pointer[0] > (width / 2);
+            detailPanel.classed('side-left', isRightSide);
+            detailPanel.classed('side-right', !isRightSide);
+
             focus.attr('transform', `translate(${x(d.date)},${y(d.price)})`);
-            showDetail(d, event);
+            showDetail(d);
         });
 
     // Funciones de interacción
     const detailPanel = d3.select('#detail-panel');
 
-    function showDetail(d, event) {
+    function showDetail(d) {
         detailPanel.classed('hidden', false);
-        
-        // Posicionamiento dinámico para no tapar la gráfica
-        const chartWidth = container.node().clientWidth;
-        const mouseX = d3.pointer(event)[0];
-        
-        if (mouseX > chartWidth / 2) {
-            detailPanel.style('left', '2rem').style('right', 'auto');
-        } else {
-            detailPanel.style('right', '2rem').style('left', 'auto');
-        }
-
         d3.select('#detail-date').text(d.date.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }));
         d3.select('#detail-price').text(d.price.toFixed(2));
         d3.select('#detail-text').text(d.tweet_text);
+
+        // Lógica de Impacto
+        const impactContainer = d3.select('#detail-impact-container');
+        const impactValue = d3.select('#detail-impact');
+
+        if (d.impact !== null && d.tweet_url !== null) {
+            impactContainer.style('display', 'flex');
+            const percent = (d.impact * 100).toFixed(2);
+            const sign = d.impact > 0 ? '+' : '';
+            impactValue.text(`${sign}${percent}%`);
+
+            // Colores basados en el umbral del 0.1%
+            impactValue.classed('impact-up', d.impact >= 0.001);
+            impactValue.classed('impact-down', d.impact <= -0.001);
+            impactValue.classed('impact-neutral', d.impact < 0.001 && d.impact > -0.001);
+        } else {
+            impactContainer.style('display', 'none');
+        }
 
         // Mostrar/Ocultar enlace
         const urlBtn = d3.select('#detail-url');
@@ -216,3 +241,31 @@ function renderChart(series) {
 
 // Iniciar
 initDashboard();
+
+/**
+ * Cálculo de Retornos Logarítmicos y Proyección de Impacto
+ */
+function calculateFinancialMetrics() {
+    if (!fullData || !fullData.combined_series) return;
+
+    const data = fullData.combined_series;
+
+    for (let i = 0; i < data.length; i++) {
+        // Cálculo de Retorno Logarítmico (R_t = ln(P_t / P_{t-1}))
+        if (i > 0 && data[i - 1].price > 0) {
+            data[i].log_return = Math.log(data[i].price / data[i - 1].price);
+        } else {
+            data[i].log_return = 0;
+        }
+    }
+
+    // Definimos el "Impacto" de un tweet en el día 'i' 
+    // basándonos en el retorno registrado el día detectable siguiente 'i+1'
+    for (let i = 0; i < data.length; i++) {
+        if (i < data.length - 1) {
+            data[i].impact = data[i + 1].log_return;
+        } else {
+            data[i].impact = null;
+        }
+    }
+}

@@ -41,23 +41,34 @@ DashBoardTrump/
 
 ## 🛠️ Instalación y Uso
 
-### Ver el Dashboard (Frontend)
-El dashboard requiere un servidor web para cargar los datos correctamente:
+### Ver y Desarrollar el Dashboard (Frontend)
+El proyecto utiliza **Vite** para una experiencia de desarrollo moderna y una construcción optimizada:
 ```bash
+# Instalar dependencias
 npm install
-npm start
-# Abrir http://localhost:8000
+
+# Iniciar servidor de desarrollo con HMR (Recarga rápida)
+npm run dev
+
+# Generar la carpeta 'dist' para producción (Netlify)
+npm run build
+
+# Previsualizar el build final localmente
+npm run preview
 ```
+
+### Despliegue Manual (Netlify)
+Para subir el dashboard a producción:
+1. Ejecuta `npm run build` para generar la carpeta `dist/`.
+2. Ve a tu panel de **Netlify** -> **Add new site** -> **Deploy manually**.
+3. Arrastra la carpeta **`dist/`** generada.
 
 ### Ejecutar el Scraper (Python + Playwright)
 Dentro de la carpeta `/Scraping`:
 ```bash
 # Sincronizar e instalar navegadores
-brew install uv
-uv --version
 python3 -m uv sync
 python3 -m uv run playwright install chromium
-# si no funciona quita los python3 -m
 
 # Ejecutar la Gran Extracción (Ejemplo: 1000 posts)
 python3 -m uv run src/main.py --limit 1000
