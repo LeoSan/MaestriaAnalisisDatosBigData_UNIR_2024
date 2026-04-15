@@ -1,0 +1,352 @@
+:root {
+    --bg-color: #0a0c10;
+    --accent-color: #fbbf24;
+    --text-color: #f3f4f6;
+    --secondary-text: #9ca3af;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --oil-line: #3b82f6;
+    --oil-gradient: linear-gradient(180deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+h1,
+.value {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Background effects */
+.glass-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0a0c10 100%);
+    z-index: -1;
+}
+
+header {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.filter-section {
+    margin-top: 2rem;
+}
+
+.year-filters {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--secondary-text);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.filter-btn.active {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border-color: var(--accent-color);
+    font-weight: 600;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.vs {
+    color: var(--secondary-text);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.subtitle {
+    color: var(--secondary-text);
+    margin-top: 0.5rem;
+}
+
+.stats {
+    display: flex;
+    gap: 3rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.stat-item .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--secondary-text);
+}
+
+.stat-item .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* Chart Styles */
+.chart-wrapper {
+    position: relative;
+    margin: 2rem 0;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 1.5rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+#chart-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    color: var(--secondary-text);
+    font-style: italic;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Detail Panel (Glassmorphism) */
+.detail-panel {
+    position: absolute;
+    top: 2rem;
+    width: 320px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid var(--accent-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.date-tag {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.price-tag {
+    color: var(--oil-line);
+    font-weight: 600;
+}
+
+#detail-text {
+    font-size: 9px;
+    line-height: 1.4;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.detail-footer a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.2s;
+}
+
+.detail-footer a:hover {
+    color: var(--accent-color);
+}
+
+/* Sidebar Events List */
+.events-sidebar {
+    margin: 2rem 0;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 1.5rem;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.events-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.events-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.events-list::-webkit-scrollbar-thumb {
+    background: var(--glass-border);
+    border-radius: 10px;
+}
+
+.event-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--accent-color);
+    transition: transform 0.2s, background 0.2s;
+    cursor: pointer;
+}
+
+.event-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateX(5px);
+}
+
+.event-card .card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-card .card-date {
+    color: var(--secondary-text);
+}
+
+.event-card .card-price {
+    color: var(--oil-line);
+    font-weight: 600;
+}
+
+.event-card .card-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.empty-msg {
+    color: var(--secondary-text);
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.instructions {
+    text-align: center;
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    margin-bottom: 4rem;
+}
+
+/* D3 Elements Styling */
+.axis-label {
+    fill: var(--secondary-text);
+    font-size: 10px;
+}
+
+.grid-line {
+    stroke: var(--glass-border);
+    stroke-dasharray: 2, 2;
+}
+
+.oil-line-path {
+    fill: none;
+    stroke: var(--oil-line);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+
+.event-marker {
+    fill: var(--accent-color);
+    stroke: var(--bg-color);
+    stroke-width: 2;
+    cursor: pointer;
+    transition: r 0.2s, fill 0.2s;
+}
+
+.event-marker:hover {
+    fill: #fff;
+    r: 8;
+}
