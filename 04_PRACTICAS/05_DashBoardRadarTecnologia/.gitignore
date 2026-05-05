@@ -1,0 +1,16 @@
+# Entornos Virtuales
+venv/
+env/
+.env
+
+# Logs
+logs/
+*.log
+
+# Datos raw y procesados (si se ignoran)
+data/
+
+# Caché de Python
+__pycache__/
+*.pyc
+.pytest_cache/

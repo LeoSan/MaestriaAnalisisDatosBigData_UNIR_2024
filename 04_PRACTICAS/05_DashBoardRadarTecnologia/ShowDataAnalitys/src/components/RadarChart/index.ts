@@ -1,0 +1,1 @@
+export { RadarChartComponent } from './RadarChartComponent';
